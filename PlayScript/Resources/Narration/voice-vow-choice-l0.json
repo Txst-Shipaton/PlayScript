@@ -1,0 +1,102 @@
+{
+  "text": "My heart is yours. It has not been my own since I saw you across that crowded hall.",
+  "cues": [
+    {
+      "text": "My ",
+      "start": 0.0,
+      "end": 0.209
+    },
+    {
+      "text": "heart ",
+      "start": 0.29,
+      "end": 0.499
+    },
+    {
+      "text": "is ",
+      "start": 0.546,
+      "end": 0.627
+    },
+    {
+      "text": "yours. ",
+      "start": 0.685,
+      "end": 1.265
+    },
+    {
+      "text": "It ",
+      "start": 1.649,
+      "end": 1.765
+    },
+    {
+      "text": "has ",
+      "start": 1.811,
+      "end": 1.904
+    },
+    {
+      "text": "not ",
+      "start": 1.974,
+      "end": 2.125
+    },
+    {
+      "text": "been ",
+      "start": 2.171,
+      "end": 2.322
+    },
+    {
+      "text": "my ",
+      "start": 2.38,
+      "end": 2.508
+    },
+    {
+      "text": "own ",
+      "start": 2.577,
+      "end": 2.891
+    },
+    {
+      "text": "since ",
+      "start": 3.1,
+      "end": 3.379
+    },
+    {
+      "text": "I ",
+      "start": 3.425,
+      "end": 3.448
+    },
+    {
+      "text": "saw ",
+      "start": 3.541,
+      "end": 3.75
+    },
+    {
+      "text": "you ",
+      "start": 3.808,
+      "end": 3.889
+    },
+    {
+      "text": "across ",
+      "start": 3.971,
+      "end": 4.319
+    },
+    {
+      "text": "that ",
+      "start": 4.365,
+      "end": 4.516
+    },
+    {
+      "text": "crowded ",
+      "start": 4.574,
+      "end": 4.957
+    },
+    {
+      "text": "hall.",
+      "start": 5.016,
+      "end": 5.759
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "be036b87d02dbcd3b2b95c4294cbd31e4bfa22d0f3849bf162c45b33f22545d0",
+  "effectiveWPM": 176.2806042715749
+}

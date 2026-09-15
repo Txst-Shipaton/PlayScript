@@ -1,0 +1,62 @@
+{
+  "text": "But I can reach for the life we were promised.",
+  "cues": [
+    {
+      "text": "But ",
+      "start": 0.0,
+      "end": 0.174
+    },
+    {
+      "text": "I ",
+      "start": 0.221,
+      "end": 0.244
+    },
+    {
+      "text": "can ",
+      "start": 0.313,
+      "end": 0.441
+    },
+    {
+      "text": "reach ",
+      "start": 0.522,
+      "end": 0.731
+    },
+    {
+      "text": "for ",
+      "start": 0.789,
+      "end": 0.894
+    },
+    {
+      "text": "the ",
+      "start": 0.94,
+      "end": 1.01
+    },
+    {
+      "text": "life ",
+      "start": 1.091,
+      "end": 1.498
+    },
+    {
+      "text": "we ",
+      "start": 1.579,
+      "end": 1.718
+    },
+    {
+      "text": "were ",
+      "start": 1.765,
+      "end": 1.904
+    },
+    {
+      "text": "promised.",
+      "start": 1.95,
+      "end": 2.833
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "cdeb090c376c73c6ab905a1b47927b4abfa1a96ed308eb4632e0dcd7cb1b9807",
+  "effectiveWPM": 199.08224496999648
+}

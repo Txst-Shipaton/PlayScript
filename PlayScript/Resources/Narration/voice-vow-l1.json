@@ -1,0 +1,92 @@
+{
+  "text": "I stop him. The moon changes; I cannot bear the thought of this changing with it.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "stop ",
+      "start": 0.197,
+      "end": 0.488
+    },
+    {
+      "text": "him. ",
+      "start": 0.557,
+      "end": 0.848
+    },
+    {
+      "text": "The ",
+      "start": 1.022,
+      "end": 1.138
+    },
+    {
+      "text": "moon ",
+      "start": 1.196,
+      "end": 1.393
+    },
+    {
+      "text": "changes; ",
+      "start": 1.451,
+      "end": 2.125
+    },
+    {
+      "text": "I ",
+      "start": 2.299,
+      "end": 2.357
+    },
+    {
+      "text": "cannot ",
+      "start": 2.438,
+      "end": 2.705
+    },
+    {
+      "text": "bear ",
+      "start": 2.786,
+      "end": 3.077
+    },
+    {
+      "text": "the ",
+      "start": 3.158,
+      "end": 3.239
+    },
+    {
+      "text": "thought ",
+      "start": 3.297,
+      "end": 3.529
+    },
+    {
+      "text": "of ",
+      "start": 3.553,
+      "end": 3.611
+    },
+    {
+      "text": "this ",
+      "start": 3.657,
+      "end": 3.808
+    },
+    {
+      "text": "changing ",
+      "start": 3.866,
+      "end": 4.249
+    },
+    {
+      "text": "with ",
+      "start": 4.296,
+      "end": 4.47
+    },
+    {
+      "text": "it.",
+      "start": 4.528,
+      "end": 4.876
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "ab855740dcde76c56082c66c14b17528548306a00cc606711ec11eede880842a",
+  "effectiveWPM": 185.0697292863002
+}

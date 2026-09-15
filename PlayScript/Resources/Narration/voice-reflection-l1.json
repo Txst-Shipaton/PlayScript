@@ -1,0 +1,57 @@
+{
+  "text": "But we can hold their hearts a little differently.",
+  "cues": [
+    {
+      "text": "But ",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "text": "we ",
+      "start": 0.232,
+      "end": 0.325
+    },
+    {
+      "text": "can ",
+      "start": 0.372,
+      "end": 0.511
+    },
+    {
+      "text": "hold ",
+      "start": 0.569,
+      "end": 0.755
+    },
+    {
+      "text": "their ",
+      "start": 0.801,
+      "end": 0.964
+    },
+    {
+      "text": "hearts ",
+      "start": 1.022,
+      "end": 1.37
+    },
+    {
+      "text": "a ",
+      "start": 1.486,
+      "end": 1.556
+    },
+    {
+      "text": "little ",
+      "start": 1.637,
+      "end": 1.869
+    },
+    {
+      "text": "differently.",
+      "start": 1.892,
+      "end": 2.74
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "a0fca3858e4ea2c9b19686d58a8a9dc3faa98936f1b171aff66647dd4f3dfb5e",
+  "effectiveWPM": 185.25547445255472
+}

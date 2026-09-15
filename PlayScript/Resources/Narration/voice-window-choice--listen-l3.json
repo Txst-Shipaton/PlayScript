@@ -1,0 +1,102 @@
+{
+  "text": "Then I step into the moonlight. “Romeo.” I have heard enough to know I want him to stay.",
+  "cues": [
+    {
+      "text": "Then ",
+      "start": 0.0,
+      "end": 0.279
+    },
+    {
+      "text": "I ",
+      "start": 0.36,
+      "end": 0.395
+    },
+    {
+      "text": "step ",
+      "start": 0.488,
+      "end": 0.72
+    },
+    {
+      "text": "into ",
+      "start": 0.766,
+      "end": 0.917
+    },
+    {
+      "text": "the ",
+      "start": 0.964,
+      "end": 1.033
+    },
+    {
+      "text": "moonlight. ",
+      "start": 1.068,
+      "end": 1.637
+    },
+    {
+      "text": "“Romeo.” ",
+      "start": 1.916,
+      "end": 2.821
+    },
+    {
+      "text": "I ",
+      "start": 3.332,
+      "end": 3.379
+    },
+    {
+      "text": "have ",
+      "start": 3.46,
+      "end": 3.599
+    },
+    {
+      "text": "heard ",
+      "start": 3.646,
+      "end": 3.843
+    },
+    {
+      "text": "enough ",
+      "start": 3.889,
+      "end": 4.145
+    },
+    {
+      "text": "to ",
+      "start": 4.18,
+      "end": 4.238
+    },
+    {
+      "text": "know ",
+      "start": 4.284,
+      "end": 4.47
+    },
+    {
+      "text": "I ",
+      "start": 4.586,
+      "end": 4.621
+    },
+    {
+      "text": "want ",
+      "start": 4.737,
+      "end": 4.946
+    },
+    {
+      "text": "him ",
+      "start": 4.992,
+      "end": 5.108
+    },
+    {
+      "text": "to ",
+      "start": 5.166,
+      "end": 5.213
+    },
+    {
+      "text": "stay.",
+      "start": 5.283,
+      "end": 6.037
+    }
+  ],
+  "playbackRate": 0.9502685185185186,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "cf6e3afe298447807c09ad82ab1da3fe64379d24aa04fb701a11264d46645457",
+  "effectiveWPM": 170.0
+}

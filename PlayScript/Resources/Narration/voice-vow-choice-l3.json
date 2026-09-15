@@ -1,0 +1,57 @@
+{
+  "text": "I have never wanted to believe anything so much.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "have ",
+      "start": 0.151,
+      "end": 0.279
+    },
+    {
+      "text": "never ",
+      "start": 0.313,
+      "end": 0.534
+    },
+    {
+      "text": "wanted ",
+      "start": 0.604,
+      "end": 0.906
+    },
+    {
+      "text": "to ",
+      "start": 0.94,
+      "end": 0.987
+    },
+    {
+      "text": "believe ",
+      "start": 1.033,
+      "end": 1.347
+    },
+    {
+      "text": "anything ",
+      "start": 1.393,
+      "end": 1.8
+    },
+    {
+      "text": "so ",
+      "start": 1.927,
+      "end": 2.159
+    },
+    {
+      "text": "much.",
+      "start": 2.241,
+      "end": 2.926
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "02fd91df1fa0e783ee67f9369441501a706ebd6716ac271a35d19450154534aa",
+  "effectiveWPM": 173.4791524265208
+}

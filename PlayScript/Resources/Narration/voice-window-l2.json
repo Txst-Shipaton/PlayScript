@@ -1,0 +1,127 @@
+{
+  "text": "What light is that above me? She does not know I am here, and still she lights the whole of this dark garden.",
+  "cues": [
+    {
+      "text": "What ",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "text": "light ",
+      "start": 0.302,
+      "end": 0.546
+    },
+    {
+      "text": "is ",
+      "start": 0.58,
+      "end": 0.65
+    },
+    {
+      "text": "that ",
+      "start": 0.697,
+      "end": 0.824
+    },
+    {
+      "text": "above ",
+      "start": 0.871,
+      "end": 1.138
+    },
+    {
+      "text": "me? ",
+      "start": 1.196,
+      "end": 1.567
+    },
+    {
+      "text": "She ",
+      "start": 2.078,
+      "end": 2.206
+    },
+    {
+      "text": "does ",
+      "start": 2.252,
+      "end": 2.403
+    },
+    {
+      "text": "not ",
+      "start": 2.438,
+      "end": 2.589
+    },
+    {
+      "text": "know ",
+      "start": 2.635,
+      "end": 2.833
+    },
+    {
+      "text": "I ",
+      "start": 2.949,
+      "end": 2.995
+    },
+    {
+      "text": "am ",
+      "start": 3.077,
+      "end": 3.181
+    },
+    {
+      "text": "here, ",
+      "start": 3.262,
+      "end": 3.715
+    },
+    {
+      "text": "and ",
+      "start": 4.319,
+      "end": 4.481
+    },
+    {
+      "text": "still ",
+      "start": 4.54,
+      "end": 4.853
+    },
+    {
+      "text": "she ",
+      "start": 5.178,
+      "end": 5.341
+    },
+    {
+      "text": "lights ",
+      "start": 5.41,
+      "end": 5.7
+    },
+    {
+      "text": "the ",
+      "start": 5.759,
+      "end": 5.828
+    },
+    {
+      "text": "whole ",
+      "start": 5.886,
+      "end": 6.444
+    },
+    {
+      "text": "of ",
+      "start": 6.618,
+      "end": 6.757
+    },
+    {
+      "text": "this ",
+      "start": 6.815,
+      "end": 6.966
+    },
+    {
+      "text": "dark ",
+      "start": 7.047,
+      "end": 7.396
+    },
+    {
+      "text": "garden.",
+      "start": 7.477,
+      "end": 8.313
+    }
+  ],
+  "playbackRate": 1.0240652173913045,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "939375b7611fa41011296ffb34c7b24a286ec1bef7e5cd1fe73c5064d8cfdc0b",
+  "effectiveWPM": 170.0
+}

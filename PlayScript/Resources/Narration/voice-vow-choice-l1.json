@@ -1,0 +1,107 @@
+{
+  "text": "The words hang between the window and the earth, too large for the little distance they have to cross.",
+  "cues": [
+    {
+      "text": "The ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "words ",
+      "start": 0.186,
+      "end": 0.464
+    },
+    {
+      "text": "hang ",
+      "start": 0.522,
+      "end": 0.708
+    },
+    {
+      "text": "between ",
+      "start": 0.778,
+      "end": 1.068
+    },
+    {
+      "text": "the ",
+      "start": 1.103,
+      "end": 1.173
+    },
+    {
+      "text": "window ",
+      "start": 1.207,
+      "end": 1.567
+    },
+    {
+      "text": "and ",
+      "start": 1.637,
+      "end": 1.753
+    },
+    {
+      "text": "the ",
+      "start": 1.8,
+      "end": 1.881
+    },
+    {
+      "text": "earth, ",
+      "start": 1.95,
+      "end": 2.38
+    },
+    {
+      "text": "too ",
+      "start": 2.589,
+      "end": 2.775
+    },
+    {
+      "text": "large ",
+      "start": 2.868,
+      "end": 3.204
+    },
+    {
+      "text": "for ",
+      "start": 3.239,
+      "end": 3.344
+    },
+    {
+      "text": "the ",
+      "start": 3.39,
+      "end": 3.46
+    },
+    {
+      "text": "little ",
+      "start": 3.506,
+      "end": 3.715
+    },
+    {
+      "text": "distance ",
+      "start": 3.75,
+      "end": 4.203
+    },
+    {
+      "text": "they ",
+      "start": 4.238,
+      "end": 4.365
+    },
+    {
+      "text": "have ",
+      "start": 4.423,
+      "end": 4.574
+    },
+    {
+      "text": "to ",
+      "start": 4.598,
+      "end": 4.656
+    },
+    {
+      "text": "cross.",
+      "start": 4.702,
+      "end": 5.48
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "cc641dbeea01c0ffeceb78d35237ccf58778e1d002757291ef565c08dd520e8f",
+  "effectiveWPM": 195.54744525547443
+}

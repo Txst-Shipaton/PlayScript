@@ -1,0 +1,72 @@
+{
+  "text": "I press my forehead to his and whisper his name once more.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "press ",
+      "start": 0.186,
+      "end": 0.418
+    },
+    {
+      "text": "my ",
+      "start": 0.488,
+      "end": 0.58
+    },
+    {
+      "text": "forehead ",
+      "start": 0.639,
+      "end": 1.033
+    },
+    {
+      "text": "to ",
+      "start": 1.08,
+      "end": 1.149
+    },
+    {
+      "text": "his ",
+      "start": 1.231,
+      "end": 1.556
+    },
+    {
+      "text": "and ",
+      "start": 1.625,
+      "end": 1.776
+    },
+    {
+      "text": "whisper ",
+      "start": 1.846,
+      "end": 2.183
+    },
+    {
+      "text": "his ",
+      "start": 2.264,
+      "end": 2.38
+    },
+    {
+      "text": "name ",
+      "start": 2.45,
+      "end": 2.717
+    },
+    {
+      "text": "once ",
+      "start": 2.775,
+      "end": 3.042
+    },
+    {
+      "text": "more.",
+      "start": 3.088,
+      "end": 3.669
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "6d6661127c5dc5ea8ff20e94e7b757be03f15a9bba4ecf8b8e9c6868c49a3678",
+  "effectiveWPM": 184.4644317252657
+}

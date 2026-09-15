@@ -1,0 +1,47 @@
+{
+  "text": "I read those words again. Juliet lives.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "read ",
+      "start": 0.209,
+      "end": 0.36
+    },
+    {
+      "text": "those ",
+      "start": 0.395,
+      "end": 0.592
+    },
+    {
+      "text": "words ",
+      "start": 0.639,
+      "end": 0.929
+    },
+    {
+      "text": "again. ",
+      "start": 0.964,
+      "end": 1.498
+    },
+    {
+      "text": "Juliet ",
+      "start": 2.009,
+      "end": 2.438
+    },
+    {
+      "text": "lives.",
+      "start": 2.496,
+      "end": 3.204
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "5a95c6a209f32fa271f82c1e044b10c0a55c258487c47d96f37c233a1b862c75",
+  "effectiveWPM": 138.95131086142322
+}

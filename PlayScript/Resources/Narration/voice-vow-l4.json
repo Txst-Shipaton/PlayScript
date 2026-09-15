@@ -1,0 +1,107 @@
+{
+  "text": "Then by myself. And if I am ever less than I am tonight, let my own name shame me.",
+  "cues": [
+    {
+      "text": "Then ",
+      "start": 0.0,
+      "end": 0.232
+    },
+    {
+      "text": "by ",
+      "start": 0.302,
+      "end": 0.406
+    },
+    {
+      "text": "myself. ",
+      "start": 0.488,
+      "end": 1.173
+    },
+    {
+      "text": "And ",
+      "start": 1.776,
+      "end": 1.916
+    },
+    {
+      "text": "if ",
+      "start": 1.962,
+      "end": 2.032
+    },
+    {
+      "text": "I ",
+      "start": 2.101,
+      "end": 2.136
+    },
+    {
+      "text": "am ",
+      "start": 2.252,
+      "end": 2.368
+    },
+    {
+      "text": "ever ",
+      "start": 2.45,
+      "end": 2.659
+    },
+    {
+      "text": "less ",
+      "start": 2.717,
+      "end": 2.949
+    },
+    {
+      "text": "than ",
+      "start": 2.972,
+      "end": 3.088
+    },
+    {
+      "text": "I ",
+      "start": 3.135,
+      "end": 3.17
+    },
+    {
+      "text": "am ",
+      "start": 3.251,
+      "end": 3.39
+    },
+    {
+      "text": "tonight, ",
+      "start": 3.46,
+      "end": 4.017
+    },
+    {
+      "text": "let ",
+      "start": 4.4,
+      "end": 4.586
+    },
+    {
+      "text": "my ",
+      "start": 4.656,
+      "end": 4.783
+    },
+    {
+      "text": "own ",
+      "start": 4.853,
+      "end": 5.027
+    },
+    {
+      "text": "name ",
+      "start": 5.085,
+      "end": 5.341
+    },
+    {
+      "text": "shame ",
+      "start": 5.399,
+      "end": 5.77
+    },
+    {
+      "text": "me.",
+      "start": 5.817,
+      "end": 6.362
+    }
+  ],
+  "playbackRate": 0.9487192982456141,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "db8511fb18c8092f8b7b98f235ec2a89ac50f4cb52e31653e9cd1787a5462341",
+  "effectiveWPM": 170.0
+}

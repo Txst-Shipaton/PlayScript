@@ -1,0 +1,92 @@
+{
+  "text": "Juliet lives. Her stillness is a borrowed sleep, and I must be there when it ends.",
+  "cues": [
+    {
+      "text": "Juliet ",
+      "start": 0.0,
+      "end": 0.488
+    },
+    {
+      "text": "lives. ",
+      "start": 0.546,
+      "end": 1.033
+    },
+    {
+      "text": "Her ",
+      "start": 1.358,
+      "end": 1.509
+    },
+    {
+      "text": "stillness ",
+      "start": 1.567,
+      "end": 2.067
+    },
+    {
+      "text": "is ",
+      "start": 2.148,
+      "end": 2.299
+    },
+    {
+      "text": "a ",
+      "start": 2.345,
+      "end": 2.368
+    },
+    {
+      "text": "borrowed ",
+      "start": 2.426,
+      "end": 2.775
+    },
+    {
+      "text": "sleep, ",
+      "start": 2.81,
+      "end": 3.274
+    },
+    {
+      "text": "and ",
+      "start": 3.599,
+      "end": 3.727
+    },
+    {
+      "text": "I ",
+      "start": 3.808,
+      "end": 3.831
+    },
+    {
+      "text": "must ",
+      "start": 3.913,
+      "end": 4.098
+    },
+    {
+      "text": "be ",
+      "start": 4.156,
+      "end": 4.238
+    },
+    {
+      "text": "there ",
+      "start": 4.284,
+      "end": 4.656
+    },
+    {
+      "text": "when ",
+      "start": 4.899,
+      "end": 5.085
+    },
+    {
+      "text": "it ",
+      "start": 5.132,
+      "end": 5.213
+    },
+    {
+      "text": "ends.",
+      "start": 5.294,
+      "end": 6.084
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "8ccd10f406850788c2a6845e4e081e30d1ec9c5096f963a0c09db508f1fca619",
+  "effectiveWPM": 167.25838264299804
+}

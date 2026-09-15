@@ -1,0 +1,57 @@
+{
+  "text": "I wait through the stillness, through every frightened breath.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.104
+    },
+    {
+      "text": "wait ",
+      "start": 0.221,
+      "end": 0.441
+    },
+    {
+      "text": "through ",
+      "start": 0.488,
+      "end": 0.72
+    },
+    {
+      "text": "the ",
+      "start": 0.755,
+      "end": 0.824
+    },
+    {
+      "text": "stillness, ",
+      "start": 0.859,
+      "end": 1.683
+    },
+    {
+      "text": "through ",
+      "start": 1.892,
+      "end": 2.148
+    },
+    {
+      "text": "every ",
+      "start": 2.194,
+      "end": 2.473
+    },
+    {
+      "text": "frightened ",
+      "start": 2.624,
+      "end": 3.158
+    },
+    {
+      "text": "breath.",
+      "start": 3.228,
+      "end": 4.04
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "de921bc5e897cf6c406066dc524a057a4e8e72e6ae023a69d82c8029ec0ccce7",
+  "effectiveWPM": 141.6831683168317
+}

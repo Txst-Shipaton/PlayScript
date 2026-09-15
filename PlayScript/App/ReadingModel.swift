@@ -53,9 +53,17 @@ final class ReadingModel {
 
     var beat: StoryBeat { run.beat }
     var text: String { run.text }
+    var page: [StoryLine] { run.page }
     var needsChoice: Bool { run.needsChoice }
     var canResume: Bool { savedPlace != nil }
-    var contentID: String { beat.id + (run.selectedChoiceID ?? "") }
+    var contentID: String { beat.id + (run.selectedChoiceID ?? "") + "-p\(run.pageIndex)" }
+
+    /// Narration clip IDs for the showing page, matching `Scripts/create_narration.py`.
+    private var pageClips: [(id: String, text: String)] {
+        let prefix = beat.id + (run.selectedChoiceID.map { "--" + $0 } ?? "")
+        let offset = run.pageIndex * Pagination.linesPerPage
+        return run.page.enumerated().map { (id: "\(prefix)-l\(offset + $0.offset)", text: $0.element.text) }
+    }
 
     func start(over: Bool = false) {
         cancelSelection()
@@ -88,13 +96,16 @@ final class ReadingModel {
 
     func advance() {
         guard pendingChoiceID == nil, !isPaused,
-              Date().timeIntervalSince(lastAdvance) > 0.5 else { return }
+              Date().timeIntervalSince(lastAdvance) > 0.35 else { return }
+        let previousBeatID = beat.id
         guard run.advance() else { return }
         lastAdvance = Date()
         save()
         updateAudio()
         if soundEnabled {
-            audio.playEffect(Self.letterBeats.contains(beat.id) ? .letter : .turn)
+            // The letter is heard when the story reaches that beat, not on every page.
+            let enteredLetterBeat = beat.id != previousBeatID && Self.letterBeats.contains(beat.id)
+            audio.playEffect(enteredLetterBeat ? .letter : .turn)
         }
     }
 
@@ -147,7 +158,7 @@ final class ReadingModel {
         let playing = isReading && !isPaused && isActive
         audio.set(mood: beat.mood, playing: playing && (soundEnabled || voiceEnabled),
                   ambientVolume: soundEnabled ? (needsChoice || voiceEnabled ? 0.1 : 0.38) : 0)
-        let voiceID = beat.id + (run.selectedChoiceID.map { "--" + $0 } ?? "")
-        voice.update(id: voiceID, text: text, playing: playing && voiceEnabled && pendingChoiceID == nil)
+        voice.update(id: contentID, lines: pageClips,
+                     playing: playing && voiceEnabled && pendingChoiceID == nil)
     }
 }

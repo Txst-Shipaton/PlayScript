@@ -1,6 +1,40 @@
 import SwiftUI
 import StoryCore
 
+/// One attributed line. The two lovers are distinguished by their rule and label
+/// colour, so a glance tells you who is speaking without reading the name.
+private struct SpokenLine: View {
+    let line: StoryLine
+    let attributed: AttributedString
+    let isSpeaking: Bool
+    let reduceMotion: Bool
+
+    private var isJuliet: Bool { line.speaker == "Juliet" }
+    private var accent: Color { isJuliet ? Color(hex: 0xE3A9A6) : Color(hex: 0x9FB6D8) }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 7) {
+            SmallLabel(text: line.speaker)
+                .foregroundStyle(accent)
+                .opacity(isSpeaking ? 1 : 0.7)
+            Text(attributed)
+                .literary(20)
+                .lineSpacing(6)
+                .fixedSize(horizontal: false, vertical: true)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding(.leading, 14)
+        .overlay(alignment: .leading) {
+            Capsule()
+                .fill(accent)
+                .frame(width: 2)
+                .opacity(isSpeaking ? 0.9 : 0.3)
+        }
+        .opacity(isSpeaking ? 1 : 0.72)
+        .animation(.easeInOut(duration: reduceMotion ? 0 : 0.35), value: isSpeaking)
+    }
+}
+
 struct ReaderView: View {
     @Bindable var model: ReadingModel
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -134,15 +168,24 @@ struct ReaderView: View {
                 SmallLabel(text: "As \(model.beat.pointOfView)")
             }
             .foregroundStyle(Color(hex: 0xE9C9C4))
-            Text(model.voice.highlightedText(model.text))
-                .literary(20)
-                .lineSpacing(6)
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .accessibilityIdentifier("narrative")
-                .accessibilityFocused($narrativeFocused)
-                .id(model.contentID)
-                .transition(.opacity)
+            VStack(alignment: .leading, spacing: 20) {
+                ForEach(Array(model.page.enumerated()), id: \.offset) { index, line in
+                    SpokenLine(line: line,
+                               attributed: model.voice.highlightedText(line.text),
+                               isSpeaking: !model.voiceEnabled || model.voice.currentLine == index,
+                               reduceMotion: reduceMotion)
+                        .modifier(ThoughtArrival(delay: Double(index) * 0.14,
+                                                 reduceMotion: reduceMotion))
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel(model.page.map { "\($0.speaker). \($0.text)" }
+                .joined(separator: "\n"))
+            .accessibilityIdentifier("narrative")
+            .accessibilityFocused($narrativeFocused)
+            .id(model.contentID)
+            .transition(.opacity)
             if model.voice.available {
                 Button { model.voiceEnabled.toggle() } label: {
                     Label(model.voiceEnabled ? "Voice on" : "Listen to this page",
@@ -232,11 +275,17 @@ struct ReaderView: View {
                 Text("What if…")
                     .literary(52, relativeTo: .largeTitle)
                     .accessibilityAddTraits(.isHeader)
-                Text(model.voice.highlightedText(model.text))
-                    .literary(22)
-                    .lineSpacing(8)
-                    .accessibilityIdentifier("whatIfText")
-                    .accessibilityFocused($narrativeFocused)
+                VStack(spacing: 18) {
+                    ForEach(Array(model.page.enumerated()), id: \.offset) { _, line in
+                        Text(model.voice.highlightedText(line.text))
+                            .literary(22)
+                            .lineSpacing(8)
+                    }
+                }
+                .id(model.contentID)
+                .accessibilityElement(children: .combine)
+                .accessibilityIdentifier("whatIfText")
+                .accessibilityFocused($narrativeFocused)
                 Text("In Shakespeare’s ending, neither lover survives.\nThis is a glimpse of the life they never had.")
                     .font(.footnote)
                     .lineSpacing(5)
@@ -273,11 +322,17 @@ struct ReaderView: View {
                     .font(.system(size: 28, weight: .ultraLight))
                     .padding(.vertical, 12)
                     .accessibilityHidden(true)
-                Text(model.voice.highlightedText(model.text))
-                    .literary(29, relativeTo: .title)
-                    .lineSpacing(10)
-                    .accessibilityIdentifier("reflectionText")
-                    .accessibilityFocused($narrativeFocused)
+                VStack(spacing: 16) {
+                    ForEach(Array(model.page.enumerated()), id: \.offset) { _, line in
+                        Text(model.voice.highlightedText(line.text))
+                            .literary(29, relativeTo: .title)
+                            .lineSpacing(10)
+                    }
+                }
+                .id(model.contentID)
+                .accessibilityElement(children: .combine)
+                .accessibilityIdentifier("reflectionText")
+                .accessibilityFocused($narrativeFocused)
                 Rectangle().fill(.white.opacity(0.35)).frame(width: 36, height: 1)
                 Text("PlayScript")
                     .literary(37, relativeTo: .largeTitle)

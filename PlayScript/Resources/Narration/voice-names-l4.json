@@ -1,0 +1,102 @@
+{
+  "text": "If I could set our names down here, between us, what would be left except him and me?",
+  "cues": [
+    {
+      "text": "If ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "I ",
+      "start": 0.209,
+      "end": 0.232
+    },
+    {
+      "text": "could ",
+      "start": 0.302,
+      "end": 0.453
+    },
+    {
+      "text": "set ",
+      "start": 0.476,
+      "end": 0.639
+    },
+    {
+      "text": "our ",
+      "start": 0.673,
+      "end": 0.778
+    },
+    {
+      "text": "names ",
+      "start": 0.836,
+      "end": 1.103
+    },
+    {
+      "text": "down ",
+      "start": 1.161,
+      "end": 1.37
+    },
+    {
+      "text": "here, ",
+      "start": 1.428,
+      "end": 1.683
+    },
+    {
+      "text": "between ",
+      "start": 1.718,
+      "end": 2.067
+    },
+    {
+      "text": "us, ",
+      "start": 2.183,
+      "end": 2.624
+    },
+    {
+      "text": "what ",
+      "start": 2.949,
+      "end": 3.123
+    },
+    {
+      "text": "would ",
+      "start": 3.158,
+      "end": 3.297
+    },
+    {
+      "text": "be ",
+      "start": 3.332,
+      "end": 3.413
+    },
+    {
+      "text": "left ",
+      "start": 3.46,
+      "end": 3.727
+    },
+    {
+      "text": "except ",
+      "start": 3.785,
+      "end": 4.098
+    },
+    {
+      "text": "him ",
+      "start": 4.156,
+      "end": 4.365
+    },
+    {
+      "text": "and ",
+      "start": 4.458,
+      "end": 4.609
+    },
+    {
+      "text": "me?",
+      "start": 4.679,
+      "end": 5.294
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "dd5efd1e92576c35f9bb9cf4604b3b2db31695dc1d17a8f73ed8901cd7adbc38",
+  "effectiveWPM": 191.76426142803172
+}

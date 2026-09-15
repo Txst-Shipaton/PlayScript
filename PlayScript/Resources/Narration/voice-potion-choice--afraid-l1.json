@@ -1,0 +1,72 @@
+{
+  "text": "I drink. The cup is lighter than the fear, and empties sooner.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "drink. ",
+      "start": 0.197,
+      "end": 0.639
+    },
+    {
+      "text": "The ",
+      "start": 0.917,
+      "end": 1.045
+    },
+    {
+      "text": "cup ",
+      "start": 1.091,
+      "end": 1.289
+    },
+    {
+      "text": "is ",
+      "start": 1.358,
+      "end": 1.44
+    },
+    {
+      "text": "lighter ",
+      "start": 1.521,
+      "end": 1.823
+    },
+    {
+      "text": "than ",
+      "start": 1.892,
+      "end": 2.02
+    },
+    {
+      "text": "the ",
+      "start": 2.055,
+      "end": 2.125
+    },
+    {
+      "text": "fear, ",
+      "start": 2.183,
+      "end": 2.601
+    },
+    {
+      "text": "and ",
+      "start": 2.635,
+      "end": 2.902
+    },
+    {
+      "text": "empties ",
+      "start": 3.019,
+      "end": 3.46
+    },
+    {
+      "text": "sooner.",
+      "start": 3.506,
+      "end": 4.18
+    }
+  ],
+  "playbackRate": 0.9869444444444444,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "09c2d9c74d721dd0708e30cfb4faf03fa21a93b25ae93cde15b987bfa6cba72a",
+  "effectiveWPM": 170.0
+}

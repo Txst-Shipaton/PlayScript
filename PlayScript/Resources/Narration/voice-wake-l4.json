@@ -1,0 +1,97 @@
+{
+  "text": "Whatever he said in this room, he said it to a girl he believed was already gone.",
+  "cues": [
+    {
+      "text": "Whatever ",
+      "start": 0.0,
+      "end": 0.395
+    },
+    {
+      "text": "he ",
+      "start": 0.464,
+      "end": 0.546
+    },
+    {
+      "text": "said ",
+      "start": 0.615,
+      "end": 0.801
+    },
+    {
+      "text": "in ",
+      "start": 0.848,
+      "end": 0.906
+    },
+    {
+      "text": "this ",
+      "start": 0.952,
+      "end": 1.115
+    },
+    {
+      "text": "room, ",
+      "start": 1.196,
+      "end": 1.602
+    },
+    {
+      "text": "he ",
+      "start": 1.683,
+      "end": 1.788
+    },
+    {
+      "text": "said ",
+      "start": 1.858,
+      "end": 2.043
+    },
+    {
+      "text": "it ",
+      "start": 2.09,
+      "end": 2.159
+    },
+    {
+      "text": "to ",
+      "start": 2.194,
+      "end": 2.276
+    },
+    {
+      "text": "a ",
+      "start": 2.368,
+      "end": 2.403
+    },
+    {
+      "text": "girl ",
+      "start": 2.461,
+      "end": 2.728
+    },
+    {
+      "text": "he ",
+      "start": 2.81,
+      "end": 2.879
+    },
+    {
+      "text": "believed ",
+      "start": 2.949,
+      "end": 3.355
+    },
+    {
+      "text": "was ",
+      "start": 3.402,
+      "end": 3.529
+    },
+    {
+      "text": "already ",
+      "start": 3.587,
+      "end": 3.936
+    },
+    {
+      "text": "gone.",
+      "start": 3.982,
+      "end": 4.69
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "63e0bc228d0c94283778b7f237fea4d4fbdff3650096a0fceda518b1833618b6",
+  "effectiveWPM": 204.43496801705754
+}

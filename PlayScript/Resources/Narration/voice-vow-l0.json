@@ -1,0 +1,112 @@
+{
+  "text": "By the moon I swear — by that blessed moon, that tips the tops of these trees with silver —",
+  "cues": [
+    {
+      "text": "By ",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "text": "the ",
+      "start": 0.255,
+      "end": 0.325
+    },
+    {
+      "text": "moon ",
+      "start": 0.372,
+      "end": 0.58
+    },
+    {
+      "text": "I ",
+      "start": 0.639,
+      "end": 0.673
+    },
+    {
+      "text": "swear ",
+      "start": 0.801,
+      "end": 1.242
+    },
+    {
+      "text": "— ",
+      "start": 1.451,
+      "end": 1.591
+    },
+    {
+      "text": "by ",
+      "start": 1.869,
+      "end": 2.078
+    },
+    {
+      "text": "that ",
+      "start": 2.159,
+      "end": 2.322
+    },
+    {
+      "text": "blessed ",
+      "start": 2.403,
+      "end": 2.798
+    },
+    {
+      "text": "moon, ",
+      "start": 2.879,
+      "end": 3.483
+    },
+    {
+      "text": "that ",
+      "start": 3.727,
+      "end": 3.936
+    },
+    {
+      "text": "tips ",
+      "start": 3.982,
+      "end": 4.284
+    },
+    {
+      "text": "the ",
+      "start": 4.331,
+      "end": 4.412
+    },
+    {
+      "text": "tops ",
+      "start": 4.458,
+      "end": 4.783
+    },
+    {
+      "text": "of ",
+      "start": 4.818,
+      "end": 4.888
+    },
+    {
+      "text": "these ",
+      "start": 4.946,
+      "end": 5.132
+    },
+    {
+      "text": "trees ",
+      "start": 5.178,
+      "end": 5.724
+    },
+    {
+      "text": "with ",
+      "start": 5.933,
+      "end": 6.142
+    },
+    {
+      "text": "silver ",
+      "start": 6.258,
+      "end": 6.745
+    },
+    {
+      "text": "—",
+      "start": 6.92,
+      "end": 7.198
+    }
+  ],
+  "playbackRate": 1.0197166666666666,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "f70d7a451e5b6b382133bb423d8d1e20c5601236a466657a284b501c47d08acc",
+  "effectiveWPM": 170.0
+}

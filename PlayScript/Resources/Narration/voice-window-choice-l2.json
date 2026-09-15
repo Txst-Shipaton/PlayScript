@@ -1,0 +1,97 @@
+{
+  "text": "He does not know I am listening. He speaks as though the night itself might answer him.",
+  "cues": [
+    {
+      "text": "He ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "does ",
+      "start": 0.197,
+      "end": 0.337
+    },
+    {
+      "text": "not ",
+      "start": 0.395,
+      "end": 0.615
+    },
+    {
+      "text": "know ",
+      "start": 0.662,
+      "end": 0.94
+    },
+    {
+      "text": "I ",
+      "start": 1.091,
+      "end": 1.149
+    },
+    {
+      "text": "am ",
+      "start": 1.231,
+      "end": 1.324
+    },
+    {
+      "text": "listening. ",
+      "start": 1.393,
+      "end": 2.032
+    },
+    {
+      "text": "He ",
+      "start": 2.357,
+      "end": 2.473
+    },
+    {
+      "text": "speaks ",
+      "start": 2.531,
+      "end": 2.844
+    },
+    {
+      "text": "as ",
+      "start": 2.891,
+      "end": 2.972
+    },
+    {
+      "text": "though ",
+      "start": 3.019,
+      "end": 3.216
+    },
+    {
+      "text": "the ",
+      "start": 3.262,
+      "end": 3.332
+    },
+    {
+      "text": "night ",
+      "start": 3.39,
+      "end": 3.611
+    },
+    {
+      "text": "itself ",
+      "start": 3.669,
+      "end": 4.145
+    },
+    {
+      "text": "might ",
+      "start": 4.203,
+      "end": 4.4
+    },
+    {
+      "text": "answer ",
+      "start": 4.447,
+      "end": 4.76
+    },
+    {
+      "text": "him.",
+      "start": 4.83,
+      "end": 5.341
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "489d1ef00c527b99050f9609376418bd820a68c6f4907340fbeae960908685c5",
+  "effectiveWPM": 179.51694439243585
+}

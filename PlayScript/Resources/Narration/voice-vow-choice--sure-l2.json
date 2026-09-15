@@ -1,0 +1,97 @@
+{
+  "text": "I let myself believe him. Tomorrow, I will send someone to learn the time and the place.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "let ",
+      "start": 0.197,
+      "end": 0.325
+    },
+    {
+      "text": "myself ",
+      "start": 0.372,
+      "end": 0.697
+    },
+    {
+      "text": "believe ",
+      "start": 0.755,
+      "end": 1.08
+    },
+    {
+      "text": "him. ",
+      "start": 1.115,
+      "end": 1.474
+    },
+    {
+      "text": "Tomorrow, ",
+      "start": 1.858,
+      "end": 2.473
+    },
+    {
+      "text": "I ",
+      "start": 2.519,
+      "end": 2.566
+    },
+    {
+      "text": "will ",
+      "start": 2.635,
+      "end": 2.786
+    },
+    {
+      "text": "send ",
+      "start": 2.833,
+      "end": 3.042
+    },
+    {
+      "text": "someone ",
+      "start": 3.111,
+      "end": 3.448
+    },
+    {
+      "text": "to ",
+      "start": 3.483,
+      "end": 3.553
+    },
+    {
+      "text": "learn ",
+      "start": 3.611,
+      "end": 3.808
+    },
+    {
+      "text": "the ",
+      "start": 3.855,
+      "end": 3.924
+    },
+    {
+      "text": "time ",
+      "start": 3.971,
+      "end": 4.249
+    },
+    {
+      "text": "and ",
+      "start": 4.284,
+      "end": 4.377
+    },
+    {
+      "text": "the ",
+      "start": 4.423,
+      "end": 4.493
+    },
+    {
+      "text": "place.",
+      "start": 4.516,
+      "end": 5.201
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "d6d8858b3636f5dda6ef8e0311b82033776114036d45e4ee280d25bf5868af72",
+  "effectiveWPM": 184.3491636223803
+}

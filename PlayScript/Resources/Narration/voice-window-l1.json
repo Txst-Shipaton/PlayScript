@@ -1,0 +1,52 @@
+{
+  "text": "Below my window, the orchard holds its breath.",
+  "cues": [
+    {
+      "text": "Below ",
+      "start": 0.0,
+      "end": 0.302
+    },
+    {
+      "text": "my ",
+      "start": 0.36,
+      "end": 0.464
+    },
+    {
+      "text": "window, ",
+      "start": 0.534,
+      "end": 1.022
+    },
+    {
+      "text": "the ",
+      "start": 1.103,
+      "end": 1.219
+    },
+    {
+      "text": "orchard ",
+      "start": 1.289,
+      "end": 1.718
+    },
+    {
+      "text": "holds ",
+      "start": 1.788,
+      "end": 2.032
+    },
+    {
+      "text": "its ",
+      "start": 2.078,
+      "end": 2.194
+    },
+    {
+      "text": "breath.",
+      "start": 2.241,
+      "end": 2.879
+    }
+  ],
+  "playbackRate": 1.0196458333333334,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "20fde771dfdd9984fb6b5518230d3c9821d4aece8a2e469dca678acbd75c61c9",
+  "effectiveWPM": 170.0
+}

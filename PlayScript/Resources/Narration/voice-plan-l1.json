@@ -1,0 +1,52 @@
+{
+  "text": "Forty-two hours, he says. Then I will wake.",
+  "cues": [
+    {
+      "text": "Forty-two ",
+      "start": 0.0,
+      "end": 0.499
+    },
+    {
+      "text": "hours, ",
+      "start": 0.569,
+      "end": 0.906
+    },
+    {
+      "text": "he ",
+      "start": 0.929,
+      "end": 0.987
+    },
+    {
+      "text": "says. ",
+      "start": 1.045,
+      "end": 1.463
+    },
+    {
+      "text": "Then ",
+      "start": 1.788,
+      "end": 2.009
+    },
+    {
+      "text": "I ",
+      "start": 2.078,
+      "end": 2.101
+    },
+    {
+      "text": "will ",
+      "start": 2.159,
+      "end": 2.31
+    },
+    {
+      "text": "wake.",
+      "start": 2.345,
+      "end": 2.926
+    }
+  ],
+  "playbackRate": 1.0362916666666668,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "4c7c860384deb70f75eeeb2f986ced70e3f693515553f0ea851eeb6283927a29",
+  "effectiveWPM": 170.0
+}

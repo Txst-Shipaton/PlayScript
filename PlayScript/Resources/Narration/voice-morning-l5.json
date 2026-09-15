@@ -1,0 +1,72 @@
+{
+  "text": "Tomorrow, I think. Such a little word to carry so much happiness.",
+  "cues": [
+    {
+      "text": "Tomorrow, ",
+      "start": 0.0,
+      "end": 0.557
+    },
+    {
+      "text": "I ",
+      "start": 0.604,
+      "end": 0.639
+    },
+    {
+      "text": "think. ",
+      "start": 0.72,
+      "end": 1.068
+    },
+    {
+      "text": "Such ",
+      "start": 1.393,
+      "end": 1.602
+    },
+    {
+      "text": "a ",
+      "start": 1.637,
+      "end": 1.66
+    },
+    {
+      "text": "little ",
+      "start": 1.707,
+      "end": 1.904
+    },
+    {
+      "text": "word ",
+      "start": 1.927,
+      "end": 2.148
+    },
+    {
+      "text": "to ",
+      "start": 2.183,
+      "end": 2.241
+    },
+    {
+      "text": "carry ",
+      "start": 2.299,
+      "end": 2.543
+    },
+    {
+      "text": "so ",
+      "start": 2.612,
+      "end": 2.717
+    },
+    {
+      "text": "much ",
+      "start": 2.775,
+      "end": 2.926
+    },
+    {
+      "text": "happiness.",
+      "start": 2.961,
+      "end": 3.762
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "adf3a95d0f44a3240e6f5d5c6646108bae339a18235846a823127ceed52f1c8e",
+  "effectiveWPM": 179.9043062200957
+}

@@ -1,0 +1,67 @@
+{
+  "text": "Instead of drawing the curtain, I move closer to the window.",
+  "cues": [
+    {
+      "text": "Instead ",
+      "start": 0.0,
+      "end": 0.348
+    },
+    {
+      "text": "of ",
+      "start": 0.383,
+      "end": 0.43
+    },
+    {
+      "text": "drawing ",
+      "start": 0.464,
+      "end": 0.72
+    },
+    {
+      "text": "the ",
+      "start": 0.766,
+      "end": 0.836
+    },
+    {
+      "text": "curtain, ",
+      "start": 0.871,
+      "end": 1.277
+    },
+    {
+      "text": "I ",
+      "start": 1.312,
+      "end": 1.347
+    },
+    {
+      "text": "move ",
+      "start": 1.428,
+      "end": 1.614
+    },
+    {
+      "text": "closer ",
+      "start": 1.66,
+      "end": 2.02
+    },
+    {
+      "text": "to ",
+      "start": 2.078,
+      "end": 2.148
+    },
+    {
+      "text": "the ",
+      "start": 2.206,
+      "end": 2.276
+    },
+    {
+      "text": "window.",
+      "start": 2.322,
+      "end": 3.065
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "60098f36ad65d6e3b764b6e47d709dcfc354380a1c063f48af5c65e37e2d0b33",
+  "effectiveWPM": 202.41435562805873
+}

@@ -1,0 +1,92 @@
+{
+  "text": "His face lifts toward mine, and the courage I borrowed from the darkness becomes my own.",
+  "cues": [
+    {
+      "text": "His ",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "text": "face ",
+      "start": 0.244,
+      "end": 0.499
+    },
+    {
+      "text": "lifts ",
+      "start": 0.557,
+      "end": 0.859
+    },
+    {
+      "text": "toward ",
+      "start": 0.917,
+      "end": 1.196
+    },
+    {
+      "text": "mine, ",
+      "start": 1.254,
+      "end": 1.741
+    },
+    {
+      "text": "and ",
+      "start": 1.985,
+      "end": 2.136
+    },
+    {
+      "text": "the ",
+      "start": 2.183,
+      "end": 2.252
+    },
+    {
+      "text": "courage ",
+      "start": 2.299,
+      "end": 2.67
+    },
+    {
+      "text": "I ",
+      "start": 2.728,
+      "end": 2.752
+    },
+    {
+      "text": "borrowed ",
+      "start": 2.868,
+      "end": 3.274
+    },
+    {
+      "text": "from ",
+      "start": 3.309,
+      "end": 3.46
+    },
+    {
+      "text": "the ",
+      "start": 3.529,
+      "end": 3.599
+    },
+    {
+      "text": "darkness ",
+      "start": 3.634,
+      "end": 4.145
+    },
+    {
+      "text": "becomes ",
+      "start": 4.191,
+      "end": 4.586
+    },
+    {
+      "text": "my ",
+      "start": 4.656,
+      "end": 4.795
+    },
+    {
+      "text": "own.",
+      "start": 4.888,
+      "end": 5.573
+    }
+  ],
+  "playbackRate": 0.9868854166666666,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "7d41700786e0e831da0cd5850671895d7d7e44d6f3cd909043d29443e06a9208",
+  "effectiveWPM": 170.0
+}

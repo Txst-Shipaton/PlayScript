@@ -16,12 +16,20 @@ import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "PlayScript/Resources/Narration"
+# Lower stability reads as more human: the provider treats high stability as
+# flat delivery, which is what makes a reading sound robotic. Style carries the
+# emotional colour. These are deliberately more expressive than a default preset.
 DELIVERY = {
-    "longing": {"emotion": "intimate, wondering, quietly breathless", "stability": 0.42, "style": 0.38},
-    "tender": {"emotion": "warm, certain, gently joyful", "stability": 0.52, "style": 0.32},
-    "uneasy": {"emotion": "frightened resolve, contained urgency", "stability": 0.35, "style": 0.48},
-    "grief": {"emotion": "devastated, hushed, space between thoughts", "stability": 0.62, "style": 0.42},
-    "dawn": {"emotion": "disbelief giving way to relief and hope", "stability": 0.45, "style": 0.38},
+    "longing": {"emotion": "intimate, wondering, quietly breathless", "stability": 0.30, "style": 0.55},
+    "tender": {"emotion": "warm, certain, gently joyful", "stability": 0.36, "style": 0.50},
+    "uneasy": {"emotion": "frightened resolve, contained urgency", "stability": 0.26, "style": 0.62},
+    "grief": {"emotion": "devastated, hushed, space between thoughts", "stability": 0.45, "style": 0.52},
+    "dawn": {"emotion": "disbelief giving way to relief and hope", "stability": 0.32, "style": 0.54},
+}
+# Romeo is the more extravagant speaker of the two; Juliet is the grounded one.
+SPEAKER_TRIM = {
+    "Juliet": {"stability": 0.02, "style": -0.03},
+    "Romeo": {"stability": -0.04, "style": 0.05},
 }
 
 
@@ -62,7 +70,9 @@ def word_cues(text, alignment):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--generate", action="store_true")
-    parser.add_argument("--limit", type=int, default=25)
+    parser.add_argument("--limit", type=int, default=400)
+    parser.add_argument("--prune", action="store_true",
+                        help="delete bundled clips that the current script no longer uses")
     args = parser.parse_args()
     env = environment()
     key = next((env[k] for k in ("ELEVENLABS_API_KEY", "ELEVEN_LABS_API_KEY", "ELEVEN_API_KEY", "elevenlabs") if env.get(k)), None)
@@ -71,11 +81,27 @@ def main():
         "Romeo": env.get("ELEVENLABS_ROMEO_VOICE_ID", "onwK4e9ZLuTAKqWW03F9"),
     }
     story = json.loads((ROOT / "StoryCore/Sources/StoryCore/Resources/romeo-and-juliet.json").read_text())
+
+    def lines_of(passage, fallback_text, speaker):
+        """Content written before lines existed reads as one line by the POV character."""
+        return passage.get("lines") or [{"speaker": speaker, "text": fallback_text}]
+
     clips = []
     for beat in story["beats"]:
-        clips.append((beat["id"], beat["pointOfView"], beat["text"], beat["mood"]))
-        clips.extend((beat["id"] + "--" + c["id"], beat["pointOfView"], c["flavor"], beat["mood"]) for c in beat["choices"])
+        voice_of = beat["pointOfView"]
+        for index, line in enumerate(lines_of(beat, beat["text"], voice_of)):
+            clips.append((f"{beat['id']}-l{index}", line["speaker"], line["text"], beat["mood"]))
+        for choice in beat["choices"]:
+            for index, line in enumerate(lines_of(choice, choice["flavor"], voice_of)):
+                clips.append((f"{beat['id']}--{choice['id']}-l{index}",
+                              line["speaker"], line["text"], beat["mood"]))
     print(f"{len(clips)} clips; {sum(len(c[2]) for c in clips)} characters; API key {'present' if key else 'missing'}.")
+    if args.prune:
+        wanted = {"voice-" + clip[0] for clip in clips}
+        stale = sorted(p for p in OUTPUT.glob("voice-*.*") if p.stem not in wanted)
+        for path in stale:
+            path.unlink()
+        print(f"Pruned {len(stale)} stale files.")
     if not args.generate:
         return
     if not key:
@@ -84,9 +110,16 @@ def main():
     generated = 0
     for clip_id, character, text, mood in clips:
         delivery = DELIVERY[mood]
+        trim = SPEAKER_TRIM.get(character, {"stability": 0.0, "style": 0.0})
+        settings = {
+            "stability": round(min(1.0, max(0.0, delivery["stability"] + trim["stability"])), 3),
+            "similarity_boost": 0.75,
+            "style": round(min(1.0, max(0.0, delivery["style"] + trim["style"])), 3),
+            "use_speaker_boost": True,
+            "speed": 1.0,
+        }
         payload = {"text": text, "model_id": "eleven_multilingual_v2", "seed": 42,
-                   "voice_settings": {"stability": delivery["stability"], "similarity_boost": 0.8,
-                                      "style": delivery["style"], "speed": 1.0}}
+                   "voice_settings": settings}
         fingerprint = hashlib.sha256(json.dumps([voices[character], payload], sort_keys=True).encode()).hexdigest()
         metadata = OUTPUT / f"voice-{clip_id}.json"
         audio = OUTPUT / f"voice-{clip_id}.mp3"
@@ -113,9 +146,11 @@ def main():
         cues = word_cues(text, result.get("alignment"))
         duration = cues[-1]["end"]
         # AVAudioPlayer's time is in source seconds even when its playback rate changes.
-        # Pitch-preserving rate calibration makes the spoken span target 170 WPM.
+        # The rate is only a gentle nudge toward 170 WPM: pitch-preserving stretch is
+        # audible as a robotic quality well before it reaches the old +/-30% bounds,
+        # so a reading that is naturally off-target is left alone instead.
         source_wpm = len(text.split()) / duration * 60
-        rate = max(0.7, min(1.3, 170 / source_wpm))
+        rate = max(0.94, min(1.06, 170 / source_wpm))
         effective_wpm = source_wpm * rate
         audio.write_bytes(base64.b64decode(result["audio_base64"], validate=True))
         metadata.write_text(json.dumps({"text": text, "cues": cues, "playbackRate": rate,

@@ -1,0 +1,52 @@
+{
+  "text": "Wait for me, Juliet. Only a little longer.",
+  "cues": [
+    {
+      "text": "Wait ",
+      "start": 0.0,
+      "end": 0.232
+    },
+    {
+      "text": "for ",
+      "start": 0.279,
+      "end": 0.372
+    },
+    {
+      "text": "me, ",
+      "start": 0.406,
+      "end": 0.499
+    },
+    {
+      "text": "Juliet. ",
+      "start": 0.534,
+      "end": 1.091
+    },
+    {
+      "text": "Only ",
+      "start": 1.335,
+      "end": 1.591
+    },
+    {
+      "text": "a ",
+      "start": 1.649,
+      "end": 1.672
+    },
+    {
+      "text": "little ",
+      "start": 1.718,
+      "end": 1.939
+    },
+    {
+      "text": "longer.",
+      "start": 1.974,
+      "end": 2.647
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "c107d6370fc76dba92fe7943215b634157cf7f241f9d4b162b06f30d676baf49",
+  "effectiveWPM": 170.45712126936152
+}

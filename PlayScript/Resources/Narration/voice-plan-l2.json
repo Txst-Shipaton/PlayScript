@@ -1,0 +1,97 @@
+{
+  "text": "He will send a letter to Romeo in Mantua, and Romeo will know the truth of it.",
+  "cues": [
+    {
+      "text": "He ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "will ",
+      "start": 0.174,
+      "end": 0.325
+    },
+    {
+      "text": "send ",
+      "start": 0.372,
+      "end": 0.534
+    },
+    {
+      "text": "a ",
+      "start": 0.592,
+      "end": 0.615
+    },
+    {
+      "text": "letter ",
+      "start": 0.662,
+      "end": 0.871
+    },
+    {
+      "text": "to ",
+      "start": 0.929,
+      "end": 0.998
+    },
+    {
+      "text": "Romeo ",
+      "start": 1.091,
+      "end": 1.533
+    },
+    {
+      "text": "in ",
+      "start": 1.614,
+      "end": 1.672
+    },
+    {
+      "text": "Mantua, ",
+      "start": 1.718,
+      "end": 2.38
+    },
+    {
+      "text": "and ",
+      "start": 2.554,
+      "end": 2.705
+    },
+    {
+      "text": "Romeo ",
+      "start": 2.775,
+      "end": 3.181
+    },
+    {
+      "text": "will ",
+      "start": 3.251,
+      "end": 3.379
+    },
+    {
+      "text": "know ",
+      "start": 3.413,
+      "end": 3.529
+    },
+    {
+      "text": "the ",
+      "start": 3.576,
+      "end": 3.646
+    },
+    {
+      "text": "truth ",
+      "start": 3.692,
+      "end": 3.936
+    },
+    {
+      "text": "of ",
+      "start": 3.971,
+      "end": 4.029
+    },
+    {
+      "text": "it.",
+      "start": 4.098,
+      "end": 4.551
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "291f86ce694f7b898e149cd8ab312244cf81019b1a457fd3a8beb91d3931d64b",
+  "effectiveWPM": 210.67897165458137
+}

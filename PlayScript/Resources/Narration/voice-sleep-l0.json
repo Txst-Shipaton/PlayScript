@@ -1,0 +1,72 @@
+{
+  "text": "The room grows distant. The candle softens into a single wandering star.",
+  "cues": [
+    {
+      "text": "The ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "room ",
+      "start": 0.186,
+      "end": 0.383
+    },
+    {
+      "text": "grows ",
+      "start": 0.441,
+      "end": 0.708
+    },
+    {
+      "text": "distant. ",
+      "start": 0.778,
+      "end": 1.358
+    },
+    {
+      "text": "The ",
+      "start": 1.683,
+      "end": 1.811
+    },
+    {
+      "text": "candle ",
+      "start": 1.858,
+      "end": 2.206
+    },
+    {
+      "text": "softens ",
+      "start": 2.241,
+      "end": 2.74
+    },
+    {
+      "text": "into ",
+      "start": 2.798,
+      "end": 2.961
+    },
+    {
+      "text": "a ",
+      "start": 3.042,
+      "end": 3.065
+    },
+    {
+      "text": "single ",
+      "start": 3.111,
+      "end": 3.437
+    },
+    {
+      "text": "wandering ",
+      "start": 3.483,
+      "end": 3.982
+    },
+    {
+      "text": "star.",
+      "start": 4.052,
+      "end": 4.69
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "7265e5af6a671b2f17536dd0c0b4fdd7e20f82221dea1093821cc21503108598",
+  "effectiveWPM": 162.72921108742003
+}

@@ -1,0 +1,107 @@
+{
+  "text": "You know my voice, and I have hardly spoken. Call me love, and I will answer to nothing else.",
+  "cues": [
+    {
+      "text": "You ",
+      "start": 0.0,
+      "end": 0.174
+    },
+    {
+      "text": "know ",
+      "start": 0.221,
+      "end": 0.348
+    },
+    {
+      "text": "my ",
+      "start": 0.406,
+      "end": 0.499
+    },
+    {
+      "text": "voice, ",
+      "start": 0.557,
+      "end": 1.103
+    },
+    {
+      "text": "and ",
+      "start": 1.382,
+      "end": 1.533
+    },
+    {
+      "text": "I ",
+      "start": 1.602,
+      "end": 1.637
+    },
+    {
+      "text": "have ",
+      "start": 1.753,
+      "end": 1.904
+    },
+    {
+      "text": "hardly ",
+      "start": 1.939,
+      "end": 2.252
+    },
+    {
+      "text": "spoken. ",
+      "start": 2.31,
+      "end": 2.961
+    },
+    {
+      "text": "Call ",
+      "start": 3.402,
+      "end": 3.704
+    },
+    {
+      "text": "me ",
+      "start": 3.762,
+      "end": 3.866
+    },
+    {
+      "text": "love, ",
+      "start": 3.959,
+      "end": 4.481
+    },
+    {
+      "text": "and ",
+      "start": 4.76,
+      "end": 4.899
+    },
+    {
+      "text": "I ",
+      "start": 4.981,
+      "end": 5.004
+    },
+    {
+      "text": "will ",
+      "start": 5.074,
+      "end": 5.236
+    },
+    {
+      "text": "answer ",
+      "start": 5.294,
+      "end": 5.631
+    },
+    {
+      "text": "to ",
+      "start": 6.072,
+      "end": 6.211
+    },
+    {
+      "text": "nothing ",
+      "start": 6.362,
+      "end": 6.687
+    },
+    {
+      "text": "else.",
+      "start": 6.757,
+      "end": 7.477
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "62c3544af1dd64efce87782a2d237f64acb55492b82c533edb69fb6f4ffc3109",
+  "effectiveWPM": 161.61562123846463
+}

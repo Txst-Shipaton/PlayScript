@@ -1,0 +1,72 @@
+{
+  "text": "The road is the same road. Verona still holds the same dangers.",
+  "cues": [
+    {
+      "text": "The ",
+      "start": 0.0,
+      "end": 0.151
+    },
+    {
+      "text": "road ",
+      "start": 0.197,
+      "end": 0.406
+    },
+    {
+      "text": "is ",
+      "start": 0.453,
+      "end": 0.534
+    },
+    {
+      "text": "the ",
+      "start": 0.569,
+      "end": 0.639
+    },
+    {
+      "text": "same ",
+      "start": 0.685,
+      "end": 0.964
+    },
+    {
+      "text": "road. ",
+      "start": 1.022,
+      "end": 1.509
+    },
+    {
+      "text": "Verona ",
+      "start": 1.834,
+      "end": 2.241
+    },
+    {
+      "text": "still ",
+      "start": 2.287,
+      "end": 2.519
+    },
+    {
+      "text": "holds ",
+      "start": 2.577,
+      "end": 2.81
+    },
+    {
+      "text": "the ",
+      "start": 2.856,
+      "end": 2.937
+    },
+    {
+      "text": "same ",
+      "start": 2.972,
+      "end": 3.216
+    },
+    {
+      "text": "dangers.",
+      "start": 3.262,
+      "end": 4.087
+    }
+  ],
+  "playbackRate": 0.9649861111111111,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "961ec700f174fb3743974435205935d1f98e6a9bcf2bcda105c5e122d96b5e2d",
+  "effectiveWPM": 170.0
+}

@@ -1,0 +1,57 @@
+{
+  "text": "Then her fingers move against mine. Her eyes open.",
+  "cues": [
+    {
+      "text": "Then ",
+      "start": 0.0,
+      "end": 0.186
+    },
+    {
+      "text": "her ",
+      "start": 0.244,
+      "end": 0.325
+    },
+    {
+      "text": "fingers ",
+      "start": 0.383,
+      "end": 0.708
+    },
+    {
+      "text": "move ",
+      "start": 0.778,
+      "end": 1.057
+    },
+    {
+      "text": "against ",
+      "start": 1.091,
+      "end": 1.393
+    },
+    {
+      "text": "mine. ",
+      "start": 1.451,
+      "end": 1.916
+    },
+    {
+      "text": "Her ",
+      "start": 2.241,
+      "end": 2.415
+    },
+    {
+      "text": "eyes ",
+      "start": 2.485,
+      "end": 2.833
+    },
+    {
+      "text": "open.",
+      "start": 2.902,
+      "end": 3.622
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "8548e719848b9fe1d24835bb9a9b47fc74fc6a3bd5c26100091fac6f72cee403",
+  "effectiveWPM": 158.03423522915517
+}

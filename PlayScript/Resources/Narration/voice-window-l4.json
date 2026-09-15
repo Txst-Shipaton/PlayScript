@@ -1,0 +1,17 @@
+{
+  "text": "Juliet.",
+  "cues": [
+    {
+      "text": "Juliet.",
+      "start": 0.0,
+      "end": 0.882
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "4462bdfe63e7637e6082a08a6daf6f45d7510aa803e1f2ed4fd2f15f230df18a",
+  "effectiveWPM": 72.10884353741497
+}

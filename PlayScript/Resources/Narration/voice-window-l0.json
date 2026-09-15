@@ -1,0 +1,47 @@
+{
+  "text": "I hear him before I see him.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "hear ",
+      "start": 0.197,
+      "end": 0.348
+    },
+    {
+      "text": "him ",
+      "start": 0.395,
+      "end": 0.499
+    },
+    {
+      "text": "before ",
+      "start": 0.546,
+      "end": 0.813
+    },
+    {
+      "text": "I ",
+      "start": 0.859,
+      "end": 0.882
+    },
+    {
+      "text": "see ",
+      "start": 0.964,
+      "end": 1.138
+    },
+    {
+      "text": "him.",
+      "start": 1.196,
+      "end": 1.672
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "c54fec5eef76e7510e60d9df3f9dd96ed8532259e581cfa04605716e54a7feb0",
+  "effectiveWPM": 236.1244019138756
+}

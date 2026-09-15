@@ -1,0 +1,122 @@
+{
+  "text": "It is only a word. It is not my hand, nor my face, nor any part of me you have looked at.",
+  "cues": [
+    {
+      "text": "It ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "is ",
+      "start": 0.186,
+      "end": 0.267
+    },
+    {
+      "text": "only ",
+      "start": 0.337,
+      "end": 0.58
+    },
+    {
+      "text": "a ",
+      "start": 0.627,
+      "end": 0.65
+    },
+    {
+      "text": "word. ",
+      "start": 0.72,
+      "end": 1.277
+    },
+    {
+      "text": "It ",
+      "start": 1.66,
+      "end": 1.776
+    },
+    {
+      "text": "is ",
+      "start": 1.823,
+      "end": 1.892
+    },
+    {
+      "text": "not ",
+      "start": 1.95,
+      "end": 2.09
+    },
+    {
+      "text": "my ",
+      "start": 2.159,
+      "end": 2.287
+    },
+    {
+      "text": "hand, ",
+      "start": 2.368,
+      "end": 2.844
+    },
+    {
+      "text": "nor ",
+      "start": 3.053,
+      "end": 3.239
+    },
+    {
+      "text": "my ",
+      "start": 3.297,
+      "end": 3.425
+    },
+    {
+      "text": "face, ",
+      "start": 3.506,
+      "end": 4.029
+    },
+    {
+      "text": "nor ",
+      "start": 4.307,
+      "end": 4.47
+    },
+    {
+      "text": "any ",
+      "start": 4.528,
+      "end": 4.702
+    },
+    {
+      "text": "part ",
+      "start": 4.76,
+      "end": 4.981
+    },
+    {
+      "text": "of ",
+      "start": 5.016,
+      "end": 5.085
+    },
+    {
+      "text": "me ",
+      "start": 5.143,
+      "end": 5.399
+    },
+    {
+      "text": "you ",
+      "start": 5.642,
+      "end": 5.759
+    },
+    {
+      "text": "have ",
+      "start": 5.828,
+      "end": 5.968
+    },
+    {
+      "text": "looked ",
+      "start": 6.002,
+      "end": 6.246
+    },
+    {
+      "text": "at.",
+      "start": 6.316,
+      "end": 6.827
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "6c88521fe0fb502106ac67eb2c56ec5bd6f6e2f2e8da8971ba3c575c8b0cf71c",
+  "effectiveWPM": 181.74893804013476
+}

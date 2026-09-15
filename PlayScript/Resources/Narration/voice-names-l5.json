@@ -1,0 +1,67 @@
+{
+  "text": "Only this. Only us, and the little distance of a wall.",
+  "cues": [
+    {
+      "text": "Only ",
+      "start": 0.0,
+      "end": 0.29
+    },
+    {
+      "text": "this. ",
+      "start": 0.348,
+      "end": 0.836
+    },
+    {
+      "text": "Only ",
+      "start": 1.01,
+      "end": 1.277
+    },
+    {
+      "text": "us, ",
+      "start": 1.37,
+      "end": 1.73
+    },
+    {
+      "text": "and ",
+      "start": 1.765,
+      "end": 1.916
+    },
+    {
+      "text": "the ",
+      "start": 1.974,
+      "end": 2.043
+    },
+    {
+      "text": "little ",
+      "start": 2.09,
+      "end": 2.31
+    },
+    {
+      "text": "distance ",
+      "start": 2.345,
+      "end": 2.752
+    },
+    {
+      "text": "of ",
+      "start": 2.798,
+      "end": 2.856
+    },
+    {
+      "text": "a ",
+      "start": 2.914,
+      "end": 2.937
+    },
+    {
+      "text": "wall.",
+      "start": 2.995,
+      "end": 3.576
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "aeb5c406070f44c7fef62ff848b6e7b5adf37bbbea204065b254e4b5c03c453a",
+  "effectiveWPM": 173.489932885906
+}

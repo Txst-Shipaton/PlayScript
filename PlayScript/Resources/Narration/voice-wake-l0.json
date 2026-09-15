@@ -1,0 +1,102 @@
+{
+  "text": "Here is my love, and here I will stay. Eyes, look your last. Arms, take your last embrace.",
+  "cues": [
+    {
+      "text": "Here ",
+      "start": 0.0,
+      "end": 0.29
+    },
+    {
+      "text": "is ",
+      "start": 0.348,
+      "end": 0.43
+    },
+    {
+      "text": "my ",
+      "start": 0.499,
+      "end": 0.615
+    },
+    {
+      "text": "love, ",
+      "start": 0.697,
+      "end": 1.138
+    },
+    {
+      "text": "and ",
+      "start": 1.416,
+      "end": 1.579
+    },
+    {
+      "text": "here ",
+      "start": 1.649,
+      "end": 2.067
+    },
+    {
+      "text": "I ",
+      "start": 2.345,
+      "end": 2.415
+    },
+    {
+      "text": "will ",
+      "start": 2.496,
+      "end": 2.659
+    },
+    {
+      "text": "stay. ",
+      "start": 2.717,
+      "end": 3.251
+    },
+    {
+      "text": "Eyes, ",
+      "start": 3.947,
+      "end": 4.656
+    },
+    {
+      "text": "look ",
+      "start": 4.981,
+      "end": 5.178
+    },
+    {
+      "text": "your ",
+      "start": 5.224,
+      "end": 5.364
+    },
+    {
+      "text": "last. ",
+      "start": 5.422,
+      "end": 6.084
+    },
+    {
+      "text": "Arms, ",
+      "start": 6.525,
+      "end": 7.21
+    },
+    {
+      "text": "take ",
+      "start": 7.535,
+      "end": 7.883
+    },
+    {
+      "text": "your ",
+      "start": 7.93,
+      "end": 8.104
+    },
+    {
+      "text": "last ",
+      "start": 8.22,
+      "end": 8.591
+    },
+    {
+      "text": "embrace.",
+      "start": 8.649,
+      "end": 9.613
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "37020e7a58aac8ca96ec3de322e1738c974e450573feba6b033219d3f0246425",
+  "effectiveWPM": 119.0887340060335
+}

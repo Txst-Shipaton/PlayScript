@@ -1,0 +1,87 @@
+{
+  "text": "But every mile carries me toward her now, instead of toward a world without her.",
+  "cues": [
+    {
+      "text": "But ",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "text": "every ",
+      "start": 0.244,
+      "end": 0.511
+    },
+    {
+      "text": "mile ",
+      "start": 0.604,
+      "end": 0.998
+    },
+    {
+      "text": "carries ",
+      "start": 1.068,
+      "end": 1.451
+    },
+    {
+      "text": "me ",
+      "start": 1.498,
+      "end": 1.602
+    },
+    {
+      "text": "toward ",
+      "start": 1.66,
+      "end": 2.032
+    },
+    {
+      "text": "her ",
+      "start": 2.078,
+      "end": 2.171
+    },
+    {
+      "text": "now, ",
+      "start": 2.252,
+      "end": 2.763
+    },
+    {
+      "text": "instead ",
+      "start": 2.972,
+      "end": 3.402
+    },
+    {
+      "text": "of ",
+      "start": 3.437,
+      "end": 3.495
+    },
+    {
+      "text": "toward ",
+      "start": 3.564,
+      "end": 3.866
+    },
+    {
+      "text": "a ",
+      "start": 3.913,
+      "end": 3.947
+    },
+    {
+      "text": "world ",
+      "start": 4.005,
+      "end": 4.354
+    },
+    {
+      "text": "without ",
+      "start": 4.4,
+      "end": 4.737
+    },
+    {
+      "text": "her.",
+      "start": 4.795,
+      "end": 5.294
+    }
+  ],
+  "playbackRate": 0.9999777777777777,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "dbd20fe324b57c817232b0ee827679a4d222adaeabf3464579c1c2edaeea18b6",
+  "effectiveWPM": 170.0
+}

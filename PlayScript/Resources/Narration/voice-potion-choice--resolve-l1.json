@@ -1,0 +1,102 @@
+{
+  "text": "I drink, and set the empty vial down. I cannot make the world kinder by wishing it so.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "drink, ",
+      "start": 0.197,
+      "end": 0.557
+    },
+    {
+      "text": "and ",
+      "start": 0.58,
+      "end": 0.72
+    },
+    {
+      "text": "set ",
+      "start": 0.789,
+      "end": 0.964
+    },
+    {
+      "text": "the ",
+      "start": 0.998,
+      "end": 1.068
+    },
+    {
+      "text": "empty ",
+      "start": 1.126,
+      "end": 1.358
+    },
+    {
+      "text": "vial ",
+      "start": 1.405,
+      "end": 1.672
+    },
+    {
+      "text": "down. ",
+      "start": 1.73,
+      "end": 2.148
+    },
+    {
+      "text": "I ",
+      "start": 2.392,
+      "end": 2.461
+    },
+    {
+      "text": "cannot ",
+      "start": 2.543,
+      "end": 2.856
+    },
+    {
+      "text": "make ",
+      "start": 2.914,
+      "end": 3.065
+    },
+    {
+      "text": "the ",
+      "start": 3.1,
+      "end": 3.17
+    },
+    {
+      "text": "world ",
+      "start": 3.216,
+      "end": 3.483
+    },
+    {
+      "text": "kinder ",
+      "start": 3.541,
+      "end": 3.901
+    },
+    {
+      "text": "by ",
+      "start": 3.971,
+      "end": 4.075
+    },
+    {
+      "text": "wishing ",
+      "start": 4.133,
+      "end": 4.423
+    },
+    {
+      "text": "it ",
+      "start": 4.481,
+      "end": 4.551
+    },
+    {
+      "text": "so.",
+      "start": 4.609,
+      "end": 5.155
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "6b9d52736293699bff716a2cba20a6d2fb1d3adebcc64d98e59d40b3cbc91f88",
+  "effectiveWPM": 196.93501454898157
+}

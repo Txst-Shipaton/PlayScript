@@ -1,0 +1,102 @@
+{
+  "text": "The Friar is here. Romeo is here, too, but he does not turn when I say his name.",
+  "cues": [
+    {
+      "text": "The ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "Friar ",
+      "start": 0.174,
+      "end": 0.522
+    },
+    {
+      "text": "is ",
+      "start": 0.592,
+      "end": 0.673
+    },
+    {
+      "text": "here. ",
+      "start": 0.743,
+      "end": 1.126
+    },
+    {
+      "text": "Romeo ",
+      "start": 1.37,
+      "end": 1.776
+    },
+    {
+      "text": "is ",
+      "start": 1.869,
+      "end": 1.95
+    },
+    {
+      "text": "here, ",
+      "start": 2.02,
+      "end": 2.206
+    },
+    {
+      "text": "too, ",
+      "start": 2.229,
+      "end": 2.554
+    },
+    {
+      "text": "but ",
+      "start": 2.612,
+      "end": 2.798
+    },
+    {
+      "text": "he ",
+      "start": 2.856,
+      "end": 2.926
+    },
+    {
+      "text": "does ",
+      "start": 2.984,
+      "end": 3.123
+    },
+    {
+      "text": "not ",
+      "start": 3.17,
+      "end": 3.355
+    },
+    {
+      "text": "turn ",
+      "start": 3.39,
+      "end": 3.622
+    },
+    {
+      "text": "when ",
+      "start": 3.669,
+      "end": 3.785
+    },
+    {
+      "text": "I ",
+      "start": 3.843,
+      "end": 3.878
+    },
+    {
+      "text": "say ",
+      "start": 3.971,
+      "end": 4.122
+    },
+    {
+      "text": "his ",
+      "start": 4.18,
+      "end": 4.284
+    },
+    {
+      "text": "name.",
+      "start": 4.342,
+      "end": 4.969
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "0aac49fc8f6c72c59a3bc2b45f5dcb6907adca5e8d78fadfbee259c4e59ab181",
+  "effectiveWPM": 204.30670154960754
+}

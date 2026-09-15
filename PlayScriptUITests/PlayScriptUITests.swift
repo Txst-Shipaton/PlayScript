@@ -32,7 +32,9 @@ final class PlayScriptUITests: XCTestCase {
 
         var decisions = 0
         var sawWhatIf = false
-        for _ in 0..<35 {
+        // Passages are read two lines per page, so a full story is roughly fifty
+        // taps; the bound only needs to be safely above that.
+        for _ in 0..<90 {
             if app.buttons["closeBook"].exists { break }
             let choices = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'choice-'"))
             if choices.count > 0 {

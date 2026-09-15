@@ -1,0 +1,72 @@
+{
+  "text": "Only a little time has come between us. Less than a morning.",
+  "cues": [
+    {
+      "text": "Only ",
+      "start": 0.0,
+      "end": 0.255
+    },
+    {
+      "text": "a ",
+      "start": 0.313,
+      "end": 0.337
+    },
+    {
+      "text": "little ",
+      "start": 0.372,
+      "end": 0.58
+    },
+    {
+      "text": "time ",
+      "start": 0.604,
+      "end": 0.836
+    },
+    {
+      "text": "has ",
+      "start": 0.871,
+      "end": 0.964
+    },
+    {
+      "text": "come ",
+      "start": 1.022,
+      "end": 1.242
+    },
+    {
+      "text": "between ",
+      "start": 1.289,
+      "end": 1.614
+    },
+    {
+      "text": "us. ",
+      "start": 1.683,
+      "end": 2.032
+    },
+    {
+      "text": "Less ",
+      "start": 2.31,
+      "end": 2.554
+    },
+    {
+      "text": "than ",
+      "start": 2.589,
+      "end": 2.728
+    },
+    {
+      "text": "a ",
+      "start": 2.763,
+      "end": 2.786
+    },
+    {
+      "text": "morning.",
+      "start": 2.844,
+      "end": 3.529
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "da5a7eca4c33945ccb5b4a1a269b49c3d62d48d0ec6f589649e9118bb6d6216d",
+  "effectiveWPM": 191.78237461037122
+}

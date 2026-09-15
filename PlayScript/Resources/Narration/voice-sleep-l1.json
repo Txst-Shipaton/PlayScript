@@ -1,0 +1,77 @@
+{
+  "text": "Somewhere beyond these walls, a letter will be making its way toward him.",
+  "cues": [
+    {
+      "text": "Somewhere ",
+      "start": 0.0,
+      "end": 0.395
+    },
+    {
+      "text": "beyond ",
+      "start": 0.441,
+      "end": 0.743
+    },
+    {
+      "text": "these ",
+      "start": 0.813,
+      "end": 1.01
+    },
+    {
+      "text": "walls, ",
+      "start": 1.045,
+      "end": 1.591
+    },
+    {
+      "text": "a ",
+      "start": 1.707,
+      "end": 1.788
+    },
+    {
+      "text": "letter ",
+      "start": 1.881,
+      "end": 2.171
+    },
+    {
+      "text": "will ",
+      "start": 2.264,
+      "end": 2.426
+    },
+    {
+      "text": "be ",
+      "start": 2.473,
+      "end": 2.543
+    },
+    {
+      "text": "making ",
+      "start": 2.589,
+      "end": 2.868
+    },
+    {
+      "text": "its ",
+      "start": 2.914,
+      "end": 3.019
+    },
+    {
+      "text": "way ",
+      "start": 3.065,
+      "end": 3.216
+    },
+    {
+      "text": "toward ",
+      "start": 3.262,
+      "end": 3.576
+    },
+    {
+      "text": "him.",
+      "start": 3.634,
+      "end": 4.133
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "81668e9cbf9e74783cfb4bc8406863ab8f054021d2f0d64121460b4690dddc17",
+  "effectiveWPM": 177.40140333897892
+}

@@ -1,0 +1,52 @@
+{
+  "text": "I stay behind the curtain a moment longer.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "stay ",
+      "start": 0.163,
+      "end": 0.348
+    },
+    {
+      "text": "behind ",
+      "start": 0.406,
+      "end": 0.639
+    },
+    {
+      "text": "the ",
+      "start": 0.685,
+      "end": 0.755
+    },
+    {
+      "text": "curtain ",
+      "start": 0.789,
+      "end": 1.103
+    },
+    {
+      "text": "a ",
+      "start": 1.184,
+      "end": 1.219
+    },
+    {
+      "text": "moment ",
+      "start": 1.312,
+      "end": 1.591
+    },
+    {
+      "text": "longer.",
+      "start": 1.649,
+      "end": 2.368
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "4b32b28221123ce02c7a843c5daa51068221cc0486455f46d89f72e56c3aab1a",
+  "effectiveWPM": 190.54054054054055
+}

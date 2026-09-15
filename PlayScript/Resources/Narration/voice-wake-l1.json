@@ -1,0 +1,47 @@
+{
+  "text": "I wake to stone beneath my hands.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "wake ",
+      "start": 0.174,
+      "end": 0.372
+    },
+    {
+      "text": "to ",
+      "start": 0.406,
+      "end": 0.476
+    },
+    {
+      "text": "stone ",
+      "start": 0.546,
+      "end": 0.882
+    },
+    {
+      "text": "beneath ",
+      "start": 0.929,
+      "end": 1.196
+    },
+    {
+      "text": "my ",
+      "start": 1.254,
+      "end": 1.37
+    },
+    {
+      "text": "hands.",
+      "start": 1.44,
+      "end": 2.136
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "f4898acff5cec0b863f0969122e612ea64c65f62824cf285ea05b2201ae316e6",
+  "effectiveWPM": 184.83146067415728
+}

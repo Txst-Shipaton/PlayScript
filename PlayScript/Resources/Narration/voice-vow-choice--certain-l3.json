@@ -1,0 +1,82 @@
+{
+  "text": "Send them early. I will have been at Friar Laurence’s door before the bells.",
+  "cues": [
+    {
+      "text": "Send ",
+      "start": 0.0,
+      "end": 0.255
+    },
+    {
+      "text": "them ",
+      "start": 0.302,
+      "end": 0.418
+    },
+    {
+      "text": "early. ",
+      "start": 0.499,
+      "end": 0.998
+    },
+    {
+      "text": "I ",
+      "start": 1.44,
+      "end": 1.498
+    },
+    {
+      "text": "will ",
+      "start": 1.567,
+      "end": 1.695
+    },
+    {
+      "text": "have ",
+      "start": 1.753,
+      "end": 1.892
+    },
+    {
+      "text": "been ",
+      "start": 1.939,
+      "end": 2.159
+    },
+    {
+      "text": "at ",
+      "start": 2.206,
+      "end": 2.276
+    },
+    {
+      "text": "Friar ",
+      "start": 2.345,
+      "end": 2.635
+    },
+    {
+      "text": "Laurence’s ",
+      "start": 2.67,
+      "end": 3.123
+    },
+    {
+      "text": "door ",
+      "start": 3.17,
+      "end": 3.495
+    },
+    {
+      "text": "before ",
+      "start": 3.82,
+      "end": 4.191
+    },
+    {
+      "text": "the ",
+      "start": 4.226,
+      "end": 4.296
+    },
+    {
+      "text": "bells.",
+      "start": 4.342,
+      "end": 5.201
+    }
+  ],
+  "playbackRate": 1.0525833333333332,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "70c23b40693b2bfc6785883c129a68b70e2f7bd640d78a86ea0331a01a286ec0",
+  "effectiveWPM": 170.0
+}

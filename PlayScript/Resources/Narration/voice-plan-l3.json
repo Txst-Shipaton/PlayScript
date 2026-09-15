@@ -1,0 +1,87 @@
+{
+  "text": "He will come to the tomb and be beside me when I open my eyes.",
+  "cues": [
+    {
+      "text": "He ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "will ",
+      "start": 0.174,
+      "end": 0.313
+    },
+    {
+      "text": "come ",
+      "start": 0.36,
+      "end": 0.522
+    },
+    {
+      "text": "to ",
+      "start": 0.557,
+      "end": 0.615
+    },
+    {
+      "text": "the ",
+      "start": 0.685,
+      "end": 0.755
+    },
+    {
+      "text": "tomb ",
+      "start": 0.801,
+      "end": 1.08
+    },
+    {
+      "text": "and ",
+      "start": 1.149,
+      "end": 1.289
+    },
+    {
+      "text": "be ",
+      "start": 1.358,
+      "end": 1.463
+    },
+    {
+      "text": "beside ",
+      "start": 1.521,
+      "end": 1.904
+    },
+    {
+      "text": "me ",
+      "start": 1.95,
+      "end": 2.043
+    },
+    {
+      "text": "when ",
+      "start": 2.078,
+      "end": 2.218
+    },
+    {
+      "text": "I ",
+      "start": 2.276,
+      "end": 2.31
+    },
+    {
+      "text": "open ",
+      "start": 2.403,
+      "end": 2.612
+    },
+    {
+      "text": "my ",
+      "start": 2.659,
+      "end": 2.763
+    },
+    {
+      "text": "eyes.",
+      "start": 2.844,
+      "end": 3.529
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "3766b2c9e37b7f8e95fbd0d4390b3a5ec24360fe100797bf3f279aa8c4e12e5f",
+  "effectiveWPM": 239.727968262964
+}

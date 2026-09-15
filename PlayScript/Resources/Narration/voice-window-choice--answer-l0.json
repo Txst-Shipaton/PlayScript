@@ -1,0 +1,47 @@
+{
+  "text": "I lean beyond the stone sill. “Romeo.”",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "lean ",
+      "start": 0.197,
+      "end": 0.383
+    },
+    {
+      "text": "beyond ",
+      "start": 0.441,
+      "end": 0.697
+    },
+    {
+      "text": "the ",
+      "start": 0.743,
+      "end": 0.813
+    },
+    {
+      "text": "stone ",
+      "start": 0.848,
+      "end": 1.126
+    },
+    {
+      "text": "sill. ",
+      "start": 1.184,
+      "end": 1.683
+    },
+    {
+      "text": "“Romeo.”",
+      "start": 1.741,
+      "end": 2.694
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "be4169b81b57ad46e0551166be649d86bac087d5f9ce0473a819f225d3b212b6",
+  "effectiveWPM": 165.25612472160356
+}

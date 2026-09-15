@@ -1,0 +1,32 @@
+{
+  "text": "Some stories cannot change.",
+  "cues": [
+    {
+      "text": "Some ",
+      "start": 0.0,
+      "end": 0.255
+    },
+    {
+      "text": "stories ",
+      "start": 0.29,
+      "end": 0.662
+    },
+    {
+      "text": "cannot ",
+      "start": 0.708,
+      "end": 0.987
+    },
+    {
+      "text": "change.",
+      "start": 1.033,
+      "end": 1.858
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "2dd8814071a2f0752723d6c566b919cacd22a5b138f217a547cec6ea0d9cfccf",
+  "effectiveWPM": 136.92142088266954
+}

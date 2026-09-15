@@ -1,0 +1,67 @@
+{
+  "text": "I lie down with his name still warm in my mouth.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "lie ",
+      "start": 0.197,
+      "end": 0.372
+    },
+    {
+      "text": "down ",
+      "start": 0.406,
+      "end": 0.604
+    },
+    {
+      "text": "with ",
+      "start": 0.65,
+      "end": 0.778
+    },
+    {
+      "text": "his ",
+      "start": 0.824,
+      "end": 0.94
+    },
+    {
+      "text": "name ",
+      "start": 1.01,
+      "end": 1.277
+    },
+    {
+      "text": "still ",
+      "start": 1.358,
+      "end": 1.66
+    },
+    {
+      "text": "warm ",
+      "start": 1.73,
+      "end": 2.009
+    },
+    {
+      "text": "in ",
+      "start": 2.055,
+      "end": 2.113
+    },
+    {
+      "text": "my ",
+      "start": 2.183,
+      "end": 2.264
+    },
+    {
+      "text": "mouth.",
+      "start": 2.322,
+      "end": 2.972
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "07eeab57610dd7375ecf54d67538c6846511e90789996db6f5d3e9fc000ea919",
+  "effectiveWPM": 208.74831763122475
+}

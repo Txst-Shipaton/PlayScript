@@ -1,0 +1,72 @@
+{
+  "text": "Just once, let me imagine a world that gave us enough time.",
+  "cues": [
+    {
+      "text": "Just ",
+      "start": 0.0,
+      "end": 0.29
+    },
+    {
+      "text": "once, ",
+      "start": 0.372,
+      "end": 0.708
+    },
+    {
+      "text": "let ",
+      "start": 0.743,
+      "end": 0.882
+    },
+    {
+      "text": "me ",
+      "start": 0.917,
+      "end": 0.998
+    },
+    {
+      "text": "imagine ",
+      "start": 1.057,
+      "end": 1.44
+    },
+    {
+      "text": "a ",
+      "start": 1.474,
+      "end": 1.498
+    },
+    {
+      "text": "world ",
+      "start": 1.556,
+      "end": 1.846
+    },
+    {
+      "text": "that ",
+      "start": 1.892,
+      "end": 2.02
+    },
+    {
+      "text": "gave ",
+      "start": 2.078,
+      "end": 2.252
+    },
+    {
+      "text": "us ",
+      "start": 2.299,
+      "end": 2.38
+    },
+    {
+      "text": "enough ",
+      "start": 2.438,
+      "end": 2.67
+    },
+    {
+      "text": "time.",
+      "start": 2.705,
+      "end": 3.344
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "105ec995da4be34e487fa83e7961f374ce93aa57f60759302671e8feb75f0cec",
+  "effectiveWPM": 202.39234449760764
+}

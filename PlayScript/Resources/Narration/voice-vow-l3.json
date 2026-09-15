@@ -1,0 +1,67 @@
+{
+  "text": "By nothing. Or by yourself, if you must swear at all.",
+  "cues": [
+    {
+      "text": "By ",
+      "start": 0.0,
+      "end": 0.174
+    },
+    {
+      "text": "nothing. ",
+      "start": 0.244,
+      "end": 0.708
+    },
+    {
+      "text": "Or ",
+      "start": 0.766,
+      "end": 0.94
+    },
+    {
+      "text": "by ",
+      "start": 1.01,
+      "end": 1.138
+    },
+    {
+      "text": "yourself, ",
+      "start": 1.196,
+      "end": 1.753
+    },
+    {
+      "text": "if ",
+      "start": 1.8,
+      "end": 1.927
+    },
+    {
+      "text": "you ",
+      "start": 1.985,
+      "end": 2.067
+    },
+    {
+      "text": "must ",
+      "start": 2.125,
+      "end": 2.299
+    },
+    {
+      "text": "swear ",
+      "start": 2.322,
+      "end": 2.554
+    },
+    {
+      "text": "at ",
+      "start": 2.601,
+      "end": 2.659
+    },
+    {
+      "text": "all.",
+      "start": 2.705,
+      "end": 3.158
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "c2f8aa54070c6a00e2cbb718f823686d5eaddaedabda2dd96f562c35a25c5953",
+  "effectiveWPM": 196.45345155161493
+}

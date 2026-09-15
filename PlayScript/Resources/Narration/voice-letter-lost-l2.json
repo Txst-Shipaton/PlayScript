@@ -1,0 +1,52 @@
+{
+  "text": "All our tomorrows have narrowed to this silence.",
+  "cues": [
+    {
+      "text": "All ",
+      "start": 0.0,
+      "end": 0.186
+    },
+    {
+      "text": "our ",
+      "start": 0.232,
+      "end": 0.337
+    },
+    {
+      "text": "tomorrows ",
+      "start": 0.395,
+      "end": 0.871
+    },
+    {
+      "text": "have ",
+      "start": 0.929,
+      "end": 1.091
+    },
+    {
+      "text": "narrowed ",
+      "start": 1.149,
+      "end": 1.637
+    },
+    {
+      "text": "to ",
+      "start": 1.683,
+      "end": 1.753
+    },
+    {
+      "text": "this ",
+      "start": 1.823,
+      "end": 1.985
+    },
+    {
+      "text": "silence.",
+      "start": 2.032,
+      "end": 2.879
+    }
+  ],
+  "playbackRate": 1.0196458333333334,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "dbedb306cb4ce139362f213785764822419d375b88378c40b10c1c9c89fc9bb8",
+  "effectiveWPM": 170.0
+}

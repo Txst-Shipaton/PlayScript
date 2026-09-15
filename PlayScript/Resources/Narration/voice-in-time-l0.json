@@ -1,0 +1,67 @@
+{
+  "text": "In the tomb, I kneel beside her and take her hand.",
+  "cues": [
+    {
+      "text": "In ",
+      "start": 0.0,
+      "end": 0.151
+    },
+    {
+      "text": "the ",
+      "start": 0.186,
+      "end": 0.255
+    },
+    {
+      "text": "tomb, ",
+      "start": 0.29,
+      "end": 0.673
+    },
+    {
+      "text": "I ",
+      "start": 0.952,
+      "end": 1.022
+    },
+    {
+      "text": "kneel ",
+      "start": 1.115,
+      "end": 1.358
+    },
+    {
+      "text": "beside ",
+      "start": 1.416,
+      "end": 1.811
+    },
+    {
+      "text": "her ",
+      "start": 1.858,
+      "end": 2.009
+    },
+    {
+      "text": "and ",
+      "start": 2.287,
+      "end": 2.45
+    },
+    {
+      "text": "take ",
+      "start": 2.496,
+      "end": 2.705
+    },
+    {
+      "text": "her ",
+      "start": 2.752,
+      "end": 2.856
+    },
+    {
+      "text": "hand.",
+      "start": 2.926,
+      "end": 3.669
+    }
+  ],
+  "playbackRate": 0.9450454545454545,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "3baed99457b97ab006c90b5f939fe61a20f10448ed67b5f40d146486708693bd",
+  "effectiveWPM": 170.0
+}

@@ -14,6 +14,10 @@ The app has one third-party runtime dependency, [lottie-ios](https://github.com/
 
 - A cream, rose, and burgundy library with a custom glass treatment and literary typography.
 - One story, presented in 19 short reading beats across the requested fixed sequence.
+- Both lovers speak. Each beat is written as attributed lines, and the reader shows
+  **two lines at a time** rather than a block of prose, so Romeo can answer Juliet
+  within a page. Each line is narrated in its own character's voice, and the lines
+  of a page play in order.
 - Exactly two thoughts at each of three decisions. Thoughts rise into view; the selected thought lingers as the other falls away, then reveals its own flavor text. Every choice reaches the same next beat.
 - A quiet fade into the “what if” ending, explicitly distinguished from Shakespeare’s tragedy.
 - A closing reflection, replay, and automatic restoration of both your place and selected flavor text.
@@ -64,14 +68,25 @@ the offline Python script only; the app reads bundled MP3 and JSON files.
 
 ```sh
 python3 Scripts/create_narration.py                  # free inventory
+python3 Scripts/create_narration.py --prune          # drop clips the script dropped
 python3 Scripts/create_narration.py --generate       # uses ElevenLabs credits
 python3 Scripts/create_score.py --generate           # music cues and effects
 python3 Scripts/create_project.py                    # include generated clips
 python3 -m unittest discover -s Scripts -p 'test_*.py'
 ```
 
-All 25 narration clips, five mood score cues, and seven effects are generated and
-checked in, so playback is immediate and entirely offline. `create_score.py` writes
+Narration is generated **per line**, not per passage: 110 clips, 74 Juliet and 36
+Romeo, each named `voice-<beat>[--<choice>]-l<line>`. The speaker on the line picks
+the voice, so a page can change speaker mid-way. Those clips, five mood score cues,
+and seven effects are all generated and checked in, so playback is immediate and
+entirely offline.
+
+Delivery is tuned for a human reading rather than an even one: stability is kept low
+(the provider treats high stability as flat delivery, which is what sounds robotic),
+style carries the mood, and the pitch-preserving playback-rate correction is now
+clamped to ±6% — a reading that is naturally off-pace is left alone instead of being
+stretched. Set `ELEVENLABS_JULIET_VOICE_ID` or `ELEVENLABS_ROMEO_VOICE_ID` in `.env`
+to recast either part, then rerun with `--prune --generate`. `create_score.py` writes
 `PlayScript/Resources/Score`: `score-<mood>.mp3` per mood and `fx-<name>.mp3` for the
 four location loops (orchard, candle, tomb, road) and three gestures (letter, choice,
 turn). `Soundscape` prefers these over the original synthesized WAVs and falls back to

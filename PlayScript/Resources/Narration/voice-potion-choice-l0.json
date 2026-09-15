@@ -1,0 +1,107 @@
+{
+  "text": "Alone in my chamber, I lift the vial. What if I wake too soon? What if no one comes?",
+  "cues": [
+    {
+      "text": "Alone ",
+      "start": 0.0,
+      "end": 0.348
+    },
+    {
+      "text": "in ",
+      "start": 0.383,
+      "end": 0.441
+    },
+    {
+      "text": "my ",
+      "start": 0.488,
+      "end": 0.58
+    },
+    {
+      "text": "chamber, ",
+      "start": 0.639,
+      "end": 1.068
+    },
+    {
+      "text": "I ",
+      "start": 1.103,
+      "end": 1.149
+    },
+    {
+      "text": "lift ",
+      "start": 1.265,
+      "end": 1.521
+    },
+    {
+      "text": "the ",
+      "start": 1.591,
+      "end": 1.672
+    },
+    {
+      "text": "vial. ",
+      "start": 1.718,
+      "end": 2.241
+    },
+    {
+      "text": "What ",
+      "start": 2.45,
+      "end": 2.635
+    },
+    {
+      "text": "if ",
+      "start": 2.67,
+      "end": 2.74
+    },
+    {
+      "text": "I ",
+      "start": 2.81,
+      "end": 2.844
+    },
+    {
+      "text": "wake ",
+      "start": 2.961,
+      "end": 3.216
+    },
+    {
+      "text": "too ",
+      "start": 3.262,
+      "end": 3.413
+    },
+    {
+      "text": "soon? ",
+      "start": 3.471,
+      "end": 3.913
+    },
+    {
+      "text": "What ",
+      "start": 4.005,
+      "end": 4.191
+    },
+    {
+      "text": "if ",
+      "start": 4.226,
+      "end": 4.296
+    },
+    {
+      "text": "no ",
+      "start": 4.365,
+      "end": 4.447
+    },
+    {
+      "text": "one ",
+      "start": 4.516,
+      "end": 4.644
+    },
+    {
+      "text": "comes?",
+      "start": 4.69,
+      "end": 5.48
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "21eef24b7837c5df36acf92c5d6cbc1ad523c010e5945594ab0228f397625af8",
+  "effectiveWPM": 195.54744525547443
+}

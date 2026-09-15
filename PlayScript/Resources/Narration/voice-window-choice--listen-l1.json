@@ -1,0 +1,117 @@
+{
+  "text": "She speaks and says nothing. Two of the fairest stars in heaven could not do the work her eyes are doing.",
+  "cues": [
+    {
+      "text": "She ",
+      "start": 0.0,
+      "end": 0.174
+    },
+    {
+      "text": "speaks ",
+      "start": 0.221,
+      "end": 0.639
+    },
+    {
+      "text": "and ",
+      "start": 0.848,
+      "end": 0.998
+    },
+    {
+      "text": "says ",
+      "start": 1.057,
+      "end": 1.254
+    },
+    {
+      "text": "nothing. ",
+      "start": 1.312,
+      "end": 1.823
+    },
+    {
+      "text": "Two ",
+      "start": 2.334,
+      "end": 2.519
+    },
+    {
+      "text": "of ",
+      "start": 2.577,
+      "end": 2.635
+    },
+    {
+      "text": "the ",
+      "start": 2.67,
+      "end": 2.752
+    },
+    {
+      "text": "fairest ",
+      "start": 2.821,
+      "end": 3.228
+    },
+    {
+      "text": "stars ",
+      "start": 3.274,
+      "end": 3.657
+    },
+    {
+      "text": "in ",
+      "start": 3.704,
+      "end": 3.785
+    },
+    {
+      "text": "heaven ",
+      "start": 3.855,
+      "end": 4.18
+    },
+    {
+      "text": "could ",
+      "start": 4.505,
+      "end": 4.725
+    },
+    {
+      "text": "not ",
+      "start": 4.772,
+      "end": 4.899
+    },
+    {
+      "text": "do ",
+      "start": 4.969,
+      "end": 5.108
+    },
+    {
+      "text": "the ",
+      "start": 5.19,
+      "end": 5.259
+    },
+    {
+      "text": "work ",
+      "start": 5.306,
+      "end": 5.631
+    },
+    {
+      "text": "her ",
+      "start": 5.956,
+      "end": 6.13
+    },
+    {
+      "text": "eyes ",
+      "start": 6.211,
+      "end": 6.525
+    },
+    {
+      "text": "are ",
+      "start": 6.594,
+      "end": 6.734
+    },
+    {
+      "text": "doing.",
+      "start": 6.78,
+      "end": 7.477
+    }
+  ],
+  "playbackRate": 1.0088015873015872,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "273744483c0d2c05460805937fcfe35c282ecadf386597634d3fcfc4af7fd9d9",
+  "effectiveWPM": 169.99999999999997
+}

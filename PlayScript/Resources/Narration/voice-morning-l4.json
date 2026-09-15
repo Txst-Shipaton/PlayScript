@@ -1,0 +1,92 @@
+{
+  "text": "At last he goes. I stay at the window, holding the silence he has left me.",
+  "cues": [
+    {
+      "text": "At ",
+      "start": 0.0,
+      "end": 0.151
+    },
+    {
+      "text": "last ",
+      "start": 0.209,
+      "end": 0.488
+    },
+    {
+      "text": "he ",
+      "start": 0.546,
+      "end": 0.615
+    },
+    {
+      "text": "goes. ",
+      "start": 0.685,
+      "end": 1.265
+    },
+    {
+      "text": "I ",
+      "start": 1.649,
+      "end": 1.707
+    },
+    {
+      "text": "stay ",
+      "start": 1.8,
+      "end": 1.974
+    },
+    {
+      "text": "at ",
+      "start": 2.02,
+      "end": 2.078
+    },
+    {
+      "text": "the ",
+      "start": 2.113,
+      "end": 2.183
+    },
+    {
+      "text": "window, ",
+      "start": 2.229,
+      "end": 2.694
+    },
+    {
+      "text": "holding ",
+      "start": 2.763,
+      "end": 3.123
+    },
+    {
+      "text": "the ",
+      "start": 3.193,
+      "end": 3.262
+    },
+    {
+      "text": "silence ",
+      "start": 3.32,
+      "end": 3.808
+    },
+    {
+      "text": "he ",
+      "start": 3.843,
+      "end": 3.901
+    },
+    {
+      "text": "has ",
+      "start": 3.936,
+      "end": 4.029
+    },
+    {
+      "text": "left ",
+      "start": 4.087,
+      "end": 4.296
+    },
+    {
+      "text": "me.",
+      "start": 4.365,
+      "end": 4.83
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "e385beaee525e1fb1be7614f9f933768aa9e49748a8b35c2aaadfe65a16e9039",
+  "effectiveWPM": 186.83229813664593
+}

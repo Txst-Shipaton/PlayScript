@@ -1,0 +1,72 @@
+{
+  "text": "I lie down and imagine his hand finding mine in the dark.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "lie ",
+      "start": 0.197,
+      "end": 0.372
+    },
+    {
+      "text": "down ",
+      "start": 0.406,
+      "end": 0.627
+    },
+    {
+      "text": "and ",
+      "start": 0.673,
+      "end": 0.755
+    },
+    {
+      "text": "imagine ",
+      "start": 0.813,
+      "end": 1.242
+    },
+    {
+      "text": "his ",
+      "start": 1.277,
+      "end": 1.393
+    },
+    {
+      "text": "hand ",
+      "start": 1.44,
+      "end": 1.695
+    },
+    {
+      "text": "finding ",
+      "start": 1.765,
+      "end": 2.113
+    },
+    {
+      "text": "mine ",
+      "start": 2.171,
+      "end": 2.438
+    },
+    {
+      "text": "in ",
+      "start": 2.473,
+      "end": 2.531
+    },
+    {
+      "text": "the ",
+      "start": 2.577,
+      "end": 2.647
+    },
+    {
+      "text": "dark.",
+      "start": 2.682,
+      "end": 3.297
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "03b127f3ea4133f67721bc0640e22704344cc772e1c8a4b277246a0ea4611108",
+  "effectiveWPM": 205.27752502274794
+}

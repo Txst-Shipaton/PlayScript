@@ -1,0 +1,57 @@
+{
+  "text": "My yes is quiet. It is still a yes.",
+  "cues": [
+    {
+      "text": "My ",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "text": "yes ",
+      "start": 0.267,
+      "end": 0.488
+    },
+    {
+      "text": "is ",
+      "start": 0.557,
+      "end": 0.65
+    },
+    {
+      "text": "quiet. ",
+      "start": 0.72,
+      "end": 1.242
+    },
+    {
+      "text": "It ",
+      "start": 1.486,
+      "end": 1.625
+    },
+    {
+      "text": "is ",
+      "start": 1.672,
+      "end": 1.741
+    },
+    {
+      "text": "still ",
+      "start": 1.765,
+      "end": 2.067
+    },
+    {
+      "text": "a ",
+      "start": 2.159,
+      "end": 2.194
+    },
+    {
+      "text": "yes.",
+      "start": 2.276,
+      "end": 2.926
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "15a520bc1f829382f1437e8031871bd8797a4af09ef7e5887de93b67c1005fa2",
+  "effectiveWPM": 173.4791524265208
+}

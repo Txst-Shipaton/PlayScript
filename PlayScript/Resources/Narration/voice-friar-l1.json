@@ -1,0 +1,102 @@
+{
+  "text": "Then Tybalt is dead by Romeo’s hand, Romeo is banished, and my father has promised me to Paris.",
+  "cues": [
+    {
+      "text": "Then ",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "text": "Tybalt ",
+      "start": 0.29,
+      "end": 0.604
+    },
+    {
+      "text": "is ",
+      "start": 0.65,
+      "end": 0.731
+    },
+    {
+      "text": "dead ",
+      "start": 0.789,
+      "end": 1.01
+    },
+    {
+      "text": "by ",
+      "start": 1.057,
+      "end": 1.173
+    },
+    {
+      "text": "Romeo’s ",
+      "start": 1.242,
+      "end": 1.718
+    },
+    {
+      "text": "hand, ",
+      "start": 1.765,
+      "end": 2.194
+    },
+    {
+      "text": "Romeo ",
+      "start": 2.519,
+      "end": 2.949
+    },
+    {
+      "text": "is ",
+      "start": 3.03,
+      "end": 3.135
+    },
+    {
+      "text": "banished, ",
+      "start": 3.204,
+      "end": 3.773
+    },
+    {
+      "text": "and ",
+      "start": 3.796,
+      "end": 3.936
+    },
+    {
+      "text": "my ",
+      "start": 4.052,
+      "end": 4.18
+    },
+    {
+      "text": "father ",
+      "start": 4.261,
+      "end": 4.598
+    },
+    {
+      "text": "has ",
+      "start": 4.656,
+      "end": 4.772
+    },
+    {
+      "text": "promised ",
+      "start": 4.853,
+      "end": 5.329
+    },
+    {
+      "text": "me ",
+      "start": 5.387,
+      "end": 5.526
+    },
+    {
+      "text": "to ",
+      "start": 5.596,
+      "end": 5.689
+    },
+    {
+      "text": "Paris.",
+      "start": 5.759,
+      "end": 6.594
+    }
+  ],
+  "playbackRate": 1.0379444444444446,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "5f0011f8a5c4204117978ad53ed27f321e5ce87e2c1b571499a8a8351620d1d8",
+  "effectiveWPM": 170.0
+}

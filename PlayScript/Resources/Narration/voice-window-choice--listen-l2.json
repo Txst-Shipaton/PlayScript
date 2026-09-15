@@ -1,0 +1,122 @@
+{
+  "text": "Let the night keep me, then. I will not go home to a house that has no word of her in it.",
+  "cues": [
+    {
+      "text": "Let ",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "text": "the ",
+      "start": 0.255,
+      "end": 0.325
+    },
+    {
+      "text": "night ",
+      "start": 0.395,
+      "end": 0.615
+    },
+    {
+      "text": "keep ",
+      "start": 0.673,
+      "end": 0.906
+    },
+    {
+      "text": "me, ",
+      "start": 0.964,
+      "end": 1.091
+    },
+    {
+      "text": "then. ",
+      "start": 1.115,
+      "end": 1.614
+    },
+    {
+      "text": "I ",
+      "start": 2.055,
+      "end": 2.101
+    },
+    {
+      "text": "will ",
+      "start": 2.183,
+      "end": 2.345
+    },
+    {
+      "text": "not ",
+      "start": 2.403,
+      "end": 2.577
+    },
+    {
+      "text": "go ",
+      "start": 2.647,
+      "end": 2.798
+    },
+    {
+      "text": "home ",
+      "start": 2.879,
+      "end": 3.135
+    },
+    {
+      "text": "to ",
+      "start": 3.193,
+      "end": 3.286
+    },
+    {
+      "text": "a ",
+      "start": 3.367,
+      "end": 3.402
+    },
+    {
+      "text": "house ",
+      "start": 3.483,
+      "end": 3.936
+    },
+    {
+      "text": "that ",
+      "start": 4.087,
+      "end": 4.261
+    },
+    {
+      "text": "has ",
+      "start": 4.296,
+      "end": 4.435
+    },
+    {
+      "text": "no ",
+      "start": 4.528,
+      "end": 4.714
+    },
+    {
+      "text": "word ",
+      "start": 4.795,
+      "end": 5.062
+    },
+    {
+      "text": "of ",
+      "start": 5.108,
+      "end": 5.166
+    },
+    {
+      "text": "her ",
+      "start": 5.224,
+      "end": 5.329
+    },
+    {
+      "text": "in ",
+      "start": 5.41,
+      "end": 5.526
+    },
+    {
+      "text": "it.",
+      "start": 5.584,
+      "end": 6.084
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "b1d530dbffc692c5b0064de6f2c50840b9fcc9147d3e1f2ad1da93a535dea7bd",
+  "effectiveWPM": 203.94477317554242
+}

@@ -1,0 +1,92 @@
+{
+  "text": "Good night. Good night. I could say it a hundred times and still be standing here.",
+  "cues": [
+    {
+      "text": "Good ",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "text": "night. ",
+      "start": 0.267,
+      "end": 0.639
+    },
+    {
+      "text": "Good ",
+      "start": 0.917,
+      "end": 1.103
+    },
+    {
+      "text": "night. ",
+      "start": 1.149,
+      "end": 1.556
+    },
+    {
+      "text": "I ",
+      "start": 2.067,
+      "end": 2.136
+    },
+    {
+      "text": "could ",
+      "start": 2.229,
+      "end": 2.403
+    },
+    {
+      "text": "say ",
+      "start": 2.45,
+      "end": 2.612
+    },
+    {
+      "text": "it ",
+      "start": 2.659,
+      "end": 2.728
+    },
+    {
+      "text": "a ",
+      "start": 2.775,
+      "end": 2.798
+    },
+    {
+      "text": "hundred ",
+      "start": 2.879,
+      "end": 3.181
+    },
+    {
+      "text": "times ",
+      "start": 3.216,
+      "end": 3.669
+    },
+    {
+      "text": "and ",
+      "start": 3.715,
+      "end": 3.82
+    },
+    {
+      "text": "still ",
+      "start": 3.889,
+      "end": 4.156
+    },
+    {
+      "text": "be ",
+      "start": 4.214,
+      "end": 4.307
+    },
+    {
+      "text": "standing ",
+      "start": 4.354,
+      "end": 4.772
+    },
+    {
+      "text": "here.",
+      "start": 4.865,
+      "end": 5.526
+    }
+  ],
+  "playbackRate": 0.9785625,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "8109ce5314837b2c4a6532dd63a1e6377b8c9e4e438eb1517b6bdf59e22600a6",
+  "effectiveWPM": 170.0
+}

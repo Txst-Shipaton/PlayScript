@@ -1,0 +1,67 @@
+{
+  "text": "Go. The light is coming, and it does not love us.",
+  "cues": [
+    {
+      "text": "Go. ",
+      "start": 0.0,
+      "end": 0.476
+    },
+    {
+      "text": "The ",
+      "start": 0.546,
+      "end": 0.673
+    },
+    {
+      "text": "light ",
+      "start": 0.743,
+      "end": 0.94
+    },
+    {
+      "text": "is ",
+      "start": 0.975,
+      "end": 1.045
+    },
+    {
+      "text": "coming, ",
+      "start": 1.103,
+      "end": 1.451
+    },
+    {
+      "text": "and ",
+      "start": 1.486,
+      "end": 1.625
+    },
+    {
+      "text": "it ",
+      "start": 1.695,
+      "end": 1.753
+    },
+    {
+      "text": "does ",
+      "start": 1.8,
+      "end": 1.95
+    },
+    {
+      "text": "not ",
+      "start": 2.032,
+      "end": 2.31
+    },
+    {
+      "text": "love ",
+      "start": 2.403,
+      "end": 2.624
+    },
+    {
+      "text": "us.",
+      "start": 2.682,
+      "end": 3.204
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "5e201b3aa8eb496a8b10742c203de93362c00109124e30bf0ca8d1926d3e60de",
+  "effectiveWPM": 193.63295880149812
+}

@@ -1,0 +1,117 @@
+{
+  "text": "But Romeo came here believing I was gone. He was not wrong for a single hour, and it cost him everything.",
+  "cues": [
+    {
+      "text": "But ",
+      "start": 0.0,
+      "end": 0.174
+    },
+    {
+      "text": "Romeo ",
+      "start": 0.221,
+      "end": 0.615
+    },
+    {
+      "text": "came ",
+      "start": 0.685,
+      "end": 0.871
+    },
+    {
+      "text": "here ",
+      "start": 0.906,
+      "end": 1.057
+    },
+    {
+      "text": "believing ",
+      "start": 1.103,
+      "end": 1.544
+    },
+    {
+      "text": "I ",
+      "start": 1.625,
+      "end": 1.672
+    },
+    {
+      "text": "was ",
+      "start": 1.753,
+      "end": 1.869
+    },
+    {
+      "text": "gone. ",
+      "start": 1.927,
+      "end": 2.438
+    },
+    {
+      "text": "He ",
+      "start": 2.682,
+      "end": 2.81
+    },
+    {
+      "text": "was ",
+      "start": 2.868,
+      "end": 2.984
+    },
+    {
+      "text": "not ",
+      "start": 3.042,
+      "end": 3.193
+    },
+    {
+      "text": "wrong ",
+      "start": 3.239,
+      "end": 3.483
+    },
+    {
+      "text": "for ",
+      "start": 3.541,
+      "end": 3.657
+    },
+    {
+      "text": "a ",
+      "start": 3.715,
+      "end": 3.738
+    },
+    {
+      "text": "single ",
+      "start": 3.796,
+      "end": 4.156
+    },
+    {
+      "text": "hour, ",
+      "start": 4.203,
+      "end": 4.737
+    },
+    {
+      "text": "and ",
+      "start": 4.911,
+      "end": 5.062
+    },
+    {
+      "text": "it ",
+      "start": 5.12,
+      "end": 5.19
+    },
+    {
+      "text": "cost ",
+      "start": 5.236,
+      "end": 5.526
+    },
+    {
+      "text": "him ",
+      "start": 5.573,
+      "end": 5.677
+    },
+    {
+      "text": "everything.",
+      "start": 5.793,
+      "end": 6.827
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "3f0faf2d0610ca90eecd1190621cf7a4adbdf18093e9b9ece62e2f7256ee4759",
+  "effectiveWPM": 173.48762267467407
+}

@@ -1,0 +1,102 @@
+{
+  "text": "I mean it. Ask the Friar at dawn, if you doubt me. I will already be waiting there.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "mean ",
+      "start": 0.209,
+      "end": 0.383
+    },
+    {
+      "text": "it. ",
+      "start": 0.43,
+      "end": 0.72
+    },
+    {
+      "text": "Ask ",
+      "start": 1.045,
+      "end": 1.289
+    },
+    {
+      "text": "the ",
+      "start": 1.347,
+      "end": 1.416
+    },
+    {
+      "text": "Friar ",
+      "start": 1.463,
+      "end": 1.788
+    },
+    {
+      "text": "at ",
+      "start": 1.858,
+      "end": 1.962
+    },
+    {
+      "text": "dawn, ",
+      "start": 2.032,
+      "end": 2.368
+    },
+    {
+      "text": "if ",
+      "start": 2.392,
+      "end": 2.461
+    },
+    {
+      "text": "you ",
+      "start": 2.508,
+      "end": 2.601
+    },
+    {
+      "text": "doubt ",
+      "start": 2.682,
+      "end": 2.914
+    },
+    {
+      "text": "me. ",
+      "start": 2.984,
+      "end": 3.251
+    },
+    {
+      "text": "I ",
+      "start": 3.576,
+      "end": 3.634
+    },
+    {
+      "text": "will ",
+      "start": 3.715,
+      "end": 3.866
+    },
+    {
+      "text": "already ",
+      "start": 3.936,
+      "end": 4.319
+    },
+    {
+      "text": "be ",
+      "start": 4.389,
+      "end": 4.481
+    },
+    {
+      "text": "waiting ",
+      "start": 4.528,
+      "end": 4.841
+    },
+    {
+      "text": "there.",
+      "start": 4.899,
+      "end": 5.573
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "51622286ad756a56a2ed3f8aaeb678f14dd82f45e54c18cfa1e0442e0c6e17c7",
+  "effectiveWPM": 182.16400502422394
+}

@@ -1,0 +1,52 @@
+{
+  "text": "I kiss him. His lips are still warm.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "kiss ",
+      "start": 0.186,
+      "end": 0.418
+    },
+    {
+      "text": "him. ",
+      "start": 0.464,
+      "end": 0.731
+    },
+    {
+      "text": "His ",
+      "start": 0.824,
+      "end": 0.998
+    },
+    {
+      "text": "lips ",
+      "start": 1.068,
+      "end": 1.3
+    },
+    {
+      "text": "are ",
+      "start": 1.335,
+      "end": 1.451
+    },
+    {
+      "text": "still ",
+      "start": 1.486,
+      "end": 1.695
+    },
+    {
+      "text": "warm.",
+      "start": 1.753,
+      "end": 2.368
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "af7bbf79c0a13202b19b01eae7b3e54ad29c925c5289e2cf6618ebf62a0a3a17",
+  "effectiveWPM": 190.54054054054055
+}

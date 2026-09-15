@@ -1,5 +1,29 @@
 # Build verification
 
+## `dialogue` branch · two voices and two-line pages
+
+- The script now carries 110 attributed lines; content integrity was checked
+  against `HEAD` by script: every frozen field (ids, chapters, titles, moods,
+  kinds, points of view, choice ids and titles) is unchanged, `text` and `flavor`
+  match their lines exactly, speakers are only Juliet or Romeo, and the chamber
+  beats remain Juliet alone.
+- All 110 narration clips generated: 74 Juliet, 36 Romeo, none missing, none
+  mismatched against its line text, no orphans, each in its character's voice.
+- Playback-rate correction now spans 0.94–1.06 where it previously reached
+  0.7–1.3. That stretch is the most likely cause of the robotic quality.
+- **Nothing here has been heard or seen.** The engine tests could not run: this
+  toolchain cannot resolve `.iOS(.v18)`, and its SDK is mismatched, so it cannot
+  compile against Foundation at all. Swift verification was limited to
+  `-parse`. The engine changes — paging, the line queue in `NarrationPlayer` —
+  are therefore **unexecuted**.
+- The full-story UI test's tap bound was raised from 35 to 90: paging two lines at
+  a time takes roughly fifty taps to finish rather than nineteen.
+- Unverified by anyone yet: whether two lines per page actually fits at the largest
+  accessibility text sizes, whether line-to-line handover in `NarrationPlayer`
+  sounds continuous or gappy, and whether Juliet still sounds robotic after the
+  settings change — if she does, recast her with `ELEVENLABS_JULIET_VOICE_ID`.
+
+
 ## Current screenupdate run · September 14, 2026
 
 The results below this section describe the prior branch baseline, **not** a

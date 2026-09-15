@@ -1,0 +1,72 @@
+{
+  "text": "I am already on the road when the messenger calls my name.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "am ",
+      "start": 0.151,
+      "end": 0.232
+    },
+    {
+      "text": "already ",
+      "start": 0.29,
+      "end": 0.615
+    },
+    {
+      "text": "on ",
+      "start": 0.673,
+      "end": 0.755
+    },
+    {
+      "text": "the ",
+      "start": 0.801,
+      "end": 0.871
+    },
+    {
+      "text": "road ",
+      "start": 0.929,
+      "end": 1.277
+    },
+    {
+      "text": "when ",
+      "start": 1.66,
+      "end": 1.846
+    },
+    {
+      "text": "the ",
+      "start": 1.869,
+      "end": 1.939
+    },
+    {
+      "text": "messenger ",
+      "start": 1.974,
+      "end": 2.392
+    },
+    {
+      "text": "calls ",
+      "start": 2.461,
+      "end": 2.786
+    },
+    {
+      "text": "my ",
+      "start": 2.844,
+      "end": 2.984
+    },
+    {
+      "text": "name.",
+      "start": 3.077,
+      "end": 3.762
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "eda89b7958b13b7012084b88068b17ba76310729003f2004fcbb537bd009939d",
+  "effectiveWPM": 179.9043062200957
+}

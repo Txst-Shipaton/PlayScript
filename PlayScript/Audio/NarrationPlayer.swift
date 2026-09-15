@@ -17,8 +17,11 @@ final class NarrationPlayer: NSObject {
     }
     private(set) var available = false
     private(set) var currentWord: Int?
+    /// Which line of the current page is speaking, so the view can mark it.
+    private(set) var currentLine = 0
     @ObservationIgnored private var player: AVAudioPlayer?
     @ObservationIgnored private var clip: Clip?
+    @ObservationIgnored private var queue: [(id: String, text: String)] = []
     @ObservationIgnored private var contentID = ""
     @ObservationIgnored private var clock: Task<Void, Never>?
     @ObservationIgnored private var wantsPlayback = false
@@ -31,29 +34,29 @@ final class NarrationPlayer: NSObject {
                                               name: AVAudioSession.interruptionNotification, object: nil)
     }
 
-    func update(id: String, text: String, playing: Bool) {
+    /// A page is one or two lines, each its own clip in its own character's voice.
+    /// They play in order, so both lovers can speak within a single page.
+    func update(id: String, lines: [(id: String, text: String)], playing: Bool) {
         wantsPlayback = playing
         if id != contentID {
             player?.stop()
             clock?.cancel()
             currentWord = nil
+            currentLine = 0
             finished = false
             contentID = id
             player = nil
             clip = nil
-            available = false
-            if let dataURL = Bundle.main.url(forResource: "voice-" + id, withExtension: "json"),
-               let audioURL = Bundle.main.url(forResource: "voice-" + id, withExtension: "mp3"),
-               let data = try? Data(contentsOf: dataURL),
-               let decoded = try? JSONDecoder().decode(Clip.self, from: data), decoded.text == text,
-               let audio = try? AVAudioPlayer(contentsOf: audioURL) {
-                clip = decoded
-                player = audio
-                audio.enableRate = true
-                audio.rate = decoded.playbackRate
-                audio.prepareToPlay()
-                available = true
+            queue = lines
+            // A page is readable only if every one of its lines has a bundled clip.
+            available = lines.allSatisfy { line in
+                guard let dataURL = Bundle.main.url(forResource: "voice-" + line.id, withExtension: "json"),
+                      Bundle.main.url(forResource: "voice-" + line.id, withExtension: "mp3") != nil,
+                      let data = try? Data(contentsOf: dataURL),
+                      let decoded = try? JSONDecoder().decode(Clip.self, from: data) else { return false }
+                return decoded.text == line.text
             }
+            if available { load(lineAt: 0) }
         }
         guard playing, !interrupted, let player else {
             player?.pause()
@@ -67,16 +70,50 @@ final class NarrationPlayer: NSObject {
         try? AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
         try? AVAudioSession.sharedInstance().setActive(true)
         player.play()
+        startClock()
+    }
+
+    private func load(lineAt index: Int) {
+        guard queue.indices.contains(index),
+              let dataURL = Bundle.main.url(forResource: "voice-" + queue[index].id, withExtension: "json"),
+              let audioURL = Bundle.main.url(forResource: "voice-" + queue[index].id, withExtension: "mp3"),
+              let data = try? Data(contentsOf: dataURL),
+              let decoded = try? JSONDecoder().decode(Clip.self, from: data),
+              let audio = try? AVAudioPlayer(contentsOf: audioURL) else { return }
+        clip = decoded
+        player = audio
+        currentLine = index
+        currentWord = nil
+        audio.enableRate = true
+        audio.rate = decoded.playbackRate
+        audio.prepareToPlay()
+    }
+
+    /// Follows playback through the page: one clip per line, in order.
+    private func startClock() {
         clock?.cancel()
         clock = Task { [weak self] in
             while !Task.isCancelled {
-                guard let self, let player = self.player, player.isPlaying else { break }
-                let time = player.currentTime
-                self.currentWord = self.clip?.cues.firstIndex { time >= $0.start && time < $0.end }
-                do { try await Task.sleep(for: .milliseconds(33)) } catch { return }
+                guard let self, let player = self.player else { return }
+                while !Task.isCancelled, player.isPlaying {
+                    let time = player.currentTime
+                    self.currentWord = self.clip?.cues.firstIndex { time >= $0.start && time < $0.end }
+                    do { try await Task.sleep(for: .milliseconds(33)) } catch { return }
+                }
+                guard !Task.isCancelled else { return }
+                self.currentWord = nil
+                // Only a line that actually played out hands over to the next one;
+                // a pause leaves the page where it is.
+                let reachedEnd = player.currentTime >= player.duration - 0.08
+                guard self.wantsPlayback, !self.interrupted, reachedEnd else { return }
+                let next = self.currentLine + 1
+                guard self.queue.indices.contains(next) else {
+                    self.finished = true
+                    return
+                }
+                self.load(lineAt: next)
+                self.player?.play()
             }
-            if !Task.isCancelled { self?.finished = true }
-            self?.currentWord = nil
         }
     }
 
@@ -107,8 +144,8 @@ final class NarrationPlayer: NSObject {
             clock?.cancel()
             currentWord = nil
         } else {
-            if AVAudioSession.InterruptionOptions(rawValue: rawOptions).contains(.shouldResume), let clip {
-                update(id: contentID, text: clip.text, playing: wantsPlayback)
+            if AVAudioSession.InterruptionOptions(rawValue: rawOptions).contains(.shouldResume), clip != nil {
+                update(id: contentID, lines: queue, playing: wantsPlayback)
             }
         }
     }

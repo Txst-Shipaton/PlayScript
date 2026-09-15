@@ -1,0 +1,57 @@
+{
+  "text": "For one small moment, I forget to be afraid.",
+  "cues": [
+    {
+      "text": "For ",
+      "start": 0.0,
+      "end": 0.174
+    },
+    {
+      "text": "one ",
+      "start": 0.232,
+      "end": 0.406
+    },
+    {
+      "text": "small ",
+      "start": 0.453,
+      "end": 0.72
+    },
+    {
+      "text": "moment, ",
+      "start": 0.778,
+      "end": 1.196
+    },
+    {
+      "text": "I ",
+      "start": 1.242,
+      "end": 1.277
+    },
+    {
+      "text": "forget ",
+      "start": 1.393,
+      "end": 1.695
+    },
+    {
+      "text": "to ",
+      "start": 1.73,
+      "end": 1.776
+    },
+    {
+      "text": "be ",
+      "start": 1.823,
+      "end": 1.904
+    },
+    {
+      "text": "afraid.",
+      "start": 1.95,
+      "end": 2.694
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "2e8bf9049a4b3ffca1556ecdb62f62820ce2ba22ca2fc3164419569ca14e1527",
+  "effectiveWPM": 188.41870824053453
+}

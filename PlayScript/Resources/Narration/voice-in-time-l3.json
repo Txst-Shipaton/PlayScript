@@ -1,0 +1,17 @@
+{
+  "text": "Romeo?",
+  "cues": [
+    {
+      "text": "Romeo?",
+      "start": 0.0,
+      "end": 0.65
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "ce86d0453c969a66b7026632c9a5ca1d534c3d59da06e5008bf923f639a1fdae",
+  "effectiveWPM": 97.84615384615384
+}

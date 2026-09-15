@@ -1,0 +1,102 @@
+{
+  "text": "Then I am the happiest man ever to stand in a garden he had no right to enter.",
+  "cues": [
+    {
+      "text": "Then ",
+      "start": 0.0,
+      "end": 0.302
+    },
+    {
+      "text": "I ",
+      "start": 0.453,
+      "end": 0.534
+    },
+    {
+      "text": "am ",
+      "start": 0.604,
+      "end": 0.708
+    },
+    {
+      "text": "the ",
+      "start": 0.755,
+      "end": 0.824
+    },
+    {
+      "text": "happiest ",
+      "start": 0.894,
+      "end": 1.324
+    },
+    {
+      "text": "man ",
+      "start": 1.382,
+      "end": 1.707
+    },
+    {
+      "text": "ever ",
+      "start": 1.916,
+      "end": 2.229
+    },
+    {
+      "text": "to ",
+      "start": 2.299,
+      "end": 2.368
+    },
+    {
+      "text": "stand ",
+      "start": 2.45,
+      "end": 2.74
+    },
+    {
+      "text": "in ",
+      "start": 2.81,
+      "end": 2.868
+    },
+    {
+      "text": "a ",
+      "start": 2.914,
+      "end": 2.937
+    },
+    {
+      "text": "garden ",
+      "start": 3.007,
+      "end": 3.437
+    },
+    {
+      "text": "he ",
+      "start": 3.762,
+      "end": 3.866
+    },
+    {
+      "text": "had ",
+      "start": 3.936,
+      "end": 4.087
+    },
+    {
+      "text": "no ",
+      "start": 4.214,
+      "end": 4.423
+    },
+    {
+      "text": "right ",
+      "start": 4.516,
+      "end": 4.76
+    },
+    {
+      "text": "to ",
+      "start": 4.807,
+      "end": 4.876
+    },
+    {
+      "text": "enter.",
+      "start": 4.969,
+      "end": 5.666
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "d17e72e463300724cf411f52cd355a76ab8604dc100bcfe91b1c4f3923f5f8d9",
+  "effectiveWPM": 179.1740204729968
+}

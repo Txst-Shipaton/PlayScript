@@ -1,0 +1,107 @@
+{
+  "text": "There is an empty cup beside him. I touch his cheek. It is colder than the orchard ever was.",
+  "cues": [
+    {
+      "text": "There ",
+      "start": 0.0,
+      "end": 0.232
+    },
+    {
+      "text": "is ",
+      "start": 0.267,
+      "end": 0.337
+    },
+    {
+      "text": "an ",
+      "start": 0.372,
+      "end": 0.43
+    },
+    {
+      "text": "empty ",
+      "start": 0.464,
+      "end": 0.685
+    },
+    {
+      "text": "cup ",
+      "start": 0.743,
+      "end": 0.917
+    },
+    {
+      "text": "beside ",
+      "start": 0.975,
+      "end": 1.358
+    },
+    {
+      "text": "him. ",
+      "start": 1.393,
+      "end": 1.672
+    },
+    {
+      "text": "I ",
+      "start": 1.881,
+      "end": 1.939
+    },
+    {
+      "text": "touch ",
+      "start": 2.02,
+      "end": 2.218
+    },
+    {
+      "text": "his ",
+      "start": 2.252,
+      "end": 2.345
+    },
+    {
+      "text": "cheek. ",
+      "start": 2.403,
+      "end": 2.856
+    },
+    {
+      "text": "It ",
+      "start": 3.239,
+      "end": 3.355
+    },
+    {
+      "text": "is ",
+      "start": 3.402,
+      "end": 3.471
+    },
+    {
+      "text": "colder ",
+      "start": 3.529,
+      "end": 3.913
+    },
+    {
+      "text": "than ",
+      "start": 3.971,
+      "end": 4.098
+    },
+    {
+      "text": "the ",
+      "start": 4.133,
+      "end": 4.214
+    },
+    {
+      "text": "orchard ",
+      "start": 4.296,
+      "end": 4.748
+    },
+    {
+      "text": "ever ",
+      "start": 4.818,
+      "end": 5.074
+    },
+    {
+      "text": "was.",
+      "start": 5.155,
+      "end": 5.851
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "02151433d386a4769b02b8e20458698c3e4dd06202ee34c4eaf150a1dda9958c",
+  "effectiveWPM": 183.14817979832506
+}

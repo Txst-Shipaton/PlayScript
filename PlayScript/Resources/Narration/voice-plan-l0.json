@@ -1,0 +1,112 @@
+{
+  "text": "The Friar places a small vial in my hand. A sleep so deep that everyone will believe I am dead.",
+  "cues": [
+    {
+      "text": "The ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "Friar ",
+      "start": 0.174,
+      "end": 0.453
+    },
+    {
+      "text": "places ",
+      "start": 0.511,
+      "end": 0.882
+    },
+    {
+      "text": "a ",
+      "start": 0.94,
+      "end": 0.975
+    },
+    {
+      "text": "small ",
+      "start": 1.033,
+      "end": 1.324
+    },
+    {
+      "text": "vial ",
+      "start": 1.393,
+      "end": 1.741
+    },
+    {
+      "text": "in ",
+      "start": 1.8,
+      "end": 1.869
+    },
+    {
+      "text": "my ",
+      "start": 1.916,
+      "end": 2.02
+    },
+    {
+      "text": "hand. ",
+      "start": 2.09,
+      "end": 2.519
+    },
+    {
+      "text": "A ",
+      "start": 2.728,
+      "end": 2.798
+    },
+    {
+      "text": "sleep ",
+      "start": 2.891,
+      "end": 3.204
+    },
+    {
+      "text": "so ",
+      "start": 3.274,
+      "end": 3.46
+    },
+    {
+      "text": "deep ",
+      "start": 3.576,
+      "end": 3.796
+    },
+    {
+      "text": "that ",
+      "start": 3.855,
+      "end": 3.994
+    },
+    {
+      "text": "everyone ",
+      "start": 4.075,
+      "end": 4.528
+    },
+    {
+      "text": "will ",
+      "start": 4.551,
+      "end": 4.702
+    },
+    {
+      "text": "believe ",
+      "start": 4.748,
+      "end": 5.05
+    },
+    {
+      "text": "I ",
+      "start": 5.097,
+      "end": 5.132
+    },
+    {
+      "text": "am ",
+      "start": 5.201,
+      "end": 5.306
+    },
+    {
+      "text": "dead.",
+      "start": 5.375,
+      "end": 5.991
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "0ad5380e431b6b625dacc01a56701e37e6d5902bc4faef98ab4c093947ab05fe",
+  "effectiveWPM": 188.28242363545317
+}

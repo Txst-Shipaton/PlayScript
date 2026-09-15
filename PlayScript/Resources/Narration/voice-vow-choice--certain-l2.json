@@ -1,0 +1,97 @@
+{
+  "text": "If his purpose is marriage, I will send someone tomorrow to learn the time and the place.",
+  "cues": [
+    {
+      "text": "If ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "his ",
+      "start": 0.197,
+      "end": 0.302
+    },
+    {
+      "text": "purpose ",
+      "start": 0.348,
+      "end": 0.685
+    },
+    {
+      "text": "is ",
+      "start": 0.72,
+      "end": 0.801
+    },
+    {
+      "text": "marriage, ",
+      "start": 0.871,
+      "end": 1.474
+    },
+    {
+      "text": "I ",
+      "start": 1.8,
+      "end": 1.858
+    },
+    {
+      "text": "will ",
+      "start": 1.927,
+      "end": 2.078
+    },
+    {
+      "text": "send ",
+      "start": 2.125,
+      "end": 2.334
+    },
+    {
+      "text": "someone ",
+      "start": 2.392,
+      "end": 2.74
+    },
+    {
+      "text": "tomorrow ",
+      "start": 2.786,
+      "end": 3.262
+    },
+    {
+      "text": "to ",
+      "start": 3.344,
+      "end": 3.437
+    },
+    {
+      "text": "learn ",
+      "start": 3.518,
+      "end": 3.715
+    },
+    {
+      "text": "the ",
+      "start": 3.762,
+      "end": 3.831
+    },
+    {
+      "text": "time ",
+      "start": 3.878,
+      "end": 4.145
+    },
+    {
+      "text": "and ",
+      "start": 4.18,
+      "end": 4.261
+    },
+    {
+      "text": "the ",
+      "start": 4.307,
+      "end": 4.377
+    },
+    {
+      "text": "place.",
+      "start": 4.412,
+      "end": 5.155
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "69af4c61353a04ea399c5fee7a67e939c704db54f84b422d5fa14ae23ccefdb3",
+  "effectiveWPM": 185.99418040737146
+}

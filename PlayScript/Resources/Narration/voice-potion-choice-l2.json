@@ -1,0 +1,47 @@
+{
+  "text": "I picture Romeo’s face beneath my window.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "picture ",
+      "start": 0.197,
+      "end": 0.511
+    },
+    {
+      "text": "Romeo’s ",
+      "start": 0.569,
+      "end": 1.01
+    },
+    {
+      "text": "face ",
+      "start": 1.057,
+      "end": 1.335
+    },
+    {
+      "text": "beneath ",
+      "start": 1.37,
+      "end": 1.649
+    },
+    {
+      "text": "my ",
+      "start": 1.707,
+      "end": 1.8
+    },
+    {
+      "text": "window.",
+      "start": 1.858,
+      "end": 2.554
+    }
+  ],
+  "playbackRate": 1.0337619047619047,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "f5f29b71f9e066e234e96eaac77094c25785f845d7ad3265c8e4f03db4d55a99",
+  "effectiveWPM": 170.0
+}

@@ -1,0 +1,92 @@
+{
+  "text": "Take me out of this place. Whatever we owe Verona, we will pay it in daylight.",
+  "cues": [
+    {
+      "text": "Take ",
+      "start": 0.0,
+      "end": 0.255
+    },
+    {
+      "text": "me ",
+      "start": 0.29,
+      "end": 0.36
+    },
+    {
+      "text": "out ",
+      "start": 0.406,
+      "end": 0.522
+    },
+    {
+      "text": "of ",
+      "start": 0.557,
+      "end": 0.604
+    },
+    {
+      "text": "this ",
+      "start": 0.65,
+      "end": 0.778
+    },
+    {
+      "text": "place. ",
+      "start": 0.824,
+      "end": 1.242
+    },
+    {
+      "text": "Whatever ",
+      "start": 1.451,
+      "end": 1.834
+    },
+    {
+      "text": "we ",
+      "start": 1.892,
+      "end": 1.985
+    },
+    {
+      "text": "owe ",
+      "start": 2.055,
+      "end": 2.183
+    },
+    {
+      "text": "Verona, ",
+      "start": 2.218,
+      "end": 2.717
+    },
+    {
+      "text": "we ",
+      "start": 2.752,
+      "end": 2.868
+    },
+    {
+      "text": "will ",
+      "start": 2.902,
+      "end": 3.065
+    },
+    {
+      "text": "pay ",
+      "start": 3.111,
+      "end": 3.332
+    },
+    {
+      "text": "it ",
+      "start": 3.39,
+      "end": 3.471
+    },
+    {
+      "text": "in ",
+      "start": 3.541,
+      "end": 3.646
+    },
+    {
+      "text": "daylight.",
+      "start": 3.738,
+      "end": 4.551
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "b2535a6b94ee223b9518d2ba80d1b1542fdfc50655fdb674877975e6fbd669ea",
+  "effectiveWPM": 198.28609096901778
+}

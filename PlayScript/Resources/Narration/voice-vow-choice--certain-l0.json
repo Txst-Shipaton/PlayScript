@@ -1,0 +1,82 @@
+{
+  "text": "“And mine is yours.” I say it before fear can make the words smaller.",
+  "cues": [
+    {
+      "text": "“And ",
+      "start": 0.0,
+      "end": 0.395
+    },
+    {
+      "text": "mine ",
+      "start": 0.488,
+      "end": 0.778
+    },
+    {
+      "text": "is ",
+      "start": 0.813,
+      "end": 0.882
+    },
+    {
+      "text": "yours.” ",
+      "start": 0.94,
+      "end": 1.533
+    },
+    {
+      "text": "I ",
+      "start": 1.858,
+      "end": 1.927
+    },
+    {
+      "text": "say ",
+      "start": 2.043,
+      "end": 2.276
+    },
+    {
+      "text": "it ",
+      "start": 2.334,
+      "end": 2.45
+    },
+    {
+      "text": "before ",
+      "start": 2.508,
+      "end": 2.821
+    },
+    {
+      "text": "fear ",
+      "start": 2.891,
+      "end": 3.158
+    },
+    {
+      "text": "can ",
+      "start": 3.216,
+      "end": 3.344
+    },
+    {
+      "text": "make ",
+      "start": 3.39,
+      "end": 3.541
+    },
+    {
+      "text": "the ",
+      "start": 3.576,
+      "end": 3.646
+    },
+    {
+      "text": "words ",
+      "start": 3.68,
+      "end": 3.959
+    },
+    {
+      "text": "smaller.",
+      "start": 4.005,
+      "end": 4.783
+    }
+  ],
+  "playbackRate": 0.9679880952380954,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "d7d9fe2f0819d8cacb14429d56a1ea4e3c3c0f0a591278b506374e297bf64e53",
+  "effectiveWPM": 170.0
+}

@@ -1,0 +1,92 @@
+{
+  "text": "Friar Laurence has married us in secret. For a little while, I have been Romeo’s wife.",
+  "cues": [
+    {
+      "text": "Friar ",
+      "start": 0.0,
+      "end": 0.395
+    },
+    {
+      "text": "Laurence ",
+      "start": 0.453,
+      "end": 0.836
+    },
+    {
+      "text": "has ",
+      "start": 0.871,
+      "end": 0.987
+    },
+    {
+      "text": "married ",
+      "start": 1.045,
+      "end": 1.347
+    },
+    {
+      "text": "us ",
+      "start": 1.393,
+      "end": 1.509
+    },
+    {
+      "text": "in ",
+      "start": 1.567,
+      "end": 1.649
+    },
+    {
+      "text": "secret. ",
+      "start": 1.718,
+      "end": 2.287
+    },
+    {
+      "text": "For ",
+      "start": 2.67,
+      "end": 2.821
+    },
+    {
+      "text": "a ",
+      "start": 2.868,
+      "end": 2.891
+    },
+    {
+      "text": "little ",
+      "start": 2.937,
+      "end": 3.146
+    },
+    {
+      "text": "while, ",
+      "start": 3.17,
+      "end": 3.576
+    },
+    {
+      "text": "I ",
+      "start": 3.657,
+      "end": 3.704
+    },
+    {
+      "text": "have ",
+      "start": 3.796,
+      "end": 3.913
+    },
+    {
+      "text": "been ",
+      "start": 3.947,
+      "end": 4.087
+    },
+    {
+      "text": "Romeo’s ",
+      "start": 4.133,
+      "end": 4.621
+    },
+    {
+      "text": "wife.",
+      "start": 4.667,
+      "end": 5.341
+    }
+  ],
+  "playbackRate": 0.9458020833333334,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "082fda3a4f9de876c55372c71614664f371cb2e314cd56b04b6170d7bff3e55b",
+  "effectiveWPM": 170.0
+}

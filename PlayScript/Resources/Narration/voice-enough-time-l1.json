@@ -1,0 +1,77 @@
+{
+  "text": "Only her hand in mine, and the Friar waiting to lead us out.",
+  "cues": [
+    {
+      "text": "Only ",
+      "start": 0.0,
+      "end": 0.279
+    },
+    {
+      "text": "her ",
+      "start": 0.36,
+      "end": 0.464
+    },
+    {
+      "text": "hand ",
+      "start": 0.522,
+      "end": 0.731
+    },
+    {
+      "text": "in ",
+      "start": 0.801,
+      "end": 0.882
+    },
+    {
+      "text": "mine, ",
+      "start": 0.952,
+      "end": 1.44
+    },
+    {
+      "text": "and ",
+      "start": 1.649,
+      "end": 1.811
+    },
+    {
+      "text": "the ",
+      "start": 1.858,
+      "end": 1.927
+    },
+    {
+      "text": "Friar ",
+      "start": 1.985,
+      "end": 2.334
+    },
+    {
+      "text": "waiting ",
+      "start": 2.403,
+      "end": 2.74
+    },
+    {
+      "text": "to ",
+      "start": 2.786,
+      "end": 2.856
+    },
+    {
+      "text": "lead ",
+      "start": 2.937,
+      "end": 3.111
+    },
+    {
+      "text": "us ",
+      "start": 3.17,
+      "end": 3.239
+    },
+    {
+      "text": "out.",
+      "start": 3.297,
+      "end": 3.901
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "fb7c02dd17eeba386d5c84986e28658d765e09587f5e20c440a5f8b2fda1d39d",
+  "effectiveWPM": 187.95180722891567
+}

@@ -1,0 +1,92 @@
+{
+  "text": "Courage, perhaps, can be this small: a frightened girl choosing the only door she can see.",
+  "cues": [
+    {
+      "text": "Courage, ",
+      "start": 0.0,
+      "end": 0.488
+    },
+    {
+      "text": "perhaps, ",
+      "start": 0.511,
+      "end": 1.01
+    },
+    {
+      "text": "can ",
+      "start": 1.161,
+      "end": 1.312
+    },
+    {
+      "text": "be ",
+      "start": 1.37,
+      "end": 1.498
+    },
+    {
+      "text": "this ",
+      "start": 1.579,
+      "end": 1.904
+    },
+    {
+      "text": "small: ",
+      "start": 1.997,
+      "end": 2.647
+    },
+    {
+      "text": "a ",
+      "start": 2.972,
+      "end": 3.019
+    },
+    {
+      "text": "frightened ",
+      "start": 3.135,
+      "end": 3.564
+    },
+    {
+      "text": "girl ",
+      "start": 3.622,
+      "end": 3.913
+    },
+    {
+      "text": "choosing ",
+      "start": 3.982,
+      "end": 4.354
+    },
+    {
+      "text": "the ",
+      "start": 4.4,
+      "end": 4.481
+    },
+    {
+      "text": "only ",
+      "start": 4.563,
+      "end": 4.841
+    },
+    {
+      "text": "door ",
+      "start": 4.888,
+      "end": 5.108
+    },
+    {
+      "text": "she ",
+      "start": 5.178,
+      "end": 5.283
+    },
+    {
+      "text": "can ",
+      "start": 5.329,
+      "end": 5.468
+    },
+    {
+      "text": "see.",
+      "start": 5.538,
+      "end": 6.13
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "54eb7f6550f7ae20d382c91c2ebcdaf7d04057a94a58236a3d21b7f33d25a5dd",
+  "effectiveWPM": 166.00326264274062
+}

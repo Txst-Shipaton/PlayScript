@@ -1,0 +1,72 @@
+{
+  "text": "Less than all the good nights we could not bear to finish.",
+  "cues": [
+    {
+      "text": "Less ",
+      "start": 0.0,
+      "end": 0.302
+    },
+    {
+      "text": "than ",
+      "start": 0.348,
+      "end": 0.499
+    },
+    {
+      "text": "all ",
+      "start": 0.569,
+      "end": 0.743
+    },
+    {
+      "text": "the ",
+      "start": 0.801,
+      "end": 0.871
+    },
+    {
+      "text": "good ",
+      "start": 0.906,
+      "end": 1.068
+    },
+    {
+      "text": "nights ",
+      "start": 1.115,
+      "end": 1.428
+    },
+    {
+      "text": "we ",
+      "start": 1.474,
+      "end": 1.567
+    },
+    {
+      "text": "could ",
+      "start": 1.614,
+      "end": 1.765
+    },
+    {
+      "text": "not ",
+      "start": 1.823,
+      "end": 2.032
+    },
+    {
+      "text": "bear ",
+      "start": 2.09,
+      "end": 2.31
+    },
+    {
+      "text": "to ",
+      "start": 2.38,
+      "end": 2.438
+    },
+    {
+      "text": "finish.",
+      "start": 2.508,
+      "end": 3.204
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "e16afca8b3bfbec95f8f00c02428c4fe3d366bd1f78f0abc89a0fb26361c4f73",
+  "effectiveWPM": 211.23595505617976
+}

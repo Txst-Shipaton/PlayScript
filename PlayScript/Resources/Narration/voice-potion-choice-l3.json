@@ -1,0 +1,42 @@
+{
+  "text": "I have already promised him tomorrow.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "have ",
+      "start": 0.151,
+      "end": 0.279
+    },
+    {
+      "text": "already ",
+      "start": 0.302,
+      "end": 0.604
+    },
+    {
+      "text": "promised ",
+      "start": 0.662,
+      "end": 1.115
+    },
+    {
+      "text": "him ",
+      "start": 1.161,
+      "end": 1.312
+    },
+    {
+      "text": "tomorrow.",
+      "start": 1.405,
+      "end": 2.276
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "ec01f4c75c57e14e95f2e0278183f3f5005d22085d96855af35d75e5d2d9038c",
+  "effectiveWPM": 167.66256590509667
+}

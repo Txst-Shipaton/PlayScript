@@ -1,0 +1,47 @@
+{
+  "text": "For now, that is enough to begin.",
+  "cues": [
+    {
+      "text": "For ",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "text": "now, ",
+      "start": 0.244,
+      "end": 0.662
+    },
+    {
+      "text": "that ",
+      "start": 0.94,
+      "end": 1.103
+    },
+    {
+      "text": "is ",
+      "start": 1.149,
+      "end": 1.231
+    },
+    {
+      "text": "enough ",
+      "start": 1.289,
+      "end": 1.533
+    },
+    {
+      "text": "to ",
+      "start": 1.579,
+      "end": 1.66
+    },
+    {
+      "text": "begin.",
+      "start": 1.73,
+      "end": 2.508
+    }
+  ],
+  "playbackRate": 1.0151428571428571,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "55ffa999833ac9a47b14e0d9e0744a84e53a14336558c571b48792f077078374",
+  "effectiveWPM": 169.99999999999997
+}

@@ -1,0 +1,82 @@
+{
+  "text": "“Only if you mean to marry me,” I whisper. “Only if this is true.”",
+  "cues": [
+    {
+      "text": "“Only ",
+      "start": 0.0,
+      "end": 0.546
+    },
+    {
+      "text": "if ",
+      "start": 0.604,
+      "end": 0.685
+    },
+    {
+      "text": "you ",
+      "start": 0.731,
+      "end": 0.801
+    },
+    {
+      "text": "mean ",
+      "start": 0.871,
+      "end": 1.022
+    },
+    {
+      "text": "to ",
+      "start": 1.068,
+      "end": 1.126
+    },
+    {
+      "text": "marry ",
+      "start": 1.184,
+      "end": 1.486
+    },
+    {
+      "text": "me,” ",
+      "start": 1.544,
+      "end": 1.869
+    },
+    {
+      "text": "I ",
+      "start": 1.939,
+      "end": 1.997
+    },
+    {
+      "text": "whisper. ",
+      "start": 2.078,
+      "end": 2.589
+    },
+    {
+      "text": "“Only ",
+      "start": 2.74,
+      "end": 3.181
+    },
+    {
+      "text": "if ",
+      "start": 3.239,
+      "end": 3.309
+    },
+    {
+      "text": "this ",
+      "start": 3.367,
+      "end": 3.495
+    },
+    {
+      "text": "is ",
+      "start": 3.553,
+      "end": 3.646
+    },
+    {
+      "text": "true.”",
+      "start": 3.715,
+      "end": 4.412
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "4b706093d2de89392c8925d42202f8df02aa5df0bad6b0ce4bb0fcd0cafa45bf",
+  "effectiveWPM": 178.96645512239346
+}

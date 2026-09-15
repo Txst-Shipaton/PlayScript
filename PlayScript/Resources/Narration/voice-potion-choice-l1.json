@@ -1,0 +1,112 @@
+{
+  "text": "There is no one left to ask. The Nurse would tell my mother, and my mother would tell my father.",
+  "cues": [
+    {
+      "text": "There ",
+      "start": 0.0,
+      "end": 0.232
+    },
+    {
+      "text": "is ",
+      "start": 0.267,
+      "end": 0.337
+    },
+    {
+      "text": "no ",
+      "start": 0.395,
+      "end": 0.488
+    },
+    {
+      "text": "one ",
+      "start": 0.557,
+      "end": 0.673
+    },
+    {
+      "text": "left ",
+      "start": 0.72,
+      "end": 0.929
+    },
+    {
+      "text": "to ",
+      "start": 0.964,
+      "end": 1.022
+    },
+    {
+      "text": "ask. ",
+      "start": 1.115,
+      "end": 1.718
+    },
+    {
+      "text": "The ",
+      "start": 1.997,
+      "end": 2.113
+    },
+    {
+      "text": "Nurse ",
+      "start": 2.171,
+      "end": 2.403
+    },
+    {
+      "text": "would ",
+      "start": 2.438,
+      "end": 2.589
+    },
+    {
+      "text": "tell ",
+      "start": 2.612,
+      "end": 2.775
+    },
+    {
+      "text": "my ",
+      "start": 2.833,
+      "end": 2.937
+    },
+    {
+      "text": "mother, ",
+      "start": 3.019,
+      "end": 3.448
+    },
+    {
+      "text": "and ",
+      "start": 3.506,
+      "end": 3.669
+    },
+    {
+      "text": "my ",
+      "start": 3.738,
+      "end": 3.855
+    },
+    {
+      "text": "mother ",
+      "start": 3.936,
+      "end": 4.18
+    },
+    {
+      "text": "would ",
+      "start": 4.249,
+      "end": 4.435
+    },
+    {
+      "text": "tell ",
+      "start": 4.458,
+      "end": 4.644
+    },
+    {
+      "text": "my ",
+      "start": 4.714,
+      "end": 4.853
+    },
+    {
+      "text": "father.",
+      "start": 4.934,
+      "end": 5.712
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "76a82bfc280d6932a4a4410069cf76b1b25d12427c28c8feed093061fd890a49",
+  "effectiveWPM": 197.47899159663865
+}

@@ -1,0 +1,92 @@
+{
+  "text": "If anyone finds him here, his name alone will condemn him. I should send him away.",
+  "cues": [
+    {
+      "text": "If ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "anyone ",
+      "start": 0.197,
+      "end": 0.522
+    },
+    {
+      "text": "finds ",
+      "start": 0.569,
+      "end": 0.824
+    },
+    {
+      "text": "him ",
+      "start": 0.871,
+      "end": 0.964
+    },
+    {
+      "text": "here, ",
+      "start": 1.022,
+      "end": 1.324
+    },
+    {
+      "text": "his ",
+      "start": 1.533,
+      "end": 1.672
+    },
+    {
+      "text": "name ",
+      "start": 1.718,
+      "end": 1.904
+    },
+    {
+      "text": "alone ",
+      "start": 1.939,
+      "end": 2.264
+    },
+    {
+      "text": "will ",
+      "start": 2.299,
+      "end": 2.461
+    },
+    {
+      "text": "condemn ",
+      "start": 2.519,
+      "end": 2.914
+    },
+    {
+      "text": "him. ",
+      "start": 2.961,
+      "end": 3.251
+    },
+    {
+      "text": "I ",
+      "start": 3.46,
+      "end": 3.518
+    },
+    {
+      "text": "should ",
+      "start": 3.587,
+      "end": 3.762
+    },
+    {
+      "text": "send ",
+      "start": 3.796,
+      "end": 3.947
+    },
+    {
+      "text": "him ",
+      "start": 3.982,
+      "end": 4.063
+    },
+    {
+      "text": "away.",
+      "start": 4.11,
+      "end": 4.783
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "bb34899047b9991ad6cd7d8621eae466a238b105de090c8feaeefd1662dbc463",
+  "effectiveWPM": 188.66819987455568
+}

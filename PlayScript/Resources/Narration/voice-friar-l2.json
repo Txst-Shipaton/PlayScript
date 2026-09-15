@@ -1,0 +1,87 @@
+{
+  "text": "A wife of one night, and already another man’s name is being set beside mine.",
+  "cues": [
+    {
+      "text": "A ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "wife ",
+      "start": 0.163,
+      "end": 0.464
+    },
+    {
+      "text": "of ",
+      "start": 0.511,
+      "end": 0.604
+    },
+    {
+      "text": "one ",
+      "start": 0.72,
+      "end": 0.917
+    },
+    {
+      "text": "night, ",
+      "start": 0.964,
+      "end": 1.358
+    },
+    {
+      "text": "and ",
+      "start": 1.533,
+      "end": 1.707
+    },
+    {
+      "text": "already ",
+      "start": 1.788,
+      "end": 2.229
+    },
+    {
+      "text": "another ",
+      "start": 2.276,
+      "end": 2.543
+    },
+    {
+      "text": "man’s ",
+      "start": 2.601,
+      "end": 2.879
+    },
+    {
+      "text": "name ",
+      "start": 2.949,
+      "end": 3.216
+    },
+    {
+      "text": "is ",
+      "start": 3.262,
+      "end": 3.344
+    },
+    {
+      "text": "being ",
+      "start": 3.402,
+      "end": 3.611
+    },
+    {
+      "text": "set ",
+      "start": 3.669,
+      "end": 3.855
+    },
+    {
+      "text": "beside ",
+      "start": 3.901,
+      "end": 4.261
+    },
+    {
+      "text": "mine.",
+      "start": 4.296,
+      "end": 5.016
+    }
+  ],
+  "playbackRate": 0.9474666666666666,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "533a4eefdd3996a2698bb7d011fb826f711d8131cfeebda526d8db2f817a8afc",
+  "effectiveWPM": 170.0
+}

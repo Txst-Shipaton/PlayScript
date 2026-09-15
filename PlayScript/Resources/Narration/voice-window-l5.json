@@ -1,0 +1,52 @@
+{
+  "text": "Romeo. Here. With every reason to stay away.",
+  "cues": [
+    {
+      "text": "Romeo. ",
+      "start": 0.0,
+      "end": 0.627
+    },
+    {
+      "text": "Here. ",
+      "start": 0.673,
+      "end": 1.01
+    },
+    {
+      "text": "With ",
+      "start": 1.057,
+      "end": 1.242
+    },
+    {
+      "text": "every ",
+      "start": 1.312,
+      "end": 1.579
+    },
+    {
+      "text": "reason ",
+      "start": 1.649,
+      "end": 1.939
+    },
+    {
+      "text": "to ",
+      "start": 1.997,
+      "end": 2.043
+    },
+    {
+      "text": "stay ",
+      "start": 2.09,
+      "end": 2.264
+    },
+    {
+      "text": "away.",
+      "start": 2.322,
+      "end": 2.879
+    }
+  ],
+  "playbackRate": 1.0196458333333334,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "760ab38784bac356d0dcfd58b552573487349cb1da60208e057f7aba03268a50",
+  "effectiveWPM": 170.0
+}

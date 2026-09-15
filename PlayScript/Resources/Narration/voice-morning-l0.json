@@ -1,0 +1,82 @@
+{
+  "text": "We say good night as though saying it slowly might keep the morning away.",
+  "cues": [
+    {
+      "text": "We ",
+      "start": 0.0,
+      "end": 0.163
+    },
+    {
+      "text": "say ",
+      "start": 0.221,
+      "end": 0.372
+    },
+    {
+      "text": "good ",
+      "start": 0.406,
+      "end": 0.557
+    },
+    {
+      "text": "night ",
+      "start": 0.58,
+      "end": 0.848
+    },
+    {
+      "text": "as ",
+      "start": 0.917,
+      "end": 1.057
+    },
+    {
+      "text": "though ",
+      "start": 1.115,
+      "end": 1.335
+    },
+    {
+      "text": "saying ",
+      "start": 1.405,
+      "end": 1.683
+    },
+    {
+      "text": "it ",
+      "start": 1.741,
+      "end": 1.834
+    },
+    {
+      "text": "slowly ",
+      "start": 1.892,
+      "end": 2.357
+    },
+    {
+      "text": "might ",
+      "start": 2.426,
+      "end": 2.635
+    },
+    {
+      "text": "keep ",
+      "start": 2.682,
+      "end": 2.879
+    },
+    {
+      "text": "the ",
+      "start": 2.937,
+      "end": 3.007
+    },
+    {
+      "text": "morning ",
+      "start": 3.065,
+      "end": 3.367
+    },
+    {
+      "text": "away.",
+      "start": 3.425,
+      "end": 4.133
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "490bd0bfa3e2bc55958955606f5b7737263c79bdeb822a10bcea49cf29176d7a",
+  "effectiveWPM": 191.047665134285
+}

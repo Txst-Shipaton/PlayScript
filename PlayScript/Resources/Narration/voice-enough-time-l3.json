@@ -1,0 +1,107 @@
+{
+  "text": "I would carry her to the gate if she asked it. She asks only that I walk beside her.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "would ",
+      "start": 0.151,
+      "end": 0.302
+    },
+    {
+      "text": "carry ",
+      "start": 0.348,
+      "end": 0.615
+    },
+    {
+      "text": "her ",
+      "start": 0.685,
+      "end": 0.789
+    },
+    {
+      "text": "to ",
+      "start": 0.848,
+      "end": 0.917
+    },
+    {
+      "text": "the ",
+      "start": 0.975,
+      "end": 1.045
+    },
+    {
+      "text": "gate ",
+      "start": 1.103,
+      "end": 1.498
+    },
+    {
+      "text": "if ",
+      "start": 1.544,
+      "end": 1.695
+    },
+    {
+      "text": "she ",
+      "start": 1.741,
+      "end": 1.846
+    },
+    {
+      "text": "asked ",
+      "start": 1.927,
+      "end": 2.229
+    },
+    {
+      "text": "it. ",
+      "start": 2.276,
+      "end": 2.554
+    },
+    {
+      "text": "She ",
+      "start": 3.065,
+      "end": 3.216
+    },
+    {
+      "text": "asks ",
+      "start": 3.297,
+      "end": 3.669
+    },
+    {
+      "text": "only ",
+      "start": 3.738,
+      "end": 4.11
+    },
+    {
+      "text": "that ",
+      "start": 4.354,
+      "end": 4.516
+    },
+    {
+      "text": "I ",
+      "start": 4.574,
+      "end": 4.598
+    },
+    {
+      "text": "walk ",
+      "start": 4.714,
+      "end": 4.934
+    },
+    {
+      "text": "beside ",
+      "start": 5.004,
+      "end": 5.492
+    },
+    {
+      "text": "her.",
+      "start": 5.55,
+      "end": 6.037
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "1d70c832300e4fc692e6b6acf381650c03b86e7cb56162bb84fe3ca9f6692843",
+  "effectiveWPM": 177.50538346861023
+}

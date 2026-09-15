@@ -1,0 +1,102 @@
+{
+  "text": "I should weigh them. I should ask how many girls in Verona have heard him speak this well.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "should ",
+      "start": 0.139,
+      "end": 0.313
+    },
+    {
+      "text": "weigh ",
+      "start": 0.348,
+      "end": 0.522
+    },
+    {
+      "text": "them. ",
+      "start": 0.569,
+      "end": 0.848
+    },
+    {
+      "text": "I ",
+      "start": 1.091,
+      "end": 1.149
+    },
+    {
+      "text": "should ",
+      "start": 1.207,
+      "end": 1.393
+    },
+    {
+      "text": "ask ",
+      "start": 1.428,
+      "end": 1.614
+    },
+    {
+      "text": "how ",
+      "start": 1.66,
+      "end": 1.765
+    },
+    {
+      "text": "many ",
+      "start": 1.8,
+      "end": 1.962
+    },
+    {
+      "text": "girls ",
+      "start": 2.009,
+      "end": 2.299
+    },
+    {
+      "text": "in ",
+      "start": 2.345,
+      "end": 2.415
+    },
+    {
+      "text": "Verona ",
+      "start": 2.473,
+      "end": 2.868
+    },
+    {
+      "text": "have ",
+      "start": 2.926,
+      "end": 3.065
+    },
+    {
+      "text": "heard ",
+      "start": 3.088,
+      "end": 3.251
+    },
+    {
+      "text": "him ",
+      "start": 3.286,
+      "end": 3.379
+    },
+    {
+      "text": "speak ",
+      "start": 3.437,
+      "end": 3.715
+    },
+    {
+      "text": "this ",
+      "start": 3.785,
+      "end": 3.982
+    },
+    {
+      "text": "well.",
+      "start": 4.052,
+      "end": 4.69
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "6e617e577a37bd8705fcc1725344eb06b0238634f96cad393576d30baca4d121",
+  "effectiveWPM": 216.4605543710021
+}

@@ -1,0 +1,77 @@
+{
+  "text": "Carry it quickly. Put it in his hands before he hears anything else.",
+  "cues": [
+    {
+      "text": "Carry ",
+      "start": 0.0,
+      "end": 0.325
+    },
+    {
+      "text": "it ",
+      "start": 0.383,
+      "end": 0.453
+    },
+    {
+      "text": "quickly. ",
+      "start": 0.499,
+      "end": 1.022
+    },
+    {
+      "text": "Put ",
+      "start": 1.265,
+      "end": 1.451
+    },
+    {
+      "text": "it ",
+      "start": 1.498,
+      "end": 1.567
+    },
+    {
+      "text": "in ",
+      "start": 1.625,
+      "end": 1.707
+    },
+    {
+      "text": "his ",
+      "start": 1.788,
+      "end": 1.904
+    },
+    {
+      "text": "hands ",
+      "start": 1.962,
+      "end": 2.287
+    },
+    {
+      "text": "before ",
+      "start": 2.334,
+      "end": 2.612
+    },
+    {
+      "text": "he ",
+      "start": 2.647,
+      "end": 2.717
+    },
+    {
+      "text": "hears ",
+      "start": 2.786,
+      "end": 3.053
+    },
+    {
+      "text": "anything ",
+      "start": 3.111,
+      "end": 3.46
+    },
+    {
+      "text": "else.",
+      "start": 3.529,
+      "end": 4.133
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "6b7e8acc4e45d292590251185b7d8e88b85a157b669a5b2c903c8cbdd60adf54",
+  "effectiveWPM": 177.40140333897892
+}

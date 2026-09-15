@@ -1,0 +1,77 @@
+{
+  "text": "My hand will not stop trembling. I let it tremble. “Romeo, I come.”",
+  "cues": [
+    {
+      "text": "My ",
+      "start": 0.0,
+      "end": 0.186
+    },
+    {
+      "text": "hand ",
+      "start": 0.255,
+      "end": 0.476
+    },
+    {
+      "text": "will ",
+      "start": 0.534,
+      "end": 0.685
+    },
+    {
+      "text": "not ",
+      "start": 0.743,
+      "end": 0.917
+    },
+    {
+      "text": "stop ",
+      "start": 0.975,
+      "end": 1.219
+    },
+    {
+      "text": "trembling. ",
+      "start": 1.277,
+      "end": 1.904
+    },
+    {
+      "text": "I ",
+      "start": 2.148,
+      "end": 2.206
+    },
+    {
+      "text": "let ",
+      "start": 2.322,
+      "end": 2.461
+    },
+    {
+      "text": "it ",
+      "start": 2.519,
+      "end": 2.601
+    },
+    {
+      "text": "tremble. ",
+      "start": 2.635,
+      "end": 3.228
+    },
+    {
+      "text": "“Romeo, ",
+      "start": 3.471,
+      "end": 4.214
+    },
+    {
+      "text": "I ",
+      "start": 4.307,
+      "end": 4.423
+    },
+    {
+      "text": "come.”",
+      "start": 4.551,
+      "end": 5.248
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "ab141d6548fca4129f0f03641932b5b9dc405041b1de768c61b2e7c134a52988",
+  "effectiveWPM": 157.5457317073171
+}

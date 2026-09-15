@@ -1,0 +1,92 @@
+{
+  "text": "Montague. A word I was taught to hate before I knew the person it belonged to.",
+  "cues": [
+    {
+      "text": "Montague. ",
+      "start": 0.0,
+      "end": 0.731
+    },
+    {
+      "text": "A ",
+      "start": 1.057,
+      "end": 1.138
+    },
+    {
+      "text": "word ",
+      "start": 1.196,
+      "end": 1.382
+    },
+    {
+      "text": "I ",
+      "start": 1.428,
+      "end": 1.451
+    },
+    {
+      "text": "was ",
+      "start": 1.509,
+      "end": 1.614
+    },
+    {
+      "text": "taught ",
+      "start": 1.649,
+      "end": 1.869
+    },
+    {
+      "text": "to ",
+      "start": 1.892,
+      "end": 1.95
+    },
+    {
+      "text": "hate ",
+      "start": 2.02,
+      "end": 2.299
+    },
+    {
+      "text": "before ",
+      "start": 2.334,
+      "end": 2.67
+    },
+    {
+      "text": "I ",
+      "start": 2.717,
+      "end": 2.752
+    },
+    {
+      "text": "knew ",
+      "start": 2.844,
+      "end": 3.019
+    },
+    {
+      "text": "the ",
+      "start": 3.077,
+      "end": 3.146
+    },
+    {
+      "text": "person ",
+      "start": 3.193,
+      "end": 3.529
+    },
+    {
+      "text": "it ",
+      "start": 3.587,
+      "end": 3.657
+    },
+    {
+      "text": "belonged ",
+      "start": 3.704,
+      "end": 4.11
+    },
+    {
+      "text": "to.",
+      "start": 4.18,
+      "end": 4.737
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "9209bfbac70e68a03d318df478f7cdc4525b83adf51b43775cbe67d6a5707e76",
+  "effectiveWPM": 190.50031665611144
+}

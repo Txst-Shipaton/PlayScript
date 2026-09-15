@@ -1,0 +1,87 @@
+{
+  "text": "Nothing grand, I think. Only come back tomorrow. Only mean it when daylight finds us.",
+  "cues": [
+    {
+      "text": "Nothing ",
+      "start": 0.0,
+      "end": 0.325
+    },
+    {
+      "text": "grand, ",
+      "start": 0.383,
+      "end": 0.743
+    },
+    {
+      "text": "I ",
+      "start": 0.766,
+      "end": 0.789
+    },
+    {
+      "text": "think. ",
+      "start": 0.871,
+      "end": 1.242
+    },
+    {
+      "text": "Only ",
+      "start": 1.567,
+      "end": 1.892
+    },
+    {
+      "text": "come ",
+      "start": 1.962,
+      "end": 2.113
+    },
+    {
+      "text": "back ",
+      "start": 2.136,
+      "end": 2.287
+    },
+    {
+      "text": "tomorrow. ",
+      "start": 2.345,
+      "end": 2.926
+    },
+    {
+      "text": "Only ",
+      "start": 3.17,
+      "end": 3.448
+    },
+    {
+      "text": "mean ",
+      "start": 3.506,
+      "end": 3.68
+    },
+    {
+      "text": "it ",
+      "start": 3.727,
+      "end": 3.808
+    },
+    {
+      "text": "when ",
+      "start": 3.843,
+      "end": 3.994
+    },
+    {
+      "text": "daylight ",
+      "start": 4.052,
+      "end": 4.423
+    },
+    {
+      "text": "finds ",
+      "start": 4.458,
+      "end": 4.737
+    },
+    {
+      "text": "us.",
+      "start": 4.795,
+      "end": 5.294
+    }
+  ],
+  "playbackRate": 0.9999777777777777,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "fe9aef5a473d577a2c53bb7fdd757bab5d573c3538687c86556ed50707ded527",
+  "effectiveWPM": 170.0
+}

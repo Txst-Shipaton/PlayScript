@@ -1,0 +1,97 @@
+{
+  "text": "Then bid me be called something else, and I will be it before you have finished asking.",
+  "cues": [
+    {
+      "text": "Then ",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "text": "bid ",
+      "start": 0.29,
+      "end": 0.43
+    },
+    {
+      "text": "me ",
+      "start": 0.476,
+      "end": 0.546
+    },
+    {
+      "text": "be ",
+      "start": 0.592,
+      "end": 0.673
+    },
+    {
+      "text": "called ",
+      "start": 0.72,
+      "end": 1.033
+    },
+    {
+      "text": "something ",
+      "start": 1.103,
+      "end": 1.463
+    },
+    {
+      "text": "else, ",
+      "start": 1.533,
+      "end": 1.985
+    },
+    {
+      "text": "and ",
+      "start": 2.194,
+      "end": 2.357
+    },
+    {
+      "text": "I ",
+      "start": 2.426,
+      "end": 2.45
+    },
+    {
+      "text": "will ",
+      "start": 2.519,
+      "end": 2.682
+    },
+    {
+      "text": "be ",
+      "start": 2.74,
+      "end": 2.856
+    },
+    {
+      "text": "it ",
+      "start": 2.902,
+      "end": 2.984
+    },
+    {
+      "text": "before ",
+      "start": 3.03,
+      "end": 3.344
+    },
+    {
+      "text": "you ",
+      "start": 3.379,
+      "end": 3.471
+    },
+    {
+      "text": "have ",
+      "start": 3.541,
+      "end": 3.669
+    },
+    {
+      "text": "finished ",
+      "start": 3.704,
+      "end": 4.063
+    },
+    {
+      "text": "asking.",
+      "start": 4.145,
+      "end": 5.016
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "f4d6ab464f2573a6c17d9e40a61a4ade4fa53bf2c48ebc3c995e60d654ff62ef",
+  "effectiveWPM": 191.14832535885168
+}

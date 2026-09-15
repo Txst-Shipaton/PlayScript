@@ -1,0 +1,67 @@
+{
+  "text": "I have no promise that the world outside will forgive us.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "have ",
+      "start": 0.186,
+      "end": 0.337
+    },
+    {
+      "text": "no ",
+      "start": 0.383,
+      "end": 0.534
+    },
+    {
+      "text": "promise ",
+      "start": 0.627,
+      "end": 1.057
+    },
+    {
+      "text": "that ",
+      "start": 1.231,
+      "end": 1.405
+    },
+    {
+      "text": "the ",
+      "start": 1.44,
+      "end": 1.509
+    },
+    {
+      "text": "world ",
+      "start": 1.544,
+      "end": 1.8
+    },
+    {
+      "text": "outside ",
+      "start": 1.858,
+      "end": 2.426
+    },
+    {
+      "text": "will ",
+      "start": 2.461,
+      "end": 2.612
+    },
+    {
+      "text": "forgive ",
+      "start": 2.659,
+      "end": 2.961
+    },
+    {
+      "text": "us.",
+      "start": 2.995,
+      "end": 3.576
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "ddfbdec306da9608d8f7a652a36b22b157688df8a78a72d4ea86d9ae9f98ccce",
+  "effectiveWPM": 173.489932885906
+}
