@@ -10,11 +10,14 @@ struct ReaderView: View {
     @FocusState private var focusedChoice: String?
     @State private var hoveredChoice: String?
 
+    /// A decision is being weighed: the scene, the scrim, and the page chrome all yield.
+    private var deciding: Bool { model.needsChoice || model.pendingChoiceID != nil }
+
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 LivingScene(mood: model.beat.mood, beatID: model.beat.id,
-                            quiet: model.needsChoice || model.pendingChoiceID != nil,
+                            quiet: deciding,
                             resting: model.isPaused || scenePhase != .active,
                             attention: hoveredChoice != nil || focusedChoice != nil || model.pendingChoiceID != nil)
                     .ignoresSafeArea()
@@ -24,6 +27,18 @@ struct ReaderView: View {
                                        .init(color: .black.opacity(0.7), location: 0.55),
                                        .init(color: .black.opacity(0.94), location: 1)],
                                startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+                // While a decision is open the room draws back another step, so the
+                // two thoughts are the only lit things left on the screen.
+                LinearGradient(stops: [.init(color: .black.opacity(0.3), location: 0),
+                                       .init(color: .black.opacity(0.12), location: 0.3),
+                                       .init(color: .black.opacity(0.4), location: 0.62),
+                                       .init(color: .black.opacity(0.1), location: 1)],
+                               startPoint: .top, endPoint: .bottom)
+                    .ignoresSafeArea()
+                    .opacity(deciding ? 1 : 0)
+                    .allowsHitTesting(false)
+                    .accessibilityHidden(true)
+                    .animation(.easeInOut(duration: reduceMotion ? 0 : 0.9), value: deciding)
 
                 if model.beat.kind == .reflection {
                     reflection
@@ -108,6 +123,8 @@ struct ReaderView: View {
         }
         .id(model.beat.id)
         .transition(.opacity)
+        .opacity(deciding ? 0.42 : 1)
+        .animation(.easeInOut(duration: reduceMotion ? 0 : 0.9), value: deciding)
     }
 
     private var narrative: some View {

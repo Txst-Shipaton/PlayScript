@@ -27,13 +27,15 @@ extension Mood {
         }
     }
 
+    /// The key light, not a tint: each mood is lit by a different source.
+    /// Moonlight, then candlelight, then the cold air of the tomb, then the sun.
     var light: Color {
         switch self {
-        case .longing: Color(hex: 0xAC7881)
-        case .tender: Color(hex: 0xD9A099)
-        case .uneasy: Color(hex: 0x99909D)
-        case .grief: Color(hex: 0x777181)
-        case .dawn: Color(hex: 0xF0C5A2)
+        case .longing: Color(hex: 0xB185A3)
+        case .tender: Color(hex: 0xE0A79B)
+        case .uneasy: Color(hex: 0x8E8AA2)
+        case .grief: Color(hex: 0x6E7489)
+        case .dawn: Color(hex: 0xF6C89E)
         }
     }
 }
@@ -113,7 +115,8 @@ struct SceneBackdrop: View {
                             Rectangle().fill(mood.light.opacity(0.12)).blendMode(.softLight)
                         }
                 } else {
-                    LivingScene(mood: mood, beatID: "window", quiet: true, resting: true)
+                    // The cover keeps the full composition sharp; only its motion rests.
+                    LivingScene(mood: mood, beatID: "window", resting: true)
                 }
                 LinearGradient(colors: [.clear, .black.opacity(0.1), .black.opacity(cover ? 0.28 : 0.65)],
                                startPoint: .top, endPoint: .bottom)
