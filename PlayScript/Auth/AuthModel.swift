@@ -28,7 +28,10 @@ final class AuthModel {
         if arguments.contains("--uitesting-auth") {
             defaults.removeObject(forKey: Self.sessionKey)
         } else if arguments.contains("--uitesting") {
+            // Persist the bypass so a relaunch without arguments stays signed in,
+            // the way a real guest session would.
             isGuest = true
+            defaults.set("guest", forKey: Self.sessionKey)
             return
         }
         switch defaults.string(forKey: Self.sessionKey) {

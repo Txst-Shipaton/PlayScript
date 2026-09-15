@@ -1,0 +1,77 @@
+{
+  "text": "Some stories cannot change.\nBut we can hold their hearts\na little differently.",
+  "cues": [
+    {
+      "text": "Some ",
+      "start": 0.0,
+      "end": 0.279
+    },
+    {
+      "text": "stories ",
+      "start": 0.325,
+      "end": 0.72
+    },
+    {
+      "text": "cannot ",
+      "start": 0.766,
+      "end": 1.033
+    },
+    {
+      "text": "change.\n",
+      "start": 1.08,
+      "end": 1.649
+    },
+    {
+      "text": "But ",
+      "start": 2.159,
+      "end": 2.31
+    },
+    {
+      "text": "we ",
+      "start": 2.345,
+      "end": 2.415
+    },
+    {
+      "text": "can ",
+      "start": 2.461,
+      "end": 2.577
+    },
+    {
+      "text": "hold ",
+      "start": 2.635,
+      "end": 2.81
+    },
+    {
+      "text": "their ",
+      "start": 2.856,
+      "end": 3.03
+    },
+    {
+      "text": "hearts\n",
+      "start": 3.088,
+      "end": 3.402
+    },
+    {
+      "text": "a ",
+      "start": 3.437,
+      "end": 3.471
+    },
+    {
+      "text": "little ",
+      "start": 3.506,
+      "end": 3.727
+    },
+    {
+      "text": "differently.",
+      "start": 3.762,
+      "end": 4.644
+    }
+  ],
+  "playbackRate": 1.0121538461538462,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "d477dbda73a8ee01c5c22001c3ad6119349719501bd52cd3ea506f9ab0b4c5d3",
+  "effectiveWPM": 170.0
+}

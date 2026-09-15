@@ -1,0 +1,252 @@
+{
+  "text": "“Only if you mean to marry me,” I whisper. “Only if this is true.”\n\nHe answers gently, and I let myself believe him. Tomorrow, I will send someone to learn the time and place. My yes is quiet. It is still a yes.",
+  "segments": [
+    {
+      "resource": "voice-vow-choice--sure-part-00",
+      "speaker": "Juliet",
+      "text": "“Only if you mean to marry me,”",
+      "cues": [
+        {
+          "text": "“Only ",
+          "start": 0.0,
+          "end": 0.453
+        },
+        {
+          "text": "if ",
+          "start": 0.511,
+          "end": 0.58
+        },
+        {
+          "text": "you ",
+          "start": 0.627,
+          "end": 0.697
+        },
+        {
+          "text": "mean ",
+          "start": 0.766,
+          "end": 0.929
+        },
+        {
+          "text": "to ",
+          "start": 0.987,
+          "end": 1.057
+        },
+        {
+          "text": "marry ",
+          "start": 1.126,
+          "end": 1.44
+        },
+        {
+          "text": "me,”",
+          "start": 1.498,
+          "end": 1.95
+        }
+      ],
+      "playbackRate": 0.7892857142857143
+    },
+    {
+      "resource": "voice-vow-choice--sure-part-01",
+      "speaker": "Narrator",
+      "text": " I whisper. ",
+      "cues": [
+        {
+          "text": " I ",
+          "start": 0.046,
+          "end": 0.093
+        },
+        {
+          "text": "whisper. ",
+          "start": 0.174,
+          "end": 0.685
+        }
+      ],
+      "playbackRate": 0.9704166666666667
+    },
+    {
+      "resource": "voice-vow-choice--sure-part-02",
+      "speaker": "Juliet",
+      "text": "“Only if this is true.”",
+      "cues": [
+        {
+          "text": "“Only ",
+          "start": 0.0,
+          "end": 0.395
+        },
+        {
+          "text": "if ",
+          "start": 0.441,
+          "end": 0.511
+        },
+        {
+          "text": "this ",
+          "start": 0.546,
+          "end": 0.673
+        },
+        {
+          "text": "is ",
+          "start": 0.731,
+          "end": 0.813
+        },
+        {
+          "text": "true.”",
+          "start": 0.871,
+          "end": 1.44
+        }
+      ],
+      "playbackRate": 0.816
+    },
+    {
+      "resource": "voice-vow-choice--sure-part-03",
+      "speaker": "Narrator",
+      "text": "\n\nHe answers gently, and I let myself believe him. Tomorrow, I will send someone to learn the time and place. My yes is quiet. It is still a yes.",
+      "cues": [
+        {
+          "text": "\n\nHe ",
+          "start": 0.07,
+          "end": 0.151
+        },
+        {
+          "text": "answers ",
+          "start": 0.221,
+          "end": 0.557
+        },
+        {
+          "text": "gently, ",
+          "start": 0.615,
+          "end": 1.184
+        },
+        {
+          "text": "and ",
+          "start": 1.254,
+          "end": 1.393
+        },
+        {
+          "text": "I ",
+          "start": 1.451,
+          "end": 1.474
+        },
+        {
+          "text": "let ",
+          "start": 1.556,
+          "end": 1.695
+        },
+        {
+          "text": "myself ",
+          "start": 1.741,
+          "end": 2.067
+        },
+        {
+          "text": "believe ",
+          "start": 2.125,
+          "end": 2.45
+        },
+        {
+          "text": "him. ",
+          "start": 2.496,
+          "end": 2.833
+        },
+        {
+          "text": "Tomorrow, ",
+          "start": 3.274,
+          "end": 3.785
+        },
+        {
+          "text": "I ",
+          "start": 3.831,
+          "end": 3.878
+        },
+        {
+          "text": "will ",
+          "start": 3.947,
+          "end": 4.098
+        },
+        {
+          "text": "send ",
+          "start": 4.156,
+          "end": 4.354
+        },
+        {
+          "text": "someone ",
+          "start": 4.412,
+          "end": 4.702
+        },
+        {
+          "text": "to ",
+          "start": 4.737,
+          "end": 4.795
+        },
+        {
+          "text": "learn ",
+          "start": 4.853,
+          "end": 5.085
+        },
+        {
+          "text": "the ",
+          "start": 5.132,
+          "end": 5.201
+        },
+        {
+          "text": "time ",
+          "start": 5.248,
+          "end": 5.515
+        },
+        {
+          "text": "and ",
+          "start": 5.55,
+          "end": 5.619
+        },
+        {
+          "text": "place. ",
+          "start": 5.677,
+          "end": 6.258
+        },
+        {
+          "text": "My ",
+          "start": 6.769,
+          "end": 6.908
+        },
+        {
+          "text": "yes ",
+          "start": 6.978,
+          "end": 7.256
+        },
+        {
+          "text": "is ",
+          "start": 7.314,
+          "end": 7.442
+        },
+        {
+          "text": "quiet. ",
+          "start": 7.5,
+          "end": 8.081
+        },
+        {
+          "text": "It ",
+          "start": 8.591,
+          "end": 8.731
+        },
+        {
+          "text": "is ",
+          "start": 8.777,
+          "end": 8.847
+        },
+        {
+          "text": "still ",
+          "start": 8.893,
+          "end": 9.125
+        },
+        {
+          "text": "a ",
+          "start": 9.16,
+          "end": 9.183
+        },
+        {
+          "text": "yes.",
+          "start": 9.253,
+          "end": 9.985
+        }
+      ],
+      "playbackRate": 0.9755459770114943
+    }
+  ]
+}

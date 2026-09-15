@@ -59,7 +59,7 @@ struct LoginView: View {
                 Text("PlayScript")
                     .literary(38, relativeTo: .largeTitle)
                     .tracking(-1)
-                Text("A love story waiting for your voice.")
+                Text("Books are meant to be lived, not just read")
                     .literary(16, relativeTo: .subheadline)
                     .foregroundStyle(Palette.muted)
                     .multilineTextAlignment(.center)

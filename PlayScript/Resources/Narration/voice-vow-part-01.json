@@ -1,0 +1,42 @@
+{
+  "text": "“Then what shall I swear by?”",
+  "cues": [
+    {
+      "text": "“Then ",
+      "start": 0.0,
+      "end": 0.279
+    },
+    {
+      "text": "what ",
+      "start": 0.313,
+      "end": 0.43
+    },
+    {
+      "text": "shall ",
+      "start": 0.453,
+      "end": 0.615
+    },
+    {
+      "text": "I ",
+      "start": 0.662,
+      "end": 0.685
+    },
+    {
+      "text": "swear ",
+      "start": 0.755,
+      "end": 1.01
+    },
+    {
+      "text": "by?”",
+      "start": 1.08,
+      "end": 1.718
+    }
+  ],
+  "playbackRate": 0.8112777777777778,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "6e35b2286b8f5b481daf5c2994c91a0e4b54157fd96f1ebef859d3a9bd02cfae",
+  "effectiveWPM": 170.0
+}

@@ -1,0 +1,232 @@
+{
+  "text": "I am already on the road when the messenger calls my name.\n\nI break the seal with shaking hands. Laurence’s writing. Juliet lives. Her stillness is a borrowed sleep, and I must be there when it ends.\n\nI read those words again. Juliet lives.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "am ",
+      "start": 0.151,
+      "end": 0.232
+    },
+    {
+      "text": "already ",
+      "start": 0.29,
+      "end": 0.604
+    },
+    {
+      "text": "on ",
+      "start": 0.662,
+      "end": 0.731
+    },
+    {
+      "text": "the ",
+      "start": 0.778,
+      "end": 0.848
+    },
+    {
+      "text": "road ",
+      "start": 0.917,
+      "end": 1.207
+    },
+    {
+      "text": "when ",
+      "start": 1.382,
+      "end": 1.556
+    },
+    {
+      "text": "the ",
+      "start": 1.579,
+      "end": 1.649
+    },
+    {
+      "text": "messenger ",
+      "start": 1.683,
+      "end": 2.078
+    },
+    {
+      "text": "calls ",
+      "start": 2.148,
+      "end": 2.426
+    },
+    {
+      "text": "my ",
+      "start": 2.485,
+      "end": 2.589
+    },
+    {
+      "text": "name.\n\n",
+      "start": 2.682,
+      "end": 3.228
+    },
+    {
+      "text": "I ",
+      "start": 3.738,
+      "end": 3.796
+    },
+    {
+      "text": "break ",
+      "start": 3.913,
+      "end": 4.156
+    },
+    {
+      "text": "the ",
+      "start": 4.214,
+      "end": 4.284
+    },
+    {
+      "text": "seal ",
+      "start": 4.354,
+      "end": 4.621
+    },
+    {
+      "text": "with ",
+      "start": 4.679,
+      "end": 4.818
+    },
+    {
+      "text": "shaking ",
+      "start": 4.853,
+      "end": 5.213
+    },
+    {
+      "text": "hands. ",
+      "start": 5.283,
+      "end": 5.875
+    },
+    {
+      "text": "Laurence’s ",
+      "start": 6.258,
+      "end": 6.803
+    },
+    {
+      "text": "writing. ",
+      "start": 6.85,
+      "end": 7.454
+    },
+    {
+      "text": "Juliet ",
+      "start": 7.837,
+      "end": 8.324
+    },
+    {
+      "text": "lives. ",
+      "start": 8.406,
+      "end": 8.986
+    },
+    {
+      "text": "Her ",
+      "start": 9.427,
+      "end": 9.59
+    },
+    {
+      "text": "stillness ",
+      "start": 9.648,
+      "end": 10.124
+    },
+    {
+      "text": "is ",
+      "start": 10.182,
+      "end": 10.275
+    },
+    {
+      "text": "a ",
+      "start": 10.321,
+      "end": 10.356
+    },
+    {
+      "text": "borrowed ",
+      "start": 10.403,
+      "end": 10.739
+    },
+    {
+      "text": "sleep, ",
+      "start": 10.786,
+      "end": 11.238
+    },
+    {
+      "text": "and ",
+      "start": 11.285,
+      "end": 11.436
+    },
+    {
+      "text": "I ",
+      "start": 11.505,
+      "end": 11.529
+    },
+    {
+      "text": "must ",
+      "start": 11.598,
+      "end": 11.773
+    },
+    {
+      "text": "be ",
+      "start": 11.819,
+      "end": 11.912
+    },
+    {
+      "text": "there ",
+      "start": 11.947,
+      "end": 12.109
+    },
+    {
+      "text": "when ",
+      "start": 12.132,
+      "end": 12.26
+    },
+    {
+      "text": "it ",
+      "start": 12.307,
+      "end": 12.376
+    },
+    {
+      "text": "ends.\n\n",
+      "start": 12.446,
+      "end": 12.968
+    },
+    {
+      "text": "I ",
+      "start": 13.351,
+      "end": 13.41
+    },
+    {
+      "text": "read ",
+      "start": 13.526,
+      "end": 13.735
+    },
+    {
+      "text": "those ",
+      "start": 13.781,
+      "end": 14.002
+    },
+    {
+      "text": "words ",
+      "start": 14.048,
+      "end": 14.338
+    },
+    {
+      "text": "again. ",
+      "start": 14.373,
+      "end": 14.988
+    },
+    {
+      "text": "Juliet ",
+      "start": 15.592,
+      "end": 16.057
+    },
+    {
+      "text": "lives.",
+      "start": 16.126,
+      "end": 16.858
+    }
+  ],
+  "playbackRate": 1.0855530303030303,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "c5cd3bc579c4ce575c6850c54cb7ace3999d46e89de82f51ab503363c21a2fd9",
+  "effectiveWPM": 170.0
+}

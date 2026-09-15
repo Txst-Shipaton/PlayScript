@@ -1,0 +1,127 @@
+{
+  "text": "If anyone finds him here, his name alone will condemn him. I should send him away.\n\nInstead, I move closer to the window.",
+  "cues": [
+    {
+      "text": "If ",
+      "start": 0.0,
+      "end": 0.151
+    },
+    {
+      "text": "anyone ",
+      "start": 0.209,
+      "end": 0.522
+    },
+    {
+      "text": "finds ",
+      "start": 0.569,
+      "end": 0.836
+    },
+    {
+      "text": "him ",
+      "start": 0.871,
+      "end": 0.964
+    },
+    {
+      "text": "here, ",
+      "start": 1.022,
+      "end": 1.382
+    },
+    {
+      "text": "his ",
+      "start": 1.556,
+      "end": 1.683
+    },
+    {
+      "text": "name ",
+      "start": 1.73,
+      "end": 1.916
+    },
+    {
+      "text": "alone ",
+      "start": 1.95,
+      "end": 2.218
+    },
+    {
+      "text": "will ",
+      "start": 2.252,
+      "end": 2.392
+    },
+    {
+      "text": "condemn ",
+      "start": 2.438,
+      "end": 2.763
+    },
+    {
+      "text": "him. ",
+      "start": 2.798,
+      "end": 3.123
+    },
+    {
+      "text": "I ",
+      "start": 3.564,
+      "end": 3.622
+    },
+    {
+      "text": "should ",
+      "start": 3.692,
+      "end": 3.866
+    },
+    {
+      "text": "send ",
+      "start": 3.901,
+      "end": 4.063
+    },
+    {
+      "text": "him ",
+      "start": 4.11,
+      "end": 4.191
+    },
+    {
+      "text": "away.\n\n",
+      "start": 4.249,
+      "end": 4.737
+    },
+    {
+      "text": "Instead, ",
+      "start": 5.248,
+      "end": 5.793
+    },
+    {
+      "text": "I ",
+      "start": 5.851,
+      "end": 5.898
+    },
+    {
+      "text": "move ",
+      "start": 6.014,
+      "end": 6.211
+    },
+    {
+      "text": "closer ",
+      "start": 6.246,
+      "end": 6.548
+    },
+    {
+      "text": "to ",
+      "start": 6.594,
+      "end": 6.653
+    },
+    {
+      "text": "the ",
+      "start": 6.699,
+      "end": 6.769
+    },
+    {
+      "text": "window.",
+      "start": 6.815,
+      "end": 7.57
+    }
+  ],
+  "playbackRate": 0.9325362318840581,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "8e17c579dca1a58f11915458ab1748b461b671016a79277a5a9f081207005433",
+  "effectiveWPM": 170.0
+}

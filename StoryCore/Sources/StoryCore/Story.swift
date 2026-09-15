@@ -79,11 +79,13 @@ public struct SavedPlace: Codable, Equatable, Sendable {
     public let storyID: String
     public let beatID: String
     public let selectedChoiceID: String?
+    public let decisions: [String: String]?
 
-    public init(storyID: String, beatID: String, selectedChoiceID: String?) {
+    public init(storyID: String, beatID: String, selectedChoiceID: String?, decisions: [String: String]? = nil) {
         self.storyID = storyID
         self.beatID = beatID
         self.selectedChoiceID = selectedChoiceID
+        self.decisions = decisions
     }
 }
 
@@ -92,6 +94,7 @@ public struct StoryRun: Sendable {
     public let story: Story
     public private(set) var index: Int
     public private(set) var selectedChoiceID: String?
+    public private(set) var decisions: [String: String] = [:]
 
     public init(story: Story, savedPlace: SavedPlace? = nil) {
         self.story = story
@@ -99,6 +102,10 @@ public struct StoryRun: Sendable {
            let restoredIndex = story.beats.firstIndex(where: { $0.id == place.beatID }) {
             index = restoredIndex
             selectedChoiceID = story.beats[restoredIndex].choices.first { $0.id == place.selectedChoiceID }?.id
+            decisions = (place.decisions ?? [:]).filter { beatID, choiceID in
+                story.beats.prefix(restoredIndex + 1).contains { $0.id == beatID && $0.choices.contains { $0.id == choiceID } }
+            }
+            if let selectedChoiceID { decisions[place.beatID] = selectedChoiceID }
         } else {
             index = 0
             selectedChoiceID = nil
@@ -110,13 +117,14 @@ public struct StoryRun: Sendable {
     public var text: String { selectedChoice?.flavor ?? beat.text }
     public var needsChoice: Bool { beat.kind == .choice && selectedChoice == nil }
     public var savedPlace: SavedPlace {
-        SavedPlace(storyID: story.id, beatID: beat.id, selectedChoiceID: selectedChoiceID)
+        SavedPlace(storyID: story.id, beatID: beat.id, selectedChoiceID: selectedChoiceID, decisions: decisions)
     }
 
     @discardableResult
     public mutating func choose(_ id: String) -> Bool {
         guard needsChoice, beat.choices.contains(where: { $0.id == id }) else { return false }
         selectedChoiceID = id
+        decisions[beat.id] = id
         return true
     }
 

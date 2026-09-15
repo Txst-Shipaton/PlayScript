@@ -7,6 +7,7 @@ final class ReadingModel {
     private(set) var run: StoryRun
     var isReading = false
     var isPaused = false
+    var isTurningPage = false
     private(set) var pendingChoiceID: String?
     private(set) var savedPlace: SavedPlace?
     private(set) var hasFinished: Bool
@@ -43,9 +44,18 @@ final class ReadingModel {
             defaults.set(false, forKey: "voiceEnabled")
         }
         let place = defaults.data(forKey: saveKey).flatMap { try? JSONDecoder().decode(SavedPlace.self, from: $0) }
-        let restored = StoryRun(story: story, savedPlace: place)
-        savedPlace = place == restored.savedPlace ? place : nil
+        var restored = StoryRun(story: story, savedPlace: place)
+        var restoredPlace = place?.storyID == story.id && story.beats.contains(where: { $0.id == place?.beatID }) ? restored.savedPlace : nil
+        #if DEBUG
+        // Drops the UI test straight onto a multi-voice page so the cast can be asserted.
+        if ProcessInfo.processInfo.arguments.contains("--uitesting-cast") {
+            restored = StoryRun(story: story, savedPlace: SavedPlace(storyID: story.id, beatID: "in-time", selectedChoiceID: nil))
+            restoredPlace = restored.savedPlace
+            defaults.set(true, forKey: "voiceEnabled")
+        }
+        #endif
         run = restored
+        savedPlace = restoredPlace
         soundEnabled = defaults.object(forKey: "soundEnabled") as? Bool ?? true
         voiceEnabled = defaults.object(forKey: "voiceEnabled") as? Bool ?? true
         hasFinished = defaults.bool(forKey: "hasFinished")
@@ -123,6 +133,11 @@ final class ReadingModel {
         updateAudio()
     }
 
+    func setPageTurning(_ turning: Bool) {
+        isTurningPage = turning
+        updateAudio()
+    }
+
     private func save() {
         if beat.kind == .reflection {
             hasFinished = true
@@ -144,7 +159,7 @@ final class ReadingModel {
     }
 
     private func updateAudio() {
-        let playing = isReading && !isPaused && isActive
+        let playing = isReading && !isPaused && isActive && !isTurningPage
         audio.set(mood: beat.mood, playing: playing && (soundEnabled || voiceEnabled),
                   ambientVolume: soundEnabled ? (needsChoice || voiceEnabled ? 0.1 : 0.38) : 0)
         let voiceID = beat.id + (run.selectedChoiceID.map { "--" + $0 } ?? "")

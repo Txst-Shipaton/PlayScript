@@ -1,0 +1,259 @@
+{
+  "text": "He begins to swear by the moon. I stop him. The moon changes; I cannot bear the thought of this changing with it.\n\n“Then what shall I swear by?” he asks.\n\nNothing grand, I think. Only come back tomorrow. Only mean it when daylight finds us.",
+  "segments": [
+    {
+      "resource": "voice-vow-part-00",
+      "speaker": "Narrator",
+      "text": "He begins to swear by the moon. I stop him. The moon changes; I cannot bear the thought of this changing with it.\n\n",
+      "cues": [
+        {
+          "text": "He ",
+          "start": 0.0,
+          "end": 0.139
+        },
+        {
+          "text": "begins ",
+          "start": 0.197,
+          "end": 0.476
+        },
+        {
+          "text": "to ",
+          "start": 0.522,
+          "end": 0.58
+        },
+        {
+          "text": "swear ",
+          "start": 0.65,
+          "end": 0.94
+        },
+        {
+          "text": "by ",
+          "start": 0.998,
+          "end": 1.091
+        },
+        {
+          "text": "the ",
+          "start": 1.149,
+          "end": 1.219
+        },
+        {
+          "text": "moon. ",
+          "start": 1.277,
+          "end": 1.707
+        },
+        {
+          "text": "I ",
+          "start": 1.881,
+          "end": 1.927
+        },
+        {
+          "text": "stop ",
+          "start": 2.02,
+          "end": 2.264
+        },
+        {
+          "text": "him. ",
+          "start": 2.334,
+          "end": 2.554
+        },
+        {
+          "text": "The ",
+          "start": 2.728,
+          "end": 2.844
+        },
+        {
+          "text": "moon ",
+          "start": 2.902,
+          "end": 3.111
+        },
+        {
+          "text": "changes; ",
+          "start": 3.181,
+          "end": 3.762
+        },
+        {
+          "text": "I ",
+          "start": 3.889,
+          "end": 3.936
+        },
+        {
+          "text": "cannot ",
+          "start": 4.005,
+          "end": 4.249
+        },
+        {
+          "text": "bear ",
+          "start": 4.296,
+          "end": 4.481
+        },
+        {
+          "text": "the ",
+          "start": 4.528,
+          "end": 4.598
+        },
+        {
+          "text": "thought ",
+          "start": 4.667,
+          "end": 4.923
+        },
+        {
+          "text": "of ",
+          "start": 4.957,
+          "end": 5.004
+        },
+        {
+          "text": "this ",
+          "start": 5.05,
+          "end": 5.19
+        },
+        {
+          "text": "changing ",
+          "start": 5.248,
+          "end": 5.642
+        },
+        {
+          "text": "with ",
+          "start": 5.689,
+          "end": 5.84
+        },
+        {
+          "text": "it.\n\n",
+          "start": 5.886,
+          "end": 6.118
+        }
+      ],
+      "playbackRate": 0.7536666666666666
+    },
+    {
+      "resource": "voice-vow-part-01",
+      "speaker": "Romeo",
+      "text": "“Then what shall I swear by?”",
+      "cues": [
+        {
+          "text": "“Then ",
+          "start": 0.0,
+          "end": 0.279
+        },
+        {
+          "text": "what ",
+          "start": 0.313,
+          "end": 0.43
+        },
+        {
+          "text": "shall ",
+          "start": 0.453,
+          "end": 0.615
+        },
+        {
+          "text": "I ",
+          "start": 0.662,
+          "end": 0.685
+        },
+        {
+          "text": "swear ",
+          "start": 0.755,
+          "end": 1.01
+        },
+        {
+          "text": "by?”",
+          "start": 1.08,
+          "end": 1.718
+        }
+      ],
+      "playbackRate": 0.8112777777777778
+    },
+    {
+      "resource": "voice-vow-part-02",
+      "speaker": "Narrator",
+      "text": " he asks.\n\nNothing grand, I think. Only come back tomorrow. Only mean it when daylight finds us.",
+      "cues": [
+        {
+          "text": " he ",
+          "start": 0.081,
+          "end": 0.151
+        },
+        {
+          "text": "asks.\n\n",
+          "start": 0.221,
+          "end": 0.685
+        },
+        {
+          "text": "Nothing ",
+          "start": 0.929,
+          "end": 1.242
+        },
+        {
+          "text": "grand, ",
+          "start": 1.3,
+          "end": 1.672
+        },
+        {
+          "text": "I ",
+          "start": 1.707,
+          "end": 1.73
+        },
+        {
+          "text": "think. ",
+          "start": 1.811,
+          "end": 2.183
+        },
+        {
+          "text": "Only ",
+          "start": 2.392,
+          "end": 2.624
+        },
+        {
+          "text": "come ",
+          "start": 2.67,
+          "end": 2.821
+        },
+        {
+          "text": "back ",
+          "start": 2.844,
+          "end": 2.995
+        },
+        {
+          "text": "tomorrow. ",
+          "start": 3.042,
+          "end": 3.576
+        },
+        {
+          "text": "Only ",
+          "start": 3.855,
+          "end": 4.11
+        },
+        {
+          "text": "mean ",
+          "start": 4.18,
+          "end": 4.354
+        },
+        {
+          "text": "it ",
+          "start": 4.4,
+          "end": 4.47
+        },
+        {
+          "text": "when ",
+          "start": 4.505,
+          "end": 4.656
+        },
+        {
+          "text": "daylight ",
+          "start": 4.714,
+          "end": 5.108
+        },
+        {
+          "text": "finds ",
+          "start": 5.155,
+          "end": 5.457
+        },
+        {
+          "text": "us.",
+          "start": 5.503,
+          "end": 6.037
+        }
+      ],
+      "playbackRate": 1.0061666666666667
+    }
+  ]
+}

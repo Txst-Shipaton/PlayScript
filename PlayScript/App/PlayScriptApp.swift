@@ -27,7 +27,7 @@ struct RootView: View {
                         get: { model.isReading },
                         set: { if !$0 { model.returnToLibrary() } }
                     )) {
-                        ReaderView(model: model)
+                        BookTurnHost(model: model).ignoresSafeArea()
                     }
             } else if loadFailed {
                 ContentUnavailableView {

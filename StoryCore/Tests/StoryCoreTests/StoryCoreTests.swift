@@ -27,6 +27,10 @@ import Testing
         } while run.advance()
         #expect(visited == story.beats.map(\.id))
         #expect(run.beat.kind == .reflection)
+        #expect(run.decisions.count == 3)
+        let reflection = ChoiceReflection(decisions: run.decisions)
+        #expect(reflection.traits.count == 3)
+        #expect(reflection.character == (combination.nonzeroBitCount <= 1 ? "Romeo" : "Juliet"))
         let advancedPastEnd = run.advance()
         #expect(!advancedPastEnd)
     }
@@ -45,6 +49,23 @@ import Testing
     #expect(restored.text == run.text)
     #expect(restored.index == run.index)
     #expect(!restored.needsChoice)
+    #expect(restored.decisions == run.decisions)
+}
+
+@Test func decisionsSurviveLaterPagesAndLegacySavesStillOpen() throws {
+    let story = try Story.bundled()
+    var run = StoryRun(story: story)
+    run.advance()
+    run.choose("listen")
+    run.advance()
+    let saved = try JSONEncoder().encode(run.savedPlace)
+    let restored = StoryRun(story: story, savedPlace: try JSONDecoder().decode(SavedPlace.self, from: saved))
+    #expect(restored.decisions["window-choice"] == "listen")
+    let legacy = Data(#"{"storyID":"romeo-and-juliet","beatID":"window-choice","selectedChoiceID":"answer"}"#.utf8)
+    let legacyRun = StoryRun(story: story, savedPlace: try JSONDecoder().decode(SavedPlace.self, from: legacy))
+    #expect(legacyRun.decisions["window-choice"] == "answer")
+    #expect(legacyRun.selectedChoiceID == "answer")
+    #expect(StoryRun(story: story).decisions.isEmpty)
 }
 
 @Test func obsoleteSavedPlacesRecoverSafely() throws {

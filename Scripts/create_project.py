@@ -47,8 +47,15 @@ app_refs, app_sources, app_resources, test_refs, test_sources = [], [], [], [], 
 paths = sorted((ROOT / 'PlayScript').rglob('*.swift'))
 paths += [ROOT / 'PlayScript/Resources/Assets.xcassets', ROOT / 'PlayScript/Resources/PrivacyInfo.xcprivacy']
 paths += sorted((ROOT / 'PlayScript/Resources/Audio').glob('*.wav'))
-paths += sorted((ROOT / 'PlayScript/Resources/Narration').glob('*.mp3'))
-paths += sorted((ROOT / 'PlayScript/Resources/Narration').glob('*.json'))
+narration = ROOT / 'PlayScript/Resources/Narration'
+playlists = sorted(narration.glob('cast-*.json'))
+if playlists:
+    paths += playlists
+    paths += sorted({narration / (segment['resource'] + '.mp3')
+                     for playlist in playlists for segment in json.loads(playlist.read_text())['segments']})
+else:
+    paths += sorted(narration.glob('*.mp3'))
+    paths += sorted(narration.glob('*.json'))
 paths += sorted((ROOT / 'PlayScript/Resources/Score').glob('*.mp3'))
 paths += sorted((ROOT / 'PlayScript/Resources/Lottie').glob('*.json'))
 paths += sorted((ROOT / 'PlayScriptUITests').glob('*.swift'))

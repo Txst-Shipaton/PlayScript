@@ -1,0 +1,257 @@
+{
+  "text": "Friar Laurence has married us in secret. For a little while, I have been Romeo’s wife.\n\nThen Tybalt is dead by Romeo’s hand, Romeo is banished, and my father has promised me to Paris.\n\nI come back to the Friar with no safe place left to put my hope.",
+  "cues": [
+    {
+      "text": "Friar ",
+      "start": 0.0,
+      "end": 0.383
+    },
+    {
+      "text": "Laurence ",
+      "start": 0.43,
+      "end": 0.789
+    },
+    {
+      "text": "has ",
+      "start": 0.824,
+      "end": 0.94
+    },
+    {
+      "text": "married ",
+      "start": 1.01,
+      "end": 1.312
+    },
+    {
+      "text": "us ",
+      "start": 1.347,
+      "end": 1.44
+    },
+    {
+      "text": "in ",
+      "start": 1.498,
+      "end": 1.579
+    },
+    {
+      "text": "secret. ",
+      "start": 1.649,
+      "end": 2.241
+    },
+    {
+      "text": "For ",
+      "start": 2.844,
+      "end": 2.995
+    },
+    {
+      "text": "a ",
+      "start": 3.03,
+      "end": 3.053
+    },
+    {
+      "text": "little ",
+      "start": 3.1,
+      "end": 3.332
+    },
+    {
+      "text": "while, ",
+      "start": 3.355,
+      "end": 3.82
+    },
+    {
+      "text": "I ",
+      "start": 3.947,
+      "end": 3.982
+    },
+    {
+      "text": "have ",
+      "start": 4.063,
+      "end": 4.18
+    },
+    {
+      "text": "been ",
+      "start": 4.214,
+      "end": 4.412
+    },
+    {
+      "text": "Romeo’s ",
+      "start": 4.493,
+      "end": 5.016
+    },
+    {
+      "text": "wife.\n\n",
+      "start": 5.062,
+      "end": 5.596
+    },
+    {
+      "text": "Then ",
+      "start": 6.037,
+      "end": 6.258
+    },
+    {
+      "text": "Tybalt ",
+      "start": 6.339,
+      "end": 6.676
+    },
+    {
+      "text": "is ",
+      "start": 6.734,
+      "end": 6.815
+    },
+    {
+      "text": "dead ",
+      "start": 6.885,
+      "end": 7.163
+    },
+    {
+      "text": "by ",
+      "start": 7.279,
+      "end": 7.43
+    },
+    {
+      "text": "Romeo’s ",
+      "start": 7.512,
+      "end": 8.011
+    },
+    {
+      "text": "hand, ",
+      "start": 8.069,
+      "end": 8.638
+    },
+    {
+      "text": "Romeo ",
+      "start": 9.149,
+      "end": 9.567
+    },
+    {
+      "text": "is ",
+      "start": 9.648,
+      "end": 9.729
+    },
+    {
+      "text": "banished, ",
+      "start": 9.787,
+      "end": 10.368
+    },
+    {
+      "text": "and ",
+      "start": 10.519,
+      "end": 10.67
+    },
+    {
+      "text": "my ",
+      "start": 10.728,
+      "end": 10.82
+    },
+    {
+      "text": "father ",
+      "start": 10.89,
+      "end": 11.204
+    },
+    {
+      "text": "has ",
+      "start": 11.25,
+      "end": 11.355
+    },
+    {
+      "text": "promised ",
+      "start": 11.413,
+      "end": 11.738
+    },
+    {
+      "text": "me ",
+      "start": 11.784,
+      "end": 11.865
+    },
+    {
+      "text": "to ",
+      "start": 11.912,
+      "end": 11.97
+    },
+    {
+      "text": "Paris.\n\n",
+      "start": 12.028,
+      "end": 12.632
+    },
+    {
+      "text": "I ",
+      "start": 13.142,
+      "end": 13.201
+    },
+    {
+      "text": "come ",
+      "start": 13.317,
+      "end": 13.514
+    },
+    {
+      "text": "back ",
+      "start": 13.549,
+      "end": 13.746
+    },
+    {
+      "text": "to ",
+      "start": 13.804,
+      "end": 13.874
+    },
+    {
+      "text": "the ",
+      "start": 13.932,
+      "end": 14.002
+    },
+    {
+      "text": "Friar ",
+      "start": 14.06,
+      "end": 14.443
+    },
+    {
+      "text": "with ",
+      "start": 14.594,
+      "end": 14.779
+    },
+    {
+      "text": "no ",
+      "start": 14.838,
+      "end": 14.954
+    },
+    {
+      "text": "safe ",
+      "start": 15.047,
+      "end": 15.314
+    },
+    {
+      "text": "place ",
+      "start": 15.36,
+      "end": 15.685
+    },
+    {
+      "text": "left ",
+      "start": 15.732,
+      "end": 15.987
+    },
+    {
+      "text": "to ",
+      "start": 16.022,
+      "end": 16.08
+    },
+    {
+      "text": "put ",
+      "start": 16.138,
+      "end": 16.3
+    },
+    {
+      "text": "my ",
+      "start": 16.358,
+      "end": 16.463
+    },
+    {
+      "text": "hope.",
+      "start": 16.544,
+      "end": 17.136
+    }
+  ],
+  "playbackRate": 0.9908571428571429,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "d030a83f6711d34c6120fdd4bd1312437bb63e5afd2ab38cfaa252e0ed491014",
+  "effectiveWPM": 170.0
+}

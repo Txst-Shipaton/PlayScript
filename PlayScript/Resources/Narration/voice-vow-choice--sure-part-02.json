@@ -1,0 +1,37 @@
+{
+  "text": "“Only if this is true.”",
+  "cues": [
+    {
+      "text": "“Only ",
+      "start": 0.0,
+      "end": 0.395
+    },
+    {
+      "text": "if ",
+      "start": 0.441,
+      "end": 0.511
+    },
+    {
+      "text": "this ",
+      "start": 0.546,
+      "end": 0.673
+    },
+    {
+      "text": "is ",
+      "start": 0.731,
+      "end": 0.813
+    },
+    {
+      "text": "true.”",
+      "start": 0.871,
+      "end": 1.44
+    }
+  ],
+  "playbackRate": 0.816,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "23b7508c2bda49ef83b32c2c567f9b8fcdd8b42e4bf300f1858b2608ae035e98",
+  "effectiveWPM": 170.0
+}

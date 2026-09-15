@@ -1,0 +1,228 @@
+{
+  "text": "The Friar tells me his letter never reached Romeo. He urges me to leave; the watch is coming.\n\nBut Romeo came here believing I was gone. All our tomorrows have narrowed to this silence.\n\nI stay beside my husband when the Friar flees.",
+  "segments": [
+    {
+      "resource": "voice-letter-lost-part-00",
+      "speaker": "Narrator",
+      "text": "The Friar tells me his letter never reached Romeo. He urges me to leave; the watch is coming.\n\nBut Romeo came here believing I was gone. All our tomorrows have narrowed to this silence.\n\nI stay beside my husband when the Friar flees.",
+      "cues": [
+        {
+          "text": "The ",
+          "start": 0.0,
+          "end": 0.163
+        },
+        {
+          "text": "Friar ",
+          "start": 0.209,
+          "end": 0.511
+        },
+        {
+          "text": "tells ",
+          "start": 0.557,
+          "end": 0.789
+        },
+        {
+          "text": "me ",
+          "start": 0.848,
+          "end": 0.929
+        },
+        {
+          "text": "his ",
+          "start": 0.998,
+          "end": 1.103
+        },
+        {
+          "text": "letter ",
+          "start": 1.161,
+          "end": 1.416
+        },
+        {
+          "text": "never ",
+          "start": 1.474,
+          "end": 1.66
+        },
+        {
+          "text": "reached ",
+          "start": 1.73,
+          "end": 1.974
+        },
+        {
+          "text": "Romeo. ",
+          "start": 2.032,
+          "end": 2.659
+        },
+        {
+          "text": "He ",
+          "start": 2.937,
+          "end": 3.053
+        },
+        {
+          "text": "urges ",
+          "start": 3.123,
+          "end": 3.437
+        },
+        {
+          "text": "me ",
+          "start": 3.495,
+          "end": 3.576
+        },
+        {
+          "text": "to ",
+          "start": 3.622,
+          "end": 3.692
+        },
+        {
+          "text": "leave; ",
+          "start": 3.762,
+          "end": 4.191
+        },
+        {
+          "text": "the ",
+          "start": 4.307,
+          "end": 4.4
+        },
+        {
+          "text": "watch ",
+          "start": 4.458,
+          "end": 4.667
+        },
+        {
+          "text": "is ",
+          "start": 4.714,
+          "end": 4.795
+        },
+        {
+          "text": "coming.\n\n",
+          "start": 4.853,
+          "end": 5.294
+        },
+        {
+          "text": "But ",
+          "start": 5.805,
+          "end": 5.956
+        },
+        {
+          "text": "Romeo ",
+          "start": 6.014,
+          "end": 6.409
+        },
+        {
+          "text": "came ",
+          "start": 6.478,
+          "end": 6.699
+        },
+        {
+          "text": "here ",
+          "start": 6.734,
+          "end": 6.885
+        },
+        {
+          "text": "believing ",
+          "start": 6.931,
+          "end": 7.303
+        },
+        {
+          "text": "I ",
+          "start": 7.372,
+          "end": 7.396
+        },
+        {
+          "text": "was ",
+          "start": 7.465,
+          "end": 7.581
+        },
+        {
+          "text": "gone. ",
+          "start": 7.651,
+          "end": 8.197
+        },
+        {
+          "text": "All ",
+          "start": 8.893,
+          "end": 9.125
+        },
+        {
+          "text": "our ",
+          "start": 9.183,
+          "end": 9.288
+        },
+        {
+          "text": "tomorrows ",
+          "start": 9.346,
+          "end": 9.776
+        },
+        {
+          "text": "have ",
+          "start": 9.822,
+          "end": 9.938
+        },
+        {
+          "text": "narrowed ",
+          "start": 9.985,
+          "end": 10.321
+        },
+        {
+          "text": "to ",
+          "start": 10.344,
+          "end": 10.391
+        },
+        {
+          "text": "this ",
+          "start": 10.449,
+          "end": 10.577
+        },
+        {
+          "text": "silence.\n\n",
+          "start": 10.623,
+          "end": 11.273
+        },
+        {
+          "text": "I ",
+          "start": 11.482,
+          "end": 11.54
+        },
+        {
+          "text": "stay ",
+          "start": 11.656,
+          "end": 11.889
+        },
+        {
+          "text": "beside ",
+          "start": 11.947,
+          "end": 12.307
+        },
+        {
+          "text": "my ",
+          "start": 12.341,
+          "end": 12.434
+        },
+        {
+          "text": "husband ",
+          "start": 12.504,
+          "end": 12.841
+        },
+        {
+          "text": "when ",
+          "start": 12.887,
+          "end": 13.026
+        },
+        {
+          "text": "the ",
+          "start": 13.05,
+          "end": 13.119
+        },
+        {
+          "text": "Friar ",
+          "start": 13.166,
+          "end": 13.456
+        },
+        {
+          "text": "flees.",
+          "start": 13.514,
+          "end": 14.303
+        }
+      ],
+      "playbackRate": 0.9424457364341087
+    }
+  ]
+}

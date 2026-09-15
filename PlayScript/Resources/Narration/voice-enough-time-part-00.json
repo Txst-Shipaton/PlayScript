@@ -1,0 +1,212 @@
+{
+  "text": "I have no promise that the world outside will forgive us. Only her hand in mine, and the Friar waiting to lead us out.\n\nFor the first time, I am not too late.\n\nFor now, that is enough to begin.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "have ",
+      "start": 0.174,
+      "end": 0.325
+    },
+    {
+      "text": "no ",
+      "start": 0.36,
+      "end": 0.464
+    },
+    {
+      "text": "promise ",
+      "start": 0.546,
+      "end": 0.882
+    },
+    {
+      "text": "that ",
+      "start": 0.917,
+      "end": 1.045
+    },
+    {
+      "text": "the ",
+      "start": 1.068,
+      "end": 1.138
+    },
+    {
+      "text": "world ",
+      "start": 1.184,
+      "end": 1.451
+    },
+    {
+      "text": "outside ",
+      "start": 1.509,
+      "end": 1.997
+    },
+    {
+      "text": "will ",
+      "start": 2.032,
+      "end": 2.171
+    },
+    {
+      "text": "forgive ",
+      "start": 2.218,
+      "end": 2.496
+    },
+    {
+      "text": "us. ",
+      "start": 2.531,
+      "end": 2.821
+    },
+    {
+      "text": "Only ",
+      "start": 3.332,
+      "end": 3.634
+    },
+    {
+      "text": "her ",
+      "start": 3.715,
+      "end": 3.855
+    },
+    {
+      "text": "hand ",
+      "start": 3.936,
+      "end": 4.18
+    },
+    {
+      "text": "in ",
+      "start": 4.238,
+      "end": 4.319
+    },
+    {
+      "text": "mine, ",
+      "start": 4.4,
+      "end": 4.876
+    },
+    {
+      "text": "and ",
+      "start": 4.946,
+      "end": 5.085
+    },
+    {
+      "text": "the ",
+      "start": 5.12,
+      "end": 5.19
+    },
+    {
+      "text": "Friar ",
+      "start": 5.248,
+      "end": 5.584
+    },
+    {
+      "text": "waiting ",
+      "start": 5.654,
+      "end": 5.991
+    },
+    {
+      "text": "to ",
+      "start": 6.049,
+      "end": 6.107
+    },
+    {
+      "text": "lead ",
+      "start": 6.188,
+      "end": 6.374
+    },
+    {
+      "text": "us ",
+      "start": 6.42,
+      "end": 6.525
+    },
+    {
+      "text": "out.\n\n",
+      "start": 6.606,
+      "end": 7.105
+    },
+    {
+      "text": "For ",
+      "start": 7.709,
+      "end": 7.837
+    },
+    {
+      "text": "the ",
+      "start": 7.872,
+      "end": 7.941
+    },
+    {
+      "text": "first ",
+      "start": 7.999,
+      "end": 8.266
+    },
+    {
+      "text": "time, ",
+      "start": 8.301,
+      "end": 8.673
+    },
+    {
+      "text": "I ",
+      "start": 8.731,
+      "end": 8.777
+    },
+    {
+      "text": "am ",
+      "start": 8.847,
+      "end": 8.94
+    },
+    {
+      "text": "not ",
+      "start": 9.009,
+      "end": 9.149
+    },
+    {
+      "text": "too ",
+      "start": 9.195,
+      "end": 9.334
+    },
+    {
+      "text": "late.\n\n",
+      "start": 9.404,
+      "end": 9.845
+    },
+    {
+      "text": "For ",
+      "start": 10.228,
+      "end": 10.379
+    },
+    {
+      "text": "now, ",
+      "start": 10.437,
+      "end": 10.658
+    },
+    {
+      "text": "that ",
+      "start": 10.681,
+      "end": 10.82
+    },
+    {
+      "text": "is ",
+      "start": 10.867,
+      "end": 10.948
+    },
+    {
+      "text": "enough ",
+      "start": 11.006,
+      "end": 11.227
+    },
+    {
+      "text": "to ",
+      "start": 11.262,
+      "end": 11.308
+    },
+    {
+      "text": "begin.",
+      "start": 11.366,
+      "end": 12.121
+    }
+  ],
+  "playbackRate": 0.8585708333333334,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "ce5820695c6ef3232c76d0656d535418bfa972d48fc125fbf6538ec39cbeb48f",
+  "effectiveWPM": 170.0
+}

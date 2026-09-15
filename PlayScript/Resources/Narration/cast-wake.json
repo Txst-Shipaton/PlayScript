@@ -1,0 +1,233 @@
+{
+  "text": "I wake to stone beneath my hands.\n\nThe Friar is here. Romeo is here, too, but he does not turn when I say his name.\n\nThere is an empty cup beside him. I touch his cheek. It is colder than the orchard ever was.",
+  "segments": [
+    {
+      "resource": "voice-wake-part-00",
+      "speaker": "Narrator",
+      "text": "I wake to stone beneath my hands.\n\nThe Friar is here. Romeo is here, too, but he does not turn when I say his name.\n\nThere is an empty cup beside him. I touch his cheek. It is colder than the orchard ever was.",
+      "cues": [
+        {
+          "text": "I ",
+          "start": 0.0,
+          "end": 0.093
+        },
+        {
+          "text": "wake ",
+          "start": 0.209,
+          "end": 0.453
+        },
+        {
+          "text": "to ",
+          "start": 0.488,
+          "end": 0.557
+        },
+        {
+          "text": "stone ",
+          "start": 0.627,
+          "end": 0.964
+        },
+        {
+          "text": "beneath ",
+          "start": 1.01,
+          "end": 1.277
+        },
+        {
+          "text": "my ",
+          "start": 1.335,
+          "end": 1.451
+        },
+        {
+          "text": "hands.\n\n",
+          "start": 1.521,
+          "end": 2.101
+        },
+        {
+          "text": "The ",
+          "start": 2.485,
+          "end": 2.601
+        },
+        {
+          "text": "Friar ",
+          "start": 2.659,
+          "end": 2.972
+        },
+        {
+          "text": "is ",
+          "start": 3.042,
+          "end": 3.123
+        },
+        {
+          "text": "here. ",
+          "start": 3.193,
+          "end": 3.669
+        },
+        {
+          "text": "Romeo ",
+          "start": 4.272,
+          "end": 4.656
+        },
+        {
+          "text": "is ",
+          "start": 4.725,
+          "end": 4.807
+        },
+        {
+          "text": "here, ",
+          "start": 4.865,
+          "end": 5.05
+        },
+        {
+          "text": "too, ",
+          "start": 5.074,
+          "end": 5.492
+        },
+        {
+          "text": "but ",
+          "start": 5.561,
+          "end": 5.712
+        },
+        {
+          "text": "he ",
+          "start": 5.747,
+          "end": 5.793
+        },
+        {
+          "text": "does ",
+          "start": 5.84,
+          "end": 5.991
+        },
+        {
+          "text": "not ",
+          "start": 6.037,
+          "end": 6.165
+        },
+        {
+          "text": "turn ",
+          "start": 6.211,
+          "end": 6.502
+        },
+        {
+          "text": "when ",
+          "start": 6.548,
+          "end": 6.664
+        },
+        {
+          "text": "I ",
+          "start": 6.722,
+          "end": 6.745
+        },
+        {
+          "text": "say ",
+          "start": 6.827,
+          "end": 7.012
+        },
+        {
+          "text": "his ",
+          "start": 7.07,
+          "end": 7.175
+        },
+        {
+          "text": "name.\n\n",
+          "start": 7.245,
+          "end": 7.779
+        },
+        {
+          "text": "There ",
+          "start": 8.162,
+          "end": 8.348
+        },
+        {
+          "text": "is ",
+          "start": 8.382,
+          "end": 8.452
+        },
+        {
+          "text": "an ",
+          "start": 8.487,
+          "end": 8.545
+        },
+        {
+          "text": "empty ",
+          "start": 8.591,
+          "end": 8.87
+        },
+        {
+          "text": "cup ",
+          "start": 8.928,
+          "end": 9.149
+        },
+        {
+          "text": "beside ",
+          "start": 9.207,
+          "end": 9.601
+        },
+        {
+          "text": "him. ",
+          "start": 9.636,
+          "end": 9.973
+        },
+        {
+          "text": "I ",
+          "start": 10.356,
+          "end": 10.403
+        },
+        {
+          "text": "touch ",
+          "start": 10.495,
+          "end": 10.716
+        },
+        {
+          "text": "his ",
+          "start": 10.762,
+          "end": 10.855
+        },
+        {
+          "text": "cheek. ",
+          "start": 10.913,
+          "end": 11.424
+        },
+        {
+          "text": "It ",
+          "start": 11.749,
+          "end": 11.877
+        },
+        {
+          "text": "is ",
+          "start": 11.923,
+          "end": 11.993
+        },
+        {
+          "text": "colder ",
+          "start": 12.063,
+          "end": 12.376
+        },
+        {
+          "text": "than ",
+          "start": 12.411,
+          "end": 12.527
+        },
+        {
+          "text": "the ",
+          "start": 12.562,
+          "end": 12.632
+        },
+        {
+          "text": "orchard ",
+          "start": 12.701,
+          "end": 13.073
+        },
+        {
+          "text": "ever ",
+          "start": 13.131,
+          "end": 13.317
+        },
+        {
+          "text": "was.",
+          "start": 13.375,
+          "end": 14.071
+        }
+      ],
+      "playbackRate": 0.9060871212121211
+    }
+  ]
+}

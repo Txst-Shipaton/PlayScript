@@ -1,0 +1,62 @@
+{
+  "text": "My hand will not stop trembling. I let it tremble. ",
+  "cues": [
+    {
+      "text": "My ",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "text": "hand ",
+      "start": 0.267,
+      "end": 0.464
+    },
+    {
+      "text": "will ",
+      "start": 0.511,
+      "end": 0.639
+    },
+    {
+      "text": "not ",
+      "start": 0.685,
+      "end": 0.789
+    },
+    {
+      "text": "stop ",
+      "start": 0.836,
+      "end": 1.08
+    },
+    {
+      "text": "trembling. ",
+      "start": 1.138,
+      "end": 1.741
+    },
+    {
+      "text": "I ",
+      "start": 1.95,
+      "end": 1.997
+    },
+    {
+      "text": "let ",
+      "start": 2.078,
+      "end": 2.218
+    },
+    {
+      "text": "it ",
+      "start": 2.276,
+      "end": 2.345
+    },
+    {
+      "text": "tremble. ",
+      "start": 2.368,
+      "end": 2.868
+    }
+  ],
+  "playbackRate": 0.8126000000000001,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "47788e69c46370ea89fe314592a0a06cc4e909e0e715700aec89ae8570b73a7c",
+  "effectiveWPM": 170.0
+}

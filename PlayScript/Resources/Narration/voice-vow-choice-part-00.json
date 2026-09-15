@@ -1,0 +1,137 @@
+{
+  "text": "He tells me his heart is mine. The words hang between the window and the earth.\n\nI have never wanted to believe anything so much.",
+  "cues": [
+    {
+      "text": "He ",
+      "start": 0.0,
+      "end": 0.151
+    },
+    {
+      "text": "tells ",
+      "start": 0.209,
+      "end": 0.441
+    },
+    {
+      "text": "me ",
+      "start": 0.488,
+      "end": 0.569
+    },
+    {
+      "text": "his ",
+      "start": 0.627,
+      "end": 0.731
+    },
+    {
+      "text": "heart ",
+      "start": 0.801,
+      "end": 1.045
+    },
+    {
+      "text": "is ",
+      "start": 1.103,
+      "end": 1.184
+    },
+    {
+      "text": "mine. ",
+      "start": 1.254,
+      "end": 1.741
+    },
+    {
+      "text": "The ",
+      "start": 1.985,
+      "end": 2.101
+    },
+    {
+      "text": "words ",
+      "start": 2.159,
+      "end": 2.485
+    },
+    {
+      "text": "hang ",
+      "start": 2.543,
+      "end": 2.74
+    },
+    {
+      "text": "between ",
+      "start": 2.798,
+      "end": 3.088
+    },
+    {
+      "text": "the ",
+      "start": 3.111,
+      "end": 3.181
+    },
+    {
+      "text": "window ",
+      "start": 3.228,
+      "end": 3.518
+    },
+    {
+      "text": "and ",
+      "start": 3.564,
+      "end": 3.634
+    },
+    {
+      "text": "the ",
+      "start": 3.68,
+      "end": 3.75
+    },
+    {
+      "text": "earth.\n\n",
+      "start": 3.82,
+      "end": 4.331
+    },
+    {
+      "text": "I ",
+      "start": 4.934,
+      "end": 4.981
+    },
+    {
+      "text": "have ",
+      "start": 5.062,
+      "end": 5.201
+    },
+    {
+      "text": "never ",
+      "start": 5.236,
+      "end": 5.433
+    },
+    {
+      "text": "wanted ",
+      "start": 5.48,
+      "end": 5.77
+    },
+    {
+      "text": "to ",
+      "start": 5.805,
+      "end": 5.851
+    },
+    {
+      "text": "believe ",
+      "start": 5.909,
+      "end": 6.235
+    },
+    {
+      "text": "anything ",
+      "start": 6.281,
+      "end": 6.676
+    },
+    {
+      "text": "so ",
+      "start": 6.745,
+      "end": 6.885
+    },
+    {
+      "text": "much.",
+      "start": 6.954,
+      "end": 7.616
+    }
+  ],
+  "playbackRate": 0.8631466666666665,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "04d76aaa7ed2d8ae56453fb6dcb93d202bbb167a71bd79f37a9ba0e0b01795d5",
+  "effectiveWPM": 170.0
+}

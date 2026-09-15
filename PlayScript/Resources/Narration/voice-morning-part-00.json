@@ -1,0 +1,222 @@
+{
+  "text": "We say good night as though saying it slowly might keep the morning away.\n\nAt last he goes. I stay at the window, holding the silence he has left me.\n\nTomorrow, I think. Such a little word to carry so much happiness.",
+  "cues": [
+    {
+      "text": "We ",
+      "start": 0.0,
+      "end": 0.163
+    },
+    {
+      "text": "say ",
+      "start": 0.221,
+      "end": 0.372
+    },
+    {
+      "text": "good ",
+      "start": 0.406,
+      "end": 0.557
+    },
+    {
+      "text": "night ",
+      "start": 0.592,
+      "end": 0.824
+    },
+    {
+      "text": "as ",
+      "start": 0.882,
+      "end": 0.975
+    },
+    {
+      "text": "though ",
+      "start": 1.022,
+      "end": 1.219
+    },
+    {
+      "text": "saying ",
+      "start": 1.265,
+      "end": 1.533
+    },
+    {
+      "text": "it ",
+      "start": 1.579,
+      "end": 1.66
+    },
+    {
+      "text": "slowly ",
+      "start": 1.718,
+      "end": 2.067
+    },
+    {
+      "text": "might ",
+      "start": 2.113,
+      "end": 2.287
+    },
+    {
+      "text": "keep ",
+      "start": 2.334,
+      "end": 2.531
+    },
+    {
+      "text": "the ",
+      "start": 2.589,
+      "end": 2.659
+    },
+    {
+      "text": "morning ",
+      "start": 2.717,
+      "end": 2.995
+    },
+    {
+      "text": "away.\n\n",
+      "start": 3.042,
+      "end": 3.611
+    },
+    {
+      "text": "At ",
+      "start": 4.307,
+      "end": 4.458
+    },
+    {
+      "text": "last ",
+      "start": 4.516,
+      "end": 4.807
+    },
+    {
+      "text": "he ",
+      "start": 4.853,
+      "end": 4.911
+    },
+    {
+      "text": "goes. ",
+      "start": 4.981,
+      "end": 5.584
+    },
+    {
+      "text": "I ",
+      "start": 6.026,
+      "end": 6.084
+    },
+    {
+      "text": "stay ",
+      "start": 6.177,
+      "end": 6.397
+    },
+    {
+      "text": "at ",
+      "start": 6.444,
+      "end": 6.502
+    },
+    {
+      "text": "the ",
+      "start": 6.536,
+      "end": 6.606
+    },
+    {
+      "text": "window, ",
+      "start": 6.653,
+      "end": 7.175
+    },
+    {
+      "text": "holding ",
+      "start": 7.268,
+      "end": 7.605
+    },
+    {
+      "text": "the ",
+      "start": 7.651,
+      "end": 7.721
+    },
+    {
+      "text": "silence ",
+      "start": 7.779,
+      "end": 8.243
+    },
+    {
+      "text": "he ",
+      "start": 8.266,
+      "end": 8.324
+    },
+    {
+      "text": "has ",
+      "start": 8.382,
+      "end": 8.487
+    },
+    {
+      "text": "left ",
+      "start": 8.557,
+      "end": 8.766
+    },
+    {
+      "text": "me.\n\n",
+      "start": 8.835,
+      "end": 9.172
+    },
+    {
+      "text": "Tomorrow, ",
+      "start": 9.613,
+      "end": 10.066
+    },
+    {
+      "text": "I ",
+      "start": 10.101,
+      "end": 10.124
+    },
+    {
+      "text": "think. ",
+      "start": 10.217,
+      "end": 10.646
+    },
+    {
+      "text": "Such ",
+      "start": 10.971,
+      "end": 11.215
+    },
+    {
+      "text": "a ",
+      "start": 11.25,
+      "end": 11.273
+    },
+    {
+      "text": "little ",
+      "start": 11.308,
+      "end": 11.529
+    },
+    {
+      "text": "word ",
+      "start": 11.564,
+      "end": 11.819
+    },
+    {
+      "text": "to ",
+      "start": 11.865,
+      "end": 11.923
+    },
+    {
+      "text": "carry ",
+      "start": 11.993,
+      "end": 12.26
+    },
+    {
+      "text": "so ",
+      "start": 12.318,
+      "end": 12.423
+    },
+    {
+      "text": "much ",
+      "start": 12.481,
+      "end": 12.643
+    },
+    {
+      "text": "happiness.",
+      "start": 12.701,
+      "end": 13.514
+    }
+  ],
+  "playbackRate": 0.91165873015873,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "bcfd96d86538803112f4aaa72beedf6bcc45a72c1ca8dca3d7ea5914e32b1b23",
+  "effectiveWPM": 170.0
+}

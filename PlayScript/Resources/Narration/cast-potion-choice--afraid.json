@@ -1,0 +1,244 @@
+{
+  "text": "My hand will not stop trembling. I let it tremble. “Romeo, I come.”\n\nI drink. Courage, perhaps, can be this small: a frightened girl choosing the only door she can see.\n\nI lie down and imagine his hand finding mine in the dark.",
+  "segments": [
+    {
+      "resource": "voice-potion-choice--afraid-part-00",
+      "speaker": "Narrator",
+      "text": "My hand will not stop trembling. I let it tremble. ",
+      "cues": [
+        {
+          "text": "My ",
+          "start": 0.0,
+          "end": 0.197
+        },
+        {
+          "text": "hand ",
+          "start": 0.267,
+          "end": 0.464
+        },
+        {
+          "text": "will ",
+          "start": 0.511,
+          "end": 0.639
+        },
+        {
+          "text": "not ",
+          "start": 0.685,
+          "end": 0.789
+        },
+        {
+          "text": "stop ",
+          "start": 0.836,
+          "end": 1.08
+        },
+        {
+          "text": "trembling. ",
+          "start": 1.138,
+          "end": 1.741
+        },
+        {
+          "text": "I ",
+          "start": 1.95,
+          "end": 1.997
+        },
+        {
+          "text": "let ",
+          "start": 2.078,
+          "end": 2.218
+        },
+        {
+          "text": "it ",
+          "start": 2.276,
+          "end": 2.345
+        },
+        {
+          "text": "tremble. ",
+          "start": 2.368,
+          "end": 2.868
+        }
+      ],
+      "playbackRate": 0.8126000000000001
+    },
+    {
+      "resource": "voice-potion-choice--afraid-part-01",
+      "speaker": "Juliet",
+      "text": "“Romeo, I come.”",
+      "cues": [
+        {
+          "text": "“Romeo, ",
+          "start": 0.0,
+          "end": 0.464
+        },
+        {
+          "text": "I ",
+          "start": 0.511,
+          "end": 0.557
+        },
+        {
+          "text": "come.”",
+          "start": 0.673,
+          "end": 1.207
+        }
+      ],
+      "playbackRate": 1.1399444444444446
+    },
+    {
+      "resource": "voice-potion-choice--afraid-part-02",
+      "speaker": "Narrator",
+      "text": "\n\nI drink. Courage, perhaps, can be this small: a frightened girl choosing the only door she can see.\n\nI lie down and imagine his hand finding mine in the dark.",
+      "cues": [
+        {
+          "text": "\n\nI ",
+          "start": 0.046,
+          "end": 0.093
+        },
+        {
+          "text": "drink. ",
+          "start": 0.209,
+          "end": 0.708
+        },
+        {
+          "text": "Courage, ",
+          "start": 1.149,
+          "end": 1.556
+        },
+        {
+          "text": "perhaps, ",
+          "start": 1.579,
+          "end": 2.078
+        },
+        {
+          "text": "can ",
+          "start": 2.113,
+          "end": 2.241
+        },
+        {
+          "text": "be ",
+          "start": 2.287,
+          "end": 2.368
+        },
+        {
+          "text": "this ",
+          "start": 2.403,
+          "end": 2.543
+        },
+        {
+          "text": "small: ",
+          "start": 2.601,
+          "end": 3.146
+        },
+        {
+          "text": "a ",
+          "start": 3.425,
+          "end": 3.483
+        },
+        {
+          "text": "frightened ",
+          "start": 3.576,
+          "end": 3.959
+        },
+        {
+          "text": "girl ",
+          "start": 4.017,
+          "end": 4.307
+        },
+        {
+          "text": "choosing ",
+          "start": 4.377,
+          "end": 4.737
+        },
+        {
+          "text": "the ",
+          "start": 4.783,
+          "end": 4.853
+        },
+        {
+          "text": "only ",
+          "start": 4.934,
+          "end": 5.19
+        },
+        {
+          "text": "door ",
+          "start": 5.236,
+          "end": 5.48
+        },
+        {
+          "text": "she ",
+          "start": 5.538,
+          "end": 5.642
+        },
+        {
+          "text": "can ",
+          "start": 5.689,
+          "end": 5.817
+        },
+        {
+          "text": "see.\n\n",
+          "start": 5.886,
+          "end": 6.409
+        },
+        {
+          "text": "I ",
+          "start": 6.92,
+          "end": 6.966
+        },
+        {
+          "text": "lie ",
+          "start": 7.082,
+          "end": 7.279
+        },
+        {
+          "text": "down ",
+          "start": 7.326,
+          "end": 7.593
+        },
+        {
+          "text": "and ",
+          "start": 7.651,
+          "end": 7.744
+        },
+        {
+          "text": "imagine ",
+          "start": 7.79,
+          "end": 8.173
+        },
+        {
+          "text": "his ",
+          "start": 8.22,
+          "end": 8.324
+        },
+        {
+          "text": "hand ",
+          "start": 8.382,
+          "end": 8.673
+        },
+        {
+          "text": "finding ",
+          "start": 8.766,
+          "end": 9.125
+        },
+        {
+          "text": "mine ",
+          "start": 9.183,
+          "end": 9.451
+        },
+        {
+          "text": "in ",
+          "start": 9.485,
+          "end": 9.532
+        },
+        {
+          "text": "the ",
+          "start": 9.578,
+          "end": 9.648
+        },
+        {
+          "text": "dark.",
+          "start": 9.694,
+          "end": 10.403
+        }
+      ],
+      "playbackRate": 0.9825055555555556
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "text": "I kiss him. His lips are still warm.\n\nOnly a little time has come between us. Less than a morning. Less than all the good nights we could not bear to finish.\n\nI press my forehead to his and whisper his name once more.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "kiss ",
+      "start": 0.197,
+      "end": 0.406
+    },
+    {
+      "text": "him. ",
+      "start": 0.441,
+      "end": 0.72
+    },
+    {
+      "text": "His ",
+      "start": 0.836,
+      "end": 0.998
+    },
+    {
+      "text": "lips ",
+      "start": 1.068,
+      "end": 1.3
+    },
+    {
+      "text": "are ",
+      "start": 1.335,
+      "end": 1.428
+    },
+    {
+      "text": "still ",
+      "start": 1.463,
+      "end": 1.683
+    },
+    {
+      "text": "warm.\n\n",
+      "start": 1.753,
+      "end": 2.241
+    },
+    {
+      "text": "Only ",
+      "start": 2.844,
+      "end": 3.111
+    },
+    {
+      "text": "a ",
+      "start": 3.158,
+      "end": 3.181
+    },
+    {
+      "text": "little ",
+      "start": 3.228,
+      "end": 3.471
+    },
+    {
+      "text": "time ",
+      "start": 3.506,
+      "end": 3.808
+    },
+    {
+      "text": "has ",
+      "start": 3.843,
+      "end": 3.947
+    },
+    {
+      "text": "come ",
+      "start": 4.017,
+      "end": 4.226
+    },
+    {
+      "text": "between ",
+      "start": 4.261,
+      "end": 4.574
+    },
+    {
+      "text": "us. ",
+      "start": 4.632,
+      "end": 4.992
+    },
+    {
+      "text": "Less ",
+      "start": 5.689,
+      "end": 5.944
+    },
+    {
+      "text": "than ",
+      "start": 5.979,
+      "end": 6.118
+    },
+    {
+      "text": "a ",
+      "start": 6.153,
+      "end": 6.177
+    },
+    {
+      "text": "morning. ",
+      "start": 6.235,
+      "end": 6.757
+    },
+    {
+      "text": "Less ",
+      "start": 6.966,
+      "end": 7.21
+    },
+    {
+      "text": "than ",
+      "start": 7.245,
+      "end": 7.384
+    },
+    {
+      "text": "all ",
+      "start": 7.442,
+      "end": 7.605
+    },
+    {
+      "text": "the ",
+      "start": 7.663,
+      "end": 7.732
+    },
+    {
+      "text": "good ",
+      "start": 7.779,
+      "end": 7.941
+    },
+    {
+      "text": "nights ",
+      "start": 7.999,
+      "end": 8.255
+    },
+    {
+      "text": "we ",
+      "start": 8.301,
+      "end": 8.382
+    },
+    {
+      "text": "could ",
+      "start": 8.429,
+      "end": 8.58
+    },
+    {
+      "text": "not ",
+      "start": 8.615,
+      "end": 8.731
+    },
+    {
+      "text": "bear ",
+      "start": 8.777,
+      "end": 8.998
+    },
+    {
+      "text": "to ",
+      "start": 9.044,
+      "end": 9.114
+    },
+    {
+      "text": "finish.\n\n",
+      "start": 9.183,
+      "end": 9.729
+    },
+    {
+      "text": "I ",
+      "start": 10.24,
+      "end": 10.286
+    },
+    {
+      "text": "press ",
+      "start": 10.403,
+      "end": 10.646
+    },
+    {
+      "text": "my ",
+      "start": 10.704,
+      "end": 10.797
+    },
+    {
+      "text": "forehead ",
+      "start": 10.867,
+      "end": 11.18
+    },
+    {
+      "text": "to ",
+      "start": 11.215,
+      "end": 11.273
+    },
+    {
+      "text": "his ",
+      "start": 11.355,
+      "end": 11.598
+    },
+    {
+      "text": "and ",
+      "start": 11.714,
+      "end": 11.877
+    },
+    {
+      "text": "whisper ",
+      "start": 11.935,
+      "end": 12.249
+    },
+    {
+      "text": "his ",
+      "start": 12.307,
+      "end": 12.411
+    },
+    {
+      "text": "name ",
+      "start": 12.481,
+      "end": 12.713
+    },
+    {
+      "text": "once ",
+      "start": 12.759,
+      "end": 12.992
+    },
+    {
+      "text": "more.",
+      "start": 13.038,
+      "end": 13.653
+    }
+  ],
+  "playbackRate": 0.8791704545454547,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "691489d9e88403823e0df27cb38c52473530948b68a9374c5a0310c647de27b6",
+  "effectiveWPM": 170.0
+}

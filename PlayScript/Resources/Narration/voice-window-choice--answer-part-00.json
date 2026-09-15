@@ -1,0 +1,42 @@
+{
+  "text": "I lean beyond the stone sill. ",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.104
+    },
+    {
+      "text": "lean ",
+      "start": 0.221,
+      "end": 0.441
+    },
+    {
+      "text": "beyond ",
+      "start": 0.499,
+      "end": 0.755
+    },
+    {
+      "text": "the ",
+      "start": 0.801,
+      "end": 0.871
+    },
+    {
+      "text": "stone ",
+      "start": 0.917,
+      "end": 1.231
+    },
+    {
+      "text": "sill. ",
+      "start": 1.289,
+      "end": 1.753
+    }
+  ],
+  "playbackRate": 0.8278055555555556,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "b58ca08e187027db72377aa3883f0c40bacf8d4eb21b8a5168e36fc4113144ba",
+  "effectiveWPM": 170.0
+}

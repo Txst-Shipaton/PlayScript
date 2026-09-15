@@ -1,0 +1,147 @@
+{
+  "text": "I stay behind the curtain a moment longer. He speaks softly, as if the night might carry his heart to me.\n\nThen I step into the moonlight. ",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "stay ",
+      "start": 0.197,
+      "end": 0.418
+    },
+    {
+      "text": "behind ",
+      "start": 0.476,
+      "end": 0.72
+    },
+    {
+      "text": "the ",
+      "start": 0.766,
+      "end": 0.836
+    },
+    {
+      "text": "curtain ",
+      "start": 0.882,
+      "end": 1.219
+    },
+    {
+      "text": "a ",
+      "start": 1.289,
+      "end": 1.324
+    },
+    {
+      "text": "moment ",
+      "start": 1.405,
+      "end": 1.66
+    },
+    {
+      "text": "longer. ",
+      "start": 1.707,
+      "end": 2.206
+    },
+    {
+      "text": "He ",
+      "start": 2.45,
+      "end": 2.566
+    },
+    {
+      "text": "speaks ",
+      "start": 2.624,
+      "end": 2.937
+    },
+    {
+      "text": "softly, ",
+      "start": 2.984,
+      "end": 3.587
+    },
+    {
+      "text": "as ",
+      "start": 3.704,
+      "end": 3.843
+    },
+    {
+      "text": "if ",
+      "start": 3.889,
+      "end": 3.982
+    },
+    {
+      "text": "the ",
+      "start": 4.029,
+      "end": 4.098
+    },
+    {
+      "text": "night ",
+      "start": 4.168,
+      "end": 4.365
+    },
+    {
+      "text": "might ",
+      "start": 4.423,
+      "end": 4.598
+    },
+    {
+      "text": "carry ",
+      "start": 4.644,
+      "end": 4.946
+    },
+    {
+      "text": "his ",
+      "start": 5.004,
+      "end": 5.108
+    },
+    {
+      "text": "heart ",
+      "start": 5.178,
+      "end": 5.433
+    },
+    {
+      "text": "to ",
+      "start": 5.468,
+      "end": 5.515
+    },
+    {
+      "text": "me.\n\n",
+      "start": 5.584,
+      "end": 5.921
+    },
+    {
+      "text": "Then ",
+      "start": 6.734,
+      "end": 6.908
+    },
+    {
+      "text": "I ",
+      "start": 6.966,
+      "end": 6.989
+    },
+    {
+      "text": "step ",
+      "start": 7.082,
+      "end": 7.326
+    },
+    {
+      "text": "into ",
+      "start": 7.372,
+      "end": 7.512
+    },
+    {
+      "text": "the ",
+      "start": 7.558,
+      "end": 7.628
+    },
+    {
+      "text": "moonlight. ",
+      "start": 7.674,
+      "end": 8.22
+    }
+  ],
+  "playbackRate": 0.8625925925925927,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "e5005d1149eb2df1e525e07161ce8516fd6798dc04477764dd4fb2f3c07c9c28",
+  "effectiveWPM": 170.0
+}

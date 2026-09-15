@@ -4,6 +4,7 @@ struct LibraryView: View {
     @Bindable var model: ReadingModel
     @State private var showRestart = false
     @State private var showAbout = false
+    @State private var showSearchInfo = false
 
     var body: some View {
         GeometryReader { geometry in
@@ -11,11 +12,11 @@ struct LibraryView: View {
                 VStack(alignment: .leading, spacing: 27) {
                     header
                     VStack(alignment: .leading, spacing: 10) {
-                        Text("PlayScript")
+                        Text("Book Library")
                             .literary(47, relativeTo: .largeTitle)
                             .tracking(-2)
                             .accessibilityAddTraits(.isHeader)
-                        Text("Some love stories\nare meant to be lived.")
+                        Text("Find a world. Step inside.")
                             .literary(20, relativeTo: .title3)
                             .foregroundStyle(Palette.muted)
                             .lineSpacing(4)
@@ -23,22 +24,16 @@ struct LibraryView: View {
 
                     storyCard(height: min(350, max(270, geometry.size.height * 0.41)))
 
-                    HStack(alignment: .top, spacing: 15) {
-                        Image(systemName: "text.book.closed")
-                            .font(.system(size: 21, weight: .light))
-                            .padding(13)
-                            .glass(radius: 17)
-                            .accessibilityHidden(true)
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text("More hearts to get lost in")
-                                .literary(17)
-                            Text("New stories are on their way.")
-                                .font(.subheadline)
-                                .foregroundStyle(Palette.muted)
-                        }
-                        .padding(.top, 5)
+                    HStack {
+                        Text("On the horizon").literary(24, relativeTo: .title2)
+                        Spacer()
+                        Text("5 stories").font(.caption).foregroundStyle(Palette.muted)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 140), spacing: 16)], spacing: 22) {
+                        ForEach(LibraryBook.upcoming) { book in
+                            BookPlaceholder(book: book)
+                        }
+                    }
                 }
                 .padding(.horizontal, 27)
                 .padding(.top, 15)
@@ -96,6 +91,11 @@ struct LibraryView: View {
             Text("This will replace your saved place in the story.")
         }
         .sheet(isPresented: $showAbout) { about }
+        .alert("A world of books, soon", isPresented: $showSearchInfo) {
+            Button("Back to the library", role: .cancel) { }
+        } message: {
+            Text("Book search is coming in a future update. For now, begin your journey with Romeo & Juliet.")
+        }
     }
 
     private var header: some View {
@@ -114,6 +114,15 @@ struct LibraryView: View {
             .accessibilityLabel(model.soundEnabled ? "Sound on" : "Sound off")
             .accessibilityHint("Double tap to toggle the original soundscape.")
             .accessibilityIdentifier("soundToggle")
+            Button { showSearchInfo = true } label: {
+                Image(systemName: "magnifyingglass")
+                    .font(.system(size: 18, weight: .light))
+                    .frame(width: 44, height: 44)
+                    .glass(radius: 22)
+            }
+            .accessibilityLabel("Search books")
+            .accessibilityHint("Coming in a future update")
+            .accessibilityIdentifier("searchBooks")
         }
         .foregroundStyle(Palette.rose)
     }
@@ -124,7 +133,7 @@ struct LibraryView: View {
                 SceneBackdrop(mood: .longing, cover: true)
                 VStack(alignment: .leading, spacing: 12) {
                     HStack {
-                        SmallLabel(text: "The first story")
+                        SmallLabel(text: "Ready to live · 3 voices")
                         Spacer()
                         Image(systemName: "sparkle").font(.system(size: 16, weight: .ultraLight))
                     }

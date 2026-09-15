@@ -1,0 +1,172 @@
+{
+  "text": "Alone in my chamber, I lift the vial. What if I wake too soon? What if no one comes?\n\nI picture Romeo’s face beneath my window. I have already promised him tomorrow.",
+  "cues": [
+    {
+      "text": "Alone ",
+      "start": 0.0,
+      "end": 0.372
+    },
+    {
+      "text": "in ",
+      "start": 0.406,
+      "end": 0.464
+    },
+    {
+      "text": "my ",
+      "start": 0.522,
+      "end": 0.615
+    },
+    {
+      "text": "chamber, ",
+      "start": 0.685,
+      "end": 1.103
+    },
+    {
+      "text": "I ",
+      "start": 1.138,
+      "end": 1.184
+    },
+    {
+      "text": "lift ",
+      "start": 1.277,
+      "end": 1.498
+    },
+    {
+      "text": "the ",
+      "start": 1.533,
+      "end": 1.602
+    },
+    {
+      "text": "vial. ",
+      "start": 1.649,
+      "end": 2.183
+    },
+    {
+      "text": "What ",
+      "start": 2.461,
+      "end": 2.635
+    },
+    {
+      "text": "if ",
+      "start": 2.682,
+      "end": 2.752
+    },
+    {
+      "text": "I ",
+      "start": 2.81,
+      "end": 2.833
+    },
+    {
+      "text": "wake ",
+      "start": 2.926,
+      "end": 3.158
+    },
+    {
+      "text": "too ",
+      "start": 3.193,
+      "end": 3.332
+    },
+    {
+      "text": "soon? ",
+      "start": 3.39,
+      "end": 3.889
+    },
+    {
+      "text": "What ",
+      "start": 4.272,
+      "end": 4.447
+    },
+    {
+      "text": "if ",
+      "start": 4.493,
+      "end": 4.563
+    },
+    {
+      "text": "no ",
+      "start": 4.632,
+      "end": 4.714
+    },
+    {
+      "text": "one ",
+      "start": 4.795,
+      "end": 4.923
+    },
+    {
+      "text": "comes?\n\n",
+      "start": 4.981,
+      "end": 5.631
+    },
+    {
+      "text": "I ",
+      "start": 6.142,
+      "end": 6.2
+    },
+    {
+      "text": "picture ",
+      "start": 6.316,
+      "end": 6.653
+    },
+    {
+      "text": "Romeo’s ",
+      "start": 6.699,
+      "end": 7.163
+    },
+    {
+      "text": "face ",
+      "start": 7.221,
+      "end": 7.488
+    },
+    {
+      "text": "beneath ",
+      "start": 7.535,
+      "end": 7.802
+    },
+    {
+      "text": "my ",
+      "start": 7.86,
+      "end": 7.953
+    },
+    {
+      "text": "window. ",
+      "start": 8.022,
+      "end": 8.591
+    },
+    {
+      "text": "I ",
+      "start": 8.916,
+      "end": 8.963
+    },
+    {
+      "text": "have ",
+      "start": 9.044,
+      "end": 9.172
+    },
+    {
+      "text": "already ",
+      "start": 9.195,
+      "end": 9.462
+    },
+    {
+      "text": "promised ",
+      "start": 9.52,
+      "end": 9.857
+    },
+    {
+      "text": "him ",
+      "start": 9.88,
+      "end": 9.985
+    },
+    {
+      "text": "tomorrow.",
+      "start": 10.043,
+      "end": 10.82
+    }
+  ],
+  "playbackRate": 0.9580208333333333,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "9e36b23091e77434c636b342c7ee4600e105b14c7b81fcc9d8abdf67ef113dde",
+  "effectiveWPM": 170.0
+}

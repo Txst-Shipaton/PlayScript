@@ -11,6 +11,7 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import urllib.error
 import urllib.request
 
@@ -62,11 +63,12 @@ def word_cues(text, alignment):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--generate", action="store_true")
-    parser.add_argument("--limit", type=int, default=25)
+    parser.add_argument("--limit", type=int, default=80)
     args = parser.parse_args()
     env = environment()
     key = next((env[k] for k in ("ELEVENLABS_API_KEY", "ELEVEN_LABS_API_KEY", "ELEVEN_API_KEY", "elevenlabs") if env.get(k)), None)
     voices = {
+        "Narrator": env.get("ELEVENLABS_NARRATOR_VOICE_ID", "JBFqnCBsd6RMkjVDRZzb"),
         "Juliet": env.get("ELEVENLABS_JULIET_VOICE_ID", "EXAVITQu4vr4xnSDxMaL"),
         "Romeo": env.get("ELEVENLABS_ROMEO_VOICE_ID", "onwK4e9ZLuTAKqWW03F9"),
     }
@@ -75,12 +77,19 @@ def main():
     for beat in story["beats"]:
         clips.append((beat["id"], beat["pointOfView"], beat["text"], beat["mood"]))
         clips.extend((beat["id"] + "--" + c["id"], beat["pointOfView"], c["flavor"], beat["mood"]) for c in beat["choices"])
-    print(f"{len(clips)} clips; {sum(len(c[2]) for c in clips)} characters; API key {'present' if key else 'missing'}.")
+    clips = [(page_id + f"-part-{i:02d}", speaker, segment, mood) for page_id, pov, text, mood in clips
+             for i, (speaker, segment) in enumerate(speaker_segments(page_id, text))]
+    print(f"{len(clips)} segments; {sum(len(c[2]) for c in clips)} characters; API key {'present' if key else 'missing'}.")
     if not args.generate:
         return
     if not key:
         raise SystemExit("Set ELEVENLABS_API_KEY in the root .env file, then rerun.")
     OUTPUT.mkdir(parents=True, exist_ok=True)
+    cached = {}
+    for path in OUTPUT.glob("voice-*.json"):
+        metadata = json.loads(path.read_text())
+        if metadata.get("fingerprint") and path.with_suffix(".mp3").exists():
+            cached[metadata["fingerprint"]] = path
     generated = 0
     for clip_id, character, text, mood in clips:
         delivery = DELIVERY[mood]
@@ -90,6 +99,9 @@ def main():
         fingerprint = hashlib.sha256(json.dumps([voices[character], payload], sort_keys=True).encode()).hexdigest()
         metadata = OUTPUT / f"voice-{clip_id}.json"
         audio = OUTPUT / f"voice-{clip_id}.mp3"
+        if fingerprint in cached and cached[fingerprint] != metadata:
+            shutil.copyfile(cached[fingerprint], metadata)
+            shutil.copyfile(cached[fingerprint].with_suffix(".mp3"), audio)
         if metadata.exists() and audio.exists() and json.loads(metadata.read_text()).get("fingerprint") == fingerprint:
             print(f"Cached: {clip_id}")
             continue
@@ -125,6 +137,53 @@ def main():
         generated += 1
         print(f"Generated: {clip_id} ({effective_wpm:.0f} WPM)", flush=True)
     print("Run python3 Scripts/create_project.py to include generated resources in Xcode.")
+    # Publish each playlist only after every segment is present and matches the text.
+    for beat in story["beats"]:
+        pages = [(beat["id"], beat["text"])] + [(beat["id"] + "--" + c["id"], c["flavor"]) for c in beat["choices"]]
+        for page_id, text in pages:
+            parts = []
+            for i, (speaker, segment) in enumerate(speaker_segments(page_id, text)):
+                name = f"voice-{page_id}-part-{i:02d}"
+                path = OUTPUT / (name + ".json")
+                if not path.exists() or not (OUTPUT / (name + ".mp3")).exists():
+                    break
+                metadata = json.loads(path.read_text())
+                if metadata["text"] != segment or metadata["character"] != speaker:
+                    break
+                parts.append({"resource": name, "speaker": speaker, **{k: metadata[k] for k in ("text", "cues", "playbackRate")}})
+            else:
+                (OUTPUT / f"cast-{page_id}.json").write_text(json.dumps({"text": text, "segments": parts}, ensure_ascii=False, indent=2) + "\n")
+
+
+def speaker_segments(clip_id, text):
+    """Authored attribution, not point-of-view guessing. All prose is narrated."""
+    quotes = list(re.finditer(r"“[^”]+”", text))
+    cast = {
+        "vow": ["Romeo"],
+        "in-time": ["Juliet", "Romeo", "Romeo"],
+        "window-choice--answer": ["Juliet"],
+        "window-choice--listen": ["Juliet"],
+        "vow-choice--certain": ["Juliet"],
+        "vow-choice--sure": ["Juliet", "Juliet"],
+        "potion-choice--resolve": ["Juliet"],
+        "potion-choice--afraid": ["Juliet"],
+    }.get(clip_id, [])
+    if len(quotes) != len(cast):
+        raise ValueError(f"Dialogue attribution needs review: {clip_id}")
+    result, cursor = [], 0
+    for quote, speaker in zip(quotes, cast):
+        if quote.start() > cursor:
+            prose = text[cursor:quote.start()]
+            if prose.strip():
+                result.append(("Narrator", prose))
+            elif result:
+                speaker_before, previous = result[-1]
+                result[-1] = (speaker_before, previous + prose)
+        result.append((speaker, quote.group()))
+        cursor = quote.end()
+    if cursor < len(text):
+        result.append(("Narrator", text[cursor:]))
+    return result
 
 
 if __name__ == "__main__":

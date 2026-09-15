@@ -3,6 +3,7 @@ import StoryCore
 
 struct ReaderView: View {
     @Bindable var model: ReadingModel
+    var turnPage: (() -> Void)? = nil
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @AccessibilityFocusState private var narrativeFocused: Bool
     @Environment(\.dynamicTypeSize) private var typeSize
@@ -19,7 +20,10 @@ struct ReaderView: View {
                 LivingScene(mood: model.beat.mood, beatID: model.beat.id,
                             quiet: deciding,
                             resting: model.isPaused || scenePhase != .active,
-                            attention: hoveredChoice != nil || focusedChoice != nil || model.pendingChoiceID != nil)
+                            attention: hoveredChoice != nil || focusedChoice != nil || model.pendingChoiceID != nil,
+                            activeSpeaker: ["Romeo", "Juliet"].contains(model.voice.activeSpeaker ?? "") ? model.voice.activeSpeaker : model.run.selectedChoice != nil ? "Juliet" : nil,
+                            audioLevel: model.voice.activeSpeaker == "Narrator" ? 0 : model.voice.audioLevel,
+                            choiceBold: model.run.selectedChoice?.isBold)
                     .ignoresSafeArea()
                     .animation(.easeInOut(duration: reduceMotion ? 0 : 1.2), value: model.beat.mood)
                 LinearGradient(stops: [.init(color: .black.opacity(0.25), location: 0),
@@ -85,6 +89,9 @@ struct ReaderView: View {
             )
             .accessibilityAction(named: "Pause story") { model.pause() }
             .accessibilityAction(.escape) { model.pause() }
+            .simultaneousGesture(DragGesture(minimumDistance: 65).onEnded { value in
+                if value.translation.width < -80 && abs(value.translation.height) < 60 { advancePage() }
+            })
         }
         .foregroundStyle(Palette.paper)
         .statusBarHidden()
@@ -97,6 +104,7 @@ struct ReaderView: View {
         }
         .animation(.easeInOut(duration: reduceMotion ? 0 : 0.5), value: model.contentID)
         .animation(.easeInOut(duration: reduceMotion ? 0 : 0.3), value: model.pendingChoiceID)
+        .sensoryFeedback(.selection, trigger: model.run.selectedChoiceID)
     }
 
     private var sceneHeading: some View {
@@ -131,9 +139,26 @@ struct ReaderView: View {
         VStack(alignment: .leading, spacing: 18) {
             HStack(spacing: 8) {
                 Circle().fill(Color(hex: 0xECC4BA)).frame(width: 4, height: 4)
-                SmallLabel(text: "As \(model.beat.pointOfView)")
+                SmallLabel(text: model.voice.activeSpeaker ?? "Through \(model.beat.pointOfView)’s eyes")
+                    .accessibilityIdentifier("activeSpeaker")
+                #if DEBUG
+                // A stable record of the page's cast for UI tests; a single line can
+                // pass by faster than the test harness samples the screen.
+                Text(model.voice.speakersHeard.joined(separator: ","))
+                    .frame(width: 0, height: 0)
+                    .opacity(0.01)
+                    .accessibilityIdentifier("speakersHeard")
+                #endif
             }
             .foregroundStyle(Color(hex: 0xE9C9C4))
+            if let choice = model.run.selectedChoice {
+                Label(choice.responseTitle, systemImage: choice.isBold ? "sun.max" : "moon")
+                    .font(.subheadline).foregroundStyle(Color(hex: choice.isBold ? 0xFFD6A0 : 0xEABACD))
+                    .padding(12).frame(maxWidth: .infinity, alignment: .leading)
+                    .background(.white.opacity(0.07), in: RoundedRectangle(cornerRadius: 14))
+                    .accessibilityIdentifier("choiceConsequence")
+                    .transition(reduceMotion ? .opacity : .move(edge: .bottom).combined(with: .opacity))
+            }
             Text(model.voice.highlightedText(model.text))
                 .literary(20)
                 .lineSpacing(6)
@@ -201,7 +226,7 @@ struct ReaderView: View {
             }
         } else {
             VStack(spacing: 0) {
-                Button { model.advance() } label: {
+                Button { advancePage() } label: {
                     HStack(spacing: 12) {
                         Text("Tap to continue").font(.system(.subheadline, design: .serif))
                         Image(systemName: "arrow.right").font(.system(size: 13, weight: .light))
@@ -241,7 +266,7 @@ struct ReaderView: View {
                     .font(.footnote)
                     .lineSpacing(5)
                     .foregroundStyle(.white.opacity(0.78))
-                Button { model.advance() } label: {
+                Button { advancePage() } label: {
                     Text("Imagine it with me")
                         .literary(18)
                         .padding(.horizontal, 28)
@@ -279,6 +304,7 @@ struct ReaderView: View {
                     .accessibilityIdentifier("reflectionText")
                     .accessibilityFocused($narrativeFocused)
                 Rectangle().fill(.white.opacity(0.35)).frame(width: 36, height: 1)
+                personalityReflection
                 Text("PlayScript")
                     .literary(37, relativeTo: .largeTitle)
                     .tracking(-1.5)
@@ -343,5 +369,31 @@ struct ReaderView: View {
         .presentationDetents([.medium, .large])
         .presentationDragIndicator(.visible)
         .presentationBackground(Palette.paper)
+    }
+
+    private func advancePage() {
+        guard model.beat.kind != .reflection else { return }
+        if let turnPage { turnPage() } else { model.advance() }
+    }
+
+    private var personalityReflection: some View {
+        let result = ChoiceReflection(decisions: model.run.decisions)
+        return VStack(alignment: .leading, spacing: 18) {
+            SmallLabel(text: "Your heart in this story")
+            Text(result.character).literary(38, relativeTo: .largeTitle)
+                .accessibilityIdentifier("personalityCharacter")
+            Text(result.title).literary(22, relativeTo: .title2)
+            Text(result.explanation).font(.body).lineSpacing(4)
+            ForEach(Array(result.traits.enumerated()), id: \.offset) { index, trait in
+                VStack(alignment: .leading, spacing: 5) {
+                    Label(trait, systemImage: "sparkle").font(.headline)
+                    Text(result.moments[index]).font(.subheadline).foregroundStyle(.white.opacity(0.8))
+                }
+            }
+            Text("A playful reflection of this reading, not a personality test. Different choices reveal different shades of you.")
+                .font(.caption).foregroundStyle(.white.opacity(0.65))
+        }
+        .multilineTextAlignment(.leading)
+        .padding(24).glass(dark: true, radius: 24)
     }
 }

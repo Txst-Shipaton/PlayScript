@@ -1,0 +1,32 @@
+{
+  "text": "“And mine is yours.”",
+  "cues": [
+    {
+      "text": "“And ",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "text": "mine ",
+      "start": 0.255,
+      "end": 0.464
+    },
+    {
+      "text": "is ",
+      "start": 0.499,
+      "end": 0.557
+    },
+    {
+      "text": "yours.”",
+      "start": 0.615,
+      "end": 1.347
+    }
+  ],
+  "playbackRate": 0.9541249999999999,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "5f15697d057dd476501820431b4c418a219740f1d6e072e7d1f9b052161ef8f1",
+  "effectiveWPM": 170.0
+}

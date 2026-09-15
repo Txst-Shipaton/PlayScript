@@ -1,0 +1,127 @@
+{
+  "text": "He begins to swear by the moon. I stop him. The moon changes; I cannot bear the thought of this changing with it.\n\n",
+  "cues": [
+    {
+      "text": "He ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "begins ",
+      "start": 0.197,
+      "end": 0.476
+    },
+    {
+      "text": "to ",
+      "start": 0.522,
+      "end": 0.58
+    },
+    {
+      "text": "swear ",
+      "start": 0.65,
+      "end": 0.94
+    },
+    {
+      "text": "by ",
+      "start": 0.998,
+      "end": 1.091
+    },
+    {
+      "text": "the ",
+      "start": 1.149,
+      "end": 1.219
+    },
+    {
+      "text": "moon. ",
+      "start": 1.277,
+      "end": 1.707
+    },
+    {
+      "text": "I ",
+      "start": 1.881,
+      "end": 1.927
+    },
+    {
+      "text": "stop ",
+      "start": 2.02,
+      "end": 2.264
+    },
+    {
+      "text": "him. ",
+      "start": 2.334,
+      "end": 2.554
+    },
+    {
+      "text": "The ",
+      "start": 2.728,
+      "end": 2.844
+    },
+    {
+      "text": "moon ",
+      "start": 2.902,
+      "end": 3.111
+    },
+    {
+      "text": "changes; ",
+      "start": 3.181,
+      "end": 3.762
+    },
+    {
+      "text": "I ",
+      "start": 3.889,
+      "end": 3.936
+    },
+    {
+      "text": "cannot ",
+      "start": 4.005,
+      "end": 4.249
+    },
+    {
+      "text": "bear ",
+      "start": 4.296,
+      "end": 4.481
+    },
+    {
+      "text": "the ",
+      "start": 4.528,
+      "end": 4.598
+    },
+    {
+      "text": "thought ",
+      "start": 4.667,
+      "end": 4.923
+    },
+    {
+      "text": "of ",
+      "start": 4.957,
+      "end": 5.004
+    },
+    {
+      "text": "this ",
+      "start": 5.05,
+      "end": 5.19
+    },
+    {
+      "text": "changing ",
+      "start": 5.248,
+      "end": 5.642
+    },
+    {
+      "text": "with ",
+      "start": 5.689,
+      "end": 5.84
+    },
+    {
+      "text": "it.\n\n",
+      "start": 5.886,
+      "end": 6.118
+    }
+  ],
+  "playbackRate": 0.7536666666666666,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "86cb341d4b1a5ce8f0e8585f096c705244bdfb5c4f9d81b755811a92903ccc3c",
+  "effectiveWPM": 170.0
+}

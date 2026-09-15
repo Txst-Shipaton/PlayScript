@@ -1,0 +1,97 @@
+{
+  "text": " he asks.\n\nNothing grand, I think. Only come back tomorrow. Only mean it when daylight finds us.",
+  "cues": [
+    {
+      "text": " he ",
+      "start": 0.081,
+      "end": 0.151
+    },
+    {
+      "text": "asks.\n\n",
+      "start": 0.221,
+      "end": 0.685
+    },
+    {
+      "text": "Nothing ",
+      "start": 0.929,
+      "end": 1.242
+    },
+    {
+      "text": "grand, ",
+      "start": 1.3,
+      "end": 1.672
+    },
+    {
+      "text": "I ",
+      "start": 1.707,
+      "end": 1.73
+    },
+    {
+      "text": "think. ",
+      "start": 1.811,
+      "end": 2.183
+    },
+    {
+      "text": "Only ",
+      "start": 2.392,
+      "end": 2.624
+    },
+    {
+      "text": "come ",
+      "start": 2.67,
+      "end": 2.821
+    },
+    {
+      "text": "back ",
+      "start": 2.844,
+      "end": 2.995
+    },
+    {
+      "text": "tomorrow. ",
+      "start": 3.042,
+      "end": 3.576
+    },
+    {
+      "text": "Only ",
+      "start": 3.855,
+      "end": 4.11
+    },
+    {
+      "text": "mean ",
+      "start": 4.18,
+      "end": 4.354
+    },
+    {
+      "text": "it ",
+      "start": 4.4,
+      "end": 4.47
+    },
+    {
+      "text": "when ",
+      "start": 4.505,
+      "end": 4.656
+    },
+    {
+      "text": "daylight ",
+      "start": 4.714,
+      "end": 5.108
+    },
+    {
+      "text": "finds ",
+      "start": 5.155,
+      "end": 5.457
+    },
+    {
+      "text": "us.",
+      "start": 5.503,
+      "end": 6.037
+    }
+  ],
+  "playbackRate": 1.0061666666666667,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "17ca3220905ec6b5a4ee51d4360479df93b3776e84cae41a06577a26ac4f54d4",
+  "effectiveWPM": 170.0
+}

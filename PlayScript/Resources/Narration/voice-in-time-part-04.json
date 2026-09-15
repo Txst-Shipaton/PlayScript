@@ -1,0 +1,22 @@
+{
+  "text": "“I’m here.”",
+  "cues": [
+    {
+      "text": "“I’m ",
+      "start": 0.0,
+      "end": 0.302
+    },
+    {
+      "text": "here.”",
+      "start": 0.372,
+      "end": 1.022
+    }
+  ],
+  "playbackRate": 1.3,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "c456e44209c1b851ddf328cb4c516705c4bce6d32119ed88ff8bcbe3762ccce3",
+  "effectiveWPM": 152.6418786692759
+}

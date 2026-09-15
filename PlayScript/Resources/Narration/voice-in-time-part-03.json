@@ -1,0 +1,27 @@
+{
+  "text": " I tell her. ",
+  "cues": [
+    {
+      "text": " I ",
+      "start": 0.046,
+      "end": 0.093
+    },
+    {
+      "text": "tell ",
+      "start": 0.186,
+      "end": 0.372
+    },
+    {
+      "text": "her. ",
+      "start": 0.441,
+      "end": 0.673
+    }
+  ],
+  "playbackRate": 0.7,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "2dc87ebb46a18957192f33b0b8e2f5d00d2626fbbb9b49985abcca216306a96b",
+  "effectiveWPM": 187.22139673105497
+}

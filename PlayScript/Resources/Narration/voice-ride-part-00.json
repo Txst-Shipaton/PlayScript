@@ -1,0 +1,227 @@
+{
+  "text": "I ride with the letter against my heart.\n\nThe road is the same road. Verona still holds the same dangers. But every mile carries me toward her now, instead of toward a world without her.\n\nWait for me, Juliet. Only a little longer.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "ride ",
+      "start": 0.221,
+      "end": 0.464
+    },
+    {
+      "text": "with ",
+      "start": 0.488,
+      "end": 0.604
+    },
+    {
+      "text": "the ",
+      "start": 0.639,
+      "end": 0.708
+    },
+    {
+      "text": "letter ",
+      "start": 0.755,
+      "end": 0.998
+    },
+    {
+      "text": "against ",
+      "start": 1.045,
+      "end": 1.382
+    },
+    {
+      "text": "my ",
+      "start": 1.451,
+      "end": 1.567
+    },
+    {
+      "text": "heart.\n\n",
+      "start": 1.649,
+      "end": 2.101
+    },
+    {
+      "text": "The ",
+      "start": 2.345,
+      "end": 2.461
+    },
+    {
+      "text": "road ",
+      "start": 2.531,
+      "end": 2.798
+    },
+    {
+      "text": "is ",
+      "start": 2.844,
+      "end": 2.926
+    },
+    {
+      "text": "the ",
+      "start": 2.984,
+      "end": 3.053
+    },
+    {
+      "text": "same ",
+      "start": 3.1,
+      "end": 3.355
+    },
+    {
+      "text": "road. ",
+      "start": 3.402,
+      "end": 3.901
+    },
+    {
+      "text": "Verona ",
+      "start": 4.412,
+      "end": 4.853
+    },
+    {
+      "text": "still ",
+      "start": 4.911,
+      "end": 5.166
+    },
+    {
+      "text": "holds ",
+      "start": 5.236,
+      "end": 5.538
+    },
+    {
+      "text": "the ",
+      "start": 5.596,
+      "end": 5.677
+    },
+    {
+      "text": "same ",
+      "start": 5.724,
+      "end": 5.968
+    },
+    {
+      "text": "dangers. ",
+      "start": 6.014,
+      "end": 6.676
+    },
+    {
+      "text": "But ",
+      "start": 7.001,
+      "end": 7.152
+    },
+    {
+      "text": "every ",
+      "start": 7.198,
+      "end": 7.419
+    },
+    {
+      "text": "mile ",
+      "start": 7.477,
+      "end": 7.814
+    },
+    {
+      "text": "carries ",
+      "start": 7.86,
+      "end": 8.185
+    },
+    {
+      "text": "me ",
+      "start": 8.243,
+      "end": 8.324
+    },
+    {
+      "text": "toward ",
+      "start": 8.382,
+      "end": 8.719
+    },
+    {
+      "text": "her ",
+      "start": 8.777,
+      "end": 8.858
+    },
+    {
+      "text": "now, ",
+      "start": 8.928,
+      "end": 9.381
+    },
+    {
+      "text": "instead ",
+      "start": 9.474,
+      "end": 9.81
+    },
+    {
+      "text": "of ",
+      "start": 9.845,
+      "end": 9.903
+    },
+    {
+      "text": "toward ",
+      "start": 9.95,
+      "end": 10.263
+    },
+    {
+      "text": "a ",
+      "start": 10.298,
+      "end": 10.333
+    },
+    {
+      "text": "world ",
+      "start": 10.391,
+      "end": 10.67
+    },
+    {
+      "text": "without ",
+      "start": 10.716,
+      "end": 11.041
+    },
+    {
+      "text": "her.\n\n",
+      "start": 11.111,
+      "end": 11.436
+    },
+    {
+      "text": "Wait ",
+      "start": 11.947,
+      "end": 12.167
+    },
+    {
+      "text": "for ",
+      "start": 12.214,
+      "end": 12.318
+    },
+    {
+      "text": "me, ",
+      "start": 12.365,
+      "end": 12.469
+    },
+    {
+      "text": "Juliet. ",
+      "start": 12.492,
+      "end": 13.108
+    },
+    {
+      "text": "Only ",
+      "start": 13.618,
+      "end": 13.862
+    },
+    {
+      "text": "a ",
+      "start": 13.909,
+      "end": 13.932
+    },
+    {
+      "text": "little ",
+      "start": 13.967,
+      "end": 14.187
+    },
+    {
+      "text": "longer.",
+      "start": 14.222,
+      "end": 14.954
+    }
+  ],
+  "playbackRate": 0.9853410852713179,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "0f397b42d17f3592123fa0643e17b195b2c3df456e5fe0b5fe67a1c29eefbd9d",
+  "effectiveWPM": 170.0
+}

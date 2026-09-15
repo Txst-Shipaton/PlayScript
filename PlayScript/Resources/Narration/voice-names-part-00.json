@@ -1,0 +1,302 @@
+{
+  "text": "Montague. A word I was taught to hate before I knew the person it belonged to.\n\nBut a name has never held my hand. A name has never looked at me as if the whole crowded room had fallen silent.\n\nIf I could set our names down here, between us, what would be left except him and me?",
+  "cues": [
+    {
+      "text": "Montague. ",
+      "start": 0.0,
+      "end": 0.778
+    },
+    {
+      "text": "A ",
+      "start": 1.289,
+      "end": 1.37
+    },
+    {
+      "text": "word ",
+      "start": 1.44,
+      "end": 1.672
+    },
+    {
+      "text": "I ",
+      "start": 1.718,
+      "end": 1.741
+    },
+    {
+      "text": "was ",
+      "start": 1.8,
+      "end": 1.904
+    },
+    {
+      "text": "taught ",
+      "start": 1.95,
+      "end": 2.194
+    },
+    {
+      "text": "to ",
+      "start": 2.218,
+      "end": 2.276
+    },
+    {
+      "text": "hate ",
+      "start": 2.357,
+      "end": 2.612
+    },
+    {
+      "text": "before ",
+      "start": 2.647,
+      "end": 2.937
+    },
+    {
+      "text": "I ",
+      "start": 2.972,
+      "end": 2.995
+    },
+    {
+      "text": "knew ",
+      "start": 3.065,
+      "end": 3.204
+    },
+    {
+      "text": "the ",
+      "start": 3.251,
+      "end": 3.32
+    },
+    {
+      "text": "person ",
+      "start": 3.367,
+      "end": 3.704
+    },
+    {
+      "text": "it ",
+      "start": 3.762,
+      "end": 3.82
+    },
+    {
+      "text": "belonged ",
+      "start": 3.866,
+      "end": 4.203
+    },
+    {
+      "text": "to.\n\n",
+      "start": 4.238,
+      "end": 4.632
+    },
+    {
+      "text": "But ",
+      "start": 5.074,
+      "end": 5.224
+    },
+    {
+      "text": "a ",
+      "start": 5.271,
+      "end": 5.306
+    },
+    {
+      "text": "name ",
+      "start": 5.375,
+      "end": 5.596
+    },
+    {
+      "text": "has ",
+      "start": 5.631,
+      "end": 5.735
+    },
+    {
+      "text": "never ",
+      "start": 5.805,
+      "end": 6.002
+    },
+    {
+      "text": "held ",
+      "start": 6.06,
+      "end": 6.246
+    },
+    {
+      "text": "my ",
+      "start": 6.304,
+      "end": 6.42
+    },
+    {
+      "text": "hand. ",
+      "start": 6.502,
+      "end": 7.059
+    },
+    {
+      "text": "A ",
+      "start": 7.755,
+      "end": 7.837
+    },
+    {
+      "text": "name ",
+      "start": 7.918,
+      "end": 8.127
+    },
+    {
+      "text": "has ",
+      "start": 8.15,
+      "end": 8.255
+    },
+    {
+      "text": "never ",
+      "start": 8.324,
+      "end": 8.51
+    },
+    {
+      "text": "looked ",
+      "start": 8.568,
+      "end": 8.8
+    },
+    {
+      "text": "at ",
+      "start": 8.835,
+      "end": 8.893
+    },
+    {
+      "text": "me ",
+      "start": 8.94,
+      "end": 9.16
+    },
+    {
+      "text": "as ",
+      "start": 9.288,
+      "end": 9.439
+    },
+    {
+      "text": "if ",
+      "start": 9.485,
+      "end": 9.567
+    },
+    {
+      "text": "the ",
+      "start": 9.613,
+      "end": 9.683
+    },
+    {
+      "text": "whole ",
+      "start": 9.729,
+      "end": 9.973
+    },
+    {
+      "text": "crowded ",
+      "start": 10.019,
+      "end": 10.403
+    },
+    {
+      "text": "room ",
+      "start": 10.461,
+      "end": 10.67
+    },
+    {
+      "text": "had ",
+      "start": 10.716,
+      "end": 10.809
+    },
+    {
+      "text": "fallen ",
+      "start": 10.855,
+      "end": 11.146
+    },
+    {
+      "text": "silent.\n\n",
+      "start": 11.204,
+      "end": 11.854
+    },
+    {
+      "text": "If ",
+      "start": 12.295,
+      "end": 12.423
+    },
+    {
+      "text": "I ",
+      "start": 12.492,
+      "end": 12.516
+    },
+    {
+      "text": "could ",
+      "start": 12.597,
+      "end": 12.736
+    },
+    {
+      "text": "set ",
+      "start": 12.771,
+      "end": 12.957
+    },
+    {
+      "text": "our ",
+      "start": 13.003,
+      "end": 13.096
+    },
+    {
+      "text": "names ",
+      "start": 13.166,
+      "end": 13.421
+    },
+    {
+      "text": "down ",
+      "start": 13.468,
+      "end": 13.711
+    },
+    {
+      "text": "here, ",
+      "start": 13.781,
+      "end": 14.187
+    },
+    {
+      "text": "between ",
+      "start": 14.257,
+      "end": 14.617
+    },
+    {
+      "text": "us, ",
+      "start": 14.698,
+      "end": 15.186
+    },
+    {
+      "text": "what ",
+      "start": 15.464,
+      "end": 15.65
+    },
+    {
+      "text": "would ",
+      "start": 15.685,
+      "end": 15.824
+    },
+    {
+      "text": "be ",
+      "start": 15.859,
+      "end": 15.94
+    },
+    {
+      "text": "left ",
+      "start": 15.999,
+      "end": 16.347
+    },
+    {
+      "text": "except ",
+      "start": 16.405,
+      "end": 16.765
+    },
+    {
+      "text": "him ",
+      "start": 16.811,
+      "end": 16.951
+    },
+    {
+      "text": "and ",
+      "start": 16.997,
+      "end": 17.067
+    },
+    {
+      "text": "me?",
+      "start": 17.125,
+      "end": 17.74
+    }
+  ],
+  "playbackRate": 0.8666091954022987,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "1b7c2e7d5a9bb83b59d7999181b561a9ba260bbcc79db3a7dfb33415be994bf9",
+  "effectiveWPM": 170.0
+}

@@ -1,0 +1,27 @@
+{
+  "text": "“Romeo, I come.”",
+  "cues": [
+    {
+      "text": "“Romeo, ",
+      "start": 0.0,
+      "end": 0.464
+    },
+    {
+      "text": "I ",
+      "start": 0.511,
+      "end": 0.557
+    },
+    {
+      "text": "come.”",
+      "start": 0.673,
+      "end": 1.207
+    }
+  ],
+  "playbackRate": 1.1399444444444446,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "d907f2414805eb2b1b74e83f557d634c30ca795c5c9cb8659a16d506c5745759",
+  "effectiveWPM": 170.0
+}

@@ -1,0 +1,157 @@
+{
+  "text": "\n\nHe answers gently, and I let myself believe him. Tomorrow, I will send someone to learn the time and place. My yes is quiet. It is still a yes.",
+  "cues": [
+    {
+      "text": "\n\nHe ",
+      "start": 0.07,
+      "end": 0.151
+    },
+    {
+      "text": "answers ",
+      "start": 0.221,
+      "end": 0.557
+    },
+    {
+      "text": "gently, ",
+      "start": 0.615,
+      "end": 1.184
+    },
+    {
+      "text": "and ",
+      "start": 1.254,
+      "end": 1.393
+    },
+    {
+      "text": "I ",
+      "start": 1.451,
+      "end": 1.474
+    },
+    {
+      "text": "let ",
+      "start": 1.556,
+      "end": 1.695
+    },
+    {
+      "text": "myself ",
+      "start": 1.741,
+      "end": 2.067
+    },
+    {
+      "text": "believe ",
+      "start": 2.125,
+      "end": 2.45
+    },
+    {
+      "text": "him. ",
+      "start": 2.496,
+      "end": 2.833
+    },
+    {
+      "text": "Tomorrow, ",
+      "start": 3.274,
+      "end": 3.785
+    },
+    {
+      "text": "I ",
+      "start": 3.831,
+      "end": 3.878
+    },
+    {
+      "text": "will ",
+      "start": 3.947,
+      "end": 4.098
+    },
+    {
+      "text": "send ",
+      "start": 4.156,
+      "end": 4.354
+    },
+    {
+      "text": "someone ",
+      "start": 4.412,
+      "end": 4.702
+    },
+    {
+      "text": "to ",
+      "start": 4.737,
+      "end": 4.795
+    },
+    {
+      "text": "learn ",
+      "start": 4.853,
+      "end": 5.085
+    },
+    {
+      "text": "the ",
+      "start": 5.132,
+      "end": 5.201
+    },
+    {
+      "text": "time ",
+      "start": 5.248,
+      "end": 5.515
+    },
+    {
+      "text": "and ",
+      "start": 5.55,
+      "end": 5.619
+    },
+    {
+      "text": "place. ",
+      "start": 5.677,
+      "end": 6.258
+    },
+    {
+      "text": "My ",
+      "start": 6.769,
+      "end": 6.908
+    },
+    {
+      "text": "yes ",
+      "start": 6.978,
+      "end": 7.256
+    },
+    {
+      "text": "is ",
+      "start": 7.314,
+      "end": 7.442
+    },
+    {
+      "text": "quiet. ",
+      "start": 7.5,
+      "end": 8.081
+    },
+    {
+      "text": "It ",
+      "start": 8.591,
+      "end": 8.731
+    },
+    {
+      "text": "is ",
+      "start": 8.777,
+      "end": 8.847
+    },
+    {
+      "text": "still ",
+      "start": 8.893,
+      "end": 9.125
+    },
+    {
+      "text": "a ",
+      "start": 9.16,
+      "end": 9.183
+    },
+    {
+      "text": "yes.",
+      "start": 9.253,
+      "end": 9.985
+    }
+  ],
+  "playbackRate": 0.9755459770114943,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "23454d38f16a9025523ed2ed657cd7b43ec041307c97e6c4f2f48fa8b58b6aff",
+  "effectiveWPM": 170.0
+}

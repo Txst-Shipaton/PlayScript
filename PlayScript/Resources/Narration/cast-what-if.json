@@ -1,0 +1,108 @@
+{
+  "text": "What if the letter had found him?\n\nJust once, let me imagine a world that gave us enough time.",
+  "segments": [
+    {
+      "resource": "voice-what-if-part-00",
+      "speaker": "Narrator",
+      "text": "What if the letter had found him?\n\nJust once, let me imagine a world that gave us enough time.",
+      "cues": [
+        {
+          "text": "What ",
+          "start": 0.0,
+          "end": 0.209
+        },
+        {
+          "text": "if ",
+          "start": 0.255,
+          "end": 0.325
+        },
+        {
+          "text": "the ",
+          "start": 0.372,
+          "end": 0.441
+        },
+        {
+          "text": "letter ",
+          "start": 0.488,
+          "end": 0.72
+        },
+        {
+          "text": "had ",
+          "start": 0.755,
+          "end": 0.848
+        },
+        {
+          "text": "found ",
+          "start": 0.906,
+          "end": 1.173
+        },
+        {
+          "text": "him?\n\n",
+          "start": 1.231,
+          "end": 1.521
+        },
+        {
+          "text": "Just ",
+          "start": 1.904,
+          "end": 2.148
+        },
+        {
+          "text": "once, ",
+          "start": 2.229,
+          "end": 2.635
+        },
+        {
+          "text": "let ",
+          "start": 2.752,
+          "end": 2.902
+        },
+        {
+          "text": "me ",
+          "start": 2.937,
+          "end": 3.019
+        },
+        {
+          "text": "imagine ",
+          "start": 3.077,
+          "end": 3.46
+        },
+        {
+          "text": "a ",
+          "start": 3.495,
+          "end": 3.518
+        },
+        {
+          "text": "world ",
+          "start": 3.576,
+          "end": 3.866
+        },
+        {
+          "text": "that ",
+          "start": 3.913,
+          "end": 4.029
+        },
+        {
+          "text": "gave ",
+          "start": 4.063,
+          "end": 4.261
+        },
+        {
+          "text": "us ",
+          "start": 4.296,
+          "end": 4.377
+        },
+        {
+          "text": "enough ",
+          "start": 4.435,
+          "end": 4.667
+        },
+        {
+          "text": "time.",
+          "start": 4.714,
+          "end": 5.433
+        }
+      ],
+      "playbackRate": 0.8101842105263157
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "text": " I have heard enough to know I want him to stay.",
+  "cues": [
+    {
+      "text": " I ",
+      "start": 0.058,
+      "end": 0.093
+    },
+    {
+      "text": "have ",
+      "start": 0.174,
+      "end": 0.29
+    },
+    {
+      "text": "heard ",
+      "start": 0.325,
+      "end": 0.488
+    },
+    {
+      "text": "enough ",
+      "start": 0.534,
+      "end": 0.778
+    },
+    {
+      "text": "to ",
+      "start": 0.824,
+      "end": 0.882
+    },
+    {
+      "text": "know ",
+      "start": 0.94,
+      "end": 1.173
+    },
+    {
+      "text": "I ",
+      "start": 1.289,
+      "end": 1.335
+    },
+    {
+      "text": "want ",
+      "start": 1.416,
+      "end": 1.591
+    },
+    {
+      "text": "him ",
+      "start": 1.637,
+      "end": 1.73
+    },
+    {
+      "text": "to ",
+      "start": 1.776,
+      "end": 1.834
+    },
+    {
+      "text": "stay.",
+      "start": 1.892,
+      "end": 2.647
+    }
+  ],
+  "playbackRate": 0.7,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "92dd83c78cf255014d1ee7cc993e793ffcf853957a88c2986300e499e0b1ab61",
+  "effectiveWPM": 174.53721193804304
+}

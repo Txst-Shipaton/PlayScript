@@ -1,0 +1,32 @@
+{
+  "text": "I steady my hand. ",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "steady ",
+      "start": 0.186,
+      "end": 0.476
+    },
+    {
+      "text": "my ",
+      "start": 0.534,
+      "end": 0.639
+    },
+    {
+      "text": "hand. ",
+      "start": 0.708,
+      "end": 1.115
+    }
+  ],
+  "playbackRate": 0.7897916666666667,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "b17cf4f2ecfc7ecb72d58bd102e4fa5692780214f98cb6ea79df89065a7c2355",
+  "effectiveWPM": 170.0
+}

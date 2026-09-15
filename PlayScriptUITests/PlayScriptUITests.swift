@@ -2,6 +2,43 @@ import XCTest
 
 final class PlayScriptUITests: XCTestCase {
     @MainActor
+    func testBookLibraryAndFutureSearch() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting"]
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Book Library"].waitForExistence(timeout: 10))
+        app.buttons["searchBooks"].tap()
+        XCTAssertTrue(app.alerts["A world of books, soon"].waitForExistence(timeout: 3))
+        app.alerts.buttons["Back to the library"].tap()
+        for _ in 0..<3 { app.swipeUp() }
+        capture("library-coming-soon")
+        XCTAssertTrue(app.otherElements["placeholder-Harry Potter"].exists)
+        XCTAssertFalse(app.buttons["placeholder-Harry Potter"].exists)
+    }
+
+    @MainActor
+    func testThreeVoiceHandoff() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--uitesting-cast"]
+        app.launch()
+        app.buttons["beginStory"].tap()
+        let narrator = app.staticTexts.matching(NSPredicate(format: "identifier == 'activeSpeaker' AND label == 'NARRATOR'")).firstMatch
+        XCTAssertTrue(narrator.waitForExistence(timeout: 10))
+        capture("narrator-speaking")
+
+        // The page hands off Narrator -> Juliet -> Romeo. Individual lines are short,
+        // so assert against the cast the page has accumulated rather than a live label.
+        let cast = app.staticTexts["speakersHeard"]
+        let heardAll = NSPredicate(format: "label CONTAINS 'Narrator' AND label CONTAINS 'Juliet' AND label CONTAINS 'Romeo'")
+        expectation(for: heardAll, evaluatedWith: cast)
+        waitForExpectations(timeout: 60)
+        capture("three-voice-handoff")
+        app.buttons["pauseStory"].tap()
+        XCTAssertTrue(app.buttons["resumeStory"].waitForExistence(timeout: 5))
+        app.buttons["resumeStory"].tap()
+        XCTAssertTrue(app.staticTexts["narrative"].waitForExistence(timeout: 5))
+    }
+    @MainActor
     func testVisiblePauseAndChoiceRestoration() throws {
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting"]
@@ -55,6 +92,11 @@ final class PlayScriptUITests: XCTestCase {
         XCTAssertEqual(decisions, 3)
         XCTAssertTrue(sawWhatIf)
         XCTAssertTrue(app.staticTexts["reflectionText"].exists)
+        XCTAssertTrue(app.staticTexts["personalityCharacter"].exists)
+        for _ in 0..<4 {
+            if app.buttons["closeBook"].isHittable { break }
+            app.swipeUp()
+        }
         capture("05-reflection")
         app.buttons["closeBook"].tap()
         XCTAssertTrue(app.buttons["beginStory"].waitForExistence(timeout: 5))
@@ -157,20 +199,14 @@ final class PlayScriptUITests: XCTestCase {
         app.buttons["primaryAuthButton"].tap()
         XCTAssertTrue(app.staticTexts["authMessage"].label.contains("email"))
 
-        email.doubleTap()
-        app.menuItems["Select All"].firstMatch.tap()
-        email.typeText("juliet@verona.it")
-        password.doubleTap()
-        app.menuItems["Select All"].firstMatch.tap()
-        password.typeText("short")
+        replace(email, with: "juliet@verona.it")
+        replace(password, with: "short")
         app.buttons["primaryAuthButton"].tap()
         XCTAssertTrue(app.staticTexts["authMessage"].waitForExistence(timeout: 3))
         XCTAssertTrue(app.staticTexts["authMessage"].label.contains("records"))
         capture("11-login-invalid-credentials")
 
-        password.doubleTap()
-        app.menuItems["Select All"].firstMatch.tap()
-        password.typeText("longenough")
+        replace(password, with: "longenough")
         app.buttons["primaryAuthButton"].tap()
         XCTAssertTrue(app.buttons["beginStory"].waitForExistence(timeout: 5))
     }
@@ -185,20 +221,36 @@ final class PlayScriptUITests: XCTestCase {
         XCTAssertTrue(app.secureTextFields["confirmPasswordField"].waitForExistence(timeout: 3))
         capture("12-login-signup")
 
-        app.textFields["emailField"].tap()
-        app.textFields["emailField"].typeText("romeo@verona.it")
-        app.secureTextFields["passwordField"].tap()
-        app.secureTextFields["passwordField"].typeText("montague")
-        app.secureTextFields["confirmPasswordField"].tap()
-        app.secureTextFields["confirmPasswordField"].typeText("capulet")
+        replace(app.textFields["emailField"], with: "romeo@verona.it")
+        replace(app.secureTextFields["passwordField"], with: "montague")
+        replace(app.secureTextFields["confirmPasswordField"], with: "capulet")
         app.buttons["primaryAuthButton"].tap()
         XCTAssertTrue(app.staticTexts["authMessage"].waitForExistence(timeout: 3))
-        XCTAssertTrue(app.staticTexts["authMessage"].label.contains("match"))
+        let mismatchMessage = app.staticTexts["authMessage"].label
+        XCTAssertTrue(mismatchMessage.contains("match"), "Unexpected message: \(mismatchMessage)")
 
         XCTAssertTrue(app.buttons["continueAsGuest"].isHittable)
         app.buttons["continueAsGuest"].tap()
         XCTAssertTrue(app.buttons["beginStory"].waitForExistence(timeout: 5))
         capture("13-login-guest-library")
+    }
+
+    /// Clears a field by deleting what is in it. The edit menu's "Select All"
+    /// is not reliably present on every iOS version.
+    @MainActor private func replace(_ field: XCUIElement, with text: String) {
+        field.tap()
+        for _ in 0..<4 {
+            // An empty field reports its placeholder as its value, so a placeholder
+            // the same length as the text would otherwise look like a filled field.
+            let value = (field.value as? String) ?? ""
+            let existing = value == field.placeholderValue ? "" : value
+            if existing.count == text.count { return }
+            if !existing.isEmpty {
+                field.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: existing.count))
+            }
+            field.typeText(text)
+        }
+        XCTFail("Could not enter \(text.count) characters into \(field.identifier)")
     }
 
     @MainActor private func capture(_ name: String) {

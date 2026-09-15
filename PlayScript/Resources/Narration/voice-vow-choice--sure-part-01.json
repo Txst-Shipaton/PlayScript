@@ -1,0 +1,22 @@
+{
+  "text": " I whisper. ",
+  "cues": [
+    {
+      "text": " I ",
+      "start": 0.046,
+      "end": 0.093
+    },
+    {
+      "text": "whisper. ",
+      "start": 0.174,
+      "end": 0.685
+    }
+  ],
+  "playbackRate": 0.9704166666666667,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "15a392f57d6b18427f2ba3c809640d8dd926b5bea153b657246c04d9ffe4cecf",
+  "effectiveWPM": 170.0
+}

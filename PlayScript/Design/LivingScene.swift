@@ -57,6 +57,9 @@ struct LivingScene: View {
     var quiet = false
     var resting = false
     var attention = false
+    var activeSpeaker: String? = nil
+    var audioLevel: Double = 0
+    var choiceBold: Bool? = nil
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var shifted = false
 
@@ -133,7 +136,15 @@ struct LivingScene: View {
                         .blur(radius: 10)
                         .position(x: geo.size.width * 0.56, y: geo.size.height * 0.35)
                 }
+                if let speaker = activeSpeaker, speaker == "Romeo" || speaker == "Juliet" {
+                    SpeakingCharacter(name: speaker, level: resting ? 0 : audioLevel, bold: choiceBold ?? false)
+                        .frame(width: min(180, geo.size.width * 0.4), height: geo.size.height * 0.24)
+                        .position(x: geo.size.width * (speaker == "Romeo" ? 0.29 : 0.73), y: geo.size.height * 0.30)
+                        .id(speaker)
+                        .transition(reduceMotion ? .opacity : .offset(y: 20).combined(with: .opacity).combined(with: .scale(scale: 0.9)))
+                }
             }
+            .animation(.spring(response: reduceMotion ? 0 : 0.45, dampingFraction: 0.8), value: activeSpeaker)
             .overlay(Color.black.opacity(quiet ? 0.18 : 0))
             .animation(.easeInOut(duration: reduceMotion ? 0 : 0.6), value: attention)
             .animation(.easeInOut(duration: reduceMotion ? 0 : 0.9), value: quiet)

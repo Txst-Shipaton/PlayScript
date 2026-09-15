@@ -1,0 +1,207 @@
+{
+  "text": "\n\nI drink, and set the empty vial down. I cannot make the world kinder by wishing it so. But I can reach for the life we were promised.\n\nI lie down with his name still warm in my mouth.",
+  "cues": [
+    {
+      "text": "\n\nI ",
+      "start": 0.046,
+      "end": 0.093
+    },
+    {
+      "text": "drink, ",
+      "start": 0.209,
+      "end": 0.546
+    },
+    {
+      "text": "and ",
+      "start": 0.569,
+      "end": 0.685
+    },
+    {
+      "text": "set ",
+      "start": 0.743,
+      "end": 0.94
+    },
+    {
+      "text": "the ",
+      "start": 0.987,
+      "end": 1.057
+    },
+    {
+      "text": "empty ",
+      "start": 1.115,
+      "end": 1.393
+    },
+    {
+      "text": "vial ",
+      "start": 1.451,
+      "end": 1.741
+    },
+    {
+      "text": "down. ",
+      "start": 1.8,
+      "end": 2.299
+    },
+    {
+      "text": "I ",
+      "start": 2.577,
+      "end": 2.635
+    },
+    {
+      "text": "cannot ",
+      "start": 2.717,
+      "end": 2.972
+    },
+    {
+      "text": "make ",
+      "start": 3.019,
+      "end": 3.181
+    },
+    {
+      "text": "the ",
+      "start": 3.216,
+      "end": 3.286
+    },
+    {
+      "text": "world ",
+      "start": 3.332,
+      "end": 3.622
+    },
+    {
+      "text": "kinder ",
+      "start": 3.692,
+      "end": 4.052
+    },
+    {
+      "text": "by ",
+      "start": 4.098,
+      "end": 4.203
+    },
+    {
+      "text": "wishing ",
+      "start": 4.261,
+      "end": 4.54
+    },
+    {
+      "text": "it ",
+      "start": 4.598,
+      "end": 4.656
+    },
+    {
+      "text": "so. ",
+      "start": 4.714,
+      "end": 5.155
+    },
+    {
+      "text": "But ",
+      "start": 5.48,
+      "end": 5.631
+    },
+    {
+      "text": "I ",
+      "start": 5.677,
+      "end": 5.7
+    },
+    {
+      "text": "can ",
+      "start": 5.77,
+      "end": 5.898
+    },
+    {
+      "text": "reach ",
+      "start": 5.968,
+      "end": 6.165
+    },
+    {
+      "text": "for ",
+      "start": 6.211,
+      "end": 6.304
+    },
+    {
+      "text": "the ",
+      "start": 6.339,
+      "end": 6.409
+    },
+    {
+      "text": "life ",
+      "start": 6.467,
+      "end": 6.699
+    },
+    {
+      "text": "we ",
+      "start": 6.734,
+      "end": 6.815
+    },
+    {
+      "text": "were ",
+      "start": 6.861,
+      "end": 6.989
+    },
+    {
+      "text": "promised.\n\n",
+      "start": 7.024,
+      "end": 7.616
+    },
+    {
+      "text": "I ",
+      "start": 8.057,
+      "end": 8.115
+    },
+    {
+      "text": "lie ",
+      "start": 8.231,
+      "end": 8.417
+    },
+    {
+      "text": "down ",
+      "start": 8.452,
+      "end": 8.684
+    },
+    {
+      "text": "with ",
+      "start": 8.731,
+      "end": 8.858
+    },
+    {
+      "text": "his ",
+      "start": 8.893,
+      "end": 8.998
+    },
+    {
+      "text": "name ",
+      "start": 9.067,
+      "end": 9.346
+    },
+    {
+      "text": "still ",
+      "start": 9.404,
+      "end": 9.648
+    },
+    {
+      "text": "warm ",
+      "start": 9.706,
+      "end": 9.927
+    },
+    {
+      "text": "in ",
+      "start": 9.973,
+      "end": 10.019
+    },
+    {
+      "text": "my ",
+      "start": 10.077,
+      "end": 10.17
+    },
+    {
+      "text": "mouth.",
+      "start": 10.24,
+      "end": 10.913
+    }
+  ],
+  "playbackRate": 0.7928247863247864,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "095ccca129ec75ae31fc3de7470f2baba3e2a08c1dd19937f3e0c5c5314feb22",
+  "effectiveWPM": 170.0
+}

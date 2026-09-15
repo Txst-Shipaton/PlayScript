@@ -1,0 +1,222 @@
+{
+  "text": "I hear him before I see him.\n\nBelow my window, the orchard holds its breath. Then my name rises out of the dark, spoken by the boy whose hand found mine only hours ago.\n\nRomeo. Here. With every reason to stay away.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "hear ",
+      "start": 0.209,
+      "end": 0.383
+    },
+    {
+      "text": "him ",
+      "start": 0.43,
+      "end": 0.534
+    },
+    {
+      "text": "before ",
+      "start": 0.58,
+      "end": 0.848
+    },
+    {
+      "text": "I ",
+      "start": 0.894,
+      "end": 0.917
+    },
+    {
+      "text": "see ",
+      "start": 1.01,
+      "end": 1.196
+    },
+    {
+      "text": "him.\n\n",
+      "start": 1.254,
+      "end": 1.591
+    },
+    {
+      "text": "Below ",
+      "start": 2.101,
+      "end": 2.368
+    },
+    {
+      "text": "my ",
+      "start": 2.438,
+      "end": 2.543
+    },
+    {
+      "text": "window, ",
+      "start": 2.601,
+      "end": 2.995
+    },
+    {
+      "text": "the ",
+      "start": 3.03,
+      "end": 3.135
+    },
+    {
+      "text": "orchard ",
+      "start": 3.204,
+      "end": 3.553
+    },
+    {
+      "text": "holds ",
+      "start": 3.611,
+      "end": 3.878
+    },
+    {
+      "text": "its ",
+      "start": 3.913,
+      "end": 4.04
+    },
+    {
+      "text": "breath. ",
+      "start": 4.087,
+      "end": 4.632
+    },
+    {
+      "text": "Then ",
+      "start": 5.074,
+      "end": 5.306
+    },
+    {
+      "text": "my ",
+      "start": 5.375,
+      "end": 5.48
+    },
+    {
+      "text": "name ",
+      "start": 5.596,
+      "end": 5.875
+    },
+    {
+      "text": "rises ",
+      "start": 5.933,
+      "end": 6.327
+    },
+    {
+      "text": "out ",
+      "start": 6.385,
+      "end": 6.548
+    },
+    {
+      "text": "of ",
+      "start": 6.594,
+      "end": 6.641
+    },
+    {
+      "text": "the ",
+      "start": 6.687,
+      "end": 6.757
+    },
+    {
+      "text": "dark, ",
+      "start": 6.803,
+      "end": 7.279
+    },
+    {
+      "text": "spoken ",
+      "start": 7.454,
+      "end": 7.883
+    },
+    {
+      "text": "by ",
+      "start": 7.941,
+      "end": 8.046
+    },
+    {
+      "text": "the ",
+      "start": 8.104,
+      "end": 8.173
+    },
+    {
+      "text": "boy ",
+      "start": 8.231,
+      "end": 8.487
+    },
+    {
+      "text": "whose ",
+      "start": 8.545,
+      "end": 8.742
+    },
+    {
+      "text": "hand ",
+      "start": 8.789,
+      "end": 9.033
+    },
+    {
+      "text": "found ",
+      "start": 9.102,
+      "end": 9.358
+    },
+    {
+      "text": "mine ",
+      "start": 9.427,
+      "end": 9.741
+    },
+    {
+      "text": "only ",
+      "start": 9.799,
+      "end": 10.008
+    },
+    {
+      "text": "hours ",
+      "start": 10.066,
+      "end": 10.368
+    },
+    {
+      "text": "ago.\n\n",
+      "start": 10.403,
+      "end": 10.89
+    },
+    {
+      "text": "Romeo. ",
+      "start": 11.331,
+      "end": 12.005
+    },
+    {
+      "text": "Here. ",
+      "start": 12.283,
+      "end": 12.725
+    },
+    {
+      "text": "With ",
+      "start": 13.108,
+      "end": 13.282
+    },
+    {
+      "text": "every ",
+      "start": 13.34,
+      "end": 13.595
+    },
+    {
+      "text": "reason ",
+      "start": 13.653,
+      "end": 13.932
+    },
+    {
+      "text": "to ",
+      "start": 13.978,
+      "end": 14.036
+    },
+    {
+      "text": "stay ",
+      "start": 14.094,
+      "end": 14.303
+    },
+    {
+      "text": "away.",
+      "start": 14.362,
+      "end": 15.047
+    }
+  ],
+  "playbackRate": 1.0150753968253967,
+  "voiceID": "JBFqnCBsd6RMkjVDRZzb",
+  "character": "Narrator",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "a7a089b7c6dde18605223714176642fd9d9739dab7d64a96a79111641029d1db",
+  "effectiveWPM": 169.99999999999997
+}
