@@ -51,10 +51,11 @@ paths += sorted((ROOT / 'PlayScript/Resources/Narration').glob('*.mp3'))
 paths += sorted((ROOT / 'PlayScript/Resources/Narration').glob('*.json'))
 paths += sorted((ROOT / 'PlayScript/Resources/Score').glob('*.mp3'))
 paths += sorted((ROOT / 'PlayScript/Resources/Lottie').glob('*.json'))
+paths += sorted((ROOT / 'PlayScript/Resources/Lottie').glob('*.lottie'))
 paths += sorted((ROOT / 'PlayScriptUITests').glob('*.swift'))
 for path in paths:
     rel = str(path.relative_to(ROOT))
-    file_type = {'.swift': 'sourcecode.swift', '.wav': 'audio.wav', '.mp3': 'audio.mp3', '.json': 'text.json', '.xcassets': 'folder.assetcatalog', '.xcprivacy': 'text.xml'}[path.suffix]
+    file_type = {'.swift': 'sourcecode.swift', '.wav': 'audio.wav', '.mp3': 'audio.mp3', '.json': 'text.json', '.lottie': 'file', '.xcassets': 'folder.assetcatalog', '.xcprivacy': 'text.xml'}[path.suffix]
     ref = obj(rel, f'isa = PBXFileReference; lastKnownFileType = {file_type}; path = {q(rel)}; sourceTree = SOURCE_ROOT;')
     build = obj(rel + 'Build', f'isa = PBXBuildFile; fileRef = {ref};')
     if rel.startswith('PlayScriptUITests/'):

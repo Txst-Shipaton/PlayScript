@@ -144,12 +144,27 @@ struct ReaderView: View {
                 .id(model.contentID)
                 .transition(.opacity)
             if model.voice.available {
-                Button { model.voiceEnabled.toggle() } label: {
-                    Label(model.voiceEnabled ? "Voice on" : "Listen to this page",
-                          systemImage: model.voiceEnabled ? "waveform" : "play.circle")
-                        .font(.caption).frame(minHeight: 44)
+                HStack(spacing: 10) {
+                    Button { model.voiceEnabled.toggle() } label: {
+                        Label(model.voiceEnabled ? "Voice on" : "Listen to this page",
+                              systemImage: model.voiceEnabled ? "waveform" : "play.circle")
+                            .font(.caption).frame(minHeight: 44)
+                    }
+                    .accessibilityIdentifier("voiceToggle")
+                    if model.voiceEnabled && !reduceMotion {
+                        // While the page is read aloud, a pen quietly writes it.
+                        LottieLayer(name: "narration-quill",
+                                    playing: !model.isPaused && model.pendingChoiceID == nil,
+                                    speed: 0.8, fills: false,
+                                    colors: ["paper Outlines.**.Stroke 1.Color": .white.opacity(0.55),
+                                             "Shape Layer 1.**.Stroke 1.Color": Color(hex: 0xECC4BA),
+                                             "Shape Layer 2.**.Stroke 1.Color": Color(hex: 0xECC4BA)])
+                            .frame(width: 34, height: 24)
+                            .allowsHitTesting(false)
+                            .accessibilityHidden(true)
+                            .transition(.opacity)
+                    }
                 }
-                .accessibilityIdentifier("voiceToggle")
             }
         }
         .padding(.vertical, 24)
@@ -169,7 +184,20 @@ struct ReaderView: View {
                                 .literary(17)
                                 .multilineTextAlignment(.center)
                             if model.pendingChoiceID == choice.id {
-                                Image(systemName: "checkmark").font(.caption)
+                                if reduceMotion {
+                                    Image(systemName: "checkmark").font(.caption)
+                                } else {
+                                    // The thought is kept: a check draws itself inside
+                                    // the half second before the page moves on.
+                                    LottieLayer(name: "commit-check", speed: 2.5, loops: false,
+                                                colors: ["**.Stroke 1.Color": .white,
+                                                         "**.Fill 1.Color": Color(hex: 0xF0DAD8)],
+                                                gradients: ["**.Gradient Stroke 1.Colors":
+                                                                [Color(hex: 0xF0DAD8), .white]])
+                                        .frame(width: 30, height: 30)
+                                        .allowsHitTesting(false)
+                                        .accessibilityHidden(true)
+                                }
                             }
                             Spacer(minLength: 0)
                         }
@@ -269,10 +297,27 @@ struct ReaderView: View {
             VStack(spacing: 30) {
                 Spacer(minLength: 100)
                 SmallLabel(text: "The end · Romeo & Juliet")
-                Image(systemName: "heart")
-                    .font(.system(size: 28, weight: .ultraLight))
-                    .padding(.vertical, 12)
-                    .accessibilityHidden(true)
+                if reduceMotion {
+                    Image(systemName: "heart")
+                        .font(.system(size: 28, weight: .ultraLight))
+                        .padding(.vertical, 12)
+                        .accessibilityHidden(true)
+                } else {
+                    // An unbroken line, drawn and redrawn: what outlasts the story.
+                    LottieLayer(name: "ending-infinity", speed: 0.6, fills: false,
+                                colors: [
+                                    "Path 1a.**.Stroke 1.Color": Color(hex: 0x9D4057),
+                                    "Path 1b.**.Stroke 1.Color": Color(hex: 0xF0DAD8),
+                                    "Path 1c.**.Stroke 1.Color": Color(hex: 0xECC4BA),
+                                    "Path 1d.**.Stroke 1.Color": Color(hex: 0xC97A8A),
+                                    "Path 2a.**.Stroke 1.Color": Color(hex: 0x9D4057),
+                                    "Path 2b.**.Stroke 1.Color": Color(hex: 0xECC4BA),
+                                    "Path 2c.**.Stroke 1.Color": Color(hex: 0xFCF5F0),
+                                ])
+                        .frame(width: 96, height: 60)
+                        .allowsHitTesting(false)
+                        .accessibilityHidden(true)
+                }
                 Text(model.voice.highlightedText(model.text))
                     .literary(29, relativeTo: .title)
                     .lineSpacing(10)
