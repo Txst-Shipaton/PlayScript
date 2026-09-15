@@ -1,6 +1,19 @@
 # Scene artwork handoff
 
-Illustrations are on hold. No scene art has been generated or downloaded.
+The `screenupdate` branch includes authored native vector scenery in
+`PlayScript/Design/LivingScene.swift`. Static architecture and silhouettes are
+drawn once per scene update. Movement comes from three sources: the curtain and
+light layer, a Lottie animation per setting, and a continuous atmosphere `Canvas`.
+The split is deliberate — Lottie carries choreographed motion (petals, candle
+flame, tomb light and mist, birds), the `Canvas` carries dense particle fields
+(fireflies, embers, dust, road grit), and nothing is drawn twice. Motion dims and
+slows for decisions and stops entirely for pause, backgrounding, and Reduce Motion.
+
+The Lottie files are authored as JSON by `Scripts/create_lottie.py`; none was
+downloaded or made in a design tool. No raster scene art or SVG is used: SwiftUI
+has no native SVG renderer, and the vector scenery is drawn directly instead.
+
+The following notes remain a direction for future commissioned raster artwork.
 
 ## Delivery
 
@@ -25,4 +38,8 @@ Use illustrated, storybook-style images rather than photography. Warm cream, mut
 | `letter-road` | `road`, `ride` | A messenger’s letter, a road toward Verona, returning morning light |
 | `tomb-dawn` | `in-time`, `enough-time`, `reflection` | A hand held in the first light; Romeo arrives in time |
 
-Add each approved asset to the catalog and replace the corresponding JSON `artwork: null` with its asset name. The title card currently uses the same temporary typographic treatment; connect approved cover artwork at `LibraryView.storyCard` by passing the asset to `SceneBackdrop`.
+The title card now uses the native orchard composition; connect approved cover
+artwork at `LibraryView.storyCard` by passing the asset to `SceneBackdrop`. The
+reader uses `LivingScene` directly. To introduce raster backgrounds there, replace
+its static `scenery` layer and keep the interactive light/foreground layers; the
+JSON `artwork` names alone will not change the current reader.

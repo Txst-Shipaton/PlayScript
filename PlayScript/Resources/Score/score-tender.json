@@ -1,0 +1,10 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "baf03bb8e1ee47b22941ef62cf0888b9001563a363793ae1ea984b036203cd61",
+  "request": {
+    "prompt": "A secret vow at a moonlit balcony. Warm chamber strings, soft harp and felt piano, tender rising motif, intimate hopeful romance, 70 BPM, restrained dynamics underneath speech, no vocals, no percussion, circular ending.",
+    "music_length_ms": 30000,
+    "force_instrumental": true,
+    "model_id": "music_v1"
+  }
+}

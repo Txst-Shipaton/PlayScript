@@ -1,0 +1,11 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "d49d90c447815c517e581b10375e65bf024933abf944c9eb881638dd41357311",
+  "request": {
+    "text": "One soft cinematic heartbeat followed by a breath of air and a warm glass resonance, intimate decision moment, restrained, no voices or music.",
+    "duration_seconds": 2,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45
+  }
+}

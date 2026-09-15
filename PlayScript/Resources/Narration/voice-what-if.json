@@ -1,0 +1,107 @@
+{
+  "text": "What if the letter had found him?\n\nJust once, let me imagine a world that gave us enough time.",
+  "cues": [
+    {
+      "text": "What ",
+      "start": 0.0,
+      "end": 0.186
+    },
+    {
+      "text": "if ",
+      "start": 0.232,
+      "end": 0.29
+    },
+    {
+      "text": "the ",
+      "start": 0.348,
+      "end": 0.418
+    },
+    {
+      "text": "letter ",
+      "start": 0.464,
+      "end": 0.685
+    },
+    {
+      "text": "had ",
+      "start": 0.743,
+      "end": 0.836
+    },
+    {
+      "text": "found ",
+      "start": 0.882,
+      "end": 1.149
+    },
+    {
+      "text": "him?\n\n",
+      "start": 1.219,
+      "end": 1.521
+    },
+    {
+      "text": "Just ",
+      "start": 1.8,
+      "end": 2.043
+    },
+    {
+      "text": "once, ",
+      "start": 2.125,
+      "end": 2.508
+    },
+    {
+      "text": "let ",
+      "start": 2.554,
+      "end": 2.728
+    },
+    {
+      "text": "me ",
+      "start": 2.775,
+      "end": 2.868
+    },
+    {
+      "text": "imagine ",
+      "start": 2.926,
+      "end": 3.332
+    },
+    {
+      "text": "a ",
+      "start": 3.367,
+      "end": 3.39
+    },
+    {
+      "text": "world ",
+      "start": 3.437,
+      "end": 3.704
+    },
+    {
+      "text": "that ",
+      "start": 3.75,
+      "end": 3.866
+    },
+    {
+      "text": "gave ",
+      "start": 3.913,
+      "end": 4.11
+    },
+    {
+      "text": "us ",
+      "start": 4.156,
+      "end": 4.249
+    },
+    {
+      "text": "enough ",
+      "start": 4.307,
+      "end": 4.551
+    },
+    {
+      "text": "time.",
+      "start": 4.598,
+      "end": 5.294
+    }
+  ],
+  "playbackRate": 0.7894561403508772,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "8ac8eca6d33fc1a9877da7c3bfaaf70de55375f962ee2e17cfe8fe89f0032241",
+  "effectiveWPM": 170.0
+}

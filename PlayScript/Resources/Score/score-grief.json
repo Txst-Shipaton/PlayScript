@@ -1,0 +1,10 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "eaa51fe539dcc38b887db5de0e1357c42416b11d4b68a5650b730203ec830a0f",
+  "request": {
+    "prompt": "A silent stone tomb. Elegiac solo cello, sparse low felt piano, long reverberant rests, profound human loss without horror, very quiet 50 BPM, no vocals, no percussion, circular ending.",
+    "music_length_ms": 30000,
+    "force_instrumental": true,
+    "model_id": "music_v1"
+  }
+}

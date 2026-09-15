@@ -1,0 +1,172 @@
+{
+  "text": "Alone in my chamber, I lift the vial. What if I wake too soon? What if no one comes?\n\nI picture Romeo’s face beneath my window. I have already promised him tomorrow.",
+  "cues": [
+    {
+      "text": "Alone ",
+      "start": 0.0,
+      "end": 0.348
+    },
+    {
+      "text": "in ",
+      "start": 0.383,
+      "end": 0.441
+    },
+    {
+      "text": "my ",
+      "start": 0.499,
+      "end": 0.592
+    },
+    {
+      "text": "chamber, ",
+      "start": 0.65,
+      "end": 1.115
+    },
+    {
+      "text": "I ",
+      "start": 1.161,
+      "end": 1.219
+    },
+    {
+      "text": "lift ",
+      "start": 1.335,
+      "end": 1.591
+    },
+    {
+      "text": "the ",
+      "start": 1.672,
+      "end": 1.753
+    },
+    {
+      "text": "vial. ",
+      "start": 1.8,
+      "end": 2.392
+    },
+    {
+      "text": "What ",
+      "start": 2.635,
+      "end": 2.821
+    },
+    {
+      "text": "if ",
+      "start": 2.856,
+      "end": 2.926
+    },
+    {
+      "text": "I ",
+      "start": 2.995,
+      "end": 3.019
+    },
+    {
+      "text": "wake ",
+      "start": 3.135,
+      "end": 3.39
+    },
+    {
+      "text": "too ",
+      "start": 3.448,
+      "end": 3.634
+    },
+    {
+      "text": "soon? ",
+      "start": 3.704,
+      "end": 4.272
+    },
+    {
+      "text": "What ",
+      "start": 4.551,
+      "end": 4.725
+    },
+    {
+      "text": "if ",
+      "start": 4.772,
+      "end": 4.841
+    },
+    {
+      "text": "no ",
+      "start": 4.911,
+      "end": 4.992
+    },
+    {
+      "text": "one ",
+      "start": 5.074,
+      "end": 5.213
+    },
+    {
+      "text": "comes?\n\n",
+      "start": 5.271,
+      "end": 6.049
+    },
+    {
+      "text": "I ",
+      "start": 6.374,
+      "end": 6.432
+    },
+    {
+      "text": "picture ",
+      "start": 6.548,
+      "end": 6.896
+    },
+    {
+      "text": "Romeo’s ",
+      "start": 6.954,
+      "end": 7.442
+    },
+    {
+      "text": "face ",
+      "start": 7.5,
+      "end": 7.848
+    },
+    {
+      "text": "beneath ",
+      "start": 7.895,
+      "end": 8.162
+    },
+    {
+      "text": "my ",
+      "start": 8.22,
+      "end": 8.313
+    },
+    {
+      "text": "window. ",
+      "start": 8.382,
+      "end": 9.021
+    },
+    {
+      "text": "I ",
+      "start": 9.346,
+      "end": 9.404
+    },
+    {
+      "text": "have ",
+      "start": 9.485,
+      "end": 9.613
+    },
+    {
+      "text": "already ",
+      "start": 9.648,
+      "end": 9.996
+    },
+    {
+      "text": "promised ",
+      "start": 10.054,
+      "end": 10.461
+    },
+    {
+      "text": "him ",
+      "start": 10.484,
+      "end": 10.588
+    },
+    {
+      "text": "tomorrow.",
+      "start": 10.646,
+      "end": 11.424
+    }
+  ],
+  "playbackRate": 1.0114999999999998,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "7c13387f93960f818b41aebb63e00d46f26e77981317d6e9a46cfb184b5b3ad2",
+  "effectiveWPM": 170.0
+}

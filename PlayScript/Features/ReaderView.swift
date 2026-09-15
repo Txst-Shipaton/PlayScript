@@ -5,13 +5,25 @@ struct ReaderView: View {
     @Bindable var model: ReadingModel
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @AccessibilityFocusState private var narrativeFocused: Bool
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.scenePhase) private var scenePhase
+    @FocusState private var focusedChoice: String?
+    @State private var hoveredChoice: String?
 
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                SceneBackdrop(mood: model.beat.mood, artwork: model.beat.artwork)
+                LivingScene(mood: model.beat.mood, beatID: model.beat.id,
+                            quiet: model.needsChoice || model.pendingChoiceID != nil,
+                            resting: model.isPaused || scenePhase != .active,
+                            attention: hoveredChoice != nil || focusedChoice != nil || model.pendingChoiceID != nil)
                     .ignoresSafeArea()
                     .animation(.easeInOut(duration: reduceMotion ? 0 : 1.2), value: model.beat.mood)
+                LinearGradient(stops: [.init(color: .black.opacity(0.25), location: 0),
+                                       .init(color: .clear, location: 0.25),
+                                       .init(color: .black.opacity(0.7), location: 0.55),
+                                       .init(color: .black.opacity(0.94), location: 1)],
+                               startPoint: .top, endPoint: .bottom).ignoresSafeArea()
 
                 if model.beat.kind == .reflection {
                     reflection
@@ -26,16 +38,25 @@ struct ReaderView: View {
                                     .padding(.top, 27)
                                 Spacer(minLength: max(40, geometry.size.height * 0.12))
                                 narrative
-                                controls
-                                    .padding(.top, 22)
-                                    .padding(.bottom, 15)
+                                if typeSize.isAccessibilitySize {
+                                    controls.padding(.top, 22).padding(.bottom, 15)
+                                }
                             }
                             .padding(.horizontal, 23)
                             .frame(maxWidth: 570)
-                            .frame(minHeight: geometry.size.height)
+                            .frame(minHeight: max(0, geometry.size.height - (typeSize.isAccessibilitySize ? 0 : model.needsChoice ? 225 : 90)))
                             .frame(maxWidth: .infinity)
                         }
                         .scrollIndicators(.hidden)
+                        .safeAreaInset(edge: .bottom, spacing: 0) {
+                            if !typeSize.isAccessibilitySize {
+                                controls
+                                    .padding(.horizontal, 23)
+                                    .padding(.top, 14)
+                                    .padding(.bottom, 10)
+                                    .frame(maxWidth: 570)
+                            }
+                        }
                         .onChange(of: model.contentID) { _, _ in
                             scroll.scrollTo("top", anchor: .top)
                         }
@@ -54,19 +75,36 @@ struct ReaderView: View {
         .statusBarHidden()
         .persistentSystemOverlays(.hidden)
         .sheet(isPresented: $model.isPaused, onDismiss: { model.resume() }) { pauseSheet }
-        .onChange(of: model.contentID) { _, _ in narrativeFocused = true }
+        .onChange(of: model.contentID) { _, _ in
+            narrativeFocused = true
+            focusedChoice = nil
+            hoveredChoice = nil
+        }
         .animation(.easeInOut(duration: reduceMotion ? 0 : 0.5), value: model.contentID)
         .animation(.easeInOut(duration: reduceMotion ? 0 : 0.3), value: model.pendingChoiceID)
     }
 
     private var sceneHeading: some View {
         VStack(spacing: 12) {
+            HStack {
+                Text("\(model.run.index + 1) / \(model.story.beats.count)")
+                    .font(.caption2.monospacedDigit()).tracking(2)
+                    .accessibilityLabel("Page \(model.run.index + 1) of \(model.story.beats.count)")
+                Spacer()
+                Button { model.pause() } label: {
+                    Image(systemName: "pause").frame(width: 44, height: 44)
+                }
+                .accessibilityLabel("Pause story")
+                .accessibilityIdentifier("pauseStory")
+            }
             SmallLabel(text: model.beat.chapter)
                 .foregroundStyle(.white.opacity(0.8))
             Text(model.beat.title)
                 .literary(25, relativeTo: .title2)
                 .multilineTextAlignment(.center)
                 .accessibilityAddTraits(.isHeader)
+            Text(model.beat.location)
+                .font(.caption).foregroundStyle(.white.opacity(0.7))
         }
         .id(model.beat.id)
         .transition(.opacity)
@@ -79,7 +117,7 @@ struct ReaderView: View {
                 SmallLabel(text: "As \(model.beat.pointOfView)")
             }
             .foregroundStyle(Color(hex: 0xE9C9C4))
-            Text(model.text)
+            Text(model.voice.highlightedText(model.text))
                 .literary(20)
                 .lineSpacing(6)
                 .fixedSize(horizontal: false, vertical: true)
@@ -88,9 +126,16 @@ struct ReaderView: View {
                 .accessibilityFocused($narrativeFocused)
                 .id(model.contentID)
                 .transition(.opacity)
+            if model.voice.available {
+                Button { model.voiceEnabled.toggle() } label: {
+                    Label(model.voiceEnabled ? "Voice on" : "Listen to this page",
+                          systemImage: model.voiceEnabled ? "waveform" : "play.circle")
+                        .font(.caption).frame(minHeight: 44)
+                }
+                .accessibilityIdentifier("voiceToggle")
+            }
         }
-        .padding(24)
-        .glass(dark: true, radius: 29)
+        .padding(.vertical, 24)
     }
 
     @ViewBuilder private var controls: some View {
@@ -99,7 +144,7 @@ struct ReaderView: View {
                 SmallLabel(text: "Let your heart answer")
                     .foregroundStyle(.white.opacity(0.78))
                     .padding(.bottom, 3)
-                ForEach(model.beat.choices) { choice in
+                ForEach(Array(model.beat.choices.enumerated()), id: \.element.id) { index, choice in
                     Button { model.select(choice, reduceMotion: reduceMotion) } label: {
                         HStack(spacing: 10) {
                             Spacer(minLength: 0)
@@ -114,14 +159,28 @@ struct ReaderView: View {
                         .padding(.horizontal, 18)
                         .padding(.vertical, 18)
                         .frame(minHeight: 56)
-                        .glass(dark: true, radius: 32)
+                        .background(Color.white.opacity(focusedChoice == choice.id || hoveredChoice == choice.id ? 0.16 : 0.06), in: RoundedRectangle(cornerRadius: 18))
+                        .overlay(RoundedRectangle(cornerRadius: 18).strokeBorder(Color.white.opacity(0.25), lineWidth: 0.7))
                     }
                     .buttonStyle(PressStyle())
                     .opacity(model.pendingChoiceID == nil || model.pendingChoiceID == choice.id ? 1 : 0)
+                    .offset(y: !reduceMotion && model.pendingChoiceID != nil && model.pendingChoiceID != choice.id ? 24 : 0)
+                    .focused($focusedChoice, equals: choice.id)
+                    .onHover { hoveredChoice = $0 ? choice.id : nil }
+                    .modifier(ThoughtArrival(delay: Double(index) * 0.12, reduceMotion: reduceMotion))
                     .disabled(model.pendingChoiceID != nil)
                     .accessibilityHidden(model.pendingChoiceID != nil && model.pendingChoiceID != choice.id)
                     .accessibilityIdentifier("choice-\(choice.id)")
                 }
+            }
+            .background {
+                // A thought arriving, behind the two it could become.
+                LottieLayer(name: "accent-thought",
+                            playing: !reduceMotion && model.pendingChoiceID == nil,
+                            fills: false)
+                    .opacity(model.pendingChoiceID == nil ? 0.5 : 0)
+                    .allowsHitTesting(false)
+                    .accessibilityHidden(true)
             }
         } else {
             VStack(spacing: 0) {
@@ -148,15 +207,15 @@ struct ReaderView: View {
         ScrollView {
             VStack(spacing: 30) {
                 Spacer(minLength: 80)
-                Image(systemName: "envelope.open")
-                    .font(.system(size: 29, weight: .ultraLight))
-                    .foregroundStyle(Color(hex: 0xE9C9C4))
+                LottieLayer(name: "accent-letter", playing: !reduceMotion, fills: false)
+                    .frame(width: 170, height: 150)
+                    .allowsHitTesting(false)
                     .accessibilityHidden(true)
                 SmallLabel(text: "A letter. A little more time.")
                 Text("What if…")
                     .literary(52, relativeTo: .largeTitle)
                     .accessibilityAddTraits(.isHeader)
-                Text(model.text)
+                Text(model.voice.highlightedText(model.text))
                     .literary(22)
                     .lineSpacing(8)
                     .accessibilityIdentifier("whatIfText")
@@ -197,7 +256,7 @@ struct ReaderView: View {
                     .font(.system(size: 28, weight: .ultraLight))
                     .padding(.vertical, 12)
                     .accessibilityHidden(true)
-                Text(model.text)
+                Text(model.voice.highlightedText(model.text))
                     .literary(29, relativeTo: .title)
                     .lineSpacing(10)
                     .accessibilityIdentifier("reflectionText")
@@ -244,6 +303,10 @@ struct ReaderView: View {
                 .tint(Palette.rose)
                 .padding(18)
                 .glass(radius: 20)
+            if model.voice.available {
+                Toggle("Read aloud", isOn: $model.voiceEnabled)
+                    .tint(Palette.rose)
+            }
             Button { model.resume() } label: {
                 Text("Back to the moment")
                     .frame(maxWidth: .infinity, minHeight: 52)

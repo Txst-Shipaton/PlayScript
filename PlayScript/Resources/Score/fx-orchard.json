@@ -1,0 +1,11 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "4b02f3f2072e49b152690aa668c4b9e6e6dd0c9dac51a243ec670c4ea870752d",
+  "request": {
+    "text": "Quiet night orchard atmosphere, soft leaves rustling in wind and distant crickets, a very distant owl, no music or voices, smooth seamless loop.",
+    "duration_seconds": 12,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45
+  }
+}

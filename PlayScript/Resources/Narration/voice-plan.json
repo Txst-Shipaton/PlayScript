@@ -1,0 +1,297 @@
+{
+  "text": "The Friar places a small vial in my hand. A sleep so deep that everyone will believe I am dead. Forty-two hours, he says. Then I will wake.\n\nHe will send a letter to Romeo in Mantua. Romeo will know the truth. He will come to the tomb and be beside me when I open my eyes.",
+  "cues": [
+    {
+      "text": "The ",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "text": "Friar ",
+      "start": 0.279,
+      "end": 0.592
+    },
+    {
+      "text": "places ",
+      "start": 0.65,
+      "end": 1.01
+    },
+    {
+      "text": "a ",
+      "start": 1.068,
+      "end": 1.091
+    },
+    {
+      "text": "small ",
+      "start": 1.149,
+      "end": 1.44
+    },
+    {
+      "text": "vial ",
+      "start": 1.509,
+      "end": 1.846
+    },
+    {
+      "text": "in ",
+      "start": 1.892,
+      "end": 1.95
+    },
+    {
+      "text": "my ",
+      "start": 2.009,
+      "end": 2.113
+    },
+    {
+      "text": "hand. ",
+      "start": 2.183,
+      "end": 2.717
+    },
+    {
+      "text": "A ",
+      "start": 2.891,
+      "end": 2.961
+    },
+    {
+      "text": "sleep ",
+      "start": 3.077,
+      "end": 3.437
+    },
+    {
+      "text": "so ",
+      "start": 3.518,
+      "end": 3.738
+    },
+    {
+      "text": "deep ",
+      "start": 3.866,
+      "end": 4.133
+    },
+    {
+      "text": "that ",
+      "start": 4.203,
+      "end": 4.377
+    },
+    {
+      "text": "everyone ",
+      "start": 4.47,
+      "end": 4.946
+    },
+    {
+      "text": "will ",
+      "start": 4.969,
+      "end": 5.12
+    },
+    {
+      "text": "believe ",
+      "start": 5.166,
+      "end": 5.55
+    },
+    {
+      "text": "I ",
+      "start": 5.619,
+      "end": 5.7
+    },
+    {
+      "text": "am ",
+      "start": 5.793,
+      "end": 5.921
+    },
+    {
+      "text": "dead. ",
+      "start": 6.014,
+      "end": 6.618
+    },
+    {
+      "text": "Forty-two ",
+      "start": 7.001,
+      "end": 7.57
+    },
+    {
+      "text": "hours, ",
+      "start": 7.686,
+      "end": 8.336
+    },
+    {
+      "text": "he ",
+      "start": 8.464,
+      "end": 8.545
+    },
+    {
+      "text": "says. ",
+      "start": 8.615,
+      "end": 9.091
+    },
+    {
+      "text": "Then ",
+      "start": 9.416,
+      "end": 9.671
+    },
+    {
+      "text": "I ",
+      "start": 9.787,
+      "end": 9.857
+    },
+    {
+      "text": "will ",
+      "start": 9.938,
+      "end": 10.112
+    },
+    {
+      "text": "wake.\n\n",
+      "start": 10.17,
+      "end": 10.728
+    },
+    {
+      "text": "He ",
+      "start": 10.971,
+      "end": 11.064
+    },
+    {
+      "text": "will ",
+      "start": 11.111,
+      "end": 11.25
+    },
+    {
+      "text": "send ",
+      "start": 11.297,
+      "end": 11.459
+    },
+    {
+      "text": "a ",
+      "start": 11.505,
+      "end": 11.529
+    },
+    {
+      "text": "letter ",
+      "start": 11.575,
+      "end": 11.807
+    },
+    {
+      "text": "to ",
+      "start": 11.865,
+      "end": 11.923
+    },
+    {
+      "text": "Romeo ",
+      "start": 11.981,
+      "end": 12.353
+    },
+    {
+      "text": "in ",
+      "start": 12.423,
+      "end": 12.469
+    },
+    {
+      "text": "Mantua. ",
+      "start": 12.516,
+      "end": 13.224
+    },
+    {
+      "text": "Romeo ",
+      "start": 13.468,
+      "end": 13.862
+    },
+    {
+      "text": "will ",
+      "start": 13.932,
+      "end": 14.083
+    },
+    {
+      "text": "know ",
+      "start": 14.129,
+      "end": 14.269
+    },
+    {
+      "text": "the ",
+      "start": 14.327,
+      "end": 14.396
+    },
+    {
+      "text": "truth. ",
+      "start": 14.431,
+      "end": 14.965
+    },
+    {
+      "text": "He ",
+      "start": 15.209,
+      "end": 15.325
+    },
+    {
+      "text": "will ",
+      "start": 15.372,
+      "end": 15.523
+    },
+    {
+      "text": "come ",
+      "start": 15.569,
+      "end": 15.766
+    },
+    {
+      "text": "to ",
+      "start": 15.801,
+      "end": 15.871
+    },
+    {
+      "text": "the ",
+      "start": 15.94,
+      "end": 16.01
+    },
+    {
+      "text": "tomb ",
+      "start": 16.057,
+      "end": 16.335
+    },
+    {
+      "text": "and ",
+      "start": 16.393,
+      "end": 16.509
+    },
+    {
+      "text": "be ",
+      "start": 16.579,
+      "end": 16.695
+    },
+    {
+      "text": "beside ",
+      "start": 16.753,
+      "end": 17.229
+    },
+    {
+      "text": "me ",
+      "start": 17.276,
+      "end": 17.403
+    },
+    {
+      "text": "when ",
+      "start": 17.438,
+      "end": 17.612
+    },
+    {
+      "text": "I ",
+      "start": 17.705,
+      "end": 17.775
+    },
+    {
+      "text": "open ",
+      "start": 17.903,
+      "end": 18.135
+    },
+    {
+      "text": "my ",
+      "start": 18.204,
+      "end": 18.344
+    },
+    {
+      "text": "eyes.",
+      "start": 18.425,
+      "end": 19.18
+    }
+  ],
+  "playbackRate": 0.953391812865497,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "0be645f20e4f9195d17fd8c507c880624b733eef7dd05303f2379e38ab9a50e6",
+  "effectiveWPM": 170.0
+}

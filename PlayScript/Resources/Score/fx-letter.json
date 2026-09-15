@@ -1,0 +1,11 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "8870ec6c226ac0128eedd39af8657e92b40dd79afb544c65e3e334a46076c508",
+  "request": {
+    "text": "Close delicate parchment unfolding and a wax seal softly cracking, one intimate dry foley gesture, no music or voices.",
+    "duration_seconds": 3,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45
+  }
+}

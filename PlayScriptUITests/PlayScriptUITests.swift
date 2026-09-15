@@ -2,6 +2,24 @@ import XCTest
 
 final class PlayScriptUITests: XCTestCase {
     @MainActor
+    func testVisiblePauseAndChoiceRestoration() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting"]
+        app.launch()
+        app.buttons["beginStory"].tap()
+        app.buttons["continueStory"].tap()
+        XCTAssertTrue(app.buttons["choice-listen"].waitForExistence(timeout: 5))
+        app.buttons["pauseStory"].tap()
+        XCTAssertTrue(app.buttons["resumeStory"].waitForExistence(timeout: 5))
+        app.buttons["resumeStory"].tap()
+        XCTAssertTrue(app.buttons["choice-listen"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["choice-answer"].exists)
+        app.buttons["choice-listen"].tap()
+        XCTAssertTrue(app.buttons["continueStory"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["narrative"].label.contains("curtain"))
+    }
+
+    @MainActor
     func testCompleteStoryAndReplay() throws {
         let app = XCUIApplication()
         app.launchArguments = ["--uitesting"]
