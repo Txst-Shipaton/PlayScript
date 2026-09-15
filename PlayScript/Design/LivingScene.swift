@@ -117,6 +117,8 @@ struct LivingScene: View {
                               y: geo.size.height * (attention ? 0.27 : 0.34))
                     .blendMode(.screen)
                 atmosphere
+                // Romeo, and the small living things around each setting.
+                livingDetail
                 // Lottie carries each scene's choreographed motion; the Canvas
                 // atmosphere above carries the dense particle fields.
                 LottieLayer(name: lottieName, playing: !motionPaused,
@@ -785,5 +787,370 @@ private struct Curtain: Shape {
         p.addQuadCurve(to: CGPoint(x: 0, y: r.height*0.92), control: CGPoint(x: r.width*0.35, y: r.height*0.88))
         p.addQuadCurve(to: .zero, control: CGPoint(x: r.width*0.4, y: r.height*0.4))
         return p
+    }
+}
+
+// MARK: - Living detail
+//
+// Romeo, and the small moving objects in each setting. Drawn as its own layer
+// over the static scenery; paused with the atmosphere and dimmed by `calm`.
+
+extension LivingScene {
+    private var livingDetail: some View {
+        TimelineView(.animation(minimumInterval: 1.0 / 30.0, paused: motionPaused)) { timeline in
+            Canvas { context, size in
+                let time = motionPaused ? 0 : timeline.date.timeIntervalSinceReferenceDate
+                let w = Double(size.width), h = Double(size.height)
+                switch setting {
+                case .orchard: drawOrchardDetail(&context, w, h, time)
+                case .chamber: drawChamberDetail(&context, w, h, time)
+                case .tomb: drawTombDetail(&context, w, h, time)
+                case .road: drawRoadDetail(&context, w, h, time)
+                }
+            }
+        }
+        // Follow the scenery's decision-moment camera so the figures stay registered.
+        .scaleEffect(reduceMotion ? 1 : (quiet ? 1.02 : 1))
+        .blur(radius: reduceMotion ? 0 : (quiet ? 3.5 : 0))
+        .allowsHitTesting(false)
+        .accessibilityHidden(true)
+    }
+
+    private func at(_ x: Double, _ y: Double, _ w: Double, _ h: Double) -> CGPoint {
+        CGPoint(x: x * w, y: y * h)
+    }
+
+    /// A tiny moth: two wing ovals that open and close.
+    private func drawMoth(_ context: inout GraphicsContext, _ px: Double, _ py: Double,
+                          _ size: Double, _ flap: Double, _ color: Color) {
+        let wingH = size * (0.35 + flap * 0.75)
+        context.fill(Path(ellipseIn: CGRect(x: px - size, y: py - wingH * 0.5, width: size, height: wingH)),
+                     with: .color(color))
+        context.fill(Path(ellipseIn: CGRect(x: px, y: py - wingH * 0.5, width: size, height: wingH)),
+                     with: .color(color))
+    }
+
+    // MARK: Orchard detail
+
+    private func drawOrchardDetail(_ context: inout GraphicsContext, _ w: Double, _ h: Double, _ time: Double) {
+        // A few stars that twinkle among the fixed ones.
+        for i in 0..<9 {
+            let x = 0.3 + noise(i, 201) * 0.52
+            let y = 0.02 + noise(i, 202) * 0.26
+            let twinkle = pow(max(0, sin(time * (0.6 + noise(i, 203) * 0.9) + noise(i, 204) * 6.28)), 4)
+            let r = w * 0.0022
+            context.fill(Path(ellipseIn: CGRect(x: x * w - r, y: y * h - r, width: r * 2, height: r * 2)),
+                         with: .color(Color.white.opacity((0.12 + twinkle * 0.7) * calm)))
+        }
+
+        // Thin clouds drifting across the moon, kept off the balcony wall.
+        context.drawLayer { layer in
+            layer.clip(to: Path(CGRect(x: 0, y: 0, width: w * 0.855, height: h)))
+            for i in 0..<2 {
+                let travel = (time * (0.004 + Double(i) * 0.002) + Double(i) * 0.55)
+                    .truncatingRemainder(dividingBy: 1)
+                let x = (-0.5 + travel * 1.6) * w
+                let y = (0.12 + Double(i) * 0.05) * h
+                let cw = w * (0.42 - Double(i) * 0.1), ch = h * 0.014
+                layer.fill(Path(ellipseIn: CGRect(x: x, y: y, width: cw, height: ch)),
+                           with: .color(Color(hex: 0x3A3452).opacity(0.55 * (0.6 + 0.4 * calm))))
+                layer.fill(Path(ellipseIn: CGRect(x: x + cw * 0.12, y: y + ch * 0.55,
+                                                  width: cw * 0.7, height: ch * 0.4)),
+                           with: .color(Color(hex: 0xB295B0).opacity(0.2 * calm)))
+            }
+        }
+
+        // Moths at the lit doorway behind Juliet.
+        for i in 0..<3 {
+            let s = noise(i, 211)
+            let x = 0.935 + sin(time * (0.9 + s * 0.6) + s * 6.28) * 0.04 + sin(time * 2.3 + Double(i)) * 0.006
+            let y = 0.3 + cos(time * (0.7 + s * 0.5) + s * 3.1) * 0.05
+            let flap = abs(sin(time * 18 + Double(i) * 2))
+            drawMoth(&context, x * w, y * h, w * 0.004, flap,
+                     Color(hex: 0xF3D9B0).opacity(0.55 * calm))
+        }
+
+        drawRomeo(&context, w, h, time)
+    }
+
+    /// Romeo below the balcony: Juliet's construction at a smaller scale, looking up at her.
+    private func drawRomeo(_ context: inout GraphicsContext, _ w: Double, _ h: Double, _ time: Double) {
+        let presence = 0.7 + 0.3 * calm
+        let ink = Color(hex: 0x1B131B).opacity(presence)
+        let rimColor = Color(hex: 0xD8B5BF)
+        let breath = sin(time * 0.9)
+        let cx = 0.64 + sin(time * 0.37) * 0.0025
+        let feet = 0.612
+        let shoulder = 0.522 - breath * 0.0015
+        let neck = shoulder - 0.012
+
+        // Cloak, behind the figure, its edge stirring.
+        let stir = sin(time * 1.3) * 0.006 + sin(time * 2.1) * 0.002
+        var cloak = Path()
+        cloak.move(to: at(cx - 0.015, shoulder + 0.01, w, h))
+        cloak.addQuadCurve(to: at(cx - 0.05 + stir, feet - 0.012, w, h),
+                           control: at(cx - 0.046 + stir * 0.4, shoulder + 0.04, w, h))
+        cloak.addQuadCurve(to: at(cx - 0.024, feet - 0.004, w, h),
+                           control: at(cx - 0.036 + stir * 0.6, feet - 0.002, w, h))
+        cloak.closeSubpath()
+        context.fill(cloak, with: .color(ink))
+
+        // Body.
+        var torso = Path()
+        torso.move(to: at(cx - 0.03, feet, w, h))
+        torso.addLine(to: at(cx - 0.017, shoulder + 0.012, w, h))
+        torso.addQuadCurve(to: at(cx + 0.002, neck, w, h), control: at(cx - 0.016, shoulder - 0.006, w, h))
+        torso.addQuadCurve(to: at(cx + 0.02, shoulder + 0.012, w, h), control: at(cx + 0.02, shoulder - 0.006, w, h))
+        torso.addLine(to: at(cx + 0.028, feet, w, h))
+        torso.closeSubpath()
+        context.fill(torso, with: .color(ink))
+
+        // Head, tipped up toward the balcony.
+        let r = w * 0.018
+        let hx = (cx + 0.004) * w
+        let hy = neck * h - r * 0.8
+        context.fill(Path(ellipseIn: CGRect(x: hx - r, y: hy - r, width: r * 2, height: r * 2)),
+                     with: .color(ink))
+        context.fill(Path(ellipseIn: CGRect(x: hx + r * 0.1, y: hy - r * 0.9, width: r * 1.1, height: r * 0.9)),
+                     with: .color(ink))
+
+        // The lifted hand, on a slow cycle.
+        let lift = 0.5 + 0.5 * sin(time * 0.45)
+        var arm = Path()
+        arm.move(to: at(cx + 0.014, shoulder + 0.01, w, h))
+        arm.addQuadCurve(to: at(cx + 0.038, shoulder - 0.022 - lift * 0.014, w, h),
+                         control: at(cx + 0.034, shoulder + 0.004, w, h))
+        context.stroke(arm, with: .color(ink),
+                       style: StrokeStyle(lineWidth: CGFloat(w * 0.007), lineCap: .round))
+
+        // Moonlight on his far edge, as on hers.
+        var rim = Path()
+        rim.move(to: at(cx - 0.03, feet, w, h))
+        rim.addLine(to: at(cx - 0.017, shoulder + 0.012, w, h))
+        rim.addQuadCurve(to: at(cx + 0.002, neck, w, h), control: at(cx - 0.016, shoulder - 0.006, w, h))
+        context.stroke(rim, with: .color(rimColor.opacity(0.4 * presence)), lineWidth: CGFloat(w * 0.004))
+        var headRim = Path()
+        headRim.addArc(center: CGPoint(x: hx, y: hy), radius: CGFloat(r * 1.04),
+                       startAngle: .degrees(125), endAngle: .degrees(235), clockwise: false)
+        context.stroke(headRim, with: .color(rimColor.opacity(0.36 * presence)), lineWidth: CGFloat(w * 0.004))
+
+        // Foliage screening his legs, swaying a little.
+        let leaf = Color(hex: 0x0B1418)
+        for i in 0..<5 {
+            let x = 0.575 + Double(i) * 0.03 + sin(time * 0.6 + Double(i)) * 0.004
+            let y = 0.572 + Double(i % 2) * 0.012 + sin(time * 0.8 + Double(i) * 1.7) * 0.002
+            context.fill(Path(ellipseIn: CGRect(x: (x - 0.01) * w, y: (y - 0.006) * h,
+                                                width: w * 0.085, height: h * 0.062)),
+                         with: .color(leaf.opacity(0.5)))
+            context.fill(Path(ellipseIn: CGRect(x: x * w, y: y * h, width: w * 0.065, height: h * 0.05)),
+                         with: .color(leaf))
+        }
+    }
+
+    // MARK: Chamber detail
+
+    private func drawChamberDetail(_ context: inout GraphicsContext, _ w: Double, _ h: Double, _ time: Double) {
+        // A faint smoke ribbon, starting well above the flame.
+        let baseX = 0.7195
+        var smoke = Path()
+        smoke.move(to: at(baseX, 0.35, w, h))
+        for step in 1...14 {
+            let t = Double(step) / 14
+            let x = baseX + sin(time * 0.8 - t * 5) * 0.012 * t + sin(time * 0.23) * 0.01 * t
+            smoke.addLine(to: at(x, 0.35 - t * 0.19, w, h))
+        }
+        context.stroke(smoke, with: .color(Color(hex: 0xCFC3BD).opacity(0.09 * calm)),
+                       style: StrokeStyle(lineWidth: CGFloat(w * 0.006), lineCap: .round, lineJoin: .round))
+
+        // A moth circling the candle glow, above the flame.
+        let angle = time * 0.9 + sin(time * 0.37) * 0.8
+        let mx = 0.72 + cos(angle) * 0.085
+        let my = 0.3 + sin(angle) * 0.035 + sin(time * 1.7) * 0.008
+        drawMoth(&context, mx * w, my * h, w * 0.0045, abs(sin(time * 16)),
+                 Color(hex: 0xE8C9A0).opacity(0.6 * calm))
+
+        // The window drape, breathing.
+        let breathe = sin(time * 0.5) * 0.012 + sin(time * 1.1) * 0.004
+        var drape = Path()
+        drape.move(to: at(0.268, 0.128, w, h))
+        drape.addLine(to: at(0.33, 0.128, w, h))
+        drape.addLine(to: at(0.33, 0.455, w, h))
+        drape.addQuadCurve(to: at(0.29 + breathe * 0.5, 0.455, w, h), control: at(0.305, 0.47, w, h))
+        drape.addQuadCurve(to: at(0.268, 0.128, w, h), control: at(0.25 - breathe, 0.3, w, h))
+        drape.closeSubpath()
+        context.fill(drape, with: .color(Color(hex: 0x2E2433).opacity(0.85)))
+        var drapeEdge = Path()
+        drapeEdge.move(to: at(0.29 + breathe * 0.5, 0.455, w, h))
+        drapeEdge.addQuadCurve(to: at(0.268, 0.128, w, h), control: at(0.25 - breathe, 0.3, w, h))
+        context.stroke(drapeEdge, with: .color(Color(hex: 0xA3B8D8).opacity(0.18 * calm)),
+                       lineWidth: CGFloat(w * 0.003))
+    }
+
+    // MARK: Tomb detail
+
+    private func drawTombDetail(_ context: inout GraphicsContext, _ w: Double, _ h: Double, _ time: Double) {
+        let pale = tombAtDawn ? Color(hex: 0xF0D5AC) : Color(hex: 0xD9DCEA)
+
+        // A slow drip, and the ripple it leaves.
+        let phase = (time / 5 + 0.3).truncatingRemainder(dividingBy: 1)
+        let dripX = 0.7 * w
+        if phase < 0.35 {
+            let k = phase / 0.35
+            let y = (0.18 + k * k * 0.37) * h
+            let r = w * 0.003
+            context.fill(Path(ellipseIn: CGRect(x: dripX - r, y: y - r * 1.4, width: r * 2, height: r * 2.8)),
+                         with: .color(pale.opacity(0.45 * calm)))
+        } else {
+            let k = (phase - 0.35) / 0.65
+            for ring in 0..<2 {
+                let spread = max(0, k - Double(ring) * 0.2)
+                let rw = w * (0.01 + spread * 0.06)
+                let rh = rw * 0.25
+                context.stroke(Path(ellipseIn: CGRect(x: dripX - rw, y: 0.555 * h - rh, width: rw * 2, height: rh * 2)),
+                               with: .color(pale.opacity((1 - k) * 0.3 * calm)), lineWidth: CGFloat(w * 0.002))
+            }
+        }
+
+        // A single moth in the light shaft.
+        let mx = 0.56 + sin(time * 0.31) * 0.05 + sin(time * 1.3) * 0.01
+        let my = 0.28 + sin(time * 0.23 + 1) * 0.08
+        drawMoth(&context, mx * w, my * h, w * 0.004, abs(sin(time * 14)), pale.opacity(0.5 * calm))
+
+        // A cobweb in the upper-left corner, with one strand drifting.
+        let sway = sin(time * 0.4) * w * 0.006 + sin(time * 1.05) * w * 0.002
+        let web = Color.white.opacity(0.08 * (0.6 + 0.4 * calm))
+        let reach = w * 0.2
+        var threads = Path()
+        let angles: [Double] = [0.12, 0.5, 0.9, 1.3]
+        for a in angles {
+            threads.move(to: .zero)
+            threads.addLine(to: CGPoint(x: cos(a) * reach, y: sin(a) * reach))
+        }
+        for ringIndex in 1...3 {
+            let rr = reach * Double(ringIndex) / 3.6
+            for j in 0..<(angles.count - 1) {
+                let a0 = angles[j], a1 = angles[j + 1]
+                let mid = (a0 + a1) / 2
+                threads.move(to: CGPoint(x: cos(a0) * rr, y: sin(a0) * rr))
+                threads.addQuadCurve(to: CGPoint(x: cos(a1) * rr, y: sin(a1) * rr),
+                                     control: CGPoint(x: cos(mid) * rr * 0.86 + sway * 0.3,
+                                                      y: sin(mid) * rr * 0.86))
+            }
+        }
+        context.stroke(threads, with: .color(web), lineWidth: CGFloat(w * 0.0015))
+        var strand = Path()
+        strand.move(to: CGPoint(x: reach * 0.5, y: reach * 0.25))
+        strand.addQuadCurve(to: CGPoint(x: reach * 0.62 + sway * 2, y: h * 0.15),
+                            control: CGPoint(x: reach * 0.5 + sway, y: h * 0.1))
+        context.stroke(strand, with: .color(web), lineWidth: CGFloat(w * 0.0012))
+    }
+
+    // MARK: Road detail
+
+    private func drawRoadDetail(_ context: inout GraphicsContext, _ w: Double, _ h: Double, _ time: Double) {
+        // A distant cart lantern on the far road.
+        let bob = abs(sin(time * 3.2)) * 0.0015
+        let lx = (0.558 + sin(time * 0.2) * 0.002) * w
+        let ly = (0.472 - bob) * h
+        let glow = w * 0.012
+        context.fill(Path(CGRect(x: lx - w * 0.006, y: ly + w * 0.003, width: w * 0.012, height: h * 0.005)),
+                     with: .color(Color(hex: 0x5A3A44).opacity(0.7)))
+        context.fill(Path(ellipseIn: CGRect(x: lx - glow, y: ly - glow, width: glow * 2, height: glow * 2)),
+                     with: .color(Color(hex: 0xFFD08A).opacity((0.2 + sin(time * 5.1) * 0.04) * calm)))
+        let core = w * 0.003
+        context.fill(Path(ellipseIn: CGRect(x: lx - core, y: ly - core, width: core * 2, height: core * 2)),
+                     with: .color(Color(hex: 0xFFE2A8).opacity(0.85 * calm)))
+
+        drawRider(&context, w, h, time)
+
+        // Grass tufts swaying at the road edges.
+        let tufts: [(Double, Double)] = [(0.42, 0.62), (0.48, 0.56), (0.615, 0.565), (0.645, 0.615)]
+        for (i, tuft) in tufts.enumerated() {
+            var blades = Path()
+            for b in 0..<3 {
+                let spread = (Double(b) - 1) * 0.008
+                let tip = sin(time * 1.1 + Double(i) * 1.3 + Double(b) * 0.5) * 0.004
+                blades.move(to: at(tuft.0 + spread * 0.3, tuft.1, w, h))
+                blades.addQuadCurve(to: at(tuft.0 + spread + tip, tuft.1 - 0.024 + abs(spread), w, h),
+                                    control: at(tuft.0 + spread * 0.5, tuft.1 - 0.014, w, h))
+            }
+            context.stroke(blades, with: .color(Color(hex: 0x5A3D4A).opacity(0.8)),
+                           style: StrokeStyle(lineWidth: CGFloat(w * 0.0035), lineCap: .round))
+        }
+    }
+
+    /// A small rider on the road, with a gait bob and a dust trail behind.
+    private func drawRider(_ context: inout GraphicsContext, _ w: Double, _ h: Double, _ time: Double) {
+        let ink = Color(hex: 0x3A2433).opacity(0.75 + 0.25 * calm)
+        let cx = 0.55, ground = 0.548
+        let bob = abs(sin(time * 2.6)) * 0.002
+        let bob2 = abs(sin(time * 2.6 - 0.4)) * 0.0025
+
+        // Dust trail.
+        for i in 0..<6 {
+            let life = (time * 0.35 + Double(i) / 6).truncatingRemainder(dividingBy: 1)
+            let x = (cx - 0.02 - life * 0.07) * w
+            let y = (ground - 0.004 - life * 0.018) * h
+            let r = w * (0.004 + life * 0.014)
+            context.fill(Path(ellipseIn: CGRect(x: x - r, y: y - r * 0.6, width: r * 2, height: r * 1.2)),
+                         with: .color(Color(hex: 0xE8C6A2).opacity((1 - life) * 0.22 * calm)))
+        }
+
+        // Legs.
+        var legs = Path()
+        let legXs: [Double] = [-0.018, -0.01, 0.012, 0.02]
+        for (i, lxOff) in legXs.enumerated() {
+            let swing = sin(time * 5.2 + Double(i) * 1.6) * 0.004
+            legs.move(to: at(cx + lxOff, ground - 0.017 - bob, w, h))
+            legs.addLine(to: at(cx + lxOff + swing, ground, w, h))
+        }
+        context.stroke(legs, with: .color(ink), style: StrokeStyle(lineWidth: CGFloat(w * 0.0035), lineCap: .round))
+
+        // Horse body, neck, head, tail.
+        context.fill(Path(ellipseIn: CGRect(x: (cx - 0.026) * w, y: (ground - 0.027 - bob) * h,
+                                            width: w * 0.052, height: h * 0.013)),
+                     with: .color(ink))
+        var neck = Path()
+        neck.move(to: at(cx + 0.018, ground - 0.022 - bob, w, h))
+        neck.addLine(to: at(cx + 0.032, ground - 0.036 - bob, w, h))
+        context.stroke(neck, with: .color(ink), style: StrokeStyle(lineWidth: CGFloat(w * 0.007), lineCap: .round))
+        context.fill(Path(ellipseIn: CGRect(x: (cx + 0.028) * w, y: (ground - 0.039 - bob) * h,
+                                            width: w * 0.015, height: h * 0.005)),
+                     with: .color(ink))
+        var tail = Path()
+        tail.move(to: at(cx - 0.025, ground - 0.023 - bob, w, h))
+        tail.addQuadCurve(to: at(cx - 0.034, ground - 0.009, w, h),
+                          control: at(cx - 0.036 + sin(time * 2.6) * 0.002, ground - 0.022, w, h))
+        context.stroke(tail, with: .color(ink), lineWidth: CGFloat(w * 0.003))
+
+        // Rider: cloak, torso, head.
+        let flutter = sin(time * 3.1) * 0.004
+        context.fill(linePathPoints([at(cx, ground - 0.045 - bob2, w, h),
+                                     at(cx - 0.024 + flutter, ground - 0.031 - bob2, w, h),
+                                     at(cx - 0.006, ground - 0.024 - bob, w, h)]),
+                     with: .color(ink))
+        var torso = Path()
+        torso.move(to: at(cx - 0.004, ground - 0.026 - bob, w, h))
+        torso.addLine(to: at(cx, ground - 0.045 - bob2, w, h))
+        context.stroke(torso, with: .color(ink), style: StrokeStyle(lineWidth: CGFloat(w * 0.009), lineCap: .round))
+        let r = w * 0.006
+        let hy = (ground - 0.045 - bob2) * h - r * 1.1
+        context.fill(Path(ellipseIn: CGRect(x: (cx + 0.002) * w - r, y: hy - r, width: r * 2, height: r * 2)),
+                     with: .color(ink))
+
+        // Dawn catching the horse's back.
+        var rim = Path()
+        rim.move(to: at(cx - 0.022, ground - 0.025 - bob, w, h))
+        rim.addQuadCurve(to: at(cx + 0.02, ground - 0.025 - bob, w, h), control: at(cx, ground - 0.031 - bob, w, h))
+        context.stroke(rim, with: .color(Color(hex: 0xFFD6A8).opacity(0.35 * calm)), lineWidth: CGFloat(w * 0.0025))
+    }
+
+    private func linePathPoints(_ points: [CGPoint]) -> Path {
+        var path = Path()
+        guard let first = points.first else { return path }
+        path.move(to: first)
+        for point in points.dropFirst() { path.addLine(to: point) }
+        path.closeSubpath()
+        return path
     }
 }
