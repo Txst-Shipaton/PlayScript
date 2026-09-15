@@ -29,6 +29,27 @@ struct ReaderView: View {
                                 sceneHeading
                                     .padding(.top, 27)
                                 Spacer(minLength: max(40, geometry.size.height * 0.12))
+                                
+                                HStack(spacing: 15) {
+                                    Image("juliet_full_body")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .blendMode(.multiply)
+                                        .opacity(model.beat.pointOfView == "Juliet" ? 1.0 : 0.4)
+                                        .scaleEffect(model.beat.pointOfView == "Juliet" ? 1.05 : 1.0)
+                                        .animation(.easeInOut(duration: 0.5), value: model.beat.pointOfView)
+                                    
+                                    Image("romeo_full_body")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .blendMode(.multiply)
+                                        .opacity(model.beat.pointOfView == "Romeo" ? 1.0 : 0.4)
+                                        .scaleEffect(model.beat.pointOfView == "Romeo" ? 1.05 : 1.0)
+                                        .animation(.easeInOut(duration: 0.5), value: model.beat.pointOfView)
+                                }
+                                .frame(maxHeight: geometry.size.height * 0.3)
+                                .padding(.bottom, -15)
+                                
                                 narrative
                                 controls
                                     .padding(.top, 22)
