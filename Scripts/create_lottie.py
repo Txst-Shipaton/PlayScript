@@ -829,6 +829,61 @@ def thought():
     return scene.build()
 
 
+def page_turn():
+    """A one-shot flourish for the tap-to-continue button: ink catches light.
+
+    Played once (not looped) when the reader taps to advance a page, so unlike
+    every other accent here it does not need to loop seamlessly -- every layer
+    simply fades in from nothing and back out to nothing, which keeps it exempt
+    from the seamless-loop check while it swoops from one shape to another.
+    Hosted aspect-fit in a small frame behind the button, so the canvas is a
+    short, wide strip rather than the portrait scene size.
+    """
+    loop = 54  # 0.9s at 60fps -- a brief accent, not an ambient scene.
+    width, height = 240, 96
+    scene = Scene("accent-page-turn", loop, width, height)
+    cx, cy = width / 2, height / 2
+
+    def at(fraction):
+        return round(loop * fraction)
+
+    # A soft warm bloom behind the stroke, like light briefly touching a page.
+    scene.add("glow", [glow(46, [
+        (0.0, AMBER, 0.30), (0.42, EMBER, 0.14), (1.0, ROSE, 0.0)])],
+        transform(position=[cx, cy],
+                  opacity=animated([(0, 0, EASE_OUT), (at(0.24), 68, EASE),
+                                    (at(0.64), 42, EASE), (loop, 0)]),
+                  scale=squashed(animated([(0, [68, 68], EASE_OUT), (at(0.5), [116, 116], EASE),
+                                           (loop, [90, 90])]), 0.8)))
+
+    # A thin band of light catching the page edge, drawn on with a trim path.
+    band = polygon([[-78, -4], [78, -4], [78, 4], [-78, 4]])
+    scene.add("glint", [group([
+        path_item(band),
+        trim(animated([(0, 0, EASE), (at(0.46), 100, EASE_OUT), (loop, 100)])),
+        gradient([(0.0, CREAM, 0.0), (0.42, MOONLIGHT, 0.55), (0.56, CREAM, 0.75),
+                  (1.0, CREAM, 0.0)], (-78, 0), (78, 0))], "glint-body")],
+        transform(position=[cx * 0.96, cy * 0.62], rotation=-13,
+                  opacity=animated([(0, 0, EASE_OUT), (at(0.12), 0, EASE_OUT),
+                                    (at(0.30), 85, EASE), (at(0.68), 55, EASE), (loop, 0)])))
+
+    # The quill stroke itself: a single eased swoop, revealed by its own trim.
+    stroke_path = bez([
+        ((-82, 20), (0, 0), (24, -17)),
+        ((-18, -9), (-21, 13), (23, -15)),
+        ((44, -19), (-19, 11), (13, -7)),
+        ((82, -4), (-9, 5), (0, 0)),
+    ], closed=False)
+    scene.add("stroke", [group([
+        path_item(stroke_path),
+        trim(animated([(0, 0, EASE), (at(0.58), 100, EASE_OUT), (loop, 100)])),
+        stroke(rgba(INK), 5)], "stroke-body")],
+        transform(position=[cx, cy * 1.02],
+                  opacity=animated([(0, 0, EASE_OUT), (at(0.10), 0, EASE_OUT),
+                                    (at(0.26), 78, EASE), (at(0.74), 78, EASE_IN), (loop, 0)])))
+    return scene.build()
+
+
 ANIMATIONS = {
     "scene-orchard": orchard,
     "scene-chamber": chamber,
@@ -836,6 +891,7 @@ ANIMATIONS = {
     "scene-road": road,
     "accent-letter": letter,
     "accent-thought": thought,
+    "accent-page-turn": page_turn,
 }
 
 

@@ -10,6 +10,8 @@ struct ReaderView: View {
     @Environment(\.scenePhase) private var scenePhase
     @FocusState private var focusedChoice: String?
     @State private var hoveredChoice: String?
+    /// Bumped on every "Tap to continue" so the flourish restarts each tap.
+    @State private var continueFlourish = 0
 
     /// A decision is being weighed: the scene, the scrim, and the page chrome all yield.
     private var deciding: Bool { model.needsChoice || model.pendingChoiceID != nil }
@@ -254,7 +256,10 @@ struct ReaderView: View {
             }
         } else {
             VStack(spacing: 0) {
-                Button { advancePage() } label: {
+                Button {
+                    continueFlourish += 1
+                    advancePage()
+                } label: {
                     HStack(spacing: 12) {
                         Text("Tap to continue").font(.system(.subheadline, design: .serif))
                         Image(systemName: "arrow.right").font(.system(size: 13, weight: .light))
@@ -265,6 +270,16 @@ struct ReaderView: View {
                 }
                 .buttonStyle(PressStyle())
                 .accessibilityIdentifier("continueStory")
+                .background {
+                    // A brief ink flourish on tap; purely decorative, so it never
+                    // gates the page turn and is invisible to accessibility.
+                    if !reduceMotion && continueFlourish > 0 {
+                        LottieLayer(name: "accent-page-turn", playing: true, fills: false, loops: false)
+                            .id(continueFlourish)
+                            .allowsHitTesting(false)
+                            .accessibilityHidden(true)
+                    }
+                }
                 Text("Touch & hold to pause")
                     .font(.caption2)
                     .foregroundStyle(.white.opacity(0.68))
