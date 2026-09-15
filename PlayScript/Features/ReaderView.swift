@@ -240,6 +240,18 @@ struct ReaderView: View {
                     .focused($focusedChoice, equals: choice.id)
                     .onHover { hoveredChoice = $0 ? choice.id : nil }
                     .modifier(ThoughtArrival(delay: Double(index) * 0.12, reduceMotion: reduceMotion))
+                    .background {
+                        // The instant a choice is taken: a brief flourish, warm for
+                        // the bold answer and cool for the quiet one, gone within a
+                        // second either way. Purely decorative -- the choice itself
+                        // is already committed by the time this finishes playing.
+                        LottieLayer(name: choice.isBold ? "accent-select-warm" : "accent-select-cool",
+                                    playing: !reduceMotion && model.pendingChoiceID == choice.id,
+                                    fills: false,
+                                    loops: false)
+                            .allowsHitTesting(false)
+                            .accessibilityHidden(true)
+                    }
                     .disabled(model.pendingChoiceID != nil)
                     .accessibilityHidden(model.pendingChoiceID != nil && model.pendingChoiceID != choice.id)
                     .accessibilityIdentifier("choice-\(choice.id)")

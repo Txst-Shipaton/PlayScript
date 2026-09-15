@@ -829,58 +829,64 @@ def thought():
     return scene.build()
 
 
-def page_turn():
-    """A one-shot flourish for the tap-to-continue button: ink catches light.
+def spark(warm):
+    """A choice taken: light gathers, catches, and settles. One shot, not a loop.
 
-    Played once (not looped) when the reader taps to advance a page, so unlike
-    every other accent here it does not need to loop seamlessly -- every layer
-    simply fades in from nothing and back out to nothing, which keeps it exempt
-    from the seamless-loop check while it swoops from one shape to another.
-    Hosted aspect-fit in a small frame behind the button, so the canvas is a
-    short, wide strip rather than the portrait scene size.
+    Every layer fades in from nothing and back to nothing across the single
+    pass -- the escape hatch the loop test grants a gesture that only crosses
+    the frame once (see `letter`'s flap, or `road`'s birds). `warm` picks the
+    bold choice's decisive ember flare over the quiet choice's cool ink bloom,
+    the same "same moment, different emotional shade" idea `thought` sits on.
     """
-    loop = 54  # 0.9s at 60fps -- a brief accent, not an ambient scene.
-    width, height = 240, 96
-    scene = Scene("accent-page-turn", loop, width, height)
+    loop = 40  # ~0.67s at 60fps: a flourish, not a scene.
+    width, height = 360, 260
+    scene = Scene("spark-warm" if warm else "spark-cool", loop, width, height)
     cx, cy = width / 2, height / 2
+
+    hot = CANDLE_CORE if warm else MOONLIGHT
+    mid = AMBER if warm else TOMB_LIGHT
+    edge = SOFT_RED if warm else PLUM
 
     def at(fraction):
         return round(loop * fraction)
 
-    # A soft warm bloom behind the stroke, like light briefly touching a page.
-    scene.add("glow", [glow(46, [
-        (0.0, AMBER, 0.30), (0.42, EMBER, 0.14), (1.0, ROSE, 0.0)])],
+    # Central bloom: gathers fast, holds an instant, dissolves.
+    scene.add("core", [glow(120, [(0.0, hot, 0.92), (0.4, mid, 0.5), (1.0, edge, 0.0)])],
         transform(position=[cx, cy],
-                  opacity=animated([(0, 0, EASE_OUT), (at(0.24), 68, EASE),
-                                    (at(0.64), 42, EASE), (loop, 0)]),
-                  scale=squashed(animated([(0, [68, 68], EASE_OUT), (at(0.5), [116, 116], EASE),
-                                           (loop, [90, 90])]), 0.8)))
+                  opacity=animated([(0, 0, EASE_OUT), (at(0.22), 92, EASE),
+                                    (at(0.55), 55, EASE), (loop, 0)]),
+                  scale=squashed(animated([(0, [28, 28], EASE_OUT), (at(0.30), [118, 118], EASE),
+                                           (at(0.68), [102, 102], EASE), (loop, [90, 90])]), 0.92)))
 
-    # A thin band of light catching the page edge, drawn on with a trim path.
-    band = polygon([[-78, -4], [78, -4], [78, 4], [-78, 4]])
-    scene.add("glint", [group([
-        path_item(band),
-        trim(animated([(0, 0, EASE), (at(0.46), 100, EASE_OUT), (loop, 100)])),
-        gradient([(0.0, CREAM, 0.0), (0.42, MOONLIGHT, 0.55), (0.56, CREAM, 0.75),
-                  (1.0, CREAM, 0.0)], (-78, 0), (78, 0))], "glint-body")],
-        transform(position=[cx * 0.96, cy * 0.62], rotation=-13,
-                  opacity=animated([(0, 0, EASE_OUT), (at(0.12), 0, EASE_OUT),
-                                    (at(0.30), 85, EASE), (at(0.68), 55, EASE), (loop, 0)])))
+    # One ring, the light's edge catching up with itself as it expands.
+    scene.add("ring", [group([
+        {"ty": "el", "d": 1, "s": animated([(0, [16, 16], EASE_OUT), (loop, [230, 230])]),
+         "p": static([0, 0]), "nm": "ellipse"},
+        stroke(rgba(edge), animated([(0, 5.0, EASE_OUT), (loop, 0.4)])),
+    ], "ring")],
+        transform(position=[cx, cy],
+                  opacity=animated([(0, 0, EASE_OUT), (at(0.16), 58, EASE),
+                                    (at(0.60), 16, EASE_IN), (loop, 0)])))
 
-    # The quill stroke itself: a single eased swoop, revealed by its own trim.
-    stroke_path = bez([
-        ((-82, 20), (0, 0), (24, -17)),
-        ((-18, -9), (-21, 13), (23, -15)),
-        ((44, -19), (-19, 11), (13, -7)),
-        ((82, -4), (-9, 5), (0, 0)),
-    ], closed=False)
-    scene.add("stroke", [group([
-        path_item(stroke_path),
-        trim(animated([(0, 0, EASE), (at(0.58), 100, EASE_OUT), (loop, 100)])),
-        stroke(rgba(INK), 5)], "stroke-body")],
-        transform(position=[cx, cy * 1.02],
-                  opacity=animated([(0, 0, EASE_OUT), (at(0.10), 0, EASE_OUT),
-                                    (at(0.26), 78, EASE), (at(0.74), 78, EASE_IN), (loop, 0)])))
+    # A handful of motes thrown outward, each its own short one-shot arc.
+    petals = 6
+    for i in range(petals):
+        angle = (i / petals) * math.pi * 2 + (0.3 if warm else -0.2)
+        radius = 96 + 14 * (i % 2)
+        size = 14 - (i % 3)
+
+        def position(u, angle=angle, radius=radius):
+            travel = ease_out(u, 2.0)
+            return [cx + math.cos(angle) * radius * travel,
+                    cy + math.sin(angle) * radius * travel - 18 * travel]
+
+        def mote_opacity(u):
+            return round(fade(u, 0.20, 0.55) * 100, 1)
+
+        scene.add(f"mote-{i}", [glow(size, [(0.0, edge, 0.95), (0.6, mid, 0.4), (1.0, hot, 0.0)])],
+            transform(position=animated(crossing(0, loop, 4, position)),
+                      opacity=animated(crossing(0, loop, 4, mote_opacity))))
+
     return scene.build()
 
 
@@ -891,7 +897,8 @@ ANIMATIONS = {
     "scene-road": road,
     "accent-letter": letter,
     "accent-thought": thought,
-    "accent-page-turn": page_turn,
+    "accent-select-warm": lambda: spark(True),
+    "accent-select-cool": lambda: spark(False),
 }
 
 
