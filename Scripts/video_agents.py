@@ -62,23 +62,32 @@ def instruction(agent):
         "numeric values an SVG generator can use directly. Where the example has a single "
         "scene_id, return a list covering all scenes instead.\n"
         f'Return only JSON with "agent_id": "{agent["id"]}", following this shape, '
-        f"extending arrays as needed:\n{json.dumps(agent['example'], indent=2)}"
+        "extending arrays as needed. Every value in the example is a placeholder showing "
+        "structure only: never reuse its colours, ids, names or numbers; measure them "
+        f"from the video.\n{json.dumps(agent['example'], indent=2)}"
     )
 
 
 class Vertex:
     def __init__(self, env, model, location):
         self.model = model
+        self.env = env
+        self.location = location
         self.key = env.get("VERTEX_API_KEY") or env.get("GOOGLE_API_KEY")
         if self.key:
             self.url = f"https://aiplatform.googleapis.com/v1/publishers/google/models/{model}:generateContent"
             self.mode = "API key"
         else:
-            project = env.get("GOOGLE_CLOUD_PROJECT") or self._gcloud("config", "get-value", "project")
-            host = "aiplatform.googleapis.com" if location == "global" else f"{location}-aiplatform.googleapis.com"
-            self.url = (f"https://{host}/v1/projects/{project}/locations/{location}"
-                        f"/publishers/google/models/{model}:generateContent")
-            self.mode = f"gcloud CLI ({project})"
+            self._use_gcloud()
+
+    def _use_gcloud(self):
+        project = self.env.get("GOOGLE_CLOUD_PROJECT") or self._gcloud("config", "get-value", "project")
+        host = ("aiplatform.googleapis.com" if self.location == "global"
+                else f"{self.location}-aiplatform.googleapis.com")
+        self.url = (f"https://{host}/v1/projects/{project}/locations/{self.location}"
+                    f"/publishers/google/models/{self.model}:generateContent")
+        self.key = None
+        self.mode = f"gcloud CLI ({project})"
 
     @staticmethod
     def _gcloud(*args):
@@ -88,16 +97,15 @@ class Vertex:
             raise SystemExit("No VERTEX_API_KEY and gcloud is unavailable; run `gcloud auth login`.") from None
 
     def generate(self, body, attempts=4):
-        headers = {"Content-Type": "application/json"}
-        url = self.url
-        if self.key:
-            headers["x-goog-api-key"] = self.key
-        else:
-            headers["Authorization"] = "Bearer " + self._gcloud("auth", "print-access-token")
         data = json.dumps(body).encode()
         for attempt in range(attempts):
+            headers = {"Content-Type": "application/json"}
+            if self.key:
+                headers["x-goog-api-key"] = self.key
+            else:
+                headers["Authorization"] = "Bearer " + self._gcloud("auth", "print-access-token")
             try:
-                with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=headers),
+                with urllib.request.urlopen(urllib.request.Request(self.url, data=data, headers=headers),
                                             timeout=600) as response:
                     return json.load(response)
             except urllib.error.HTTPError as error:
@@ -106,6 +114,11 @@ class Vertex:
                     status = json.load(error).get("error", {}).get("status", "UNKNOWN")
                 except (ValueError, AttributeError):
                     status = "UNKNOWN"
+                # A key restricted away from Vertex AI is refused outright; the CLI login may still work.
+                if error.code == 403 and self.key:
+                    print("  API key refused by Vertex AI; using the gcloud login instead.", flush=True)
+                    self._use_gcloud()
+                    continue
                 if error.code in (429, 500, 502, 503, 504) and attempt < attempts - 1:
                     time.sleep(2 ** attempt * 3)
                     continue

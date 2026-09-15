@@ -1,0 +1,307 @@
+{
+  "agent_id": "typography_parser",
+  "overlays": [
+    {
+      "type": "text",
+      "content": "RED",
+      "font_family_guess": "sans-serif",
+      "font_weight": 800,
+      "font_size": "8%",
+      "color": "#FF0000",
+      "position": {
+        "x": "50%",
+        "y": "45%"
+      },
+      "start_ms": 0,
+      "end_ms": 2000
+    },
+    {
+      "type": "text",
+      "content": "STAR",
+      "font_family_guess": "sans-serif",
+      "font_weight": 800,
+      "font_size": "8%",
+      "color": "#FF0000",
+      "position": {
+        "x": "50%",
+        "y": "55%"
+      },
+      "start_ms": 0,
+      "end_ms": 2000
+    },
+    {
+      "type": "shape",
+      "shape_type": "star",
+      "color": "#FF0000",
+      "position": {
+        "x": "70%",
+        "y": "50%"
+      },
+      "size": "10%",
+      "start_ms": 0,
+      "end_ms": 2000
+    },
+    {
+      "type": "text",
+      "content": "221b",
+      "font_family_guess": "serif",
+      "font_weight": 500,
+      "font_size": "3%",
+      "color": "#E0E0E0",
+      "position": {
+        "x": "50%",
+        "y": "25%"
+      },
+      "start_ms": 2500,
+      "end_ms": 3500
+    },
+    {
+      "type": "text",
+      "content": "BANK OF ENGLAND",
+      "font_family_guess": "serif",
+      "font_weight": 600,
+      "font_size": "3%",
+      "color": "#C0C0C0",
+      "position": {
+        "x": "50%",
+        "y": "35%"
+      },
+      "start_ms": 21800,
+      "end_ms": 22500
+    },
+    {
+      "type": "text",
+      "content": "FLOWERS",
+      "font_family_guess": "sans-serif",
+      "font_weight": 700,
+      "font_size": "4%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "40%",
+        "y": "30%"
+      },
+      "start_ms": 32000,
+      "end_ms": 33500
+    },
+    {
+      "type": "text",
+      "content": "ROSES",
+      "font_family_guess": "serif",
+      "font_weight": 400,
+      "font_size": "2%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "60%",
+        "y": "65%"
+      },
+      "start_ms": 32000,
+      "end_ms": 33500
+    },
+    {
+      "type": "text",
+      "content": "CLOSED",
+      "font_family_guess": "sans-serif",
+      "font_weight": 700,
+      "font_size": "3%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "35%",
+        "y": "60%"
+      },
+      "start_ms": 34000,
+      "end_ms": 35000
+    },
+    {
+      "type": "text",
+      "content": "TOWER OF LONDON",
+      "font_family_guess": "serif",
+      "font_weight": 600,
+      "font_size": "2.5%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "15%",
+        "y": "45%"
+      },
+      "start_ms": 42500,
+      "end_ms": 43500
+    },
+    {
+      "type": "shape",
+      "shape_type": "crown",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "15%",
+        "y": "40%"
+      },
+      "size": "1.5%",
+      "start_ms": 42500,
+      "end_ms": 43500
+    },
+    {
+      "type": "text",
+      "content": "Sherlock",
+      "font_family_guess": "serif",
+      "font_weight": 400,
+      "font_size": "10%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "40%"
+      },
+      "start_ms": 56000,
+      "end_ms": 58500
+    },
+    {
+      "type": "text",
+      "content": "Holmes",
+      "font_family_guess": "serif",
+      "font_weight": 400,
+      "font_size": "10%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "55%"
+      },
+      "start_ms": 56000,
+      "end_ms": 58500
+    },
+    {
+      "type": "text",
+      "content": "4D",
+      "font_family_guess": "serif",
+      "font_weight": 600,
+      "font_size": "10%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "75%",
+        "y": "55%"
+      },
+      "start_ms": 56000,
+      "end_ms": 58500
+    },
+    {
+      "type": "text",
+      "content": "RED",
+      "font_family_guess": "sans-serif",
+      "font_weight": 800,
+      "font_size": "3%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "25%"
+      },
+      "start_ms": 58500,
+      "end_ms": 62000
+    },
+    {
+      "type": "text",
+      "content": "STAR",
+      "font_family_guess": "sans-serif",
+      "font_weight": 800,
+      "font_size": "3%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "30%"
+      },
+      "start_ms": 58500,
+      "end_ms": 62000
+    },
+    {
+      "type": "shape",
+      "shape_type": "star",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "60%",
+        "y": "27.5%"
+      },
+      "size": "4%",
+      "start_ms": 58500,
+      "end_ms": 62000
+    },
+    {
+      "type": "text",
+      "content": "WWW.REDSTAR3D.COM",
+      "font_family_guess": "sans-serif",
+      "font_weight": 400,
+      "font_size": "2%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "37%"
+      },
+      "start_ms": 58500,
+      "end_ms": 62000
+    },
+    {
+      "type": "text",
+      "content": "DISTRIBUTED BY",
+      "font_family_guess": "sans-serif",
+      "font_weight": 400,
+      "font_size": "1.8%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "48%"
+      },
+      "start_ms": 58500,
+      "end_ms": 62000
+    },
+    {
+      "type": "text",
+      "content": "NWAVE PICTURES",
+      "font_family_guess": "sans-serif",
+      "font_weight": 700,
+      "font_size": "2.5%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "52%"
+      },
+      "start_ms": 58500,
+      "end_ms": 62000
+    },
+    {
+      "type": "text",
+      "content": "INTERNATIONAL SALES: GOEDELE@NWAVE.COM",
+      "font_family_guess": "sans-serif",
+      "font_weight": 400,
+      "font_size": "1.5%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "60%"
+      },
+      "start_ms": 58500,
+      "end_ms": 62000
+    },
+    {
+      "type": "text",
+      "content": "NORTH AND SOUTH AMERICA: JBAKER@NWAVE.COM",
+      "font_family_guess": "sans-serif",
+      "font_weight": 400,
+      "font_size": "1.5%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "63%"
+      },
+      "start_ms": 58500,
+      "end_ms": 62000
+    },
+    {
+      "type": "text",
+      "content": "COPYRIGHT © 2013 RED STAR 3D ALL RIGHTS RESERVED",
+      "font_family_guess": "sans-serif",
+      "font_weight": 400,
+      "font_size": "1.5%",
+      "color": "#FFFFFF",
+      "position": {
+        "x": "50%",
+        "y": "75%"
+      },
+      "start_ms": 58500,
+      "end_ms": 62000
+    }
+  ]
+}

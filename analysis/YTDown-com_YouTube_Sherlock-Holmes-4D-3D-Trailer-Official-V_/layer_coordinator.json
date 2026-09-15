@@ -1,0 +1,439 @@
+[
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S1",
+    "render_order": [
+      "bg_dark_red_radial_gradient",
+      "logo_red_star_text"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S2",
+    "render_order": [
+      "bg_stone_wall",
+      "door_221b",
+      "door_knocker",
+      "door_number_221b",
+      "foreground_railings"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S3",
+    "render_order": [
+      "bg_window_dark_blue_curtain",
+      "bg_bookshelf",
+      "music_stand_with_sheet_music",
+      "character_sherlock_holmes_playing_violin"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S4",
+    "render_order": [
+      "bg_window_dark_blue_curtain",
+      "bg_bookshelf",
+      "music_stand_with_sheet_music",
+      "character_sherlock_holmes"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S5",
+    "render_order": [
+      "bg_red_patterned_wallpaper",
+      "bg_framed_pictures",
+      "bg_rifle_on_wall",
+      "bg_desk_with_items",
+      "bg_open_door_with_light",
+      "character_sherlock_holmes_back",
+      "character_watson_entering"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S6",
+    "render_order": [
+      "bg_red_patterned_wallpaper",
+      "bg_framed_pictures",
+      "bg_bookshelf",
+      "bg_window",
+      "bg_desk",
+      "character_sherlock_holmes_holding_bow"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S7",
+    "render_order": [
+      "bg_red_patterned_wallpaper",
+      "bg_bookshelf",
+      "bg_desk",
+      "character_sherlock_holmes_reading_letter"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S8",
+    "render_order": [
+      "bg_red_patterned_wallpaper",
+      "bg_bookshelf",
+      "character_sherlock_holmes_face"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S9",
+    "render_order": [
+      "bg_wooden_floor",
+      "hand_picking_up_pipe"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S10",
+    "render_order": [
+      "bg_red_patterned_wallpaper",
+      "bust_on_table",
+      "hand_placing_hat_on_bust"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S11",
+    "render_order": [
+      "bg_fireplace",
+      "bg_wooden_table_with_papers",
+      "hand_with_magnifying_glass"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S12",
+    "render_order": [
+      "bg_dark_blue_curtain",
+      "bg_window",
+      "bg_bookshelf",
+      "character_sherlock_holmes_with_pipe_and_magnifying_glass"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S13",
+    "render_order": [
+      "bg_foggy_street_with_lampposts_and_bench",
+      "character_sherlock_holmes_running_feet"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S14",
+    "render_order": [
+      "bg_dark_foggy_sky",
+      "bank_of_england_building_facade",
+      "bank_of_england_text"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S15",
+    "render_order": [
+      "bg_bank_of_england_building_facade",
+      "bg_archways",
+      "police_officers",
+      "lamppost",
+      "bench",
+      "barriers"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S16",
+    "render_order": [
+      "bg_bank_of_england_building_details",
+      "character_sherlock_holmes_with_magnifying_glass",
+      "magnifying_glass_lens"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S17",
+    "render_order": [
+      "bg_blurred_surface",
+      "money_bills",
+      "magnifying_glass_lens_effect"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S18",
+    "render_order": [
+      "bg_red_patterned_wallpaper",
+      "bg_bookshelf",
+      "bg_bust",
+      "character_sherlock_holmes_playing_violin"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S19",
+    "render_order": [
+      "bg_long_dark_hallway_with_archways_and_figures",
+      "character_watson_running"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S20",
+    "render_order": [
+      "bg_far_end_of_hallway_light",
+      "arches_and_columns",
+      "paintings_on_walls",
+      "debris_on_floor"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S21",
+    "render_order": [
+      "bg_dark_ornate_interior_columns",
+      "character_villain_in_top_hat"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S22",
+    "render_order": [
+      "bg_dark_ornate_interior_columns",
+      "character_villain",
+      "character_sherlock_holmes"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S23",
+    "render_order": [
+      "bg_dark_ornate_interior",
+      "character_villain_close_up",
+      "character_sherlock_holmes_close_up"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S24",
+    "render_order": [
+      "bg_dark_ornate_interior_columns",
+      "character_sherlock_holmes_running",
+      "character_watson_running"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S25",
+    "render_order": [
+      "bg_foggy_city_skyline_nelson_column",
+      "bg_lampposts",
+      "flower_stand",
+      "crates_and_barrels",
+      "character_sherlock_holmes_running"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S26",
+    "render_order": [
+      "bg_foggy_city_skyline_nelson_column",
+      "bg_lampposts",
+      "flower_stand_with_closed_sign",
+      "character_sherlock_holmes_at_stand",
+      "magnifying_glass_lens"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S27",
+    "render_order": [
+      "bg_tower_bridge_city_lights_foggy_river",
+      "lamppost",
+      "character_sherlock_holmes_running"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S28",
+    "render_order": [
+      "bg_foggy_sky",
+      "tower_bridge",
+      "river_and_city_lights"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S29",
+    "render_order": [
+      "bg_building_facade",
+      "character_villain_running",
+      "character_sherlock_holmes_running"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S30",
+    "render_order": [
+      "bg_blurred_background",
+      "character_sherlock_holmes_face",
+      "magnifying_glass_lens"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S31",
+    "render_order": [
+      "bg_foggy_city_tower_bridge_distance",
+      "character_sherlock_holmes_jumping"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S32",
+    "render_order": [
+      "bg_tower_bridge_structure_foggy_city",
+      "character_villain_standing"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S33",
+    "render_order": [
+      "bg_foggy_city_buildings_lampposts",
+      "fountain_with_splashing_water"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S34",
+    "render_order": [
+      "bg_dark_sky",
+      "bg_tower_of_london",
+      "lamppost",
+      "tower_of_london_sign",
+      "character_sherlock_holmes_running"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S35",
+    "render_order": [
+      "bg_tower_of_london_wall",
+      "large_metal_gate",
+      "character_sherlock_holmes_at_gate"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S36",
+    "render_order": [
+      "bg_tower_bridge_structure",
+      "character_sherlock_holmes_looking_up"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S37",
+    "render_order": [
+      "bg_deep_shaft_stone_walls",
+      "character_sherlock_holmes_falling"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S38",
+    "render_order": [
+      "bg_deep_shaft_stone_walls",
+      "character_sherlock_holmes_falling_wider"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S39",
+    "render_order": [
+      "bg_ground_surface",
+      "impact_ripples"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S40",
+    "render_order": [
+      "bg_stone_wall_arched_windows",
+      "smoke_cloud",
+      "circular_object"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S41",
+    "render_order": [
+      "bg_tower_bridge_structure",
+      "character_sherlock_holmes_reaching",
+      "character_watson_jumping"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S42",
+    "render_order": [
+      "bg_blurred_tower_bridge_structure",
+      "column",
+      "character_sherlock_holmes_looking_up",
+      "magnifying_glass_hanging"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S43",
+    "render_order": [
+      "bg_bank_of_england_building_street_lampposts_fog",
+      "character_villain_running_floating"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S44",
+    "render_order": [
+      "bg_dark_stone_wall",
+      "character_sherlock_holmes",
+      "character_watson"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S45",
+    "render_order": [
+      "bg_dark_stone_wall",
+      "character_sherlock_holmes_wider",
+      "character_watson_wider"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S46",
+    "render_order": [
+      "bg_blurred_city_background",
+      "title_sherlock_holmes_4d"
+    ]
+  },
+  {
+    "agent_id": "layer_coordinator",
+    "scene_id": "S47",
+    "render_order": [
+      "bg_blurred_city_background",
+      "logo_red_star",
+      "text_website",
+      "text_distributed_by_nwave_pictures",
+      "text_international_sales",
+      "text_copyright"
+    ]
+  }
+]

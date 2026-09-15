@@ -1,0 +1,252 @@
+[
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S1",
+    "start_ms": 18000,
+    "end_ms": 20000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.15,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S2",
+    "start_ms": 21000,
+    "end_ms": 22000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.2,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S3",
+    "start_ms": 22000,
+    "end_ms": 23000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.2,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S4",
+    "start_ms": 27000,
+    "end_ms": 28000,
+    "effects": [
+      {
+        "type": "dust",
+        "geometry": "circle",
+        "count": 100,
+        "color": "#FFFFFF",
+        "opacity": 0.3,
+        "size_min": 0.5,
+        "size_max": 2.0,
+        "speed": "slow_drift"
+      },
+      {
+        "type": "haze",
+        "geometry": "pattern",
+        "color": "#D0D0D0",
+        "opacity": 0.1,
+        "speed": "static"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S5",
+    "start_ms": 30000,
+    "end_ms": 32000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.25,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S6",
+    "start_ms": 32000,
+    "end_ms": 33000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.25,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S7",
+    "start_ms": 33000,
+    "end_ms": 34000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.25,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S8",
+    "start_ms": 34000,
+    "end_ms": 36000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.35,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S9",
+    "start_ms": 38000,
+    "end_ms": 39000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.3,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S10",
+    "start_ms": 39000,
+    "end_ms": 40000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.3,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S11",
+    "start_ms": 40000,
+    "end_ms": 41000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.25,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S12",
+    "start_ms": 41000,
+    "end_ms": 42000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.25,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S13",
+    "start_ms": 43000,
+    "end_ms": 44000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.3,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S14",
+    "start_ms": 47000,
+    "end_ms": 48000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.25,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S15",
+    "start_ms": 48000,
+    "end_ms": 49000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.25,
+        "speed": "slow_drift"
+      }
+    ]
+  },
+  {
+    "agent_id": "fx_generator",
+    "scene_id": "S16",
+    "start_ms": 49000,
+    "end_ms": 50000,
+    "effects": [
+      {
+        "type": "fog",
+        "geometry": "pattern",
+        "color": "#C0D0E0",
+        "opacity": 0.25,
+        "speed": "slow_drift"
+      }
+    ]
+  }
+]

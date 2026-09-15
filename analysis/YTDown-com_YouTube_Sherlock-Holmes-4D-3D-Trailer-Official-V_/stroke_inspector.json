@@ -1,0 +1,38 @@
+{
+  "agent_id": "stroke_inspector",
+  "global_style": {
+    "stroke_width": 1.8,
+    "stroke_linecap": "butt",
+    "stroke_linejoin": "miter",
+    "stroke_color": "#202020"
+  },
+  "exceptions": [
+    {
+      "target_id": "red_star_intro_logo",
+      "start_ms": 0,
+      "end_ms": 900,
+      "stroke_width": 6.0,
+      "stroke_linecap": "butt",
+      "stroke_linejoin": "miter",
+      "stroke_color": "#D60000"
+    },
+    {
+      "target_id": "sherlock_holmes_4d_logo",
+      "start_ms": 56000,
+      "end_ms": 59000,
+      "stroke_width": 1.5,
+      "stroke_linecap": "round",
+      "stroke_linejoin": "round",
+      "stroke_color": "#FFFFFF"
+    },
+    {
+      "target_id": "red_star_credits_logo",
+      "start_ms": 59000,
+      "end_ms": 62000,
+      "stroke_width": 1.5,
+      "stroke_linecap": "butt",
+      "stroke_linejoin": "miter",
+      "stroke_color": "#FFFFFF"
+    }
+  ]
+}

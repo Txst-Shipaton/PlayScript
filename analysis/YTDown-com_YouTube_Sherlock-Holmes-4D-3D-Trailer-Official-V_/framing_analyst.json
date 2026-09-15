@@ -1,0 +1,306 @@
+{
+  "agent_id": "framing_analyst",
+  "scenes": [
+    {
+      "scene_id": "S1",
+      "start_ms": 0,
+      "end_ms": 2000,
+      "shot_type": "title_card"
+    },
+    {
+      "scene_id": "S2",
+      "start_ms": 2000,
+      "end_ms": 3000,
+      "shot_type": "medium_wide"
+    },
+    {
+      "scene_id": "S3",
+      "start_ms": 3000,
+      "end_ms": 4000,
+      "shot_type": "medium_shot",
+      "camera_motion": {
+        "type": "zoom",
+        "direction": "out",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S4",
+      "start_ms": 4000,
+      "end_ms": 6000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S5",
+      "start_ms": 6000,
+      "end_ms": 8000,
+      "shot_type": "medium_shot",
+      "camera_motion": {
+        "type": "pan",
+        "direction": "right",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S6",
+      "start_ms": 8000,
+      "end_ms": 12000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S7",
+      "start_ms": 12000,
+      "end_ms": 14000,
+      "shot_type": "close_up",
+      "camera_motion": {
+        "type": "zoom",
+        "direction": "out",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S8",
+      "start_ms": 14000,
+      "end_ms": 15000,
+      "shot_type": "close_up"
+    },
+    {
+      "scene_id": "S9",
+      "start_ms": 15000,
+      "end_ms": 16000,
+      "shot_type": "close_up"
+    },
+    {
+      "scene_id": "S10",
+      "start_ms": 16000,
+      "end_ms": 17000,
+      "shot_type": "close_up"
+    },
+    {
+      "scene_id": "S11",
+      "start_ms": 17000,
+      "end_ms": 20000,
+      "shot_type": "medium_shot",
+      "camera_motion": {
+        "type": "pan",
+        "direction": "right",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S12",
+      "start_ms": 20000,
+      "end_ms": 21000,
+      "shot_type": "close_up",
+      "camera_motion": {
+        "type": "pan",
+        "direction": "right",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S13",
+      "start_ms": 21000,
+      "end_ms": 22000,
+      "shot_type": "wide_shot"
+    },
+    {
+      "scene_id": "S14",
+      "start_ms": 22000,
+      "end_ms": 23000,
+      "shot_type": "medium_wide"
+    },
+    {
+      "scene_id": "S15",
+      "start_ms": 23000,
+      "end_ms": 24000,
+      "shot_type": "extreme_close_up"
+    },
+    {
+      "scene_id": "S16",
+      "start_ms": 24000,
+      "end_ms": 25000,
+      "shot_type": "extreme_close_up"
+    },
+    {
+      "scene_id": "S17",
+      "start_ms": 25000,
+      "end_ms": 26000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S18",
+      "start_ms": 26000,
+      "end_ms": 27000,
+      "shot_type": "medium_shot",
+      "camera_motion": {
+        "type": "dolly",
+        "direction": "in",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S19",
+      "start_ms": 27000,
+      "end_ms": 28000,
+      "shot_type": "wide_shot"
+    },
+    {
+      "scene_id": "S20",
+      "start_ms": 28000,
+      "end_ms": 29000,
+      "shot_type": "close_up"
+    },
+    {
+      "scene_id": "S21",
+      "start_ms": 29000,
+      "end_ms": 31000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S22",
+      "start_ms": 31000,
+      "end_ms": 33000,
+      "shot_type": "wide_shot",
+      "camera_motion": {
+        "type": "pan",
+        "direction": "right",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S23",
+      "start_ms": 33000,
+      "end_ms": 34000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S24",
+      "start_ms": 34000,
+      "end_ms": 35000,
+      "shot_type": "medium_shot",
+      "camera_motion": {
+        "type": "pan",
+        "direction": "right",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S25",
+      "start_ms": 35000,
+      "end_ms": 37000,
+      "shot_type": "wide_shot"
+    },
+    {
+      "scene_id": "S26",
+      "start_ms": 37000,
+      "end_ms": 38000,
+      "shot_type": "medium_shot",
+      "camera_motion": {
+        "type": "pan",
+        "direction": "right",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S27",
+      "start_ms": 38000,
+      "end_ms": 39000,
+      "shot_type": "extreme_close_up"
+    },
+    {
+      "scene_id": "S28",
+      "start_ms": 39000,
+      "end_ms": 40000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S29",
+      "start_ms": 40000,
+      "end_ms": 41000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S30",
+      "start_ms": 41000,
+      "end_ms": 42000,
+      "shot_type": "wide_shot"
+    },
+    {
+      "scene_id": "S31",
+      "start_ms": 42000,
+      "end_ms": 43000,
+      "shot_type": "wide_shot"
+    },
+    {
+      "scene_id": "S32",
+      "start_ms": 43000,
+      "end_ms": 44000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S33",
+      "start_ms": 44000,
+      "end_ms": 45000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S34",
+      "start_ms": 45000,
+      "end_ms": 48000,
+      "shot_type": "high_angle_shot",
+      "camera_motion": {
+        "type": "dolly",
+        "direction": "out",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S35",
+      "start_ms": 48000,
+      "end_ms": 49000,
+      "shot_type": "close_up"
+    },
+    {
+      "scene_id": "S36",
+      "start_ms": 49000,
+      "end_ms": 50000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S37",
+      "start_ms": 50000,
+      "end_ms": 51000,
+      "shot_type": "close_up"
+    },
+    {
+      "scene_id": "S38",
+      "start_ms": 51000,
+      "end_ms": 52000,
+      "shot_type": "medium_shot",
+      "camera_motion": {
+        "type": "pan",
+        "direction": "right",
+        "speed": "linear"
+      }
+    },
+    {
+      "scene_id": "S39",
+      "start_ms": 52000,
+      "end_ms": 54000,
+      "shot_type": "medium_shot"
+    },
+    {
+      "scene_id": "S40",
+      "start_ms": 54000,
+      "end_ms": 57000,
+      "shot_type": "title_card"
+    },
+    {
+      "scene_id": "S41",
+      "start_ms": 57000,
+      "end_ms": 63000,
+      "shot_type": "end_credits"
+    }
+  ]
+}

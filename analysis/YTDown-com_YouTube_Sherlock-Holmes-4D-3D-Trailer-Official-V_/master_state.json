@@ -1,0 +1,5258 @@
+{
+  "source_video": "YTDown.com_YouTube_Sherlock-Holmes-4D-3D-Trailer-Official-V_Media_uuSsj3KMxz8_002_360p (1).mp4",
+  "model": "gemini-2.5-flash",
+  "agents": {
+    "framing_analyst": {
+      "agent_id": "framing_analyst",
+      "scenes": [
+        {
+          "scene_id": "S1",
+          "start_ms": 0,
+          "end_ms": 2000,
+          "shot_type": "title_card"
+        },
+        {
+          "scene_id": "S2",
+          "start_ms": 2000,
+          "end_ms": 3000,
+          "shot_type": "medium_wide"
+        },
+        {
+          "scene_id": "S3",
+          "start_ms": 3000,
+          "end_ms": 4000,
+          "shot_type": "medium_shot",
+          "camera_motion": {
+            "type": "zoom",
+            "direction": "out",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S4",
+          "start_ms": 4000,
+          "end_ms": 6000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S5",
+          "start_ms": 6000,
+          "end_ms": 8000,
+          "shot_type": "medium_shot",
+          "camera_motion": {
+            "type": "pan",
+            "direction": "right",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S6",
+          "start_ms": 8000,
+          "end_ms": 12000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S7",
+          "start_ms": 12000,
+          "end_ms": 14000,
+          "shot_type": "close_up",
+          "camera_motion": {
+            "type": "zoom",
+            "direction": "out",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S8",
+          "start_ms": 14000,
+          "end_ms": 15000,
+          "shot_type": "close_up"
+        },
+        {
+          "scene_id": "S9",
+          "start_ms": 15000,
+          "end_ms": 16000,
+          "shot_type": "close_up"
+        },
+        {
+          "scene_id": "S10",
+          "start_ms": 16000,
+          "end_ms": 17000,
+          "shot_type": "close_up"
+        },
+        {
+          "scene_id": "S11",
+          "start_ms": 17000,
+          "end_ms": 20000,
+          "shot_type": "medium_shot",
+          "camera_motion": {
+            "type": "pan",
+            "direction": "right",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S12",
+          "start_ms": 20000,
+          "end_ms": 21000,
+          "shot_type": "close_up",
+          "camera_motion": {
+            "type": "pan",
+            "direction": "right",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S13",
+          "start_ms": 21000,
+          "end_ms": 22000,
+          "shot_type": "wide_shot"
+        },
+        {
+          "scene_id": "S14",
+          "start_ms": 22000,
+          "end_ms": 23000,
+          "shot_type": "medium_wide"
+        },
+        {
+          "scene_id": "S15",
+          "start_ms": 23000,
+          "end_ms": 24000,
+          "shot_type": "extreme_close_up"
+        },
+        {
+          "scene_id": "S16",
+          "start_ms": 24000,
+          "end_ms": 25000,
+          "shot_type": "extreme_close_up"
+        },
+        {
+          "scene_id": "S17",
+          "start_ms": 25000,
+          "end_ms": 26000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S18",
+          "start_ms": 26000,
+          "end_ms": 27000,
+          "shot_type": "medium_shot",
+          "camera_motion": {
+            "type": "dolly",
+            "direction": "in",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S19",
+          "start_ms": 27000,
+          "end_ms": 28000,
+          "shot_type": "wide_shot"
+        },
+        {
+          "scene_id": "S20",
+          "start_ms": 28000,
+          "end_ms": 29000,
+          "shot_type": "close_up"
+        },
+        {
+          "scene_id": "S21",
+          "start_ms": 29000,
+          "end_ms": 31000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S22",
+          "start_ms": 31000,
+          "end_ms": 33000,
+          "shot_type": "wide_shot",
+          "camera_motion": {
+            "type": "pan",
+            "direction": "right",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S23",
+          "start_ms": 33000,
+          "end_ms": 34000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S24",
+          "start_ms": 34000,
+          "end_ms": 35000,
+          "shot_type": "medium_shot",
+          "camera_motion": {
+            "type": "pan",
+            "direction": "right",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S25",
+          "start_ms": 35000,
+          "end_ms": 37000,
+          "shot_type": "wide_shot"
+        },
+        {
+          "scene_id": "S26",
+          "start_ms": 37000,
+          "end_ms": 38000,
+          "shot_type": "medium_shot",
+          "camera_motion": {
+            "type": "pan",
+            "direction": "right",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S27",
+          "start_ms": 38000,
+          "end_ms": 39000,
+          "shot_type": "extreme_close_up"
+        },
+        {
+          "scene_id": "S28",
+          "start_ms": 39000,
+          "end_ms": 40000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S29",
+          "start_ms": 40000,
+          "end_ms": 41000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S30",
+          "start_ms": 41000,
+          "end_ms": 42000,
+          "shot_type": "wide_shot"
+        },
+        {
+          "scene_id": "S31",
+          "start_ms": 42000,
+          "end_ms": 43000,
+          "shot_type": "wide_shot"
+        },
+        {
+          "scene_id": "S32",
+          "start_ms": 43000,
+          "end_ms": 44000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S33",
+          "start_ms": 44000,
+          "end_ms": 45000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S34",
+          "start_ms": 45000,
+          "end_ms": 48000,
+          "shot_type": "high_angle_shot",
+          "camera_motion": {
+            "type": "dolly",
+            "direction": "out",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S35",
+          "start_ms": 48000,
+          "end_ms": 49000,
+          "shot_type": "close_up"
+        },
+        {
+          "scene_id": "S36",
+          "start_ms": 49000,
+          "end_ms": 50000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S37",
+          "start_ms": 50000,
+          "end_ms": 51000,
+          "shot_type": "close_up"
+        },
+        {
+          "scene_id": "S38",
+          "start_ms": 51000,
+          "end_ms": 52000,
+          "shot_type": "medium_shot",
+          "camera_motion": {
+            "type": "pan",
+            "direction": "right",
+            "speed": "linear"
+          }
+        },
+        {
+          "scene_id": "S39",
+          "start_ms": 52000,
+          "end_ms": 54000,
+          "shot_type": "medium_shot"
+        },
+        {
+          "scene_id": "S40",
+          "start_ms": 54000,
+          "end_ms": 57000,
+          "shot_type": "title_card"
+        },
+        {
+          "scene_id": "S41",
+          "start_ms": 57000,
+          "end_ms": 63000,
+          "shot_type": "end_credits"
+        }
+      ]
+    },
+    "colorist": {
+      "agent_id": "colorist",
+      "global_palette": [
+        "#000000",
+        "#C3073F",
+        "#2C3E4C"
+      ],
+      "scene_gradients": [
+        {
+          "scene_id": "0ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#C3073F"
+            },
+            {
+              "offset": "100%",
+              "color": "#000000"
+            }
+          ]
+        },
+        {
+          "scene_id": "2000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#5A6C7D"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "3000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A4B3C"
+            }
+          ]
+        },
+        {
+          "scene_id": "6000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#D4A76B"
+            },
+            {
+              "offset": "100%",
+              "color": "#8B2C3E"
+            }
+          ]
+        },
+        {
+          "scene_id": "8000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#8B2C3E"
+            }
+          ]
+        },
+        {
+          "scene_id": "12000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#8B2C3E"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A202F"
+            }
+          ]
+        },
+        {
+          "scene_id": "14000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#8B2C3E"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A202F"
+            }
+          ]
+        },
+        {
+          "scene_id": "15000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#4A3B2C"
+            },
+            {
+              "offset": "100%",
+              "color": "#2A1B0C"
+            }
+          ]
+        },
+        {
+          "scene_id": "16000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#8B2C3E"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A202F"
+            }
+          ]
+        },
+        {
+          "scene_id": "17000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#D4A76B"
+            },
+            {
+              "offset": "100%",
+              "color": "#4A3B2C"
+            }
+          ]
+        },
+        {
+          "scene_id": "18000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A2B3C"
+            }
+          ]
+        },
+        {
+          "scene_id": "20000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "21000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "22000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "23000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#D4A76B"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "24000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#5A6C7D"
+            },
+            {
+              "offset": "100%",
+              "color": "#2C3E4C"
+            }
+          ]
+        },
+        {
+          "scene_id": "25000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#8B2C3E"
+            }
+          ]
+        },
+        {
+          "scene_id": "26000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#5A6C7D"
+            },
+            {
+              "offset": "100%",
+              "color": "#2C3E4C"
+            }
+          ]
+        },
+        {
+          "scene_id": "27000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#5A6C7D"
+            },
+            {
+              "offset": "100%",
+              "color": "#2C3E4C"
+            }
+          ]
+        },
+        {
+          "scene_id": "28000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#C0A080"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "29000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "30000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "32000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#5A6C7D"
+            },
+            {
+              "offset": "100%",
+              "color": "#2F7F4F"
+            }
+          ]
+        },
+        {
+          "scene_id": "33000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "35000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "37000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "38000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#D4A76B"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "39000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "40000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "41000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#A0B0C0"
+            },
+            {
+              "offset": "100%",
+              "color": "#2C3E4C"
+            }
+          ]
+        },
+        {
+          "scene_id": "42000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "43000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#5A6C7D"
+            },
+            {
+              "offset": "100%",
+              "color": "#2A3B4C"
+            }
+          ]
+        },
+        {
+          "scene_id": "44000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "45000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2A3B4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "48000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#A0B0C0"
+            },
+            {
+              "offset": "100%",
+              "color": "#2C3E4C"
+            }
+          ]
+        },
+        {
+          "scene_id": "49000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#3A3A3A"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A1A1A"
+            }
+          ]
+        },
+        {
+          "scene_id": "50000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "51000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#1A2B3D"
+            }
+          ]
+        },
+        {
+          "scene_id": "52000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#2C3E4C"
+            },
+            {
+              "offset": "100%",
+              "color": "#5A6C7D"
+            }
+          ]
+        },
+        {
+          "scene_id": "53000ms",
+          "gradient_type": "radial",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#D4A76B"
+            },
+            {
+              "offset": "100%",
+              "color": "#2A2A2A"
+            }
+          ]
+        },
+        {
+          "scene_id": "54000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#1A2B3D"
+            },
+            {
+              "offset": "100%",
+              "color": "#0A1B2D"
+            }
+          ]
+        },
+        {
+          "scene_id": "56000ms",
+          "gradient_type": "linear",
+          "stops": [
+            {
+              "offset": "0%",
+              "color": "#1A2B3D"
+            },
+            {
+              "offset": "100%",
+              "color": "#0A1B2D"
+            }
+          ]
+        }
+      ]
+    },
+    "environment_mapper": [
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S1",
+        "timestamp_ms": 0,
+        "background_elements": [
+          {
+            "element_id": "bg_red_gradient",
+            "geometry": "radial_gradient",
+            "dominant_color": "#330000",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "bg_light_rays",
+            "geometry": "radial_lines",
+            "dominant_color": "#660000",
+            "perspective_scale": 1.0
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S2",
+        "timestamp_ms": 2000,
+        "background_elements": [
+          {
+            "element_id": "building_facade",
+            "geometry": "layered_rectangles_and_arches",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "door_221b",
+            "geometry": "arched_rectangle",
+            "dominant_color": "#2B3545",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "door_number_plate",
+            "geometry": "rectangle_with_text",
+            "dominant_color": "#8C8C8C"
+          },
+          {
+            "element_id": "door_knocker",
+            "geometry": "ornate_metal_shape",
+            "dominant_color": "#C8A850"
+          },
+          {
+            "element_id": "railing_left",
+            "geometry": "curved_metal_bars",
+            "dominant_color": "#3A4A5B"
+          },
+          {
+            "element_id": "railing_right",
+            "geometry": "curved_metal_bars",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S3",
+        "timestamp_ms": 3000,
+        "background_elements": [
+          {
+            "element_id": "wallpaper_pattern",
+            "geometry": "patterned_surface",
+            "dominant_color": "#6B423A",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "bookshelf_right",
+            "geometry": "stacked_rectangles",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "window_left",
+            "geometry": "grid_rectangle",
+            "dominant_color": "#3A4A5B",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "curtain_left",
+            "geometry": "draped_fabric",
+            "dominant_color": "#4A5A6B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S4",
+        "timestamp_ms": 6000,
+        "background_elements": [
+          {
+            "element_id": "wallpaper_pattern",
+            "geometry": "patterned_surface",
+            "dominant_color": "#6B423A",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "desk_left",
+            "geometry": "wooden_desk",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 0.7
+          },
+          {
+            "element_id": "rifle_on_wall",
+            "geometry": "linear_shape",
+            "dominant_color": "#4A3A2E"
+          },
+          {
+            "element_id": "framed_pictures",
+            "geometry": "rectangles_on_wall",
+            "dominant_color": "#8C6B5A"
+          },
+          {
+            "element_id": "wall_clock",
+            "geometry": "circular_shape",
+            "dominant_color": "#8C6B5A"
+          },
+          {
+            "element_id": "doorway_right",
+            "geometry": "rectangle_opening",
+            "dominant_color": "#3A4A5B",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "wall_sconce_right",
+            "geometry": "wall_lamp",
+            "dominant_color": "#C8A850"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S5",
+        "timestamp_ms": 8000,
+        "background_elements": [
+          {
+            "element_id": "wallpaper_pattern",
+            "geometry": "patterned_surface",
+            "dominant_color": "#6B423A",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "bookshelf_right",
+            "geometry": "stacked_rectangles",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "window_left",
+            "geometry": "grid_rectangle",
+            "dominant_color": "#3A4A5B",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "curtain_left",
+            "geometry": "draped_fabric",
+            "dominant_color": "#4A5A6B"
+          },
+          {
+            "element_id": "wall_lamp_right",
+            "geometry": "wall_lamp",
+            "dominant_color": "#C8A850"
+          },
+          {
+            "element_id": "framed_pictures_right",
+            "geometry": "rectangles_on_wall",
+            "dominant_color": "#8C6B5A"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S6",
+        "timestamp_ms": 12000,
+        "background_elements": [
+          {
+            "element_id": "wallpaper_pattern",
+            "geometry": "patterned_surface",
+            "dominant_color": "#6B423A",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "bookshelf_background",
+            "geometry": "stacked_rectangles",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 0.7
+          },
+          {
+            "element_id": "wall_decor_background",
+            "geometry": "various_shapes",
+            "dominant_color": "#8C6B5A"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S7",
+        "timestamp_ms": 15000,
+        "background_elements": [
+          {
+            "element_id": "wooden_table_surface",
+            "geometry": "flat_rectangle",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 1.0
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S8",
+        "timestamp_ms": 16000,
+        "background_elements": [
+          {
+            "element_id": "wallpaper_pattern",
+            "geometry": "patterned_surface",
+            "dominant_color": "#6B423A",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "marble_bust",
+            "geometry": "sculpted_figure",
+            "dominant_color": "#DCDCDC"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S9",
+        "timestamp_ms": 17000,
+        "background_elements": [
+          {
+            "element_id": "wooden_table_surface",
+            "geometry": "flat_rectangle",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "fireplace_mantel",
+            "geometry": "rectangular_structure",
+            "dominant_color": "#8C6B5A"
+          },
+          {
+            "element_id": "fireplace_fire",
+            "geometry": "glowing_rectangle",
+            "dominant_color": "#FF8C00"
+          },
+          {
+            "element_id": "papers_on_table",
+            "geometry": "layered_rectangles",
+            "dominant_color": "#E0D0B0"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S10",
+        "timestamp_ms": 18000,
+        "background_elements": [
+          {
+            "element_id": "curtains_left",
+            "geometry": "draped_fabric",
+            "dominant_color": "#3A4A5B",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "bookshelf_right",
+            "geometry": "stacked_rectangles",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "wall_lamp_right",
+            "geometry": "wall_lamp",
+            "dominant_color": "#C8A850"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S11",
+        "timestamp_ms": 20000,
+        "background_elements": [
+          {
+            "element_id": "pavement_ground",
+            "geometry": "flat_plane_with_lines",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0,
+            "horizon_lines": [
+              0.6
+            ]
+          },
+          {
+            "element_id": "street_lamps",
+            "geometry": "vertical_poles_with_lights",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 0.7
+          },
+          {
+            "element_id": "distant_buildings",
+            "geometry": "silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          },
+          {
+            "element_id": "fog_effect",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S12",
+        "timestamp_ms": 21000,
+        "background_elements": [
+          {
+            "element_id": "bank_building_facade",
+            "geometry": "classical_architecture",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "columns",
+            "geometry": "vertical_cylinders",
+            "dominant_color": "#5C6C7D"
+          },
+          {
+            "element_id": "bank_sign",
+            "geometry": "text_on_facade",
+            "dominant_color": "#DCDCDC"
+          },
+          {
+            "element_id": "windows",
+            "geometry": "dark_rectangles",
+            "dominant_color": "#2A3A4B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S13",
+        "timestamp_ms": 22000,
+        "background_elements": [
+          {
+            "element_id": "bank_entrance_arches",
+            "geometry": "arched_openings",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "columns",
+            "geometry": "vertical_cylinders",
+            "dominant_color": "#5C6C7D"
+          },
+          {
+            "element_id": "street_lamp_right",
+            "geometry": "vertical_pole_with_light",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "park_bench_right",
+            "geometry": "rectangular_bench",
+            "dominant_color": "#5C3A2E"
+          },
+          {
+            "element_id": "police_barriers",
+            "geometry": "crossed_bars",
+            "dominant_color": "#8C8C8C"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S14",
+        "timestamp_ms": 23000,
+        "background_elements": [
+          {
+            "element_id": "blurry_background",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S15",
+        "timestamp_ms": 24000,
+        "background_elements": [
+          {
+            "element_id": "paper_surface",
+            "geometry": "flat_plane",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "money_bill",
+            "geometry": "rectangle_with_texture",
+            "dominant_color": "#5C6C7D"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S16",
+        "timestamp_ms": 25000,
+        "background_elements": [
+          {
+            "element_id": "wallpaper_pattern",
+            "geometry": "patterned_surface",
+            "dominant_color": "#6B423A",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "bookshelf_background",
+            "geometry": "stacked_rectangles",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "bust_left",
+            "geometry": "sculpted_figure",
+            "dominant_color": "#DCDCDC"
+          },
+          {
+            "element_id": "wall_clock_left",
+            "geometry": "circular_shape",
+            "dominant_color": "#8C6B5A"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S17",
+        "timestamp_ms": 26000,
+        "background_elements": [
+          {
+            "element_id": "hallway_floor",
+            "geometry": "flat_plane",
+            "dominant_color": "#3A4A5B",
+            "perspective_scale": 1.0,
+            "vanishing_points": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "element_id": "arched_doorways",
+            "geometry": "series_of_arches",
+            "dominant_color": "#5C3A2E",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "wall_paintings",
+            "geometry": "rectangular_frames",
+            "dominant_color": "#8C6B5A"
+          },
+          {
+            "element_id": "wall_sconces",
+            "geometry": "wall_lamps",
+            "dominant_color": "#C8A850"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S18",
+        "timestamp_ms": 27000,
+        "background_elements": [
+          {
+            "element_id": "hall_columns",
+            "geometry": "series_of_columns",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 0.9,
+            "vanishing_points": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "element_id": "arched_ceiling",
+            "geometry": "vaulted_ceiling",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.7
+          },
+          {
+            "element_id": "floor_debris",
+            "geometry": "scattered_shapes",
+            "dominant_color": "#5C3A2E"
+          },
+          {
+            "element_id": "benches",
+            "geometry": "rectangular_shapes",
+            "dominant_color": "#5C3A2E"
+          },
+          {
+            "element_id": "grated_door_left",
+            "geometry": "metal_grate_rectangle",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "light_shafts",
+            "geometry": "conical_light",
+            "dominant_color": "#C8A850"
+          },
+          {
+            "element_id": "wall_paintings",
+            "geometry": "rectangular_frames",
+            "dominant_color": "#8C6B5A"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S19",
+        "timestamp_ms": 29000,
+        "background_elements": [
+          {
+            "element_id": "blurry_background",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S20",
+        "timestamp_ms": 30000,
+        "background_elements": [
+          {
+            "element_id": "hall_columns_background",
+            "geometry": "vertical_cylinders",
+            "dominant_color": "#3A4A5B",
+            "perspective_scale": 0.7
+          },
+          {
+            "element_id": "dark_background",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S21",
+        "timestamp_ms": 31000,
+        "background_elements": [
+          {
+            "element_id": "flower_stall",
+            "geometry": "rectangular_booth",
+            "dominant_color": "#2E8B57",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "street_lamps",
+            "geometry": "vertical_poles_with_lights",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 0.7
+          },
+          {
+            "element_id": "distant_buildings_skyline",
+            "geometry": "silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.4,
+            "horizon_lines": [
+              0.6
+            ]
+          },
+          {
+            "element_id": "Nelson_column",
+            "geometry": "tall_column_with_statue",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 0.3
+          },
+          {
+            "element_id": "ground_pavement",
+            "geometry": "flat_plane",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "crates_barrels",
+            "geometry": "stacked_rectangles_cylinders",
+            "dominant_color": "#5C3A2E"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S22",
+        "timestamp_ms": 33000,
+        "background_elements": [
+          {
+            "element_id": "flower_stall_interior",
+            "geometry": "grid_shelves",
+            "dominant_color": "#2E8B57",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "roses_bundles",
+            "geometry": "stacked_rectangles",
+            "dominant_color": "#8B0000"
+          },
+          {
+            "element_id": "closed_sign",
+            "geometry": "hanging_rectangle_with_text",
+            "dominant_color": "#DCDCDC"
+          },
+          {
+            "element_id": "distant_city_blur",
+            "geometry": "blurry_silhouette",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.3
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S23",
+        "timestamp_ms": 34000,
+        "background_elements": [
+          {
+            "element_id": "riverbank_wall",
+            "geometry": "long_rectangle",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0,
+            "horizon_lines": [
+              0.7
+            ]
+          },
+          {
+            "element_id": "street_lamp_foreground",
+            "geometry": "vertical_pole_with_light",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "distant_Tower_Bridge",
+            "geometry": "complex_bridge_silhouette",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.4
+          },
+          {
+            "element_id": "city_lights_background",
+            "geometry": "small_glowing_dots",
+            "dominant_color": "#C8A850"
+          },
+          {
+            "element_id": "fog_effect",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S24",
+        "timestamp_ms": 35000,
+        "background_elements": [
+          {
+            "element_id": "Tower_Bridge_structure",
+            "geometry": "complex_gothic_bridge",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "river_surface",
+            "geometry": "flat_plane_with_reflections",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.8,
+            "horizon_lines": [
+              0.7
+            ]
+          },
+          {
+            "element_id": "distant_city_lights",
+            "geometry": "small_glowing_dots",
+            "dominant_color": "#C8A850",
+            "perspective_scale": 0.3
+          },
+          {
+            "element_id": "fog_effect",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S25",
+        "timestamp_ms": 37000,
+        "background_elements": [
+          {
+            "element_id": "stone_wall_background",
+            "geometry": "textured_rectangle",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S26",
+        "timestamp_ms": 38000,
+        "background_elements": [
+          {
+            "element_id": "blurry_background",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S27",
+        "timestamp_ms": 39000,
+        "background_elements": [
+          {
+            "element_id": "rooftop_surface",
+            "geometry": "flat_plane",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "gargoyles_foreground",
+            "geometry": "sculpted_figures",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "distant_city_skyline",
+            "geometry": "silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.4,
+            "horizon_lines": [
+              0.6
+            ]
+          },
+          {
+            "element_id": "fog_effect",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S28",
+        "timestamp_ms": 40000,
+        "background_elements": [
+          {
+            "element_id": "Tower_Bridge_structure",
+            "geometry": "complex_gothic_bridge",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "distant_city_skyline",
+            "geometry": "silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.4
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S29",
+        "timestamp_ms": 41000,
+        "background_elements": [
+          {
+            "element_id": "stone_fountain",
+            "geometry": "tiered_circular_structure",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "water_spray",
+            "geometry": "diffuse_cloud",
+            "dominant_color": "#DCDCDC"
+          },
+          {
+            "element_id": "street_lamps_background",
+            "geometry": "vertical_poles_with_lights",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 0.7
+          },
+          {
+            "element_id": "distant_buildings_skyline",
+            "geometry": "silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.4,
+            "horizon_lines": [
+              0.6
+            ]
+          },
+          {
+            "element_id": "fog_effect",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S30",
+        "timestamp_ms": 42000,
+        "background_elements": [
+          {
+            "element_id": "Tower_of_London_castle",
+            "geometry": "medieval_castle_complex",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "street_lamp_right",
+            "geometry": "vertical_pole_with_light",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "tower_sign",
+            "geometry": "hanging_rectangle_with_text",
+            "dominant_color": "#5C3A2E"
+          },
+          {
+            "element_id": "stone_wall_foreground",
+            "geometry": "textured_rectangle",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S31",
+        "timestamp_ms": 43000,
+        "background_elements": [
+          {
+            "element_id": "large_metal_gate",
+            "geometry": "vertical_bars_with_rivets",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "stone_wall_sides",
+            "geometry": "textured_rectangles",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S32",
+        "timestamp_ms": 44000,
+        "background_elements": [
+          {
+            "element_id": "Tower_Bridge_structure",
+            "geometry": "complex_gothic_bridge",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "distant_city_skyline",
+            "geometry": "silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.4
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S33",
+        "timestamp_ms": 45000,
+        "background_elements": [
+          {
+            "element_id": "shaft_walls",
+            "geometry": "vertical_textured_rectangles",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0,
+            "vanishing_points": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
+          },
+          {
+            "element_id": "dark_water_below",
+            "geometry": "flat_plane",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S34",
+        "timestamp_ms": 48000,
+        "background_elements": [
+          {
+            "element_id": "water_surface",
+            "geometry": "textured_plane_with_ripples",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "water_ripples",
+            "geometry": "concentric_circles",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S35",
+        "timestamp_ms": 49000,
+        "background_elements": [
+          {
+            "element_id": "stone_building_facade",
+            "geometry": "textured_rectangle",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0
+          },
+          {
+            "element_id": "windows",
+            "geometry": "dark_rectangles",
+            "dominant_color": "#2A3A4B"
+          },
+          {
+            "element_id": "smoke_cloud",
+            "geometry": "irregular_blob",
+            "dominant_color": "#333333"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S36",
+        "timestamp_ms": 50000,
+        "background_elements": [
+          {
+            "element_id": "Tower_Bridge_structure",
+            "geometry": "complex_gothic_bridge",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "distant_city_skyline",
+            "geometry": "silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.4
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S37",
+        "timestamp_ms": 51000,
+        "background_elements": [
+          {
+            "element_id": "blurry_background",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S38",
+        "timestamp_ms": 52000,
+        "background_elements": [
+          {
+            "element_id": "cobblestone_street",
+            "geometry": "textured_plane",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 1.0,
+            "horizon_lines": [
+              0.7
+            ],
+            "vanishing_points": [
+              {
+                "x": 0.5,
+                "y": 0.7
+              }
+            ]
+          },
+          {
+            "element_id": "Bank_of_England_building",
+            "geometry": "classical_architecture",
+            "dominant_color": "#5C6C7D",
+            "perspective_scale": 0.8
+          },
+          {
+            "element_id": "street_lamps_background",
+            "geometry": "vertical_poles_with_lights",
+            "dominant_color": "#8C8C8C",
+            "perspective_scale": 0.7
+          },
+          {
+            "element_id": "fog_effect",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S39",
+        "timestamp_ms": 53000,
+        "background_elements": [
+          {
+            "element_id": "dark_blurry_background",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S40",
+        "timestamp_ms": 54000,
+        "background_elements": [
+          {
+            "element_id": "stone_wall_background",
+            "geometry": "textured_rectangle",
+            "dominant_color": "#4A5A6B",
+            "perspective_scale": 0.9
+          },
+          {
+            "element_id": "dark_background",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.5
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S41",
+        "timestamp_ms": 55000,
+        "background_elements": [
+          {
+            "element_id": "city_silhouette",
+            "geometry": "layered_silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.6
+          },
+          {
+            "element_id": "fog_effect",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#3A4A5B"
+          }
+        ]
+      },
+      {
+        "agent_id": "environment_mapper",
+        "scene_id": "S42",
+        "timestamp_ms": 59000,
+        "background_elements": [
+          {
+            "element_id": "city_silhouette",
+            "geometry": "layered_silhouettes",
+            "dominant_color": "#2A3A4B",
+            "perspective_scale": 0.6
+          },
+          {
+            "element_id": "fog_effect",
+            "geometry": "diffuse_gradient",
+            "dominant_color": "#3A4A4B"
+          }
+        ]
+      }
+    ],
+    "character_morphologist": {
+      "agent_id": "character_morphologist",
+      "entities": [
+        {
+          "entity_id": "sherlock_holmes",
+          "base_geometry": {
+            "head": "elongated_oval",
+            "torso": "slim_rectangular",
+            "clothing_style": "victorian_detective_layered_plaid"
+          },
+          "colors": {
+            "skin": "#E0B996",
+            "hair": "#4A2E1D",
+            "eyes": "#5F8B5A",
+            "shirt": "#FFFFFF",
+            "waistcoat": "#3B5B52",
+            "cravat": "#1A1A1A",
+            "deerstalker_hat_base": "#8B4513",
+            "deerstalker_hat_checks": "#6B3E26",
+            "overcoat_base": "#8B4513",
+            "overcoat_checks": "#6B3E26",
+            "trousers": "#C0C0C0",
+            "shoes": "#4A2E1D",
+            "pipe_wood": "#8B4513",
+            "pipe_mouthpiece": "#1A1A1A",
+            "magnifying_glass_handle": "#8B4513",
+            "magnifying_glass_rim": "#C0C0C0"
+          }
+        },
+        {
+          "entity_id": "dr_watson",
+          "base_geometry": {
+            "head": "round_plump",
+            "torso": "stout_rounded",
+            "clothing_style": "victorian_formal_layered"
+          },
+          "colors": {
+            "skin": "#E0B996",
+            "hair": "#4A2E1D",
+            "moustache": "#4A2E1D",
+            "eyes": "#5F8B5A",
+            "bowler_hat": "#1A1A1A",
+            "bowler_hat_band": "#4A2E1D",
+            "jacket": "#8B4513",
+            "waistcoat": "#3B5B52",
+            "shirt": "#FFFFFF",
+            "bowtie": "#1A1A1A",
+            "trousers": "#4A2E1D",
+            "shoes": "#1A1A1A"
+          }
+        },
+        {
+          "entity_id": "moriarty",
+          "base_geometry": {
+            "head": "elongated_oval_sharp_angular",
+            "torso": "very_slender_rectangular",
+            "clothing_style": "victorian_villain_theatrical_high_contrast"
+          },
+          "colors": {
+            "skin": "#E0B996",
+            "hair": "#4A2E1D",
+            "moustache_goatee": "#1A1A1A",
+            "eyes": "#5F8B5A",
+            "top_hat": "#1A1A1A",
+            "top_hat_band": "#DAA520",
+            "coat_main": "#8B0000",
+            "coat_lapels": "#1A1A1A",
+            "ruffled_cravat": "#FF0000",
+            "shirt": "#FFFFFF",
+            "gloves": "#FFFFFF",
+            "trousers": "#FF0000",
+            "shoes": "#1A1A1A"
+          }
+        },
+        {
+          "entity_id": "police_officer",
+          "base_geometry": {
+            "head": "oval",
+            "torso": "rectangular_slightly_stout",
+            "clothing_style": "victorian_police_uniform"
+          },
+          "colors": {
+            "skin": "#E0B996",
+            "uniform": "#1A1A1A",
+            "helmet": "#1A1A1A",
+            "helmet_badge": "#C0C0C0",
+            "gloves": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    "rigging_analyst": [
+      {
+        "agent_id": "rigging_analyst",
+        "entity_id": "sherlock_holmes",
+        "timestamp_ms": 4000,
+        "svg_grouping_hierarchy": {
+          "root": "torso",
+          "children": [
+            {
+              "id": "head",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 90
+              },
+              "default_rotation": 0
+            },
+            {
+              "id": "arm_left",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "forearm_left",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0,
+                  "children": [
+                    {
+                      "id": "hand_left",
+                      "pivot_point": {
+                        "x_percent": 50,
+                        "y_percent": 10
+                      },
+                      "default_rotation": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "arm_right",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "forearm_right",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0,
+                  "children": [
+                    {
+                      "id": "hand_right",
+                      "pivot_point": {
+                        "x_percent": 50,
+                        "y_percent": 10
+                      },
+                      "default_rotation": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "leg_left",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "shin_left",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0,
+                  "children": [
+                    {
+                      "id": "foot_left",
+                      "pivot_point": {
+                        "x_percent": 50,
+                        "y_percent": 10
+                      },
+                      "default_rotation": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "leg_right",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "shin_right",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0,
+                  "children": [
+                    {
+                      "id": "foot_right",
+                      "pivot_point": {
+                        "x_percent": 50,
+                        "y_percent": 10
+                      },
+                      "default_rotation": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "agent_id": "rigging_analyst",
+        "entity_id": "dr_watson",
+        "timestamp_ms": 5000,
+        "svg_grouping_hierarchy": {
+          "root": "torso",
+          "children": [
+            {
+              "id": "head",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 90
+              },
+              "default_rotation": 0
+            },
+            {
+              "id": "arm_left",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "forearm_left",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0,
+                  "children": [
+                    {
+                      "id": "hand_left",
+                      "pivot_point": {
+                        "x_percent": 50,
+                        "y_percent": 10
+                      },
+                      "default_rotation": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "arm_right",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "forearm_right",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0,
+                  "children": [
+                    {
+                      "id": "hand_right",
+                      "pivot_point": {
+                        "x_percent": 50,
+                        "y_percent": 10
+                      },
+                      "default_rotation": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "leg_left",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "shin_left",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0,
+                  "children": [
+                    {
+                      "id": "foot_left",
+                      "pivot_point": {
+                        "x_percent": 50,
+                        "y_percent": 10
+                      },
+                      "default_rotation": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "leg_right",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "shin_right",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0,
+                  "children": [
+                    {
+                      "id": "foot_right",
+                      "pivot_point": {
+                        "x_percent": 50,
+                        "y_percent": 10
+                      },
+                      "default_rotation": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "motion_tracker": {
+      "agent_id": "motion_tracker",
+      "animations": [
+        {
+          "target_id": "red_star_text",
+          "action": "fade_in_scale_up",
+          "duration_ms": 1000,
+          "easing": "ease-out",
+          "transform": {
+            "opacity": 1,
+            "scale_x": 1.05,
+            "scale_y": 1.05
+          }
+        },
+        {
+          "target_id": "red_star_x_logo",
+          "action": "fade_in_scale_up",
+          "duration_ms": 1000,
+          "easing": "ease-out",
+          "transform": {
+            "opacity": 1,
+            "scale_x": 1.05,
+            "scale_y": 1.05
+          }
+        },
+        {
+          "target_id": "red_star_x_logo",
+          "action": "exit_rotate_translate",
+          "duration_ms": 500,
+          "easing": "ease-in",
+          "transform": {
+            "translate_x": 200,
+            "rotate": 90,
+            "opacity": 0
+          }
+        },
+        {
+          "target_id": "red_star_text",
+          "action": "exit_translate",
+          "duration_ms": 500,
+          "easing": "ease-in",
+          "transform": {
+            "translate_x": -200,
+            "opacity": 0
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "zoom_in_door",
+          "duration_ms": 500,
+          "easing": "ease-out",
+          "transform": {
+            "translate_z": 50
+          }
+        },
+        {
+          "target_id": "hand_picking_pipe",
+          "action": "move_to_pipe",
+          "duration_ms": 500,
+          "easing": "ease-in-out",
+          "transform": {
+            "translate_x": 150,
+            "translate_y": -20
+          }
+        },
+        {
+          "target_id": "pipe_on_table",
+          "action": "lift_rotate",
+          "duration_ms": 500,
+          "easing": "ease-in-out",
+          "transform": {
+            "translate_y": -10,
+            "rotate": 10
+          }
+        },
+        {
+          "target_id": "hand_placing_hat",
+          "action": "place_hat",
+          "duration_ms": 500,
+          "easing": "ease-in-out",
+          "transform": {
+            "translate_x": -100,
+            "translate_y": 50
+          }
+        },
+        {
+          "target_id": "hat_on_bust",
+          "action": "fall_bounce",
+          "duration_ms": 300,
+          "easing": "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+          "transform": {
+            "translate_y": 20,
+            "scale_y": 0.95
+          }
+        },
+        {
+          "target_id": "hand_scanning_papers",
+          "action": "scan_papers",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 50,
+            "translate_y": 10
+          }
+        },
+        {
+          "target_id": "magnifying_glass_papers",
+          "action": "scan_papers",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 50,
+            "translate_y": 10
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "track_forward_feet",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_z": 100
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "zoom_out_bank",
+          "duration_ms": 500,
+          "easing": "ease-out",
+          "transform": {
+            "translate_z": -50
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "pan_down_police",
+          "duration_ms": 500,
+          "easing": "ease-in-out",
+          "transform": {
+            "translate_y": 50,
+            "translate_z": -20
+          }
+        },
+        {
+          "target_id": "magnifying_glass_sherlock_eye",
+          "action": "wobble",
+          "duration_ms": 500,
+          "easing": "cubic-bezier(0.47, 0, 0.745, 0.715)",
+          "transform": {
+            "translate_x": 5,
+            "translate_y": -5
+          }
+        },
+        {
+          "target_id": "watson_running_hall",
+          "action": "run_towards_camera",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_z": 200,
+            "scale_x": 1.2,
+            "scale_y": 1.2
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "track_forward_hall",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_z": 150
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "track_sherlock_running_street",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 100,
+            "translate_z": 50
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "pan_at_stall",
+          "duration_ms": 500,
+          "easing": "ease-in-out",
+          "transform": {
+            "translate_x": 50,
+            "translate_y": 20
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "track_sherlock_river",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 100,
+            "translate_z": 50
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "pan_to_bridge",
+          "duration_ms": 500,
+          "easing": "ease-in-out",
+          "transform": {
+            "rotate_y": 15
+          }
+        },
+        {
+          "target_id": "sherlock_running_street",
+          "action": "run_forward",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 100,
+            "translate_z": 50
+          }
+        },
+        {
+          "target_id": "villain_running_street",
+          "action": "run_forward",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 100,
+            "translate_z": 50
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "track_running_duo",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 100,
+            "translate_z": 50
+          }
+        },
+        {
+          "target_id": "magnifying_glass_sherlock_face",
+          "action": "wobble",
+          "duration_ms": 500,
+          "easing": "cubic-bezier(0.47, 0, 0.745, 0.715)",
+          "transform": {
+            "translate_x": -5,
+            "translate_y": 5
+          }
+        },
+        {
+          "target_id": "sherlock_jumping_gap",
+          "action": "jump",
+          "duration_ms": 500,
+          "easing": "cubic-bezier(0.42, 0, 0.58, 1)",
+          "transform": {
+            "translate_y": -50,
+            "translate_z": 50
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "pan_down_fountain",
+          "duration_ms": 500,
+          "easing": "ease-in-out",
+          "transform": {
+            "rotate_x": 10
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "track_sherlock_tower",
+          "duration_ms": 500,
+          "easing": "linear",
+          "transform": {
+            "translate_z": 100
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "pan_up_bridge",
+          "duration_ms": 500,
+          "easing": "ease-in-out",
+          "transform": {
+            "rotate_x": -15
+          }
+        },
+        {
+          "target_id": "sherlock_falling_shaft",
+          "action": "fall",
+          "duration_ms": 1000,
+          "easing": "ease-in",
+          "transform": {
+            "translate_y": 300,
+            "scale_x": 1.05,
+            "scale_y": 1.05
+          }
+        },
+        {
+          "target_id": "explosion_disc",
+          "action": "emerge_rotate_scale",
+          "duration_ms": 1000,
+          "easing": "ease-out",
+          "transform": {
+            "translate_y": -50,
+            "rotate": 360,
+            "scale_x": 1.5,
+            "scale_y": 1.5,
+            "opacity": 0
+          }
+        },
+        {
+          "target_id": "watson_jumping_bridge",
+          "action": "jump",
+          "duration_ms": 500,
+          "easing": "cubic-bezier(0.42, 0, 0.58, 1)",
+          "transform": {
+            "translate_y": -50,
+            "translate_x": 50
+          }
+        },
+        {
+          "target_id": "villain_running_away",
+          "action": "run_away",
+          "duration_ms": 1000,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 150,
+            "translate_z": 100
+          }
+        },
+        {
+          "target_id": "camera_view",
+          "action": "track_villain",
+          "duration_ms": 1000,
+          "easing": "linear",
+          "transform": {
+            "translate_x": 150,
+            "translate_z": 100
+          }
+        },
+        {
+          "target_id": "title_text",
+          "action": "fade_in_grow",
+          "duration_ms": 2000,
+          "easing": "ease-out",
+          "transform": {
+            "opacity": 1,
+            "scale_x": 1.05,
+            "scale_y": 1.05
+          }
+        },
+        {
+          "target_id": "credits_text",
+          "action": "fade_in",
+          "duration_ms": 1000,
+          "easing": "linear",
+          "transform": {
+            "opacity": 1
+          }
+        }
+      ]
+    },
+    "lighting_renderer": [
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "2000",
+        "light_source_vector": {
+          "x": -100,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "door_knocker",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 3,
+            "offset_x": 3,
+            "offset_y": 5
+          },
+          {
+            "target_id": "door_frame",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": 2,
+            "offset_y": 4
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "3000",
+        "light_source_vector": {
+          "x": -20,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.25,
+            "blur_radius": 4,
+            "offset_x": 2,
+            "offset_y": 5
+          },
+          {
+            "target_id": "watson_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 3,
+            "offset_x": 3,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "7000",
+        "light_source_vector": {
+          "x": 50,
+          "y": -80
+        },
+        "shadows": [
+          {
+            "target_id": "watson_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 5,
+            "offset_x": -5,
+            "offset_y": 8
+          },
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.25,
+            "blur_radius": 4,
+            "offset_x": -3,
+            "offset_y": 6
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "9000",
+        "light_source_vector": {
+          "x": -20,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.25,
+            "blur_radius": 4,
+            "offset_x": 2,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "12000",
+        "light_source_vector": {
+          "x": -20,
+          "y": -120
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_head",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 3,
+            "offset_x": 1,
+            "offset_y": 2
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "14000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "hand",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": 1,
+            "offset_y": 2
+          },
+          {
+            "target_id": "pipe",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.15,
+            "blur_radius": 1,
+            "offset_x": 1,
+            "offset_y": 1
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "15000",
+        "light_source_vector": {
+          "x": -30,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "hand",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.25,
+            "blur_radius": 3,
+            "offset_x": 2,
+            "offset_y": 3
+          },
+          {
+            "target_id": "hat",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": 1,
+            "offset_y": 2
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "16000",
+        "light_source_vector": {
+          "x": 100,
+          "y": -50
+        },
+        "shadows": [
+          {
+            "target_id": "hand_magnifying_glass",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": -2,
+            "offset_y": 3
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "17000",
+        "light_source_vector": {
+          "x": -150,
+          "y": -50
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.35,
+            "blur_radius": 5,
+            "offset_x": 5,
+            "offset_y": 8
+          },
+          {
+            "target_id": "pipe",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": 1,
+            "offset_y": 2
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "20000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -200
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_legs",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.4,
+            "blur_radius": 8,
+            "offset_x": 0,
+            "offset_y": 15
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "21000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "bank_columns",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.15,
+            "blur_radius": 5,
+            "offset_x": 0,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "22000",
+        "light_source_vector": {
+          "x": -50,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "police_officer_1",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 6,
+            "offset_x": 5,
+            "offset_y": 10
+          },
+          {
+            "target_id": "police_barrier",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.25,
+            "blur_radius": 4,
+            "offset_x": 3,
+            "offset_y": 7
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "23000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_face",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": 0,
+            "offset_y": 1
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "24000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": []
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "25000",
+        "light_source_vector": {
+          "x": 30,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.25,
+            "blur_radius": 4,
+            "offset_x": -2,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "26000",
+        "light_source_vector": {
+          "x": 150,
+          "y": 0
+        },
+        "shadows": [
+          {
+            "target_id": "watson_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.5,
+            "blur_radius": 10,
+            "offset_x": -15,
+            "offset_y": 0
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "27000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "villain_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 5,
+            "offset_x": 0,
+            "offset_y": 5
+          },
+          {
+            "target_id": "pillar_left",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 4,
+            "offset_x": 3,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "28000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -80
+        },
+        "shadows": [
+          {
+            "target_id": "villain_face",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.25,
+            "blur_radius": 3,
+            "offset_x": 0,
+            "offset_y": 2
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "29000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "villain_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 5,
+            "offset_x": 0,
+            "offset_y": 5
+          },
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.25,
+            "blur_radius": 4,
+            "offset_x": 0,
+            "offset_y": 4
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "31000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -200
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.4,
+            "blur_radius": 8,
+            "offset_x": 0,
+            "offset_y": 15
+          },
+          {
+            "target_id": "flower_stand",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 6,
+            "offset_x": 0,
+            "offset_y": 10
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "33000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_face",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": 0,
+            "offset_y": 1
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "34000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -200
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.4,
+            "blur_radius": 8,
+            "offset_x": 0,
+            "offset_y": 15
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "36000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": []
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "37000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.35,
+            "blur_radius": 7,
+            "offset_x": 0,
+            "offset_y": 10
+          },
+          {
+            "target_id": "villain_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.35,
+            "blur_radius": 7,
+            "offset_x": 0,
+            "offset_y": 10
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "38000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_face",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": 0,
+            "offset_y": 1
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "39000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 5,
+            "offset_x": 0,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "40000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "villain_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.35,
+            "blur_radius": 7,
+            "offset_x": 0,
+            "offset_y": 10
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "41000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "fountain",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 5,
+            "offset_x": 0,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "42000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.35,
+            "blur_radius": 7,
+            "offset_x": 0,
+            "offset_y": 10
+          },
+          {
+            "target_id": "tower_of_london",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.15,
+            "blur_radius": 5,
+            "offset_x": 0,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "43000",
+        "light_source_vector": {
+          "x": -50,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 5,
+            "offset_x": 3,
+            "offset_y": 5
+          },
+          {
+            "target_id": "gate",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 4,
+            "offset_x": 2,
+            "offset_y": 4
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "44000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 5,
+            "offset_x": 0,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "45000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -200
+        },
+        "shadows": []
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "48000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": []
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "49000",
+        "light_source_vector": {
+          "x": 0,
+          "y": 0
+        },
+        "shadows": []
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "50000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -150
+        },
+        "shadows": [
+          {
+            "target_id": "watson_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.3,
+            "blur_radius": 5,
+            "offset_x": 0,
+            "offset_y": 5
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "51000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_face",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 2,
+            "offset_x": 0,
+            "offset_y": 1
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "52000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -200
+        },
+        "shadows": [
+          {
+            "target_id": "villain_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.4,
+            "blur_radius": 8,
+            "offset_x": 0,
+            "offset_y": 15
+          }
+        ]
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "53000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -50
+        },
+        "shadows": []
+      },
+      {
+        "agent_id": "lighting_renderer",
+        "scene_id": "54000",
+        "light_source_vector": {
+          "x": 0,
+          "y": -100
+        },
+        "shadows": [
+          {
+            "target_id": "holmes_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 3,
+            "offset_x": 0,
+            "offset_y": 2
+          },
+          {
+            "target_id": "watson_body",
+            "shadow_type": "drop_shadow",
+            "opacity": 0.2,
+            "blur_radius": 3,
+            "offset_x": 0,
+            "offset_y": 2
+          }
+        ]
+      }
+    ],
+    "stroke_inspector": {
+      "agent_id": "stroke_inspector",
+      "global_style": {
+        "stroke_width": 1.8,
+        "stroke_linecap": "butt",
+        "stroke_linejoin": "miter",
+        "stroke_color": "#202020"
+      },
+      "exceptions": [
+        {
+          "target_id": "red_star_intro_logo",
+          "start_ms": 0,
+          "end_ms": 900,
+          "stroke_width": 6.0,
+          "stroke_linecap": "butt",
+          "stroke_linejoin": "miter",
+          "stroke_color": "#D60000"
+        },
+        {
+          "target_id": "sherlock_holmes_4d_logo",
+          "start_ms": 56000,
+          "end_ms": 59000,
+          "stroke_width": 1.5,
+          "stroke_linecap": "round",
+          "stroke_linejoin": "round",
+          "stroke_color": "#FFFFFF"
+        },
+        {
+          "target_id": "red_star_credits_logo",
+          "start_ms": 59000,
+          "end_ms": 62000,
+          "stroke_width": 1.5,
+          "stroke_linecap": "butt",
+          "stroke_linejoin": "miter",
+          "stroke_color": "#FFFFFF"
+        }
+      ]
+    },
+    "layer_coordinator": [
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S1",
+        "render_order": [
+          "bg_dark_red_radial_gradient",
+          "logo_red_star_text"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S2",
+        "render_order": [
+          "bg_stone_wall",
+          "door_221b",
+          "door_knocker",
+          "door_number_221b",
+          "foreground_railings"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S3",
+        "render_order": [
+          "bg_window_dark_blue_curtain",
+          "bg_bookshelf",
+          "music_stand_with_sheet_music",
+          "character_sherlock_holmes_playing_violin"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S4",
+        "render_order": [
+          "bg_window_dark_blue_curtain",
+          "bg_bookshelf",
+          "music_stand_with_sheet_music",
+          "character_sherlock_holmes"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S5",
+        "render_order": [
+          "bg_red_patterned_wallpaper",
+          "bg_framed_pictures",
+          "bg_rifle_on_wall",
+          "bg_desk_with_items",
+          "bg_open_door_with_light",
+          "character_sherlock_holmes_back",
+          "character_watson_entering"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S6",
+        "render_order": [
+          "bg_red_patterned_wallpaper",
+          "bg_framed_pictures",
+          "bg_bookshelf",
+          "bg_window",
+          "bg_desk",
+          "character_sherlock_holmes_holding_bow"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S7",
+        "render_order": [
+          "bg_red_patterned_wallpaper",
+          "bg_bookshelf",
+          "bg_desk",
+          "character_sherlock_holmes_reading_letter"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S8",
+        "render_order": [
+          "bg_red_patterned_wallpaper",
+          "bg_bookshelf",
+          "character_sherlock_holmes_face"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S9",
+        "render_order": [
+          "bg_wooden_floor",
+          "hand_picking_up_pipe"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S10",
+        "render_order": [
+          "bg_red_patterned_wallpaper",
+          "bust_on_table",
+          "hand_placing_hat_on_bust"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S11",
+        "render_order": [
+          "bg_fireplace",
+          "bg_wooden_table_with_papers",
+          "hand_with_magnifying_glass"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S12",
+        "render_order": [
+          "bg_dark_blue_curtain",
+          "bg_window",
+          "bg_bookshelf",
+          "character_sherlock_holmes_with_pipe_and_magnifying_glass"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S13",
+        "render_order": [
+          "bg_foggy_street_with_lampposts_and_bench",
+          "character_sherlock_holmes_running_feet"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S14",
+        "render_order": [
+          "bg_dark_foggy_sky",
+          "bank_of_england_building_facade",
+          "bank_of_england_text"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S15",
+        "render_order": [
+          "bg_bank_of_england_building_facade",
+          "bg_archways",
+          "police_officers",
+          "lamppost",
+          "bench",
+          "barriers"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S16",
+        "render_order": [
+          "bg_bank_of_england_building_details",
+          "character_sherlock_holmes_with_magnifying_glass",
+          "magnifying_glass_lens"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S17",
+        "render_order": [
+          "bg_blurred_surface",
+          "money_bills",
+          "magnifying_glass_lens_effect"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S18",
+        "render_order": [
+          "bg_red_patterned_wallpaper",
+          "bg_bookshelf",
+          "bg_bust",
+          "character_sherlock_holmes_playing_violin"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S19",
+        "render_order": [
+          "bg_long_dark_hallway_with_archways_and_figures",
+          "character_watson_running"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S20",
+        "render_order": [
+          "bg_far_end_of_hallway_light",
+          "arches_and_columns",
+          "paintings_on_walls",
+          "debris_on_floor"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S21",
+        "render_order": [
+          "bg_dark_ornate_interior_columns",
+          "character_villain_in_top_hat"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S22",
+        "render_order": [
+          "bg_dark_ornate_interior_columns",
+          "character_villain",
+          "character_sherlock_holmes"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S23",
+        "render_order": [
+          "bg_dark_ornate_interior",
+          "character_villain_close_up",
+          "character_sherlock_holmes_close_up"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S24",
+        "render_order": [
+          "bg_dark_ornate_interior_columns",
+          "character_sherlock_holmes_running",
+          "character_watson_running"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S25",
+        "render_order": [
+          "bg_foggy_city_skyline_nelson_column",
+          "bg_lampposts",
+          "flower_stand",
+          "crates_and_barrels",
+          "character_sherlock_holmes_running"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S26",
+        "render_order": [
+          "bg_foggy_city_skyline_nelson_column",
+          "bg_lampposts",
+          "flower_stand_with_closed_sign",
+          "character_sherlock_holmes_at_stand",
+          "magnifying_glass_lens"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S27",
+        "render_order": [
+          "bg_tower_bridge_city_lights_foggy_river",
+          "lamppost",
+          "character_sherlock_holmes_running"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S28",
+        "render_order": [
+          "bg_foggy_sky",
+          "tower_bridge",
+          "river_and_city_lights"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S29",
+        "render_order": [
+          "bg_building_facade",
+          "character_villain_running",
+          "character_sherlock_holmes_running"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S30",
+        "render_order": [
+          "bg_blurred_background",
+          "character_sherlock_holmes_face",
+          "magnifying_glass_lens"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S31",
+        "render_order": [
+          "bg_foggy_city_tower_bridge_distance",
+          "character_sherlock_holmes_jumping"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S32",
+        "render_order": [
+          "bg_tower_bridge_structure_foggy_city",
+          "character_villain_standing"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S33",
+        "render_order": [
+          "bg_foggy_city_buildings_lampposts",
+          "fountain_with_splashing_water"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S34",
+        "render_order": [
+          "bg_dark_sky",
+          "bg_tower_of_london",
+          "lamppost",
+          "tower_of_london_sign",
+          "character_sherlock_holmes_running"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S35",
+        "render_order": [
+          "bg_tower_of_london_wall",
+          "large_metal_gate",
+          "character_sherlock_holmes_at_gate"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S36",
+        "render_order": [
+          "bg_tower_bridge_structure",
+          "character_sherlock_holmes_looking_up"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S37",
+        "render_order": [
+          "bg_deep_shaft_stone_walls",
+          "character_sherlock_holmes_falling"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S38",
+        "render_order": [
+          "bg_deep_shaft_stone_walls",
+          "character_sherlock_holmes_falling_wider"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S39",
+        "render_order": [
+          "bg_ground_surface",
+          "impact_ripples"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S40",
+        "render_order": [
+          "bg_stone_wall_arched_windows",
+          "smoke_cloud",
+          "circular_object"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S41",
+        "render_order": [
+          "bg_tower_bridge_structure",
+          "character_sherlock_holmes_reaching",
+          "character_watson_jumping"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S42",
+        "render_order": [
+          "bg_blurred_tower_bridge_structure",
+          "column",
+          "character_sherlock_holmes_looking_up",
+          "magnifying_glass_hanging"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S43",
+        "render_order": [
+          "bg_bank_of_england_building_street_lampposts_fog",
+          "character_villain_running_floating"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S44",
+        "render_order": [
+          "bg_dark_stone_wall",
+          "character_sherlock_holmes",
+          "character_watson"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S45",
+        "render_order": [
+          "bg_dark_stone_wall",
+          "character_sherlock_holmes_wider",
+          "character_watson_wider"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S46",
+        "render_order": [
+          "bg_blurred_city_background",
+          "title_sherlock_holmes_4d"
+        ]
+      },
+      {
+        "agent_id": "layer_coordinator",
+        "scene_id": "S47",
+        "render_order": [
+          "bg_blurred_city_background",
+          "logo_red_star",
+          "text_website",
+          "text_distributed_by_nwave_pictures",
+          "text_international_sales",
+          "text_copyright"
+        ]
+      }
+    ],
+    "fx_generator": [
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S1",
+        "start_ms": 18000,
+        "end_ms": 20000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.15,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S2",
+        "start_ms": 21000,
+        "end_ms": 22000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.2,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S3",
+        "start_ms": 22000,
+        "end_ms": 23000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.2,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S4",
+        "start_ms": 27000,
+        "end_ms": 28000,
+        "effects": [
+          {
+            "type": "dust",
+            "geometry": "circle",
+            "count": 100,
+            "color": "#FFFFFF",
+            "opacity": 0.3,
+            "size_min": 0.5,
+            "size_max": 2.0,
+            "speed": "slow_drift"
+          },
+          {
+            "type": "haze",
+            "geometry": "pattern",
+            "color": "#D0D0D0",
+            "opacity": 0.1,
+            "speed": "static"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S5",
+        "start_ms": 30000,
+        "end_ms": 32000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.25,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S6",
+        "start_ms": 32000,
+        "end_ms": 33000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.25,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S7",
+        "start_ms": 33000,
+        "end_ms": 34000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.25,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S8",
+        "start_ms": 34000,
+        "end_ms": 36000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.35,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S9",
+        "start_ms": 38000,
+        "end_ms": 39000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.3,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S10",
+        "start_ms": 39000,
+        "end_ms": 40000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.3,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S11",
+        "start_ms": 40000,
+        "end_ms": 41000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.25,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S12",
+        "start_ms": 41000,
+        "end_ms": 42000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.25,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S13",
+        "start_ms": 43000,
+        "end_ms": 44000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.3,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S14",
+        "start_ms": 47000,
+        "end_ms": 48000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.25,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S15",
+        "start_ms": 48000,
+        "end_ms": 49000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.25,
+            "speed": "slow_drift"
+          }
+        ]
+      },
+      {
+        "agent_id": "fx_generator",
+        "scene_id": "S16",
+        "start_ms": 49000,
+        "end_ms": 50000,
+        "effects": [
+          {
+            "type": "fog",
+            "geometry": "pattern",
+            "color": "#C0D0E0",
+            "opacity": 0.25,
+            "speed": "slow_drift"
+          }
+        ]
+      }
+    ],
+    "typography_parser": {
+      "agent_id": "typography_parser",
+      "overlays": [
+        {
+          "type": "text",
+          "content": "RED",
+          "font_family_guess": "sans-serif",
+          "font_weight": 800,
+          "font_size": "8%",
+          "color": "#FF0000",
+          "position": {
+            "x": "50%",
+            "y": "45%"
+          },
+          "start_ms": 0,
+          "end_ms": 2000
+        },
+        {
+          "type": "text",
+          "content": "STAR",
+          "font_family_guess": "sans-serif",
+          "font_weight": 800,
+          "font_size": "8%",
+          "color": "#FF0000",
+          "position": {
+            "x": "50%",
+            "y": "55%"
+          },
+          "start_ms": 0,
+          "end_ms": 2000
+        },
+        {
+          "type": "shape",
+          "shape_type": "star",
+          "color": "#FF0000",
+          "position": {
+            "x": "70%",
+            "y": "50%"
+          },
+          "size": "10%",
+          "start_ms": 0,
+          "end_ms": 2000
+        },
+        {
+          "type": "text",
+          "content": "221b",
+          "font_family_guess": "serif",
+          "font_weight": 500,
+          "font_size": "3%",
+          "color": "#E0E0E0",
+          "position": {
+            "x": "50%",
+            "y": "25%"
+          },
+          "start_ms": 2500,
+          "end_ms": 3500
+        },
+        {
+          "type": "text",
+          "content": "BANK OF ENGLAND",
+          "font_family_guess": "serif",
+          "font_weight": 600,
+          "font_size": "3%",
+          "color": "#C0C0C0",
+          "position": {
+            "x": "50%",
+            "y": "35%"
+          },
+          "start_ms": 21800,
+          "end_ms": 22500
+        },
+        {
+          "type": "text",
+          "content": "FLOWERS",
+          "font_family_guess": "sans-serif",
+          "font_weight": 700,
+          "font_size": "4%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "40%",
+            "y": "30%"
+          },
+          "start_ms": 32000,
+          "end_ms": 33500
+        },
+        {
+          "type": "text",
+          "content": "ROSES",
+          "font_family_guess": "serif",
+          "font_weight": 400,
+          "font_size": "2%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "60%",
+            "y": "65%"
+          },
+          "start_ms": 32000,
+          "end_ms": 33500
+        },
+        {
+          "type": "text",
+          "content": "CLOSED",
+          "font_family_guess": "sans-serif",
+          "font_weight": 700,
+          "font_size": "3%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "35%",
+            "y": "60%"
+          },
+          "start_ms": 34000,
+          "end_ms": 35000
+        },
+        {
+          "type": "text",
+          "content": "TOWER OF LONDON",
+          "font_family_guess": "serif",
+          "font_weight": 600,
+          "font_size": "2.5%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "15%",
+            "y": "45%"
+          },
+          "start_ms": 42500,
+          "end_ms": 43500
+        },
+        {
+          "type": "shape",
+          "shape_type": "crown",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "15%",
+            "y": "40%"
+          },
+          "size": "1.5%",
+          "start_ms": 42500,
+          "end_ms": 43500
+        },
+        {
+          "type": "text",
+          "content": "Sherlock",
+          "font_family_guess": "serif",
+          "font_weight": 400,
+          "font_size": "10%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "40%"
+          },
+          "start_ms": 56000,
+          "end_ms": 58500
+        },
+        {
+          "type": "text",
+          "content": "Holmes",
+          "font_family_guess": "serif",
+          "font_weight": 400,
+          "font_size": "10%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "55%"
+          },
+          "start_ms": 56000,
+          "end_ms": 58500
+        },
+        {
+          "type": "text",
+          "content": "4D",
+          "font_family_guess": "serif",
+          "font_weight": 600,
+          "font_size": "10%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "75%",
+            "y": "55%"
+          },
+          "start_ms": 56000,
+          "end_ms": 58500
+        },
+        {
+          "type": "text",
+          "content": "RED",
+          "font_family_guess": "sans-serif",
+          "font_weight": 800,
+          "font_size": "3%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "25%"
+          },
+          "start_ms": 58500,
+          "end_ms": 62000
+        },
+        {
+          "type": "text",
+          "content": "STAR",
+          "font_family_guess": "sans-serif",
+          "font_weight": 800,
+          "font_size": "3%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "30%"
+          },
+          "start_ms": 58500,
+          "end_ms": 62000
+        },
+        {
+          "type": "shape",
+          "shape_type": "star",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "60%",
+            "y": "27.5%"
+          },
+          "size": "4%",
+          "start_ms": 58500,
+          "end_ms": 62000
+        },
+        {
+          "type": "text",
+          "content": "WWW.REDSTAR3D.COM",
+          "font_family_guess": "sans-serif",
+          "font_weight": 400,
+          "font_size": "2%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "37%"
+          },
+          "start_ms": 58500,
+          "end_ms": 62000
+        },
+        {
+          "type": "text",
+          "content": "DISTRIBUTED BY",
+          "font_family_guess": "sans-serif",
+          "font_weight": 400,
+          "font_size": "1.8%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "48%"
+          },
+          "start_ms": 58500,
+          "end_ms": 62000
+        },
+        {
+          "type": "text",
+          "content": "NWAVE PICTURES",
+          "font_family_guess": "sans-serif",
+          "font_weight": 700,
+          "font_size": "2.5%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "52%"
+          },
+          "start_ms": 58500,
+          "end_ms": 62000
+        },
+        {
+          "type": "text",
+          "content": "INTERNATIONAL SALES: GOEDELE@NWAVE.COM",
+          "font_family_guess": "sans-serif",
+          "font_weight": 400,
+          "font_size": "1.5%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "60%"
+          },
+          "start_ms": 58500,
+          "end_ms": 62000
+        },
+        {
+          "type": "text",
+          "content": "NORTH AND SOUTH AMERICA: JBAKER@NWAVE.COM",
+          "font_family_guess": "sans-serif",
+          "font_weight": 400,
+          "font_size": "1.5%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "63%"
+          },
+          "start_ms": 58500,
+          "end_ms": 62000
+        },
+        {
+          "type": "text",
+          "content": "COPYRIGHT © 2013 RED STAR 3D ALL RIGHTS RESERVED",
+          "font_family_guess": "sans-serif",
+          "font_weight": 400,
+          "font_size": "1.5%",
+          "color": "#FFFFFF",
+          "position": {
+            "x": "50%",
+            "y": "75%"
+          },
+          "start_ms": 58500,
+          "end_ms": 62000
+        }
+      ]
+    },
+    "keyframe_synchronizer": {
+      "agent_id": "keyframe_synchronizer",
+      "master_timeline": [
+        {
+          "target_id": "red_star_logo_text",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "scale(0.8)"
+            },
+            "7%": {
+              "opacity": "1",
+              "transform": "scale(1)"
+            },
+            "89%": {
+              "opacity": "1",
+              "transform": "scale(1)"
+            },
+            "100%": {
+              "opacity": "0",
+              "transform": "scale(1.1)"
+            }
+          }
+        },
+        {
+          "target_id": "red_star_logo_rays",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "scale(0.5) rotate(0deg)"
+            },
+            "7%": {
+              "opacity": "1",
+              "transform": "scale(1) rotate(0deg)"
+            },
+            "36%": {
+              "transform": "scale(1) rotate(120deg)"
+            },
+            "71%": {
+              "transform": "scale(1) rotate(240deg)"
+            },
+            "89%": {
+              "opacity": "1",
+              "transform": "scale(1) rotate(360deg)"
+            },
+            "100%": {
+              "opacity": "0",
+              "transform": "scale(1.2) rotate(390deg)"
+            }
+          }
+        },
+        {
+          "target_id": "red_star_logo_star_shape",
+          "keyframes": {
+            "0%": {
+              "transform": "scaleX(0.5) scaleY(1)"
+            },
+            "18%": {
+              "transform": "scaleX(1) scaleY(1)"
+            },
+            "54%": {
+              "transform": "scaleX(0.8) scaleY(1.1) skewX(10deg)"
+            },
+            "71%": {
+              "transform": "scaleX(1) scaleY(1)"
+            },
+            "89%": {
+              "opacity": "1"
+            },
+            "100%": {
+              "opacity": "0"
+            }
+          }
+        },
+        {
+          "target_id": "door_221b",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "100%": {
+              "transform": "rotateY(-90deg)"
+            }
+          }
+        },
+        {
+          "target_id": "camera_scene_3",
+          "keyframes": {
+            "0%": {
+              "transform": "translateZ(0px)"
+            },
+            "33%": {
+              "transform": "translateZ(50px)"
+            },
+            "100%": {
+              "transform": "translateZ(50px)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_violin_play",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateX(0deg) rotateY(0deg) rotateZ(0deg)"
+            },
+            "100%": {
+              "transform": "rotateX(-5deg) rotateY(5deg) rotateZ(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_head_turn",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "50%": {
+              "transform": "rotateY(15deg)"
+            },
+            "100%": {
+              "transform": "rotateY(15deg)"
+            }
+          }
+        },
+        {
+          "target_id": "watson_entrance",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(50px)",
+              "opacity": "0"
+            },
+            "10%": {
+              "opacity": "1"
+            },
+            "100%": {
+              "transform": "translateX(0px)",
+              "opacity": "1"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_deduction_gesture_1",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(15deg)"
+            },
+            "50%": {
+              "transform": "rotateY(-5deg) translateY(-10px)"
+            },
+            "100%": {
+              "transform": "rotateY(-5deg)"
+            }
+          }
+        },
+        {
+          "target_id": "camera_scene_5_cut_1",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(0px) translateY(0px) scale(1)"
+            },
+            "100%": {
+              "transform": "translateX(-50px) translateY(-20px) scale(1.1)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_deduction_gesture_2",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateX(0deg) rotateY(0deg)"
+            },
+            "33%": {
+              "transform": "rotateX(10deg) rotateY(5deg)"
+            },
+            "66%": {
+              "transform": "rotateX(-5deg) rotateY(-5deg)"
+            },
+            "100%": {
+              "transform": "rotateX(0deg) rotateY(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_reading_letter",
+          "keyframes": {
+            "0%": {
+              "transform": "translateY(0px) rotateX(0deg)"
+            },
+            "50%": {
+              "transform": "translateY(-10px) rotateX(-5deg)"
+            },
+            "100%": {
+              "transform": "translateY(0px) rotateX(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_expression_surprise",
+          "keyframes": {
+            "0%": {
+              "face_expression": "neutral"
+            },
+            "100%": {
+              "face_expression": "surprised"
+            }
+          }
+        },
+        {
+          "target_id": "hand_pipe_pickup",
+          "keyframes": {
+            "0%": {
+              "transform": "translateY(20px) rotateZ(0deg)"
+            },
+            "50%": {
+              "transform": "translateY(0px) rotateZ(0deg)"
+            },
+            "100%": {
+              "transform": "translateY(-20px) rotateZ(10deg)"
+            }
+          }
+        },
+        {
+          "target_id": "hand_hat_on_bust",
+          "keyframes": {
+            "0%": {
+              "transform": "translateY(20px) rotateZ(0deg)"
+            },
+            "50%": {
+              "transform": "translateY(0px) rotateZ(0deg)"
+            },
+            "100%": {
+              "transform": "translateY(20px) rotateZ(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "hand_magnifying_glass_pickup",
+          "keyframes": {
+            "0%": {
+              "transform": "translateY(20px) rotateZ(0deg)"
+            },
+            "50%": {
+              "transform": "translateY(0px) rotateZ(0deg)"
+            },
+            "100%": {
+              "transform": "translateY(-20px) rotateZ(-10deg)"
+            }
+          }
+        },
+        {
+          "target_id": "camera_scene_8_pan",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "100%": {
+              "transform": "rotateY(30deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_ready_pose",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "50%": {
+              "transform": "rotateY(10deg)"
+            },
+            "100%": {
+              "transform": "rotateY(20deg)"
+            }
+          }
+        },
+        {
+          "target_id": "running_feet",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(0px)"
+            },
+            "25%": {
+              "transform": "translateX(10px) translateY(-5px)"
+            },
+            "50%": {
+              "transform": "translateX(20px)"
+            },
+            "75%": {
+              "transform": "translateX(30px) translateY(-5px)"
+            },
+            "100%": {
+              "transform": "translateX(40px)"
+            }
+          }
+        },
+        {
+          "target_id": "bank_of_england_reveal",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "translateY(20px)"
+            },
+            "100%": {
+              "opacity": "1",
+              "transform": "translateY(0px)"
+            }
+          }
+        },
+        {
+          "target_id": "police_officers_appear",
+          "keyframes": {
+            "0%": {
+              "opacity": "0"
+            },
+            "100%": {
+              "opacity": "1"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_magnifying_glass_look",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "50%": {
+              "transform": "rotateY(-10deg) translateY(-5px)"
+            },
+            "100%": {
+              "transform": "rotateY(-10deg) translateY(-5px)"
+            }
+          }
+        },
+        {
+          "target_id": "magnifying_glass_money_view",
+          "keyframes": {
+            "0%": {
+              "transform": "scale(1)"
+            },
+            "50%": {
+              "transform": "scale(1.2) translateX(5px)"
+            },
+            "100%": {
+              "transform": "scale(1.2) translateX(5px)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_violin_flashback",
+          "keyframes": {
+            "0%": {
+              "opacity": "0"
+            },
+            "10%": {
+              "opacity": "1"
+            },
+            "90%": {
+              "opacity": "1"
+            },
+            "100%": {
+              "opacity": "0"
+            }
+          }
+        },
+        {
+          "target_id": "watson_running_hall",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(100px) scale(0.8)"
+            },
+            "100%": {
+              "transform": "translateX(0px) scale(1)"
+            }
+          }
+        },
+        {
+          "target_id": "camera_grand_hall_reveal",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(0px) rotateY(0deg)"
+            },
+            "100%": {
+              "transform": "translateX(-50px) rotateY(-10deg)"
+            }
+          }
+        },
+        {
+          "target_id": "villain_gesture",
+          "keyframes": {
+            "0%": {
+              "transform": "translateY(0px) rotateY(0deg)"
+            },
+            "50%": {
+              "transform": "translateY(-10px) rotateY(5deg)"
+            },
+            "100%": {
+              "transform": "translateY(0px) rotateY(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_villain_confrontation",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(50px)",
+              "opacity": "0"
+            },
+            "10%": {
+              "opacity": "1"
+            },
+            "100%": {
+              "transform": "translateX(0px)",
+              "opacity": "1"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_approach_stall",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(50px)"
+            },
+            "100%": {
+              "transform": "translateX(0px)"
+            }
+          }
+        },
+        {
+          "target_id": "camera_trafalgar_square_pan",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "100%": {
+              "transform": "rotateY(-15deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_inspect_flowers",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "50%": {
+              "transform": "rotateY(-10deg) translateY(-10px)"
+            },
+            "100%": {
+              "transform": "rotateY(-10deg) translateY(-10px)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_running_thames",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(0px)"
+            },
+            "50%": {
+              "transform": "translateX(50px) translateY(-5px)"
+            },
+            "100%": {
+              "transform": "translateX(100px)"
+            }
+          }
+        },
+        {
+          "target_id": "camera_tower_bridge_pan",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(0px)"
+            },
+            "100%": {
+              "transform": "translateX(-100px)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_villain_running_duo",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(0px)"
+            },
+            "100%": {
+              "transform": "translateX(50px)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_magnifying_run",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "50%": {
+              "transform": "rotateY(-15deg) translateY(-5px)"
+            },
+            "100%": {
+              "transform": "rotateY(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_jump_dodge",
+          "keyframes": {
+            "0%": {
+              "transform": "translateY(0px) rotateZ(0deg)"
+            },
+            "50%": {
+              "transform": "translateY(-20px) rotateZ(10deg)"
+            },
+            "100%": {
+              "transform": "translateY(0px) rotateZ(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "villain_menacing_look",
+          "keyframes": {
+            "0%": {
+              "face_expression": "neutral"
+            },
+            "50%": {
+              "face_expression": "menacing"
+            },
+            "100%": {
+              "face_expression": "menacing"
+            }
+          }
+        },
+        {
+          "target_id": "fountain_mist_effect",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "scale(0.5)"
+            },
+            "50%": {
+              "opacity": "1",
+              "transform": "scale(1)"
+            },
+            "100%": {
+              "opacity": "0.8",
+              "transform": "scale(1.1)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_run_tower_of_london",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(50px) scale(0.8)"
+            },
+            "100%": {
+              "transform": "translateX(0px) scale(1)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_gate_struggle",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "50%": {
+              "transform": "rotateY(-10deg) translateX(-5px)"
+            },
+            "100%": {
+              "transform": "rotateY(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_look_up_tower_bridge",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateX(0deg)"
+            },
+            "50%": {
+              "transform": "rotateX(-30deg)"
+            },
+            "100%": {
+              "transform": "rotateX(-30deg)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_falling",
+          "keyframes": {
+            "0%": {
+              "transform": "translateY(0px) rotateZ(0deg)"
+            },
+            "33%": {
+              "transform": "translateY(100px) rotateZ(15deg)"
+            },
+            "66%": {
+              "transform": "translateY(250px) rotateZ(-15deg)"
+            },
+            "100%": {
+              "transform": "translateY(500px) rotateZ(0deg)"
+            }
+          }
+        },
+        {
+          "target_id": "impact_smoke_explosion",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "scale(0.1)"
+            },
+            "20%": {
+              "opacity": "1",
+              "transform": "scale(1)"
+            },
+            "100%": {
+              "opacity": "0.5",
+              "transform": "scale(1.5)"
+            }
+          }
+        },
+        {
+          "target_id": "mystery_object_emerge",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "translateY(20px) scale(0.5)"
+            },
+            "50%": {
+              "opacity": "1",
+              "transform": "translateY(0px) scale(1)"
+            },
+            "100%": {
+              "opacity": "1",
+              "transform": "translateY(-5px) scale(1.05)"
+            }
+          }
+        },
+        {
+          "target_id": "watson_jump_to_sherlock",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(50px) translateY(0px)"
+            },
+            "50%": {
+              "transform": "translateX(25px) translateY(-20px)"
+            },
+            "100%": {
+              "transform": "translateX(0px) translateY(0px)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_inspect_ground",
+          "keyframes": {
+            "0%": {
+              "transform": "rotateY(0deg)"
+            },
+            "50%": {
+              "transform": "rotateY(-15deg) translateY(-5px)"
+            },
+            "100%": {
+              "transform": "rotateY(-15deg) translateY(-5px)"
+            }
+          }
+        },
+        {
+          "target_id": "villain_escape_run",
+          "keyframes": {
+            "0%": {
+              "transform": "translateX(0px)"
+            },
+            "100%": {
+              "transform": "translateX(-100px)"
+            }
+          }
+        },
+        {
+          "target_id": "sherlock_watson_determined_pose",
+          "keyframes": {
+            "0%": {
+              "transform": "translateY(0px)"
+            },
+            "50%": {
+              "transform": "translateY(-5px)"
+            },
+            "100%": {
+              "transform": "translateY(0px)"
+            }
+          }
+        },
+        {
+          "target_id": "title_sherlock_holmes_4d",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "scale(0.8)"
+            },
+            "10%": {
+              "opacity": "1",
+              "transform": "scale(1)"
+            },
+            "100%": {
+              "opacity": "1",
+              "transform": "scale(1)"
+            }
+          }
+        },
+        {
+          "target_id": "end_credits_red_star_logo",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "translateY(20px)"
+            },
+            "10%": {
+              "opacity": "1",
+              "transform": "translateY(0px)"
+            },
+            "100%": {
+              "opacity": "1",
+              "transform": "translateY(0px)"
+            }
+          }
+        },
+        {
+          "target_id": "end_credits_text_block",
+          "keyframes": {
+            "0%": {
+              "opacity": "0",
+              "transform": "translateY(20px)"
+            },
+            "10%": {
+              "opacity": "1",
+              "transform": "translateY(0px)"
+            },
+            "100%": {
+              "opacity": "1",
+              "transform": "translateY(0px)"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "failed": {}
+}

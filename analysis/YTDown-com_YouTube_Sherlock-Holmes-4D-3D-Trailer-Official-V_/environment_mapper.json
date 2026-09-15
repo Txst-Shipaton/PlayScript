@@ -1,0 +1,1089 @@
+[
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S1",
+    "timestamp_ms": 0,
+    "background_elements": [
+      {
+        "element_id": "bg_red_gradient",
+        "geometry": "radial_gradient",
+        "dominant_color": "#330000",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "bg_light_rays",
+        "geometry": "radial_lines",
+        "dominant_color": "#660000",
+        "perspective_scale": 1.0
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S2",
+    "timestamp_ms": 2000,
+    "background_elements": [
+      {
+        "element_id": "building_facade",
+        "geometry": "layered_rectangles_and_arches",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "door_221b",
+        "geometry": "arched_rectangle",
+        "dominant_color": "#2B3545",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "door_number_plate",
+        "geometry": "rectangle_with_text",
+        "dominant_color": "#8C8C8C"
+      },
+      {
+        "element_id": "door_knocker",
+        "geometry": "ornate_metal_shape",
+        "dominant_color": "#C8A850"
+      },
+      {
+        "element_id": "railing_left",
+        "geometry": "curved_metal_bars",
+        "dominant_color": "#3A4A5B"
+      },
+      {
+        "element_id": "railing_right",
+        "geometry": "curved_metal_bars",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S3",
+    "timestamp_ms": 3000,
+    "background_elements": [
+      {
+        "element_id": "wallpaper_pattern",
+        "geometry": "patterned_surface",
+        "dominant_color": "#6B423A",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "bookshelf_right",
+        "geometry": "stacked_rectangles",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "window_left",
+        "geometry": "grid_rectangle",
+        "dominant_color": "#3A4A5B",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "curtain_left",
+        "geometry": "draped_fabric",
+        "dominant_color": "#4A5A6B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S4",
+    "timestamp_ms": 6000,
+    "background_elements": [
+      {
+        "element_id": "wallpaper_pattern",
+        "geometry": "patterned_surface",
+        "dominant_color": "#6B423A",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "desk_left",
+        "geometry": "wooden_desk",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 0.7
+      },
+      {
+        "element_id": "rifle_on_wall",
+        "geometry": "linear_shape",
+        "dominant_color": "#4A3A2E"
+      },
+      {
+        "element_id": "framed_pictures",
+        "geometry": "rectangles_on_wall",
+        "dominant_color": "#8C6B5A"
+      },
+      {
+        "element_id": "wall_clock",
+        "geometry": "circular_shape",
+        "dominant_color": "#8C6B5A"
+      },
+      {
+        "element_id": "doorway_right",
+        "geometry": "rectangle_opening",
+        "dominant_color": "#3A4A5B",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "wall_sconce_right",
+        "geometry": "wall_lamp",
+        "dominant_color": "#C8A850"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S5",
+    "timestamp_ms": 8000,
+    "background_elements": [
+      {
+        "element_id": "wallpaper_pattern",
+        "geometry": "patterned_surface",
+        "dominant_color": "#6B423A",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "bookshelf_right",
+        "geometry": "stacked_rectangles",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "window_left",
+        "geometry": "grid_rectangle",
+        "dominant_color": "#3A4A5B",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "curtain_left",
+        "geometry": "draped_fabric",
+        "dominant_color": "#4A5A6B"
+      },
+      {
+        "element_id": "wall_lamp_right",
+        "geometry": "wall_lamp",
+        "dominant_color": "#C8A850"
+      },
+      {
+        "element_id": "framed_pictures_right",
+        "geometry": "rectangles_on_wall",
+        "dominant_color": "#8C6B5A"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S6",
+    "timestamp_ms": 12000,
+    "background_elements": [
+      {
+        "element_id": "wallpaper_pattern",
+        "geometry": "patterned_surface",
+        "dominant_color": "#6B423A",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "bookshelf_background",
+        "geometry": "stacked_rectangles",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 0.7
+      },
+      {
+        "element_id": "wall_decor_background",
+        "geometry": "various_shapes",
+        "dominant_color": "#8C6B5A"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S7",
+    "timestamp_ms": 15000,
+    "background_elements": [
+      {
+        "element_id": "wooden_table_surface",
+        "geometry": "flat_rectangle",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 1.0
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S8",
+    "timestamp_ms": 16000,
+    "background_elements": [
+      {
+        "element_id": "wallpaper_pattern",
+        "geometry": "patterned_surface",
+        "dominant_color": "#6B423A",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "marble_bust",
+        "geometry": "sculpted_figure",
+        "dominant_color": "#DCDCDC"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S9",
+    "timestamp_ms": 17000,
+    "background_elements": [
+      {
+        "element_id": "wooden_table_surface",
+        "geometry": "flat_rectangle",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "fireplace_mantel",
+        "geometry": "rectangular_structure",
+        "dominant_color": "#8C6B5A"
+      },
+      {
+        "element_id": "fireplace_fire",
+        "geometry": "glowing_rectangle",
+        "dominant_color": "#FF8C00"
+      },
+      {
+        "element_id": "papers_on_table",
+        "geometry": "layered_rectangles",
+        "dominant_color": "#E0D0B0"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S10",
+    "timestamp_ms": 18000,
+    "background_elements": [
+      {
+        "element_id": "curtains_left",
+        "geometry": "draped_fabric",
+        "dominant_color": "#3A4A5B",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "bookshelf_right",
+        "geometry": "stacked_rectangles",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "wall_lamp_right",
+        "geometry": "wall_lamp",
+        "dominant_color": "#C8A850"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S11",
+    "timestamp_ms": 20000,
+    "background_elements": [
+      {
+        "element_id": "pavement_ground",
+        "geometry": "flat_plane_with_lines",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0,
+        "horizon_lines": [
+          0.6
+        ]
+      },
+      {
+        "element_id": "street_lamps",
+        "geometry": "vertical_poles_with_lights",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 0.7
+      },
+      {
+        "element_id": "distant_buildings",
+        "geometry": "silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      },
+      {
+        "element_id": "fog_effect",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S12",
+    "timestamp_ms": 21000,
+    "background_elements": [
+      {
+        "element_id": "bank_building_facade",
+        "geometry": "classical_architecture",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "columns",
+        "geometry": "vertical_cylinders",
+        "dominant_color": "#5C6C7D"
+      },
+      {
+        "element_id": "bank_sign",
+        "geometry": "text_on_facade",
+        "dominant_color": "#DCDCDC"
+      },
+      {
+        "element_id": "windows",
+        "geometry": "dark_rectangles",
+        "dominant_color": "#2A3A4B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S13",
+    "timestamp_ms": 22000,
+    "background_elements": [
+      {
+        "element_id": "bank_entrance_arches",
+        "geometry": "arched_openings",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "columns",
+        "geometry": "vertical_cylinders",
+        "dominant_color": "#5C6C7D"
+      },
+      {
+        "element_id": "street_lamp_right",
+        "geometry": "vertical_pole_with_light",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "park_bench_right",
+        "geometry": "rectangular_bench",
+        "dominant_color": "#5C3A2E"
+      },
+      {
+        "element_id": "police_barriers",
+        "geometry": "crossed_bars",
+        "dominant_color": "#8C8C8C"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S14",
+    "timestamp_ms": 23000,
+    "background_elements": [
+      {
+        "element_id": "blurry_background",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S15",
+    "timestamp_ms": 24000,
+    "background_elements": [
+      {
+        "element_id": "paper_surface",
+        "geometry": "flat_plane",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "money_bill",
+        "geometry": "rectangle_with_texture",
+        "dominant_color": "#5C6C7D"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S16",
+    "timestamp_ms": 25000,
+    "background_elements": [
+      {
+        "element_id": "wallpaper_pattern",
+        "geometry": "patterned_surface",
+        "dominant_color": "#6B423A",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "bookshelf_background",
+        "geometry": "stacked_rectangles",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "bust_left",
+        "geometry": "sculpted_figure",
+        "dominant_color": "#DCDCDC"
+      },
+      {
+        "element_id": "wall_clock_left",
+        "geometry": "circular_shape",
+        "dominant_color": "#8C6B5A"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S17",
+    "timestamp_ms": 26000,
+    "background_elements": [
+      {
+        "element_id": "hallway_floor",
+        "geometry": "flat_plane",
+        "dominant_color": "#3A4A5B",
+        "perspective_scale": 1.0,
+        "vanishing_points": [
+          {
+            "x": 0.5,
+            "y": 0.5
+          }
+        ]
+      },
+      {
+        "element_id": "arched_doorways",
+        "geometry": "series_of_arches",
+        "dominant_color": "#5C3A2E",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "wall_paintings",
+        "geometry": "rectangular_frames",
+        "dominant_color": "#8C6B5A"
+      },
+      {
+        "element_id": "wall_sconces",
+        "geometry": "wall_lamps",
+        "dominant_color": "#C8A850"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S18",
+    "timestamp_ms": 27000,
+    "background_elements": [
+      {
+        "element_id": "hall_columns",
+        "geometry": "series_of_columns",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 0.9,
+        "vanishing_points": [
+          {
+            "x": 0.5,
+            "y": 0.5
+          }
+        ]
+      },
+      {
+        "element_id": "arched_ceiling",
+        "geometry": "vaulted_ceiling",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.7
+      },
+      {
+        "element_id": "floor_debris",
+        "geometry": "scattered_shapes",
+        "dominant_color": "#5C3A2E"
+      },
+      {
+        "element_id": "benches",
+        "geometry": "rectangular_shapes",
+        "dominant_color": "#5C3A2E"
+      },
+      {
+        "element_id": "grated_door_left",
+        "geometry": "metal_grate_rectangle",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "light_shafts",
+        "geometry": "conical_light",
+        "dominant_color": "#C8A850"
+      },
+      {
+        "element_id": "wall_paintings",
+        "geometry": "rectangular_frames",
+        "dominant_color": "#8C6B5A"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S19",
+    "timestamp_ms": 29000,
+    "background_elements": [
+      {
+        "element_id": "blurry_background",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S20",
+    "timestamp_ms": 30000,
+    "background_elements": [
+      {
+        "element_id": "hall_columns_background",
+        "geometry": "vertical_cylinders",
+        "dominant_color": "#3A4A5B",
+        "perspective_scale": 0.7
+      },
+      {
+        "element_id": "dark_background",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S21",
+    "timestamp_ms": 31000,
+    "background_elements": [
+      {
+        "element_id": "flower_stall",
+        "geometry": "rectangular_booth",
+        "dominant_color": "#2E8B57",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "street_lamps",
+        "geometry": "vertical_poles_with_lights",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 0.7
+      },
+      {
+        "element_id": "distant_buildings_skyline",
+        "geometry": "silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.4,
+        "horizon_lines": [
+          0.6
+        ]
+      },
+      {
+        "element_id": "Nelson_column",
+        "geometry": "tall_column_with_statue",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 0.3
+      },
+      {
+        "element_id": "ground_pavement",
+        "geometry": "flat_plane",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "crates_barrels",
+        "geometry": "stacked_rectangles_cylinders",
+        "dominant_color": "#5C3A2E"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S22",
+    "timestamp_ms": 33000,
+    "background_elements": [
+      {
+        "element_id": "flower_stall_interior",
+        "geometry": "grid_shelves",
+        "dominant_color": "#2E8B57",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "roses_bundles",
+        "geometry": "stacked_rectangles",
+        "dominant_color": "#8B0000"
+      },
+      {
+        "element_id": "closed_sign",
+        "geometry": "hanging_rectangle_with_text",
+        "dominant_color": "#DCDCDC"
+      },
+      {
+        "element_id": "distant_city_blur",
+        "geometry": "blurry_silhouette",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.3
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S23",
+    "timestamp_ms": 34000,
+    "background_elements": [
+      {
+        "element_id": "riverbank_wall",
+        "geometry": "long_rectangle",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0,
+        "horizon_lines": [
+          0.7
+        ]
+      },
+      {
+        "element_id": "street_lamp_foreground",
+        "geometry": "vertical_pole_with_light",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "distant_Tower_Bridge",
+        "geometry": "complex_bridge_silhouette",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.4
+      },
+      {
+        "element_id": "city_lights_background",
+        "geometry": "small_glowing_dots",
+        "dominant_color": "#C8A850"
+      },
+      {
+        "element_id": "fog_effect",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S24",
+    "timestamp_ms": 35000,
+    "background_elements": [
+      {
+        "element_id": "Tower_Bridge_structure",
+        "geometry": "complex_gothic_bridge",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "river_surface",
+        "geometry": "flat_plane_with_reflections",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.8,
+        "horizon_lines": [
+          0.7
+        ]
+      },
+      {
+        "element_id": "distant_city_lights",
+        "geometry": "small_glowing_dots",
+        "dominant_color": "#C8A850",
+        "perspective_scale": 0.3
+      },
+      {
+        "element_id": "fog_effect",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S25",
+    "timestamp_ms": 37000,
+    "background_elements": [
+      {
+        "element_id": "stone_wall_background",
+        "geometry": "textured_rectangle",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S26",
+    "timestamp_ms": 38000,
+    "background_elements": [
+      {
+        "element_id": "blurry_background",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S27",
+    "timestamp_ms": 39000,
+    "background_elements": [
+      {
+        "element_id": "rooftop_surface",
+        "geometry": "flat_plane",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "gargoyles_foreground",
+        "geometry": "sculpted_figures",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "distant_city_skyline",
+        "geometry": "silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.4,
+        "horizon_lines": [
+          0.6
+        ]
+      },
+      {
+        "element_id": "fog_effect",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S28",
+    "timestamp_ms": 40000,
+    "background_elements": [
+      {
+        "element_id": "Tower_Bridge_structure",
+        "geometry": "complex_gothic_bridge",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "distant_city_skyline",
+        "geometry": "silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.4
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S29",
+    "timestamp_ms": 41000,
+    "background_elements": [
+      {
+        "element_id": "stone_fountain",
+        "geometry": "tiered_circular_structure",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "water_spray",
+        "geometry": "diffuse_cloud",
+        "dominant_color": "#DCDCDC"
+      },
+      {
+        "element_id": "street_lamps_background",
+        "geometry": "vertical_poles_with_lights",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 0.7
+      },
+      {
+        "element_id": "distant_buildings_skyline",
+        "geometry": "silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.4,
+        "horizon_lines": [
+          0.6
+        ]
+      },
+      {
+        "element_id": "fog_effect",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S30",
+    "timestamp_ms": 42000,
+    "background_elements": [
+      {
+        "element_id": "Tower_of_London_castle",
+        "geometry": "medieval_castle_complex",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "street_lamp_right",
+        "geometry": "vertical_pole_with_light",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "tower_sign",
+        "geometry": "hanging_rectangle_with_text",
+        "dominant_color": "#5C3A2E"
+      },
+      {
+        "element_id": "stone_wall_foreground",
+        "geometry": "textured_rectangle",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S31",
+    "timestamp_ms": 43000,
+    "background_elements": [
+      {
+        "element_id": "large_metal_gate",
+        "geometry": "vertical_bars_with_rivets",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "stone_wall_sides",
+        "geometry": "textured_rectangles",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S32",
+    "timestamp_ms": 44000,
+    "background_elements": [
+      {
+        "element_id": "Tower_Bridge_structure",
+        "geometry": "complex_gothic_bridge",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "distant_city_skyline",
+        "geometry": "silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.4
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S33",
+    "timestamp_ms": 45000,
+    "background_elements": [
+      {
+        "element_id": "shaft_walls",
+        "geometry": "vertical_textured_rectangles",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0,
+        "vanishing_points": [
+          {
+            "x": 0.5,
+            "y": 1.0
+          }
+        ]
+      },
+      {
+        "element_id": "dark_water_below",
+        "geometry": "flat_plane",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S34",
+    "timestamp_ms": 48000,
+    "background_elements": [
+      {
+        "element_id": "water_surface",
+        "geometry": "textured_plane_with_ripples",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "water_ripples",
+        "geometry": "concentric_circles",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S35",
+    "timestamp_ms": 49000,
+    "background_elements": [
+      {
+        "element_id": "stone_building_facade",
+        "geometry": "textured_rectangle",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0
+      },
+      {
+        "element_id": "windows",
+        "geometry": "dark_rectangles",
+        "dominant_color": "#2A3A4B"
+      },
+      {
+        "element_id": "smoke_cloud",
+        "geometry": "irregular_blob",
+        "dominant_color": "#333333"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S36",
+    "timestamp_ms": 50000,
+    "background_elements": [
+      {
+        "element_id": "Tower_Bridge_structure",
+        "geometry": "complex_gothic_bridge",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "distant_city_skyline",
+        "geometry": "silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.4
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S37",
+    "timestamp_ms": 51000,
+    "background_elements": [
+      {
+        "element_id": "blurry_background",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S38",
+    "timestamp_ms": 52000,
+    "background_elements": [
+      {
+        "element_id": "cobblestone_street",
+        "geometry": "textured_plane",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 1.0,
+        "horizon_lines": [
+          0.7
+        ],
+        "vanishing_points": [
+          {
+            "x": 0.5,
+            "y": 0.7
+          }
+        ]
+      },
+      {
+        "element_id": "Bank_of_England_building",
+        "geometry": "classical_architecture",
+        "dominant_color": "#5C6C7D",
+        "perspective_scale": 0.8
+      },
+      {
+        "element_id": "street_lamps_background",
+        "geometry": "vertical_poles_with_lights",
+        "dominant_color": "#8C8C8C",
+        "perspective_scale": 0.7
+      },
+      {
+        "element_id": "fog_effect",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S39",
+    "timestamp_ms": 53000,
+    "background_elements": [
+      {
+        "element_id": "dark_blurry_background",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S40",
+    "timestamp_ms": 54000,
+    "background_elements": [
+      {
+        "element_id": "stone_wall_background",
+        "geometry": "textured_rectangle",
+        "dominant_color": "#4A5A6B",
+        "perspective_scale": 0.9
+      },
+      {
+        "element_id": "dark_background",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.5
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S41",
+    "timestamp_ms": 55000,
+    "background_elements": [
+      {
+        "element_id": "city_silhouette",
+        "geometry": "layered_silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.6
+      },
+      {
+        "element_id": "fog_effect",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#3A4A5B"
+      }
+    ]
+  },
+  {
+    "agent_id": "environment_mapper",
+    "scene_id": "S42",
+    "timestamp_ms": 59000,
+    "background_elements": [
+      {
+        "element_id": "city_silhouette",
+        "geometry": "layered_silhouettes",
+        "dominant_color": "#2A3A4B",
+        "perspective_scale": 0.6
+      },
+      {
+        "element_id": "fog_effect",
+        "geometry": "diffuse_gradient",
+        "dominant_color": "#3A4A4B"
+      }
+    ]
+  }
+]

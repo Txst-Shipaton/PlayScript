@@ -1,0 +1,262 @@
+[
+  {
+    "agent_id": "rigging_analyst",
+    "entity_id": "sherlock_holmes",
+    "timestamp_ms": 4000,
+    "svg_grouping_hierarchy": {
+      "root": "torso",
+      "children": [
+        {
+          "id": "head",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 90
+          },
+          "default_rotation": 0
+        },
+        {
+          "id": "arm_left",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 10
+          },
+          "default_rotation": 0,
+          "children": [
+            {
+              "id": "forearm_left",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "hand_left",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arm_right",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 10
+          },
+          "default_rotation": 0,
+          "children": [
+            {
+              "id": "forearm_right",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "hand_right",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "leg_left",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 10
+          },
+          "default_rotation": 0,
+          "children": [
+            {
+              "id": "shin_left",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "foot_left",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "leg_right",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 10
+          },
+          "default_rotation": 0,
+          "children": [
+            {
+              "id": "shin_right",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "foot_right",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "agent_id": "rigging_analyst",
+    "entity_id": "dr_watson",
+    "timestamp_ms": 5000,
+    "svg_grouping_hierarchy": {
+      "root": "torso",
+      "children": [
+        {
+          "id": "head",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 90
+          },
+          "default_rotation": 0
+        },
+        {
+          "id": "arm_left",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 10
+          },
+          "default_rotation": 0,
+          "children": [
+            {
+              "id": "forearm_left",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "hand_left",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arm_right",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 10
+          },
+          "default_rotation": 0,
+          "children": [
+            {
+              "id": "forearm_right",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "hand_right",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "leg_left",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 10
+          },
+          "default_rotation": 0,
+          "children": [
+            {
+              "id": "shin_left",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "foot_left",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "leg_right",
+          "pivot_point": {
+            "x_percent": 50,
+            "y_percent": 10
+          },
+          "default_rotation": 0,
+          "children": [
+            {
+              "id": "shin_right",
+              "pivot_point": {
+                "x_percent": 50,
+                "y_percent": 10
+              },
+              "default_rotation": 0,
+              "children": [
+                {
+                  "id": "foot_right",
+                  "pivot_point": {
+                    "x_percent": 50,
+                    "y_percent": 10
+                  },
+                  "default_rotation": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,365 @@
+{
+  "agent_id": "motion_tracker",
+  "animations": [
+    {
+      "target_id": "red_star_text",
+      "action": "fade_in_scale_up",
+      "duration_ms": 1000,
+      "easing": "ease-out",
+      "transform": {
+        "opacity": 1,
+        "scale_x": 1.05,
+        "scale_y": 1.05
+      }
+    },
+    {
+      "target_id": "red_star_x_logo",
+      "action": "fade_in_scale_up",
+      "duration_ms": 1000,
+      "easing": "ease-out",
+      "transform": {
+        "opacity": 1,
+        "scale_x": 1.05,
+        "scale_y": 1.05
+      }
+    },
+    {
+      "target_id": "red_star_x_logo",
+      "action": "exit_rotate_translate",
+      "duration_ms": 500,
+      "easing": "ease-in",
+      "transform": {
+        "translate_x": 200,
+        "rotate": 90,
+        "opacity": 0
+      }
+    },
+    {
+      "target_id": "red_star_text",
+      "action": "exit_translate",
+      "duration_ms": 500,
+      "easing": "ease-in",
+      "transform": {
+        "translate_x": -200,
+        "opacity": 0
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "zoom_in_door",
+      "duration_ms": 500,
+      "easing": "ease-out",
+      "transform": {
+        "translate_z": 50
+      }
+    },
+    {
+      "target_id": "hand_picking_pipe",
+      "action": "move_to_pipe",
+      "duration_ms": 500,
+      "easing": "ease-in-out",
+      "transform": {
+        "translate_x": 150,
+        "translate_y": -20
+      }
+    },
+    {
+      "target_id": "pipe_on_table",
+      "action": "lift_rotate",
+      "duration_ms": 500,
+      "easing": "ease-in-out",
+      "transform": {
+        "translate_y": -10,
+        "rotate": 10
+      }
+    },
+    {
+      "target_id": "hand_placing_hat",
+      "action": "place_hat",
+      "duration_ms": 500,
+      "easing": "ease-in-out",
+      "transform": {
+        "translate_x": -100,
+        "translate_y": 50
+      }
+    },
+    {
+      "target_id": "hat_on_bust",
+      "action": "fall_bounce",
+      "duration_ms": 300,
+      "easing": "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+      "transform": {
+        "translate_y": 20,
+        "scale_y": 0.95
+      }
+    },
+    {
+      "target_id": "hand_scanning_papers",
+      "action": "scan_papers",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 50,
+        "translate_y": 10
+      }
+    },
+    {
+      "target_id": "magnifying_glass_papers",
+      "action": "scan_papers",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 50,
+        "translate_y": 10
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "track_forward_feet",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_z": 100
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "zoom_out_bank",
+      "duration_ms": 500,
+      "easing": "ease-out",
+      "transform": {
+        "translate_z": -50
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "pan_down_police",
+      "duration_ms": 500,
+      "easing": "ease-in-out",
+      "transform": {
+        "translate_y": 50,
+        "translate_z": -20
+      }
+    },
+    {
+      "target_id": "magnifying_glass_sherlock_eye",
+      "action": "wobble",
+      "duration_ms": 500,
+      "easing": "cubic-bezier(0.47, 0, 0.745, 0.715)",
+      "transform": {
+        "translate_x": 5,
+        "translate_y": -5
+      }
+    },
+    {
+      "target_id": "watson_running_hall",
+      "action": "run_towards_camera",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_z": 200,
+        "scale_x": 1.2,
+        "scale_y": 1.2
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "track_forward_hall",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_z": 150
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "track_sherlock_running_street",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 100,
+        "translate_z": 50
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "pan_at_stall",
+      "duration_ms": 500,
+      "easing": "ease-in-out",
+      "transform": {
+        "translate_x": 50,
+        "translate_y": 20
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "track_sherlock_river",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 100,
+        "translate_z": 50
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "pan_to_bridge",
+      "duration_ms": 500,
+      "easing": "ease-in-out",
+      "transform": {
+        "rotate_y": 15
+      }
+    },
+    {
+      "target_id": "sherlock_running_street",
+      "action": "run_forward",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 100,
+        "translate_z": 50
+      }
+    },
+    {
+      "target_id": "villain_running_street",
+      "action": "run_forward",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 100,
+        "translate_z": 50
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "track_running_duo",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 100,
+        "translate_z": 50
+      }
+    },
+    {
+      "target_id": "magnifying_glass_sherlock_face",
+      "action": "wobble",
+      "duration_ms": 500,
+      "easing": "cubic-bezier(0.47, 0, 0.745, 0.715)",
+      "transform": {
+        "translate_x": -5,
+        "translate_y": 5
+      }
+    },
+    {
+      "target_id": "sherlock_jumping_gap",
+      "action": "jump",
+      "duration_ms": 500,
+      "easing": "cubic-bezier(0.42, 0, 0.58, 1)",
+      "transform": {
+        "translate_y": -50,
+        "translate_z": 50
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "pan_down_fountain",
+      "duration_ms": 500,
+      "easing": "ease-in-out",
+      "transform": {
+        "rotate_x": 10
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "track_sherlock_tower",
+      "duration_ms": 500,
+      "easing": "linear",
+      "transform": {
+        "translate_z": 100
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "pan_up_bridge",
+      "duration_ms": 500,
+      "easing": "ease-in-out",
+      "transform": {
+        "rotate_x": -15
+      }
+    },
+    {
+      "target_id": "sherlock_falling_shaft",
+      "action": "fall",
+      "duration_ms": 1000,
+      "easing": "ease-in",
+      "transform": {
+        "translate_y": 300,
+        "scale_x": 1.05,
+        "scale_y": 1.05
+      }
+    },
+    {
+      "target_id": "explosion_disc",
+      "action": "emerge_rotate_scale",
+      "duration_ms": 1000,
+      "easing": "ease-out",
+      "transform": {
+        "translate_y": -50,
+        "rotate": 360,
+        "scale_x": 1.5,
+        "scale_y": 1.5,
+        "opacity": 0
+      }
+    },
+    {
+      "target_id": "watson_jumping_bridge",
+      "action": "jump",
+      "duration_ms": 500,
+      "easing": "cubic-bezier(0.42, 0, 0.58, 1)",
+      "transform": {
+        "translate_y": -50,
+        "translate_x": 50
+      }
+    },
+    {
+      "target_id": "villain_running_away",
+      "action": "run_away",
+      "duration_ms": 1000,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 150,
+        "translate_z": 100
+      }
+    },
+    {
+      "target_id": "camera_view",
+      "action": "track_villain",
+      "duration_ms": 1000,
+      "easing": "linear",
+      "transform": {
+        "translate_x": 150,
+        "translate_z": 100
+      }
+    },
+    {
+      "target_id": "title_text",
+      "action": "fade_in_grow",
+      "duration_ms": 2000,
+      "easing": "ease-out",
+      "transform": {
+        "opacity": 1,
+        "scale_x": 1.05,
+        "scale_y": 1.05
+      }
+    },
+    {
+      "target_id": "credits_text",
+      "action": "fade_in",
+      "duration_ms": 1000,
+      "easing": "linear",
+      "transform": {
+        "opacity": 1
+      }
+    }
+  ]
+}

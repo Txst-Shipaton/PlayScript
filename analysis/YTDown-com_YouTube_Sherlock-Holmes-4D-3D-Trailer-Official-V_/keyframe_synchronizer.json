@@ -1,0 +1,742 @@
+{
+  "agent_id": "keyframe_synchronizer",
+  "master_timeline": [
+    {
+      "target_id": "red_star_logo_text",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "scale(0.8)"
+        },
+        "7%": {
+          "opacity": "1",
+          "transform": "scale(1)"
+        },
+        "89%": {
+          "opacity": "1",
+          "transform": "scale(1)"
+        },
+        "100%": {
+          "opacity": "0",
+          "transform": "scale(1.1)"
+        }
+      }
+    },
+    {
+      "target_id": "red_star_logo_rays",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "scale(0.5) rotate(0deg)"
+        },
+        "7%": {
+          "opacity": "1",
+          "transform": "scale(1) rotate(0deg)"
+        },
+        "36%": {
+          "transform": "scale(1) rotate(120deg)"
+        },
+        "71%": {
+          "transform": "scale(1) rotate(240deg)"
+        },
+        "89%": {
+          "opacity": "1",
+          "transform": "scale(1) rotate(360deg)"
+        },
+        "100%": {
+          "opacity": "0",
+          "transform": "scale(1.2) rotate(390deg)"
+        }
+      }
+    },
+    {
+      "target_id": "red_star_logo_star_shape",
+      "keyframes": {
+        "0%": {
+          "transform": "scaleX(0.5) scaleY(1)"
+        },
+        "18%": {
+          "transform": "scaleX(1) scaleY(1)"
+        },
+        "54%": {
+          "transform": "scaleX(0.8) scaleY(1.1) skewX(10deg)"
+        },
+        "71%": {
+          "transform": "scaleX(1) scaleY(1)"
+        },
+        "89%": {
+          "opacity": "1"
+        },
+        "100%": {
+          "opacity": "0"
+        }
+      }
+    },
+    {
+      "target_id": "door_221b",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "100%": {
+          "transform": "rotateY(-90deg)"
+        }
+      }
+    },
+    {
+      "target_id": "camera_scene_3",
+      "keyframes": {
+        "0%": {
+          "transform": "translateZ(0px)"
+        },
+        "33%": {
+          "transform": "translateZ(50px)"
+        },
+        "100%": {
+          "transform": "translateZ(50px)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_violin_play",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateX(0deg) rotateY(0deg) rotateZ(0deg)"
+        },
+        "100%": {
+          "transform": "rotateX(-5deg) rotateY(5deg) rotateZ(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_head_turn",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "50%": {
+          "transform": "rotateY(15deg)"
+        },
+        "100%": {
+          "transform": "rotateY(15deg)"
+        }
+      }
+    },
+    {
+      "target_id": "watson_entrance",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(50px)",
+          "opacity": "0"
+        },
+        "10%": {
+          "opacity": "1"
+        },
+        "100%": {
+          "transform": "translateX(0px)",
+          "opacity": "1"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_deduction_gesture_1",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(15deg)"
+        },
+        "50%": {
+          "transform": "rotateY(-5deg) translateY(-10px)"
+        },
+        "100%": {
+          "transform": "rotateY(-5deg)"
+        }
+      }
+    },
+    {
+      "target_id": "camera_scene_5_cut_1",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(0px) translateY(0px) scale(1)"
+        },
+        "100%": {
+          "transform": "translateX(-50px) translateY(-20px) scale(1.1)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_deduction_gesture_2",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateX(0deg) rotateY(0deg)"
+        },
+        "33%": {
+          "transform": "rotateX(10deg) rotateY(5deg)"
+        },
+        "66%": {
+          "transform": "rotateX(-5deg) rotateY(-5deg)"
+        },
+        "100%": {
+          "transform": "rotateX(0deg) rotateY(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_reading_letter",
+      "keyframes": {
+        "0%": {
+          "transform": "translateY(0px) rotateX(0deg)"
+        },
+        "50%": {
+          "transform": "translateY(-10px) rotateX(-5deg)"
+        },
+        "100%": {
+          "transform": "translateY(0px) rotateX(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_expression_surprise",
+      "keyframes": {
+        "0%": {
+          "face_expression": "neutral"
+        },
+        "100%": {
+          "face_expression": "surprised"
+        }
+      }
+    },
+    {
+      "target_id": "hand_pipe_pickup",
+      "keyframes": {
+        "0%": {
+          "transform": "translateY(20px) rotateZ(0deg)"
+        },
+        "50%": {
+          "transform": "translateY(0px) rotateZ(0deg)"
+        },
+        "100%": {
+          "transform": "translateY(-20px) rotateZ(10deg)"
+        }
+      }
+    },
+    {
+      "target_id": "hand_hat_on_bust",
+      "keyframes": {
+        "0%": {
+          "transform": "translateY(20px) rotateZ(0deg)"
+        },
+        "50%": {
+          "transform": "translateY(0px) rotateZ(0deg)"
+        },
+        "100%": {
+          "transform": "translateY(20px) rotateZ(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "hand_magnifying_glass_pickup",
+      "keyframes": {
+        "0%": {
+          "transform": "translateY(20px) rotateZ(0deg)"
+        },
+        "50%": {
+          "transform": "translateY(0px) rotateZ(0deg)"
+        },
+        "100%": {
+          "transform": "translateY(-20px) rotateZ(-10deg)"
+        }
+      }
+    },
+    {
+      "target_id": "camera_scene_8_pan",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "100%": {
+          "transform": "rotateY(30deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_ready_pose",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "50%": {
+          "transform": "rotateY(10deg)"
+        },
+        "100%": {
+          "transform": "rotateY(20deg)"
+        }
+      }
+    },
+    {
+      "target_id": "running_feet",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(0px)"
+        },
+        "25%": {
+          "transform": "translateX(10px) translateY(-5px)"
+        },
+        "50%": {
+          "transform": "translateX(20px)"
+        },
+        "75%": {
+          "transform": "translateX(30px) translateY(-5px)"
+        },
+        "100%": {
+          "transform": "translateX(40px)"
+        }
+      }
+    },
+    {
+      "target_id": "bank_of_england_reveal",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "translateY(20px)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "translateY(0px)"
+        }
+      }
+    },
+    {
+      "target_id": "police_officers_appear",
+      "keyframes": {
+        "0%": {
+          "opacity": "0"
+        },
+        "100%": {
+          "opacity": "1"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_magnifying_glass_look",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "50%": {
+          "transform": "rotateY(-10deg) translateY(-5px)"
+        },
+        "100%": {
+          "transform": "rotateY(-10deg) translateY(-5px)"
+        }
+      }
+    },
+    {
+      "target_id": "magnifying_glass_money_view",
+      "keyframes": {
+        "0%": {
+          "transform": "scale(1)"
+        },
+        "50%": {
+          "transform": "scale(1.2) translateX(5px)"
+        },
+        "100%": {
+          "transform": "scale(1.2) translateX(5px)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_violin_flashback",
+      "keyframes": {
+        "0%": {
+          "opacity": "0"
+        },
+        "10%": {
+          "opacity": "1"
+        },
+        "90%": {
+          "opacity": "1"
+        },
+        "100%": {
+          "opacity": "0"
+        }
+      }
+    },
+    {
+      "target_id": "watson_running_hall",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(100px) scale(0.8)"
+        },
+        "100%": {
+          "transform": "translateX(0px) scale(1)"
+        }
+      }
+    },
+    {
+      "target_id": "camera_grand_hall_reveal",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(0px) rotateY(0deg)"
+        },
+        "100%": {
+          "transform": "translateX(-50px) rotateY(-10deg)"
+        }
+      }
+    },
+    {
+      "target_id": "villain_gesture",
+      "keyframes": {
+        "0%": {
+          "transform": "translateY(0px) rotateY(0deg)"
+        },
+        "50%": {
+          "transform": "translateY(-10px) rotateY(5deg)"
+        },
+        "100%": {
+          "transform": "translateY(0px) rotateY(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_villain_confrontation",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(50px)",
+          "opacity": "0"
+        },
+        "10%": {
+          "opacity": "1"
+        },
+        "100%": {
+          "transform": "translateX(0px)",
+          "opacity": "1"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_approach_stall",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(50px)"
+        },
+        "100%": {
+          "transform": "translateX(0px)"
+        }
+      }
+    },
+    {
+      "target_id": "camera_trafalgar_square_pan",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "100%": {
+          "transform": "rotateY(-15deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_inspect_flowers",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "50%": {
+          "transform": "rotateY(-10deg) translateY(-10px)"
+        },
+        "100%": {
+          "transform": "rotateY(-10deg) translateY(-10px)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_running_thames",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(0px)"
+        },
+        "50%": {
+          "transform": "translateX(50px) translateY(-5px)"
+        },
+        "100%": {
+          "transform": "translateX(100px)"
+        }
+      }
+    },
+    {
+      "target_id": "camera_tower_bridge_pan",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(0px)"
+        },
+        "100%": {
+          "transform": "translateX(-100px)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_villain_running_duo",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(0px)"
+        },
+        "100%": {
+          "transform": "translateX(50px)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_magnifying_run",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "50%": {
+          "transform": "rotateY(-15deg) translateY(-5px)"
+        },
+        "100%": {
+          "transform": "rotateY(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_jump_dodge",
+      "keyframes": {
+        "0%": {
+          "transform": "translateY(0px) rotateZ(0deg)"
+        },
+        "50%": {
+          "transform": "translateY(-20px) rotateZ(10deg)"
+        },
+        "100%": {
+          "transform": "translateY(0px) rotateZ(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "villain_menacing_look",
+      "keyframes": {
+        "0%": {
+          "face_expression": "neutral"
+        },
+        "50%": {
+          "face_expression": "menacing"
+        },
+        "100%": {
+          "face_expression": "menacing"
+        }
+      }
+    },
+    {
+      "target_id": "fountain_mist_effect",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "scale(0.5)"
+        },
+        "50%": {
+          "opacity": "1",
+          "transform": "scale(1)"
+        },
+        "100%": {
+          "opacity": "0.8",
+          "transform": "scale(1.1)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_run_tower_of_london",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(50px) scale(0.8)"
+        },
+        "100%": {
+          "transform": "translateX(0px) scale(1)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_gate_struggle",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "50%": {
+          "transform": "rotateY(-10deg) translateX(-5px)"
+        },
+        "100%": {
+          "transform": "rotateY(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_look_up_tower_bridge",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateX(0deg)"
+        },
+        "50%": {
+          "transform": "rotateX(-30deg)"
+        },
+        "100%": {
+          "transform": "rotateX(-30deg)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_falling",
+      "keyframes": {
+        "0%": {
+          "transform": "translateY(0px) rotateZ(0deg)"
+        },
+        "33%": {
+          "transform": "translateY(100px) rotateZ(15deg)"
+        },
+        "66%": {
+          "transform": "translateY(250px) rotateZ(-15deg)"
+        },
+        "100%": {
+          "transform": "translateY(500px) rotateZ(0deg)"
+        }
+      }
+    },
+    {
+      "target_id": "impact_smoke_explosion",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "scale(0.1)"
+        },
+        "20%": {
+          "opacity": "1",
+          "transform": "scale(1)"
+        },
+        "100%": {
+          "opacity": "0.5",
+          "transform": "scale(1.5)"
+        }
+      }
+    },
+    {
+      "target_id": "mystery_object_emerge",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "translateY(20px) scale(0.5)"
+        },
+        "50%": {
+          "opacity": "1",
+          "transform": "translateY(0px) scale(1)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "translateY(-5px) scale(1.05)"
+        }
+      }
+    },
+    {
+      "target_id": "watson_jump_to_sherlock",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(50px) translateY(0px)"
+        },
+        "50%": {
+          "transform": "translateX(25px) translateY(-20px)"
+        },
+        "100%": {
+          "transform": "translateX(0px) translateY(0px)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_inspect_ground",
+      "keyframes": {
+        "0%": {
+          "transform": "rotateY(0deg)"
+        },
+        "50%": {
+          "transform": "rotateY(-15deg) translateY(-5px)"
+        },
+        "100%": {
+          "transform": "rotateY(-15deg) translateY(-5px)"
+        }
+      }
+    },
+    {
+      "target_id": "villain_escape_run",
+      "keyframes": {
+        "0%": {
+          "transform": "translateX(0px)"
+        },
+        "100%": {
+          "transform": "translateX(-100px)"
+        }
+      }
+    },
+    {
+      "target_id": "sherlock_watson_determined_pose",
+      "keyframes": {
+        "0%": {
+          "transform": "translateY(0px)"
+        },
+        "50%": {
+          "transform": "translateY(-5px)"
+        },
+        "100%": {
+          "transform": "translateY(0px)"
+        }
+      }
+    },
+    {
+      "target_id": "title_sherlock_holmes_4d",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "scale(0.8)"
+        },
+        "10%": {
+          "opacity": "1",
+          "transform": "scale(1)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "scale(1)"
+        }
+      }
+    },
+    {
+      "target_id": "end_credits_red_star_logo",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "translateY(20px)"
+        },
+        "10%": {
+          "opacity": "1",
+          "transform": "translateY(0px)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "translateY(0px)"
+        }
+      }
+    },
+    {
+      "target_id": "end_credits_text_block",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "translateY(20px)"
+        },
+        "10%": {
+          "opacity": "1",
+          "transform": "translateY(0px)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "translateY(0px)"
+        }
+      }
+    }
+  ]
+}

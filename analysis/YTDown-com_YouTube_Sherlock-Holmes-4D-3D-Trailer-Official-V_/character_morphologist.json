@@ -1,0 +1,91 @@
+{
+  "agent_id": "character_morphologist",
+  "entities": [
+    {
+      "entity_id": "sherlock_holmes",
+      "base_geometry": {
+        "head": "elongated_oval",
+        "torso": "slim_rectangular",
+        "clothing_style": "victorian_detective_layered_plaid"
+      },
+      "colors": {
+        "skin": "#E0B996",
+        "hair": "#4A2E1D",
+        "eyes": "#5F8B5A",
+        "shirt": "#FFFFFF",
+        "waistcoat": "#3B5B52",
+        "cravat": "#1A1A1A",
+        "deerstalker_hat_base": "#8B4513",
+        "deerstalker_hat_checks": "#6B3E26",
+        "overcoat_base": "#8B4513",
+        "overcoat_checks": "#6B3E26",
+        "trousers": "#C0C0C0",
+        "shoes": "#4A2E1D",
+        "pipe_wood": "#8B4513",
+        "pipe_mouthpiece": "#1A1A1A",
+        "magnifying_glass_handle": "#8B4513",
+        "magnifying_glass_rim": "#C0C0C0"
+      }
+    },
+    {
+      "entity_id": "dr_watson",
+      "base_geometry": {
+        "head": "round_plump",
+        "torso": "stout_rounded",
+        "clothing_style": "victorian_formal_layered"
+      },
+      "colors": {
+        "skin": "#E0B996",
+        "hair": "#4A2E1D",
+        "moustache": "#4A2E1D",
+        "eyes": "#5F8B5A",
+        "bowler_hat": "#1A1A1A",
+        "bowler_hat_band": "#4A2E1D",
+        "jacket": "#8B4513",
+        "waistcoat": "#3B5B52",
+        "shirt": "#FFFFFF",
+        "bowtie": "#1A1A1A",
+        "trousers": "#4A2E1D",
+        "shoes": "#1A1A1A"
+      }
+    },
+    {
+      "entity_id": "moriarty",
+      "base_geometry": {
+        "head": "elongated_oval_sharp_angular",
+        "torso": "very_slender_rectangular",
+        "clothing_style": "victorian_villain_theatrical_high_contrast"
+      },
+      "colors": {
+        "skin": "#E0B996",
+        "hair": "#4A2E1D",
+        "moustache_goatee": "#1A1A1A",
+        "eyes": "#5F8B5A",
+        "top_hat": "#1A1A1A",
+        "top_hat_band": "#DAA520",
+        "coat_main": "#8B0000",
+        "coat_lapels": "#1A1A1A",
+        "ruffled_cravat": "#FF0000",
+        "shirt": "#FFFFFF",
+        "gloves": "#FFFFFF",
+        "trousers": "#FF0000",
+        "shoes": "#1A1A1A"
+      }
+    },
+    {
+      "entity_id": "police_officer",
+      "base_geometry": {
+        "head": "oval",
+        "torso": "rectangular_slightly_stout",
+        "clothing_style": "victorian_police_uniform"
+      },
+      "colors": {
+        "skin": "#E0B996",
+        "uniform": "#1A1A1A",
+        "helmet": "#1A1A1A",
+        "helmet_badge": "#C0C0C0",
+        "gloves": "#FFFFFF"
+      }
+    }
+  ]
+}

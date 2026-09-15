@@ -1,0 +1,762 @@
+[
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "2000",
+    "light_source_vector": {
+      "x": -100,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "door_knocker",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 3,
+        "offset_x": 3,
+        "offset_y": 5
+      },
+      {
+        "target_id": "door_frame",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": 2,
+        "offset_y": 4
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "3000",
+    "light_source_vector": {
+      "x": -20,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.25,
+        "blur_radius": 4,
+        "offset_x": 2,
+        "offset_y": 5
+      },
+      {
+        "target_id": "watson_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 3,
+        "offset_x": 3,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "7000",
+    "light_source_vector": {
+      "x": 50,
+      "y": -80
+    },
+    "shadows": [
+      {
+        "target_id": "watson_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 5,
+        "offset_x": -5,
+        "offset_y": 8
+      },
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.25,
+        "blur_radius": 4,
+        "offset_x": -3,
+        "offset_y": 6
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "9000",
+    "light_source_vector": {
+      "x": -20,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.25,
+        "blur_radius": 4,
+        "offset_x": 2,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "12000",
+    "light_source_vector": {
+      "x": -20,
+      "y": -120
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_head",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 3,
+        "offset_x": 1,
+        "offset_y": 2
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "14000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "hand",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": 1,
+        "offset_y": 2
+      },
+      {
+        "target_id": "pipe",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.15,
+        "blur_radius": 1,
+        "offset_x": 1,
+        "offset_y": 1
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "15000",
+    "light_source_vector": {
+      "x": -30,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "hand",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.25,
+        "blur_radius": 3,
+        "offset_x": 2,
+        "offset_y": 3
+      },
+      {
+        "target_id": "hat",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": 1,
+        "offset_y": 2
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "16000",
+    "light_source_vector": {
+      "x": 100,
+      "y": -50
+    },
+    "shadows": [
+      {
+        "target_id": "hand_magnifying_glass",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": -2,
+        "offset_y": 3
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "17000",
+    "light_source_vector": {
+      "x": -150,
+      "y": -50
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.35,
+        "blur_radius": 5,
+        "offset_x": 5,
+        "offset_y": 8
+      },
+      {
+        "target_id": "pipe",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": 1,
+        "offset_y": 2
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "20000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -200
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_legs",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.4,
+        "blur_radius": 8,
+        "offset_x": 0,
+        "offset_y": 15
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "21000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "bank_columns",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.15,
+        "blur_radius": 5,
+        "offset_x": 0,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "22000",
+    "light_source_vector": {
+      "x": -50,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "police_officer_1",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 6,
+        "offset_x": 5,
+        "offset_y": 10
+      },
+      {
+        "target_id": "police_barrier",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.25,
+        "blur_radius": 4,
+        "offset_x": 3,
+        "offset_y": 7
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "23000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_face",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": 0,
+        "offset_y": 1
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "24000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": []
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "25000",
+    "light_source_vector": {
+      "x": 30,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.25,
+        "blur_radius": 4,
+        "offset_x": -2,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "26000",
+    "light_source_vector": {
+      "x": 150,
+      "y": 0
+    },
+    "shadows": [
+      {
+        "target_id": "watson_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.5,
+        "blur_radius": 10,
+        "offset_x": -15,
+        "offset_y": 0
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "27000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "villain_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 5,
+        "offset_x": 0,
+        "offset_y": 5
+      },
+      {
+        "target_id": "pillar_left",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 4,
+        "offset_x": 3,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "28000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -80
+    },
+    "shadows": [
+      {
+        "target_id": "villain_face",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.25,
+        "blur_radius": 3,
+        "offset_x": 0,
+        "offset_y": 2
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "29000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "villain_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 5,
+        "offset_x": 0,
+        "offset_y": 5
+      },
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.25,
+        "blur_radius": 4,
+        "offset_x": 0,
+        "offset_y": 4
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "31000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -200
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.4,
+        "blur_radius": 8,
+        "offset_x": 0,
+        "offset_y": 15
+      },
+      {
+        "target_id": "flower_stand",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 6,
+        "offset_x": 0,
+        "offset_y": 10
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "33000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_face",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": 0,
+        "offset_y": 1
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "34000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -200
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.4,
+        "blur_radius": 8,
+        "offset_x": 0,
+        "offset_y": 15
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "36000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": []
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "37000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.35,
+        "blur_radius": 7,
+        "offset_x": 0,
+        "offset_y": 10
+      },
+      {
+        "target_id": "villain_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.35,
+        "blur_radius": 7,
+        "offset_x": 0,
+        "offset_y": 10
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "38000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_face",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": 0,
+        "offset_y": 1
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "39000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 5,
+        "offset_x": 0,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "40000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "villain_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.35,
+        "blur_radius": 7,
+        "offset_x": 0,
+        "offset_y": 10
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "41000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "fountain",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 5,
+        "offset_x": 0,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "42000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.35,
+        "blur_radius": 7,
+        "offset_x": 0,
+        "offset_y": 10
+      },
+      {
+        "target_id": "tower_of_london",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.15,
+        "blur_radius": 5,
+        "offset_x": 0,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "43000",
+    "light_source_vector": {
+      "x": -50,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 5,
+        "offset_x": 3,
+        "offset_y": 5
+      },
+      {
+        "target_id": "gate",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 4,
+        "offset_x": 2,
+        "offset_y": 4
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "44000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 5,
+        "offset_x": 0,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "45000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -200
+    },
+    "shadows": []
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "48000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": []
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "49000",
+    "light_source_vector": {
+      "x": 0,
+      "y": 0
+    },
+    "shadows": []
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "50000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -150
+    },
+    "shadows": [
+      {
+        "target_id": "watson_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.3,
+        "blur_radius": 5,
+        "offset_x": 0,
+        "offset_y": 5
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "51000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_face",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 2,
+        "offset_x": 0,
+        "offset_y": 1
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "52000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -200
+    },
+    "shadows": [
+      {
+        "target_id": "villain_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.4,
+        "blur_radius": 8,
+        "offset_x": 0,
+        "offset_y": 15
+      }
+    ]
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "53000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -50
+    },
+    "shadows": []
+  },
+  {
+    "agent_id": "lighting_renderer",
+    "scene_id": "54000",
+    "light_source_vector": {
+      "x": 0,
+      "y": -100
+    },
+    "shadows": [
+      {
+        "target_id": "holmes_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 3,
+        "offset_x": 0,
+        "offset_y": 2
+      },
+      {
+        "target_id": "watson_body",
+        "shadow_type": "drop_shadow",
+        "opacity": 0.2,
+        "blur_radius": 3,
+        "offset_x": 0,
+        "offset_y": 2
+      }
+    ]
+  }
+]
