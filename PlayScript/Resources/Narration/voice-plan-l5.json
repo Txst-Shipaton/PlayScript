@@ -1,0 +1,112 @@
+{
+  "text": "I let him go that morning without calling after him. Now I must let a letter go the same way.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "let ",
+      "start": 0.197,
+      "end": 0.325
+    },
+    {
+      "text": "him ",
+      "start": 0.348,
+      "end": 0.43
+    },
+    {
+      "text": "go ",
+      "start": 0.476,
+      "end": 0.569
+    },
+    {
+      "text": "that ",
+      "start": 0.627,
+      "end": 0.778
+    },
+    {
+      "text": "morning ",
+      "start": 0.836,
+      "end": 1.161
+    },
+    {
+      "text": "without ",
+      "start": 1.277,
+      "end": 1.66
+    },
+    {
+      "text": "calling ",
+      "start": 1.707,
+      "end": 2.009
+    },
+    {
+      "text": "after ",
+      "start": 2.055,
+      "end": 2.31
+    },
+    {
+      "text": "him. ",
+      "start": 2.38,
+      "end": 2.682
+    },
+    {
+      "text": "Now ",
+      "start": 3.123,
+      "end": 3.297
+    },
+    {
+      "text": "I ",
+      "start": 3.367,
+      "end": 3.402
+    },
+    {
+      "text": "must ",
+      "start": 3.518,
+      "end": 3.773
+    },
+    {
+      "text": "let ",
+      "start": 3.831,
+      "end": 3.994
+    },
+    {
+      "text": "a ",
+      "start": 4.029,
+      "end": 4.052
+    },
+    {
+      "text": "letter ",
+      "start": 4.098,
+      "end": 4.307
+    },
+    {
+      "text": "go ",
+      "start": 4.365,
+      "end": 4.505
+    },
+    {
+      "text": "the ",
+      "start": 4.586,
+      "end": 4.667
+    },
+    {
+      "text": "same ",
+      "start": 4.725,
+      "end": 5.004
+    },
+    {
+      "text": "way.",
+      "start": 5.062,
+      "end": 5.712
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "1fbf7404c24f399bf123c636de18bb70305796c218b5ef4b04250284c401f28b",
+  "effectiveWPM": 197.47899159663865
+}

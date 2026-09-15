@@ -1,0 +1,67 @@
+{
+  "text": "I heard you. Say it again tomorrow, and I will come.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "heard ",
+      "start": 0.209,
+      "end": 0.383
+    },
+    {
+      "text": "you. ",
+      "start": 0.441,
+      "end": 0.662
+    },
+    {
+      "text": "Say ",
+      "start": 1.045,
+      "end": 1.265
+    },
+    {
+      "text": "it ",
+      "start": 1.312,
+      "end": 1.382
+    },
+    {
+      "text": "again ",
+      "start": 1.416,
+      "end": 1.637
+    },
+    {
+      "text": "tomorrow, ",
+      "start": 1.695,
+      "end": 2.264
+    },
+    {
+      "text": "and ",
+      "start": 2.438,
+      "end": 2.601
+    },
+    {
+      "text": "I ",
+      "start": 2.682,
+      "end": 2.717
+    },
+    {
+      "text": "will ",
+      "start": 2.786,
+      "end": 2.961
+    },
+    {
+      "text": "come.",
+      "start": 3.03,
+      "end": 3.715
+    }
+  ],
+  "playbackRate": 0.9568939393939394,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "7805e8fc83a86c9497008438b14362edea930e317263942783da6b9878f66b58",
+  "effectiveWPM": 170.0
+}

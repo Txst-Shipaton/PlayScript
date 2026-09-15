@@ -1,0 +1,72 @@
+{
+  "text": "I was afraid of waking alone. I never imagined waking to this.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "was ",
+      "start": 0.151,
+      "end": 0.267
+    },
+    {
+      "text": "afraid ",
+      "start": 0.313,
+      "end": 0.615
+    },
+    {
+      "text": "of ",
+      "start": 0.65,
+      "end": 0.708
+    },
+    {
+      "text": "waking ",
+      "start": 0.789,
+      "end": 1.126
+    },
+    {
+      "text": "alone. ",
+      "start": 1.184,
+      "end": 1.8
+    },
+    {
+      "text": "I ",
+      "start": 2.009,
+      "end": 2.067
+    },
+    {
+      "text": "never ",
+      "start": 2.183,
+      "end": 2.415
+    },
+    {
+      "text": "imagined ",
+      "start": 2.485,
+      "end": 3.077
+    },
+    {
+      "text": "waking ",
+      "start": 3.146,
+      "end": 3.518
+    },
+    {
+      "text": "to ",
+      "start": 3.576,
+      "end": 3.634
+    },
+    {
+      "text": "this.",
+      "start": 3.692,
+      "end": 4.319
+    }
+  ],
+  "playbackRate": 1.019763888888889,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "355015930bdffeef2e7cb2521e92e37732d6692bea708b24b689b8d863a4a863",
+  "effectiveWPM": 170.0
+}

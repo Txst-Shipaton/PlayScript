@@ -1,0 +1,102 @@
+{
+  "text": "I rein the horse in. A fall on this road would be the old ending by another name.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.104
+    },
+    {
+      "text": "rein ",
+      "start": 0.232,
+      "end": 0.441
+    },
+    {
+      "text": "the ",
+      "start": 0.488,
+      "end": 0.557
+    },
+    {
+      "text": "horse ",
+      "start": 0.604,
+      "end": 0.859
+    },
+    {
+      "text": "in. ",
+      "start": 0.917,
+      "end": 1.242
+    },
+    {
+      "text": "A ",
+      "start": 1.625,
+      "end": 1.707
+    },
+    {
+      "text": "fall ",
+      "start": 1.8,
+      "end": 2.125
+    },
+    {
+      "text": "on ",
+      "start": 2.218,
+      "end": 2.31
+    },
+    {
+      "text": "this ",
+      "start": 2.357,
+      "end": 2.496
+    },
+    {
+      "text": "road ",
+      "start": 2.566,
+      "end": 2.868
+    },
+    {
+      "text": "would ",
+      "start": 3.146,
+      "end": 3.332
+    },
+    {
+      "text": "be ",
+      "start": 3.367,
+      "end": 3.437
+    },
+    {
+      "text": "the ",
+      "start": 3.471,
+      "end": 3.553
+    },
+    {
+      "text": "old ",
+      "start": 3.611,
+      "end": 3.762
+    },
+    {
+      "text": "ending ",
+      "start": 3.831,
+      "end": 4.122
+    },
+    {
+      "text": "by ",
+      "start": 4.191,
+      "end": 4.331
+    },
+    {
+      "text": "another ",
+      "start": 4.389,
+      "end": 4.69
+    },
+    {
+      "text": "name.",
+      "start": 4.748,
+      "end": 5.433
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "2cf793aa9a4cb7d25bfee7aa3fcfa9a8058bfea21d8f080ae0944a1d6f3f3d6c",
+  "effectiveWPM": 186.85808945334068
+}

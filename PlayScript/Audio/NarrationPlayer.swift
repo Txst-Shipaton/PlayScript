@@ -67,7 +67,8 @@ final class NarrationPlayer: NSObject {
         guard !player.isPlaying else { return }
         // A finished page stays finished when opening and closing pause.
         if finished { return }
-        try? AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
+        // Playback, not ambient: a narrated story must be heard with the silent switch on.
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
         try? AVAudioSession.sharedInstance().setActive(true)
         player.play()
         startClock()

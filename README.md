@@ -18,10 +18,10 @@ The app has one third-party runtime dependency, [lottie-ios](https://github.com/
   **two lines at a time** rather than a block of prose, so Romeo can answer Juliet
   within a page. Each line is narrated in its own character's voice, and the lines
   of a page play in order.
-- Exactly two thoughts at each of three decisions. Thoughts rise into view; the selected thought lingers as the other falls away, then reveals its own flavor text. Every choice reaches the same next beat.
+- Exactly two thoughts at each of six decisions, one of them made as Romeo. Thoughts rise into view; the selected thought lingers as the other falls away, then reveals its own reply. The plot keeps Shakespeare's shape, but choices are remembered: later lines marked `when` are heard only on the path that earned them, and saved places carry every decision made.
 - A quiet fade into the “what if” ending, explicitly distinguished from Shakespeare’s tragedy.
 - A closing reflection, replay, and automatic restoration of both your place and selected flavor text.
-- Five original ambient loops with mood crossfades, plus gentle page and choice sounds. Sound respects the silent switch, pauses when the app becomes inactive, and can be turned off in the library or pause sheet.
+- Five original ambient loops with mood crossfades, plus gentle page and choice sounds. Narration and sound play even with the silent switch on, pause when the app becomes inactive, and can be turned off in the library or pause sheet.
 - Dynamic Type, scrollable text, VoiceOver reading focus and pause actions, Reduce Motion, and Reduce Transparency.
 
 Tap **Become Juliet** to begin. Use **Tap to continue** to turn a page. Use the pause icon or touch and hold in the story to pause, adjust sound, or return to the library. VoiceOver also exposes **Pause story** as a custom action and supports the escape gesture.
@@ -75,8 +75,9 @@ python3 Scripts/create_project.py                    # include generated clips
 python3 -m unittest discover -s Scripts -p 'test_*.py'
 ```
 
-Narration is generated **per line**, not per passage: 110 clips, 74 Juliet and 36
-Romeo, each named `voice-<beat>[--<choice>]-l<line>`. The speaker on the line picks
+Narration is generated **per line**, not per passage: 149 clips, 95 Juliet and 54
+Romeo, each named `voice-<beat>[--<choice>]-l<line>` by written position, so a
+choice-dependent line keeps its clip whichever path reaches it. The speaker on the line picks
 the voice, so a page can change speaker mid-way. Those clips, five mood score cues,
 and seven effects are all generated and checked in, so playback is immediate and
 entirely offline.
@@ -104,7 +105,7 @@ the actual audio position, including at adjusted playback rates. Missing or stal
 voice assets leave the original text readable without simulated highlighting.
 
 The Read aloud toggle appears when the current passage has bundled narration.
-Voice pauses with the story and app lifecycle. Audio respects the silent switch.
+Voice pauses with the story and app lifecycle, and plays with the silent switch on.
 This branch still needs Xcode compilation and simulator/device visual and audio QA;
 see the current-run section in `VALIDATION.md`.
 

@@ -1,0 +1,87 @@
+{
+  "text": "I come back to the Friar with no safe place left to put my hope.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "come ",
+      "start": 0.186,
+      "end": 0.337
+    },
+    {
+      "text": "back ",
+      "start": 0.36,
+      "end": 0.534
+    },
+    {
+      "text": "to ",
+      "start": 0.58,
+      "end": 0.639
+    },
+    {
+      "text": "the ",
+      "start": 0.697,
+      "end": 0.766
+    },
+    {
+      "text": "Friar ",
+      "start": 0.813,
+      "end": 1.161
+    },
+    {
+      "text": "with ",
+      "start": 1.242,
+      "end": 1.428
+    },
+    {
+      "text": "no ",
+      "start": 1.498,
+      "end": 1.683
+    },
+    {
+      "text": "safe ",
+      "start": 1.765,
+      "end": 2.02
+    },
+    {
+      "text": "place ",
+      "start": 2.055,
+      "end": 2.357
+    },
+    {
+      "text": "left ",
+      "start": 2.415,
+      "end": 2.682
+    },
+    {
+      "text": "to ",
+      "start": 2.74,
+      "end": 2.821
+    },
+    {
+      "text": "put ",
+      "start": 2.879,
+      "end": 3.007
+    },
+    {
+      "text": "my ",
+      "start": 3.053,
+      "end": 3.158
+    },
+    {
+      "text": "hope.",
+      "start": 3.228,
+      "end": 3.808
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "d98ee7a5531a8f04e9bebe2e94323233b250833f05306ce08d1de1ac82c5ff2e",
+  "effectiveWPM": 222.1638655462185
+}

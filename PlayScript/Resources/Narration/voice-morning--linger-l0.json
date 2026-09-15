@@ -1,0 +1,72 @@
+{
+  "text": "I cannot help it. I call his name softly into the orchard.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "cannot ",
+      "start": 0.151,
+      "end": 0.418
+    },
+    {
+      "text": "help ",
+      "start": 0.464,
+      "end": 0.65
+    },
+    {
+      "text": "it. ",
+      "start": 0.731,
+      "end": 0.964
+    },
+    {
+      "text": "I ",
+      "start": 1.289,
+      "end": 1.347
+    },
+    {
+      "text": "call ",
+      "start": 1.428,
+      "end": 1.614
+    },
+    {
+      "text": "his ",
+      "start": 1.683,
+      "end": 1.788
+    },
+    {
+      "text": "name ",
+      "start": 1.846,
+      "end": 2.032
+    },
+    {
+      "text": "softly ",
+      "start": 2.078,
+      "end": 2.566
+    },
+    {
+      "text": "into ",
+      "start": 2.647,
+      "end": 2.798
+    },
+    {
+      "text": "the ",
+      "start": 2.844,
+      "end": 2.914
+    },
+    {
+      "text": "orchard.",
+      "start": 2.972,
+      "end": 3.669
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "0f0b1f98989973dd60f8165bc610d4d6f18b8ece9aec7e46d90a6c6aaa9aa676",
+  "effectiveWPM": 184.4644317252657
+}

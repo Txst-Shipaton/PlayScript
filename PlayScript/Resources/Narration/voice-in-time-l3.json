@@ -1,17 +1,67 @@
 {
-  "text": "Romeo?",
+  "text": "I came slowly and surely. I can wait a little longer.",
   "cues": [
     {
-      "text": "Romeo?",
+      "text": "I ",
       "start": 0.0,
-      "end": 0.65
+      "end": 0.093
+    },
+    {
+      "text": "came ",
+      "start": 0.186,
+      "end": 0.418
+    },
+    {
+      "text": "slowly ",
+      "start": 0.453,
+      "end": 0.836
+    },
+    {
+      "text": "and ",
+      "start": 0.894,
+      "end": 1.01
+    },
+    {
+      "text": "surely. ",
+      "start": 1.091,
+      "end": 1.683
+    },
+    {
+      "text": "I ",
+      "start": 2.194,
+      "end": 2.241
+    },
+    {
+      "text": "can ",
+      "start": 2.322,
+      "end": 2.426
+    },
+    {
+      "text": "wait ",
+      "start": 2.473,
+      "end": 2.612
+    },
+    {
+      "text": "a ",
+      "start": 2.659,
+      "end": 2.682
+    },
+    {
+      "text": "little ",
+      "start": 2.728,
+      "end": 2.926
+    },
+    {
+      "text": "longer.",
+      "start": 2.961,
+      "end": 3.622
     }
   ],
-  "playbackRate": 1.06,
-  "voiceID": "EXAVITQu4vr4xnSDxMaL",
-  "character": "Juliet",
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
   "mood": "dawn",
   "deliveryDirection": "disbelief giving way to relief and hope",
-  "fingerprint": "ce86d0453c969a66b7026632c9a5ca1d534c3d59da06e5008bf923f639a1fdae",
-  "effectiveWPM": 97.84615384615384
+  "fingerprint": "7e82508016eeaf5a6c22aa45f9458846bdb60de806ed7923df6afbefe42c0378",
+  "effectiveWPM": 171.28658199889563
 }

@@ -129,7 +129,7 @@
       "mood": "tender",
       "artwork": null,
       "kind": "narration",
-      "text": "Montague. A word I was taught to hate before I knew the person it belonged to.\n\nIt is only a word. It is not my hand, nor my face, nor any part of me you have looked at.\n\nBut a name has never held my hand. A name has never looked at me as if the whole crowded room had fallen silent.\n\nThen bid me be called something else, and I will be it before you have finished asking.\n\nIf I could set our names down here, between us, what would be left except him and me?\n\nOnly this. Only us, and the little distance of a wall.",
+      "text": "Montague. A word I was taught to hate before I knew the person it belonged to.\n\nIt is only a word. It is not my hand, nor my face, nor any part of me you have looked at.\n\nBut a name has never held my hand. A name has never looked at me as if the whole crowded room had fallen silent.\n\nThen bid me be called something else, and I will be it before you have finished asking.\n\nIf I could set our names down here, between us, what would be left except him and me?\n\nOnly this. Only us, and the little distance of a wall.\n\nI spoke first tonight. I do not regret a single word of it.\n\nI heard what he said of me when he thought no one was listening. No name could say it better.",
       "lines": [
         {
           "speaker": "Juliet",
@@ -154,6 +154,16 @@
         {
           "speaker": "Juliet",
           "text": "Only this. Only us, and the little distance of a wall."
+        },
+        {
+          "speaker": "Juliet",
+          "text": "I spoke first tonight. I do not regret a single word of it.",
+          "when": "window-choice:answer"
+        },
+        {
+          "speaker": "Juliet",
+          "text": "I heard what he said of me when he thought no one was listening. No name could say it better.",
+          "when": "window-choice:listen"
         }
       ],
       "choices": []
@@ -281,7 +291,7 @@
       "pointOfView": "Juliet",
       "mood": "tender",
       "artwork": null,
-      "kind": "narration",
+      "kind": "choice",
       "text": "We say good night as though saying it slowly might keep the morning away.\n\nGood night. Good night. I could say it a hundred times and still be standing here.\n\nGo. The light is coming, and it does not love us.\n\nThen I will go, and be nothing all day, and come back at dark and be a man again.\n\nAt last he goes. I stay at the window, holding the silence he has left me.\n\nTomorrow, I think. Such a little word to carry so much happiness.",
       "lines": [
         {
@@ -309,7 +319,46 @@
           "text": "Tomorrow, I think. Such a little word to carry so much happiness."
         }
       ],
-      "choices": []
+      "choices": [
+        {
+          "id": "linger",
+          "title": "Call his name once more",
+          "flavor": "I cannot help it. I call his name softly into the orchard.\n\nI heard you. Say it again tomorrow, and I will come.\n\nThen go, before I call you back a second time.",
+          "lines": [
+            {
+              "speaker": "Juliet",
+              "text": "I cannot help it. I call his name softly into the orchard."
+            },
+            {
+              "speaker": "Romeo",
+              "text": "I heard you. Say it again tomorrow, and I will come."
+            },
+            {
+              "speaker": "Juliet",
+              "text": "Then go, before I call you back a second time."
+            }
+          ]
+        },
+        {
+          "id": "release",
+          "title": "Let the silence keep him",
+          "flavor": "I keep his name to myself. If I call now, the whole house will wake.\n\nBeyond the wall, a shadow pauses, as though it heard me anyway.\n\nUntil dark, then. I will count every hour of the day.",
+          "lines": [
+            {
+              "speaker": "Juliet",
+              "text": "I keep his name to myself. If I call now, the whole house will wake."
+            },
+            {
+              "speaker": "Juliet",
+              "text": "Beyond the wall, a shadow pauses, as though it heard me anyway."
+            },
+            {
+              "speaker": "Romeo",
+              "text": "Until dark, then. I will count every hour of the day."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "friar",
@@ -320,11 +369,21 @@
       "mood": "uneasy",
       "artwork": null,
       "kind": "narration",
-      "text": "Friar Laurence has married us in secret. For a little while, I have been Romeo’s wife.\n\nThen Tybalt is dead by Romeo’s hand, Romeo is banished, and my father has promised me to Paris.\n\nA wife of one night, and already another man’s name is being set beside mine.\n\nI come back to the Friar with no safe place left to put my hope.",
+      "text": "Friar Laurence has married us in secret. For a little while, I have been Romeo’s wife.\n\nI gave him my heart before fear could make the words smaller. Fear has found other words since.\n\nI asked him whether it was true. The Friar’s blessing made it so.\n\nThen Tybalt is dead by Romeo’s hand, Romeo is banished, and my father has promised me to Paris.\n\nA wife of one night, and already another man’s name is being set beside mine.\n\nI come back to the Friar with no safe place left to put my hope.",
       "lines": [
         {
           "speaker": "Juliet",
           "text": "Friar Laurence has married us in secret. For a little while, I have been Romeo’s wife."
+        },
+        {
+          "speaker": "Juliet",
+          "text": "I gave him my heart before fear could make the words smaller. Fear has found other words since.",
+          "when": "vow-choice:certain"
+        },
+        {
+          "speaker": "Juliet",
+          "text": "I asked him whether it was true. The Friar’s blessing made it so.",
+          "when": "vow-choice:sure"
         },
         {
           "speaker": "Juliet",
@@ -350,7 +409,7 @@
       "mood": "uneasy",
       "artwork": null,
       "kind": "narration",
-      "text": "The Friar places a small vial in my hand. A sleep so deep that everyone will believe I am dead.\n\nForty-two hours, he says. Then I will wake.\n\nHe will send a letter to Romeo in Mantua, and Romeo will know the truth of it.\n\nHe will come to the tomb and be beside me when I open my eyes.",
+      "text": "The Friar places a small vial in my hand. A sleep so deep that everyone will believe I am dead.\n\nForty-two hours, he says. Then I will wake.\n\nHe will send a letter to Romeo in Mantua, and Romeo will know the truth of it.\n\nHe will come to the tomb and be beside me when I open my eyes.\n\nHe turned back once when I called his name. He will turn back again.\n\nI let him go that morning without calling after him. Now I must let a letter go the same way.",
       "lines": [
         {
           "speaker": "Juliet",
@@ -367,6 +426,16 @@
         {
           "speaker": "Juliet",
           "text": "He will come to the tomb and be beside me when I open my eyes."
+        },
+        {
+          "speaker": "Juliet",
+          "text": "He turned back once when I called his name. He will turn back again.",
+          "when": "morning:linger"
+        },
+        {
+          "speaker": "Juliet",
+          "text": "I let him go that morning without calling after him. Now I must let a letter go the same way.",
+          "when": "morning:release"
         }
       ],
       "choices": []
@@ -457,7 +526,7 @@
       "mood": "uneasy",
       "artwork": null,
       "kind": "narration",
-      "text": "The room grows distant. The candle softens into a single wandering star.\n\nSomewhere beyond these walls, a letter will be making its way toward him.\n\nCarry it quickly. Put it in his hands before he hears anything else.\n\nI hold that thought until I cannot hold anything at all.",
+      "text": "The room grows distant. The candle softens into a single wandering star.\n\nSomewhere beyond these walls, a letter will be making its way toward him.\n\nMy hand was steady when I drank. Let the letter travel as steadily.\n\nMy hand trembled, and I drank anyway. Let that be enough.\n\nCarry it quickly. Put it in his hands before he hears anything else.\n\nI hold that thought until I cannot hold anything at all.",
       "lines": [
         {
           "speaker": "Juliet",
@@ -466,6 +535,16 @@
         {
           "speaker": "Juliet",
           "text": "Somewhere beyond these walls, a letter will be making its way toward him."
+        },
+        {
+          "speaker": "Juliet",
+          "text": "My hand was steady when I drank. Let the letter travel as steadily.",
+          "when": "potion-choice:resolve"
+        },
+        {
+          "speaker": "Juliet",
+          "text": "My hand trembled, and I drank anyway. Let that be enough.",
+          "when": "potion-choice:afraid"
         },
         {
           "speaker": "Juliet",
@@ -487,7 +566,7 @@
       "mood": "grief",
       "artwork": null,
       "kind": "narration",
-      "text": "Here is my love, and here I will stay. Eyes, look your last. Arms, take your last embrace.\n\nI wake to stone beneath my hands.\n\nThe Friar is here. Romeo is here, too, but he does not turn when I say his name.\n\nThere is an empty cup beside him. I touch his cheek. It is colder than the orchard ever was.\n\nWhatever he said in this room, he said it to a girl he believed was already gone.\n\nI was here. I was here the whole time, and I could not answer him.",
+      "text": "Here is my love, and here I will stay. Eyes, look your last. Arms, take your last embrace.\n\nI wake to stone beneath my hands.\n\nThe Friar is here. Romeo is here, too, but he does not turn when I say his name.\n\nThere is an empty cup beside him. I touch his cheek. It is colder than the orchard ever was.\n\nWhatever he said in this room, he said it to a girl he believed was already gone.\n\nI was here. I was here the whole time, and I could not answer him.\n\nIn the orchard I answered him before he had finished speaking. Here, I could not answer at all.\n\nIn the orchard I listened while he did not know. Here, I could not even listen.",
       "lines": [
         {
           "speaker": "Romeo",
@@ -512,6 +591,16 @@
         {
           "speaker": "Juliet",
           "text": "I was here. I was here the whole time, and I could not answer him."
+        },
+        {
+          "speaker": "Juliet",
+          "text": "In the orchard I answered him before he had finished speaking. Here, I could not answer at all.",
+          "when": "window-choice:answer"
+        },
+        {
+          "speaker": "Juliet",
+          "text": "In the orchard I listened while he did not know. Here, I could not even listen.",
+          "when": "window-choice:listen"
         }
       ],
       "choices": []
@@ -525,7 +614,7 @@
       "mood": "grief",
       "artwork": null,
       "kind": "narration",
-      "text": "The Friar tells me his letter never reached Mantua. He urges me to leave; the watch is coming.\n\nBut Romeo came here believing I was gone. He was not wrong for a single hour, and it cost him everything.\n\nAll our tomorrows have narrowed to this silence.\n\nI stay beside my husband when the Friar flees.",
+      "text": "The Friar tells me his letter never reached Mantua. He urges me to leave; the watch is coming.\n\nBut Romeo came here believing I was gone. He was not wrong for a single hour, and it cost him everything.\n\nAll our tomorrows have narrowed to this silence.\n\nI told him I was coming. I did not know he would be the one to go ahead.\n\nI was afraid of waking alone. I never imagined waking to this.\n\nI stay beside my husband when the Friar flees.",
       "lines": [
         {
           "speaker": "Juliet",
@@ -538,6 +627,16 @@
         {
           "speaker": "Juliet",
           "text": "All our tomorrows have narrowed to this silence."
+        },
+        {
+          "speaker": "Juliet",
+          "text": "I told him I was coming. I did not know he would be the one to go ahead.",
+          "when": "potion-choice:resolve"
+        },
+        {
+          "speaker": "Juliet",
+          "text": "I was afraid of waking alone. I never imagined waking to this.",
+          "when": "potion-choice:afraid"
         },
         {
           "speaker": "Juliet",
@@ -554,8 +653,8 @@
       "pointOfView": "Juliet",
       "mood": "grief",
       "artwork": null,
-      "kind": "narration",
-      "text": "I kiss him. His lips are still warm.\n\nOnly a little time has come between us. Less than a morning.\n\nLess than all the good nights we could not bear to finish.\n\nI press my forehead to his and whisper his name once more.",
+      "kind": "choice",
+      "text": "I kiss him. His lips are still warm.\n\nOnly a little time has come between us. Less than a morning.\n\nLess than all the good nights we could not bear to finish.\n\nThat morning I called him back from the wall. I call him now, and he does not turn.\n\nThat morning I let him go without a word. I will not let him go so quietly again.\n\nI press my forehead to his and whisper his name once more.",
       "lines": [
         {
           "speaker": "Juliet",
@@ -571,28 +670,79 @@
         },
         {
           "speaker": "Juliet",
+          "text": "That morning I called him back from the wall. I call him now, and he does not turn.",
+          "when": "morning:linger"
+        },
+        {
+          "speaker": "Juliet",
+          "text": "That morning I let him go without a word. I will not let him go so quietly again.",
+          "when": "morning:release"
+        },
+        {
+          "speaker": "Juliet",
           "text": "I press my forehead to his and whisper his name once more."
         }
       ],
-      "choices": []
+      "choices": [
+        {
+          "id": "thanks",
+          "title": "Thank him for the orchard",
+          "flavor": "Thank you for climbing the wall. For every hour you gave me.\n\nI would open the window again, knowing all of this.",
+          "lines": [
+            {
+              "speaker": "Juliet",
+              "text": "Thank you for climbing the wall. For every hour you gave me."
+            },
+            {
+              "speaker": "Juliet",
+              "text": "I would open the window again, knowing all of this."
+            }
+          ]
+        },
+        {
+          "id": "wait",
+          "title": "Ask him to wait for me",
+          "flavor": "Wait for me, wherever you have gone. Do not walk too far ahead.\n\nYou never could leave without one more good night.",
+          "lines": [
+            {
+              "speaker": "Juliet",
+              "text": "Wait for me, wherever you have gone. Do not walk too far ahead."
+            },
+            {
+              "speaker": "Juliet",
+              "text": "You never could leave without one more good night."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "what-if",
       "chapter": "A LETTER UNDELIVERED",
       "title": "What if…",
       "location": "Between what was and what might have been",
-      "pointOfView": "Juliet",
+      "pointOfView": "Romeo",
       "mood": "grief",
       "artwork": null,
       "kind": "whatIf",
-      "text": "What if the letter had found him?\n\nJust once, let me imagine a world that gave us enough time.",
+      "text": "What if the letter had found me?\n\nShe thanked me for the orchard. Let me give her more than a wall to climb.\n\nShe asked me to wait for her. Let me imagine a world where neither of us had to wait.\n\nJust once, let me imagine a world that gave us enough time.",
       "lines": [
         {
-          "speaker": "Juliet",
-          "text": "What if the letter had found him?"
+          "speaker": "Romeo",
+          "text": "What if the letter had found me?"
         },
         {
-          "speaker": "Juliet",
+          "speaker": "Romeo",
+          "text": "She thanked me for the orchard. Let me give her more than a wall to climb.",
+          "when": "last-kiss:thanks"
+        },
+        {
+          "speaker": "Romeo",
+          "text": "She asked me to wait for her. Let me imagine a world where neither of us had to wait.",
+          "when": "last-kiss:wait"
+        },
+        {
+          "speaker": "Romeo",
           "text": "Just once, let me imagine a world that gave us enough time."
         }
       ],
@@ -636,7 +786,7 @@
       "pointOfView": "Romeo",
       "mood": "dawn",
       "artwork": null,
-      "kind": "narration",
+      "kind": "choice",
       "text": "I ride with the letter against my heart.\n\nThe road is the same road. Verona still holds the same dangers.\n\nBut every mile carries me toward her now, instead of toward a world without her.\n\nWait for me, Juliet. Only a little longer.",
       "lines": [
         {
@@ -656,7 +806,38 @@
           "text": "Wait for me, Juliet. Only a little longer."
         }
       ],
-      "choices": []
+      "choices": [
+        {
+          "id": "faster",
+          "title": "Ride harder through the dark",
+          "flavor": "I spur the horse on and let the cold wind take my breath.\n\nEvery stride is a word I have not yet said to her. I mean to say them all.",
+          "lines": [
+            {
+              "speaker": "Romeo",
+              "text": "I spur the horse on and let the cold wind take my breath."
+            },
+            {
+              "speaker": "Romeo",
+              "text": "Every stride is a word I have not yet said to her. I mean to say them all."
+            }
+          ]
+        },
+        {
+          "id": "steady",
+          "title": "Ride steady. Arrive whole.",
+          "flavor": "I rein the horse in. A fall on this road would be the old ending by another name.\n\nSlowly, then, and surely. I will not be too late, and I will not be careless.",
+          "lines": [
+            {
+              "speaker": "Romeo",
+              "text": "I rein the horse in. A fall on this road would be the old ending by another name."
+            },
+            {
+              "speaker": "Romeo",
+              "text": "Slowly, then, and surely. I will not be too late, and I will not be careless."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "in-time",
@@ -667,7 +848,7 @@
       "mood": "dawn",
       "artwork": null,
       "kind": "narration",
-      "text": "In the tomb, I kneel beside her and take her hand.\n\nI wait through the stillness, through every frightened breath.\n\nThen her fingers move against mine. Her eyes open.\n\nRomeo?\n\nYes. I am here. I have not been anywhere else.\n\nThen the daylight has not undone us after all.",
+      "text": "In the tomb, I kneel beside her and take her hand.\n\nI wait through the stillness, through every frightened breath.\n\nI rode through the dark to be here. Now I must learn to be still.\n\nI came slowly and surely. I can wait a little longer.\n\nThen her fingers move against mine. Her eyes open.\n\nRomeo?\n\nYes. I am here. I have not been anywhere else.\n\nShe gave me her heart without asking for proof. Here is the proof. I came.\n\nShe once asked me whether I was certain. I am certain now, kneeling here.\n\nThen the daylight has not undone us after all.",
       "lines": [
         {
           "speaker": "Romeo",
@@ -676,6 +857,16 @@
         {
           "speaker": "Romeo",
           "text": "I wait through the stillness, through every frightened breath."
+        },
+        {
+          "speaker": "Romeo",
+          "text": "I rode through the dark to be here. Now I must learn to be still.",
+          "when": "ride:faster"
+        },
+        {
+          "speaker": "Romeo",
+          "text": "I came slowly and surely. I can wait a little longer.",
+          "when": "ride:steady"
         },
         {
           "speaker": "Romeo",
@@ -688,6 +879,16 @@
         {
           "speaker": "Romeo",
           "text": "Yes. I am here. I have not been anywhere else."
+        },
+        {
+          "speaker": "Romeo",
+          "text": "She gave me her heart without asking for proof. Here is the proof. I came.",
+          "when": "vow-choice:certain"
+        },
+        {
+          "speaker": "Romeo",
+          "text": "She once asked me whether I was certain. I am certain now, kneeling here.",
+          "when": "vow-choice:sure"
         },
         {
           "speaker": "Juliet",
@@ -705,7 +906,7 @@
       "mood": "dawn",
       "artwork": null,
       "kind": "narration",
-      "text": "I have no promise that the world outside will forgive us.\n\nOnly her hand in mine, and the Friar waiting to lead us out.\n\nTake me out of this place. Whatever we owe Verona, we will pay it in daylight.\n\nI would carry her to the gate if she asked it. She asks only that I walk beside her.\n\nFor the first time, I am not too late.\n\nFor now, that is enough to begin.",
+      "text": "I have no promise that the world outside will forgive us.\n\nOnly her hand in mine, and the Friar waiting to lead us out.\n\nTake me out of this place. Whatever we owe Verona, we will pay it in daylight.\n\nI would carry her to the gate if she asked it.\n\nOnly walk beside me. That is all I ask.\n\nI would climb every wall in Verona again for this.\n\nNo one waits for anyone now. We go out together.\n\nFor the first time, I am not too late.\n\nI rode hard enough to outrun the old ending.\n\nI came steadily, and I came whole, and I am still in time.\n\nFor now, that is enough to begin.",
       "lines": [
         {
           "speaker": "Romeo",
@@ -721,11 +922,35 @@
         },
         {
           "speaker": "Romeo",
-          "text": "I would carry her to the gate if she asked it. She asks only that I walk beside her."
+          "text": "I would carry her to the gate if she asked it."
+        },
+        {
+          "speaker": "Juliet",
+          "text": "Only walk beside me. That is all I ask."
+        },
+        {
+          "speaker": "Romeo",
+          "text": "I would climb every wall in Verona again for this.",
+          "when": "last-kiss:thanks"
+        },
+        {
+          "speaker": "Romeo",
+          "text": "No one waits for anyone now. We go out together.",
+          "when": "last-kiss:wait"
         },
         {
           "speaker": "Romeo",
           "text": "For the first time, I am not too late."
+        },
+        {
+          "speaker": "Romeo",
+          "text": "I rode hard enough to outrun the old ending.",
+          "when": "ride:faster"
+        },
+        {
+          "speaker": "Romeo",
+          "text": "I came steadily, and I came whole, and I am still in time.",
+          "when": "ride:steady"
         },
         {
           "speaker": "Romeo",

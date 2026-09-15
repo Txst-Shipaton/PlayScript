@@ -1,0 +1,67 @@
+{
+  "text": "I hold that thought until I cannot hold anything at all.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "hold ",
+      "start": 0.197,
+      "end": 0.372
+    },
+    {
+      "text": "that ",
+      "start": 0.406,
+      "end": 0.557
+    },
+    {
+      "text": "thought ",
+      "start": 0.592,
+      "end": 0.836
+    },
+    {
+      "text": "until ",
+      "start": 0.882,
+      "end": 1.126
+    },
+    {
+      "text": "I ",
+      "start": 1.219,
+      "end": 1.265
+    },
+    {
+      "text": "cannot ",
+      "start": 1.382,
+      "end": 1.718
+    },
+    {
+      "text": "hold ",
+      "start": 1.765,
+      "end": 1.985
+    },
+    {
+      "text": "anything ",
+      "start": 2.067,
+      "end": 2.543
+    },
+    {
+      "text": "at ",
+      "start": 2.601,
+      "end": 2.659
+    },
+    {
+      "text": "all.",
+      "start": 2.717,
+      "end": 3.297
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "af72b56f83d55588e1921b343c11e9b5af6397e4ba6eba86005f35395d190ae1",
+  "effectiveWPM": 188.1710646041856
+}

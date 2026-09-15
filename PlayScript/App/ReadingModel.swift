@@ -13,7 +13,7 @@ final class ReadingModel {
     let voice = NarrationPlayer()
     var voiceEnabled: Bool {
         didSet {
-            defaults.set(voiceEnabled, forKey: "voiceEnabled")
+            defaults.set(voiceEnabled, forKey: Self.narrationKey)
             updateAudio()
         }
     }
@@ -30,25 +30,30 @@ final class ReadingModel {
     @ObservationIgnored private var isActive = true
     @ObservationIgnored private var lastAdvance = Date.distantPast
     private let saveKey = "playscript.savedPlace.v1"
+    /// New key: an old in-page "Voice on" button read like a label but switched
+    /// narration off, and that choice persisted. Everyone starts with narration on.
+    private static let narrationKey = "narrationEnabled.v2"
     /// Beats where the Friar's letter itself turns the plot; the page sounds like parchment.
     private static let letterBeats: Set<String> = ["plan", "letter-lost", "road"]
 
     init(story: Story, defaults: UserDefaults = .standard) {
         self.story = story
-        self.defaults = defaults
-        if ProcessInfo.processInfo.arguments.contains("--uitesting") {
-            defaults.removeObject(forKey: saveKey)
-            defaults.removeObject(forKey: "hasFinished")
-            defaults.set(false, forKey: "soundEnabled")
-            defaults.set(false, forKey: "voiceEnabled")
+        let uiTesting = ProcessInfo.processInfo.arguments.contains("--uitesting")
+        // UI tests mute into a throwaway store, so a test run never silences a normal launch.
+        let store = uiTesting ? (UserDefaults(suiteName: "PlayScriptUITesting") ?? defaults) : defaults
+        self.defaults = store
+        if uiTesting {
+            store.removePersistentDomain(forName: "PlayScriptUITesting")
+            store.set(false, forKey: "soundEnabled")
+            store.set(false, forKey: Self.narrationKey)
         }
-        let place = defaults.data(forKey: saveKey).flatMap { try? JSONDecoder().decode(SavedPlace.self, from: $0) }
+        let place = store.data(forKey: saveKey).flatMap { try? JSONDecoder().decode(SavedPlace.self, from: $0) }
         let restored = StoryRun(story: story, savedPlace: place)
         savedPlace = place == restored.savedPlace ? place : nil
         run = restored
-        soundEnabled = defaults.object(forKey: "soundEnabled") as? Bool ?? true
-        voiceEnabled = defaults.object(forKey: "voiceEnabled") as? Bool ?? true
-        hasFinished = defaults.bool(forKey: "hasFinished")
+        soundEnabled = store.object(forKey: "soundEnabled") as? Bool ?? true
+        voiceEnabled = store.object(forKey: Self.narrationKey) as? Bool ?? true
+        hasFinished = store.bool(forKey: "hasFinished")
     }
 
     var beat: StoryBeat { run.beat }
@@ -61,8 +66,7 @@ final class ReadingModel {
     /// Narration clip IDs for the showing page, matching `Scripts/create_narration.py`.
     private var pageClips: [(id: String, text: String)] {
         let prefix = beat.id + (run.selectedChoiceID.map { "--" + $0 } ?? "")
-        let offset = run.pageIndex * Pagination.linesPerPage
-        return run.page.enumerated().map { (id: "\(prefix)-l\(offset + $0.offset)", text: $0.element.text) }
+        return zip(run.pageLineIndices, run.page).map { (id: "\(prefix)-l\($0)", text: $1.text) }
     }
 
     func start(over: Bool = false) {

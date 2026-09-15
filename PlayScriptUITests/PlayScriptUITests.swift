@@ -54,7 +54,7 @@ final class PlayScriptUITests: XCTestCase {
                 next.tap()
             }
         }
-        XCTAssertEqual(decisions, 3)
+        XCTAssertEqual(decisions, 6)
         XCTAssertTrue(sawWhatIf)
         XCTAssertTrue(app.staticTexts["reflectionText"].exists)
         capture("05-reflection")

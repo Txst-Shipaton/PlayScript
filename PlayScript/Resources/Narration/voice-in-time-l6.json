@@ -1,0 +1,62 @@
+{
+  "text": "Yes. I am here. I have not been anywhere else.",
+  "cues": [
+    {
+      "text": "Yes. ",
+      "start": 0.0,
+      "end": 0.557
+    },
+    {
+      "text": "I ",
+      "start": 0.882,
+      "end": 0.952
+    },
+    {
+      "text": "am ",
+      "start": 1.022,
+      "end": 1.126
+    },
+    {
+      "text": "here. ",
+      "start": 1.207,
+      "end": 1.591
+    },
+    {
+      "text": "I ",
+      "start": 2.101,
+      "end": 2.159
+    },
+    {
+      "text": "have ",
+      "start": 2.241,
+      "end": 2.38
+    },
+    {
+      "text": "not ",
+      "start": 2.415,
+      "end": 2.589
+    },
+    {
+      "text": "been ",
+      "start": 2.647,
+      "end": 2.879
+    },
+    {
+      "text": "anywhere ",
+      "start": 2.961,
+      "end": 3.367
+    },
+    {
+      "text": "else.",
+      "start": 3.413,
+      "end": 4.133
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "3bf836d8ccf403c5a61549b0a55156c7ac13d0acde9db0d3398c184eed344136",
+  "effectiveWPM": 153.88337769174933
+}

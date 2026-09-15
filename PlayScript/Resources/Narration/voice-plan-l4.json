@@ -1,0 +1,82 @@
+{
+  "text": "He turned back once when I called his name. He will turn back again.",
+  "cues": [
+    {
+      "text": "He ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "turned ",
+      "start": 0.186,
+      "end": 0.441
+    },
+    {
+      "text": "back ",
+      "start": 0.499,
+      "end": 0.697
+    },
+    {
+      "text": "once ",
+      "start": 0.789,
+      "end": 1.091
+    },
+    {
+      "text": "when ",
+      "start": 1.126,
+      "end": 1.277
+    },
+    {
+      "text": "I ",
+      "start": 1.335,
+      "end": 1.37
+    },
+    {
+      "text": "called ",
+      "start": 1.451,
+      "end": 1.707
+    },
+    {
+      "text": "his ",
+      "start": 1.741,
+      "end": 1.846
+    },
+    {
+      "text": "name. ",
+      "start": 1.892,
+      "end": 2.276
+    },
+    {
+      "text": "He ",
+      "start": 2.717,
+      "end": 2.856
+    },
+    {
+      "text": "will ",
+      "start": 2.926,
+      "end": 3.123
+    },
+    {
+      "text": "turn ",
+      "start": 3.181,
+      "end": 3.355
+    },
+    {
+      "text": "back ",
+      "start": 3.402,
+      "end": 3.587
+    },
+    {
+      "text": "again.",
+      "start": 3.634,
+      "end": 4.226
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "uneasy",
+  "deliveryDirection": "frightened resolve, contained urgency",
+  "fingerprint": "8870eb278ca377e8a23bd9523b43b0b25ce45cec20f268f463f0a0ad5f0aabeb",
+  "effectiveWPM": 186.84335068622812
+}

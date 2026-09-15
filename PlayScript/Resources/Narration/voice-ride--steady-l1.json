@@ -1,0 +1,92 @@
+{
+  "text": "Slowly, then, and surely. I will not be too late, and I will not be careless.",
+  "cues": [
+    {
+      "text": "Slowly, ",
+      "start": 0.0,
+      "end": 0.464
+    },
+    {
+      "text": "then, ",
+      "start": 0.488,
+      "end": 0.824
+    },
+    {
+      "text": "and ",
+      "start": 1.068,
+      "end": 1.242
+    },
+    {
+      "text": "surely. ",
+      "start": 1.335,
+      "end": 1.962
+    },
+    {
+      "text": "I ",
+      "start": 2.473,
+      "end": 2.519
+    },
+    {
+      "text": "will ",
+      "start": 2.601,
+      "end": 2.752
+    },
+    {
+      "text": "not ",
+      "start": 2.798,
+      "end": 2.914
+    },
+    {
+      "text": "be ",
+      "start": 2.984,
+      "end": 3.1
+    },
+    {
+      "text": "too ",
+      "start": 3.146,
+      "end": 3.309
+    },
+    {
+      "text": "late, ",
+      "start": 3.39,
+      "end": 3.843
+    },
+    {
+      "text": "and ",
+      "start": 4.052,
+      "end": 4.214
+    },
+    {
+      "text": "I ",
+      "start": 4.272,
+      "end": 4.296
+    },
+    {
+      "text": "will ",
+      "start": 4.342,
+      "end": 4.505
+    },
+    {
+      "text": "not ",
+      "start": 4.563,
+      "end": 4.69
+    },
+    {
+      "text": "be ",
+      "start": 4.748,
+      "end": 4.853
+    },
+    {
+      "text": "careless.",
+      "start": 4.899,
+      "end": 5.759
+    }
+  ],
+  "playbackRate": 1.0198229166666668,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "87adbbe5b951b063968222da4e49970c2adfa084036c6407d4757f31e53072c4",
+  "effectiveWPM": 170.00000000000003
+}

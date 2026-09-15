@@ -73,8 +73,8 @@ final class Soundscape: NSObject, @unchecked Sendable {
         if !sessionActive {
             do {
                 let session = AVAudioSession.sharedInstance()
-                // Ambient respects the silent switch and mixes with other audio.
-                try session.setCategory(.ambient, mode: .default)
+                // Must match NarrationPlayer: the story plays even with the silent switch on.
+                try session.setCategory(.playback, mode: .default)
                 try session.setActive(true)
                 sessionActive = true
             } catch {

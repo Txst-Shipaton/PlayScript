@@ -1,70 +1,70 @@
 {
-  "text": "Carry it quickly. Put it in his hands before he hears anything else.",
+  "text": "My hand was steady when I drank. Let the letter travel as steadily.",
   "cues": [
     {
-      "text": "Carry ",
+      "text": "My ",
       "start": 0.0,
-      "end": 0.325
+      "end": 0.186
     },
     {
-      "text": "it ",
-      "start": 0.383,
+      "text": "hand ",
+      "start": 0.255,
       "end": 0.453
     },
     {
-      "text": "quickly. ",
-      "start": 0.499,
-      "end": 1.022
+      "text": "was ",
+      "start": 0.522,
+      "end": 0.639
     },
     {
-      "text": "Put ",
-      "start": 1.265,
-      "end": 1.451
+      "text": "steady ",
+      "start": 0.673,
+      "end": 0.987
     },
     {
-      "text": "it ",
-      "start": 1.498,
-      "end": 1.567
+      "text": "when ",
+      "start": 1.033,
+      "end": 1.161
     },
     {
-      "text": "in ",
-      "start": 1.625,
-      "end": 1.707
+      "text": "I ",
+      "start": 1.219,
+      "end": 1.254
     },
     {
-      "text": "his ",
-      "start": 1.788,
-      "end": 1.904
+      "text": "drank. ",
+      "start": 1.347,
+      "end": 1.823
     },
     {
-      "text": "hands ",
-      "start": 1.962,
-      "end": 2.287
+      "text": "Let ",
+      "start": 2.148,
+      "end": 2.334
     },
     {
-      "text": "before ",
-      "start": 2.334,
-      "end": 2.612
+      "text": "the ",
+      "start": 2.368,
+      "end": 2.438
     },
     {
-      "text": "he ",
-      "start": 2.647,
-      "end": 2.717
+      "text": "letter ",
+      "start": 2.496,
+      "end": 2.763
     },
     {
-      "text": "hears ",
-      "start": 2.786,
-      "end": 3.053
+      "text": "travel ",
+      "start": 2.833,
+      "end": 3.228
     },
     {
-      "text": "anything ",
-      "start": 3.111,
-      "end": 3.46
+      "text": "as ",
+      "start": 3.297,
+      "end": 3.379
     },
     {
-      "text": "else.",
-      "start": 3.529,
-      "end": 4.133
+      "text": "steadily.",
+      "start": 3.437,
+      "end": 4.18
     }
   ],
   "playbackRate": 0.94,
@@ -72,6 +72,6 @@
   "character": "Juliet",
   "mood": "uneasy",
   "deliveryDirection": "frightened resolve, contained urgency",
-  "fingerprint": "6b7e8acc4e45d292590251185b7d8e88b85a157b669a5b2c903c8cbdd60adf54",
-  "effectiveWPM": 177.40140333897892
+  "fingerprint": "a3e9ea488a0045a00cb5e85006d43a3545b1f44fd55817219cea575346eb0387",
+  "effectiveWPM": 175.40669856459328
 }

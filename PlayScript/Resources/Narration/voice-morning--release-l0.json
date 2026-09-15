@@ -1,0 +1,87 @@
+{
+  "text": "I keep his name to myself. If I call now, the whole house will wake.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "keep ",
+      "start": 0.186,
+      "end": 0.383
+    },
+    {
+      "text": "his ",
+      "start": 0.43,
+      "end": 0.534
+    },
+    {
+      "text": "name ",
+      "start": 0.592,
+      "end": 0.778
+    },
+    {
+      "text": "to ",
+      "start": 0.813,
+      "end": 0.871
+    },
+    {
+      "text": "myself. ",
+      "start": 0.94,
+      "end": 1.614
+    },
+    {
+      "text": "If ",
+      "start": 1.858,
+      "end": 1.997
+    },
+    {
+      "text": "I ",
+      "start": 2.055,
+      "end": 2.078
+    },
+    {
+      "text": "call ",
+      "start": 2.159,
+      "end": 2.345
+    },
+    {
+      "text": "now, ",
+      "start": 2.426,
+      "end": 2.833
+    },
+    {
+      "text": "the ",
+      "start": 2.879,
+      "end": 3.007
+    },
+    {
+      "text": "whole ",
+      "start": 3.065,
+      "end": 3.332
+    },
+    {
+      "text": "house ",
+      "start": 3.379,
+      "end": 3.634
+    },
+    {
+      "text": "will ",
+      "start": 3.669,
+      "end": 3.831
+    },
+    {
+      "text": "wake.",
+      "start": 3.889,
+      "end": 4.505
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "be6c2fa513806f98b8a7e7a7e28a50f071b27b683edac5df12964c8714d5355e",
+  "effectiveWPM": 187.79134295227524
+}

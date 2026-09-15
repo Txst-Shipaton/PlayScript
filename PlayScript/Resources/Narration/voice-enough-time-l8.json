@@ -1,0 +1,57 @@
+{
+  "text": "I rode hard enough to outrun the old ending.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.104
+    },
+    {
+      "text": "rode ",
+      "start": 0.221,
+      "end": 0.441
+    },
+    {
+      "text": "hard ",
+      "start": 0.476,
+      "end": 0.662
+    },
+    {
+      "text": "enough ",
+      "start": 0.697,
+      "end": 0.917
+    },
+    {
+      "text": "to ",
+      "start": 0.952,
+      "end": 1.01
+    },
+    {
+      "text": "outrun ",
+      "start": 1.103,
+      "end": 1.579
+    },
+    {
+      "text": "the ",
+      "start": 1.637,
+      "end": 1.718
+    },
+    {
+      "text": "old ",
+      "start": 1.776,
+      "end": 1.939
+    },
+    {
+      "text": "ending.",
+      "start": 2.009,
+      "end": 2.74
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "f3190527a185076b0db27f22ced3ce98c7a4fe6abd5c6c9211fae9b05bb51a53",
+  "effectiveWPM": 185.25547445255472
+}

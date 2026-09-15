@@ -1,0 +1,77 @@
+{
+  "text": "I spur the horse on and let the cold wind take my breath.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.093
+    },
+    {
+      "text": "spur ",
+      "start": 0.209,
+      "end": 0.499
+    },
+    {
+      "text": "the ",
+      "start": 0.557,
+      "end": 0.627
+    },
+    {
+      "text": "horse ",
+      "start": 0.673,
+      "end": 0.917
+    },
+    {
+      "text": "on ",
+      "start": 0.975,
+      "end": 1.184
+    },
+    {
+      "text": "and ",
+      "start": 1.428,
+      "end": 1.602
+    },
+    {
+      "text": "let ",
+      "start": 1.66,
+      "end": 1.8
+    },
+    {
+      "text": "the ",
+      "start": 1.846,
+      "end": 1.916
+    },
+    {
+      "text": "cold ",
+      "start": 1.974,
+      "end": 2.252
+    },
+    {
+      "text": "wind ",
+      "start": 2.322,
+      "end": 2.635
+    },
+    {
+      "text": "take ",
+      "start": 2.717,
+      "end": 2.995
+    },
+    {
+      "text": "my ",
+      "start": 3.053,
+      "end": 3.181
+    },
+    {
+      "text": "breath.",
+      "start": 3.251,
+      "end": 3.994
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "68cf46fe6c4fbc60b8fa68843952be00ec60bef585cb928856c0ec4330758560",
+  "effectiveWPM": 183.57536304456684
+}

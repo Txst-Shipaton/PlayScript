@@ -1,0 +1,57 @@
+{
+  "text": "I stay beside my husband when the Friar flees.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "stay ",
+      "start": 0.197,
+      "end": 0.383
+    },
+    {
+      "text": "beside ",
+      "start": 0.43,
+      "end": 0.731
+    },
+    {
+      "text": "my ",
+      "start": 0.766,
+      "end": 0.859
+    },
+    {
+      "text": "husband ",
+      "start": 0.929,
+      "end": 1.335
+    },
+    {
+      "text": "when ",
+      "start": 1.405,
+      "end": 1.567
+    },
+    {
+      "text": "the ",
+      "start": 1.602,
+      "end": 1.672
+    },
+    {
+      "text": "Friar ",
+      "start": 1.707,
+      "end": 2.078
+    },
+    {
+      "text": "flees.",
+      "start": 2.148,
+      "end": 2.926
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "c8f1a71e74005c30ae62c115f3de5bb8d6d277f94e4e4cb9e03d1ba32d1e6e4d",
+  "effectiveWPM": 173.4791524265208
+}

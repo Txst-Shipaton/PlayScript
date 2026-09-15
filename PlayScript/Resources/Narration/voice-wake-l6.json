@@ -1,0 +1,102 @@
+{
+  "text": "In the orchard I answered him before he had finished speaking. Here, I could not answer at all.",
+  "cues": [
+    {
+      "text": "In ",
+      "start": 0.0,
+      "end": 0.128
+    },
+    {
+      "text": "the ",
+      "start": 0.163,
+      "end": 0.232
+    },
+    {
+      "text": "orchard ",
+      "start": 0.29,
+      "end": 0.627
+    },
+    {
+      "text": "I ",
+      "start": 0.685,
+      "end": 0.72
+    },
+    {
+      "text": "answered ",
+      "start": 0.836,
+      "end": 1.219
+    },
+    {
+      "text": "him ",
+      "start": 1.265,
+      "end": 1.393
+    },
+    {
+      "text": "before ",
+      "start": 1.451,
+      "end": 1.73
+    },
+    {
+      "text": "he ",
+      "start": 1.776,
+      "end": 1.834
+    },
+    {
+      "text": "had ",
+      "start": 1.881,
+      "end": 1.974
+    },
+    {
+      "text": "finished ",
+      "start": 2.02,
+      "end": 2.345
+    },
+    {
+      "text": "speaking. ",
+      "start": 2.426,
+      "end": 2.995
+    },
+    {
+      "text": "Here, ",
+      "start": 3.32,
+      "end": 3.704
+    },
+    {
+      "text": "I ",
+      "start": 3.785,
+      "end": 3.843
+    },
+    {
+      "text": "could ",
+      "start": 3.924,
+      "end": 4.075
+    },
+    {
+      "text": "not ",
+      "start": 4.133,
+      "end": 4.331
+    },
+    {
+      "text": "answer ",
+      "start": 4.377,
+      "end": 4.667
+    },
+    {
+      "text": "at ",
+      "start": 4.737,
+      "end": 4.807
+    },
+    {
+      "text": "all.",
+      "start": 4.853,
+      "end": 5.433
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "7316dfdc2b4c795db185930d6ccf236cda16c5cfd112c31d42d9da66b3f3923a",
+  "effectiveWPM": 186.85808945334068
+}

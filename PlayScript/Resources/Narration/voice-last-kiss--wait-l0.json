@@ -1,0 +1,77 @@
+{
+  "text": "Wait for me, wherever you have gone. Do not walk too far ahead.",
+  "cues": [
+    {
+      "text": "Wait ",
+      "start": 0.0,
+      "end": 0.244
+    },
+    {
+      "text": "for ",
+      "start": 0.302,
+      "end": 0.406
+    },
+    {
+      "text": "me, ",
+      "start": 0.464,
+      "end": 0.65
+    },
+    {
+      "text": "wherever ",
+      "start": 0.685,
+      "end": 1.126
+    },
+    {
+      "text": "you ",
+      "start": 1.196,
+      "end": 1.277
+    },
+    {
+      "text": "have ",
+      "start": 1.335,
+      "end": 1.451
+    },
+    {
+      "text": "gone. ",
+      "start": 1.486,
+      "end": 1.916
+    },
+    {
+      "text": "Do ",
+      "start": 2.241,
+      "end": 2.38
+    },
+    {
+      "text": "not ",
+      "start": 2.461,
+      "end": 2.635
+    },
+    {
+      "text": "walk ",
+      "start": 2.694,
+      "end": 2.914
+    },
+    {
+      "text": "too ",
+      "start": 2.972,
+      "end": 3.111
+    },
+    {
+      "text": "far ",
+      "start": 3.17,
+      "end": 3.344
+    },
+    {
+      "text": "ahead.",
+      "start": 3.402,
+      "end": 3.994
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "8960452ec4cc3fc2f82973a839806cd7a5e9d89da163356d90381a4b06cb04ae",
+  "effectiveWPM": 183.57536304456684
+}

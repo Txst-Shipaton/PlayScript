@@ -1,0 +1,62 @@
+{
+  "text": "I would open the window again, knowing all of this.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "would ",
+      "start": 0.139,
+      "end": 0.29
+    },
+    {
+      "text": "open ",
+      "start": 0.337,
+      "end": 0.522
+    },
+    {
+      "text": "the ",
+      "start": 0.569,
+      "end": 0.639
+    },
+    {
+      "text": "window ",
+      "start": 0.673,
+      "end": 0.964
+    },
+    {
+      "text": "again, ",
+      "start": 1.045,
+      "end": 1.486
+    },
+    {
+      "text": "knowing ",
+      "start": 1.544,
+      "end": 1.881
+    },
+    {
+      "text": "all ",
+      "start": 1.974,
+      "end": 2.194
+    },
+    {
+      "text": "of ",
+      "start": 2.252,
+      "end": 2.31
+    },
+    {
+      "text": "this.",
+      "start": 2.368,
+      "end": 2.972
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "76ffc2d3ae4482b5ecc81c7aab2efb94ccbf51a87b43d0c10375fa5809015ad1",
+  "effectiveWPM": 189.77119784656796
+}

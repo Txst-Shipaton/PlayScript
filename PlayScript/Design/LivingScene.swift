@@ -40,34 +40,6 @@ private func paintOval(_ context: inout GraphicsContext, _ rect: CGRect, _ color
     context.fill(Path(ellipseIn: rect), with: .color(color))
 }
 
-/// One standing body, as a single silhouette: shoulders that slope, a waist that
-/// pinches, a hem that flares. Every character in the play is cut from this shape,
-/// so a change of build — shoulder against hem — is what tells them apart.
-private func bodyPath(_ f: Frame, _ x: CGFloat, _ shoulder: CGFloat, _ hem: CGFloat,
-                      _ halfShoulder: CGFloat, _ halfHem: CGFloat) -> Path {
-    let waist = shoulder + (hem - shoulder) * 0.45
-    var path = Path()
-    path.move(to: f.point(x - halfHem, hem))
-    path.addQuadCurve(to: f.point(x - halfShoulder, shoulder),
-                      control: f.point(x - halfShoulder * 0.7, waist))
-    path.addQuadCurve(to: f.point(x + halfShoulder, shoulder),
-                      control: f.point(x, shoulder - (hem - shoulder) * 0.1))
-    path.addQuadCurve(to: f.point(x + halfHem, hem),
-                      control: f.point(x + halfShoulder * 0.7, waist))
-    path.closeSubpath()
-    return path
-}
-
-/// A limb: one curve, stroked with round caps so it keeps its weight when small.
-private func limb(_ context: inout GraphicsContext, _ f: Frame, _ from: CGPoint,
-                  _ to: CGPoint, _ control: CGPoint, _ color: Color, _ weight: CGFloat) {
-    var path = Path()
-    path.move(to: from)
-    path.addQuadCurve(to: to, control: control)
-    context.stroke(path, with: .color(color),
-                   style: StrokeStyle(lineWidth: weight, lineCap: .round, lineJoin: .round))
-}
-
 private func linePath(_ points: [CGPoint]) -> Path {
     var path = Path()
     guard let first = points.first else { return path }
@@ -87,8 +59,6 @@ struct LivingScene: View {
     var attention = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var shifted = false
-    /// 0 the instant a new beat arrives, 1 once the camera has settled on it.
-    @State private var entrance: CGFloat = 1
 
     private enum Setting { case orchard, chamber, tomb, road }
 
@@ -114,38 +84,6 @@ struct LivingScene: View {
     }
     /// A decision settles the scene instead of freezing it.
     private var calm: Double { quiet ? 0.4 : 1 }
-
-    // MARK: - Arrival
-    //
-    // A beat change is a camera move, not a dissolve: the frame arrives from a
-    // slightly different distance and settles, each setting in its own direction.
-    // The cross-fade the reader applies on a mood change rides on top of this.
-
-    /// How much wider the frame sits at the moment of arrival.
-    private var arrivalPush: CGFloat {
-        switch setting {
-        case .orchard: 0.035
-        case .chamber: 0.028
-        case .tomb: 0.05
-        case .road: 0.032
-        }
-    }
-
-    /// Where the frame arrives from, in points, before it settles to centre.
-    private var arrivalDrift: CGSize {
-        switch setting {
-        // The camera lifts toward the window.
-        case .orchard: CGSize(width: -8, height: 22)
-        // A step taken into the room, from the door side.
-        case .chamber: CGSize(width: 14, height: 0)
-        // It draws back off the slab rather than approaching it.
-        case .tomb: CGSize(width: 0, height: -16)
-        // The road keeps travelling; the frame catches up with it.
-        case .road: CGSize(width: -26, height: 6)
-        }
-    }
-
-    private var settled: CGFloat { 1 - entrance }
 
     var body: some View {
         GeometryReader { geo in
@@ -183,9 +121,7 @@ struct LivingScene: View {
                 // atmosphere above carries the dense particle fields.
                 LottieLayer(name: lottieName, playing: !motionPaused,
                             speed: quiet ? 0.4 : 1)
-                    // The composition arrives first and the choreographed motion
-                    // catches up with it, so a new beat lands as a held frame.
-                    .opacity((quiet ? 0.55 : 1) * Double(min(1, entrance * 1.7)))
+                    .opacity(quiet ? 0.55 : 1)
                     .allowsHitTesting(false)
                     .animation(.easeInOut(duration: reduceMotion ? 0 : 0.8), value: quiet)
                 if tomb {
@@ -201,35 +137,9 @@ struct LivingScene: View {
             .overlay(Color.black.opacity(quiet ? 0.18 : 0))
             .animation(.easeInOut(duration: reduceMotion ? 0 : 0.6), value: attention)
             .animation(.easeInOut(duration: reduceMotion ? 0 : 0.9), value: quiet)
-            // The move itself. It is driven explicitly from the arrival task below,
-            // so none of the scoped animations above pick it up by accident.
-            .scaleEffect(1 + arrivalPush * settled)
-            .offset(x: arrivalDrift.width * settled, y: arrivalDrift.height * settled)
-            .overlay(Color(hex: 0x0B0710).opacity(Double(settled) * 0.34).allowsHitTesting(false))
         }
         .clipped()
         .accessibilityHidden(true)
-        // Each new beat cuts in from its own distance and settles. Reduce Motion and
-        // the paused/cover cases skip straight to the settled frame.
-        .task(id: "\(beatID)-\(reduceMotion)-\(resting)") {
-            var immediate = Transaction(animation: nil)
-            immediate.disablesAnimations = true
-            guard !reduceMotion, !resting else {
-                withTransaction(immediate) { entrance = 1 }
-                return
-            }
-            withTransaction(immediate) { entrance = 0 }
-            // One frame on the arriving composition before the move begins, so the
-            // change registers as a cut and not as a drift.
-            do {
-                try await Task.sleep(for: .milliseconds(90))
-            } catch {
-                // Interrupted before the move began: never leave the frame off-centre.
-                withTransaction(immediate) { entrance = 1 }
-                return
-            }
-            withAnimation(.timingCurve(0.16, 0.84, 0.24, 1, duration: 1.3)) { entrance = 1 }
-        }
         .task(id: "\(beatID)-\(quiet)-\(resting)-\(reduceMotion)") {
             guard !reduceMotion, !quiet, !resting else {
                 var transaction = Transaction(animation: nil)
@@ -493,7 +403,6 @@ struct LivingScene: View {
             }
         }
 
-        paintRomeoBelow(&context, f)
         paintBalcony(&context, f)
 
         // Near foliage: the darkest value in the frame, and slightly out of focus.
@@ -518,56 +427,6 @@ struct LivingScene: View {
                 }
             }
         }
-    }
-
-    /// Romeo, down in the orchard and two thirds her height: he is further from the
-    /// reader than she is, and the gap between the grass and the rail is the scene.
-    /// He stands in one of the trellis bars so the silhouette has light to read against,
-    /// and the near foliage takes his feet, which puts the hedge between them as well.
-    private func paintRomeoBelow(_ context: inout GraphicsContext, _ f: Frame) {
-        let x: CGFloat = 0.525
-        let ink = Color(hex: 0x0E1218)
-        let moonlit = Color(hex: 0xC8D8EA)
-
-        // The patch of moonlight he is standing in.
-        context.drawLayer { layer in
-            layer.addFilter(.blur(radius: f.w * 0.05))
-            paintOval(&layer, f.rect(x - 0.12, 0.5, 0.24, 0.115),
-                      Color(hex: 0xBFD4E8).opacity(0.17))
-        }
-        // His shadow, thrown away from the moon.
-        context.drawLayer { layer in
-            layer.addFilter(.blur(radius: f.w * 0.02))
-            paintOval(&layer, f.rect(x - 0.02, 0.562, 0.135, 0.026),
-                      Color(hex: 0x070C10).opacity(0.5))
-        }
-
-        // Legs first, then the doublet over them: he has weight on the ground.
-        paint(&context, f.rect(x - 0.019, 0.534, 0.014, 0.038), ink)
-        paint(&context, f.rect(x + 0.007, 0.534, 0.014, 0.036), ink)
-        paint(&context, bodyPath(f, x, 0.487, 0.546, 0.029, 0.033), ink)
-
-        // The cloak, off the far shoulder and hanging behind him.
-        var cloak = Path()
-        cloak.move(to: f.point(x - 0.027, 0.487))
-        cloak.addQuadCurve(to: f.point(x - 0.046, 0.553), control: f.point(x - 0.052, 0.519))
-        cloak.addLine(to: f.point(x - 0.008, 0.547))
-        cloak.closeSubpath()
-        paint(&context, cloak, ink)
-
-        paintOval(&context, f.disc(x + 0.004, 0.4695, 0.019), ink)
-        // The arm lifted toward the rail. Her hand comes down to meet it; the two
-        // curves point at each other across the widest gap in the frame.
-        limb(&context, f, f.point(x + 0.023, 0.494), f.point(x + 0.062, 0.462),
-             f.point(x + 0.05, 0.489), ink, f.w * 0.013)
-
-        // The moon finds his near edge, the same way it finds hers.
-        limb(&context, f, f.point(x - 0.031, 0.542), f.point(x - 0.028, 0.488),
-             f.point(x - 0.036, 0.516), moonlit.opacity(0.42), f.w * 0.004)
-        var headRim = Path()
-        headRim.addArc(center: f.point(x + 0.004, 0.4695), radius: f.w * 0.0197,
-                       startAngle: .degrees(118), endAngle: .degrees(242), clockwise: false)
-        context.stroke(headRim, with: .color(moonlit.opacity(0.4)), lineWidth: f.w * 0.004)
     }
 
     private func paintBalcony(_ context: inout GraphicsContext, _ f: Frame) {
@@ -621,12 +480,6 @@ struct LivingScene: View {
         headRim.addArc(center: f.point(0.8135, 0.334), radius: f.w * 0.027,
                        startAngle: .degrees(125), endAngle: .degrees(235), clockwise: false)
         context.stroke(headRim, with: .color(Color(hex: 0xD8B5BF).opacity(0.45)), lineWidth: f.w * 0.005)
-
-        // Her arm down the rail, toward the orchard. She is turned to him, not to us.
-        limb(&context, f, f.point(0.7935, 0.3885), f.point(0.7405, 0.4355),
-             f.point(0.7585, 0.3975), Color(hex: 0x1B131B), f.w * 0.011)
-        limb(&context, f, f.point(0.7925, 0.3925), f.point(0.7435, 0.4345),
-             f.point(0.7615, 0.4025), Color(hex: 0xD8B5BF).opacity(0.3), f.w * 0.003)
     }
 
     // MARK: Chamber — two lights that disagree, and the vial's one green caustic.
@@ -664,8 +517,6 @@ struct LivingScene: View {
                                     f.point(0.6, 0.78), f.point(0.33, 0.78)]),
                   Color(hex: 0xA9C1E1))
         }
-
-        paintJulietAlone(&context, f)
 
         // The warm light. Everything near the candle is lit by it and nothing else.
         context.fill(Path(ellipseIn: f.disc(0.72, 0.4, 0.42)), with: .radialGradient(
@@ -718,42 +569,6 @@ struct LivingScene: View {
             drape.closeSubpath()
             paint(&layer, drape, Color(hex: 0x150F18))
         }
-    }
-
-    /// Juliet at the cold window, cut out of it — she is the largest figure in the
-    /// story because this is the room where she is nearest and most alone. Two lights
-    /// find two different edges of her, and only one shadow leaves her: the room holds
-    /// nobody else, and that is the whole point of the chamber.
-    private func paintJulietAlone(_ context: inout GraphicsContext, _ f: Frame) {
-        let x: CGFloat = 0.268
-        let ink = Color(hex: 0x14101A)
-
-        // The one shadow, reaching toward the candle that casts it.
-        context.drawLayer { layer in
-            layer.addFilter(.blur(radius: f.w * 0.022))
-            paint(&layer, linePath([f.point(x - 0.05, 0.545), f.point(x + 0.05, 0.545),
-                                    f.point(x - 0.14, 0.86), f.point(x - 0.33, 0.86)]),
-                  Color(hex: 0x0D0912).opacity(0.55))
-        }
-
-        paint(&context, bodyPath(f, x, 0.2565, 0.55, 0.031, 0.064), ink)
-        paintOval(&context, f.disc(x - 0.004, 0.2355, 0.024), ink)
-        // Hair gathered low, so she reads as herself and not as an outline.
-        paintOval(&context, f.rect(x - 0.03, 0.2275, 0.05, 0.048), ink)
-        // One hand up against the glass; the other holds nothing yet.
-        limb(&context, f, f.point(x - 0.024, 0.2655), f.point(x - 0.05, 0.2255),
-             f.point(x - 0.048, 0.2555), ink, f.w * 0.012)
-
-        // The window behind her takes her far edge; the candle only just reaches the near one.
-        limb(&context, f, f.point(x - 0.034, 0.53), f.point(x - 0.03, 0.259),
-             f.point(x - 0.042, 0.4), Color(hex: 0xA3B8D8).opacity(0.38), f.w * 0.004)
-        limb(&context, f, f.point(x + 0.04, 0.53), f.point(x + 0.03, 0.262),
-             f.point(x + 0.043, 0.4), Color(hex: 0xF3C68C).opacity(0.22), f.w * 0.004)
-        var headRim = Path()
-        headRim.addArc(center: f.point(x - 0.004, 0.2355), radius: f.w * 0.0252,
-                       startAngle: .degrees(130), endAngle: .degrees(228), clockwise: false)
-        context.stroke(headRim, with: .color(Color(hex: 0xA3B8D8).opacity(0.36)),
-                       lineWidth: f.w * 0.004)
     }
 
     /// One arch, as a stroked curve. Used for vaults, windows, and tomb bays.
@@ -810,7 +625,7 @@ struct LivingScene: View {
                            with: .color(.white.opacity(0.03)), lineWidth: f.w * 0.003)
         }
 
-        // The slab, draped, and the only thing the light finds.
+        // The slab. Empty, draped, and the only thing the light finds.
         paint(&context, f.rect(0.16, 0.508, 0.5, 0.02), Color(hex: tombAtDawn ? 0x6B5044 : 0x3F4355))
         paint(&context, f.rect(0.185, 0.528, 0.45, 0.055), Color(hex: tombAtDawn ? 0x422F2B : 0x282B39))
         var drape = Path()
@@ -821,14 +636,10 @@ struct LivingScene: View {
         drape.closeSubpath()
         paint(&context, drape, Color(hex: tombAtDawn ? 0x6A5450 : 0x474154).opacity(0.85))
 
-        paintStillForm(&context, f)
-
         context.drawLayer { layer in
             layer.addFilter(.blur(radius: f.w * 0.03))
             paintOval(&layer, f.rect(0.2, 0.486, 0.32, 0.048), grate.opacity(0.4))
         }
-
-        paintKneeling(&context, f, grate)
 
         // Two urns, foreground, unlit: the room continues past the reader.
         context.drawLayer { layer in
@@ -837,55 +648,6 @@ struct LivingScene: View {
             paintOval(&layer, f.rect(0.82, 0.58, 0.26, 0.28), Color(hex: 0x080A10))
             paint(&layer, f.rect(0.86, 0.5, 0.14, 0.5), Color(hex: 0x080A10))
         }
-    }
-
-    /// The one who is still. Under the cloth, and no further than that: a long low
-    /// rise along the slab with the head end lifted, and the grate's light laid across
-    /// it. No face, no hands, nothing the eye can resolve into a body.
-    private func paintStillForm(_ context: inout GraphicsContext, _ f: Frame) {
-        var form = Path()
-        form.move(to: f.point(0.225, 0.51))
-        form.addQuadCurve(to: f.point(0.303, 0.4885), control: f.point(0.243, 0.487))
-        form.addQuadCurve(to: f.point(0.455, 0.4965), control: f.point(0.385, 0.4885))
-        form.addQuadCurve(to: f.point(0.6, 0.5095), control: f.point(0.552, 0.5065))
-        form.closeSubpath()
-        paint(&context, form, Color(hex: tombAtDawn ? 0x6E574B : 0x4A4E62))
-
-        // A single fold, so the cloth reads as cloth and the shape stays unread.
-        limb(&context, f, f.point(0.335, 0.4955), f.point(0.52, 0.506),
-             f.point(0.43, 0.4995), Color(hex: tombAtDawn ? 0x513A33 : 0x363A4B), f.w * 0.004)
-    }
-
-    /// The one who is not. Kneeling at the head of the slab, bowed, one hand on the
-    /// stone — Juliet in the dark of the real tomb, Romeo in the dawn of the imagined
-    /// one. The same pose either way: the scene does not change, only the light does.
-    private func paintKneeling(_ context: inout GraphicsContext, _ f: Frame, _ key: Color) {
-        let x: CGFloat = 0.735
-        let ink = Color(hex: tombAtDawn ? 0x1A1013 : 0x0D0F18)
-        // Romeo carries the wider shoulders and the shorter hem; Juliet the narrower
-        // build and the dress that pools on the floor.
-        let halfShoulder: CGFloat = tombAtDawn ? 0.036 : 0.03
-        let halfHem: CGFloat = tombAtDawn ? 0.072 : 0.082
-        let shoulder: CGFloat = tombAtDawn ? 0.442 : 0.447
-
-        paint(&context, bodyPath(f, x, shoulder, 0.605, halfShoulder, halfHem), ink)
-        paintOval(&context, f.disc(x - 0.012, shoulder - 0.021, 0.023), ink)
-        if !tombAtDawn {
-            // Her hair, fallen forward with her head.
-            paintOval(&context, f.rect(x - 0.038, shoulder - 0.03, 0.05, 0.05), ink)
-        }
-        // The hand that reaches the stone. It is the only line that crosses between them.
-        limb(&context, f, f.point(x - 0.03, shoulder + 0.012), f.point(0.645, 0.5065),
-             f.point(x - 0.066, shoulder + 0.026), ink, f.w * 0.013)
-
-        // The grate's light catches the curve of the back and the crown of the head.
-        limb(&context, f, f.point(x + halfHem * 0.8, 0.59), f.point(x + halfShoulder, shoulder + 0.004),
-             f.point(x + halfShoulder + 0.014, 0.52), key.opacity(tombAtDawn ? 0.34 : 0.22), f.w * 0.004)
-        var headRim = Path()
-        headRim.addArc(center: f.point(x - 0.012, shoulder - 0.021), radius: f.w * 0.0242,
-                       startAngle: .degrees(300), endAngle: .degrees(40), clockwise: false)
-        context.stroke(headRim, with: .color(key.opacity(tombAtDawn ? 0.32 : 0.2)),
-                       lineWidth: f.w * 0.004)
     }
 
     /// The arch cut through one bay. `depth` runs 0 (nearest, widest) to 1 (farthest).
@@ -1003,8 +765,6 @@ struct LivingScene: View {
             paint(&context, spire, Color(hex: 0x4A3244).opacity(0.85 + Double(i) * 0.05))
         }
 
-        paintRider(&context, f)
-
         // A milestone, and the near banks framing the road.
         paint(&context, f.rect(0.175, 0.53, 0.028, 0.055), Color(hex: 0x6B5259))
         paintOval(&context, f.disc(0.189, 0.531, 0.015), Color(hex: 0x7A5E63))
@@ -1013,78 +773,6 @@ struct LivingScene: View {
             paintOval(&layer, f.rect(-0.2, 0.6, 0.55, 0.32), Color(hex: 0x2A1C25))
             paintOval(&layer, f.rect(0.72, 0.58, 0.55, 0.36), Color(hex: 0x2A1C25))
         }
-    }
-}
-
-extension LivingScene {
-    /// Where the rider sits on the road. He is halted when the messenger reaches him,
-    /// moving and further up the road once he rides, and a long way off — almost in
-    /// the light — in the beats that come after.
-    private var riderStaging: (x: CGFloat, base: CGFloat, size: CGFloat) {
-        switch beatID {
-        case "road": return (0.537, 0.545, 0.31)
-        case "ride": return (0.552, 0.532, 0.28)
-        default: return (0.559, 0.494, 0.17)
-        }
-    }
-
-    /// Romeo, mounted, small against the light he is riding into. Drawn in width
-    /// units around his hooves so the horse keeps its proportions on every screen.
-    fileprivate func paintRider(_ context: inout GraphicsContext, _ f: Frame) {
-        let staging = riderStaging
-        let cx = staging.x, base = staging.base, s = staging.size
-        let ink = Color(hex: 0x33202E)
-
-        func q(_ dx: CGFloat, _ dy: CGFloat) -> CGPoint {
-            CGPoint(x: f.w * cx + dx * s * f.w, y: f.h * base + dy * s * f.w)
-        }
-        func oval(_ dx: CGFloat, _ dy: CGFloat, _ rx: CGFloat, _ ry: CGFloat) -> CGRect {
-            CGRect(x: f.w * cx + (dx - rx) * s * f.w, y: f.h * base + (dy - ry) * s * f.w,
-                   width: rx * 2 * s * f.w, height: ry * 2 * s * f.w)
-        }
-
-        // The shadow comes back toward the reader: the light is ahead of him.
-        context.drawLayer { layer in
-            layer.addFilter(.blur(radius: f.w * 0.008))
-            paintOval(&layer, oval(-0.03, -0.005, 0.135, 0.03),
-                      Color(hex: 0x4B2F35).opacity(0.5))
-        }
-
-        // Legs, as tapered quadrilaterals: top at the barrel, bottom at the road.
-        let legs: [(CGFloat, CGFloat)] = [(-0.062, -0.072), (-0.04, -0.016),
-                                          (0.046, 0.068), (0.068, 0.042)]
-        for leg in legs {
-            paint(&context, linePath([q(leg.0 - 0.013, -0.1), q(leg.0 + 0.013, -0.1),
-                                      q(leg.1 + 0.009, 0), q(leg.1 - 0.009, 0)]), ink)
-        }
-
-        // Barrel, rump, and chest.
-        paintOval(&context, oval(0, -0.118, 0.095, 0.052), ink)
-        paintOval(&context, oval(-0.068, -0.128, 0.055, 0.05), ink)
-        paintOval(&context, oval(0.058, -0.125, 0.05, 0.048), ink)
-        // Neck and head, reaching forward.
-        paint(&context, linePath([q(0.072, -0.152), q(0.104, -0.232),
-                                  q(0.134, -0.222), q(0.098, -0.13)]), ink)
-        paint(&context, linePath([q(0.1, -0.238), q(0.163, -0.216),
-                                  q(0.162, -0.198), q(0.104, -0.203)]), ink)
-        // Tail, carried out behind him.
-        limb(&context, f, q(-0.098, -0.155), q(-0.142, -0.055),
-             q(-0.146, -0.116), ink, f.w * 0.012 * s)
-
-        // The rider himself: seat, back, head, and the cloak the road takes.
-        paint(&context, linePath([q(-0.058, -0.152), q(0.012, -0.25),
-                                  q(0.04, -0.24), q(0.03, -0.148)]), ink)
-        paint(&context, linePath([q(0.004, -0.168), q(0.03, -0.162),
-                                  q(0.056, -0.098), q(0.03, -0.096)]), ink)
-        paintOval(&context, oval(0.03, -0.272, 0.027, 0.027), ink)
-        limb(&context, f, q(0.036, -0.238), q(0.092, -0.196),
-             q(0.07, -0.226), ink, f.w * 0.017 * s)
-
-        // Dawn takes his shoulder and the horse's crest, so the pair are lit from ahead.
-        limb(&context, f, q(0.014, -0.252), q(0.108, -0.232),
-             q(0.062, -0.262), Color(hex: 0xFFE7BE).opacity(0.5), f.w * 0.007 * s)
-        limb(&context, f, q(0.05, -0.16), q(0.088, -0.128),
-             q(0.082, -0.156), Color(hex: 0xFFE7BE).opacity(0.35), f.w * 0.006 * s)
     }
 }
 

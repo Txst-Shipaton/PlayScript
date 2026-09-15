@@ -185,15 +185,9 @@ struct ReaderView: View {
             .accessibilityIdentifier("narrative")
             .accessibilityFocused($narrativeFocused)
             .id(model.contentID)
-            .transition(.opacity)
-            if model.voice.available {
-                Button { model.voiceEnabled.toggle() } label: {
-                    Label(model.voiceEnabled ? "Voice on" : "Listen to this page",
-                          systemImage: model.voiceEnabled ? "waveform" : "play.circle")
-                        .font(.caption).frame(minHeight: 44)
-                }
-                .accessibilityIdentifier("voiceToggle")
-            }
+            // The old page leaves at once and the new lines rise in, so two pages never overlap.
+            .transition(.asymmetric(insertion: .identity,
+                                    removal: .opacity.animation(.easeOut(duration: 0.12))))
         }
         .padding(.vertical, 24)
     }

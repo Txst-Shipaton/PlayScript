@@ -1,87 +1,77 @@
 {
-  "text": "A wife of one night, and already another man’s name is being set beside mine.",
+  "text": "I asked him whether it was true. The Friar’s blessing made it so.",
   "cues": [
     {
-      "text": "A ",
+      "text": "I ",
       "start": 0.0,
       "end": 0.081
     },
     {
-      "text": "wife ",
-      "start": 0.163,
-      "end": 0.464
+      "text": "asked ",
+      "start": 0.197,
+      "end": 0.453
     },
     {
-      "text": "of ",
-      "start": 0.511,
+      "text": "him ",
+      "start": 0.499,
       "end": 0.604
     },
     {
-      "text": "one ",
-      "start": 0.72,
-      "end": 0.917
+      "text": "whether ",
+      "start": 0.639,
+      "end": 0.882
     },
     {
-      "text": "night, ",
-      "start": 0.964,
-      "end": 1.358
+      "text": "it ",
+      "start": 0.929,
+      "end": 0.987
     },
     {
-      "text": "and ",
-      "start": 1.533,
-      "end": 1.707
+      "text": "was ",
+      "start": 1.022,
+      "end": 1.138
     },
     {
-      "text": "already ",
-      "start": 1.788,
-      "end": 2.229
+      "text": "true. ",
+      "start": 1.196,
+      "end": 1.695
     },
     {
-      "text": "another ",
-      "start": 2.276,
-      "end": 2.543
+      "text": "The ",
+      "start": 1.974,
+      "end": 2.09
     },
     {
-      "text": "man’s ",
+      "text": "Friar’s ",
+      "start": 2.148,
+      "end": 2.566
+    },
+    {
+      "text": "blessing ",
       "start": 2.601,
-      "end": 2.879
+      "end": 3.042
     },
     {
-      "text": "name ",
-      "start": 2.949,
-      "end": 3.216
+      "text": "made ",
+      "start": 3.123,
+      "end": 3.309
     },
     {
-      "text": "is ",
-      "start": 3.262,
-      "end": 3.344
+      "text": "it ",
+      "start": 3.344,
+      "end": 3.413
     },
     {
-      "text": "being ",
-      "start": 3.402,
-      "end": 3.611
-    },
-    {
-      "text": "set ",
-      "start": 3.669,
-      "end": 3.855
-    },
-    {
-      "text": "beside ",
-      "start": 3.901,
-      "end": 4.261
-    },
-    {
-      "text": "mine.",
-      "start": 4.296,
-      "end": 5.016
+      "text": "so.",
+      "start": 3.46,
+      "end": 4.04
     }
   ],
-  "playbackRate": 0.9474666666666666,
+  "playbackRate": 0.94,
   "voiceID": "EXAVITQu4vr4xnSDxMaL",
   "character": "Juliet",
   "mood": "uneasy",
   "deliveryDirection": "frightened resolve, contained urgency",
-  "fingerprint": "533a4eefdd3996a2698bb7d011fb826f711d8131cfeebda526d8db2f817a8afc",
-  "effectiveWPM": 170.0
+  "fingerprint": "75ef78d9c1d269a2053541353dd4e0db05a34f61020172e42c7bdb6b8110f068",
+  "effectiveWPM": 181.4851485148515
 }

@@ -1,0 +1,67 @@
+{
+  "text": "Until dark, then. I will count every hour of the day.",
+  "cues": [
+    {
+      "text": "Until ",
+      "start": 0.0,
+      "end": 0.36
+    },
+    {
+      "text": "dark, ",
+      "start": 0.43,
+      "end": 0.743
+    },
+    {
+      "text": "then. ",
+      "start": 0.766,
+      "end": 1.173
+    },
+    {
+      "text": "I ",
+      "start": 1.614,
+      "end": 1.672
+    },
+    {
+      "text": "will ",
+      "start": 1.741,
+      "end": 1.892
+    },
+    {
+      "text": "count ",
+      "start": 1.95,
+      "end": 2.194
+    },
+    {
+      "text": "every ",
+      "start": 2.276,
+      "end": 2.543
+    },
+    {
+      "text": "hour ",
+      "start": 2.612,
+      "end": 2.879
+    },
+    {
+      "text": "of ",
+      "start": 2.926,
+      "end": 2.984
+    },
+    {
+      "text": "the ",
+      "start": 3.019,
+      "end": 3.088
+    },
+    {
+      "text": "day.",
+      "start": 3.135,
+      "end": 3.762
+    }
+  ],
+  "playbackRate": 0.969,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "59da7b5d463bce579e2abe68ffd0f1ed3ce39f456f11c5b9bce774d241686ff4",
+  "effectiveWPM": 170.0
+}

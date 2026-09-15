@@ -1,0 +1,107 @@
+{
+  "text": "She asked me to wait for her. Let me imagine a world where neither of us had to wait.",
+  "cues": [
+    {
+      "text": "She ",
+      "start": 0.0,
+      "end": 0.186
+    },
+    {
+      "text": "asked ",
+      "start": 0.244,
+      "end": 0.522
+    },
+    {
+      "text": "me ",
+      "start": 0.557,
+      "end": 0.627
+    },
+    {
+      "text": "to ",
+      "start": 0.673,
+      "end": 0.743
+    },
+    {
+      "text": "wait ",
+      "start": 0.813,
+      "end": 1.01
+    },
+    {
+      "text": "for ",
+      "start": 1.068,
+      "end": 1.184
+    },
+    {
+      "text": "her. ",
+      "start": 1.254,
+      "end": 1.602
+    },
+    {
+      "text": "Let ",
+      "start": 1.927,
+      "end": 2.09
+    },
+    {
+      "text": "me ",
+      "start": 2.136,
+      "end": 2.218
+    },
+    {
+      "text": "imagine ",
+      "start": 2.276,
+      "end": 2.659
+    },
+    {
+      "text": "a ",
+      "start": 2.682,
+      "end": 2.717
+    },
+    {
+      "text": "world ",
+      "start": 2.798,
+      "end": 3.274
+    },
+    {
+      "text": "where ",
+      "start": 3.657,
+      "end": 3.878
+    },
+    {
+      "text": "neither ",
+      "start": 3.936,
+      "end": 4.261
+    },
+    {
+      "text": "of ",
+      "start": 4.319,
+      "end": 4.389
+    },
+    {
+      "text": "us ",
+      "start": 4.447,
+      "end": 4.54
+    },
+    {
+      "text": "had ",
+      "start": 4.598,
+      "end": 4.772
+    },
+    {
+      "text": "to ",
+      "start": 4.83,
+      "end": 4.911
+    },
+    {
+      "text": "wait.",
+      "start": 5.004,
+      "end": 5.712
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "89975837ef95741d074f1eadcb358e3bcb08d7f62c24e0233a15530b2a4ff08a",
+  "effectiveWPM": 187.60504201680672
+}

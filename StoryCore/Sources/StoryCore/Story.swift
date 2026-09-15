@@ -13,10 +13,14 @@ public enum BeatKind: String, Codable, Sendable {
 public struct StoryLine: Codable, Equatable, Sendable {
     public let speaker: String
     public let text: String
+    /// `"beatID:choiceID"`. The line is heard only on paths where that choice was
+    /// made, which is how an earlier decision echoes later in the story.
+    public let when: String?
 
-    public init(speaker: String, text: String) {
+    public init(speaker: String, text: String, when: String? = nil) {
         self.speaker = speaker
         self.text = text
+        self.when = when
     }
 }
 
@@ -38,10 +42,8 @@ public struct StoryBeat: Codable, Identifiable, Sendable {
     /// Optional asset catalog name. Artwork is intentionally deferred for this build.
     public let artwork: String?
     public let kind: BeatKind
+    /// Every written line joined, for accessibility and saved-place compatibility.
     public let text: String
-    /// When present, the beat is read as attributed lines: both lovers can speak
-    /// within one beat. `text` remains the whole passage, for accessibility and
-    /// for saved-place compatibility with content written before lines existed.
     public let lines: [StoryLine]?
     public let choices: [StoryChoice]
 }
@@ -78,13 +80,26 @@ public struct Story: Codable, Sendable {
         guard !beats.isEmpty, Set(beats.map(\.id)).count == beats.count else {
             throw StoryError.invalidContent("A story needs unique, nonempty beats.")
         }
+        var decisionsSoFar: [String: Set<String>] = [:]
         for beat in beats {
             guard !beat.id.isEmpty, !beat.text.isEmpty else {
                 throw StoryError.invalidContent("Every beat needs an ID and text.")
             }
-            let allLines = (beat.lines ?? []) + beat.choices.flatMap { $0.lines ?? [] }
-            guard allLines.allSatisfy({ !$0.speaker.isEmpty && !$0.text.isEmpty }) else {
-                throw StoryError.invalidContent("Every line needs a speaker and text.")
+            let passages = [beat.lines ?? []] + beat.choices.map { $0.lines ?? [] }
+            for passage in passages {
+                guard passage.allSatisfy({ !$0.speaker.isEmpty && !$0.text.isEmpty }) else {
+                    throw StoryError.invalidContent("Every line needs a speaker and text.")
+                }
+                // Something must be heard on every path, whatever was chosen before.
+                if !passage.isEmpty, !passage.contains(where: { $0.when == nil }) {
+                    throw StoryError.invalidContent("\(beat.id) has no line heard on every path.")
+                }
+                for condition in passage.compactMap(\.when) {
+                    let parts = condition.split(separator: ":", maxSplits: 1).map(String.init)
+                    guard parts.count == 2, decisionsSoFar[parts[0]]?.contains(parts[1]) == true else {
+                        throw StoryError.invalidContent("\(beat.id): '\(condition)' must name an earlier choice.")
+                    }
+                }
             }
             if let lines = beat.lines, lines.isEmpty {
                 throw StoryError.invalidContent("A beat with lines needs at least one.")
@@ -95,6 +110,7 @@ public struct Story: Codable, Sendable {
                       beat.choices.allSatisfy({ !$0.id.isEmpty && !$0.title.isEmpty && !$0.flavor.isEmpty }) else {
                     throw StoryError.invalidContent("A decision must have exactly two distinct, complete choices.")
                 }
+                decisionsSoFar[beat.id] = Set(beat.choices.map(\.id))
             } else if !beat.choices.isEmpty {
                 throw StoryError.invalidContent("Only decision beats may contain choices.")
             }
@@ -115,21 +131,27 @@ public struct SavedPlace: Codable, Equatable, Sendable {
     public let storyID: String
     public let beatID: String
     public let selectedChoiceID: String?
+    /// Every decision made so far, so later echoes survive a relaunch.
+    public let choices: [String: String]?
 
-    public init(storyID: String, beatID: String, selectedChoiceID: String?) {
+    public init(storyID: String, beatID: String, selectedChoiceID: String?,
+                choices: [String: String]? = nil) {
         self.storyID = storyID
         self.beatID = beatID
         self.selectedChoiceID = selectedChoiceID
+        self.choices = choices
     }
 }
 
-/// Choices deliberately have no destinations. There is only one next beat.
+/// The plot has one next beat; choices change what is said along the way.
 public struct StoryRun: Sendable {
     public let story: Story
     public private(set) var index: Int
     public private(set) var selectedChoiceID: String?
     /// Which two-line page of the current passage is showing.
     public private(set) var pageIndex: Int
+    /// Decisions made on this path, beat ID to choice ID.
+    public private(set) var history: [String: String]
 
     public init(story: Story, savedPlace: SavedPlace? = nil) {
         self.story = story
@@ -137,10 +159,22 @@ public struct StoryRun: Sendable {
         if let place = savedPlace, place.storyID == story.id,
            let restoredIndex = story.beats.firstIndex(where: { $0.id == place.beatID }) {
             index = restoredIndex
-            selectedChoiceID = story.beats[restoredIndex].choices.first { $0.id == place.selectedChoiceID }?.id
+            let current = story.beats[restoredIndex]
+            let chosen = current.choices.first { $0.id == place.selectedChoiceID }?.id
+            selectedChoiceID = chosen
+            var restored: [String: String] = [:]
+            // Only decisions that still exist, made before this point, carry over.
+            for (beatID, choiceID) in place.choices ?? [:] {
+                guard let at = story.beats.firstIndex(where: { $0.id == beatID }), at < restoredIndex,
+                      story.beats[at].choices.contains(where: { $0.id == choiceID }) else { continue }
+                restored[beatID] = choiceID
+            }
+            restored[current.id] = chosen
+            history = restored
         } else {
             index = 0
             selectedChoiceID = nil
+            history = [:]
         }
     }
 
@@ -148,28 +182,46 @@ public struct StoryRun: Sendable {
     public var selectedChoice: StoryChoice? { beat.choices.first { $0.id == selectedChoiceID } }
     public var text: String { selectedChoice?.flavor ?? beat.text }
 
-    /// Content written without lines still reads as one line in the speaker's voice.
-    public var lines: [StoryLine] {
+    /// Every written line of what is showing, before earlier choices are applied.
+    private var writtenLines: [StoryLine] {
         if let choice = selectedChoice {
             return choice.lines ?? [StoryLine(speaker: beat.pointOfView, text: choice.flavor)]
         }
         return beat.lines ?? [StoryLine(speaker: beat.pointOfView, text: beat.text)]
     }
 
+    private func isHeard(_ line: StoryLine) -> Bool {
+        guard let condition = line.when else { return true }
+        let parts = condition.split(separator: ":", maxSplits: 1).map(String.init)
+        return parts.count == 2 && history[parts[0]] == parts[1]
+    }
+
+    /// Written positions of the lines heard on this path. Narration clips are named
+    /// by written position, so a clip keeps its name whichever path reaches it.
+    public var lineIndices: [Int] { writtenLines.indices.filter { isHeard(writtenLines[$0]) } }
+    public var lines: [StoryLine] { lineIndices.map { writtenLines[$0] } }
     public var pages: [[StoryLine]] { Pagination.pages(lines) }
     public var page: [StoryLine] { pages.indices.contains(pageIndex) ? pages[pageIndex] : [] }
+    public var pageLineIndices: [Int] {
+        let heard = lineIndices
+        let start = pageIndex * Pagination.linesPerPage
+        guard start < heard.count else { return [] }
+        return Array(heard[start..<min(start + Pagination.linesPerPage, heard.count)])
+    }
     public var isLastPage: Bool { pageIndex >= pages.count - 1 }
 
     /// The decision waits until its passage has been read to the end.
     public var needsChoice: Bool { beat.kind == .choice && selectedChoice == nil && isLastPage }
     public var savedPlace: SavedPlace {
-        SavedPlace(storyID: story.id, beatID: beat.id, selectedChoiceID: selectedChoiceID)
+        SavedPlace(storyID: story.id, beatID: beat.id, selectedChoiceID: selectedChoiceID,
+                   choices: history.isEmpty ? nil : history)
     }
 
     @discardableResult
     public mutating func choose(_ id: String) -> Bool {
         guard needsChoice, beat.choices.contains(where: { $0.id == id }) else { return false }
         selectedChoiceID = id
+        history[beat.id] = id
         pageIndex = 0
         return true
     }

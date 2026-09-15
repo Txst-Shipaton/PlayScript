@@ -1,0 +1,72 @@
+{
+  "text": "Just once, let me imagine a world that gave us enough time.",
+  "cues": [
+    {
+      "text": "Just ",
+      "start": 0.0,
+      "end": 0.267
+    },
+    {
+      "text": "once, ",
+      "start": 0.348,
+      "end": 0.778
+    },
+    {
+      "text": "let ",
+      "start": 1.022,
+      "end": 1.149
+    },
+    {
+      "text": "me ",
+      "start": 1.196,
+      "end": 1.277
+    },
+    {
+      "text": "imagine ",
+      "start": 1.335,
+      "end": 1.683
+    },
+    {
+      "text": "a ",
+      "start": 1.718,
+      "end": 1.741
+    },
+    {
+      "text": "world ",
+      "start": 1.811,
+      "end": 2.125
+    },
+    {
+      "text": "that ",
+      "start": 2.171,
+      "end": 2.287
+    },
+    {
+      "text": "gave ",
+      "start": 2.345,
+      "end": 2.554
+    },
+    {
+      "text": "us ",
+      "start": 2.601,
+      "end": 2.682
+    },
+    {
+      "text": "enough ",
+      "start": 2.752,
+      "end": 3.019
+    },
+    {
+      "text": "time.",
+      "start": 3.065,
+      "end": 3.855
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "21bcbccf61e6d7a6734021a1971aaa14be0603a1866d94a0ec614980edf0e3ef",
+  "effectiveWPM": 175.56420233463032
+}

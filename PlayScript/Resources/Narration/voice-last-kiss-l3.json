@@ -1,65 +1,95 @@
 {
-  "text": "I press my forehead to his and whisper his name once more.",
+  "text": "That morning I called him back from the wall. I call him now, and he does not turn.",
   "cues": [
     {
-      "text": "I ",
+      "text": "That ",
       "start": 0.0,
-      "end": 0.07
+      "end": 0.221
     },
     {
-      "text": "press ",
-      "start": 0.186,
-      "end": 0.418
+      "text": "morning ",
+      "start": 0.279,
+      "end": 0.557
     },
     {
-      "text": "my ",
-      "start": 0.488,
-      "end": 0.58
+      "text": "I ",
+      "start": 0.627,
+      "end": 0.65
     },
     {
-      "text": "forehead ",
-      "start": 0.639,
-      "end": 1.033
+      "text": "called ",
+      "start": 0.731,
+      "end": 0.964
     },
     {
-      "text": "to ",
-      "start": 1.08,
-      "end": 1.149
+      "text": "him ",
+      "start": 0.998,
+      "end": 1.091
     },
     {
-      "text": "his ",
-      "start": 1.231,
+      "text": "back ",
+      "start": 1.149,
+      "end": 1.358
+    },
+    {
+      "text": "from ",
+      "start": 1.416,
       "end": 1.556
     },
     {
+      "text": "the ",
+      "start": 1.602,
+      "end": 1.672
+    },
+    {
+      "text": "wall. ",
+      "start": 1.707,
+      "end": 2.148
+    },
+    {
+      "text": "I ",
+      "start": 2.473,
+      "end": 2.531
+    },
+    {
+      "text": "call ",
+      "start": 2.624,
+      "end": 2.786
+    },
+    {
+      "text": "him ",
+      "start": 2.856,
+      "end": 2.949
+    },
+    {
+      "text": "now, ",
+      "start": 2.995,
+      "end": 3.332
+    },
+    {
       "text": "and ",
-      "start": 1.625,
-      "end": 1.776
+      "start": 3.355,
+      "end": 3.506
     },
     {
-      "text": "whisper ",
-      "start": 1.846,
-      "end": 2.183
+      "text": "he ",
+      "start": 3.576,
+      "end": 3.634
     },
     {
-      "text": "his ",
-      "start": 2.264,
-      "end": 2.38
+      "text": "does ",
+      "start": 3.692,
+      "end": 3.831
     },
     {
-      "text": "name ",
-      "start": 2.45,
-      "end": 2.717
+      "text": "not ",
+      "start": 3.878,
+      "end": 4.052
     },
     {
-      "text": "once ",
-      "start": 2.775,
-      "end": 3.042
-    },
-    {
-      "text": "more.",
-      "start": 3.088,
-      "end": 3.669
+      "text": "turn.",
+      "start": 4.098,
+      "end": 4.783
     }
   ],
   "playbackRate": 0.94,
@@ -67,6 +97,6 @@
   "character": "Juliet",
   "mood": "grief",
   "deliveryDirection": "devastated, hushed, space between thoughts",
-  "fingerprint": "6d6661127c5dc5ea8ff20e94e7b757be03f15a9bba4ecf8b8e9c6868c49a3678",
-  "effectiveWPM": 184.4644317252657
+  "fingerprint": "9ef1381f7689c391d7f8a29de5f78b28c7211e62cdd5169982f1ae9f453ba55e",
+  "effectiveWPM": 212.25172485887515
 }

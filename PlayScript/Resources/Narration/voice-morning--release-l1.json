@@ -1,0 +1,72 @@
+{
+  "text": "Beyond the wall, a shadow pauses, as though it heard me anyway.",
+  "cues": [
+    {
+      "text": "Beyond ",
+      "start": 0.0,
+      "end": 0.395
+    },
+    {
+      "text": "the ",
+      "start": 0.441,
+      "end": 0.511
+    },
+    {
+      "text": "wall, ",
+      "start": 0.546,
+      "end": 0.906
+    },
+    {
+      "text": "a ",
+      "start": 0.94,
+      "end": 0.998
+    },
+    {
+      "text": "shadow ",
+      "start": 1.08,
+      "end": 1.451
+    },
+    {
+      "text": "pauses, ",
+      "start": 1.533,
+      "end": 2.136
+    },
+    {
+      "text": "as ",
+      "start": 2.159,
+      "end": 2.276
+    },
+    {
+      "text": "though ",
+      "start": 2.334,
+      "end": 2.543
+    },
+    {
+      "text": "it ",
+      "start": 2.601,
+      "end": 2.682
+    },
+    {
+      "text": "heard ",
+      "start": 2.752,
+      "end": 2.972
+    },
+    {
+      "text": "me ",
+      "start": 3.03,
+      "end": 3.111
+    },
+    {
+      "text": "anyway.",
+      "start": 3.17,
+      "end": 3.855
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "820185fc2d70379a22e9701593dfa92f6d99b403ef0b2474de7bc5eb59675f29",
+  "effectiveWPM": 175.56420233463032
+}

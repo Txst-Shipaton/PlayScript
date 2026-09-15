@@ -1,0 +1,62 @@
+{
+  "text": "Then go, before I call you back a second time.",
+  "cues": [
+    {
+      "text": "Then ",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "text": "go, ",
+      "start": 0.29,
+      "end": 0.662
+    },
+    {
+      "text": "before ",
+      "start": 0.731,
+      "end": 1.022
+    },
+    {
+      "text": "I ",
+      "start": 1.057,
+      "end": 1.08
+    },
+    {
+      "text": "call ",
+      "start": 1.138,
+      "end": 1.289
+    },
+    {
+      "text": "you ",
+      "start": 1.335,
+      "end": 1.405
+    },
+    {
+      "text": "back ",
+      "start": 1.44,
+      "end": 1.591
+    },
+    {
+      "text": "a ",
+      "start": 1.637,
+      "end": 1.66
+    },
+    {
+      "text": "second ",
+      "start": 1.707,
+      "end": 1.974
+    },
+    {
+      "text": "time.",
+      "start": 2.032,
+      "end": 2.601
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "8b4403e8f657857fa6e88fb416a3fcaeda8951bdebddabce50f9bbc18116dabc",
+  "effectiveWPM": 216.8396770472895
+}

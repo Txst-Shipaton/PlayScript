@@ -1,47 +1,62 @@
 {
-  "text": "For now, that is enough to begin.",
+  "text": "I would climb every wall in Verona again for this.",
   "cues": [
     {
-      "text": "For ",
+      "text": "I ",
       "start": 0.0,
-      "end": 0.197
+      "end": 0.093
     },
     {
-      "text": "now, ",
-      "start": 0.244,
-      "end": 0.662
+      "text": "would ",
+      "start": 0.163,
+      "end": 0.313
     },
     {
-      "text": "that ",
-      "start": 0.94,
-      "end": 1.103
+      "text": "climb ",
+      "start": 0.36,
+      "end": 0.685
     },
     {
-      "text": "is ",
-      "start": 1.149,
-      "end": 1.231
+      "text": "every ",
+      "start": 0.801,
+      "end": 1.161
     },
     {
-      "text": "enough ",
-      "start": 1.289,
-      "end": 1.533
+      "text": "wall ",
+      "start": 1.231,
+      "end": 1.509
     },
     {
-      "text": "to ",
-      "start": 1.579,
-      "end": 1.66
+      "text": "in ",
+      "start": 1.591,
+      "end": 1.672
     },
     {
-      "text": "begin.",
-      "start": 1.73,
-      "end": 2.508
+      "text": "Verona ",
+      "start": 1.741,
+      "end": 2.125
+    },
+    {
+      "text": "again ",
+      "start": 2.183,
+      "end": 2.519
+    },
+    {
+      "text": "for ",
+      "start": 2.601,
+      "end": 2.717
+    },
+    {
+      "text": "this.",
+      "start": 2.752,
+      "end": 3.437
     }
   ],
-  "playbackRate": 1.0151428571428571,
+  "playbackRate": 0.9738166666666667,
   "voiceID": "onwK4e9ZLuTAKqWW03F9",
   "character": "Romeo",
   "mood": "dawn",
   "deliveryDirection": "disbelief giving way to relief and hope",
-  "fingerprint": "55ffa999833ac9a47b14e0d9e0744a84e53a14336558c571b48792f077078374",
-  "effectiveWPM": 169.99999999999997
+  "fingerprint": "95ab35737f61045cfe54145c653c82cf9aed4d81b4c26a1f8519db257f8e1f54",
+  "effectiveWPM": 170.0
 }

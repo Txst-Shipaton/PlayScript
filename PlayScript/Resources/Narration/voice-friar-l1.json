@@ -1,102 +1,102 @@
 {
-  "text": "Then Tybalt is dead by Romeo’s hand, Romeo is banished, and my father has promised me to Paris.",
+  "text": "I gave him my heart before fear could make the words smaller. Fear has found other words since.",
   "cues": [
     {
-      "text": "Then ",
+      "text": "I ",
       "start": 0.0,
-      "end": 0.221
+      "end": 0.081
     },
     {
-      "text": "Tybalt ",
-      "start": 0.29,
-      "end": 0.604
+      "text": "gave ",
+      "start": 0.174,
+      "end": 0.36
     },
     {
-      "text": "is ",
-      "start": 0.65,
-      "end": 0.731
-    },
-    {
-      "text": "dead ",
-      "start": 0.789,
-      "end": 1.01
-    },
-    {
-      "text": "by ",
-      "start": 1.057,
-      "end": 1.173
-    },
-    {
-      "text": "Romeo’s ",
-      "start": 1.242,
-      "end": 1.718
-    },
-    {
-      "text": "hand, ",
-      "start": 1.765,
-      "end": 2.194
-    },
-    {
-      "text": "Romeo ",
-      "start": 2.519,
-      "end": 2.949
-    },
-    {
-      "text": "is ",
-      "start": 3.03,
-      "end": 3.135
-    },
-    {
-      "text": "banished, ",
-      "start": 3.204,
-      "end": 3.773
-    },
-    {
-      "text": "and ",
-      "start": 3.796,
-      "end": 3.936
+      "text": "him ",
+      "start": 0.383,
+      "end": 0.488
     },
     {
       "text": "my ",
-      "start": 4.052,
-      "end": 4.18
+      "start": 0.534,
+      "end": 0.639
     },
     {
-      "text": "father ",
-      "start": 4.261,
-      "end": 4.598
+      "text": "heart ",
+      "start": 0.72,
+      "end": 0.987
+    },
+    {
+      "text": "before ",
+      "start": 1.045,
+      "end": 1.358
+    },
+    {
+      "text": "fear ",
+      "start": 1.416,
+      "end": 1.66
+    },
+    {
+      "text": "could ",
+      "start": 1.718,
+      "end": 1.869
+    },
+    {
+      "text": "make ",
+      "start": 1.904,
+      "end": 2.078
+    },
+    {
+      "text": "the ",
+      "start": 2.113,
+      "end": 2.183
+    },
+    {
+      "text": "words ",
+      "start": 2.241,
+      "end": 2.612
+    },
+    {
+      "text": "smaller. ",
+      "start": 2.786,
+      "end": 3.483
+    },
+    {
+      "text": "Fear ",
+      "start": 3.808,
+      "end": 4.087
     },
     {
       "text": "has ",
-      "start": 4.656,
-      "end": 4.772
+      "start": 4.156,
+      "end": 4.284
     },
     {
-      "text": "promised ",
-      "start": 4.853,
-      "end": 5.329
+      "text": "found ",
+      "start": 4.342,
+      "end": 4.563
     },
     {
-      "text": "me ",
-      "start": 5.387,
-      "end": 5.526
+      "text": "other ",
+      "start": 4.644,
+      "end": 4.911
     },
     {
-      "text": "to ",
-      "start": 5.596,
-      "end": 5.689
+      "text": "words ",
+      "start": 4.981,
+      "end": 5.399
     },
     {
-      "text": "Paris.",
-      "start": 5.759,
-      "end": 6.594
+      "text": "since.",
+      "start": 5.55,
+      "end": 6.269
     }
   ],
-  "playbackRate": 1.0379444444444446,
+  "playbackRate": 0.9867870370370371,
   "voiceID": "EXAVITQu4vr4xnSDxMaL",
   "character": "Juliet",
   "mood": "uneasy",
   "deliveryDirection": "frightened resolve, contained urgency",
-  "fingerprint": "5f0011f8a5c4204117978ad53ed27f321e5ce87e2c1b571499a8a8351620d1d8",
+  "fingerprint": "562a7c28e50dc8fc7f31915a7994fe5a0dcc2d53edf2a72cdb5c5dcf0a35e527",
   "effectiveWPM": 170.0
 }

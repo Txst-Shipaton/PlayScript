@@ -1,0 +1,102 @@
+{
+  "text": "That morning I let him go without a word. I will not let him go so quietly again.",
+  "cues": [
+    {
+      "text": "That ",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "text": "morning ",
+      "start": 0.279,
+      "end": 0.557
+    },
+    {
+      "text": "I ",
+      "start": 0.627,
+      "end": 0.65
+    },
+    {
+      "text": "let ",
+      "start": 0.743,
+      "end": 0.894
+    },
+    {
+      "text": "him ",
+      "start": 0.929,
+      "end": 1.022
+    },
+    {
+      "text": "go ",
+      "start": 1.068,
+      "end": 1.265
+    },
+    {
+      "text": "without ",
+      "start": 1.382,
+      "end": 1.695
+    },
+    {
+      "text": "a ",
+      "start": 1.73,
+      "end": 1.753
+    },
+    {
+      "text": "word. ",
+      "start": 1.8,
+      "end": 2.252
+    },
+    {
+      "text": "I ",
+      "start": 2.531,
+      "end": 2.577
+    },
+    {
+      "text": "will ",
+      "start": 2.659,
+      "end": 2.833
+    },
+    {
+      "text": "not ",
+      "start": 2.902,
+      "end": 3.088
+    },
+    {
+      "text": "let ",
+      "start": 3.146,
+      "end": 3.274
+    },
+    {
+      "text": "him ",
+      "start": 3.309,
+      "end": 3.39
+    },
+    {
+      "text": "go ",
+      "start": 3.437,
+      "end": 3.564
+    },
+    {
+      "text": "so ",
+      "start": 3.634,
+      "end": 3.762
+    },
+    {
+      "text": "quietly ",
+      "start": 3.831,
+      "end": 4.261
+    },
+    {
+      "text": "again.",
+      "start": 4.319,
+      "end": 4.969
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "b35bcb30c3dca9b94df5f18260765802fb226133b0d6bdb2d1e0d93dd1e92f06",
+  "effectiveWPM": 204.30670154960754
+}

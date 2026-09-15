@@ -1,0 +1,82 @@
+{
+  "text": "She once asked me whether I was certain. I am certain now, kneeling here.",
+  "cues": [
+    {
+      "text": "She ",
+      "start": 0.0,
+      "end": 0.186
+    },
+    {
+      "text": "once ",
+      "start": 0.255,
+      "end": 0.499
+    },
+    {
+      "text": "asked ",
+      "start": 0.546,
+      "end": 0.848
+    },
+    {
+      "text": "me ",
+      "start": 0.894,
+      "end": 1.115
+    },
+    {
+      "text": "whether ",
+      "start": 1.358,
+      "end": 1.66
+    },
+    {
+      "text": "I ",
+      "start": 1.741,
+      "end": 1.776
+    },
+    {
+      "text": "was ",
+      "start": 1.869,
+      "end": 1.997
+    },
+    {
+      "text": "certain. ",
+      "start": 2.055,
+      "end": 2.601
+    },
+    {
+      "text": "I ",
+      "start": 3.204,
+      "end": 3.262
+    },
+    {
+      "text": "am ",
+      "start": 3.344,
+      "end": 3.471
+    },
+    {
+      "text": "certain ",
+      "start": 3.553,
+      "end": 3.924
+    },
+    {
+      "text": "now, ",
+      "start": 3.971,
+      "end": 4.423
+    },
+    {
+      "text": "kneeling ",
+      "start": 4.748,
+      "end": 5.166
+    },
+    {
+      "text": "here.",
+      "start": 5.248,
+      "end": 5.944
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "8115304f4aaf17444ab0735601c3af51d7abb9f42c017f90194ade4e7b91fa00",
+  "effectiveWPM": 149.79811574697177
+}

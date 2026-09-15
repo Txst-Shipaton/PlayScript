@@ -1,0 +1,57 @@
+{
+  "text": "Then the daylight has not undone us after all.",
+  "cues": [
+    {
+      "text": "Then ",
+      "start": 0.0,
+      "end": 0.209
+    },
+    {
+      "text": "the ",
+      "start": 0.267,
+      "end": 0.337
+    },
+    {
+      "text": "daylight ",
+      "start": 0.383,
+      "end": 0.789
+    },
+    {
+      "text": "has ",
+      "start": 0.836,
+      "end": 0.964
+    },
+    {
+      "text": "not ",
+      "start": 1.045,
+      "end": 1.277
+    },
+    {
+      "text": "undone ",
+      "start": 1.358,
+      "end": 1.707
+    },
+    {
+      "text": "us ",
+      "start": 1.753,
+      "end": 1.858
+    },
+    {
+      "text": "after ",
+      "start": 1.916,
+      "end": 2.218
+    },
+    {
+      "text": "all.",
+      "start": 2.287,
+      "end": 2.879
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "53d2d3ef9e5e9183d900689cb75d5b2991bed4c05a92047255749e6ba34d93a1",
+  "effectiveWPM": 176.31121917332408
+}

@@ -1,0 +1,92 @@
+{
+  "text": "In the orchard I listened while he did not know. Here, I could not even listen.",
+  "cues": [
+    {
+      "text": "In ",
+      "start": 0.0,
+      "end": 0.128
+    },
+    {
+      "text": "the ",
+      "start": 0.163,
+      "end": 0.232
+    },
+    {
+      "text": "orchard ",
+      "start": 0.29,
+      "end": 0.627
+    },
+    {
+      "text": "I ",
+      "start": 0.685,
+      "end": 0.72
+    },
+    {
+      "text": "listened ",
+      "start": 0.836,
+      "end": 1.231
+    },
+    {
+      "text": "while ",
+      "start": 1.289,
+      "end": 1.509
+    },
+    {
+      "text": "he ",
+      "start": 1.544,
+      "end": 1.602
+    },
+    {
+      "text": "did ",
+      "start": 1.66,
+      "end": 1.776
+    },
+    {
+      "text": "not ",
+      "start": 1.834,
+      "end": 1.997
+    },
+    {
+      "text": "know. ",
+      "start": 2.043,
+      "end": 2.531
+    },
+    {
+      "text": "Here, ",
+      "start": 2.856,
+      "end": 3.297
+    },
+    {
+      "text": "I ",
+      "start": 3.379,
+      "end": 3.425
+    },
+    {
+      "text": "could ",
+      "start": 3.495,
+      "end": 3.657
+    },
+    {
+      "text": "not ",
+      "start": 3.704,
+      "end": 3.831
+    },
+    {
+      "text": "even ",
+      "start": 3.878,
+      "end": 4.052
+    },
+    {
+      "text": "listen.",
+      "start": 4.098,
+      "end": 4.83
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "699f03093f0ba56d3247f96c82b444adf35809e0eb26b9e839a61bba5429390f",
+  "effectiveWPM": 186.83229813664593
+}

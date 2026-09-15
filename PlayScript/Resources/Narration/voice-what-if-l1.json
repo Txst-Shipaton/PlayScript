@@ -1,72 +1,92 @@
 {
-  "text": "Just once, let me imagine a world that gave us enough time.",
+  "text": "She thanked me for the orchard. Let me give her more than a wall to climb.",
   "cues": [
     {
-      "text": "Just ",
+      "text": "She ",
       "start": 0.0,
-      "end": 0.29
+      "end": 0.186
     },
     {
-      "text": "once, ",
-      "start": 0.372,
-      "end": 0.708
-    },
-    {
-      "text": "let ",
-      "start": 0.743,
-      "end": 0.882
+      "text": "thanked ",
+      "start": 0.244,
+      "end": 0.511
     },
     {
       "text": "me ",
-      "start": 0.917,
-      "end": 0.998
+      "start": 0.546,
+      "end": 0.743
     },
     {
-      "text": "imagine ",
-      "start": 1.057,
-      "end": 1.44
+      "text": "for ",
+      "start": 0.813,
+      "end": 0.964
+    },
+    {
+      "text": "the ",
+      "start": 0.998,
+      "end": 1.068
+    },
+    {
+      "text": "orchard. ",
+      "start": 1.138,
+      "end": 1.695
+    },
+    {
+      "text": "Let ",
+      "start": 2.136,
+      "end": 2.31
+    },
+    {
+      "text": "me ",
+      "start": 2.357,
+      "end": 2.438
+    },
+    {
+      "text": "give ",
+      "start": 2.508,
+      "end": 2.682
+    },
+    {
+      "text": "her ",
+      "start": 2.728,
+      "end": 2.833
+    },
+    {
+      "text": "more ",
+      "start": 2.949,
+      "end": 3.193
+    },
+    {
+      "text": "than ",
+      "start": 3.239,
+      "end": 3.367
     },
     {
       "text": "a ",
-      "start": 1.474,
-      "end": 1.498
+      "start": 3.413,
+      "end": 3.437
     },
     {
-      "text": "world ",
-      "start": 1.556,
-      "end": 1.846
+      "text": "wall ",
+      "start": 3.553,
+      "end": 3.878
     },
     {
-      "text": "that ",
-      "start": 1.892,
-      "end": 2.02
+      "text": "to ",
+      "start": 3.947,
+      "end": 4.017
     },
     {
-      "text": "gave ",
-      "start": 2.078,
-      "end": 2.252
-    },
-    {
-      "text": "us ",
-      "start": 2.299,
-      "end": 2.38
-    },
-    {
-      "text": "enough ",
-      "start": 2.438,
-      "end": 2.67
-    },
-    {
-      "text": "time.",
-      "start": 2.705,
-      "end": 3.344
+      "text": "climb.",
+      "start": 4.098,
+      "end": 4.969
     }
   ],
   "playbackRate": 0.94,
-  "voiceID": "EXAVITQu4vr4xnSDxMaL",
-  "character": "Juliet",
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
   "mood": "grief",
   "deliveryDirection": "devastated, hushed, space between thoughts",
-  "fingerprint": "105ec995da4be34e487fa83e7961f374ce93aa57f60759302671e8feb75f0cec",
-  "effectiveWPM": 202.39234449760764
+  "fingerprint": "2235187bab609f58caf763ad00f8ab9d4d29ccfd03856e2a0f2194afcec0ee2b",
+  "effectiveWPM": 181.60595693298447
 }

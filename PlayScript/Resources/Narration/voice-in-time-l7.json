@@ -1,0 +1,87 @@
+{
+  "text": "She gave me her heart without asking for proof. Here is the proof. I came.",
+  "cues": [
+    {
+      "text": "She ",
+      "start": 0.0,
+      "end": 0.174
+    },
+    {
+      "text": "gave ",
+      "start": 0.221,
+      "end": 0.406
+    },
+    {
+      "text": "me ",
+      "start": 0.441,
+      "end": 0.522
+    },
+    {
+      "text": "her ",
+      "start": 0.58,
+      "end": 0.697
+    },
+    {
+      "text": "heart ",
+      "start": 0.778,
+      "end": 1.103
+    },
+    {
+      "text": "without ",
+      "start": 1.486,
+      "end": 1.892
+    },
+    {
+      "text": "asking ",
+      "start": 1.95,
+      "end": 2.345
+    },
+    {
+      "text": "for ",
+      "start": 2.415,
+      "end": 2.531
+    },
+    {
+      "text": "proof. ",
+      "start": 2.601,
+      "end": 3.228
+    },
+    {
+      "text": "Here ",
+      "start": 3.831,
+      "end": 4.075
+    },
+    {
+      "text": "is ",
+      "start": 4.133,
+      "end": 4.203
+    },
+    {
+      "text": "the ",
+      "start": 4.249,
+      "end": 4.319
+    },
+    {
+      "text": "proof. ",
+      "start": 4.377,
+      "end": 4.969
+    },
+    {
+      "text": "I ",
+      "start": 5.41,
+      "end": 5.492
+    },
+    {
+      "text": "came.",
+      "start": 5.608,
+      "end": 6.362
+    }
+  ],
+  "playbackRate": 1.06,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "d2011ba96585fdc670fc05f97b07059cf4312c17dddcbf00781a8f30e15b68b7",
+  "effectiveWPM": 149.95284501729014
+}

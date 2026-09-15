@@ -1,0 +1,72 @@
+{
+  "text": "Thank you for climbing the wall. For every hour you gave me.",
+  "cues": [
+    {
+      "text": "Thank ",
+      "start": 0.0,
+      "end": 0.244
+    },
+    {
+      "text": "you ",
+      "start": 0.279,
+      "end": 0.36
+    },
+    {
+      "text": "for ",
+      "start": 0.406,
+      "end": 0.499
+    },
+    {
+      "text": "climbing ",
+      "start": 0.534,
+      "end": 0.859
+    },
+    {
+      "text": "the ",
+      "start": 0.894,
+      "end": 0.964
+    },
+    {
+      "text": "wall. ",
+      "start": 0.998,
+      "end": 1.382
+    },
+    {
+      "text": "For ",
+      "start": 1.498,
+      "end": 1.649
+    },
+    {
+      "text": "every ",
+      "start": 1.741,
+      "end": 2.09
+    },
+    {
+      "text": "hour ",
+      "start": 2.148,
+      "end": 2.461
+    },
+    {
+      "text": "you ",
+      "start": 2.577,
+      "end": 2.67
+    },
+    {
+      "text": "gave ",
+      "start": 2.74,
+      "end": 2.949
+    },
+    {
+      "text": "me.",
+      "start": 2.995,
+      "end": 3.483
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "16ae12b533b9356509c1e23da11360e7767f28d9033dea2f8c38cf76ea81e587",
+  "effectiveWPM": 194.31524547803613
+}

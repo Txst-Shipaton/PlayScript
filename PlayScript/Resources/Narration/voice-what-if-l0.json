@@ -1,30 +1,30 @@
 {
-  "text": "What if the letter had found him?",
+  "text": "What if the letter had found me?",
   "cues": [
     {
       "text": "What ",
       "start": 0.0,
-      "end": 0.186
+      "end": 0.197
     },
     {
       "text": "if ",
-      "start": 0.232,
+      "start": 0.244,
       "end": 0.302
     },
     {
       "text": "the ",
-      "start": 0.36,
-      "end": 0.43
+      "start": 0.348,
+      "end": 0.418
     },
     {
       "text": "letter ",
-      "start": 0.476,
-      "end": 0.708
+      "start": 0.464,
+      "end": 0.697
     },
     {
       "text": "had ",
-      "start": 0.766,
-      "end": 0.871
+      "start": 0.743,
+      "end": 0.859
     },
     {
       "text": "found ",
@@ -32,16 +32,16 @@
       "end": 1.196
     },
     {
-      "text": "him?",
-      "start": 1.265,
-      "end": 1.718
+      "text": "me?",
+      "start": 1.254,
+      "end": 1.765
     }
   ],
   "playbackRate": 0.94,
-  "voiceID": "EXAVITQu4vr4xnSDxMaL",
-  "character": "Juliet",
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
   "mood": "grief",
   "deliveryDirection": "devastated, hushed, space between thoughts",
-  "fingerprint": "48bc8199539ce7d0e9ad48ac5ee981c5a33c03c16541aa0fc92853e711f59492",
-  "effectiveWPM": 229.80209545983703
+  "fingerprint": "7d4dc303a95c17f2ce8b1a6839bdff2ed71e00f7bd91366ea4d5c7e25b651e8b",
+  "effectiveWPM": 223.68271954674222
 }

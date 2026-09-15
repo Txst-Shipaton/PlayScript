@@ -1,0 +1,57 @@
+{
+  "text": "You never could leave without one more good night.",
+  "cues": [
+    {
+      "text": "You ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "never ",
+      "start": 0.197,
+      "end": 0.383
+    },
+    {
+      "text": "could ",
+      "start": 0.441,
+      "end": 0.604
+    },
+    {
+      "text": "leave ",
+      "start": 0.673,
+      "end": 0.94
+    },
+    {
+      "text": "without ",
+      "start": 0.975,
+      "end": 1.265
+    },
+    {
+      "text": "one ",
+      "start": 1.324,
+      "end": 1.509
+    },
+    {
+      "text": "more ",
+      "start": 1.544,
+      "end": 1.73
+    },
+    {
+      "text": "good ",
+      "start": 1.788,
+      "end": 1.95
+    },
+    {
+      "text": "night.",
+      "start": 2.009,
+      "end": 2.601
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "538226f4d65ae631aa336068912f3331fc50a2d905b747aa601717b82a7d70bb",
+  "effectiveWPM": 195.15570934256056
+}

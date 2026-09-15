@@ -1,0 +1,112 @@
+{
+  "text": "I heard what he said of me when he thought no one was listening. No name could say it better.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "heard ",
+      "start": 0.197,
+      "end": 0.372
+    },
+    {
+      "text": "what ",
+      "start": 0.406,
+      "end": 0.511
+    },
+    {
+      "text": "he ",
+      "start": 0.546,
+      "end": 0.604
+    },
+    {
+      "text": "said ",
+      "start": 0.673,
+      "end": 0.859
+    },
+    {
+      "text": "of ",
+      "start": 0.894,
+      "end": 0.952
+    },
+    {
+      "text": "me ",
+      "start": 1.022,
+      "end": 1.161
+    },
+    {
+      "text": "when ",
+      "start": 1.207,
+      "end": 1.37
+    },
+    {
+      "text": "he ",
+      "start": 1.428,
+      "end": 1.498
+    },
+    {
+      "text": "thought ",
+      "start": 1.556,
+      "end": 1.8
+    },
+    {
+      "text": "no ",
+      "start": 1.858,
+      "end": 1.997
+    },
+    {
+      "text": "one ",
+      "start": 2.078,
+      "end": 2.229
+    },
+    {
+      "text": "was ",
+      "start": 2.264,
+      "end": 2.392
+    },
+    {
+      "text": "listening. ",
+      "start": 2.45,
+      "end": 3.03
+    },
+    {
+      "text": "No ",
+      "start": 3.413,
+      "end": 3.622
+    },
+    {
+      "text": "name ",
+      "start": 3.715,
+      "end": 4.005
+    },
+    {
+      "text": "could ",
+      "start": 4.052,
+      "end": 4.238
+    },
+    {
+      "text": "say ",
+      "start": 4.284,
+      "end": 4.435
+    },
+    {
+      "text": "it ",
+      "start": 4.493,
+      "end": 4.551
+    },
+    {
+      "text": "better.",
+      "start": 4.598,
+      "end": 5.201
+    }
+  ],
+  "playbackRate": 0.94,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "5ae65243842721507ccae868a28f91351cabb05b2b86672cc11b97e43eb93056",
+  "effectiveWPM": 216.88136896750626
+}

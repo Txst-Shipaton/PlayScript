@@ -2,10 +2,11 @@ import Foundation
 import Testing
 @testable import StoryCore
 
-@Test func allEightChoiceCombinationsFollowExactlyTheSamePlot() throws {
+@Test func everyChoiceCombinationFollowsExactlyTheSamePlot() throws {
     let story = try Story.bundled()
-    #expect(story.beats.filter { $0.kind == .choice }.count == 3)
-    for combination in 0..<8 {
+    let decisionCount = story.beats.filter { $0.kind == .choice }.count
+    #expect(decisionCount == 6)
+    for combination in 0..<(1 << decisionCount) {
         var run = StoryRun(story: story)
         var visited: [String] = []
         var decision = 0
