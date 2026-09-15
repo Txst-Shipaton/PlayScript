@@ -1,0 +1,270 @@
+{
+  "id": "romeo-and-juliet",
+  "title": "Romeo & Juliet",
+  "subtitle": "Some love stories are meant to be lived.",
+  "author": "After William Shakespeare",
+  "duration": "8–10 minute story",
+  "beats": [
+    {
+      "id": "window",
+      "chapter": "I · THE WINDOW",
+      "title": "A voice in the dark",
+      "location": "The Capulet orchard · Verona",
+      "pointOfView": "Juliet",
+      "mood": "longing",
+      "artwork": null,
+      "kind": "narration",
+      "text": "I hear him before I see him.\n\nBelow my window, the orchard holds its breath. Then my name rises out of the dark, spoken by the boy whose hand found mine only hours ago.\n\nRomeo. Here. With every reason to stay away.",
+      "choices": []
+    },
+    {
+      "id": "window-choice",
+      "chapter": "I · THE WINDOW",
+      "title": "He is waiting",
+      "location": "The Capulet orchard · Verona",
+      "pointOfView": "Juliet",
+      "mood": "longing",
+      "artwork": null,
+      "kind": "choice",
+      "text": "If anyone finds him here, his name alone will condemn him. I should send him away.\n\nInstead, I move closer to the window.",
+      "choices": [
+        {
+          "id": "answer",
+          "title": "Lean into the moonlight",
+          "flavor": "I lean beyond the stone sill. “Romeo.”\n\nHis face lifts toward mine, and the courage I borrowed from the darkness becomes my own. For one small moment, I forget to be afraid."
+        },
+        {
+          "id": "listen",
+          "title": "Stay hidden. Listen.",
+          "flavor": "I stay behind the curtain a moment longer. He speaks softly, as if the night might carry his heart to me.\n\nThen I step into the moonlight. “Romeo.” I have heard enough to know I want him to stay."
+        }
+      ]
+    },
+    {
+      "id": "names",
+      "chapter": "II · THE VOW",
+      "title": "More than a name",
+      "location": "Above the orchard",
+      "pointOfView": "Juliet",
+      "mood": "tender",
+      "artwork": null,
+      "kind": "narration",
+      "text": "Montague. A word I was taught to hate before I knew the person it belonged to.\n\nBut a name has never held my hand. A name has never looked at me as if the whole crowded room had fallen silent.\n\nIf I could set our names down here, between us, what would be left except him and me?",
+      "choices": []
+    },
+    {
+      "id": "vow",
+      "chapter": "II · THE VOW",
+      "title": "Let it be true",
+      "location": "Above the orchard",
+      "pointOfView": "Juliet",
+      "mood": "tender",
+      "artwork": null,
+      "kind": "narration",
+      "text": "He begins to swear by the moon. I stop him. The moon changes; I cannot bear the thought of this changing with it.\n\n“Then what shall I swear by?” he asks.\n\nNothing grand, I think. Only come back tomorrow. Only mean it when daylight finds us.",
+      "choices": []
+    },
+    {
+      "id": "vow-choice",
+      "chapter": "II · THE VOW",
+      "title": "A promise, softly",
+      "location": "Above the orchard",
+      "pointOfView": "Juliet",
+      "mood": "tender",
+      "artwork": null,
+      "kind": "choice",
+      "text": "He tells me his heart is mine. The words hang between the window and the earth.\n\nI have never wanted to believe anything so much.",
+      "choices": [
+        {
+          "id": "certain",
+          "title": "My heart is already yours",
+          "flavor": "“And mine is yours.” I say it before fear can make the words smaller.\n\nIf his purpose is marriage, I will send someone tomorrow to learn the time and place. I want this promise to have a life beyond tonight."
+        },
+        {
+          "id": "sure",
+          "title": "Tell me you are certain",
+          "flavor": "“Only if you mean to marry me,” I whisper. “Only if this is true.”\n\nHe answers gently, and I let myself believe him. Tomorrow, I will send someone to learn the time and place. My yes is quiet. It is still a yes."
+        }
+      ]
+    },
+    {
+      "id": "morning",
+      "chapter": "II · THE VOW",
+      "title": "Until tomorrow",
+      "location": "The first light over Verona",
+      "pointOfView": "Juliet",
+      "mood": "tender",
+      "artwork": null,
+      "kind": "narration",
+      "text": "We say good night as though saying it slowly might keep the morning away.\n\nAt last he goes. I stay at the window, holding the silence he has left me.\n\nTomorrow, I think. Such a little word to carry so much happiness.",
+      "choices": []
+    },
+    {
+      "id": "friar",
+      "chapter": "III · THE LETTER",
+      "title": "A fragile plan",
+      "location": "Friar Laurence’s cell",
+      "pointOfView": "Juliet",
+      "mood": "uneasy",
+      "artwork": null,
+      "kind": "narration",
+      "text": "Friar Laurence has married us in secret. For a little while, I have been Romeo’s wife.\n\nThen Tybalt is dead by Romeo’s hand, Romeo is banished, and my father has promised me to Paris.\n\nI come back to the Friar with no safe place left to put my hope.",
+      "choices": []
+    },
+    {
+      "id": "plan",
+      "chapter": "III · THE LETTER",
+      "title": "Forty-two hours",
+      "location": "Friar Laurence’s cell",
+      "pointOfView": "Juliet",
+      "mood": "uneasy",
+      "artwork": null,
+      "kind": "narration",
+      "text": "The Friar places a small vial in my hand. A sleep so deep that everyone will believe I am dead. Forty-two hours, he says. Then I will wake.\n\nHe will send a letter to Romeo in Mantua. Romeo will know the truth. He will come to the tomb and be beside me when I open my eyes.",
+      "choices": []
+    },
+    {
+      "id": "potion-choice",
+      "chapter": "III · THE LETTER",
+      "title": "For the life beyond this",
+      "location": "Juliet’s chamber · Night",
+      "pointOfView": "Juliet",
+      "mood": "uneasy",
+      "artwork": null,
+      "kind": "choice",
+      "text": "Alone in my chamber, I lift the vial. What if I wake too soon? What if no one comes?\n\nI picture Romeo’s face beneath my window. I have already promised him tomorrow.",
+      "choices": [
+        {
+          "id": "resolve",
+          "title": "To our tomorrow",
+          "flavor": "I steady my hand. “Romeo, I come.”\n\nI drink, and set the empty vial down. I cannot make the world kinder by wishing it so. But I can reach for the life we were promised.\n\nI lie down with his name still warm in my mouth."
+        },
+        {
+          "id": "afraid",
+          "title": "Afraid. But still yours.",
+          "flavor": "My hand will not stop trembling. I let it tremble. “Romeo, I come.”\n\nI drink. Courage, perhaps, can be this small: a frightened girl choosing the only door she can see.\n\nI lie down and imagine his hand finding mine in the dark."
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "chapter": "III · THE LETTER",
+      "title": "Carry my hope to him",
+      "location": "Juliet’s chamber · Before dawn",
+      "pointOfView": "Juliet",
+      "mood": "uneasy",
+      "artwork": null,
+      "kind": "narration",
+      "text": "The room grows distant. The candle softens into a single wandering star.\n\nSomewhere beyond these walls, a letter will be making its way toward him.\n\nI hold that thought until I cannot hold anything at all.",
+      "choices": []
+    },
+    {
+      "id": "wake",
+      "chapter": "IV · THE TOMB",
+      "title": "The world without your voice",
+      "location": "The Capulet tomb",
+      "pointOfView": "Juliet",
+      "mood": "grief",
+      "artwork": null,
+      "kind": "narration",
+      "text": "I wake to stone beneath my hands.\n\nThe Friar is here. Romeo is here, too, but he does not turn when I say his name.\n\nThere is an empty cup beside him. I touch his cheek. It is colder than the orchard ever was.",
+      "choices": []
+    },
+    {
+      "id": "letter-lost",
+      "chapter": "IV · THE TOMB",
+      "title": "Too late",
+      "location": "The Capulet tomb",
+      "pointOfView": "Juliet",
+      "mood": "grief",
+      "artwork": null,
+      "kind": "narration",
+      "text": "The Friar tells me his letter never reached Romeo. He urges me to leave; the watch is coming.\n\nBut Romeo came here believing I was gone. All our tomorrows have narrowed to this silence.\n\nI stay beside my husband when the Friar flees.",
+      "choices": []
+    },
+    {
+      "id": "last-kiss",
+      "chapter": "IV · THE TOMB",
+      "title": "One more moment",
+      "location": "The Capulet tomb",
+      "pointOfView": "Juliet",
+      "mood": "grief",
+      "artwork": null,
+      "kind": "narration",
+      "text": "I kiss him. His lips are still warm.\n\nOnly a little time has come between us. Less than a morning. Less than all the good nights we could not bear to finish.\n\nI press my forehead to his and whisper his name once more.",
+      "choices": []
+    },
+    {
+      "id": "what-if",
+      "chapter": "A LETTER UNDELIVERED",
+      "title": "What if…",
+      "location": "Between what was and what might have been",
+      "pointOfView": "Juliet",
+      "mood": "grief",
+      "artwork": null,
+      "kind": "whatIf",
+      "text": "What if the letter had found him?\n\nJust once, let me imagine a world that gave us enough time.",
+      "choices": []
+    },
+    {
+      "id": "road",
+      "chapter": "V · ANOTHER MORNING",
+      "title": "A letter on the road",
+      "location": "Outside Mantua · An imagined ending",
+      "pointOfView": "Romeo",
+      "mood": "dawn",
+      "artwork": null,
+      "kind": "narration",
+      "text": "I am already on the road when the messenger calls my name.\n\nI break the seal with shaking hands. Laurence’s writing. Juliet lives. Her stillness is a borrowed sleep, and I must be there when it ends.\n\nI read those words again. Juliet lives.",
+      "choices": []
+    },
+    {
+      "id": "ride",
+      "chapter": "V · ANOTHER MORNING",
+      "title": "Every mile, your name",
+      "location": "The road to Verona · An imagined ending",
+      "pointOfView": "Romeo",
+      "mood": "dawn",
+      "artwork": null,
+      "kind": "narration",
+      "text": "I ride with the letter against my heart.\n\nThe road is the same road. Verona still holds the same dangers. But every mile carries me toward her now, instead of toward a world without her.\n\nWait for me, Juliet. Only a little longer.",
+      "choices": []
+    },
+    {
+      "id": "in-time",
+      "chapter": "V · ANOTHER MORNING",
+      "title": "This time, I am here",
+      "location": "The Capulet tomb · An imagined ending",
+      "pointOfView": "Romeo",
+      "mood": "dawn",
+      "artwork": null,
+      "kind": "narration",
+      "text": "In the tomb, I kneel beside her and take her hand. I wait through the stillness, through every frightened breath.\n\nThen her fingers move against mine. Her eyes open.\n\n“Romeo?”\n\n“Yes,” I tell her. “I’m here.”",
+      "choices": []
+    },
+    {
+      "id": "enough-time",
+      "chapter": "V · ANOTHER MORNING",
+      "title": "The beginning we never had",
+      "location": "Verona · An imagined ending",
+      "pointOfView": "Romeo",
+      "mood": "dawn",
+      "artwork": null,
+      "kind": "narration",
+      "text": "I have no promise that the world outside will forgive us. Only her hand in mine, and the Friar waiting to lead us out.\n\nFor the first time, I am not too late.\n\nFor now, that is enough to begin.",
+      "choices": []
+    },
+    {
+      "id": "reflection",
+      "chapter": "THE END",
+      "title": "Some letters hold a whole lifetime.",
+      "location": "A moment to keep",
+      "pointOfView": "Romeo",
+      "mood": "dawn",
+      "artwork": null,
+      "kind": "reflection",
+      "text": "Some stories cannot change.\nBut we can hold their hearts\na little differently.",
+      "choices": []
+    }
+  ]
+}
