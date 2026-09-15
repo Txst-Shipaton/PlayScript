@@ -1,0 +1,10 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "3e0fd07589944000de5243b7ce8fc7ae25ef9604e513236c309d27fe62e4c9ce",
+  "request": {
+    "prompt": "Moonlit Renaissance orchard. Intimate literary film score, plucked lute harmonics, low soft strings, suspended yearning, 64 BPM, delicate space for spoken narration, no drums, no vocals, a quiet circular ending.",
+    "music_length_ms": 30000,
+    "force_instrumental": true,
+    "model_id": "music_v1"
+  }
+}

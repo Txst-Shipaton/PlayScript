@@ -1,0 +1,77 @@
+{
+  "text": "Some stories cannot change.\nBut we can hold their hearts\na little differently.",
+  "cues": [
+    {
+      "text": "Some ",
+      "start": 0.0,
+      "end": 0.302
+    },
+    {
+      "text": "stories ",
+      "start": 0.348,
+      "end": 0.824
+    },
+    {
+      "text": "cannot ",
+      "start": 0.882,
+      "end": 1.184
+    },
+    {
+      "text": "change.\n",
+      "start": 1.242,
+      "end": 1.858
+    },
+    {
+      "text": "But ",
+      "start": 2.299,
+      "end": 2.45
+    },
+    {
+      "text": "we ",
+      "start": 2.485,
+      "end": 2.554
+    },
+    {
+      "text": "can ",
+      "start": 2.601,
+      "end": 2.717
+    },
+    {
+      "text": "hold ",
+      "start": 2.786,
+      "end": 2.972
+    },
+    {
+      "text": "their ",
+      "start": 3.019,
+      "end": 3.181
+    },
+    {
+      "text": "hearts\n",
+      "start": 3.228,
+      "end": 3.611
+    },
+    {
+      "text": "a ",
+      "start": 3.889,
+      "end": 4.005
+    },
+    {
+      "text": "little ",
+      "start": 4.087,
+      "end": 4.342
+    },
+    {
+      "text": "differently.",
+      "start": 4.389,
+      "end": 5.294
+    }
+  ],
+  "playbackRate": 1.1538205128205128,
+  "voiceID": "onwK4e9ZLuTAKqWW03F9",
+  "character": "Romeo",
+  "mood": "dawn",
+  "deliveryDirection": "disbelief giving way to relief and hope",
+  "fingerprint": "837fffe3c1cf1099065ab0216deb6130bb9c0aeeed830559ae5216f90e50a74d",
+  "effectiveWPM": 170.0
+}

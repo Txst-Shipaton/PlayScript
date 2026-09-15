@@ -1,0 +1,11 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "8242722acfc37118ca095cbdf4c47412044dd6d506e86c33efc57d491dd7af84",
+  "request": {
+    "text": "Intimate candlelit old stone room, gentle tiny wick crackle, distant wind through an old window, no music or voices, seamless quiet loop.",
+    "duration_seconds": 12,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45
+  }
+}

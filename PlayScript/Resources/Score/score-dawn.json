@@ -1,0 +1,10 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "f0874dcf6c0095cd693deefc95ec27ccad8fa3604f70b7259c8f6cc0dc308479",
+  "request": {
+    "prompt": "A letter delivered in time, two lovers reunited at dawn. Warm hopeful chamber score, flowing harp, rising cello and soft string harmonics, 76 BPM, gentle relief not a triumphant fanfare, no vocals, space for narration, circular ending.",
+    "music_length_ms": 30000,
+    "force_instrumental": true,
+    "model_id": "music_v1"
+  }
+}

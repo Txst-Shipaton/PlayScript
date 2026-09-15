@@ -1,0 +1,10 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "777971a11491d70b709b820a5047eee68941ffb6c91370877a95b82480baa4e7",
+  "request": {
+    "prompt": "A sleeping potion in a candlelit chamber. Dark chamber score, trembling viola, muted low cello pulses, glass harmonics, contained dread and brave resolve, 60 BPM, no loud hits, no vocals, space for narration, circular ending.",
+    "music_length_ms": 30000,
+    "force_instrumental": true,
+    "model_id": "music_v1"
+  }
+}

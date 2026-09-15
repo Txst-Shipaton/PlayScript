@@ -1,0 +1,227 @@
+{
+  "text": "“Only if you mean to marry me,” I whisper. “Only if this is true.”\n\nHe answers gently, and I let myself believe him. Tomorrow, I will send someone to learn the time and place. My yes is quiet. It is still a yes.",
+  "cues": [
+    {
+      "text": "“Only ",
+      "start": 0.0,
+      "end": 0.639
+    },
+    {
+      "text": "if ",
+      "start": 0.708,
+      "end": 0.789
+    },
+    {
+      "text": "you ",
+      "start": 0.848,
+      "end": 0.917
+    },
+    {
+      "text": "mean ",
+      "start": 0.987,
+      "end": 1.138
+    },
+    {
+      "text": "to ",
+      "start": 1.184,
+      "end": 1.242
+    },
+    {
+      "text": "marry ",
+      "start": 1.312,
+      "end": 1.625
+    },
+    {
+      "text": "me,” ",
+      "start": 1.683,
+      "end": 2.067
+    },
+    {
+      "text": "I ",
+      "start": 2.159,
+      "end": 2.218
+    },
+    {
+      "text": "whisper. ",
+      "start": 2.31,
+      "end": 2.891
+    },
+    {
+      "text": "“Only ",
+      "start": 3.007,
+      "end": 3.692
+    },
+    {
+      "text": "if ",
+      "start": 3.785,
+      "end": 3.913
+    },
+    {
+      "text": "this ",
+      "start": 3.982,
+      "end": 4.133
+    },
+    {
+      "text": "is ",
+      "start": 4.191,
+      "end": 4.284
+    },
+    {
+      "text": "true.”\n\n",
+      "start": 4.354,
+      "end": 4.981
+    },
+    {
+      "text": "He ",
+      "start": 5.422,
+      "end": 5.55
+    },
+    {
+      "text": "answers ",
+      "start": 5.619,
+      "end": 5.956
+    },
+    {
+      "text": "gently, ",
+      "start": 6.014,
+      "end": 6.583
+    },
+    {
+      "text": "and ",
+      "start": 6.757,
+      "end": 6.908
+    },
+    {
+      "text": "I ",
+      "start": 6.978,
+      "end": 7.001
+    },
+    {
+      "text": "let ",
+      "start": 7.094,
+      "end": 7.245
+    },
+    {
+      "text": "myself ",
+      "start": 7.291,
+      "end": 7.628
+    },
+    {
+      "text": "believe ",
+      "start": 7.697,
+      "end": 8.034
+    },
+    {
+      "text": "him. ",
+      "start": 8.069,
+      "end": 8.394
+    },
+    {
+      "text": "Tomorrow, ",
+      "start": 8.719,
+      "end": 9.451
+    },
+    {
+      "text": "I ",
+      "start": 9.625,
+      "end": 9.683
+    },
+    {
+      "text": "will ",
+      "start": 9.764,
+      "end": 9.927
+    },
+    {
+      "text": "send ",
+      "start": 9.973,
+      "end": 10.17
+    },
+    {
+      "text": "someone ",
+      "start": 10.24,
+      "end": 10.577
+    },
+    {
+      "text": "to ",
+      "start": 10.612,
+      "end": 10.67
+    },
+    {
+      "text": "learn ",
+      "start": 10.728,
+      "end": 10.913
+    },
+    {
+      "text": "the ",
+      "start": 10.948,
+      "end": 11.018
+    },
+    {
+      "text": "time ",
+      "start": 11.064,
+      "end": 11.366
+    },
+    {
+      "text": "and ",
+      "start": 11.401,
+      "end": 11.471
+    },
+    {
+      "text": "place. ",
+      "start": 11.529,
+      "end": 12.028
+    },
+    {
+      "text": "My ",
+      "start": 12.272,
+      "end": 12.423
+    },
+    {
+      "text": "yes ",
+      "start": 12.492,
+      "end": 12.713
+    },
+    {
+      "text": "is ",
+      "start": 12.771,
+      "end": 12.852
+    },
+    {
+      "text": "quiet. ",
+      "start": 12.91,
+      "end": 13.514
+    },
+    {
+      "text": "It ",
+      "start": 13.665,
+      "end": 13.804
+    },
+    {
+      "text": "is ",
+      "start": 13.851,
+      "end": 13.92
+    },
+    {
+      "text": "still ",
+      "start": 13.955,
+      "end": 14.164
+    },
+    {
+      "text": "a ",
+      "start": 14.222,
+      "end": 14.245
+    },
+    {
+      "text": "yes.",
+      "start": 14.303,
+      "end": 14.954
+    }
+  ],
+  "playbackRate": 0.9853410852713179,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "6341b9665862d96ae82feebc54bc9216895fa02beca6d563a7972bef72389839",
+  "effectiveWPM": 170.0
+}

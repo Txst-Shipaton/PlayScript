@@ -1,0 +1,11 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "74ce40ab59f07956180feedf9a8977d569a692931cabf745102619b271fb45c8",
+  "request": {
+    "text": "Soft horse hoofbeats along a dirt road, leather and leaves in gentle dawn wind, distant morning birds, no voices or music, seamless loop.",
+    "duration_seconds": 12,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "49fecdd69d757d6aea7e643b11dad50a7b3d38fcb0b971fe433e574efbd9b947",
+  "request": {
+    "text": "One soft old book page turning, textured paper and a delicate cloth rustle, close and quiet, no music or voices.",
+    "duration_seconds": 1,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45
+  }
+}

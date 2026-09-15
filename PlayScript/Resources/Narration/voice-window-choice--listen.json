@@ -1,0 +1,207 @@
+{
+  "text": "I stay behind the curtain a moment longer. He speaks softly, as if the night might carry his heart to me.\n\nThen I step into the moonlight. “Romeo.” I have heard enough to know I want him to stay.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.07
+    },
+    {
+      "text": "stay ",
+      "start": 0.186,
+      "end": 0.372
+    },
+    {
+      "text": "behind ",
+      "start": 0.43,
+      "end": 0.662
+    },
+    {
+      "text": "the ",
+      "start": 0.708,
+      "end": 0.778
+    },
+    {
+      "text": "curtain ",
+      "start": 0.813,
+      "end": 1.126
+    },
+    {
+      "text": "a ",
+      "start": 1.207,
+      "end": 1.242
+    },
+    {
+      "text": "moment ",
+      "start": 1.335,
+      "end": 1.625
+    },
+    {
+      "text": "longer. ",
+      "start": 1.672,
+      "end": 2.252
+    },
+    {
+      "text": "He ",
+      "start": 2.531,
+      "end": 2.647
+    },
+    {
+      "text": "speaks ",
+      "start": 2.705,
+      "end": 3.007
+    },
+    {
+      "text": "softly, ",
+      "start": 3.053,
+      "end": 3.773
+    },
+    {
+      "text": "as ",
+      "start": 3.901,
+      "end": 4.04
+    },
+    {
+      "text": "if ",
+      "start": 4.087,
+      "end": 4.168
+    },
+    {
+      "text": "the ",
+      "start": 4.214,
+      "end": 4.284
+    },
+    {
+      "text": "night ",
+      "start": 4.342,
+      "end": 4.54
+    },
+    {
+      "text": "might ",
+      "start": 4.598,
+      "end": 4.795
+    },
+    {
+      "text": "carry ",
+      "start": 4.853,
+      "end": 5.19
+    },
+    {
+      "text": "his ",
+      "start": 5.259,
+      "end": 5.364
+    },
+    {
+      "text": "heart ",
+      "start": 5.422,
+      "end": 5.642
+    },
+    {
+      "text": "to ",
+      "start": 5.7,
+      "end": 5.77
+    },
+    {
+      "text": "me.\n\n",
+      "start": 5.851,
+      "end": 6.327
+    },
+    {
+      "text": "Then ",
+      "start": 6.653,
+      "end": 6.827
+    },
+    {
+      "text": "I ",
+      "start": 6.885,
+      "end": 6.908
+    },
+    {
+      "text": "step ",
+      "start": 7.001,
+      "end": 7.245
+    },
+    {
+      "text": "into ",
+      "start": 7.303,
+      "end": 7.442
+    },
+    {
+      "text": "the ",
+      "start": 7.5,
+      "end": 7.57
+    },
+    {
+      "text": "moonlight. ",
+      "start": 7.605,
+      "end": 8.243
+    },
+    {
+      "text": "“Romeo.” ",
+      "start": 8.626,
+      "end": 9.648
+    },
+    {
+      "text": "I ",
+      "start": 9.973,
+      "end": 10.031
+    },
+    {
+      "text": "have ",
+      "start": 10.112,
+      "end": 10.217
+    },
+    {
+      "text": "heard ",
+      "start": 10.24,
+      "end": 10.403
+    },
+    {
+      "text": "enough ",
+      "start": 10.449,
+      "end": 10.681
+    },
+    {
+      "text": "to ",
+      "start": 10.716,
+      "end": 10.774
+    },
+    {
+      "text": "know ",
+      "start": 10.82,
+      "end": 10.96
+    },
+    {
+      "text": "I ",
+      "start": 11.018,
+      "end": 11.041
+    },
+    {
+      "text": "want ",
+      "start": 11.111,
+      "end": 11.262
+    },
+    {
+      "text": "him ",
+      "start": 11.285,
+      "end": 11.355
+    },
+    {
+      "text": "to ",
+      "start": 11.401,
+      "end": 11.447
+    },
+    {
+      "text": "stay.",
+      "start": 11.505,
+      "end": 12.167
+    }
+  ],
+  "playbackRate": 0.8839273504273504,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "7a67f0546b16cc029186c7ca47e8d80c7296709b48f1a9637466416b8c63898f",
+  "effectiveWPM": 170.0
+}
