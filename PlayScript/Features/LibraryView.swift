@@ -5,6 +5,8 @@ struct LibraryView: View {
     @State private var showRestart = false
     @State private var showAbout = false
     @State private var showSearchInfo = false
+    @State private var restartTaps = 0
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
         GeometryReader { geometry in
@@ -66,11 +68,27 @@ struct LibraryView: View {
                 .accessibilityIdentifier("beginStory")
 
                 if model.canResume {
-                    Button("Begin again") { showRestart = true }
-                        .font(.footnote)
-                        .underline()
-                        .foregroundStyle(Palette.muted)
+                    Button {
+                        restartTaps += 1
+                        withAnimation(RestartPrompt.presentAnimation(reduceMotion)) { showRestart = true }
+                    } label: {
+                        HStack(spacing: 8) {
+                            Image(systemName: "arrow.counterclockwise")
+                                .font(.system(size: 13, weight: .medium))
+                                .symbolEffect(.rotate, value: reduceMotion ? 0 : restartTaps)
+                                .accessibilityHidden(true)
+                            Text("Begin again")
+                                .font(.system(.subheadline, design: .serif, weight: .medium))
+                        }
+                        .foregroundStyle(Palette.rose)
+                        .padding(.horizontal, 20)
                         .frame(minHeight: 44)
+                        .glass(radius: 22)
+                        .contentShape(Capsule())
+                    }
+                    .buttonStyle(PressStyle())
+                    .accessibilityHint("Asks before starting the story over from the first page.")
+                    .accessibilityIdentifier("beginAgain")
                 } else {
                     Text("A little time. A whole other life.")
                         .font(.caption)
@@ -84,11 +102,9 @@ struct LibraryView: View {
             .frame(maxWidth: .infinity)
             .background(Palette.paper.opacity(0.97))
         }
-        .confirmationDialog("Begin Romeo & Juliet again?", isPresented: $showRestart, titleVisibility: .visible) {
-            Button("Begin again", role: .destructive) { model.start(over: true) }
-            Button("Keep my place", role: .cancel) { }
-        } message: {
-            Text("This will replace your saved place in the story.")
+        .accessibilityHidden(showRestart)
+        .overlay {
+            RestartPrompt(isPresented: $showRestart) { model.start(over: true) }
         }
         .sheet(isPresented: $showAbout) { about }
         .alert("A world of books, soon", isPresented: $showSearchInfo) {

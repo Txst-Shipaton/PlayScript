@@ -50,11 +50,21 @@ struct LoginView: View {
 
     private var header: some View {
         VStack(spacing: 14) {
-            Image(systemName: "heart.text.square")
-                .font(.system(size: 26, weight: .ultraLight))
-                .foregroundStyle(Palette.rose)
+            // A quiet heart that fills once as the page opens. Under Reduce Motion
+            // it rests, already full, on its final frame.
+            LottieLayer(name: "hero-heart", playing: !reduceMotion, fills: false,
+                        loops: false, stillProgress: 1,
+                        colors: [
+                            "**.Stroke 1.Color": Palette.rose.opacity(0.7),
+                            "C1.**.Fill 1.Color": Palette.blush,
+                            "H1.**.Fill 1.Color": Palette.muted.opacity(0.45),
+                            "H2.**.Fill 1.Color": Palette.rose,
+                        ])
+                .frame(width: 56, height: 56)
                 .frame(width: 64, height: 64)
                 .glass(radius: 32)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
             VStack(spacing: 6) {
                 Text("PlayScript")
                     .literary(38, relativeTo: .largeTitle)

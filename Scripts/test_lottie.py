@@ -9,7 +9,9 @@ property every animation is built to have.
 """
 import json
 from pathlib import Path
+import re
 import unittest
+import zipfile
 
 import create_lottie
 
@@ -368,6 +370,87 @@ class LottieStructure(unittest.TestCase):
             with self.subTest(name):
                 self.assertLess(size, MAX_FILE_KB, "keyframe sampling is too dense")
         self.assertLess(total, MAX_TOTAL_KB)
+
+
+class DotLottieArchives(unittest.TestCase):
+    """Bundled `.lottie` files, checked against the layout lottie-ios 4.6.1 reads.
+
+    `DotLottieFile` unzips the archive, decodes `manifest.json` (an `animations`
+    array of objects with an `id`), then loads `animations/<id>.json` for a
+    version 1 manifest or `a/<id>.json` for version 2. Any failure is silent at
+    runtime, so it is caught here instead.
+    """
+
+    ROOT = create_lottie.OUTPUT
+    PROJECT = Path(__file__).resolve().parents[1]
+
+    @classmethod
+    def setUpClass(cls):
+        cls.archives = sorted(cls.ROOT.glob("*.lottie"))
+
+    def test_archives_exist(self):
+        self.assertTrue(self.archives, "no .lottie files are bundled")
+
+    def test_archives_are_valid_dotlottie(self):
+        for path in self.archives:
+            with self.subTest(path.name), zipfile.ZipFile(path) as archive:
+                self.assertIsNone(archive.testzip(), "corrupt archive member")
+                names = set(archive.namelist())
+                self.assertIn("manifest.json", names)
+                manifest = json.loads(archive.read("manifest.json"))
+                self.assertTrue(manifest["animations"])
+                version = int(float(manifest.get("version") or "1"))
+                folder = "a" if version >= 2 else "animations"
+                images = "i" if version >= 2 else "images"
+                for entry in manifest["animations"]:
+                    self.assertIsInstance(entry["id"], str)
+                    member = f"{folder}/{entry['id']}.json"
+                    self.assertIn(member, names)
+                    animation = json.loads(archive.read(member))
+                    for key in ("v", "fr", "ip", "op", "w", "h", "layers"):
+                        self.assertIn(key, animation)
+                    self.assertGreater(animation["op"], animation["ip"])
+                    self.assertTrue(animation["layers"])
+                    for asset in animation.get("assets", []):
+                        if "p" in asset and not str(asset["p"]).startswith("data:"):
+                            self.assertIn(f"{images}/{asset['p']}", names,
+                                          "an external image is missing from the archive")
+
+    def test_archives_stay_small(self):
+        for path in self.archives:
+            with self.subTest(path.name):
+                self.assertLess(path.stat().st_size / 1024, MAX_FILE_KB)
+
+    def test_every_archive_is_credited(self):
+        credits = (self.ROOT / "CREDITS.md").read_text()
+        for path in self.archives:
+            with self.subTest(path.name):
+                self.assertIn(f"`{path.name}`", credits)
+
+    def test_archives_do_not_shadow_authored_json(self):
+        """LottieLayer prefers a .lottie, so a clash would silently swap a scene."""
+        for path in self.archives:
+            with self.subTest(path.name):
+                self.assertFalse((self.ROOT / (path.stem + ".json")).exists())
+
+    def test_every_named_animation_is_bundled(self):
+        pattern = re.compile(r'LottieLayer\(name:\s*"([^"]+)"')
+        found = 0
+        for source in (self.PROJECT / "PlayScript").rglob("*.swift"):
+            for name in pattern.findall(source.read_text()):
+                found += 1
+                with self.subTest(f"{source.name}: {name}"):
+                    self.assertTrue((self.ROOT / f"{name}.lottie").exists()
+                                    or (self.ROOT / f"{name}.json").exists())
+        self.assertGreater(found, 0)
+
+    def test_archives_are_in_the_xcode_project(self):
+        project = (self.PROJECT / "PlayScript.xcodeproj/project.pbxproj").read_text()
+        self.assertNotIn("CREDITS.md", project)
+        for path in self.archives:
+            with self.subTest(path.name):
+                self.assertIn(f"PlayScript/Resources/Lottie/{path.name}", project,
+                              "run Scripts/create_project.py")
 
 
 if __name__ == "__main__":
