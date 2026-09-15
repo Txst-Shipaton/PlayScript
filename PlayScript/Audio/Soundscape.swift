@@ -5,19 +5,22 @@ import OSLog
 /// All mutable audio state and AVFoundation calls are confined to `queue`.
 /// The public methods only enqueue work, so UI interactions never wait for audio.
 final class Soundscape: NSObject, @unchecked Sendable {
-    enum Effect: String, Sendable { case choice, turn }
+    enum Effect: String, Sendable { case choice, turn, letter }
     private let queue = DispatchQueue(label: "com.sh1vendra.PlayScript.audio", qos: .userInitiated)
     private let logger = Logger(subsystem: "com.sh1vendra.PlayScript", category: "Audio")
     private var current: AVAudioPlayer?
     private var outgoing: AVAudioPlayer?
     private var effectPlayer: AVAudioPlayer?
+    private var ambience: AVAudioPlayer?
+    private var outgoingAmbience: AVAudioPlayer?
+    private var currentAmbience: String?
     private var currentMood: Mood?
     private var requestedMood: Mood = .longing
     private var wantsPlayback = false
     private var interrupted = false
     private var sessionActive = false
     private var fadeGeneration = 0
-    private let volume: Float = 0.38
+    private var volume: Float = 0.38
 
     override init() {
         super.init()
@@ -27,15 +30,24 @@ final class Soundscape: NSObject, @unchecked Sendable {
                                                name: AVAudioSession.mediaServicesWereResetNotification, object: nil)
     }
 
-    func set(mood: Mood, playing: Bool) {
-        queue.async { [self] in update(mood: mood, playing: playing) }
+    func set(mood: Mood, playing: Bool, ambientVolume: Float = 0.38) {
+        queue.async { [self] in
+            volume = ambientVolume
+            update(mood: mood, playing: playing)
+        }
     }
 
     func playEffect(_ effect: Effect) {
         queue.async { [self] in
             guard wantsPlayback, sessionActive, !interrupted else { return }
+            let level: Float
+            switch effect {
+            case .choice: level = 0.22
+            case .letter: level = 0.3
+            case .turn: level = 0.1
+            }
             effectPlayer = player(named: effect.rawValue)
-            effectPlayer?.volume = effect == .choice ? 0.22 : 0.1
+            effectPlayer?.volume = level
             effectPlayer?.play()
         }
     }
@@ -48,6 +60,9 @@ final class Soundscape: NSObject, @unchecked Sendable {
             outgoing?.stop()
             outgoing = nil
             current?.pause()
+            ambience?.pause()
+            outgoingAmbience?.stop()
+            outgoingAmbience = nil
             effectPlayer?.stop()
             if sessionActive {
                 try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
@@ -67,7 +82,9 @@ final class Soundscape: NSObject, @unchecked Sendable {
                 return
             }
         }
+        updateAmbience(for: mood)
         if mood == currentMood, let current {
+            current.setVolume(volume, fadeDuration: 0.5)
             if !current.isPlaying {
                 current.volume = 0
                 current.play()
@@ -94,8 +111,49 @@ final class Soundscape: NSObject, @unchecked Sendable {
         }
     }
 
+    /// A quiet location loop sits under the score so each setting keeps its own room tone.
+    private func updateAmbience(for mood: Mood) {
+        let setting: String
+        switch mood {
+        case .longing, .tender: setting = "orchard"
+        case .uneasy: setting = "candle"
+        case .grief: setting = "tomb"
+        case .dawn: setting = "road"
+        }
+        let ambientLevel = volume * 0.55
+        if setting == currentAmbience, let ambience {
+            if !ambience.isPlaying { ambience.play() }
+            ambience.setVolume(ambientLevel, fadeDuration: 1.2)
+            return
+        }
+        guard let next = player(named: setting) else {
+            currentAmbience = nil
+            return
+        }
+        outgoingAmbience?.stop()
+        outgoingAmbience = ambience
+        outgoingAmbience?.setVolume(0, fadeDuration: 1.2)
+        let generation = fadeGeneration
+        queue.asyncAfter(deadline: .now() + 1.3) { [weak self] in
+            guard let self, self.fadeGeneration == generation else { return }
+            self.outgoingAmbience?.stop()
+            self.outgoingAmbience = nil
+        }
+        ambience = next
+        currentAmbience = setting
+        next.numberOfLoops = -1
+        next.volume = 0
+        next.play()
+        next.setVolume(ambientLevel, fadeDuration: 2.0)
+    }
+
+    /// Generated ElevenLabs score and effects take precedence; the original
+    /// synthesized WAVs remain the fallback when a clip is not bundled.
     private func player(named name: String) -> AVAudioPlayer? {
-        guard let url = Bundle.main.url(forResource: name, withExtension: "wav") else {
+        let candidates = [("fx-" + name, "mp3"), ("score-" + name, "mp3"), (name, "wav")]
+        guard let url = candidates.lazy.compactMap({
+            Bundle.main.url(forResource: $0.0, withExtension: $0.1)
+        }).first else {
             logger.error("Missing bundled audio: \(name)")
             return nil
         }
@@ -121,6 +179,9 @@ final class Soundscape: NSObject, @unchecked Sendable {
                 current?.pause()
                 outgoing?.stop()
                 outgoing = nil
+                ambience?.pause()
+                outgoingAmbience?.stop()
+                outgoingAmbience = nil
                 effectPlayer?.stop()
             } else {
                 interrupted = false
@@ -136,8 +197,11 @@ final class Soundscape: NSObject, @unchecked Sendable {
             fadeGeneration += 1
             current = nil
             outgoing = nil
+            ambience = nil
+            outgoingAmbience = nil
             effectPlayer = nil
             currentMood = nil
+            currentAmbience = nil
             sessionActive = false
             update(mood: requestedMood, playing: wantsPlayback)
         }

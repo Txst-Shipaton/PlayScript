@@ -1,0 +1,212 @@
+{
+  "text": "“And mine is yours.” I say it before fear can make the words smaller.\n\nIf his purpose is marriage, I will send someone tomorrow to learn the time and place. I want this promise to have a life beyond tonight.",
+  "cues": [
+    {
+      "text": "“And ",
+      "start": 0.0,
+      "end": 0.325
+    },
+    {
+      "text": "mine ",
+      "start": 0.418,
+      "end": 0.859
+    },
+    {
+      "text": "is ",
+      "start": 0.929,
+      "end": 1.091
+    },
+    {
+      "text": "yours.” ",
+      "start": 1.161,
+      "end": 1.8
+    },
+    {
+      "text": "I ",
+      "start": 2.125,
+      "end": 2.194
+    },
+    {
+      "text": "say ",
+      "start": 2.31,
+      "end": 2.508
+    },
+    {
+      "text": "it ",
+      "start": 2.554,
+      "end": 2.635
+    },
+    {
+      "text": "before ",
+      "start": 2.682,
+      "end": 2.972
+    },
+    {
+      "text": "fear ",
+      "start": 3.042,
+      "end": 3.309
+    },
+    {
+      "text": "can ",
+      "start": 3.367,
+      "end": 3.495
+    },
+    {
+      "text": "make ",
+      "start": 3.541,
+      "end": 3.692
+    },
+    {
+      "text": "the ",
+      "start": 3.727,
+      "end": 3.796
+    },
+    {
+      "text": "words ",
+      "start": 3.831,
+      "end": 4.133
+    },
+    {
+      "text": "smaller.\n\n",
+      "start": 4.249,
+      "end": 4.946
+    },
+    {
+      "text": "If ",
+      "start": 5.224,
+      "end": 5.364
+    },
+    {
+      "text": "his ",
+      "start": 5.422,
+      "end": 5.538
+    },
+    {
+      "text": "purpose ",
+      "start": 5.608,
+      "end": 5.979
+    },
+    {
+      "text": "is ",
+      "start": 6.014,
+      "end": 6.095
+    },
+    {
+      "text": "marriage, ",
+      "start": 6.165,
+      "end": 6.722
+    },
+    {
+      "text": "I ",
+      "start": 6.966,
+      "end": 7.036
+    },
+    {
+      "text": "will ",
+      "start": 7.117,
+      "end": 7.279
+    },
+    {
+      "text": "send ",
+      "start": 7.338,
+      "end": 7.535
+    },
+    {
+      "text": "someone ",
+      "start": 7.593,
+      "end": 7.895
+    },
+    {
+      "text": "tomorrow ",
+      "start": 7.93,
+      "end": 8.371
+    },
+    {
+      "text": "to ",
+      "start": 8.44,
+      "end": 8.522
+    },
+    {
+      "text": "learn ",
+      "start": 8.603,
+      "end": 8.858
+    },
+    {
+      "text": "the ",
+      "start": 8.916,
+      "end": 8.986
+    },
+    {
+      "text": "time ",
+      "start": 9.044,
+      "end": 9.346
+    },
+    {
+      "text": "and ",
+      "start": 9.392,
+      "end": 9.497
+    },
+    {
+      "text": "place. ",
+      "start": 9.567,
+      "end": 10.089
+    },
+    {
+      "text": "I ",
+      "start": 10.472,
+      "end": 10.542
+    },
+    {
+      "text": "want ",
+      "start": 10.658,
+      "end": 10.902
+    },
+    {
+      "text": "this ",
+      "start": 10.948,
+      "end": 11.099
+    },
+    {
+      "text": "promise ",
+      "start": 11.157,
+      "end": 11.517
+    },
+    {
+      "text": "to ",
+      "start": 11.54,
+      "end": 11.587
+    },
+    {
+      "text": "have ",
+      "start": 11.645,
+      "end": 11.784
+    },
+    {
+      "text": "a ",
+      "start": 11.807,
+      "end": 11.831
+    },
+    {
+      "text": "life ",
+      "start": 11.9,
+      "end": 12.202
+    },
+    {
+      "text": "beyond ",
+      "start": 12.249,
+      "end": 12.748
+    },
+    {
+      "text": "tonight.",
+      "start": 12.829,
+      "end": 13.56
+    }
+  ],
+  "playbackRate": 0.9605,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "5c7950490fef5353d34298bfe29ec31d2e3e4d436ae6fba7b3ce3331edd0879f",
+  "effectiveWPM": 170.0
+}

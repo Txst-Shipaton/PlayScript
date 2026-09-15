@@ -1,0 +1,137 @@
+{
+  "text": "He tells me his heart is mine. The words hang between the window and the earth.\n\nI have never wanted to believe anything so much.",
+  "cues": [
+    {
+      "text": "He ",
+      "start": 0.0,
+      "end": 0.139
+    },
+    {
+      "text": "tells ",
+      "start": 0.197,
+      "end": 0.441
+    },
+    {
+      "text": "me ",
+      "start": 0.499,
+      "end": 0.627
+    },
+    {
+      "text": "his ",
+      "start": 0.697,
+      "end": 0.824
+    },
+    {
+      "text": "heart ",
+      "start": 0.906,
+      "end": 1.207
+    },
+    {
+      "text": "is ",
+      "start": 1.277,
+      "end": 1.416
+    },
+    {
+      "text": "mine. ",
+      "start": 1.533,
+      "end": 2.171
+    },
+    {
+      "text": "The ",
+      "start": 2.496,
+      "end": 2.612
+    },
+    {
+      "text": "words ",
+      "start": 2.67,
+      "end": 2.984
+    },
+    {
+      "text": "hang ",
+      "start": 3.053,
+      "end": 3.251
+    },
+    {
+      "text": "between ",
+      "start": 3.309,
+      "end": 3.599
+    },
+    {
+      "text": "the ",
+      "start": 3.622,
+      "end": 3.692
+    },
+    {
+      "text": "window ",
+      "start": 3.75,
+      "end": 4.145
+    },
+    {
+      "text": "and ",
+      "start": 4.226,
+      "end": 4.342
+    },
+    {
+      "text": "the ",
+      "start": 4.4,
+      "end": 4.47
+    },
+    {
+      "text": "earth.\n\n",
+      "start": 4.54,
+      "end": 5.027
+    },
+    {
+      "text": "I ",
+      "start": 5.41,
+      "end": 5.457
+    },
+    {
+      "text": "have ",
+      "start": 5.526,
+      "end": 5.666
+    },
+    {
+      "text": "never ",
+      "start": 5.712,
+      "end": 5.968
+    },
+    {
+      "text": "wanted ",
+      "start": 6.037,
+      "end": 6.362
+    },
+    {
+      "text": "to ",
+      "start": 6.397,
+      "end": 6.444
+    },
+    {
+      "text": "believe ",
+      "start": 6.502,
+      "end": 6.85
+    },
+    {
+      "text": "anything ",
+      "start": 6.896,
+      "end": 7.268
+    },
+    {
+      "text": "so ",
+      "start": 7.338,
+      "end": 7.477
+    },
+    {
+      "text": "much.",
+      "start": 7.558,
+      "end": 8.22
+    }
+  ],
+  "playbackRate": 0.9316000000000001,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "tender",
+  "deliveryDirection": "warm, certain, gently joyful",
+  "fingerprint": "b463e208deba52f35f8c932481786c1ee56b662dbbc5c4ddcd889dfb43425c6b",
+  "effectiveWPM": 170.0
+}

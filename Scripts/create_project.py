@@ -47,10 +47,14 @@ app_refs, app_sources, app_resources, test_refs, test_sources = [], [], [], [], 
 paths = sorted((ROOT / 'PlayScript').rglob('*.swift'))
 paths += [ROOT / 'PlayScript/Resources/Assets.xcassets', ROOT / 'PlayScript/Resources/PrivacyInfo.xcprivacy']
 paths += sorted((ROOT / 'PlayScript/Resources/Audio').glob('*.wav'))
+paths += sorted((ROOT / 'PlayScript/Resources/Narration').glob('*.mp3'))
+paths += sorted((ROOT / 'PlayScript/Resources/Narration').glob('*.json'))
+paths += sorted((ROOT / 'PlayScript/Resources/Score').glob('*.mp3'))
+paths += sorted((ROOT / 'PlayScript/Resources/Lottie').glob('*.json'))
 paths += sorted((ROOT / 'PlayScriptUITests').glob('*.swift'))
 for path in paths:
     rel = str(path.relative_to(ROOT))
-    file_type = {'.swift': 'sourcecode.swift', '.wav': 'audio.wav', '.xcassets': 'folder.assetcatalog', '.xcprivacy': 'text.xml'}[path.suffix]
+    file_type = {'.swift': 'sourcecode.swift', '.wav': 'audio.wav', '.mp3': 'audio.mp3', '.json': 'text.json', '.xcassets': 'folder.assetcatalog', '.xcprivacy': 'text.xml'}[path.suffix]
     ref = obj(rel, f'isa = PBXFileReference; lastKnownFileType = {file_type}; path = {q(rel)}; sourceTree = SOURCE_ROOT;')
     build = obj(rel + 'Build', f'isa = PBXBuildFile; fileRef = {ref};')
     if rel.startswith('PlayScriptUITests/'):
@@ -69,13 +73,17 @@ main_group = obj('MainGroup', f'isa = PBXGroup; children = {array([app_group, te
 package = obj('CorePackage', 'isa = XCLocalSwiftPackageReference; relativePath = StoryCore;')
 package_product = obj('CoreProduct', f'isa = XCSwiftPackageProductDependency; package = {package}; productName = StoryCore;')
 package_build = obj('CoreBuild', f'isa = PBXBuildFile; productRef = {package_product};')
+# Lottie is the one third-party runtime dependency; Xcode resolves it on first build.
+lottie_package = obj('LottiePackage', 'isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/airbnb/lottie-ios"; requirement = { kind = upToNextMajorVersion; minimumVersion = 4.5.0; };')
+lottie_product = obj('LottieProduct', f'isa = XCSwiftPackageProductDependency; package = {lottie_package}; productName = Lottie;')
+lottie_build = obj('LottieBuild', f'isa = PBXBuildFile; productRef = {lottie_product};')
 
 
 def phase(name, kind, files):
     return obj(name, f'isa = PBX{kind}BuildPhase; buildActionMask = 2147483647; files = {array(files)}; runOnlyForDeploymentPostprocessing = 0;')
 
 
-app_phases = [phase('AppSources', 'Sources', app_sources), phase('AppFrameworks', 'Frameworks', [package_build]), phase('AppResources', 'Resources', app_resources)]
+app_phases = [phase('AppSources', 'Sources', app_sources), phase('AppFrameworks', 'Frameworks', [package_build, lottie_build]), phase('AppResources', 'Resources', app_resources)]
 test_phases = [phase('TestSources', 'Sources', test_sources), phase('TestFrameworks', 'Frameworks', []), phase('TestResources', 'Resources', [])]
 common = {
     'IPHONEOS_DEPLOYMENT_TARGET': '18.0', 'SWIFT_VERSION': '5.0',
@@ -101,11 +109,11 @@ test_config = configs('Tests', common | {
     'TEST_TARGET_NAME': 'PlayScript',
 })
 project_config = configs('Project', {'CLANG_ENABLE_MODULES': 'YES', 'SWIFT_VERSION': '5.0', 'IPHONEOS_DEPLOYMENT_TARGET': '18.0'})
-app_target = obj('AppTarget', f'isa = PBXNativeTarget; buildConfigurationList = {app_config}; buildPhases = {array(app_phases)}; buildRules = (); dependencies = (); name = PlayScript; packageProductDependencies = {array([package_product])}; productName = PlayScript; productReference = {app_product}; productType = "com.apple.product-type.application";')
+app_target = obj('AppTarget', f'isa = PBXNativeTarget; buildConfigurationList = {app_config}; buildPhases = {array(app_phases)}; buildRules = (); dependencies = (); name = PlayScript; packageProductDependencies = {array([package_product, lottie_product])}; productName = PlayScript; productReference = {app_product}; productType = "com.apple.product-type.application";')
 proxy = obj('AppProxy', f'isa = PBXContainerItemProxy; containerPortal = {uid("Project")}; proxyType = 1; remoteGlobalIDString = {app_target}; remoteInfo = PlayScript;')
 dependency = obj('AppDependency', f'isa = PBXTargetDependency; target = {app_target}; targetProxy = {proxy};')
 test_target = obj('TestTarget', f'isa = PBXNativeTarget; buildConfigurationList = {test_config}; buildPhases = {array(test_phases)}; buildRules = (); dependencies = {array([dependency])}; name = PlayScriptUITests; productName = PlayScriptUITests; productReference = {test_product}; productType = "com.apple.product-type.bundle.ui-testing";')
-obj('Project', f'isa = PBXProject; attributes = {{ BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1600; TargetAttributes = {{ {app_target} = {{CreatedOnToolsVersion = 16.0;}}; {test_target} = {{CreatedOnToolsVersion = 16.0; TestTargetID = {app_target};}}; }}; }}; buildConfigurationList = {project_config}; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = {main_group}; productRefGroup = {products}; projectDirPath = ""; projectRoot = ""; packageReferences = {array([package])}; targets = {array([app_target, test_target])};')
+obj('Project', f'isa = PBXProject; attributes = {{ BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1600; TargetAttributes = {{ {app_target} = {{CreatedOnToolsVersion = 16.0;}}; {test_target} = {{CreatedOnToolsVersion = 16.0; TestTargetID = {app_target};}}; }}; }}; buildConfigurationList = {project_config}; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = {main_group}; productRefGroup = {products}; projectDirPath = ""; projectRoot = ""; packageReferences = {array([package, lottie_package])}; targets = {array([app_target, test_target])};')
 
 project = ROOT / 'PlayScript.xcodeproj'
 project.mkdir(exist_ok=True)

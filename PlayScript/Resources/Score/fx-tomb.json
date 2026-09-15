@@ -1,0 +1,11 @@
+{
+  "provider": "ElevenLabs",
+  "fingerprint": "c220e1ad365a9cb3cebd3e21182624c4e313afa61c5e4ad5a6e1a29e2782e28c",
+  "request": {
+    "text": "Quiet cavernous stone chamber, faint wind and sparse water drops echoing far away, subtle airy low room tone, no voices, no horror stingers, seamless loop.",
+    "duration_seconds": 12,
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "text": "I kiss him. His lips are still warm.\n\nOnly a little time has come between us. Less than a morning. Less than all the good nights we could not bear to finish.\n\nI press my forehead to his and whisper his name once more.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "kiss ",
+      "start": 0.197,
+      "end": 0.441
+    },
+    {
+      "text": "him. ",
+      "start": 0.488,
+      "end": 0.813
+    },
+    {
+      "text": "His ",
+      "start": 1.057,
+      "end": 1.231
+    },
+    {
+      "text": "lips ",
+      "start": 1.3,
+      "end": 1.533
+    },
+    {
+      "text": "are ",
+      "start": 1.567,
+      "end": 1.695
+    },
+    {
+      "text": "still ",
+      "start": 1.741,
+      "end": 2.009
+    },
+    {
+      "text": "warm.\n\n",
+      "start": 2.078,
+      "end": 2.647
+    },
+    {
+      "text": "Only ",
+      "start": 3.088,
+      "end": 3.379
+    },
+    {
+      "text": "a ",
+      "start": 3.437,
+      "end": 3.46
+    },
+    {
+      "text": "little ",
+      "start": 3.529,
+      "end": 3.785
+    },
+    {
+      "text": "time ",
+      "start": 3.82,
+      "end": 4.156
+    },
+    {
+      "text": "has ",
+      "start": 4.191,
+      "end": 4.296
+    },
+    {
+      "text": "come ",
+      "start": 4.365,
+      "end": 4.528
+    },
+    {
+      "text": "between ",
+      "start": 4.563,
+      "end": 4.876
+    },
+    {
+      "text": "us. ",
+      "start": 4.934,
+      "end": 5.283
+    },
+    {
+      "text": "Less ",
+      "start": 5.724,
+      "end": 5.979
+    },
+    {
+      "text": "than ",
+      "start": 6.014,
+      "end": 6.153
+    },
+    {
+      "text": "a ",
+      "start": 6.188,
+      "end": 6.211
+    },
+    {
+      "text": "morning. ",
+      "start": 6.269,
+      "end": 6.838
+    },
+    {
+      "text": "Less ",
+      "start": 7.163,
+      "end": 7.407
+    },
+    {
+      "text": "than ",
+      "start": 7.442,
+      "end": 7.581
+    },
+    {
+      "text": "all ",
+      "start": 7.639,
+      "end": 7.779
+    },
+    {
+      "text": "the ",
+      "start": 7.837,
+      "end": 7.906
+    },
+    {
+      "text": "good ",
+      "start": 7.953,
+      "end": 8.115
+    },
+    {
+      "text": "nights ",
+      "start": 8.173,
+      "end": 8.429
+    },
+    {
+      "text": "we ",
+      "start": 8.475,
+      "end": 8.557
+    },
+    {
+      "text": "could ",
+      "start": 8.603,
+      "end": 8.777
+    },
+    {
+      "text": "not ",
+      "start": 8.812,
+      "end": 8.963
+    },
+    {
+      "text": "bear ",
+      "start": 9.009,
+      "end": 9.195
+    },
+    {
+      "text": "to ",
+      "start": 9.242,
+      "end": 9.288
+    },
+    {
+      "text": "finish.\n\n",
+      "start": 9.346,
+      "end": 9.938
+    },
+    {
+      "text": "I ",
+      "start": 10.321,
+      "end": 10.379
+    },
+    {
+      "text": "press ",
+      "start": 10.495,
+      "end": 10.739
+    },
+    {
+      "text": "my ",
+      "start": 10.797,
+      "end": 10.89
+    },
+    {
+      "text": "forehead ",
+      "start": 10.948,
+      "end": 11.297
+    },
+    {
+      "text": "to ",
+      "start": 11.331,
+      "end": 11.389
+    },
+    {
+      "text": "his ",
+      "start": 11.459,
+      "end": 11.645
+    },
+    {
+      "text": "and ",
+      "start": 11.703,
+      "end": 11.784
+    },
+    {
+      "text": "whisper ",
+      "start": 11.842,
+      "end": 12.179
+    },
+    {
+      "text": "his ",
+      "start": 12.237,
+      "end": 12.33
+    },
+    {
+      "text": "name ",
+      "start": 12.399,
+      "end": 12.608
+    },
+    {
+      "text": "once ",
+      "start": 12.655,
+      "end": 12.91
+    },
+    {
+      "text": "more.",
+      "start": 12.945,
+      "end": 13.56
+    }
+  ],
+  "playbackRate": 0.8731818181818183,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "grief",
+  "deliveryDirection": "devastated, hushed, space between thoughts",
+  "fingerprint": "d57ae739a6a53080ccea0ddf3b322657e6eca34b1de411b4b1899dd961329763",
+  "effectiveWPM": 170.0
+}

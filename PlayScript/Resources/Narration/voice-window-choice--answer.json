@@ -1,0 +1,172 @@
+{
+  "text": "I lean beyond the stone sill. “Romeo.”\n\nHis face lifts toward mine, and the courage I borrowed from the darkness becomes my own. For one small moment, I forget to be afraid.",
+  "cues": [
+    {
+      "text": "I ",
+      "start": 0.0,
+      "end": 0.081
+    },
+    {
+      "text": "lean ",
+      "start": 0.197,
+      "end": 0.383
+    },
+    {
+      "text": "beyond ",
+      "start": 0.441,
+      "end": 0.743
+    },
+    {
+      "text": "the ",
+      "start": 0.789,
+      "end": 0.859
+    },
+    {
+      "text": "stone ",
+      "start": 0.906,
+      "end": 1.184
+    },
+    {
+      "text": "sill. ",
+      "start": 1.242,
+      "end": 1.834
+    },
+    {
+      "text": "“Romeo.”\n\n",
+      "start": 2.009,
+      "end": 2.972
+    },
+    {
+      "text": "His ",
+      "start": 3.576,
+      "end": 3.762
+    },
+    {
+      "text": "face ",
+      "start": 3.82,
+      "end": 4.145
+    },
+    {
+      "text": "lifts ",
+      "start": 4.261,
+      "end": 4.667
+    },
+    {
+      "text": "toward ",
+      "start": 4.714,
+      "end": 4.992
+    },
+    {
+      "text": "mine, ",
+      "start": 5.039,
+      "end": 5.526
+    },
+    {
+      "text": "and ",
+      "start": 5.7,
+      "end": 5.851
+    },
+    {
+      "text": "the ",
+      "start": 5.898,
+      "end": 5.968
+    },
+    {
+      "text": "courage ",
+      "start": 6.026,
+      "end": 6.444
+    },
+    {
+      "text": "I ",
+      "start": 6.502,
+      "end": 6.548
+    },
+    {
+      "text": "borrowed ",
+      "start": 6.664,
+      "end": 7.07
+    },
+    {
+      "text": "from ",
+      "start": 7.117,
+      "end": 7.256
+    },
+    {
+      "text": "the ",
+      "start": 7.314,
+      "end": 7.384
+    },
+    {
+      "text": "darkness ",
+      "start": 7.454,
+      "end": 7.999
+    },
+    {
+      "text": "becomes ",
+      "start": 8.057,
+      "end": 8.464
+    },
+    {
+      "text": "my ",
+      "start": 8.533,
+      "end": 8.684
+    },
+    {
+      "text": "own. ",
+      "start": 8.766,
+      "end": 9.358
+    },
+    {
+      "text": "For ",
+      "start": 9.799,
+      "end": 9.961
+    },
+    {
+      "text": "one ",
+      "start": 10.043,
+      "end": 10.263
+    },
+    {
+      "text": "small ",
+      "start": 10.321,
+      "end": 10.623
+    },
+    {
+      "text": "moment, ",
+      "start": 10.681,
+      "end": 11.273
+    },
+    {
+      "text": "I ",
+      "start": 11.482,
+      "end": 11.529
+    },
+    {
+      "text": "forget ",
+      "start": 11.645,
+      "end": 11.935
+    },
+    {
+      "text": "to ",
+      "start": 11.981,
+      "end": 12.028
+    },
+    {
+      "text": "be ",
+      "start": 12.086,
+      "end": 12.167
+    },
+    {
+      "text": "afraid.",
+      "start": 12.202,
+      "end": 12.957
+    }
+  ],
+  "playbackRate": 1.147234375,
+  "voiceID": "EXAVITQu4vr4xnSDxMaL",
+  "character": "Juliet",
+  "mood": "longing",
+  "deliveryDirection": "intimate, wondering, quietly breathless",
+  "fingerprint": "e2c2798b293c318b1c8de5ec404f47a4fea33e4cf89f22cd78acf9f907b8e997",
+  "effectiveWPM": 170.0
+}

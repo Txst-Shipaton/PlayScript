@@ -10,6 +10,13 @@ final class ReadingModel {
     private(set) var pendingChoiceID: String?
     private(set) var savedPlace: SavedPlace?
     private(set) var hasFinished: Bool
+    let voice = NarrationPlayer()
+    var voiceEnabled: Bool {
+        didSet {
+            defaults.set(voiceEnabled, forKey: "voiceEnabled")
+            updateAudio()
+        }
+    }
     var soundEnabled: Bool {
         didSet {
             defaults.set(soundEnabled, forKey: "soundEnabled")
@@ -23,6 +30,8 @@ final class ReadingModel {
     @ObservationIgnored private var isActive = true
     @ObservationIgnored private var lastAdvance = Date.distantPast
     private let saveKey = "playscript.savedPlace.v1"
+    /// Beats where the Friar's letter itself turns the plot; the page sounds like parchment.
+    private static let letterBeats: Set<String> = ["plan", "letter-lost", "road"]
 
     init(story: Story, defaults: UserDefaults = .standard) {
         self.story = story
@@ -31,12 +40,14 @@ final class ReadingModel {
             defaults.removeObject(forKey: saveKey)
             defaults.removeObject(forKey: "hasFinished")
             defaults.set(false, forKey: "soundEnabled")
+            defaults.set(false, forKey: "voiceEnabled")
         }
         let place = defaults.data(forKey: saveKey).flatMap { try? JSONDecoder().decode(SavedPlace.self, from: $0) }
         let restored = StoryRun(story: story, savedPlace: place)
         savedPlace = place == restored.savedPlace ? place : nil
         run = restored
         soundEnabled = defaults.object(forKey: "soundEnabled") as? Bool ?? true
+        voiceEnabled = defaults.object(forKey: "voiceEnabled") as? Bool ?? true
         hasFinished = defaults.bool(forKey: "hasFinished")
     }
 
@@ -59,9 +70,10 @@ final class ReadingModel {
     func select(_ choice: StoryChoice, reduceMotion: Bool) {
         guard run.needsChoice, pendingChoiceID == nil, !isPaused else { return }
         pendingChoiceID = choice.id
+        updateAudio()
         if soundEnabled { audio.playEffect(.choice) }
         selectionTask = Task { [weak self] in
-            do { try await Task.sleep(for: .milliseconds(reduceMotion ? 650 : 1100)) }
+            do { try await Task.sleep(for: .milliseconds(reduceMotion ? 200 : 500)) }
             catch { return }
             guard let self, !Task.isCancelled else { return }
             withAnimation(.easeInOut(duration: reduceMotion ? 0 : 0.45)) {
@@ -70,6 +82,7 @@ final class ReadingModel {
             }
             self.lastAdvance = Date()
             self.save()
+            self.updateAudio()
         }
     }
 
@@ -80,7 +93,9 @@ final class ReadingModel {
         lastAdvance = Date()
         save()
         updateAudio()
-        if soundEnabled { audio.playEffect(.turn) }
+        if soundEnabled {
+            audio.playEffect(Self.letterBeats.contains(beat.id) ? .letter : .turn)
+        }
     }
 
     func pause() {
@@ -129,6 +144,10 @@ final class ReadingModel {
     }
 
     private func updateAudio() {
-        audio.set(mood: beat.mood, playing: isReading && !isPaused && isActive && soundEnabled)
+        let playing = isReading && !isPaused && isActive
+        audio.set(mood: beat.mood, playing: playing && (soundEnabled || voiceEnabled),
+                  ambientVolume: soundEnabled ? (needsChoice || voiceEnabled ? 0.1 : 0.38) : 0)
+        let voiceID = beat.id + (run.selectedChoiceID.map { "--" + $0 } ?? "")
+        voice.update(id: voiceID, text: text, playing: playing && voiceEnabled && pendingChoiceID == nil)
     }
 }

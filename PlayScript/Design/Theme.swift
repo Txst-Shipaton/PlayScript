@@ -93,8 +93,7 @@ struct SmallLabel: View {
     }
 }
 
-/// A quiet, typographic holding treatment until commissioned illustrations arrive.
-/// Each beat can replace this with a bundled asset via its `artwork` field.
+/// Library cover; commissioned artwork can still override the authored scenery.
 struct SceneBackdrop: View {
     let mood: Mood
     var artwork: String? = nil
@@ -114,22 +113,7 @@ struct SceneBackdrop: View {
                             Rectangle().fill(mood.light.opacity(0.12)).blendMode(.softLight)
                         }
                 } else {
-                    // Editorial framing, intentionally not substitute scene art.
-                    RoundedRectangle(cornerRadius: proxy.size.width / 2)
-                        .fill(mood.light.opacity(0.18))
-                        .padding(.horizontal, proxy.size.width * 0.14)
-                        .padding(.top, cover ? 34 : 100)
-                        .padding(.bottom, -80)
-                    RoundedRectangle(cornerRadius: proxy.size.width / 2)
-                        .stroke(mood.light.opacity(0.25), lineWidth: 1)
-                        .padding(.horizontal, proxy.size.width * 0.14 + 9)
-                        .padding(.top, cover ? 43 : 109)
-                        .padding(.bottom, -70)
-                    Text("R  &  J")
-                        .font(.custom("Baskerville", size: cover ? 53 : 68))
-                        .foregroundStyle(.white.opacity(0.14))
-                        .position(x: proxy.size.width / 2, y: proxy.size.height * (cover ? 0.45 : 0.28))
-                        .accessibilityHidden(true)
+                    LivingScene(mood: mood, beatID: "window", quiet: true, resting: true)
                 }
                 LinearGradient(colors: [.clear, .black.opacity(0.1), .black.opacity(cover ? 0.28 : 0.65)],
                                startPoint: .top, endPoint: .bottom)
