@@ -85,6 +85,8 @@ final class PlayScriptUITests: XCTestCase {
         let text = app.staticTexts["narrative"].label
         XCUIDevice.shared.press(.home)
         app.activate()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 5))
+        capture("08-return-from-background")
         XCTAssertEqual(app.staticTexts["narrative"].label, text)
         app.staticTexts["narrative"].press(forDuration: 0.8)
         XCTAssertTrue(app.switches["Original soundscape"].waitForExistence(timeout: 5))

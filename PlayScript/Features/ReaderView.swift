@@ -43,7 +43,10 @@ struct ReaderView: View {
                 }
             }
             .contentShape(Rectangle())
-            .onLongPressGesture(minimumDuration: 0.6) { model.pause() }
+            .simultaneousGesture(
+                LongPressGesture(minimumDuration: 0.6)
+                    .onEnded { _ in model.pause() }
+            )
             .accessibilityAction(named: "Pause story") { model.pause() }
             .accessibilityAction(.escape) { model.pause() }
         }

@@ -3,12 +3,11 @@ import AppKit
 import Foundation
 
 let size = NSSize(width: 1024, height: 1024)
-let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: 1024, pixelsHigh: 1024,
-                             bitsPerSample: 8, samplesPerPixel: 3, hasAlpha: false,
-                             isPlanar: false, colorSpaceName: .deviceRGB,
-                             bytesPerRow: 0, bitsPerPixel: 0)!
+let context = CGContext(data: nil, width: 1024, height: 1024, bitsPerComponent: 8,
+                        bytesPerRow: 0, space: CGColorSpace(name: CGColorSpace.sRGB)!,
+                        bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue)!
 NSGraphicsContext.saveGraphicsState()
-NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: bitmap)
+NSGraphicsContext.current = NSGraphicsContext(cgContext: context, flipped: false)
 NSColor(srgbRed: 0.985, green: 0.949, blue: 0.922, alpha: 1).setFill()
 NSBezierPath(rect: NSRect(origin: .zero, size: size)).fill()
 let rose = NSColor(srgbRed: 0.616, green: 0.251, blue: 0.341, alpha: 1)
@@ -21,6 +20,7 @@ let attributes: [NSAttributedString.Key: Any] = [.font: NSFont(name: "Baskervill
 let textSize = text.size(withAttributes: attributes)
 text.draw(at: NSPoint(x: (1024 - textSize.width) / 2 - 22, y: (1024 - textSize.height) / 2 + 10), withAttributes: attributes)
 NSGraphicsContext.restoreGraphicsState()
+let bitmap = NSBitmapImageRep(cgImage: context.makeImage()!)
 let directory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath).appendingPathComponent("PlayScript/Resources/Assets.xcassets/AppIcon.appiconset")
 try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
 try bitmap.representation(using: .png, properties: [:])!.write(to: directory.appendingPathComponent("AppIcon.png"))
