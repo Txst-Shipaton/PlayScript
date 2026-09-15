@@ -9,7 +9,11 @@ struct ReaderView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                SceneBackdrop(mood: model.beat.mood, artwork: model.beat.artwork)
+                SceneBackdrop(
+                    mood: model.beat.mood,
+                    artwork: model.beat.artwork,
+                    animationName: SceneAnimation.name(for: model.beat.id)
+                )
                     .ignoresSafeArea()
                     .animation(.easeInOut(duration: reduceMotion ? 0 : 1.2), value: model.beat.mood)
 

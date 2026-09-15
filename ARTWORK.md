@@ -1,6 +1,6 @@
-# Scene artwork handoff
+# Scene animation handoff
 
-Illustrations are on hold. No scene art has been generated or downloaded.
+Ten lightweight Lottie animations are bundled under `PlayScript/Resources/Animations`. They contain vector shapes only, with no text, raster images, or downloaded media.
 
 ## Delivery
 
@@ -12,17 +12,19 @@ Use illustrated, storybook-style images rather than photography. Warm cream, mut
 - Avoid graphic depictions of death. The tomb should communicate stillness and loss through light and composition.
 - The same illustration can support adjacent beats; the reader’s mood tint supplies continuity until separately lit variants are approved.
 
-## Proposed assets
+## Animation mapping
 
-| Suggested asset name | Beats | Direction |
+| Filename | Beats | Direction |
 | --- | --- | --- |
-| `verona-window` | `window`, `window-choice` | A moonlit orchard viewed from Juliet’s window; a tender, secret beginning |
-| `orchard-vow` | `names`, `vow`, `vow-choice` | The balcony and orchard, warmer light as the vow becomes real |
-| `verona-morning` | `morning` | Dawn at the same window, restrained and hopeful |
-| `friar-letter` | `friar`, `plan` | A small vial and a handwritten letter in the Friar’s quiet cell |
-| `juliet-chamber` | `potion-choice`, `sleep` | Candlelit chamber, softened shadows, the little vial |
-| `tomb-silence` | `wake`, `letter-lost`, `last-kiss`, `what-if` | Stone and dim light, grief without graphic detail |
-| `letter-road` | `road`, `ride` | A messenger’s letter, a road toward Verona, returning morning light |
-| `tomb-dawn` | `in-time`, `enough-time`, `reflection` | A hand held in the first light; Romeo arrives in time |
+| `opening.json` | `window` | Window light, candle flicker, gently swaying curtains |
+| `balcony_choice.json` | `window-choice` | Moonlight and a moth circling near the balcony |
+| `confession.json` | `names`, `vow` | Warm bloom with upward-drifting light motes |
+| `vow_choice.json` | `vow-choice`, `morning` | Deep burgundy night and subtle starlight |
+| `the_letter.json` | `friar`, `plan` | Amber candlelight and incense-like motes |
+| `vial_choice.json` | `potion-choice`, `sleep` | A more unstable amber flicker |
+| `the_tomb.json` | `wake`, `letter-lost`, `last-kiss` | Pale stone arch and very slow dust |
+| `whatif_prompt.json` | `what-if` | Nearly still suspended light and a single mote |
+| `whatif.json` | `road`, `ride`, `in-time`, `enough-time` | Rising dawn glow and hopeful particles |
+| `closing.json` | `reflection` | Soft breathing glow and resting light |
 
-Add each approved asset to the catalog and replace the corresponding JSON `artwork: null` with its asset name. The title card currently uses the same temporary typographic treatment; connect approved cover artwork at `LibraryView.storyCard` by passing the asset to `SceneBackdrop`.
+Run `python3 Scripts/create_animations.py` to regenerate all ten files deterministically. Their filenames are part of the app contract and must not change. Future commissioned illustrations can still be supplied through the story JSON’s `artwork` field.

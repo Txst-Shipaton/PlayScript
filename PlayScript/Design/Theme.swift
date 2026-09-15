@@ -98,13 +98,23 @@ struct SmallLabel: View {
 struct SceneBackdrop: View {
     let mood: Mood
     var artwork: String? = nil
+    var animationName: String? = nil
     var cover = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
         GeometryReader { proxy in
             ZStack {
                 mood.background
-                if let artwork, UIImage(named: artwork) != nil {
+                if let animationName {
+                    AnimatedSceneBackdrop(name: animationName, reduceMotion: reduceMotion)
+                        .frame(width: proxy.size.width, height: proxy.size.height)
+                        .clipped()
+                        .id(animationName)
+                        .overlay {
+                            Rectangle().fill(mood.light.opacity(0.08)).blendMode(.softLight)
+                        }
+                } else if let artwork, UIImage(named: artwork) != nil {
                     Image(artwork)
                         .resizable()
                         .scaledToFill()

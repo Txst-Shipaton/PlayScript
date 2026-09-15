@@ -8,7 +8,7 @@ A native, offline SwiftUI story experience for **iOS 18+**. Live *Romeo & Juliet
 2. Select the **PlayScript** scheme and an iPhone simulator, then Run.
 3. For a physical iPhone, choose your development team under **Signing & Capabilities**. The default bundle identifier is `com.sh1vendra.PlayScript`.
 
-There are no third-party runtime dependencies, account requirements, API keys, or network calls. The local `StoryCore` Swift package is included in the repository. The app is designed for portrait iPhones.
+Lottie is included through Swift Package Manager for bundled scene animations. There are no accounts, API keys, or runtime network calls. The local `StoryCore` Swift package is included in the repository. The app is designed for portrait iPhones.
 
 ## The experience
 
@@ -22,11 +22,11 @@ There are no third-party runtime dependencies, account requirements, API keys, o
 
 Tap **Become Juliet** to begin. Use **Tap to continue** to turn a page. Touch and hold anywhere in the story to pause, adjust sound, or return to the library. VoiceOver also exposes **Pause story** as a custom action and supports the escape gesture.
 
-## Illustration status
+## Scene animation status
 
-**Scene illustrations are deferred at the user’s request.** This build uses a temporary typographic backdrop with restrained framing and mood colors. These are artwork placeholders, not the finished illustrated experience from the original brief.
+Ten bundled, vector-only Lottie loops provide the animated scene backdrops. They use the app’s cream, rose, burgundy, amber, and desaturated-plum palette, loop between five and eight seconds, and freeze at a representative frame when Reduce Motion is enabled.
 
-The reader already accepts a local asset name through each beat’s optional `artwork` field. Add commissioned/approved images to `PlayScript/Resources/Assets.xcassets`, then set those names in the story JSON. The artwork fills the screen behind the reading scrim. See [ARTWORK.md](ARTWORK.md) for framing and scene notes. No images are generated or fetched at runtime.
+The reader still accepts a local asset name through each beat’s optional `artwork` field. See [ARTWORK.md](ARTWORK.md) for the animation mapping and framing notes. No images or animations are generated or fetched at runtime.
 
 ## Structure
 
@@ -39,6 +39,7 @@ The reader already accepts a local asset name through each beat’s optional `ar
 | `PlayScript/Design` | Colors, type, custom glass, artwork integration |
 | `PlayScript/Audio` | Bundled playback, mood crossfades, interruption handling |
 | `PlayScript/Resources/Audio` | Original PCM audio, generated once at development time |
+| `PlayScript/Resources/Animations` | Ten bundled Lottie JSON scene loops |
 
 Choices deliberately have **no destination field**. To change emotional tone, edit the choice’s `flavor`. Plot progression always moves to the next beat in the array. Stable beat IDs allow wording changes without invalidating a saved place; missing IDs fall back to the beginning safely.
 
@@ -77,6 +78,7 @@ The generated audio and icon are already checked in; these steps are optional:
 ```sh
 python3 Scripts/create_audio.py  # Python 3 + numpy; seven original WAV files
 swift Scripts/create_icon.swift # macOS AppKit; typeset app mark
+python3 Scripts/create_animations.py # Python 3 standard library; ten Lottie loops
 python3 Scripts/create_project.py
 ```
 

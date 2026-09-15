@@ -22,6 +22,7 @@ An iOS 18 runtime and physical iPhone were not available for testing. The device
 | Release for a physical iPhone | Unsigned ARM64 build succeeded; minimum iOS version 18.0 |
 | Project generator | Reproduces the checked-in project without differences |
 | Bundled assets | Seven original WAV files; valid icon, asset catalog, story JSON, and privacy manifest |
+| Scene animations | Ten JSON-valid Lottie loops are bundled; the full-story UI test exercised every beat mapping without runtime warnings |
 | Visual review | Library, opening, choices, imagined ending, reflection, pause sheet, and app icon inspected |
 
 Audio playback and session activation use a dedicated serial queue. The app makes no runtime network requests. The WAVs are rendered at development time from original tones and noise, without downloaded samples.
