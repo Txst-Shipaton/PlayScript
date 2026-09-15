@@ -69,13 +69,15 @@ def instruction(agent):
 
 
 class Vertex:
-    def __init__(self, env, model, location):
+    def __init__(self, env, model, location, method="generateContent"):
+        """`method` is `generateContent` for Gemini, or `predict` for Imagen."""
         self.model = model
         self.env = env
         self.location = location
+        self.method = method
         self.key = env.get("VERTEX_API_KEY") or env.get("GOOGLE_API_KEY")
         if self.key:
-            self.url = f"https://aiplatform.googleapis.com/v1/publishers/google/models/{model}:generateContent"
+            self.url = f"https://aiplatform.googleapis.com/v1/publishers/google/models/{model}:{method}"
             self.mode = "API key"
         else:
             self._use_gcloud()
@@ -85,7 +87,7 @@ class Vertex:
         host = ("aiplatform.googleapis.com" if self.location == "global"
                 else f"{self.location}-aiplatform.googleapis.com")
         self.url = (f"https://{host}/v1/projects/{project}/locations/{self.location}"
-                    f"/publishers/google/models/{self.model}:generateContent")
+                    f"/publishers/google/models/{self.model}:{self.method}")
         self.key = None
         self.mode = f"gcloud CLI ({project})"
 

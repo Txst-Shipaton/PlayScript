@@ -18,3 +18,4 @@ __pycache__/
 
 # Frame-traced copies of source videos: large, and a copy of third-party footage.
 analysis/*/trace/
+analysis/*/assets/
