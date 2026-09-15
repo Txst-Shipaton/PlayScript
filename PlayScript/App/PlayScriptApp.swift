@@ -12,13 +12,16 @@ struct PlayScriptApp: App {
 }
 
 struct RootView: View {
+    @State private var auth = AuthModel()
     @State private var model: ReadingModel?
     @State private var loadFailed = false
     @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         Group {
-            if let model {
+            if !auth.isAuthenticated {
+                LoginView(auth: auth)
+            } else if let model {
                 LibraryView(model: model)
                     .fullScreenCover(isPresented: Binding(
                         get: { model.isReading },
@@ -38,7 +41,8 @@ struct RootView: View {
                 ProgressView().tint(Palette.rose)
             }
         }
-        .task { if model == nil { loadStory() } }
+        .animation(.easeInOut(duration: 0.4), value: auth.isAuthenticated)
+        .task(id: auth.isAuthenticated) { if auth.isAuthenticated && model == nil { loadStory() } }
         .onChange(of: scenePhase) { _, phase in
             model?.setActive(phase == .active)
         }

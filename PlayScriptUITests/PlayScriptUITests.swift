@@ -136,6 +136,71 @@ final class PlayScriptUITests: XCTestCase {
         XCTAssertTrue(app.buttons["choice-listen"].isHittable)
     }
 
+    @MainActor
+    func testLoginValidationAndSignIn() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--uitesting-auth"]
+        app.launch()
+        let email = app.textFields["emailField"]
+        XCTAssertTrue(email.waitForExistence(timeout: 5))
+        capture("09-login")
+
+        app.buttons["primaryAuthButton"].tap()
+        XCTAssertTrue(app.staticTexts["authMessage"].waitForExistence(timeout: 3))
+        capture("10-login-empty-error")
+
+        email.tap()
+        email.typeText("not-an-email")
+        let password = app.secureTextFields["passwordField"]
+        password.tap()
+        password.typeText("whatever")
+        app.buttons["primaryAuthButton"].tap()
+        XCTAssertTrue(app.staticTexts["authMessage"].label.contains("email"))
+
+        email.doubleTap()
+        app.menuItems["Select All"].firstMatch.tap()
+        email.typeText("juliet@verona.it")
+        password.doubleTap()
+        app.menuItems["Select All"].firstMatch.tap()
+        password.typeText("short")
+        app.buttons["primaryAuthButton"].tap()
+        XCTAssertTrue(app.staticTexts["authMessage"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.staticTexts["authMessage"].label.contains("records"))
+        capture("11-login-invalid-credentials")
+
+        password.doubleTap()
+        app.menuItems["Select All"].firstMatch.tap()
+        password.typeText("longenough")
+        app.buttons["primaryAuthButton"].tap()
+        XCTAssertTrue(app.buttons["beginStory"].waitForExistence(timeout: 5))
+    }
+
+    @MainActor
+    func testLoginSignUpToggleAndGuest() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--uitesting-auth"]
+        app.launch()
+        XCTAssertTrue(app.buttons["toggleAuthMode"].waitForExistence(timeout: 5))
+        app.buttons["toggleAuthMode"].tap()
+        XCTAssertTrue(app.secureTextFields["confirmPasswordField"].waitForExistence(timeout: 3))
+        capture("12-login-signup")
+
+        app.textFields["emailField"].tap()
+        app.textFields["emailField"].typeText("romeo@verona.it")
+        app.secureTextFields["passwordField"].tap()
+        app.secureTextFields["passwordField"].typeText("montague")
+        app.secureTextFields["confirmPasswordField"].tap()
+        app.secureTextFields["confirmPasswordField"].typeText("capulet")
+        app.buttons["primaryAuthButton"].tap()
+        XCTAssertTrue(app.staticTexts["authMessage"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.staticTexts["authMessage"].label.contains("match"))
+
+        XCTAssertTrue(app.buttons["continueAsGuest"].isHittable)
+        app.buttons["continueAsGuest"].tap()
+        XCTAssertTrue(app.buttons["beginStory"].waitForExistence(timeout: 5))
+        capture("13-login-guest-library")
+    }
+
     @MainActor private func capture(_ name: String) {
         // Existence becomes true before SwiftUI's fade reaches full opacity.
         Thread.sleep(forTimeInterval: 0.8)
