@@ -2,10 +2,11 @@ import AVFoundation
 import StoryCore
 import OSLog
 
-/// All sound is bundled PCM audio. No synthesis, download, or network work at runtime.
-@MainActor
-final class Soundscape: NSObject {
-    enum Effect: String { case choice, turn }
+/// All mutable audio state and AVFoundation calls are confined to `queue`.
+/// The public methods only enqueue work, so UI interactions never wait for audio.
+final class Soundscape: NSObject, @unchecked Sendable {
+    enum Effect: String, Sendable { case choice, turn }
+    private let queue = DispatchQueue(label: "com.sh1vendra.PlayScript.audio", qos: .userInitiated)
     private let logger = Logger(subsystem: "com.sh1vendra.PlayScript", category: "Audio")
     private var current: AVAudioPlayer?
     private var outgoing: AVAudioPlayer?
@@ -14,15 +15,12 @@ final class Soundscape: NSObject {
     private var requestedMood: Mood = .longing
     private var wantsPlayback = false
     private var interrupted = false
-    private var fadeTask: Task<Void, Never>?
+    private var sessionActive = false
+    private var fadeGeneration = 0
     private let volume: Float = 0.38
 
     override init() {
         super.init()
-        do {
-            // Ambient respects the silent switch and mixes with the listener's audio.
-            try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
-        } catch { logger.error("Audio session unavailable: \(error.localizedDescription)") }
         NotificationCenter.default.addObserver(self, selector: #selector(interruption(_:)),
                                                name: AVAudioSession.interruptionNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(resetAudio),
@@ -30,19 +28,45 @@ final class Soundscape: NSObject {
     }
 
     func set(mood: Mood, playing: Bool) {
+        queue.async { [self] in update(mood: mood, playing: playing) }
+    }
+
+    func playEffect(_ effect: Effect) {
+        queue.async { [self] in
+            guard wantsPlayback, sessionActive, !interrupted else { return }
+            effectPlayer = player(named: effect.rawValue)
+            effectPlayer?.volume = effect == .choice ? 0.22 : 0.1
+            effectPlayer?.play()
+        }
+    }
+
+    private func update(mood: Mood, playing: Bool) {
         wantsPlayback = playing
         requestedMood = mood
         guard playing, !interrupted else {
-            fadeTask?.cancel()
+            fadeGeneration += 1
             outgoing?.stop()
             outgoing = nil
             current?.pause()
             effectPlayer?.stop()
-            try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
+            if sessionActive {
+                try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
+                sessionActive = false
+            }
             return
         }
-        do { try AVAudioSession.sharedInstance().setActive(true) }
-        catch { logger.error("Could not activate audio: \(error.localizedDescription)") }
+        if !sessionActive {
+            do {
+                let session = AVAudioSession.sharedInstance()
+                // Ambient respects the silent switch and mixes with other audio.
+                try session.setCategory(.ambient, mode: .default)
+                try session.setActive(true)
+                sessionActive = true
+            } catch {
+                logger.error("Audio session unavailable: \(error.localizedDescription)")
+                return
+            }
+        }
         if mood == currentMood, let current {
             if !current.isPlaying {
                 current.volume = 0
@@ -52,7 +76,8 @@ final class Soundscape: NSObject {
             return
         }
         guard let next = player(named: mood.rawValue) else { return }
-        fadeTask?.cancel()
+        fadeGeneration += 1
+        let generation = fadeGeneration
         outgoing?.stop()
         outgoing = current
         current = next
@@ -62,18 +87,11 @@ final class Soundscape: NSObject {
         next.play()
         next.setVolume(volume, fadeDuration: 1.6)
         outgoing?.setVolume(0, fadeDuration: 1.6)
-        fadeTask = Task { [weak self] in
-            do { try await Task.sleep(for: .milliseconds(1700)) } catch { return }
-            self?.outgoing?.stop()
-            self?.outgoing = nil
+        queue.asyncAfter(deadline: .now() + 1.7) { [weak self] in
+            guard let self, self.fadeGeneration == generation else { return }
+            self.outgoing?.stop()
+            self.outgoing = nil
         }
-    }
-
-    func playEffect(_ effect: Effect) {
-        guard wantsPlayback, !interrupted else { return }
-        effectPlayer = player(named: effect.rawValue)
-        effectPlayer?.volume = effect == .choice ? 0.22 : 0.1
-        effectPlayer?.play()
     }
 
     private func player(named name: String) -> AVAudioPlayer? {
@@ -94,27 +112,35 @@ final class Soundscape: NSObject {
     @objc private func interruption(_ notification: Notification) {
         guard let raw = notification.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt,
               let type = AVAudioSession.InterruptionType(rawValue: raw) else { return }
-        if type == .began {
-            interrupted = true
-            current?.pause()
-            outgoing?.pause()
-            effectPlayer?.stop()
-        } else {
-            interrupted = false
-            let options = (notification.userInfo?[AVAudioSessionInterruptionOptionKey] as? UInt) ?? 0
-            if AVAudioSession.InterruptionOptions(rawValue: options).contains(.shouldResume) {
-                set(mood: requestedMood, playing: wantsPlayback)
+        let options = (notification.userInfo?[AVAudioSessionInterruptionOptionKey] as? UInt) ?? 0
+        queue.async { [self] in
+            if type == .began {
+                interrupted = true
+                sessionActive = false
+                fadeGeneration += 1
+                current?.pause()
+                outgoing?.stop()
+                outgoing = nil
+                effectPlayer?.stop()
+            } else {
+                interrupted = false
+                if AVAudioSession.InterruptionOptions(rawValue: options).contains(.shouldResume) {
+                    update(mood: requestedMood, playing: wantsPlayback)
+                }
             }
         }
     }
 
     @objc private func resetAudio() {
-        fadeTask?.cancel()
-        current = nil
-        outgoing = nil
-        currentMood = nil
-        try? AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
-        set(mood: requestedMood, playing: wantsPlayback)
+        queue.async { [self] in
+            fadeGeneration += 1
+            current = nil
+            outgoing = nil
+            effectPlayer = nil
+            currentMood = nil
+            sessionActive = false
+            update(mood: requestedMood, playing: wantsPlayback)
+        }
     }
 
     deinit { NotificationCenter.default.removeObserver(self) }

@@ -2,8 +2,8 @@
 .build/
 DerivedData/
 build/
+build-device/
 *.xcuserstate
 xcuserdata/
 .swiftpm/
 artifacts/
-
