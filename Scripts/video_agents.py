@@ -122,7 +122,8 @@ class Vertex:
                     self._use_gcloud()
                     continue
                 if error.code in (429, 500, 502, 503, 504) and attempt < attempts - 1:
-                    time.sleep(2 ** attempt * 3)
+                    # Quotas are per minute, so a 429 needs a much longer wait than a server blip.
+                    time.sleep(min(60, 10 * 2 ** attempt) if error.code == 429 else 2 ** attempt * 3)
                     continue
                 raise RuntimeError(f"HTTP {error.code} {status}") from None
             except urllib.error.URLError as error:

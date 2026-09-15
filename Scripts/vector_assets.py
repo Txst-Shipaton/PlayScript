@@ -42,6 +42,11 @@ SEGMENTER = "gemini-2.5-flash"
 # Imagen editing is not available on this project; Gemini's image model edits by instruction.
 INPAINTER = "gemini-2.5-flash-image"
 UPSCALE = 3  # Tracing an upscaled cutout gives smoother curves than the 360p source.
+MAX_COVERAGE = 0.35  # Above this, a close-up leaves too little real set to rebuild a background.
+# The image model has a tight per-minute quota; a few calls at a time avoids 429 failures.
+PAINT_SLOTS = threading.Semaphore(3)
+# Mean colour change (0-255) outside the removed area above which a background was redrawn, not repaired.
+FAITHFUL_LIMIT = 18
 
 
 def keyframe(video, ms, destination):
@@ -90,7 +95,9 @@ def segment(gemini, frame, characters):
             probability = Image.open(io.BytesIO(base64.b64decode(str(item["mask"]).split(",", 1)[-1]))).convert("L")
             mask.paste(probability.resize((right - left, bottom - top), Image.BILINEAR)
                        .point(lambda v: 255 if v > 127 else 0), (left, top))
-            mask_ok = True
+            inside = mask.crop((left, top, right, bottom)).histogram()[255] / ((right - left) * (bottom - top))
+            # A mask that nearly fills its box is the box, not a figure: fine for removal, useless for a cutout.
+            mask_ok = inside < 0.85
         except (KeyError, ValueError, TypeError, OSError):
             # Close-ups can come back with a box but no usable mask. The box still tells the
             # inpainter what to remove; it is just too rough to cut a character from.
@@ -99,7 +106,9 @@ def segment(gemini, frame, characters):
         label = str(item.get("label", "unknown")).strip().lower()
         figures.append({"label": label if label in known_ids else "unknown", "box": (left, top, right, bottom),
                         "mask": mask, "mask_ok": mask_ok, "area": mask.histogram()[255],
-                        "full_body": bool(item.get("full_body"))})
+                        "full_body": bool(item.get("full_body")),
+                        # Objective, unlike the model's own full_body flag: the figure is not cropped by the frame.
+                        "inside_frame": left > 2 and top > 2 and right < width - 2 and bottom < height - 2})
     return figures
 
 
@@ -130,28 +139,61 @@ def cutout(frame, figure):
     return colour
 
 
-def clean_plate(painter, frame, figures):
-    union = Image.new("L", frame.size, 0)
+def union_mask(size, figures):
+    union = Image.new("L", size, 0)
     for figure in figures:
         union.paste(255, mask=figure["mask"])
-    # Grow the mask past soft edges and motion blur, so no outline ghost survives.
-    union = union.filter(ImageFilter.MaxFilter(9))
-    names = ", ".join(sorted({f["label"] for f in figures}))
-    body = {"contents": [{"role": "user", "parts": [
-                {"inlineData": {"mimeType": "image/png", "data": base64.b64encode(png_bytes(frame)).decode()}},
-                {"inlineData": {"mimeType": "image/png", "data": base64.b64encode(png_bytes(union)).decode()}},
-                {"text": "The first image is a frame from an animated film. The second is a mask: white marks "
-                         f"the characters to remove ({names}). Remove every character in the white area and "
-                         "fill that space with the set that would be behind them -- walls, furniture, doorways, "
-                         "floor -- matching the lighting, perspective, colours and rendering style exactly. "
-                         "Change nothing outside the white area, add nothing new, keep the same framing. "
-                         "Return only the edited image."}]}],
-            "generationConfig": {"responseModalities": ["IMAGE"], "temperature": 0.2}}
-    parts = painter.generate(body).get("candidates", [{}])[0].get("content", {}).get("parts", [])
-    image = next((part["inlineData"]["data"] for part in parts if "inlineData" in part), None)
-    if not image:
-        raise RuntimeError("the image model returned no image (often a safety filter)")
-    return Image.open(io.BytesIO(base64.b64decode(image))).convert("RGB")
+    return union
+
+
+def magenta_left(image):
+    small = image.resize((160, 90))
+    return sum(1 for r, g, b in small.getdata() if r > 200 and g < 70 and b > 200) / (160 * 90)
+
+
+def outside_change(frame, plate, region):
+    """Mean colour change outside the removed area: low means the set was kept, high means redrawn."""
+    size = (160, 90)
+    before, after = frame.resize(size).getdata(), plate.resize(size).getdata()
+    kept = [value == 0 for value in region.resize(size).getdata()]
+    changes = [sum(abs(x - y) for x, y in zip(a, b)) / 3 for a, b, keep in zip(before, after, kept) if keep]
+    return round(sum(changes) / len(changes), 1) if changes else 0.0
+
+
+def clean_plate(painter, gemini, frame, figures, characters):
+    """Characters removed from the frame, verified by segmenting the result again."""
+    # Grow the region past soft edges and motion blur, so no outline ghost survives, then
+    # paint it solid magenta: an instruction editor cannot miss or reinterpret that.
+    region = union_mask(frame.size, figures).filter(ImageFilter.MaxFilter(9))
+    marked = frame.copy()
+    marked.paste((255, 0, 255), mask=region)
+    problem = "no attempt made"
+    for attempt in range(2):
+        body = {"contents": [{"role": "user", "parts": [
+                    {"inlineData": {"mimeType": "image/png", "data": base64.b64encode(png_bytes(marked)).decode()}},
+                    {"text": "This is a frame from an animated film with a solid magenta area. Replace the entire "
+                             "magenta area with what would be behind it in this set: continue the walls, wallpaper "
+                             "pattern, furniture, doorways and floor, matching the lighting, perspective, colours "
+                             "and rendering style exactly. There must be no people or characters anywhere in the "
+                             "result, including at the edges of the frame. Leave everything outside the magenta "
+                             "area unchanged and keep the same framing. Return only the edited image."}]}],
+                "generationConfig": {"responseModalities": ["IMAGE"], "temperature": 0.2 + attempt * 0.4}}
+        with PAINT_SLOTS:
+            response = painter.generate(body)
+        parts = response.get("candidates", [{}])[0].get("content", {}).get("parts", [])
+        data = next((part["inlineData"]["data"] for part in parts if "inlineData" in part), None)
+        if not data:
+            problem = "the image model returned no image (often a safety filter)"
+            continue
+        plate = Image.open(io.BytesIO(base64.b64decode(data))).convert("RGB")
+        if magenta_left(plate) > 0.005:
+            problem = "magenta was left unfilled"
+            continue
+        leftover = [f for f in segment(gemini, plate, characters) if f["area"] > 0.01 * plate.width * plate.height]
+        if not leftover:
+            return plate, outside_change(frame, plate, region)
+        problem = "characters still visible after removal: " + ", ".join(sorted({f["label"] for f in leftover}))
+    raise RuntimeError(problem)
 
 
 def composer(out, characters, backgrounds):
@@ -214,7 +256,7 @@ def main():
     print(f"{len(scenes)} scenes; segmentation {SEGMENTER}, inpainting {INPAINTER}, via {gemini.mode}", flush=True)
 
     lock = threading.Lock()
-    appearances, backgrounds, failures = [], [], {}
+    appearances, backgrounds, failures, skipped = [], [], {}, {}
 
     def scene_job(scene):
         scene_id = scene["scene_id"]
@@ -224,14 +266,21 @@ def main():
             figures = segment(gemini, frame, characters)
             with lock:
                 appearances.extend(dict(f, scene_id=scene_id, frame=frame) for f in figures if f["label"] != "unknown" and f["mask_ok"])
-            plate = clean_plate(painter, frame, figures) if figures else frame
+            coverage = union_mask(frame.size, figures).histogram()[255] / (frame.width * frame.height)
+            if coverage > MAX_COVERAGE:
+                skipped[scene_id] = f"close-up: characters cover {coverage:.0%} of the frame"
+                print(f"  skip   {scene_id}: {skipped[scene_id]}", flush=True)
+                return
+            plate, drift = clean_plate(painter, gemini, frame, figures, characters) if figures else (frame, 0.0)
             plate_path = out / "keyframes" / f"{scene_id}-clean.png"
             plate.save(plate_path)
             trace(plate_path, out / "backgrounds" / f"{scene_id}.svg", f"background_{scene_id}", args.detail, "50% 50%")
             with lock:
                 backgrounds.append({"scene_id": scene_id, "file": f"{scene_id}.svg",
-                                    "characters_removed": [f["label"] for f in figures]})
-            print(f"  scene  {scene_id}: {len(figures)} figure(s) removed", flush=True)
+                                    "characters_removed": [f["label"] for f in figures],
+                                    "outside_change": drift, "faithful": drift < FAITHFUL_LIMIT})
+            note = "" if drift < FAITHFUL_LIMIT else " -- REDRAWN, set does not match the video"
+            print(f"  scene  {scene_id}: {len(figures)} figure(s) removed, set change {drift}{note}", flush=True)
         except (RuntimeError, ValueError, OSError, KeyError, subprocess.CalledProcessError) as error:
             failures[scene_id] = str(error)
             print(f"  failed {scene_id}: {error}", flush=True)
@@ -239,12 +288,16 @@ def main():
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
         list(pool.map(scene_job, scenes))
 
-    # Each character's clearest appearance: whole figures first, then the largest.
+    # A character asset must be the whole figure, clear of the frame edges. A character never seen
+    # that way is reported, not shipped cropped or with background attached.
     best = {}
     for figure in appearances:
-        score = (figure["full_body"], figure["area"])
-        if figure["label"] not in best or score > (best[figure["label"]]["full_body"], best[figure["label"]]["area"]):
+        if not figure["inside_frame"]:
+            continue
+        current = best.get(figure["label"])
+        if current is None or figure["area"] > current["area"]:
             best[figure["label"]] = figure
+    unseen = sorted({f["label"] for f in appearances} - set(best))
     character_files = {}
     for label, figure in sorted(best.items()):
         png = out / "keyframes" / f"character-{label}.png"
@@ -256,9 +309,11 @@ def main():
 
     backgrounds.sort(key=lambda b: [int(n) if n.isdigit() else n for n in re.split(r"(\d+)", b["scene_id"])])
     (out / "manifest.json").write_text(json.dumps({"source_video": video.name, "characters": character_files,
-                                                   "backgrounds": backgrounds, "failed": failures}, indent=2) + "\n")
+                                                   "backgrounds": backgrounds, "skipped": skipped, "failed": failures,
+                                                   "characters_without_clean_appearance": unseen}, indent=2) + "\n")
     composer(out, [c["file"] for c in character_files.values()], [b["file"] for b in backgrounds])
-    print(f"{len(character_files)} characters, {len(backgrounds)}/{len(scenes)} backgrounds -> "
+    print(f"{len(character_files)} characters, {len(backgrounds)}/{len(scenes)} backgrounds "
+          f"({len(skipped)} close-ups skipped, {len(failures)} failed) -> "
           f"{(out / 'composer.html').relative_to(ROOT)}")
 
 
