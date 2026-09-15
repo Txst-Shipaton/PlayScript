@@ -12,3 +12,6 @@ artifacts/
 .env.*
 !.env.example
 __pycache__/
+
+# Source videos for analysis are third-party downloads; keep them out of git.
+*.mp4
