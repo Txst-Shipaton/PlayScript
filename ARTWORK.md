@@ -13,6 +13,17 @@ The Lottie files are authored as JSON by `Scripts/create_lottie.py`; none was
 downloaded or made in a design tool. No raster scene art or SVG is used: SwiftUI
 has no native SVG renderer, and the vector scenery is drawn directly instead.
 
+Each setting is composed in depth — receding planes, atmospheric perspective
+(distant things pale and lose contrast), a foreground framing element that is the
+darkest value in the frame, a vignette, and a lower falloff so nothing competes
+with the narrative. Each also carries one detail of its own: the orchard's haloed
+moon and the bars of moonlight through the rose trellis; the chamber's two
+disagreeing lights, cold moon against candle, with the vial's single green caustic
+on the table; the tomb's four bays receding to one vanishing point with a single
+patch of light on an empty slab; and the dawn road, whose sun sits exactly in the
+vanishing point so the cypress shadows reach the reader. The imagined ending
+returns to the same tomb with the far bay open to dawn and every light turned warm.
+
 The following notes remain a direction for future commissioned raster artwork.
 
 ## Delivery

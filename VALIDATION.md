@@ -59,6 +59,28 @@ Specific to this run, and all unverified:
   aspect-fill crop shifts it.
 - Confirm the accents read well: the letter on the “what if” page and the thought
   rings behind a decision, which must not compete with the choice text.
+
+After the scenery and animation refinement pass, these specific risks are open:
+
+- **Gradient placement.** The Lottie glows use gradient fills whose start/end points
+  are assumed to be in layer-local space under lottie-ios' Core Animation engine.
+  If that reading is wrong, glows will sit in the wrong place. Check the candle
+  first — it has the most gradient layers stacked on one point.
+- **Gradient cost.** `scene-road` carries roughly ten gradient layers, each becoming
+  a large `CAGradientLayer` (two where an alpha ramp is present). Structurally
+  correct, but the frame cost is unmeasured. This is the scene most likely to drop
+  frames.
+- **The flame/candle seam.** The drawn candle occupies 0.707–0.732 W from 0.409 H;
+  the Lottie flame is anchored to (0.7195, 0.409) and the Canvas embers now lift off
+  at 0.381. These three were authored separately and have never been seen together.
+  If the aspect-fill crop shifts the Lottie layer relative to the scenery, the flame
+  will float off its wick. Check this before anything else in the chamber.
+- **The tomb shaft** has a hard bottom cut at 0.575 H, hidden by aligning the floor
+  pool over it. Unverified that the join is invisible.
+- **Alpha levels throughout were judged blind** — tomb and road mist, the letter
+  glow, and the thought rings most likely need tuning once actually seen.
+- Trim-path write-on in the letter accent, and whether its 7px ink strokes read at
+  a 170pt host width.
 - Balance the three simultaneous audio sources (score, location ambience, narration).
   Ambience is set to 55% of the score volume, which is a guess.
 - Confirm the score and effect loops are seamless. ElevenLabs was asked for looping
