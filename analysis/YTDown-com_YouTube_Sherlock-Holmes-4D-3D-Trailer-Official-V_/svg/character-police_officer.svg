@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <style>
+    .officer-body, .officer-head, .officer-helmet, .officer-badge, .officer-gloves {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+
+    #police_officer_rig {
+      animation: idleBob 4s ease-in-out infinite;
+      transform-origin: 50% 80%;
+    }
+
+    @keyframes idleBob {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-4px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="#2C3E4C" />
+
+  <g id="police_officer_rig" transform="translate(0, -20)">
+    <!-- Rigging hierarchy starts here. Torso is the root of the body. -->
+    <g id="police_officer_torso" transform="translate(640, 450)" style="transform-origin: 50% 50%;">
+      <!-- Legs (drawn first to be behind torso) -->
+      <path class="officer-body" fill="#1A1A1A" d="M -40,130 L -40,250 L -10,250 L -10,130 Z" />
+      <path class="officer-body" fill="#1A1A1A" d="M 10,130 L 10,250 L 40,250 L 40,130 Z" />
+
+      <!-- Arms -->
+      <g id="police_officer_arm_left" style="transform-origin: 50% 10%;">
+        <path class="officer-body" fill="#1A1A1A" d="M -75,-100 L -75,50 L -55,50 L -55,-100 Z" />
+        <path class="officer-gloves" fill="#FFFFFF" d="M -77,50 C -82,50 -82,75 -77,75 L -53,75 C -48,75 -48,50 -53,50 Z" />
+      </g>
+      <g id="police_officer_arm_right" style="transform-origin: 50% 10%;">
+        <path class="officer-body" fill="#1A1A1A" d="M 55,-100 L 55,50 L 75,50 L 75,-100 Z" />
+        <path class="officer-gloves" fill="#FFFFFF" d="M 53,50 C 48,50 48,75 53,75 L 77,75 C 82,75 82,50 77,50 Z" />
+      </g>
+
+      <!-- Torso Body -->
+      <path class="officer-body" fill="#1A1A1A" d="M -60 -110 C -60 -120, 60 -120, 60 -110 L 60 130 L -60 130 Z" />
+      
+      <!-- Head Group -->
+      <g id="police_officer_head" transform="translate(0, -165)" style="transform-origin: 50% 90%;">
+        <!-- Face -->
+        <path class="officer-head" fill="#E0B996" d="M -30,0 C -30,-40 30,-40 30,0 C 30,15 -30,15 -30,0 Z" />
+        
+        <!-- Helmet -->
+        <path class="officer-helmet" fill="#1A1A1A" d="M 0,-95 C 10,-95 15,-85 15,-75 L 15,-45 L -15,-45 L -15,-75 C -15,-85 -10,-95 0,-95 Z" />
+        <path class="officer-helmet" fill="#1A1A1A" d="M -45,-5 C -50,-45 50,-45 45,-5 C 40,5 -40,5 -45,-5 Z" />
+        
+        <!-- Helmet Badge -->
+        <path class="officer-badge" fill="#C0C0C0" d="M -8,-38 C -10,-48 10,-48 8,-38 L 0, -20 Z" />
+      </g>
+    </g>
+  </g>
+</svg>

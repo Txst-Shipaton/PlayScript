@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS3" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C" />
+      <stop offset="100%" stop-color="#5A4B3C" />
+    </linearGradient>
+    <filter id="holmesShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <style>
+    .stroked {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      fill-rule: evenodd;
+    }
+
+    @keyframes cameraZoomOutS3 {
+      from { transform: scale(1.15); }
+      to { transform: scale(1); }
+    }
+
+    #cameraGroupS3 {
+      animation: cameraZoomOutS3 1s linear infinite;
+      transform-origin: center;
+    }
+    
+    @keyframes violinPlayS3 {
+      0% { transform: rotate(-0.5deg) translateX(-2px); }
+      50% { transform: rotate(0.5deg) translateX(2px); }
+      100% { transform: rotate(-0.5deg) translateX(-2px); }
+    }
+    
+    #character_sherlock_holmes_playing_violin {
+        animation: violinPlayS3 1s ease-in-out infinite;
+        transform-origin: 50% 95%;
+    }
+  </style>
+
+  <g id="cameraGroupS3">
+
+    <rect width="1280" height="720" fill="url(#bgGradientS3)" />
+
+    <g id="bg_window_dark_blue_curtain">
+        <rect x="50" y="50" width="300" height="550" fill="#1A2B3D" />
+        <path d="M 40 40 C 80 50, 80 650, 40 660 L 150 660 C 190 650, 190 50, 150 40 Z" fill="#4A5A6B" class="stroked" />
+        <path d="M 360 40 C 320 50, 320 650, 360 660 L 250 660 C 210 650, 210 50, 250 40 Z" fill="#4A5A6B" class="stroked" />
+    </g>
+
+    <g id="bg_bookshelf">
+        <rect x="950" y="0" width="330" height="720" fill="#5C3A2E" class="stroked" />
+        <path d="M950 150h330 M950 300h330 M950 450h330 M950 600h330" stroke="#4A2E1D" stroke-width="5" />
+    </g>
+
+    <g id="music_stand_with_sheet_music" transform="translate(550, 400)">
+        <path d="M 0 250 L 0 50 M -50 50 L 50 50" stroke="#1A1A1A" stroke-width="8" fill="none" />
+        <rect x="-70" y="-30" width="140" height="90" fill="#E0D0B0" class="stroked" transform="rotate(-15)" />
+    </g>
+    
+    <g id="character_sherlock_holmes_playing_violin" filter="url(#holmesShadow)">
+        <g id="sherlock_holmes_rig" transform="translate(680, 450)">
+            <g id="torso">
+                <path d="M -50 150 Q 0 160 50 150 L 50 180 L -50 180 Z" fill="#C0C0C0" class="stroked" />
+                <path d="M -60 -50 L -60 150 L 60 150 L 60 -50 Q 0 -30 -60 -50 Z" fill="#8B4513" class="stroked" />
+                <path d="M -40 -40 V 150 H 40 V -40 L 0 -10 Z" fill="#3B5B52" class="stroked" />
+                <path d="M -15 -40 L 0 -10 L 15 -40 Z" fill="#FFFFFF" />
+                <path d="M -5 -25 L 0 -15 L 5 -25 Z" fill="#1A1A1A" />
+            </g>
+            
+            <g id="arm_left">
+                <path d="M -55 -40 C -90 0, -130 100, -150 120 L -180 100 C -160 80, -120 -20, -65 -30 Z" fill="#8B4513" class="stroked" />
+            </g>
+
+            <g id="head" transform="translate(0, -110) rotate(15)" style="transform-origin: 0% 100%;">
+                <rect x="-15" y="50" width="30" height="30" fill="#E0B996" />
+                <path d="M 0 -60 C -40 -60, -50 20, 0 60 C 50 20, 40 -60, 0 -60 Z" fill="#E0B996" class="stroked" />
+                <path d="M 0 -60 C -40 -60, -45 -10, -20 -30 C 0 -70, 20 -70, 40 -30 C 45 -10, 40 -60, 0 -60 Z" fill="#4A2E1D" class="stroked" />
+                <path d="M -48 0 C -55 0, -55 20, -48 20" fill="none" class="stroked" stroke-width="1.5" />
+            </g>
+            
+            <g id="violin" transform="translate(-160, 50) rotate(-70)">
+                <path d="M 0 0 C 20 -10, 40 -40, 40 -80 L 30 -100 L -30 -100 L -40 -80 C -40 -40, -20 -10, 0 0 C 10 10, 10 70, 0 80 C -10 70, -10 10, 0 0 Z" fill="#8B4513" class="stroked" stroke-width="2.5" />
+                <rect x="-5" y="-150" width="10" height="50" fill="#6B3E26" class="stroked" />
+            </g>
+
+            <g id="arm_right">
+                <path d="M 55 -40 C 90 0, 100 80, 80 120 L 50 110 C 80 70, 80 -20, 65 -30 Z" fill="#8B4513" class="stroked" />
+                <line x1="-50" y1="80" x2="110" y2="80" stroke="#4A2E1D" stroke-width="3" />
+            </g>
+        </g>
+    </g>
+  </g>
+</svg>

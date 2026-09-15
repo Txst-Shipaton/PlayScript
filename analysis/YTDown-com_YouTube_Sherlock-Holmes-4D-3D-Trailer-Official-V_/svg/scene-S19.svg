@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <style>
+    .scene-element {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    #camera_group {
+      animation: camera_pan 1s linear infinite;
+    }
+    #character_watson_running {
+      animation: watson_run 1s linear infinite;
+      transform-origin: 50% 100%;
+    }
+    .dust {
+      fill: #FFFFFF;
+      opacity: 0.3;
+      animation: dust_drift 4s linear infinite;
+    }
+    .dust2 {
+      animation-delay: -1s;
+    }
+    .dust3 {
+      animation-delay: -2s;
+    }
+    .dust4 {
+      animation-delay: -3s;
+    }
+    @keyframes camera_pan {
+      0% { transform: translateX(0px) rotateY(0deg); }
+      100% { transform: translateX(-50px) rotateY(-10deg); }
+    }
+    @keyframes watson_run {
+      0% { transform: translateX(100px) scale(0.8); }
+      100% { transform: translateX(0px) scale(1); }
+    }
+    @keyframes dust_drift {
+      0% { transform: translate(0, 0); opacity: 0.3; }
+      25% { transform: translate(-5px, -10px); }
+      50% { transform: translate(5px, -20px); opacity: 0.15; }
+      75% { transform: translate(-5px, -30px); }
+      100% { transform: translate(0, -40px); opacity: 0; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="S19_bg_grad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#5A6C7D"/>
+      <stop offset="100%" stop-color="#2C3E4C"/>
+    </linearGradient>
+    <filter id="watson_shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="-15" dy="0" stdDeviation="5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <g id="camera_group">
+    <!-- Layer 1: Background -->
+    <g id="bg_long_dark_hallway_with_archways_and_figures">
+      <rect x="0" y="0" width="1280" height="720" fill="url(#S19_bg_grad)"/>
+      
+      <!-- Arched Ceiling -->
+      <path class="scene-element" fill="#2A3A4B" d="M0 0 H1280 V360 C1000 300, 280 300, 0 360 Z"/>
+
+      <!-- Floor -->
+      <path class="scene-element" fill="#4A5A6B" d="M0 720 L540 360 H740 L1280 720 H0 Z"/>
+      
+      <!-- Receding Arches/Columns -->
+      <g opacity="0.7">
+        <path class="scene-element" fill="#5C6C7D" d="M440 720 L590 360 H570 L390 720z" />
+        <path class="scene-element" fill="#5C6C7D" d="M840 720 L690 360 H710 L890 720z" />
+        <path class="scene-element" fill="#2A3A4B" d="M570 360 C590 320, 690 320, 710 360 H570 Z"/>
+      </g>
+      <g opacity="0.4">
+        <path class="scene-element" fill="#5C6C7D" d="M340 720 L615 360 H605 L300 720z" />
+        <path class="scene-element" fill="#5C6C7D" d="M940 720 L665 360 H675 L980 720z" />
+      </g>
+
+      <!-- Wall Paintings -->
+      <rect class="scene-element" x="150" y="400" width="100" height="150" fill="#8C6B5A" opacity="0.3"/>
+      <rect class="scene-element" x="1030" y="400" width="100" height="150" fill="#8C6B5A" opacity="0.3"/>
+
+      <!-- Floor Debris -->
+      <path class="scene-element" fill="#5C3A2E" d="M400 680 l20 5 l5 -10 l-15 -2 z" opacity="0.5"/>
+      <path class="scene-element" fill="#5C3A2E" d="M850 700 l30 3 l-5 -15 l-20 5 z" opacity="0.5"/>
+      <path class="scene-element" fill="#5C3A2E" d="M600 550 l15 2 l-2 -8 l-10 2 z" opacity="0.5"/>
+
+      <!-- Haze -->
+      <rect x="0" y="0" width="1280" height="720" fill="#D0D0D0" opacity="0.1"/>
+    </g>
+
+    <!-- Layer 2: Character -->
+    <g id="character_watson_running" transform="translate(700, 380)" filter="url(#watson_shadow)">
+      <g transform="translate(0, -120) scale(1.5)">
+        <!-- Trousers -->
+        <path class="scene-element" fill="#4A2E1D" d="M-15 45 l-10 50 h15 l-5 -50z M15 45 l10 50 h-15 l5 -50z" />
+        <!-- Jacket -->
+        <path class="scene-element" fill="#8B4513" d="M-30 0 a30 45 0 0 1 60 0 v50 h-60 Z" />
+        <!-- Shirt/Waistcoat -->
+        <path class="scene-element" fill="#3B5B52" d="M-15 0 v45 h30 v-45 a15 15 0 0 0 -30 0 Z" />
+        <path class="scene-element" fill="#FFFFFF" d="M-5 0 a5 5 0 0 1 10 0 v5 h-10 Z" />
+        <path class="scene-element" fill="#1A1A1A" d="M-3 5 l3 3 l-3 3z M3 5 l-3 3 l3 3z" />
+        <!-- Arms -->
+        <path class="scene-element" fill="#8B4513" d="M-30 5 l-20 15 v20 l20 -15z" />
+        <path class="scene-element" fill="#8B4513" d="M30 5 l20 -5 v20 l-20 5z" />
+        <!-- Head -->
+        <g transform="translate(0, -35)">
+          <path class="scene-element" fill="#E0B996" d="M0 -25 a22 25 0 0 1 0 50 a22 25 0 0 1 0 -50" />
+          <path class="scene-element" fill="#4A2E1D" d="M-15 10 q15 10 30 0 v-5 q-15 -5 -30 0z" />
+          <path class="scene-element" fill="#1A1A1A" d="M0 -30 a25 10 0 0 1 0 20 a25 10 0 0 1 0 -20 M-25 -20 h50 v-5 h-50z" />
+        </g>
+      </g>
+    </g>
+
+    <!-- Layer 3: FX -->
+    <g id="dust_particles">
+      <circle class="dust" cx="500" cy="700" r="2"/>
+      <circle class="dust dust2" cx="550" cy="680" r="1.5"/>
+      <circle class="dust dust3" cx="600" cy="710" r="2.5"/>
+      <circle class="dust dust4" cx="620" cy="690" r="1"/>
+      <circle class="dust" cx="680" cy="670" r="2"/>
+      <circle class="dust dust2" cx="710" cy="700" r="1.5"/>
+      <circle class="dust dust3" cx="750" cy="680" r="2.2"/>
+      <circle class="dust dust4" cx="800" cy="710" r="1.8"/>
+      <circle class="dust" cx="830" cy="695" r="2"/>
+      <circle class="dust dust2" cx="450" cy="690" r="1.5"/>
+    </g>
+  </g>
+</svg>

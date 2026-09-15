@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg-gradient-S38" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#1A2B3D"/>
+    </linearGradient>
+    <filter id="shadow-villain-S38">
+      <feDropShadow dx="0" dy="15" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes camera-pan-S38 {
+      from { transform: translateX(0px); }
+      to { transform: translateX(-150px); }
+    }
+    @keyframes villain-run-S38 {
+      from { transform: translateX(0px); }
+      to { transform: translateX(-100px); }
+    }
+    .camera-group {
+      animation: camera-pan-S38 1s linear infinite;
+    }
+    .villain-group {
+      animation: villain-run-S38 1s linear infinite;
+    }
+    .villain-arm {
+      animation: villain-run-S38 1s linear infinite reverse; /* Simple arm swing */
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="url(#bg-gradient-S38)"/>
+
+  <g class="camera-group">
+    <!-- Environment: bg_bank_of_england_building_street_lampposts_fog -->
+    <g id="environment-S38" stroke="#202020" stroke-width="1.8" fill-rule="evenodd">
+      <!-- Bank_of_England_building -->
+      <path fill="#5C6C7D" d="M900 150 h 600 v 450 h -600 v -20 l -50 -30 v -350 l 50 -30 v -20 z M950 200 v 350 h 100 v -350 z M1100 200 v 350 h 100 v -350 z M1250 200 v 350 h 100 v -350 z M920 155 h 560 v 20 h -560 z M920 580 h 560 v 20 h -560 z"/>
+      
+      <!-- street_lamps_background -->
+      <path fill="#8C8C8C" d="M200 400 v 200 h 10 v -200 z M205 390 a 15 15 0 1 1 0 20 a 15 15 0 1 1 0 -20 z M500 380 v 220 h 10 v -220 z M505 370 a 15 15 0 1 1 0 20 a 15 15 0 1 1 0 -20 z M800 350 v 250 h 10 v -250 z M805 340 a 15 15 0 1 1 0 20 a 15 15 0 1 1 0 -20 z"/>
+      
+      <!-- cobblestone_street -->
+      <path fill="#4A5A6B" d="M-50 600 h 1480 v 120 h -1480 z"/>
+      <path stroke="#202020" stroke-width="1" fill="none" d="M-50 620 l 1480 0 M-50 640 l 1480 0 M-50 660 l 1480 0 M-50 680 l 1480 0 M-50 700 l 1480 0"/>
+
+      <!-- fog_effect -->
+      <rect x="0" y="450" width="1480" height="180" fill="#3A4A5B" opacity="0.5"/>
+    </g>
+
+    <!-- Character: character_villain_running_floating -->
+    <g id="villain_body" class="villain-group" filter="url(#shadow-villain-S38)" transform="translate(700, 320) scale(1.2)">
+      <g stroke="#202020" stroke-width="1.5">
+        <!-- Legs -->
+        <path fill="#FF0000" d="M-5 130 l-15 40 l-20 -5 l15 -45z" />
+        <path fill="#FF0000" d="M5 130 l15 40 l20 -5 l-15 -45z" transform="rotate(-30 5 130)"/>
+        <path fill="#1A1A1A" d="M-35 165 l-10 10 h20 l-5 -10z" />
+        <path fill="#1A1A1A" d="M20 145 l-10 10 h20 l-5 -10z" transform="rotate(-30 5 130)"/>
+        
+        <!-- Torso & Coat -->
+        <path fill="#8B0000" d="M-20 50 C-20 50, 0 45, 20 50 L25 130 L-25 130 L-20 50z"/>
+        <path fill="#1A1A1A" d="M-15 55 L0 70 L15 55 L10 130 L-10 130z"/> <!-- Lapels -->
+        <path fill="#FFFFFF" d="M-5 65 L0 75 L5 65z"/> <!-- Shirt -->
+        <path fill="#FF0000" d="M-2 68 L0 78 L2 68z"/> <!-- Cravat -->
+
+        <!-- Arms -->
+        <g class="villain-arm">
+            <path fill="#8B0000" d="M-20 60 l-25 30 l5 10 l25 -35z"/>
+            <path fill="#FFFFFF" d="M-40 95 a5 5 0 1 1 0 10 a5 5 0 1 1 0-10z"/> <!-- Glove -->
+        </g>
+        <path fill="#8B0000" d="M20 60 l25 30 l-5 10 l-25 -35z"/>
+        <path fill="#FFFFFF" d="M40 95 a5 5 0 1 1 0 10 a5 5 0 1 1 0-10z"/> <!-- Glove -->
+
+        <!-- Head -->
+        <path fill="#E0B996" d="M0 0 C-20 0, -25 50, 0 50 C25 50, 20 0, 0 0z"/>
+        <path fill="#4A2E1D" d="M0 0 C-20 0, -25 20, 0 20 C25 20, 20 0, 0 0z"/> <!-- Hair -->
+        <path fill="#1A1A1A" d="M-10 35 h20 v2 h-20z"/> <!-- Moustache -->
+
+        <!-- Top Hat -->
+        <g fill="#1A1A1A">
+          <path d="M-25 -20 h50 v25 h-50z"/>
+          <path d="M-35 -20 h70 v5 h-70z"/>
+          <path fill="#DAA520" d="M-35 -20 h70 v3 h-70z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <style>
+    .stroke {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      fill: none;
+    }
+    #camera_group {
+      animation: camera_S30 1s linear infinite;
+      transform-origin: center;
+    }
+    #character_sherlock_holmes_running {
+      animation: sherlock_run_tower_of_london 1s linear infinite;
+      transform-origin: center;
+    }
+    #fog_effect {
+      animation: fog_drift 20s linear infinite alternate;
+    }
+
+    @keyframes camera_S30 {
+      from { transform: scale(1); }
+      to { transform: scale(1.15); } /* Simulates dolly in / translate_z */
+    }
+
+    @keyframes sherlock_run_tower_of_london {
+      from { transform: translateX(50px) scale(0.8); }
+      to { transform: translateX(0px) scale(1); }
+    }
+    
+    @keyframes fog_drift {
+      from { transform: translateX(-5%); }
+      to { transform: translateX(5%); }
+    }
+  </style>
+  <defs>
+    <radialGradient id="gradientS30" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#A0B0C0" />
+      <stop offset="100%" stop-color="#2C3E4C" />
+    </radialGradient>
+    <filter id="shadow_holmes" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="7" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <filter id="shadow_tower" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <g id="camera_group">
+    <!-- Layer 1: Background Sky -->
+    <rect id="bg_dark_sky" width="1280" height="720" fill="url(#gradientS30)" />
+
+    <!-- Layer 2: Tower of London -->
+    <g id="bg_tower_of_london" fill="#5C6C7D" filter="url(#shadow_tower)" class="stroke">
+      <path d="M 100 700 L 100 350 L 150 300 L 200 350 L 200 700 Z" />
+      <path d="M 200 700 L 200 400 L 220 380 L 220 350 L 280 350 L 280 380 L 300 400 L 300 700 Z" />
+      <path d="M 400 700 L 400 300 L 450 250 L 500 300 L 500 700 Z" />
+      <path d="M 300 450 L 350 420 L 400 450 L 400 700 L 300 700 Z" />
+      <rect x="150" y="450" width="50" height="250" />
+      <rect x="220" y="480" width="60" height="220" />
+      <rect x="450" y="450" width="50" height="250" />
+    </g>
+    
+    <!-- FX Layer: Fog -->
+    <g id="fog_effect" fill="#C0D0E0" opacity="0.25" style="mix-blend-mode: screen;">
+        <path d="M -100 550 C 200 530, 400 580, 700 560 S 1000 520, 1400 540 L 1400 720 L -100 720 Z" />
+        <path d="M -150 620 C 150 640, 500 600, 800 630 S 1100 670, 1500 650 L 1500 720 L -150 720 Z" />
+    </g>
+
+    <!-- Layer 3: Stone Wall Foreground -->
+    <g id="stone_wall_foreground">
+        <rect x="0" y="680" width="1280" height="40" fill="#4A5A6B" class="stroke"/>
+    </g>
+
+    <!-- Layer 4: Lamppost -->
+    <g id="street_lamp_right" transform="translate(1050 430)">
+      <rect x="-10" y="0" width="20" height="250" fill="#8C8C8C" class="stroke"/>
+      <path d="M 0 0 Q 30 -20 60 0" fill="none" stroke="#8C8C8C" stroke-width="10"/>
+      <circle cx="60" cy="10" r="15" fill="#F0E68C"/>
+    </g>
+
+    <!-- Layer 5: Sign -->
+    <g id="tower_sign" transform="translate(1000 500)">
+        <rect x="0" y="0" width="4" height="30" fill="#5C3A2E"/>
+        <rect x="-40" y="30" width="80" height="50" fill="#5C3A2E" class="stroke"/>
+    </g>
+
+    <!-- Layer 6: Sherlock Holmes -->
+    <g id="character_sherlock_holmes_running" transform="translate(750 480)" filter="url(#shadow_holmes)">
+      <g id="sherlock_holmes_torso">
+        <!-- Legs -->
+        <path d="M -5 100 L -15 160 L 5 170 L 15 105 Z" fill="#C0C0C0" class="stroke"/>
+        <path d="M 5 100 L 15 165 L 35 160 L 25 100 Z" fill="#C0C0C0" class="stroke"/>
+        <path d="M -15 160 L -25 195 L 10 200 L 5 170 Z" fill="#4A2E1D" class="stroke"/>
+        <path d="M 15 165 L 5 190 L 40 195 L 35 160 Z" fill="#4A2E1D" class="stroke"/>
+        
+        <!-- Torso & Arms -->
+        <path d="M -30 10 L 30 10 L 20 110 L -20 110 Z" fill="#8B4513" class="stroke"/>
+        <path d="M 20 20 L 30 15 L 70 60 L 60 70 Z" fill="#8B4513" class="stroke"/>
+        <path d="M -20 20 L -30 15 L -70 60 L -60 70 Z" fill="#8B4513" class="stroke"/>
+        <rect x="-15" y="15" width="30" height="20" fill="#FFFFFF"/>
+        <rect x="-10" y="15" width="20" height="15" fill="#3B5B52"/>
+
+        <!-- Head -->
+        <g id="head" transform="translate(0, 0)">
+          <path d="M -20 20 C -20 -20, 20 -20, 20 20 C 20 40, 0 45, -20 20 Z" fill="#E0B996" class="stroke"/>
+          <path d="M -25 -5 C -25 -25, 25 -25, 25 -5 L 35 -5 L 15 -35 L -15 -35 L -35 -5 Z" fill="#8B4513" class="stroke"/>
+          <path d="M -25 -5 L 25 -5" fill="none" stroke="#6B3E26" stroke-width="4"/>
+          <path d="M -15 -15 L 15 -15" fill="none" stroke="#6B3E26" stroke-width="4"/>
+          <path d="M -5 -25 L 5 -25" fill="none" stroke="#6B3E26" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

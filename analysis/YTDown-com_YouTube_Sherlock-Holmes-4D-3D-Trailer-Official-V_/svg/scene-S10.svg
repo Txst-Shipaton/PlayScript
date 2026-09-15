@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS10" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#8B2C3E"/>
+      <stop offset="100%" stop-color="#5A202F"/>
+    </linearGradient>
+    <pattern id="wallpaperPattern" patternUnits="userSpaceOnUse" width="100" height="100">
+      <path d="M50,0 C25,25 25,75 50,100 M0,50 C25,25 75,25 100,50 M0,50 C25,75 75,75 100,50" stroke="#6B423A" stroke-width="2" fill="none" opacity="0.2"/>
+    </pattern>
+    <filter id="shadowHand">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="shadowHat">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes placeAndRetract {
+      0% {
+        transform: translate(200px, -150px);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      50% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate(200px, -150px);
+        opacity: 0;
+      }
+    }
+    #hand_placing_hat_on_bust {
+      animation: placeAndRetract 1s infinite ease-in-out;
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="url(#bgGradientS10)"/>
+  <rect width="1280" height="720" fill="url(#wallpaperPattern)"/>
+
+  <g id="bust_on_table" transform="translate(600, 480)" stroke="#202020" stroke-width="1.8">
+    <path fill="#DCDCDC" d="M -80,120 H 80 V 90 C 80,70 60,70 60,50 H -60 C -60,70 -80,70 -80,90 Z"/>
+    <path fill="#DCDCDC" d="M -20,50 H 20 V 0 C 20,-20 40,-30 40,-60 Q 40,-120 0,-150 Q -40,-120 -40,-60 C -40,-30 -20,-20 -20,0 Z"/>
+  </g>
+
+  <g id="hand_placing_hat_on_bust" transform="translate(600, 330)">
+    <g>
+      <path id="hand" filter="url(#shadowHand)" fill="#E0B996" stroke="#202020" stroke-width="1.8" d="M 50,20 C 40,-20 80,-30 100,-20 L 120,50 C 130,70 100,90 80,80 L 60,60 Z M 100,-20 C 120,-50 150,-50 160,-30 L 170,40 C 180,60 150,80 130,70 L 120,50 Z"/>
+      <path id="hat" filter="url(#shadowHat)" fill="#1A1A1A" stroke="#202020" stroke-width="1.8" d="M -80,20 Q 0,50 80,20 L 70,10 Q 0,40 -70,10 Z M -50,12 Q 0,-20 50,12 V -20 C 50,-50 0,-60 0,-60 C 0,-60 -50,-50 -50,-20 Z"/>
+    </g>
+  </g>
+
+</svg>

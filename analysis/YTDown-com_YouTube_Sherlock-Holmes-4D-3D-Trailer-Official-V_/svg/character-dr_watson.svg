@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="5" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <style>
+    .character-outline {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    #dr_watson_rig {
+      animation: idle-bob 3s ease-in-out infinite;
+      filter: url(#drop-shadow);
+    }
+    @keyframes idle-bob {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="#2C3E4C"/>
+
+  <g id="dr_watson_rig" transform="translate(550, 180)">
+    <!-- Rigging hierarchy based on analyst data -->
+    <g id="dr_watson">
+      <!-- Legs -->
+      <g id="leg_right" transform-origin="50% 10%">
+        <path class="character-outline" fill="#4A2E1D" d="M 95,260 C 95,260 95,380 95,380 L 125,380 C 125,380 125,260 125,260 Z"/>
+        <path class="character-outline" fill="#1A1A1A" d="M 90,380 C 80,380 80,400 90,400 L 140,400 C 150,400 150,380 140,380 Z"/>
+      </g>
+      <g id="leg_left" transform-origin="50% 10%">
+        <path class="character-outline" fill="#4A2E1D" d="M 55,260 C 55,260 55,380 55,380 L 85,380 C 85,380 85,260 85,260 Z"/>
+        <path class="character-outline" fill="#1A1A1A" d="M 50,380 C 40,380 40,400 50,400 L 100,400 C 110,400 110,380 100,380 Z"/>
+      </g>
+      
+      <!-- Torso -->
+      <g id="torso">
+        <!-- Jacket -->
+        <path class="character-outline" fill="#8B4513" d="M 40,120 C 30,130 25,270 25,270 L 155,270 C 155,270 150,130 140,120 L 110,120 L 90,150 L 70,120 Z"/>
+        <!-- Waistcoat -->
+        <path class="character-outline" fill="#3B5B52" d="M 70,120 L 90,150 L 110,120 L 110,265 L 70,265 Z"/>
+        <!-- Shirt -->
+        <path class="character-outline" fill="#FFFFFF" d="M 80,110 L 90,125 L 100,110 Z"/>
+      </g>
+
+      <!-- Arms -->
+      <g id="arm_right" transform-origin="50% 10%">
+        <path class="character-outline" fill="#8B4513" d="M 135,130 C 150,135 160,250 155,260 L 130,255 C 125,245 130,135 135,130 Z"/>
+      </g>
+      <g id="arm_left" transform-origin="50% 10%">
+        <path class="character-outline" fill="#8B4513" d="M 45,130 C 30,135 20,250 25,260 L 50,255 C 55,245 50,135 45,130 Z"/>
+      </g>
+
+      <!-- Head -->
+      <g id="head" transform-origin="50% 90%">
+        <!-- Head Shape -->
+        <path class="character-outline" fill="#E0B996" d="M 60,50 C 40,70 40,110 60,130 L 120,130 C 140,110 140,70 120,50 Z"/>
+        <!-- Hair -->
+        <path class="character-outline" fill="#4A2E1D" d="M 58,60 C 50,70 50,90 58,95 L 62,95 C 62,80 62,70 58,60 Z"/>
+        <path class="character-outline" fill="#4A2E1D" d="M 122,60 C 130,70 130,90 122,95 L 118,95 C 118,80 118,70 122,60 Z"/>
+        <!-- Moustache -->
+        <path class="character-outline" fill="#4A2E1D" d="M 70,100 C 60,105 65,120 80,115 L 90,110 L 100,115 C 115,120 120,105 110,100 C 100,95 80,95 70,100 Z"/>
+        <!-- Eyes -->
+        <circle fill="#1A1A1A" cx="78" cy="90" r="3"/>
+        <circle fill="#1A1A1A" cx="102" cy="90" r="3"/>
+        <!-- Bowtie -->
+        <path class="character-outline" fill="#1A1A1A" d="M 80,115 L 75,125 L 85,125 Z M 100,115 L 105,125 L 95,125 Z"/>
+        <!-- Bowler Hat -->
+        <path class="character-outline" fill="#1A1A1A" d="M 30,65 C 30,50 50,30 90,30 C 130,30 150,50 150,65 L 30,65 Z"/>
+        <path class="character-outline" fill="#4A2E1D" d="M 35,55 C 35,52 145,52 145,55 L 145,65 L 35,65 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS41" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1A2B3D"/>
+      <stop offset="100%" stop-color="#0A1B2D"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes creditsFadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      10% { opacity: 1; transform: translateY(0px); }
+      100% { opacity: 1; transform: translateY(0px); }
+    }
+
+    #logo_red_star, #credits_text_block {
+      animation: creditsFadeIn 6s infinite;
+    }
+
+    .sans-serif { font-family: sans-serif; }
+    .white-text { fill: #FFFFFF; text-anchor: middle; }
+  </style>
+
+  <!-- Layer: bg_blurred_city_background -->
+  <rect width="1280" height="720" fill="url(#bgGradientS41)" />
+  <g id="bg_blurred_city_background">
+    <path d="M-50,720 L-50,650 C100,640 250,680 400,660 C550,640 650,690 800,680 C950,670 1100,620 1330,640 L1330,720 Z" fill="#2A3A4B" opacity="0.4" />
+    <path d="M-50,720 L-50,680 C150,690 300,650 450,670 C600,690 700,640 850,650 C1000,660 1150,700 1330,680 L1330,720 Z" fill="#2A3A4B" opacity="0.6" />
+  </g>
+
+  <!-- Layer: logo_red_star -->
+  <g id="logo_red_star">
+    <text x="640" y="180" class="sans-serif white-text" font-weight="800" font-size="21.6px">RED</text>
+    <text x="640" y="216" class="sans-serif white-text" font-weight="800" font-size="21.6px">STAR</text>
+    <path d="M768,183.5 l8.5,17.2 l19,2.7 l-13.7,13.4 l3.2,18.9 l-17,-9 l-17,9 l3.2,-18.9 l-13.7,-13.4 l19,-2.7 z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="butt"/>
+  </g>
+
+  <!-- Layers: text_website, text_distributed_by_nwave_pictures, etc. -->
+  <g id="credits_text_block">
+    <text x="640" y="266.4" class="sans-serif white-text" font-weight="400" font-size="14.4px">WWW.REDSTAR3D.COM</text>
+    
+    <text x="640" y="345.6" class="sans-serif white-text" font-weight="400" font-size="12.96px">DISTRIBUTED BY</text>
+    <text x="640" y="374.4" class="sans-serif white-text" font-weight="700" font-size="18px">NWAVE PICTURES</text>
+    
+    <text x="640" y="432" class="sans-serif white-text" font-weight="400" font-size="10.8px">INTERNATIONAL SALES: GOEDELE@NWAVE.COM</text>
+    <text x="640" y="453.6" class="sans-serif white-text" font-weight="400" font-size="10.8px">NORTH AND SOUTH AMERICA: JBAKER@NWAVE.COM</text>
+    
+    <text x="640" y="540" class="sans-serif white-text" font-weight="400" font-size="10.8px">COPYRIGHT © 2013 RED STAR 3D ALL RIGHTS RESERVED</text>
+  </g>
+
+</svg>

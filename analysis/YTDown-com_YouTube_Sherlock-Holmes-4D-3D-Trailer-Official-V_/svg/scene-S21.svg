@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg_gradient_S21" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#1A2B3D"/>
+    </linearGradient>
+    <filter id="shadow_S21_villain">
+      <feDropShadow dx="0" dy="5" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="fog_blur" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+    </filter>
+  </defs>
+  <style>
+    .scene-element {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+
+    @keyframes villain_gesture_S21 {
+      0% { transform: translateY(0px) rotateY(0deg); }
+      50% { transform: translateY(-10px) rotateY(5deg); }
+      100% { transform: translateY(0px) rotateY(0deg); }
+    }
+
+    #character_villain_in_top_hat {
+      animation: villain_gesture_S21 2s infinite ease-in-out;
+      transform-origin: 50% 80%;
+    }
+    
+    @keyframes fog_drift {
+        0% { transform: translateX(-50px); }
+        100% { transform: translateX(50px); }
+    }
+
+    .fog-layer {
+        animation: fog_drift 20s linear infinite alternate;
+    }
+
+  </style>
+
+  <g id="scene_S21">
+    <!-- Background -->
+    <rect width="1280" height="720" fill="url(#bg_gradient_S21)"/>
+
+    <!-- Environment: bg_dark_ornate_interior_columns -->
+    <g id="bg_dark_ornate_interior_columns" class="scene-element" fill="#3A4A5B" stroke="#2A3A4B">
+      <!-- Far background columns -->
+      <path d="M 300,720 V 250 Q 300,240 310,240 H 390 Q 400,240 400,250 V 720 Z" opacity="0.4"/>
+      <path d="M 900,720 V 250 Q 900,240 910,240 H 990 Q 1000,240 1000,250 V 720 Z" opacity="0.4"/>
+      <!-- Mid-ground columns -->
+      <path d="M 100,720 V 150 Q 100,130 120,130 H 220 Q 240,130 240,150 V 720 Z" fill="#4A5A6B" opacity="0.8"/>
+      <path d="M 1060,720 V 150 Q 1060,130 1080,130 H 1180 Q 1200,130 1200,150 V 720 Z" fill="#4A5A6B" opacity="0.8"/>
+    </g>
+
+    <!-- FX: Fog -->
+    <g class="fog-layer" filter="url(#fog_blur)" opacity="0.25">
+        <ellipse cx="640" cy="600" rx="800" ry="200" fill="#C0D0E0"/>
+    </g>
+
+    <!-- Character: villain_in_top_hat -->
+    <g id="character_villain_in_top_hat" filter="url(#shadow_S21_villain)">
+      <g transform="translate(640, 420) scale(1.5)">
+        <!-- Torso and Coat -->
+        <path class="scene-element" fill="#8B0000" d="M -60,0 C -60,-20 -50,-80 0,-80 C 50,-80 60,-20 60,0 L 40,120 L -40,120 Z"/>
+        <!-- Lapels -->
+        <path class="scene-element" fill="#1A1A1A" d="M -50,-70 L -15,-10 L 0,-20 L -35,-75 Z"/>
+        <path class="scene-element" fill="#1A1A1A" d="M 50,-70 L 15,-10 L 0,-20 L 35,-75 Z"/>
+        <!-- Shirt and Cravat -->
+        <path class="scene-element" fill="#FFFFFF" d="M -15,-10 L 15,-10 L 15,10 L -15,10 Z"/>
+        <path class="scene-element" fill="#FF0000" d="M -8,-5 C 0,5 8,-5 0,-15 C -8,-5 0,5 8,-5 Z"/>
+        <!-- Head -->
+        <g transform="translate(0, -115)">
+          <path class="scene-element" fill="#E0B996" d="M 0, -45 C -25,-45 -35,-20 -35,0 C -35,25 -25,35 0,35 C 25,35 35,25 35,0 C 35,-20 25,-45 0,-45 Z"/>
+          <path class="scene-element" fill="#4A2E1D" d="M 0,-45 C -20,-45 -30,-35 -30,-25 L 30,-25 C 30,-35 20,-45 0,-45 Z"/>
+          <!-- Top Hat -->
+          <g transform="translate(0, -40)">
+            <path class="scene-element" fill="#1A1A1A" d="M -45,0 h 90 v -5 h -90 z"/>
+            <path class="scene-element" fill="#1A1A1A" d="M -30,-50 h 60 v 50 h -60 z"/>
+            <path class="scene-element" fill="#DAA520" d="M -35,-5 h 70 v -5 h -70 z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

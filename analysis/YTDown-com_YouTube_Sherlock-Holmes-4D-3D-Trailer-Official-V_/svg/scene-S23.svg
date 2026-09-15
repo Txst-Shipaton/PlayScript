@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS23" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#1A2B3D"/>
+    </linearGradient>
+    <filter id="shadow_holmes_face_S23">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <style>
+    .stroke { stroke: #202020; stroke-width: 1.8; stroke-linecap: butt; stroke-linejoin: miter; fill-rule: evenodd; }
+    #bg_dark_ornate_interior { fill: url(#bgGradientS23); }
+    .fog {
+        fill: #C0D0E0;
+        animation: fogDrift 1s linear infinite;
+    }
+    @keyframes fogDrift {
+      0% { opacity: 0; transform: translateX(-30px); }
+      50% { opacity: 0.25; transform: translateX(0px); }
+      100% { opacity: 0; transform: translateX(30px); }
+    }
+    .fog-delay { animation-delay: -0.5s; }
+  </style>
+
+  <g id="S23_scene">
+    <g id="bg_dark_ornate_interior">
+      <rect width="1280" height="720"/>
+      <path fill="#1A2B3D" opacity="0.6" d="M 100 0 v 720 h 150 v -720 h -150 z M 1030 0 v 720 h 150 v -720 h -150 z" />
+    </g>
+    
+    <g id="fog_effect">
+      <path class="fog" d="M -100,550 C 100,500 300,600 500,550 S 700,500 900,550 S 1100,600 1380,550 V 720 H -100 Z"/>
+      <path class="fog fog-delay" d="M -100,620 C 200,670 400,570 600,620 S 800,670 1000,620 S 1200,570 1380,620 V 720 H -100 Z"/>
+    </g>
+
+    <g id="character_villain_close_up" transform="translate(820 250)">
+      <g class="stroke">
+        <!-- Body -->
+        <path fill="#8B0000" d="M -90 95 l -15 200 h 210 l -15 -200 l -30 -10 z" />
+        <path fill="#1A1A1A" d="M -90 95 l 30 10 h 120 l 30 -10 v -15 h -180 z" />
+        <path fill="#FF0000" d="M -15 90 l 30 0 l -5 30 l -20 0 z" />
+        <!-- Head -->
+        <path fill="#E0B996" d="M 0 -110 a 60 115 0 0 1 0 230 a 60 115 0 0 1 0 -230 z" />
+        <!-- Features -->
+        <path fill="#1A1A1A" d="M -25 75 q 25 -10 50 0 l -5 10 q -20 -5 -40 0 z m 12 20 l 25 0 l -5 20 h -15 z" />
+        <!-- Hat -->
+        <path fill="#1A1A1A" d="M -95 15 h 190 v -15 h -190 z m 5 -15 l 15 -100 h 150 l 15 100 z" />
+      </g>
+    </g>
+
+    <g id="character_sherlock_holmes_close_up" transform="translate(460 260)">
+      <g class="stroke">
+        <!-- Body -->
+        <path fill="#8B4513" d="M -110 90 l -15 220 h 250 l -15 -220 l -40 -10 z" />
+        <path fill="#FFFFFF" d="M -30 85 l -30 20 l 60 15 l 60 -15 l -30 -20 z" />
+        <path fill="#1A1A1A" d="M -15 105 l 30 0 l 5 30 l -40 0 z" />
+        <!-- Head -->
+        <g filter="url(#shadow_holmes_face_S23)">
+          <path fill="#E0B996" d="M 0 -100 a 70 110 0 0 1 0 220 a 70 110 0 0 1 0 -220 z" />
+          <path fill="#4A2E1D" d="M -70 10 c 0 -80 140 -80 140 0 c -20 -20 -100 -20 -140 0 z" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

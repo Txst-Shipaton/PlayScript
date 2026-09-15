@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <style>
+    .scene-S22 {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    #camera-group-S22 {
+      animation: camera-pan-S22 2s linear infinite;
+    }
+    @keyframes camera-pan-S22 {
+      0% { transform: translateX(0px); }
+      100% { transform: translateX(-200px); }
+    }
+  </style>
+  <defs>
+    <linearGradient id="gradient-S22-bg" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#5A6C7D"/>
+    </linearGradient>
+    <filter id="shadow-villain-S22">
+      <feDropShadow dx="0" dy="5" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadow-holmes-S22">
+      <feDropShadow dx="0" dy="4" stdDeviation="2" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g id="scene-S22" class="scene-S22">
+    <rect x="0" y="0" width="1280" height="720" fill="url(#gradient-S22-bg)" stroke="none"/>
+    <g id="camera-group-S22">
+      <!-- Layer 1: bg_dark_ornate_interior_columns -->
+      <g id="bg_dark_ornate_interior_columns">
+        <path fill="#1A2B3D" d="M0 0 h 1480 v 720 H 0 Z"/>
+        <path fill="#2C3E4C" d="M0 580 h 1480 v 140 H 0 Z"/>
+        <path fill="#3A4A5B" d="M100 150 h 200 v 430 h -200 Z M350 150 h 200 v 430 h -200 Z M600 150 h 200 v 430 h -200 Z M850 150 h 200 v 430 h -200 Z M1100 150 h 200 v 430 h -200 Z M1350 150 h 200 v 430 h -200 Z"/>
+        <path fill="#2C3E4C" d="M100 120 a 100 30 0 0 1 200 0 v 30 h -200 Z M350 120 a 100 30 0 0 1 200 0 v 30 h -200 Z M600 120 a 100 30 0 0 1 200 0 v 30 h -200 Z M850 120 a 100 30 0 0 1 200 0 v 30 h -200 Z M1100 120 a 100 30 0 0 1 200 0 v 30 h -200 Z M1350 120 a 100 30 0 0 1 200 0 v 30 h -200 Z"/>
+      </g>
+
+      <!-- Layer 2: character_villain (Moriarty) -->
+      <g id="character_villain" filter="url(#shadow-villain-S22)" transform="translate(550 240) scale(1.1)">
+        <path fill="#1A1A1A" d="M-30,50 L30,50 L35,20 L45,10 L-45,10 L-35,20 Z"/>
+        <path fill="#1A1A1A" d="M-25,10 L25,10 L25,-30 L-25,-30 Z"/>
+        <path fill="#DAA520" d="M-27,8 L27,8 L27,1 L-27,1 Z"/>
+        <g id="moriarty_body">
+          <path fill="#8B0000" d="M-35,55 L35,55 L25,220 L-25,220 Z"/>
+          <path fill="#1A1A1A" d="M-35,55 L-15,55 L-25,120 Z M35,55 L15,55 L25,120 Z"/>
+          <path fill="#FFFFFF" d="M-10,55 L10,55 L10,75 L-10,75 Z"/>
+          <path fill="#FF0000" d="M-5,70 L5,70 L0,85 Z"/>
+          <path fill="#1A1A1A" d="M-20,220 L-10,320 L10,320 L20,220 Z"/>
+        </g>
+        <g id="moriarty_head">
+          <path fill="#E0B996" d="M0,10 m -20,0 a 20,25 0 1,0 40,0 a 20,25 0 1,0 -40,0"/>
+          <path fill="#4A2E1D" d="M-18,-10 Q 0,-20 18,-10 Q 15,0 0,5 Q -15,0 -18,-10 Z"/>
+        </g>
+      </g>
+
+      <!-- Layer 3: character_sherlock_holmes -->
+      <g id="sherlock_holmes" filter="url(#shadow-holmes-S22)" transform="translate(800 260) scale(1.2)">
+        <g id="holmes_torso">
+          <path fill="#8B4513" d="M-40,40 L40,40 L30,200 L-30,200 Z"/>
+          <path fill="#6B3E26" d="M-40,40 L-30,40 L-30,200 L-40,200 Z M-20,40 L-10,40 L-10,200 L-20,200 Z M0,40 L10,40 L10,200 L0,200 Z M20,40 L30,40 L30,200 L20,200 Z"/>
+          <path fill="#3B5B52" d="M-20,45 L20,45 L20,100 L-20,100 Z"/>
+          <path fill="#FFFFFF" d="M-10,45 L10,45 L10,60 L-10,60 Z"/>
+          <path fill="#1A1A1A" d="M-5,55 L5,55 L0,65 Z"/>
+          <path fill="#C0C0C0" d="M-25,200 L-15,300 L15,300 L25,200 Z"/>
+        </g>
+        <g id="holmes_head" transform="translate(0, 20)">
+          <path fill="#E0B996" d="M0,0 m -22,0 a 22,28 0 1,0 44,0 a 22,28 0 1,0 -44,0"/>
+          <path fill="#4A2E1D" d="M-20,-25 Q 0,-35 20,-25 L 22,-10 Q 0,-5 -22,-10 Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

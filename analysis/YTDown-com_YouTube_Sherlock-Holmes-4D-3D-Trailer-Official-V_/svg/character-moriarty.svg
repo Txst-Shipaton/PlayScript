@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <style>
+    #moriarty-wrapper {
+      perspective: 1000px;
+    }
+    #moriarty {
+      animation: moriarty-idle 6s ease-in-out infinite;
+      transform-origin: center 95%;
+    }
+    @keyframes moriarty-idle {
+      0% { transform: translateY(0px) rotateY(0deg); }
+      50% { transform: translateY(-10px) rotateY(7deg); }
+      100% { transform: translateY(0px) rotateY(0deg); }
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="#2C3E4C"/>
+
+  <g id="moriarty-wrapper">
+    <g id="moriarty" transform="translate(640, 80)">
+      
+      <!-- Right Arm (behind) -->
+      <g id="arm_right">
+        <path d="M 32 20 L 42 320 L 62 310 L 52 15 Z" fill="#8B0000"/>
+        <path d="M 42 320 C 32 325 37 350 52 350 C 67 350 72 325 62 320 Z" fill="#FFFFFF"/>
+      </g>
+      
+      <!-- Legs -->
+      <g id="legs">
+        <path d="M -30 250 L -40 550 L 0 550 L -10 250 Z" fill="#FF0000"/>
+        <path d="M 30 250 L 40 550 L 0 550 L 10 250 Z" fill="#FF0000"/>
+        <path d="M -45 550 C -75 550 -75 570 -45 570 L 45 570 C 75 570 75 550 45 550 Z" fill="#1A1A1A"/>
+      </g>
+
+      <!-- Torso -->
+      <g id="torso">
+        <path d="M-30 0 L -30 250 L 30 250 L 30 0 Z" fill="#8B0000"/>
+        <path d="M -30 10 L -30 100 L -50 80 L -50 30 Z" fill="#1A1A1A"/>
+        <path d="M 30 10 L 30 100 L 50 80 L 50 30 Z" fill="#1A1A1A"/>
+        <polygon points="-15,0 15,0 15,30 -15,30" fill="#FFFFFF"/>
+        <path d="M -10 10 C -20 20 20 20 10 10 L 5 35 L -5 35 Z" fill="#FF0000"/>
+      </g>
+
+      <!-- Left Arm (front) -->
+      <g id="arm_left">
+        <path d="M -32 20 L -42 320 L -62 310 L -52 15 Z" fill="#8B0000"/>
+        <path d="M -42 320 C -32 325 -37 350 -52 350 C -67 350 -72 325 -62 320 Z" fill="#FFFFFF"/>
+      </g>
+
+      <!-- Head -->
+      <g id="head">
+        <rect x="-10" y="-15" width="20" height="20" fill="#E0B996"/>
+        <path d="M 0 -85 L 35 -50 L 25 10 L 0 30 L -25 10 L -35 -50 Z" fill="#E0B996"/>
+        <path d="M -20 -35 Q 0 -25 20 -35 Q 0 -30 -20 -35" fill="#1A1A1A"/>
+        <path d="M -5 -20 L 5 -20 L 0 5 Z" fill="#1A1A1A"/>
+        <path d="M 0 -85 C -40 -95 40 -95 0 -85 L 40 -70 L -40 -70 Z" fill="#4A2E1D"/>
+        <path d="M -20 -60 L -12 -61 M 20 -60 L 12 -61" stroke="#5F8B5A" stroke-width="2"/>
+        <path d="M -55 -80 L 55 -80 C 55 -70 40 -65 0 -65 C -40 -65 -55 -70 -55 -80 Z" fill="#1A1A1A"/>
+        <path d="M -40 -180 L 40 -180 L 40 -80 L -40 -80 Z" fill="#1A1A1A"/>
+        <rect x="-40" y="-105" width="80" height="15" fill="#DAA520"/>
+      </g>
+    </g>
+  </g>
+</svg>

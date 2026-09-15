@@ -15,7 +15,6 @@ import html
 import json
 import re
 import sys
-import threading
 import time
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -106,7 +105,8 @@ def main():
     parser.add_argument("--master", type=Path)
     parser.add_argument("--model")
     parser.add_argument("--location", default="global")
-    parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--workers", type=int, default=24)
+    parser.add_argument("--force", action="store_true", help="regenerate SVGs that already exist")
     parser.add_argument("--only", help="comma-separated scene or entity ids")
     args = parser.parse_args()
     env = environment()
@@ -135,12 +135,15 @@ def main():
     if args.only:
         wanted = set(args.only.split(","))
         jobs = [job for job in jobs if job[1] in wanted]
+    if not args.force:
+        # Resumable: a rerun only generates what is missing.
+        existing = [job for job in jobs if (out / f"{job[0]}.svg").exists()]
+        jobs = [job for job in jobs if job not in existing]
+        if existing:
+            print(f"Skipping {len(existing)} SVGs already on disk (--force to redo).", flush=True)
     system = DIRECTOR + json.dumps(master, separators=(",", ":"), ensure_ascii=False)
     print(f"{len(jobs)} SVG agents via {vertex.mode}, model {model}; "
           f"each given the full {len(system) // 1024} KB master state.", flush=True)
-
-    lock = threading.Lock()
-    manifest = []
 
     def job(entry):
         name, subject, assignment = entry
@@ -158,9 +161,6 @@ def main():
                 problem = problems_with(svg)
             if not problem:
                 (out / f"{name}.svg").write_text(svg + "\n")
-                with lock:
-                    manifest.append({"file": f"{name}.svg", "subject": subject, "bytes": len(svg),
-                                     "attempts": attempt + 1})
                 print(f"  done   {name} ({len(svg) // 1024} KB, {time.time() - started:.0f}s)", flush=True)
                 return True
             prompt = f"{assignment}\n\nYour previous answer was rejected because {problem}. Fix that."
@@ -170,7 +170,9 @@ def main():
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
         results = list(pool.map(job, jobs))
 
-    manifest.sort(key=lambda item: item["file"])
+    # The gallery covers every SVG on disk, including ones from earlier runs.
+    manifest = [{"file": path.name, "subject": path.stem.split("-", 1)[-1], "bytes": path.stat().st_size}
+                for path in sorted(out.glob("*.svg"))]
     (out / "manifest.json").write_text(json.dumps({"model": model, "source": master_path.name,
                                                    "svgs": manifest}, indent=2) + "\n")
     cards = "\n".join(

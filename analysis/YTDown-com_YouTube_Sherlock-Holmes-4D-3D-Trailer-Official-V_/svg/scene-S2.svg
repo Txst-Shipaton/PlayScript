@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="grad-S2" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#5A6C7D" />
+      <stop offset="100%" stop-color="#1A2B3D" />
+    </linearGradient>
+    <filter id="shadow-knocker">
+      <feDropShadow dx="3" dy="5" stdDeviation="3" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+    <filter id="shadow-door-frame">
+      <feDropShadow dx="2" dy="4" stdDeviation="2" flood-color="#000000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <style>
+    path, rect, text {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    @keyframes doorOpen-S2 {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(-90deg); }
+    }
+    #door_221b {
+      animation: doorOpen-S2 1s linear infinite;
+      transform-origin: 530px 470px;
+    }
+  </style>
+
+  <g id="scene-S2">
+    <rect id="bg_stone_wall" width="1280" height="720" fill="url(#grad-S2)" stroke="none" />
+
+    <g id="building_facade" fill="#4A5A6B" stroke="#3A4A5B">
+      <rect x="0" y="200" width="1280" height="520" />
+      <!-- Stone lines -->
+      <path d="M 0 250 H 1280 M 0 300 H 1280 M 0 350 H 1280 M 0 400 H 1280 M 0 450 H 1280 M 0 500 H 1280 M 0 550 H 1280 M 0 600 H 1280 M 0 650 H 1280 M 0 700 H 1280" stroke-width="0.5" />
+      <path d="M 100 200 V 720 M 200 200 V 720 M 300 200 V 720 M 400 200 V 720 M 500 200 V 720 M 600 200 V 720 M 700 200 V 720 M 800 200 V 720 M 900 200 V 720 M 1000 200 V 720 M 1100 200 V 720 M 1200 200 V 720" stroke-width="0.5" />
+    </g>
+    
+    <g style="perspective: 1000px;">
+      <!-- Door Frame (static) -->
+      <path d="M 520 625 h 240 v -240 a 120 120 0 0 0 -240 0 z" fill="#2B3545" filter="url(#shadow-door-frame)" stroke="none"/>
+      <path d="M 530 620 v -240 a 110 110 0 0 1 220 0 v 240" fill="none" stroke="#1A2B3D" stroke-width="4"/>
+
+      <!-- Animated Door Group -->
+      <g id="door_221b">
+        <path d="M 530 620 v -240 a 110 110 0 0 1 220 0 v 240 z" fill="#2B3545" />
+        <g id="door_knocker" filter="url(#shadow-knocker)">
+          <path d="M 690 480 a 15 15 0 1 1 -30 0 a 15 15 0 1 1 30 0" fill="#C8A850" />
+          <rect x="670" y="460" width="10" height="20" rx="5" fill="#C8A850" />
+        </g>
+        <g id="door_number_221b">
+          <rect x="610" y="300" width="60" height="30" fill="#8C8C8C" />
+          <text x="640" y="322" font-family="serif" font-weight="500" font-size="21.6" fill="#E0E0E0" text-anchor="middle" stroke="none">221b</text>
+        </g>
+      </g>
+    </g>
+
+    <g id="foreground_railings" fill="#3A4A5B" stroke="#202020">
+      <path id="railing_left" d="M 0 720 C 100 600, 300 550, 450 600 V 720 Z" />
+      <path id="railing_right" d="M 1280 720 C 1180 600, 980 550, 830 600 V 720 Z" />
+    </g>
+  </g>
+</svg>

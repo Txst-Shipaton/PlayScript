@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="grad_S11" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#D4A76B" />
+      <stop offset="100%" stop-color="#4A3B2C" />
+    </radialGradient>
+    <filter id="shadow_S11">
+      <feDropShadow dx="5" dy="8" stdDeviation="5" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <path id="fog_path" d="M -100 200 Q 100 150, 300 220 T 700 200 T 1100 250 T 1500 200 V 800 H -100 Z" />
+  </defs>
+  <style>
+    @keyframes camera_pan_S11 {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-150px); }
+    }
+    @keyframes hand_scan_S11 {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(80px, 5px); }
+      100% { transform: translate(0, 0); }
+    }
+    @keyframes fire_flicker_S11 {
+      0% { opacity: 0.8; transform: scaleY(1); }
+      25% { opacity: 1; transform: scaleY(1.05); }
+      50% { opacity: 0.7; transform: scaleY(0.98); }
+      75% { opacity: 0.9; transform: scaleY(1.02); }
+      100% { opacity: 0.8; transform: scaleY(1); }
+    }
+    @keyframes fog_drift_S11 {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-80px); }
+    }
+
+    .scene-container {
+      animation: camera_pan_S11 3s linear infinite;
+    }
+    .hand-group {
+      animation: hand_scan_S11 3s ease-in-out infinite;
+    }
+    .fire {
+      transform-origin: bottom;
+      animation: fire_flicker_S11 0.5s linear infinite;
+    }
+    .fog {
+      animation: fog_drift_S11 15s linear infinite alternate;
+    }
+  </style>
+
+  <g class="scene-container">
+    <!-- Layer 1: bg_fireplace -->
+    <rect x="0" y="0" width="1430" height="720" fill="url(#grad_S11)" />
+    <g id="bg_fireplace">
+      <rect x="550" y="300" width="300" height="250" fill="#1A1B0C" />
+      <path class="fire" d="M 570 540 C 580 500, 620 450, 640 400 C 660 450, 700 500, 720 540 C 700 520, 660 520, 640 530 C 620 520, 590 520, 570 540 Z" fill="#FF8C00" />
+      <path d="M 450 280 H 950 V 310 H 450 Z M 520 310 V 550 H 550 V 310 Z M 850 310 V 550 H 880 V 310 Z" fill="#8C6B5A" />
+    </g>
+    
+    <!-- FX: Fog -->
+    <g class="fog" opacity="0.15" fill="#C0D0E0">
+      <use href="#fog_path" x="0" y="0" />
+      <use href="#fog_path" x="400" y="50" transform="scale(0.8)"/>
+    </g>
+
+    <!-- Layer 2: bg_wooden_table_with_papers -->
+    <g id="bg_wooden_table_with_papers">
+      <rect x="-50" y="520" width="1500" height="250" fill="#5C3A2E" stroke="#202020" stroke-width="1.8" />
+      <g transform="translate(450 560) rotate(-5)">
+        <rect x="0" y="0" width="200" height="150" fill="#E0D0B0" stroke="#202020" stroke-width="1.8" />
+        <rect x="20" y="-10" width="200" height="150" fill="#E0D0B0" stroke="#202020" stroke-width="1.8" transform="rotate(3)" />
+      </g>
+      <g transform="translate(700 550) rotate(8)">
+        <rect x="0" y="0" width="180" height="130" fill="#E0D0B0" stroke="#202020" stroke-width="1.8" />
+      </g>
+    </g>
+
+    <!-- Layer 3: hand_with_magnifying_glass -->
+    <g id="hand_with_magnifying_glass" class="hand-group" transform="translate(550 450)" filter="url(#shadow_S11)">
+      <g transform="rotate(15)">
+        <!-- Magnifying Glass -->
+        <path d="M 0 0 L -150 0" stroke="#8B4513" stroke-width="15" stroke-linecap="round" />
+        <circle cx="80" cy="0" r="60" fill="none" stroke="#C0C0C0" stroke-width="12" />
+        <circle cx="80" cy="0" r="54" fill="#FFFFFF" opacity="0.2" />
+        <!-- Hand -->
+        <path d="M -10 25 C -30 20, -60 30, -70 50 C -80 70, -60 90, -40 85 C -20 80, -20 50, -10 25 Z M -5 15 C -25 10, -40 20, -40 40 L -30 70 L -10 65 L 0 35 Z M 5 10 C -15 5, -30 15, -30 35 L -20 60 L 0 55 L 10 25 Z M 15 15 C -5 10, -20 20, -20 40 L -10 60 L 10 55 L 20 25 Z" fill="#E0B996" stroke="#202020" stroke-width="1.8" />
+      </g>
+    </g>
+  </g>
+</svg>

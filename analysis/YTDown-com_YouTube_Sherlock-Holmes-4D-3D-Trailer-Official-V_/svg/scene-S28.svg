@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="grad_S28" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#5A6C7D"/>
+    </linearGradient>
+    <filter id="shadow_holmes_S28">
+      <feDropShadow dx="0" dy="5" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <style>
+    .bg { fill: url(#grad_S28); }
+    .skyline { fill: #2A3A4B; }
+    .fog { fill: #3A4A5B; opacity: 0.5; }
+    .rooftop { fill: #5C6C7D; }
+    .gargoyle { fill: #4A5A6B; }
+    .holmes-coat { fill: #8B4513; stroke: #202020; stroke-width: 1.8; }
+    .holmes-hair { fill: #4A2E1D; }
+    .holmes-skin { fill: #E0B996; }
+    
+    #sherlock_holmes {
+      animation: sherlockBreathing 4s ease-in-out infinite;
+    }
+
+    @keyframes sherlockBreathing {
+      0% { transform: scaleY(1); }
+      50% { transform: scaleY(1.005); }
+      100% { transform: scaleY(1); }
+    }
+  </style>
+
+  <rect class="bg" width="1280" height="720"/>
+
+  <g id="environment_S28">
+    <path id="distant_city_skyline" class="skyline" d="M0 720 L0 600 C 100 580, 250 610, 400 590 C 550 570, 600 550, 700 560 C 800 570, 950 540, 1100 550 C 1200 555, 1280 570, 1280 570 L 1280 720 Z"/>
+    <rect id="fog_effect" class="fog" y="550" width="1280" height="100"/>
+    <path id="rooftop_surface" class="rooftop" d="M-10 720 L-10 650 L1290 650 L1290 720 Z"/>
+    <g id="gargoyles_foreground">
+      <path class="gargoyle" d="M50 650 C 50 600, 100 600, 100 650 V 720 H 0 V 650 C 20 650, 30 630, 50 650 Z"/>
+      <path class="gargoyle" d="M1180 650 C 1180 600, 1230 600, 1230 650 V 720 H 1130 V 650 C 1150 650, 1160 630, 1180 650 Z"/>
+    </g>
+  </g>
+
+  <g id="sherlock_holmes" filter="url(#shadow_holmes_S28)" transform="translate(640 450)" transform-origin="center bottom">
+    <g id="torso">
+      <path class="holmes-coat" d="M-60 200 L-70 80 C -70 0, -40 -80, 0 -80 C 40 -80, 70 0, 70 80 L 60 200 H -60 Z"/>
+      <path class="holmes-coat" d="M-40 -60 C -20 -70, 20 -70, 40 -60 L 50 -90 L -50 -90 Z" />
+    </g>
+    <g id="head" transform="translate(0, -95)">
+      <path class="holmes-skin" d="M-20 -50 C -35 -20, -30 10, -10 20 C 10 30, 30 10, 30 -20 C 30 -50, 0 -65, -20 -50 Z"/>
+      <path class="holmes-hair" d="M-25 -52 C -40 -30, -10 -20, 20 -30 C 35 -40, 20 -65, -5 -68 C -15 -70, -20 -60, -25 -52 Z"/>
+    </g>
+  </g>
+
+</svg>

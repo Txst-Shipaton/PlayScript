@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg-gradient-S13" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#5A6C7D"/>
+    </linearGradient>
+    <filter id="shadow-police" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="5" dy="10" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadow-barrier" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="7" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <style>
+    .stroke { stroke: #202020; stroke-width: 1.8; stroke-linecap: butt; stroke-linejoin: miter; }
+    
+    #camera-S13 {
+      animation: camera-pan-S13 1s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    #police_officers {
+      animation: police-appear-S13 1s linear infinite;
+    }
+
+    #fog_effect {
+      animation: fog-drift-S13 10s linear infinite;
+    }
+
+    @keyframes camera-pan-S13 {
+      0% { transform: translateY(0px) scale(1); }
+      50%, 100% { transform: translateY(50px) scale(0.95); }
+    }
+
+    @keyframes police-appear-S13 {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fog-drift-S13 {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-80px); }
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="url(#bg-gradient-S13)"/>
+
+  <g id="camera-S13">
+    <!-- Layer 1: bg_bank_of_england_building_facade -->
+    <g id="bg_bank_of_england_building_facade">
+      <path fill="#4A5A6B" class="stroke" d="M0 250 H 1280 V 720 H 0 Z"/>
+      <path fill="#5C6C7D" class="stroke" d="M100 200 h 1080 v 520 h -1080 z"/>
+      <!-- Arches and Columns -->
+      <g id="bg_archways_and_columns">
+        <path fill="#2A3A4B" class="stroke" d="M250,720 V400 c0-120, 150-120, 150,0 v320 M550,720 V400 c0-120, 150-120, 150,0 v320 M850,720 V400 c0-120, 150-120, 150,0 v320"/>
+        <path fill="#5C6C7D" class="stroke" d="M220 200 v 520 h 30 v -520 z M400 200 v 520 h 30 v -520 z M520 200 v 520 h 30 v -520 z M700 200 v 520 h 30 v -520 z M820 200 v 520 h 30 v -520 z M1000 200 v 520 h 30 v -520 z"/>
+        <rect x="100" y="180" width="1080" height="40" fill="#5C6C7D" class="stroke"/>
+      </g>
+    </g>
+
+    <!-- Layer 5: Barriers -->
+    <g id="police_barriers" filter="url(#shadow-barrier)">
+      <path fill="#8C8C8C" class="stroke" d="M150 600 h 400 v 10 h -400 z M170 610 l 40 80 M220 610 l 40 80 M270 610 l 40 80 M320 610 l 40 80 M370 610 l 40 80 M420 610 l 40 80"/>
+      <path fill="#8C8C8C" class="stroke" d="M730 600 h 400 v 10 h -400 z M750 610 l 40 80 M800 610 l 40 80 M850 610 l 40 80 M900 610 l 40 80 M950 610 l 40 80 M1000 610 l 40 80"/>
+    </g>
+
+    <!-- Layer 3: Police Officers -->
+    <g id="police_officers">
+      <g id="police_officer_1" transform="translate(480, 480)" filter="url(#shadow-police)">
+        <rect x="0" y="30" width="60" height="120" fill="#1A1A1A" class="stroke"/>
+        <circle cx="30" cy="15" r="25" fill="#E0B996" class="stroke"/>
+        <path d="M5,15 a25,20 0 0,1 50,0 v-10 h-50 z" fill="#1A1A1A" class="stroke"/>
+        <circle cx="30" cy="-5" r="3" fill="#C0C0C0" class="stroke"/>
+        <path d="M-10,80 h 15 v 20 h -15 z M55,80 h 15 v 20 h -15 z" fill="#FFFFFF" class="stroke"/>
+      </g>
+      <g id="police_officer_2" transform="translate(740, 480)" filter="url(#shadow-police)">
+        <rect x="0" y="30" width="60" height="120" fill="#1A1A1A" class="stroke"/>
+        <circle cx="30" cy="15" r="25" fill="#E0B996" class="stroke"/>
+        <path d="M5,15 a25,20 0 0,1 50,0 v-10 h-50 z" fill="#1A1A1A" class="stroke"/>
+        <circle cx="30" cy="-5" r="3" fill="#C0C0C0" class="stroke"/>
+        <path d="M-10,80 h 15 v 20 h -15 z M55,80 h 15 v 20 h -15 z" fill="#FFFFFF" class="stroke"/>
+      </g>
+    </g>
+
+    <!-- Layer 4: Lamppost -->
+    <g id="street_lamp_right" transform="translate(1100, 350)">
+      <rect x="0" y="0" width="15" height="300" fill="#8C8C8C" class="stroke"/>
+      <path d="M7.5,0 h 30 l -10, -30 h -10 z" fill="#8C8C8C" class="stroke"/>
+      <circle cx="22.5" cy="-35" r="10" fill="#F0E68C" stroke="#202020" stroke-width="1.8"/>
+    </g>
+
+    <!-- Layer 5: Bench -->
+    <g id="park_bench_right" transform="translate(1050, 600)">
+      <path d="M0,0 H 150 V 20 H 0 Z M 10,20 V 50 H 20 V 20 Z M 130,20 V 50 H 140 V 20 Z" fill="#5C3A2E" class="stroke"/>
+    </g>
+  </g>
+
+  <g id="fog_effect" fill="#C0D0E0" opacity="0.2" style="mix-blend-mode: screen;">
+    <path d="M -100,600 c 100,-50 200,50 300,0 s 250,-60 400,-20 s 300,40 400,10 v 150 h -1100 z"/>
+    <path d="M 500,650 c 100,-40 200,40 300,-10 s 250,-50 400,-20 s 300,50 400,20 v 100 h -1100 z"/>
+    <path d="M 200,580 c 150,-50 250,60 400,10 s 200,-70 350,-20 s 250,50 350,20 v 150 h -1100 z"/>
+  </g>
+</svg>

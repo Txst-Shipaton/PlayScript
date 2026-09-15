@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg-grad-S37" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#5A6C7D"/>
+    </linearGradient>
+    <filter id="shadow-holmes-face-S37">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <g id="wall-pattern-S37">
+      <path fill="#3A4A5B" d="M0,0 H1280 V720 H0 Z"/>
+      <path fill="none" stroke="#2A3A4B" stroke-width="30" d="M100,0 V720 M300,0 V720 M500,0 V720 M700,0 V720 M900,0 V720 M1100,0 V720"/>
+      <path fill="none" stroke="#2A3A4B" stroke-width="15" d="M0,80 H1280 M0,240 H1280 M0,400 H1280 M0,560 H1280 M0,720 H1280"/>
+    </g>
+  </defs>
+  <style>
+    .scene-S37 {
+      animation: scene-fade-in 1s infinite;
+    }
+    #bg-S37 {
+      animation: wall-scroll-S37 1s linear infinite;
+    }
+    #sherlock_holmes_S37 {
+      animation: holmes-fall-S37 1s ease-in-out infinite;
+    }
+
+    @keyframes scene-fade-in {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    @keyframes wall-scroll-S37 {
+      from { transform: translateY(0); }
+      to { transform: translateY(-720px); }
+    }
+    
+    @keyframes holmes-fall-S37 {
+      0% { transform: translate(0, -5px) rotate(1deg); }
+      50% { transform: translate(0, 5px) rotate(-1deg); }
+      100% { transform: translate(0, -5px) rotate(1deg); }
+    }
+  </style>
+
+  <g class="scene-S37">
+    <rect fill="url(#bg-grad-S37)" width="1280" height="720"/>
+    
+    <g id="bg_deep_shaft_stone_walls">
+      <g id="bg-S37">
+        <use href="#wall-pattern-S37" y="0"/>
+        <use href="#wall-pattern-S37" y="720"/>
+      </g>
+    </g>
+
+    <g id="character_sherlock_holmes_falling">
+      <g id="sherlock_holmes_S37" transform="translate(640, 360) scale(1.5)" style="stroke:#202020; stroke-width:1.8; stroke-linecap:butt; stroke-linejoin:miter;">
+        <!-- Torso -->
+        <path fill="#8B4513" d="M-100,50 Q-95,150 0,160 Q95,150 100,50 L70,-100 -70,-100 Z"/>
+        <path fill="#6B3E26" d="M-70,-100 L70,-100 L100,50 Q95,150 0,160 Q-95,150 -100,50 Z" clip-path="url(#plaid-clip-S37)"/>
+        <path fill="#3B5B52" d="M-30,-90 L30,-90 V50 H-30 Z"/>
+        <path fill="#FFFFFF" d="M-25,-90 L25,-90 L15,-70 -15,-70 Z"/>
+        <path fill="#1A1A1A" d="M-10,-70 L10,-70 L5,-55 -5,-55 Z"/>
+
+        <!-- Head -->
+        <g transform="translate(0, -150)">
+          <path fill="#E0B996" d="M0,-55 C-45,-55 -60,10 -60,30 C-60,70 -30,95 0,95 C30,95 60,70 60,30 C60,10 45,-55 0,-55 Z" filter="url(#shadow-holmes-face-S37)"/>
+          <path fill="#4A2E1D" d="M-60,30 C-60,10 -45,-55 0,-55 C45,-55 60,10 60,30 C50,-5 30,-65 -10,-60 C-40,-55 -55,0 -60,30 Z"/>
+          <ellipse cx="-25" cy="15" rx="7" ry="9" fill="#FFFFFF"/>
+          <circle cx="-25" cy="15" r="4" fill="#5F8B5A"/>
+          <ellipse cx="25" cy="15" rx="7" ry="9" fill="#FFFFFF"/>
+          <circle cx="25" cy="15" r="4" fill="#5F8B5A"/>
+          <path fill="none" stroke="#4A2E1D" stroke-width="2" d="M-35,5 C-30,-5 -20,-5 -15,5 M15,5 C20,-5 30,-5 35,5"/>
+          <path fill="#E0B996" d="M-5,45 C0,50 5,45 5,45 Q0,40 -5,45 Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

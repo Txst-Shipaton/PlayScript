@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS40" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1A2B3D"/>
+      <stop offset="100%" stop-color="#0A1B2D"/>
+    </linearGradient>
+    <filter id="dropShadowS40" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <style>
+    @keyframes sherlock_watson_determined_pose {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes title_sherlock_holmes_4d {
+      0%, 66% { opacity: 0; transform: scale(0.8) translate(0, 0); }
+      70% { opacity: 1; transform: scale(1) translate(0, 0); }
+      100% { opacity: 1; transform: scale(1) translate(0, 0); }
+    }
+    .scene-background {
+      width: 100%;
+      height: 100%;
+      fill: url(#bgGradientS40);
+    }
+    .stone-wall {
+      fill: #4A5A6B;
+    }
+    .characters {
+      animation: sherlock_watson_determined_pose 3s ease-in-out infinite;
+      filter: url(#dropShadowS40);
+    }
+    .character-stroke {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    .title-text {
+      font-family: serif;
+      fill: #FFFFFF;
+      text-anchor: middle;
+    }
+    #title_sherlock_holmes_4d {
+      animation: title_sherlock_holmes_4d 3s ease-out infinite;
+      transform-origin: center;
+    }
+  </style>
+
+  <rect class="scene-background" width="1280" height="720"/>
+  <rect class="stone-wall" x="0" y="300" width="1280" height="420"/>
+
+  <g id="characters-S40" class="characters">
+    <!-- Layer Coordinator: character_sherlock_holmes, character_watson -->
+    <!-- Sherlock Holmes -->
+    <g id="sherlock_holmes" transform="translate(480, 380) scale(1.1)">
+      <!-- Torso -->
+      <path class="character-stroke" fill="#8B4513" d="M -40,0 L 40,0 L 30,150 L -30,150 Z"/>
+      <!-- Plaid Pattern -->
+      <path stroke="#6B3E26" stroke-width="4" fill="none" d="M -35,20 L 35,20 M -35,40 L 35,40 M -35,60 L 35,60 M -35,80 L 35,80 M -35,100 L 35,100 M -35,120 L 35,120 M -35,140 L 35,140 M -20,0 L -20,150 M 0,0 L 0,150 M 20,0 L 20,150"/>
+      <!-- Shirt -->
+      <path class="character-stroke" fill="#FFFFFF" d="M -10,0 L 10,0 L 10,20 L -10,20 Z"/>
+      <!-- Head -->
+      <g transform="translate(0, -40)">
+        <path class="character-stroke" fill="#E0B996" d="M 0,-50 C 25,-50 30,-25 30,0 C 30,25 25,30 0,30 C -25,30 -30,25 -30,0 C -30,-25 -25,-50 0,-50 Z"/>
+        <path class="character-stroke" fill="#4A2E1D" d="M -30,-35 C -10,-60 10,-60 30,-35 C 25,-45 15,-50 0,-50 C -15,-50 -25,-45 -30,-35 Z"/>
+      </g>
+    </g>
+
+    <!-- Dr. Watson -->
+    <g id="dr_watson" transform="translate(780, 390) scale(1.1)">
+      <!-- Torso -->
+      <path class="character-stroke" fill="#8B4513" d="M -45,0 L 45,0 L 40,140 L -40,140 Z"/>
+      <!-- Waistcoat -->
+      <path class="character-stroke" fill="#3B5B52" d="M -20,0 L 20,0 L 20,100 L -20,100 Z"/>
+      <!-- Shirt -->
+      <path class="character-stroke" fill="#FFFFFF" d="M -10,0 L 10,0 L 10,20 L -10,20 Z"/>
+      <!-- Head -->
+      <g transform="translate(0, -40)">
+        <path class="character-stroke" fill="#E0B996" d="M 0,-40 C 30,-40 35,-20 35,5 C 35,30 30,35 0,35 C -30,35 -35,30 -35,5 C -35,-20 -30,-40 0,-40 Z"/>
+        <!-- Moustache -->
+        <path class="character-stroke" fill="#4A2E1D" d="M -15,15 C -5,10 5,10 15,15 C 10,25 -10,25 -15,15 Z"/>
+        <!-- Bowler Hat -->
+        <path class="character-stroke" fill="#1A1A1A" d="M 0, -60 C 20, -60, 25, -50, 25, -40 L -25, -40 C -25, -50, -20, -60, 0, -60 Z"/>
+        <path class="character-stroke" fill="#1A1A1A" d="M -40,-40 C -40,-35 40,-35 40,-40 C 40,-45 30,-45 25,-40 L -25,-40 C -30,-45 -40,-45 -40,-40 Z"/>
+      </g>
+    </g>
+  </g>
+
+  <g id="title_sherlock_holmes_4d">
+    <text class="title-text" x="50%" y="40%" font-size="72" font-weight="400">Sherlock</text>
+    <text class="title-text" x="50%" y="55%" font-size="72" font-weight="400">Holmes</text>
+    <text class="title-text" x="75%" y="55%" font-size="72" font-weight="600">4D</text>
+  </g>
+
+</svg>

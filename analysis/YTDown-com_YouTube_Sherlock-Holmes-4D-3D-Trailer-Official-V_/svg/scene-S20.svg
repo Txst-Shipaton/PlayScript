@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="gradient_S20" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#C0A080"/>
+      <stop offset="100%" stop-color="#1A2B3D"/>
+    </radialGradient>
+    <filter id="shadow_S20">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <style>
+    .stroke {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      fill-rule: evenodd;
+    }
+
+    #character_villain_in_top_hat {
+      animation: villain_gesture 1s ease-in-out infinite;
+      transform-origin: 640px 450px;
+    }
+
+    #neutral_face {
+      animation: neutral_face_anim 1s steps(1, end) infinite;
+    }
+
+    #menacing_face {
+      animation: menacing_face_anim 1s steps(1, end) infinite;
+    }
+
+    @keyframes villain_gesture {
+      0% { transform: translateY(0px) rotateY(0deg); }
+      50% { transform: translateY(-10px) rotateY(5deg); }
+      100% { transform: translateY(0px) rotateY(0deg); }
+    }
+
+    @keyframes neutral_face_anim {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    @keyframes menacing_face_anim {
+      0%, 49% { opacity: 0; }
+      50%, 100% { opacity: 1; }
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="url(#gradient_S20)"/>
+
+  <g id="bg_dark_ornate_interior_columns" opacity="0.5">
+    <rect x="100" y="0" width="150" height="720" fill="#3A4A5B" />
+    <rect x="350" y="0" width="100" height="720" fill="#3A4A5B" />
+    <rect x="830" y="0" width="120" height="720" fill="#3A4A5B" />
+    <rect x="1050" y="0" width="180" height="720" fill="#3A4A5B" />
+  </g>
+
+  <g id="character_villain_in_top_hat">
+    <g filter="url(#shadow_S20)">
+      <!-- Coat -->
+      <path d="M480,720 V500 C480,450 520,420 580,420 H700 C760,420 800,450 800,500 V720 H480 Z" fill="#8B0000" class="stroke"/>
+      <!-- Lapels -->
+      <path d="M580,420 L610,550 L640,540 L620,420 H580 Z M700,420 L670,550 L640,540 L660,420 H700 Z" fill="#1A1A1A" class="stroke"/>
+      <!-- Shirt and Cravat -->
+      <path d="M620,480 C620,460 660,460 660,480 L640,540 Z" fill="#FFFFFF"/>
+      <path d="M625,480 Q640,500 655,480 L640,520 Z" fill="#FF0000"/>
+
+      <!-- Head -->
+      <path d="M590,490 C580,420 700,420 690,490 C720,510 670,520 640,520 C610,520 560,510 590,490 Z" fill="#E0B996" class="stroke"/>
+
+      <!-- Hair -->
+      <path d="M590,490 C585,450 600,430 610,430 H670 C680,430 695,450 690,490 L670,480 H610 Z" fill="#4A2E1D"/>
+
+      <!-- Facial Features -->
+      <path d="M610,465 C620,460 630,465 630,465 M650,465 C660,460 670,465 670,465" fill="none" stroke="#5F8B5A" stroke-width="4"/>
+      <path d="M625,495 Q640,510 655,495 L650,505 L630,505 Z" fill="#1A1A1A" class="stroke"/>
+
+      <g id="neutral_face">
+        <path d="M610,455 H630 M650,455 H670" fill="none" class="stroke"/>
+        <path d="M630,500 H650" fill="none" class="stroke"/>
+      </g>
+      <g id="menacing_face">
+        <path d="M610,460 L630,450 M650,450 L670,460" fill="none" class="stroke"/>
+        <path d="M630,495 C635,505 645,505 650,495" fill="none" class="stroke"/>
+      </g>
+
+      <!-- Top Hat -->
+      <path d="M560,440 H720 C720,420 690,410 640,410 C590,410 560,420 560,440 Z" fill="#1A1A1A" class="stroke"/>
+      <rect x="580" y="320" width="120" height="100" fill="#1A1A1A" class="stroke"/>
+      <rect x="570" y="410" width="140" height="10" fill="#DAA520"/>
+    </g>
+  </g>
+</svg>

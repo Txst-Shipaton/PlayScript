@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="grad_S1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#C3073F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    <path id="star-shape" d="M0,-36 L8.2,-11.1 L34.2,-11.1 L13.3,4.3 L21.1,29.1 L0,14 L-21.1,29.1 L-13.3,4.3 L-34.2,-11.1 L-8.2,-11.1 Z" />
+  </defs>
+  <style>
+    @keyframes anim_red_star_logo_text {
+      0% { opacity: 0; transform: scale(0.8); }
+      7% { opacity: 1; transform: scale(1); }
+      89% { opacity: 1; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1.1); }
+    }
+    @keyframes anim_red_star_logo_rays {
+      0% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+      7% { opacity: 1; transform: scale(1) rotate(0deg); }
+      36% { opacity: 1; transform: scale(1) rotate(120deg); }
+      71% { opacity: 1; transform: scale(1) rotate(240deg); }
+      89% { opacity: 1; transform: scale(1) rotate(360deg); }
+      100% { opacity: 0; transform: scale(1.2) rotate(390deg); }
+    }
+    @keyframes anim_red_star_logo_star_shape {
+      0% { opacity: 1; transform: scaleX(0.5) scaleY(1); }
+      18% { opacity: 1; transform: scaleX(1) scaleY(1); }
+      54% { opacity: 1; transform: scaleX(0.8) scaleY(1.1) skewX(10deg); }
+      71% { opacity: 1; transform: scaleX(1) scaleY(1); }
+      89% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .logo-text-style {
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: 58px;
+      text-anchor: middle;
+      fill: #FF0000;
+      stroke: #D60000;
+      stroke-width: 6;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    .logo-star-style {
+      fill: #FF0000;
+      stroke: #D60000;
+      stroke-width: 6;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    #red_star_logo_text {
+      animation: anim_red_star_logo_text 2s infinite;
+      transform-origin: 640px 360px;
+    }
+    #red_star_logo_rays {
+      fill: #660000;
+      animation: anim_red_star_logo_rays 2s infinite;
+      transform-origin: 640px 360px;
+    }
+    #red_star_logo_star_shape {
+      animation: anim_red_star_logo_star_shape 2s infinite;
+      transform-origin: 896px 360px;
+    }
+  </style>
+
+  <g id="scene_S1">
+    <!-- Layer 1: bg_dark_red_radial_gradient -->
+    <rect x="0" y="0" width="1280" height="720" fill="url(#grad_S1)" />
+
+    <!-- Layer 2: logo_red_star_text -->
+    <g id="logo_group">
+      <g id="red_star_logo_rays">
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(0, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(30, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(60, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(90, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(120, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(150, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(180, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(210, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(240, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(270, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(300, 640, 360)" />
+        <path d="M640,360 l-15,-800 l30,0 z" transform="rotate(330, 640, 360)" />
+      </g>
+      <g id="red_star_logo_star_shape">
+        <use href="#star-shape" x="896" y="360" class="logo-star-style" />
+      </g>
+      <g id="red_star_logo_text">
+        <text x="640" y="348" class="logo-text-style">RED</text>
+        <text x="640" y="416" class="logo-text-style">STAR</text>
+      </g>
+    </g>
+  </g>
+</svg>

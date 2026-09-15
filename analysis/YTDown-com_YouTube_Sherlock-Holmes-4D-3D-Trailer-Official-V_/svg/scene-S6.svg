@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#8B2C3E"/>
+    </linearGradient>
+    <filter id="shadowS6">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <style>
+    @keyframes deduction-gesture {
+      0% { transform: rotateX(0deg) rotateY(0deg); }
+      33% { transform: rotateX(10deg) rotateY(5deg); }
+      66% { transform: rotateX(-5deg) rotateY(-5deg); }
+      100% { transform: rotateX(0deg) rotateY(0deg); }
+    }
+    .holmes-anim {
+      animation: deduction-gesture 4s infinite linear;
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="url(#bgGradientS6)"/>
+
+  <g id="environment_S6">
+    <!-- bg_red_patterned_wallpaper -->
+    <rect x="0" y="0" width="1280" height="720" fill="#6B423A" opacity="0.5"/>
+    
+    <!-- bg_bookshelf -->
+    <g id="bg_bookshelf">
+      <rect x="950" y="100" width="300" height="550" fill="#5C3A2E"/>
+      <line x1="950" x2="1250" y1="200" y2="200" stroke="#4A2E1D" stroke-width="4"/>
+      <line x1="950" x2="1250" y1="300" y2="300" stroke="#4A2E1D" stroke-width="4"/>
+      <line x1="950" x2="1250" y1="400" y2="400" stroke="#4A2E1D" stroke-width="4"/>
+      <line x1="950" x2="1250" y1="500" y2="500" stroke="#4A2E1D" stroke-width="4"/>
+      <line x1="950" x2="1250" y1="600" y2="600" stroke="#4A2E1D" stroke-width="4"/>
+    </g>
+
+    <!-- bg_framed_pictures / wall_decor_background -->
+    <g id="wall_decor_background">
+        <rect x="150" y="180" width="120" height="160" fill="#8C6B5A" stroke="#202020" stroke-width="1.8"/>
+        <rect x="165" y="195" width="90" height="130" fill="#2C3E4C"/>
+        <rect x="300" y="220" width="80" height="100" fill="#8C6B5A" stroke="#202020" stroke-width="1.8"/>
+        <rect x="310" y="230" width="60" height="80" fill="#2C3E4C"/>
+    </g>
+
+    <!-- bg_window -->
+    <g id="bg_window">
+      <rect x="50" y="150" width="200" height="300" fill="#1A2B3D" opacity="0.7"/>
+      <line x1="150" x2="150" y1="150" y2="450" stroke="#202020" stroke-width="3"/>
+      <line x1="50" x2="250" y1="300" y2="300" stroke="#202020" stroke-width="3"/>
+    </g>
+
+    <!-- bg_desk -->
+    <path id="bg_desk" d="M 0 680 L 400 650 L 420 720 L 0 720 Z" fill="#5C3A2E" opacity="0.8"/>
+  </g>
+
+  <g id="character_sherlock_holmes_holding_bow" class="holmes-anim" filter="url(#shadowS6)" transform-origin="640px 450px" style="stroke:#202020; stroke-width:1.8; stroke-linecap:butt; stroke-linejoin:miter;">
+    <!-- Torso -->
+    <path d="M 610 380 L 600 550 L 680 550 L 670 380 Z" fill="#8B4513"/>
+    <!-- Waistcoat -->
+    <path d="M 615 385 L 610 480 L 670 480 L 665 385 Z" fill="#3B5B52"/>
+    <!-- Shirt -->
+    <polygon points="630,385 640,400 650,385" fill="#FFFFFF"/>
+    <!-- Head -->
+    <g id="head" transform-origin="50% 90%">
+      <ellipse cx="640" cy="340" rx="40" ry="50" fill="#E0B996"/>
+      <path d="M 600 310 C 620 280, 660 280, 680 310 C 670 340, 610 340, 600 310 Z" fill="#4A2E1D"/>
+    </g>
+    <!-- Arm holding bow -->
+    <g id="arm_right">
+      <path d="M 665 390 C 690 420, 720 400, 730 430 L 700 440 L 670 400 Z" fill="#8B4513"/>
+      <!-- Bow -->
+      <line x1="720" y1="350" x2="750" y2="500" stroke="#8B4513" stroke-width="4"/>
+      <path d="M 720 350 C 725 360, 725 370, 720 370" fill="none" stroke="#C0C0C0" stroke-width="2"/>
+      <path d="M 750 500 C 755 490, 755 480, 750 480" fill="none" stroke="#C0C0C0" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

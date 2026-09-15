@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS34" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2A3B4C"/>
+      <stop offset="100%" stop-color="#1A2B3D"/>
+    </linearGradient>
+  </defs>
+  <style>
+    path, polygon, rect, circle {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    #camera_group {
+      animation: dolly-out-S34 3s linear infinite;
+      transform-origin: 640px 360px;
+    }
+    #sherlock_holmes_falling {
+      animation: sherlock-falling-S34 3s linear infinite;
+      transform-origin: center;
+    }
+    @keyframes dolly-out-S34 {
+      0% { transform: scale(1.5) translateY(-150px); }
+      100% { transform: scale(1) translateY(0); }
+    }
+    @keyframes sherlock-falling-S34 {
+      0% { transform: translateY(-150px) rotate(0deg) scale(0.8); }
+      33% { transform: translateY(100px) rotate(15deg) scale(0.9); }
+      66% { transform: translateY(250px) rotate(-15deg) scale(1); }
+      100% { transform: translateY(500px) rotate(0deg) scale(1.1); }
+    }
+  </style>
+
+  <g id="camera_group">
+    <!-- Environment: bg_deep_shaft_stone_walls -->
+    <rect width="1280" height="720" fill="url(#bgGradientS34)" stroke="none"/>
+    <g id="shaft_walls" fill="#4A5A6B">
+      <polygon points="0,0 500,0 600,720 0,720" />
+      <polygon points="1280,0 780,0 680,720 1280,720" />
+      <!-- Texture lines for perspective -->
+      <path d="M 400 0 L 520 720" stroke-width="2" stroke="#3A4A5B" />
+      <path d="M 300 0 L 440 720" stroke-width="1.5" stroke="#3A4A5B" />
+      <path d="M 200 0 L 360 720" stroke-width="1" stroke="#3A4A5B" />
+      <path d="M 880 0 L 760 720" stroke-width="2" stroke="#3A4A5B" />
+      <path d="M 980 0 L 840 720" stroke-width="1.5" stroke="#3A4A5B" />
+      <path d="M 1080 0 L 920 720" stroke-width="1" stroke="#3A4A5B" />
+    </g>
+    <path id="dark_water_below" d="M 600,720 Q 640,710 680,720 Z" fill="#1A2B3D" stroke="none" />
+
+    <!-- Character: character_sherlock_holmes_falling -->
+    <g id="sherlock_holmes_falling" transform="translate(640, 100)">
+      <g id="torso" transform="rotate(15)">
+        <!-- Legs -->
+        <path id="leg_right" d="M 10,25 L 30,55 L 20,60 Z" fill="#C0C0C0"/>
+        <path id="leg_left" d="M -10,25 L -40,45 L -45,35 Z" fill="#C0C0C0"/>
+        <!-- Overcoat -->
+        <path id="overcoat" d="M -35,20 C -40,-10 40,-10 35,20 L 15,30 L -15,30 Z" fill="#8B4513"/>
+        <!-- Arms -->
+        <path id="arm_right" d="M 30,-5 L 60,-15 L 65,0 Z" fill="#8B4513"/>
+        <path id="arm_left" d="M -30,-5 L -55,-25 L -50,-30 Z" fill="#8B4513"/>
+        <!-- Head with Deerstalker Hat -->
+        <g id="head">
+          <circle cx="0" cy="-20" r="18" fill="#8B4513"/>
+          <path d="M 0,-38 L 25,-30 L 20,-20 Z" fill="#6B3E26"/>
+          <path d="M 0,-38 L -25,-30 L -20,-20 Z" fill="#6B3E26"/>
+          <path d="M -18,-20 A 18 18 0 0 1 18 -20" fill="none" stroke="#6B3E26" stroke-width="5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,276 @@
+{
+  "model": "gemini-2.5-pro",
+  "source": "master_state.json",
+  "svgs": [
+    {
+      "file": "character-dr_watson.svg",
+      "subject": "dr_watson",
+      "bytes": 3699,
+      "attempts": 1
+    },
+    {
+      "file": "character-moriarty.svg",
+      "subject": "moriarty",
+      "bytes": 2605,
+      "attempts": 1
+    },
+    {
+      "file": "character-police_officer.svg",
+      "subject": "police_officer",
+      "bytes": 2633,
+      "attempts": 1
+    },
+    {
+      "file": "character-sherlock_holmes.svg",
+      "subject": "sherlock_holmes",
+      "bytes": 3564,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S1.svg",
+      "subject": "S1",
+      "bytes": 3868,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S10.svg",
+      "subject": "S10",
+      "bytes": 2343,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S11.svg",
+      "subject": "S11",
+      "bytes": 3891,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S12.svg",
+      "subject": "S12",
+      "bytes": 4728,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S13.svg",
+      "subject": "S13",
+      "bytes": 4895,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S14.svg",
+      "subject": "S14",
+      "bytes": 3041,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S15.svg",
+      "subject": "S15",
+      "bytes": 3870,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S16.svg",
+      "subject": "S16",
+      "bytes": 3386,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S17.svg",
+      "subject": "S17",
+      "bytes": 3658,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S18.svg",
+      "subject": "S18",
+      "bytes": 3800,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S19.svg",
+      "subject": "S19",
+      "bytes": 5399,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S2.svg",
+      "subject": "S2",
+      "bytes": 2870,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S20.svg",
+      "subject": "S20",
+      "bytes": 3531,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S21.svg",
+      "subject": "S21",
+      "bytes": 3765,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S22.svg",
+      "subject": "S22",
+      "bytes": 3849,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S23.svg",
+      "subject": "S23",
+      "bytes": 2894,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S24.svg",
+      "subject": "S24",
+      "bytes": 3181,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S25.svg",
+      "subject": "S25",
+      "bytes": 4272,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S26.svg",
+      "subject": "S26",
+      "bytes": 5076,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S27.svg",
+      "subject": "S27",
+      "bytes": 2863,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S28.svg",
+      "subject": "S28",
+      "bytes": 2425,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S29.svg",
+      "subject": "S29",
+      "bytes": 4937,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S3.svg",
+      "subject": "S3",
+      "bytes": 4360,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S30.svg",
+      "subject": "S30",
+      "bytes": 5026,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S31.svg",
+      "subject": "S31",
+      "bytes": 5650,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S32.svg",
+      "subject": "S32",
+      "bytes": 3248,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S33.svg",
+      "subject": "S33",
+      "bytes": 3126,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S34.svg",
+      "subject": "S34",
+      "bytes": 3080,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S35.svg",
+      "subject": "S35",
+      "bytes": 2277,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S36.svg",
+      "subject": "S36",
+      "bytes": 3347,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S37.svg",
+      "subject": "S37",
+      "bytes": 3297,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S38.svg",
+      "subject": "S38",
+      "bytes": 4048,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S39.svg",
+      "subject": "S39",
+      "bytes": 2930,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S4.svg",
+      "subject": "S4",
+      "bytes": 3932,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S40.svg",
+      "subject": "S40",
+      "bytes": 4212,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S41.svg",
+      "subject": "S41",
+      "bytes": 2559,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S5.svg",
+      "subject": "S5",
+      "bytes": 4090,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S6.svg",
+      "subject": "S6",
+      "bytes": 3626,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S7.svg",
+      "subject": "S7",
+      "bytes": 4473,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S8.svg",
+      "subject": "S8",
+      "bytes": 3288,
+      "attempts": 1
+    },
+    {
+      "file": "scene-S9.svg",
+      "subject": "S9",
+      "bytes": 3052,
+      "attempts": 1
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="gradient-S7" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#8B2C3E"/>
+      <stop offset="100%" stop-color="#5A202F"/>
+    </linearGradient>
+    <filter id="shadow-holmes-head">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <style>
+    .stroke-global {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      fill: none;
+    }
+
+    #camera-group {
+      animation: zoom-out-S7 2s linear infinite;
+      transform-origin: 640px 360px;
+    }
+
+    #character_sherlock_holmes_reading_letter {
+      animation: read-letter-S7 2s ease-in-out infinite;
+      transform-origin: 640px 450px;
+    }
+
+    .neutral-face {
+      animation: fade-out-S7 2s linear infinite;
+    }
+
+    .surprised-face {
+      opacity: 0;
+      animation: fade-in-S7 2s linear infinite;
+    }
+
+    @keyframes zoom-out-S7 {
+      0% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes read-letter-S7 {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes fade-out-S7 {
+      0% { opacity: 1; }
+      99.9% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    @keyframes fade-in-S7 {
+      0% { opacity: 0; }
+      99.9% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+  <g id="camera-group">
+    <!-- Layer 1: bg_red_patterned_wallpaper -->
+    <rect x="0" y="0" width="1280" height="720" fill="url(#gradient-S7)"/>
+
+    <!-- Layer 2: bg_bookshelf -->
+    <g id="bg_bookshelf">
+      <rect x="1050" y="0" width="230" height="720" fill="#5C3A2E" />
+      <path d="M1050 180 H1280 M1050 360 H1280 M1050 540 H1280" class="stroke-global" stroke-opacity="0.2" stroke-width="4"/>
+    </g>
+
+    <!-- Layer 3: bg_desk -->
+    <g id="bg_desk">
+       <path d="M-10 720 V680 C 400 710, 880 710, 1290 680 V720 Z" fill="#5C3A2E" class="stroke-global"/>
+    </g>
+
+    <!-- Layer 4: character_sherlock_holmes_reading_letter -->
+    <g id="character_sherlock_holmes_reading_letter" filter="url(#shadow-holmes-head)">
+      <g transform="translate(640, 450)">
+        <!-- Body -->
+        <path d="M -150 300 L -150 50 C -150 0, -100 -50, 0 -50 C 100 -50, 150 0, 150 50 L 150 300 Z" fill="#8B4513" class="stroke-global"/>
+        <path d="M -90 280 V -20 L 0 -45 L 90 -20 V 280 Z" fill="#3B5B52" class="stroke-global"/>
+        <path d="M -30 -40 L 0 -60 L 30 -40 V -25 L 0 -40 L -30 -25 Z" fill="#FFFFFF" class="stroke-global"/>
+
+        <!-- Head -->
+        <g transform="translate(0, -130)">
+          <path d="M 0 -70 C -60 -70, -80 0, -80 40 C -80 80, -50 110, 0 110 C 50 110, 80 80, 80 40 C 80 0, 60 -70, 0 -70 Z" fill="#E0B996" class="stroke-global"/>
+          <path d="M 0 -70 C -60 -70, -75 -20, -60 10 C -80 10, -90 -40, -70 -60 C -50 -80, -20 -75, 0 -70 M 0 -70 C 60 -70, 75 -20, 60 10 C 80 10, 90 -40, 70 -60 C 50 -80, 20 -75, 0 -70" fill="#4A2E1D" class="stroke-global"/>
+          
+          <!-- Neutral Face -->
+          <g class="neutral-face">
+            <path d="M -45 -10 Q -30 -20 -15 -10" class="stroke-global" stroke-width="3"/>
+            <path d="M 15 -10 Q 30 -20 45 -10" class="stroke-global" stroke-width="3"/>
+            <circle cx="-30" cy="15" r="3" fill="#202020"/>
+            <circle cx="30" cy="15" r="3" fill="#202020"/>
+            <path d="M -20 60 H 20" class="stroke-global" stroke-width="2.5"/>
+          </g>
+
+          <!-- Surprised Face -->
+          <g class="surprised-face">
+            <path d="M -45 -20 Q -30 -30 -15 -20" class="stroke-global" stroke-width="3"/>
+            <path d="M 15 -20 Q 30 -30 45 -20" class="stroke-global" stroke-width="3"/>
+            <circle cx="-30" cy="15" r="5" fill="#202020"/>
+            <circle cx="30" cy="15" r="5" fill="#202020"/>
+            <ellipse cx="0" cy="65" rx="10" ry="5" fill="#202020"/>
+          </g>
+        </g>
+
+        <!-- Letter -->
+        <g transform="translate(0, 100)">
+           <path d="M -100 -60 L 100 -40 L 110 90 L -110 110 Z" fill="#F0E8D8" class="stroke-global"/>
+           <path d="M -90 -45 H 80 M -90 -30 H 80 M -95 0 H 90 M -95 15 H 90 M -100 40 H 95 M -100 55 H 95 M -100 70 H 95" class="stroke-global" stroke-opacity="0.5" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

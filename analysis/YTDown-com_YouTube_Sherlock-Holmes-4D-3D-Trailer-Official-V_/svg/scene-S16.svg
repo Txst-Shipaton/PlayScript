@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS16" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#5A6C7D"/>
+      <stop offset="100%" stop-color="#2C3E4C"/>
+    </linearGradient>
+    <filter id="shadowHolmesFace">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <style>
+    .scene-element {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      fill-rule: evenodd;
+    }
+
+    @keyframes sherlockLook {
+      0% { transform: rotateY(0deg) translateY(0px); }
+      50%, 100% { transform: rotateY(-10deg) translateY(-5px); }
+    }
+
+    @keyframes magnifyingGlassWobble {
+      from { transform: translate(0, 0); }
+      to { transform: translate(5px, -5px); }
+    }
+
+    #character_sherlock_holmes_with_magnifying_glass {
+      animation: sherlockLook 1s ease-in-out infinite;
+      transform-origin: 650px 450px;
+    }
+
+    #magnifying_glass_group {
+      animation: magnifyingGlassWobble 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+    }
+  </style>
+
+  <!-- Layer Coordinator: S16 -->
+  <!-- 1. bg_bank_of_england_building_details -->
+  <g id="bg_bank_of_england_building_details">
+    <rect width="1280" height="720" fill="url(#bgGradientS16)" />
+    <path d="M 300 0 V 720 M 450 0 V 720 M 900 0 V 720 M 1050 0 V 720" stroke="#2C3E4C" stroke-width="40" stroke-opacity="0.4" />
+  </g>
+
+  <!-- 2. character_sherlock_holmes_with_magnifying_glass -->
+  <g id="character_sherlock_holmes_with_magnifying_glass">
+    <g id="holmes_face" filter="url(#shadowHolmesFace)">
+      <!-- Overcoat -->
+      <path class="scene-element" fill="#8B4513" d="M 550 650 C 500 550, 800 500, 850 600 L 950 720 L 500 720 Z" />
+      <!-- Face -->
+      <path class="scene-element" fill="#E0B996" d="M 650 200 C 850 200, 950 400, 850 600 C 750 800, 550 700, 550 500 C 550 300, 450 200, 650 200 Z" />
+      <!-- Hair -->
+      <path class="scene-element" fill="#4A2E1D" d="M 600 200 C 700 180, 850 220, 880 350 C 800 300, 700 280, 600 320 C 550 280, 550 220, 600 200 Z" />
+      <!-- Eyebrow -->
+      <path class="scene-element" fill="#4A2E1D" d="M 700 380 Q 780 360, 820 385" />
+      <!-- Eye -->
+      <path class="scene-element" fill="#FFFFFF" d="M 720 420 C 750 410, 800 415, 820 440 C 800 455, 750 450, 720 420 Z" />
+      <circle class="scene-element" fill="#5F8B5A" cx="770" cy="430" r="15" />
+      <circle class="scene-element" fill="#000000" cx="775" cy="430" r="8" />
+    </g>
+
+    <g id="magnifying_glass_group">
+      <!-- Hand -->
+      <path class="scene-element" fill="#E0B996" d="M 500 400 C 450 450, 450 550, 520 580 L 650 500 C 600 450, 550 350, 500 400 Z" />
+      <!-- Magnifying Glass Handle -->
+      <path class="scene-element" fill="#8B4513" d="M 450 570 C 400 620, 420 680, 470 670 L 530 570 Z" />
+      <!-- Magnifying Glass Rim -->
+      <circle class="scene-element" fill="none" stroke="#C0C0C0" stroke-width="20" cx="700" cy="450" r="150" />
+    </g>
+  </g>
+
+  <!-- 3. magnifying_glass_lens -->
+  <g id="magnifying_glass_lens">
+    <circle cx="700" cy="450" r="150" fill="#FFFFFF" opacity="0.1" />
+    <path d="M 620 350 Q 680 380, 720 450" stroke="#FFFFFF" stroke-width="10" stroke-opacity="0.3" fill="none" class="scene-element" />
+  </g>
+
+</svg>

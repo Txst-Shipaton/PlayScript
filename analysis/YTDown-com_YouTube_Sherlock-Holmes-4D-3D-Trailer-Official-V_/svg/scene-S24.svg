@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS24" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#1A2B3D"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes cameraPanS24 {
+      0% { transform: translateX(0px); }
+      100% { transform: translateX(-100px); }
+    }
+    @keyframes fogDrift {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-80px); }
+    }
+    #camera {
+      animation: cameraPanS24 1s linear infinite;
+    }
+    .fog-layer {
+      animation: fogDrift 30s linear infinite alternate;
+    }
+  </style>
+
+  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGradientS24)" />
+
+  <g id="camera">
+    <!-- Environment Mapper: distant_city_lights -->
+    <g id="distant_city_lights">
+      <circle cx="150" cy="550" r="2" fill="#C8A850" opacity="0.7"/>
+      <circle cx="220" cy="580" r="1.5" fill="#C8A850" opacity="0.6"/>
+      <circle cx="350" cy="565" r="1" fill="#C8A850" opacity="0.8"/>
+      <circle cx="850" cy="590" r="2" fill="#C8A850" opacity="0.7"/>
+      <circle cx="950" cy="570" r="1.5" fill="#C8A850" opacity="0.9"/>
+      <circle cx="1100" cy="585" r="1" fill="#C8A850" opacity="0.6"/>
+      <circle cx="1250" cy="560" r="2.5" fill="#C8A850" opacity="0.5"/>
+      <circle cx="50" cy="575" r="1" fill="#C8A850" opacity="0.7"/>
+      <circle cx="1350" cy="570" r="1.8" fill="#C8A850" opacity="0.8"/>
+    </g>
+    
+    <!-- FX Generator: fog_effect -->
+    <g id="fog_layer_back" class="fog-layer" opacity="0.2" fill="#3A4A5B">
+      <path d="M -200,650 C 100,600 400,700 700,650 C 1000,600 1300,700 1600,650 L 1600,720 L -200,720 Z" />
+    </g>
+
+    <!-- Environment Mapper: Tower_Bridge_structure -->
+    <g id="tower_bridge" fill="#5C6C7D" stroke="#202020" stroke-width="1.8">
+      <path d="M 0 680 L 400 680 L 400 620 L 440 620 L 440 500 L 460 480 L 460 420 L 480 400 L 560 400 L 580 420 L 580 480 L 600 500 L 600 620 L 640 620 L 640 520 L 720 520 L 720 620 L 760 620 L 760 500 L 780 480 L 780 420 L 800 400 L 880 400 L 900 420 L 900 480 L 920 500 L 920 620 L 960 620 L 960 680 L 1380 680 L 1380 720 L 0 720 Z M 640 510 L 720 510 L 720 480 L 640 480 Z M 485 395 L 555 395 L 555 380 L 485 380 Z M 805 395 L 875 395 L 875 380 L 805 380 Z M 500 500 A 40 40 0 0 0 540 500 Z M 820 500 A 40 40 0 0 0 860 500 Z"/>
+    </g>
+
+    <!-- Environment Mapper: river_surface -->
+    <g id="river_and_city_lights">
+        <rect x="-50" y="680" width="1480" height="40" fill="#2A3A4B"/>
+        <path d="M -50 690 C 200 685, 400 695, 640 690 C 880 685, 1100 695, 1430 690" stroke="#3A4A5B" stroke-width="2" fill="none" opacity="0.5"/>
+        <path d="M -50 705 C 250 710, 450 700, 690 705 C 930 710, 1150 700, 1430 705" stroke="#3A4A5B" stroke-width="2.5" fill="none" opacity="0.4"/>
+    </g>
+
+    <!-- FX Generator: fog_effect -->
+    <g id="fog_layer_front" class="fog-layer" opacity="0.35" fill="#C0D0E0" style="animation-delay: -15s; animation-duration: 28s;">
+        <path d="M -250,680 C 50,640 350,710 650,680 C 950,650 1250,710 1650,680 L 1650,720 L -250,720 Z" />
+    </g>
+  </g>
+</svg>

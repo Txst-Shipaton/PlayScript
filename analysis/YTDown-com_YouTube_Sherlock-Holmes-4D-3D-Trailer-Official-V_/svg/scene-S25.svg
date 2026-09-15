@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <style>
+    .scene-element {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      fill-rule: evenodd;
+    }
+    #S25_camera {
+      animation: S25_cam_anim 2s linear infinite;
+    }
+    #character_sherlock_holmes_running {
+      animation: sherlockRun 2s linear infinite;
+    }
+    #fog_effect {
+      animation: fogDrift 30s linear infinite;
+    }
+
+    @keyframes sherlockRun {
+      0% { transform: translateX(-200px) translateY(0px) scale(0.9); }
+      25% { transform: translateX(340px) translateY(-10px) scale(0.9); }
+      50% { transform: translateX(880px) translateY(0px) scale(0.9); }
+      75% { transform: translateX(1420px) translateY(-10px) scale(0.9); }
+      100% { transform: translateX(1480px) translateY(0px) scale(0.9); }
+    }
+
+    @keyframes fogDrift {
+      0% { transform: translateX(-10%); }
+      100% { transform: translateX(10%); }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg_S25_grad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#1A2B3D"/>
+    </linearGradient>
+    <filter id="shadow-holmes" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="15" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="shadow-flower-stand" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g id="S25_camera">
+    <!-- Background -->
+    <rect width="1280" height="720" fill="url(#bg_S25_grad)"/>
+
+    <!-- Layer 1: bg_foggy_city_skyline_nelson_column -->
+    <g id="bg_foggy_city_skyline_nelson_column" class="scene-element" fill="#2A3A4B" stroke="none">
+      <path d="M0 550 L50 540 L100 555 L150 530 L200 545 L250 520 L280 530 L300 500 L310 510 L350 480 L360 490 L380 470 L420 490 L450 460 L500 480 L550 470 L600 490 L650 480 L700 500 L750 490 L800 510 L850 500 L900 520 L950 510 L1000 530 L1050 520 L1100 540 L1150 530 L1200 550 L1280 540 L1280 720 L0 720 Z"/>
+      <path d="M480 480 L480 350 L490 345 L500 350 L500 480 Z" fill="#5C6C7D"/>
+      <path d="M488 335 L492 335 L490 325 Z" fill="#5C6C7D"/>
+    </g>
+
+    <!-- FX: Fog -->
+    <g id="fog_effect" opacity="0.25" fill="#C0D0E0" stroke="none">
+        <path d="M -200,650 C -100,600 100,700 200,650 S 400,600 500,650 S 700,700 800,650 S 1000,600 1100,650 S 1300,700 1400,650 L 1500,720 L -300,720 Z" />
+    </g>
+
+    <!-- Layer 2: bg_lampposts -->
+    <g id="bg_lampposts" class="scene-element" fill="#8C8C8C">
+      <rect x="200" y="480" width="8" height="120"/>
+      <circle cx="204" cy="475" r="8"/>
+      <rect x="950" y="490" width="8" height="130"/>
+      <circle cx="954" cy="485" r="8"/>
+    </g>
+
+    <!-- Pavement -->
+    <path id="ground_pavement" d="M0 720 L0 600 C 320 580, 960 580, 1280 600 L1280 720 Z" fill="#4A5A6B" class="scene-element" stroke="none"/>
+
+    <!-- Layer 3: flower_stand -->
+    <g id="flower_stand" filter="url(#shadow-flower-stand)" class="scene-element">
+      <path d="M600 520 L600 620 L750 620 L750 520 L720 500 L630 500 Z" fill="#2E8B57"/>
+      <path d="M605 520 L745 520 L745 530 L605 530 Z" fill="#257045"/>
+    </g>
+
+    <!-- Layer 4: crates_and_barrels -->
+    <g id="crates_and_barrels" class="scene-element" fill="#5C3A2E">
+      <rect x="760" y="580" width="60" height="40"/>
+      <rect x="770" y="540" width="40" height="40"/>
+      <rect x="540" y="590" width="50" height="30"/>
+    </g>
+
+    <!-- Layer 5: character_sherlock_holmes_running -->
+    <g id="character_sherlock_holmes_running" filter="url(#shadow-holmes)" transform-origin="640 600">
+      <g class="scene-element">
+        <!-- Torso/Coat -->
+        <path d="M0 0 L-20 5 L-15 70 L15 70 L20 5 Z" fill="#8B4513" transform="translate(0, 580)"/>
+        <!-- Trousers -->
+        <path d="M-12 650 L-15 700 L-5 700 L-2 650 Z" fill="#C0C0C0"/>
+        <path d="M2 650 L5 700 L15 700 L12 650 Z" fill="#C0C0C0"/>
+        <!-- Head -->
+        <circle cx="0" cy="565" r="15" fill="#E0B996"/>
+        <path d="M-10 555 Q 0 545, 10 555" fill="#4A2E1D" stroke="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

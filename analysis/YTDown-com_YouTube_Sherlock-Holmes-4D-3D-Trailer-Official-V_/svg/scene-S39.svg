@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="bg_grad_S39" cx="50%" cy="45%" r="55%" fx="50%" fy="45%">
+      <stop offset="0%" stop-color="#D4A76B" />
+      <stop offset="100%" stop-color="#2A2A2A" />
+    </radialGradient>
+    <filter id="shadow_S39">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes determinedPose {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0px); }
+    }
+    .characters {
+      animation: determinedPose 2000ms linear infinite;
+    }
+    .stroke {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      fill-rule: nonzero;
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="url(#bg_grad_S39)" />
+
+  <g class="characters" id="sherlock_watson_determined_pose">
+    <g id="character_sherlock_holmes" transform="translate(400, 240)" filter="url(#shadow_S39)">
+      <g class="stroke">
+        <!-- Torso (Overcoat) -->
+        <path fill="#8B4513" d="M90,130 L90,350 L290,350 L290,130 C290,130 240,140 190,140 C140,140 90,130 90,130 Z" />
+        <!-- Lapels -->
+        <path fill="#6B3E26" d="M90,130 L130,130 L190,220 L130,220 Z" />
+        <path fill="#6B3E26" d="M290,130 L250,130 L190,220 L250,220 Z" />
+        <!-- Waistcoat & Shirt -->
+        <path fill="#3B5B52" d="M150,140 L230,140 L190,240 Z" />
+        <path fill="#FFFFFF" d="M170,140 L210,140 L190,170 Z" />
+        <path fill="#1A1A1A" d="M180,155 L200,155 L190,180 Z" />
+        <!-- Head -->
+        <path fill="#E0B996" d="M140,40 C140,10 240,10 240,40 C240,100 210,140 190,140 C170,140 140,100 140,40 Z" />
+        <!-- Hair -->
+        <path fill="#4A2E1D" d="M140,40 C135,20 160,0 190,0 C220,0 245,20 240,40 C235,30 210,25 190,25 C170,25 145,30 140,40 Z" />
+      </g>
+    </g>
+
+    <g id="character_watson" transform="translate(680, 250)" filter="url(#shadow_S39)">
+      <g class="stroke">
+        <!-- Torso (Jacket) -->
+        <path fill="#8B4513" d="M60,140 C40,140 40,360 60,360 L320,360 C340,360 340,140 320,140 Z" />
+        <!-- Shirt/Bowtie -->
+        <path fill="#FFFFFF" d="M170,140 L210,140 L210,160 L170,160 Z" />
+        <path fill="#1A1A1A" d="M180,145 L200,145 L205,155 L175,155 Z" />
+        <!-- Head -->
+        <path fill="#E0B996" d="M140,30 C140,-10 240,-10 240,30 C240,100 220,140 190,140 C160,140 140,100 140,30 Z" />
+        <!-- Moustache -->
+        <path fill="#4A2E1D" d="M165,100 C175,105 185,105 190,100 C195,105 205,105 215,100 C210,110 190,115 170,110 Z" />
+        <!-- Bowler Hat -->
+        <path fill="#1A1A1A" d="M110,35 C110,15 270,15 270,35 L260,35 C260,0 120,0 120,35 L110,35 Z" />
+        <path fill="#1A1A1A" d="M120,0 C120,-20 260,-20 260,0 C240,-15 140,-15 120,0 Z" />
+      </g>
+    </g>
+  </g>
+</svg>

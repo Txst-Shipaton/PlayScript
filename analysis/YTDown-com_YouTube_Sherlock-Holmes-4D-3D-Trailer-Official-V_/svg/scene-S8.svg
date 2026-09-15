@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B2C3E"/>
+      <stop offset="100%" stop-color="#5A202F"/>
+    </linearGradient>
+    <pattern id="wallpaperPattern" patternUnits="userSpaceOnUse" width="100" height="100" x="0" y="0">
+      <path d="M 50,0 L 60,10 L 50,20 L 40,10 Z M 0,50 L 10,60 L 20,50 L 10,40 Z M 50,100 L 60,90 L 50,80 L 40,90 Z M 100,50 L 90,60 L 80,50 L 90,40 Z" fill="#6B423A" opacity="0.1"/>
+    </pattern>
+    <filter id="shadowS8">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <style>
+    @keyframes surprise_eye {
+      0% {
+        d: path('M580,355 C595,340 625,340 640,355 C625,370 595,370 580,355Z');
+        transform: scale(1);
+      }
+      100% {
+        d: path('M575,352 C595,325 625,325 645,352 C625,380 595,380 575,352Z');
+        transform: scale(1.02);
+      }
+    }
+    @keyframes surprise_eye_right {
+      0% {
+        d: path('M680,355 C695,340 725,340 740,355 C725,370 695,370 680,355Z');
+        transform: scale(1);
+      }
+      100% {
+        d: path('M675,352 C695,325 725,325 745,352 C725,380 695,380 675,352Z');
+        transform: scale(1.02);
+      }
+    }
+    .eye-anim {
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  </style>
+  <rect width="1280" height="720" fill="url(#bgGradientS8)"/>
+  <rect width="1280" height="720" fill="url(#wallpaperPattern)"/>
+  <g id="bg_bookshelf">
+    <rect x="1050" y="0" width="230" height="720" fill="#3A1F16" opacity="0.6"/>
+    <rect x="1070" y="80" width="25" height="180" fill="#3B5B52"/>
+    <rect x="1100" y="80" width="20" height="180" fill="#8B4513"/>
+    <rect x="1125" y="80" width="30" height="180" fill="#6B3E26"/>
+    <rect x="1070" y="300" width="25" height="180" fill="#5C3A2E"/>
+    <rect x="1100" y="300" width="20" height="180" fill="#3B5B52"/>
+    <rect x="1125" y="300" width="30" height="180" fill="#8B0000"/>
+  </g>
+  <g id="character_sherlock_holmes_face" filter="url(#shadowS8)" stroke="#202020" stroke-width="1.8">
+    <path d="M450,680 C350,450 480,100 640,100 C800,100 930,450 830,680 C730,800 550,800 450,680Z" fill="#E0B996"/>
+    <path d="M455,320 C450,200 500,100 640,100 C780,100 830,200 825,320 C780,250 680,240 640,240 C600,240 500,250 455,320Z" fill="#4A2E1D"/>
+    <path d="M570,330 Q610,320 650,325" fill="none" stroke="#4A2E1D" stroke-width="10" stroke-linecap="round"/>
+    <path d="M670,325 Q710,320 750,330" fill="none" stroke="#4A2E1D" stroke-width="10" stroke-linecap="round"/>
+    <path class="eye-anim" id="eye_left" style="animation-name: surprise_eye;" fill="#FFFFFF" d="M580,355 C595,340 625,340 640,355 C625,370 595,370 580,355Z"/>
+    <path class="eye-anim" id="eye_right" style="animation-name: surprise_eye_right;" fill="#FFFFFF" d="M680,355 C695,340 725,340 740,355 C725,370 695,370 680,355Z"/>
+    <circle cx="610" cy="355" r="8" fill="#5F8B5A"/>
+    <circle cx="710" cy="355" r="8" fill="#5F8B5A"/>
+    <path d="M655,380 L645,460 L675,460" fill="none" stroke-linecap="round"/>
+    <path d="M620,520 Q660,525 700,520" fill="none" stroke-width="4"/>
+  </g>
+</svg>

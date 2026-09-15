@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="gradient-S33" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#1A2B3D"/>
+    </linearGradient>
+    <filter id="shadow-S33" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="5" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <style>
+    .scene-element {
+      stroke: #202020;
+      stroke-width: 1.8;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+    @keyframes sherlock-fall-S33 {
+      from {
+        transform: translateY(0px) rotate(0deg);
+      }
+      to {
+        transform: translateY(300px) rotate(11.3deg);
+      }
+    }
+    #sherlock_holmes_falling {
+      animation: sherlock-fall-S33 1s ease-in infinite;
+      transform-origin: 640px 250px;
+    }
+  </style>
+
+  <rect width="1280" height="720" fill="url(#gradient-S33)" />
+
+  <g id="bg_deep_shaft_stone_walls" class="scene-element" fill="#4A5A6B">
+    <path d="M0 0 H580 L640 720 H0 Z" />
+    <path d="M1280 0 H700 L640 720 H1280 Z" />
+    <path d="M580 0 L640 720 M480 0 L640 720 M380 0 L640 720 M280 0 L640 720 M180 0 L640 720" stroke="#3A4A5B" fill="none" stroke-width="2"/>
+    <path d="M700 0 L640 720 M800 0 L640 720 M900 0 L640 720 M1000 0 L640 720 M1100 0 L640 720" stroke="#3A4A5B" fill="none" stroke-width="2"/>
+  </g>
+
+  <g id="sherlock_holmes_falling" filter="url(#shadow-S33)">
+    <g id="sherlock_holmes" transform="translate(580 180) scale(0.6)">
+      <!-- Overcoat -->
+      <path class="scene-element" fill="#8B4513" d="M115,105 L70,115 C50,120 40,150 40,180 L45,290 L185,290 L190,180 C190,150 180,120 160,115 L115,105 Z" />
+      <!-- Overcoat Collar -->
+      <path class="scene-element" fill="#6B3E26" d="M115,105 C100,100 80,105 70,115 L80,135 L150,135 L160,115 C150,105 130,100 115,105 Z" />
+      <!-- Trousers -->
+      <path class="scene-element" fill="#C0C0C0" d="M100,285 L90,350 L110,350 L115,285 Z" />
+      <path class="scene-element" fill="#C0C0C0" d="M130,285 L125,350 L145,350 L150,285 Z" />
+      <!-- Shoes -->
+      <path class="scene-element" fill="#4A2E1D" d="M85,350 L80,360 L115,360 L110,350 Z" />
+      <path class="scene-element" fill="#4A2E1D" d="M125,350 L120,360 L155,360 L150,350 Z" />
+      <!-- Head -->
+      <g transform="translate(100, 60)">
+        <path class="scene-element" fill="#E0B996" d="M15,0 C30,0 30,45 15,45 C0,45 0,0 15,0 Z" />
+        <path class="scene-element" fill="#4A2E1D" d="M2,10 C15,-5 28,-5 28,10 L25,15 L5,15 Z" />
+      </g>
+      <!-- Arms -->
+      <path class="scene-element" fill="#8B4513" d="M65,120 L30,150 L40,160 L75,130 Z" />
+      <path class="scene-element" fill="#8B4513" d="M165,120 L200,150 L190,160 L155,130 Z" />
+      <!-- Hands -->
+      <circle class="scene-element" fill="#E0B996" cx="30" cy="155" r="8" />
+      <circle class="scene-element" fill="#E0B996" cx="200" cy="155" r="8" />
+      <!-- Shirt -->
+      <path class="scene-element" fill="#FFFFFF" d="M115,105 L105,125 L125,125 Z" />
+    </g>
+  </g>
+</svg>

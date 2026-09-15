@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradientS14" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2C3E4C"/>
+      <stop offset="100%" stop-color="#5A6C7D"/>
+    </linearGradient>
+    <filter id="columnShadow">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <path id="fogPath" d="M -200 50 C -100 -50, 100 150, 200 50 C 300 150, 400 -50, 500 50 L 500 200 L -200 200 Z" fill="#C0D0E0" opacity="0.1"/>
+  </defs>
+  <style>
+    @keyframes bank_reveal {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0px); }
+    }
+    @keyframes fog_drift_1 {
+      0% { transform: translateX(-50px); }
+      100% { transform: translateX(50px); }
+    }
+    @keyframes fog_drift_2 {
+      0% { transform: translateX(30px); }
+      100% { transform: translateX(-30px); }
+    }
+
+    #bank_of_england_group {
+      animation: bank_reveal 1s ease-out infinite;
+    }
+    #fog_layer_1 {
+      animation: fog_drift_1 25s linear infinite alternate;
+    }
+    #fog_layer_2 {
+      animation: fog_drift_2 30s linear infinite alternate;
+    }
+  </style>
+
+  <g id="scene_S14">
+    <!-- Layer 1: bg_dark_foggy_sky -->
+    <rect x="0" y="0" width="1280" height="720" fill="url(#bgGradientS14)"/>
+
+    <!-- FX: Fog -->
+    <g id="fog_effect">
+      <g id="fog_layer_1">
+        <use href="#fogPath" x="0" y="400"/>
+        <use href="#fogPath" x="450" y="420"/>
+        <use href="#fogPath" x="900" y="390"/>
+      </g>
+      <g id="fog_layer_2">
+        <use href="#fogPath" x="100" y="500" transform="scale(1.2)"/>
+        <use href="#fogPath" x="600" y="530" transform="scale(1.1)"/>
+      </g>
+    </g>
+
+    <g id="bank_of_england_group">
+      <!-- Layer 2: bank_of_england_building_facade -->
+      <g id="bank_of_england_building_facade">
+        <!-- Main structure -->
+        <path d="M 240 720 L 240 300 L 1040 300 L 1040 720 Z" fill="#4A5A6B"/>
+        <!-- Roof / Pediment -->
+        <path d="M 220 300 L 1060 300 L 1060 280 L 640 220 L 220 280 Z" fill="#4A5A6B"/>
+        <!-- Columns -->
+        <g id="bank_columns" filter="url(#columnShadow)">
+          <rect x="280" y="300" width="60" height="420" fill="#5C6C7D"/>
+          <rect x="420" y="300" width="60" height="420" fill="#5C6C7D"/>
+          <rect x="560" y="300" width="60" height="420" fill="#5C6C7D"/>
+          <rect x="700" y="300" width="60" height="420" fill="#5C6C7D"/>
+          <rect x="840" y="300" width="60" height="420" fill="#5C6C7D"/>
+          <rect x="980" y="300" width="60" height="420" fill="#5C6C7D"/>
+        </g>
+        <!-- Cornice -->
+        <rect x="240" y="300" width="800" height="20" fill="#3A4A5B"/>
+      </g>
+
+      <!-- Layer 3: bank_of_england_text -->
+      <text id="bank_of_england_text" x="640" y="268" font-family="serif" font-weight="600" font-size="22" fill="#C0C0C0" text-anchor="middle" letter-spacing="4">BANK OF ENGLAND</text>
+    </g>
+  </g>
+</svg>
